@@ -1,0 +1,60 @@
+<section class="strip-wrapper">
+<div class="strip-block {{ module.image_orientation }}">
+  <div class="strip-content">
+    <div class="strip-img">
+      <img src="{{ module.overflow_img }}"/>
+    </div>
+    <div class="strip-body">
+
+      <h5 class="{{ module.strip_body1_weight }}">
+       {{ module.strip_body1 }}
+      </h5>
+      
+      {% if module.strip_body2 %}
+      <p>
+        {{ module.strip_body2 }}
+      </p>
+      {% endif %}
+      
+      {% if module.cta_lede %}
+      <h5>
+        {{ module.cta_lede }}
+      </h5>
+      {% endif %}
+      
+       {% if module.cta_text %}
+      
+      
+    <div class="button-wrapper">
+      
+      
+      {% set href = module.cta_url.url.href %}
+{% if module.cta_url.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.cta_url.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.cta_url.no_follow %}rel="nofollow"{% endif %}
+	>
+    <button class="btn">
+        <h3 class="btn__content">{{ module.cta_text }}</h3>
+      </button> 
+
+      </a>
+    </div>
+      
+      
+    {% endif %}
+      
+      
+      
+      {% if module.strip_logo %}
+      <div class="logo">
+        <img src="{{ module.strip_logo }}"/>
+      </div>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>
+  </section>

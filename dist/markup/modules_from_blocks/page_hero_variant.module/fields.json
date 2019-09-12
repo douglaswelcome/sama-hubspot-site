@@ -1,0 +1,25 @@
+[ {
+  "id" : "fa6bc715-02a5-3dca-a596-ac3c0997b470",
+  "name" : "page_hero_title",
+  "label" : "page_hero_title",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "cbdf81ca-f264-115c-6fbb-6bfe9ff2539b",
+  "name" : "page_hero_subtitle",
+  "label" : "page_hero_subtitle",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+} ]

@@ -1,0 +1,36 @@
+[ {
+  "id" : "863fae17-5127-7549-2a51-5150d3c294c1",
+  "name" : "top_margin",
+  "label" : "top_margin",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "label-tab--margin-top", "Top Margin" ], [ "null", "No Top Margin" ] ],
+  "type" : "choice",
+  "default" : "label-tab--margin-top"
+}, {
+  "id" : "2f97535e-ec24-b98d-9341-efaa04f15112",
+  "name" : "tab_reflect",
+  "label" : "tab_reflect",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "null", "Left" ], [ "reflect", "Right" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "id" : "3bee9483-15e2-07d7-5d4d-35846a979e7d",
+  "name" : "label_text",
+  "label" : "label_text",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+} ]

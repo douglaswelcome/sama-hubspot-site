@@ -1,0 +1,26 @@
+<!--
+    templateType: blog
+    isAvailableForNewContent: true
+-->
+{% extends '../blocks_static/base.html' %}
+
+{% block main %}
+{% include '../blocks_static/pattern-bg1.html' %}
+
+{% include '../blocks_static/header.html' %}
+
+
+
+
+{% include '../blocks_to_convert/blog/blog-post-hero.html' %}
+
+{% include '../blocks_to_convert/blog/blog-post-body.html' %}
+
+{% include '../blocks_to_convert/blog/blog-bio.html' %}
+
+
+{% include '../blocks_static/footer.html' %}
+
+
+
+{% endblock %}

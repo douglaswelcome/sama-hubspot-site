@@ -1,0 +1,47 @@
+<section class="cta-block full-cta-bar">
+  <h4 class="cta-subtitle-bar {{ module.text_weight }}">{{ module.cta_subtitle }}</h4>
+{% if module.cta_body %} 
+ <p class="full-cta-bar__body">
+    {{ module.cta_body }}
+  </p>
+  {% endif %}
+  <div class="button-grid {{ module.cta_number }}">
+    
+    
+    {% if module.cta1_text %}
+    <div class="button-wrapper">
+      {% set href = module.cta1_url.url.href %}
+{% if module.cta1_url.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.cta1_url.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.cta1_url.no_follow %}rel="nofollow"{% endif %}
+	>
+	<button class="btn">
+        <h3 class="btn__content">{{ module.cta1_text }}</h3>
+      </button> 
+      </a>
+    </div>
+    {% endif %}
+
+    {% if module.cta2_text %}
+    <div class="button-wrapper">
+{% set href = module.cta2_url.url.href %}
+{% if module.cta2_url.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.cta2_url.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.cta2_url.no_follow %}rel="nofollow"{% endif %}
+	>
+	<button class="btn">
+        <h3 class="btn__content">{{ module.cta2_text }}</h3>
+      </button>
+      </a>
+    </div>
+    {% endif %}
+    
+    
+  </div>
+</section>

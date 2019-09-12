@@ -1,0 +1,97 @@
+[ {
+  "id" : "552d7425-58ba-3ec9-b795-a75cf0e7b47e",
+  "name" : "home_h1",
+  "label" : "home_h1",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "High Quality Data. <br> Smarter AI."
+}, {
+  "id" : "14e92bb9-b086-1a63-caf6-9e224cada1e9",
+  "name" : "home_h2",
+  "label" : "home_h2",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Quickly train and validate your machine learning model."
+}, {
+  "picker" : "image",
+  "id" : "ab29aae0-6956-8f17-e9a8-8d42ecf9a3aa",
+  "name" : "hp_hero_img",
+  "label" : "hp_hero_img",
+  "sortable" : false,
+  "required" : true,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/street_2.svg"
+}, {
+  "id" : "4f5cfcc4-837e-ff05-df21-797e6eefa4c3",
+  "name" : "home_cta",
+  "label" : "home_cta",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "3bb9fd7d-241d-c97d-7c9c-33e2c02e2493",
+  "name" : "home_cta_link",
+  "label" : "home_cta_link",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 7717258493
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "ff7026eb-0fee-e5ed-c77e-585bfd308634",
+  "name" : "home_cta2",
+  "label" : "home_cta2",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "40ac7150-4219-cbcc-0e14-a75e483a7a41",
+  "name" : "home_cta_link2",
+  "label" : "home_cta_link2",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 7717258493
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

@@ -1,0 +1,19 @@
+{% if module.press_title %}
+{% set href = module.press_link.url.href %}
+{% if module.press_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.press_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.press_link.no_follow %}rel="nofollow"{% endif %}
+	>
+ <button class="btn secondary">
+        <div class="btn__content">
+          <img src="{{ module.press_logo }}"/>
+          <p>{{ module.press_title }}</p>
+          <h6>{{ module.press_date }}</h6>
+        </div>
+      </button>
+</a>
+
+{% endif %}

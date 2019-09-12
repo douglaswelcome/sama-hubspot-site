@@ -1,0 +1,22 @@
+<!--
+    templateType: blog
+    isAvailableForNewContent: true
+-->
+{% extends '../blocks_static/base.html' %}
+
+{% block main %}
+{% include '../blocks_static/pattern-bg3.html' %}
+
+{% include '../blocks_static/header.html' %}
+
+
+
+{% include '../blocks_to_convert/blog/blog-listing-hero.html' %}
+
+{% include '../blocks_to_convert/blog/blog-listings.html' %}
+
+{% include '../blocks_static/footer.html' %}
+
+
+
+{% endblock %}
