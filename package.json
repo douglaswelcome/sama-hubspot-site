@@ -1,0 +1,14 @@
+{
+  "name": "samasource_site_boom",
+  "version": "1.0.0",
+  "description": "A dev setup for the Samasource Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Douglas Welcome",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
