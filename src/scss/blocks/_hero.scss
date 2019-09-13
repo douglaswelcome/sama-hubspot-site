@@ -1,0 +1,538 @@
+//LP Hero (which I don't think we have even used yet...) --------------------------------------------------------
+
+.lp-hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  .hero-left-bar {
+    background-color: $color-charcoal;
+    border-radius: 0 0 5rem 0;
+
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .offset-hero {
+      background-color: $color-sunshine;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      transform: translate3d(1rem, 1rem, 0);
+      border-radius: 0 0 5.6rem 0;
+    }
+
+    .hero-content {
+      max-width: calc(#{$xlg-page-width} / 2);
+      width: 100%;
+      height: 100%;
+      padding-right: 5rem;
+      margin-left: auto;
+      text-align: left;
+
+      @include breakpoint (w-lg) {
+        max-width: calc(#{$lg-page-width} / 2);
+      }
+
+      @include breakpoint (w-med) {
+        padding-left: 1rem;
+      }
+
+      @include breakpoint (w-med) {
+        padding-left: 1rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: $color-white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
+//Hompage Hero --------------------------------------------------------
+
+
+
+.homepage-hero {
+
+  @extend %page-container;
+  height: calc(100vh - #{$headerheight});
+  max-height: 1000px;
+  min-height: 860px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  padding-bottom: 1rem;
+
+  @include breakpoint (w-lg) {
+    min-height: 820px;
+  }
+
+  @include breakpoint (w-med) {
+    grid-template-columns: 1fr;
+    min-height: 900px;
+
+  }
+
+  @include breakpoint (w-sm) {
+    min-height: auto;
+    height: auto;
+    grid-row-gap: 1.5rem;
+  }
+
+
+  &__left {
+    padding-top: 3rem;
+  }
+
+  &__text {
+
+    @include breakpoint (w-med) {
+      padding-right: 45%;
+    }
+
+    @include breakpoint (w-sm) {
+      padding-right: 20%;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      margin-bottom: .7rem;
+
+      @include breakpoint (w-lg) {
+        font-size: 3rem;
+
+
+      }
+
+      @include breakpoint (w-med) {
+        font-size: calc(1.5rem + 2.3vw);
+      }
+
+      @include breakpoint (w-sm) {
+        font-size: calc(1.2rem + 2.3vw);
+      }
+
+    }
+
+    h4 {
+
+      margin-bottom: 1.5rem;
+
+    }
+  }
+
+  &__cta-block {
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1.5rem;
+  }
+
+
+  &__right {
+    position: relative;
+
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: -7%;
+    height: 85%;
+    min-height: 640px;
+
+
+    @include breakpoint (w-lg) {
+      max-height: 745px;
+      height: calc(20rem + 25vw);
+    }
+
+    @include breakpoint (w-med) {
+      height: calc(9rem + 62vw);
+      min-height: auto;
+      max-height: 640px;
+      right: -5%;
+    }
+
+    @include breakpoint (w-sm) {
+      position: relative;
+      width: 100%;
+      height: auto;
+      right: auto;
+
+    }
+  }
+
+  #homepage-hero__cta-1,
+  #homepage-hero__cta-2 {
+
+
+    .btn__content {
+      font-size: 1.5rem;
+
+      @include breakpoint (w-sm) {
+        font-size: calc(.6rem + 2.3vw);
+      }
+    }
+
+  }
+
+  #homepage-hero__cta-1 {}
+
+  #homepage-hero__cta-2 {}
+
+
+
+}
+
+
+
+
+
+
+
+//Page Hero--------------------------------------------------------
+
+
+
+.page-hero {
+  height: calc(100vh - #{$headerheight} - 3rem);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-top: 3rem;
+  margin-bottom: 9rem;
+
+  @include breakpoint (w-sm) {
+    margin-bottom: 4.5rem;
+    height: calc(100vh - #{$mobileheaderheight});
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: calc(40% - 1.5rem) calc(60% - 1.5rem);
+    grid-column-gap: 3rem;
+
+    @include breakpoint(w-sm) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+    }
+
+  }
+
+  .label-tab {
+    width: 55%;
+    margin-bottom: 5rem;
+
+    @include breakpoint(w-med) {
+      margin-bottom: 3rem;
+    }
+
+    &:after,
+    &:before {
+      border-radius: 0 0 3rem 0;
+    }
+  }
+
+  .hero-img-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 85%;
+
+    @include breakpoint(w-sm) {
+      padding-left: 1rem;
+    }
+
+    .dot-cover {
+      grid-row: 1;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      flex: 1;
+
+      @include breakpoint(w-sm) {
+        visibility: hidden;
+      }
+
+      .dotty {
+        position: absolute;
+        right: 0;
+        width: 35%;
+        bottom: -18vw;
+
+      }
+
+    }
+
+    .hero-img {
+      grid-row: 2;
+      align-self: baseline;
+      width: 100%;
+      height: 100%;
+      border-radius: 7rem 0 0 0;
+      margin-left: auto;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+
+      &.hero-img::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        top: 0;
+      }
+
+      &.shaded-img::before {
+        background: linear-gradient(rgba($color-charcoal, .2), rgba($color-charcoal, .2));
+        mix-blend-mode: multiply;
+      }
+
+    }
+  }
+
+  .page-headline {
+    padding-left: 1rem;
+    text-align: right;
+    margin-left: auto;
+    position: relative;
+    max-width: calc(0.4 * #{$xlg-page-width});
+
+    @include breakpoint(w-lg) {
+      max-width: calc(0.4 * #{$lg-page-width});
+    }
+
+    @include breakpoint(w-med) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      max-width: 100%;
+
+    }
+
+    h1 {
+
+      margin-bottom: 1rem;
+
+    }
+
+    h5 {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+      left: -200px;
+    }
+
+    .yellow-stamp {}
+
+  }
+}
+
+
+
+
+
+
+
+//Platform Hero--------------------------------------------------------
+.platform-hero {
+
+
+  height: calc(100vh - #{$headerheight});
+
+  margin-bottom:8rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+
+  @include breakpoint (w-lg) {
+    min-height: 820px;
+  }
+
+  @include breakpoint (w-med) {
+    grid-template-columns: 1fr;
+    min-height: calc(50vh - #{$mobileheaderheight} - 1.5rem);
+    height: auto;
+  }
+
+  @include breakpoint (w-sm) {
+    min-height:auto;
+    height: auto;
+    grid-row-gap: 1.5rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .label-tab {
+    position: absolute;
+
+    &::before,
+    &::after {
+      border-radius: 0 0 3rem 0;
+    }
+
+    &::before {
+      transform: translate3d(-0.7rem, 0.7rem, 0)
+    }
+  }
+
+  &__body {
+    margin-top: 3rem;
+    margin-left: 4.5rem;
+    padding-top: 3rem;
+    padding-right: 45%;
+    padding-left: 4.5rem;
+    padding-bottom: 3rem;
+    border-radius: 0 0 0 6rem;
+    color: $color-white;
+    flex: 1;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include breakpoint(w-med) {
+      margin-left: 1.5rem;
+      padding:0;
+      
+    }
+   
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 0 0 0 6rem;
+
+    }
+
+    &.shaded-img::before {
+      background: linear-gradient(rgba($color-charcoal, .7), rgba($color-charcoal, .4));
+      mix-blend-mode: multiply;
+    }
+
+  }
+
+  &__content {
+    @extend %page-container;
+    position: relative;
+    z-index: 1;
+
+    
+
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    h5 {
+      margin-bottom: 1.5rem;
+      padding-left: 3rem;
+    }
+
+    @include breakpoint (w-med) {
+      padding: 4.5rem 25% 4.5rem 1.5rem;
+      h5 {
+        margin-bottom: 1.5rem;
+        padding-left: .75rem;
+      }
+
+    }
+
+    @include breakpoint (w-sm) {
+      padding: 4.5rem  1.5rem;
+    }
+  }
+
+  .cta-block {
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1.5rem;
+    @include breakpoint (w-med){
+      margin-left: 0;
+
+    .btn h3{
+      font-size:calc(.5rem + 2vw);
+    }
+  }
+
+   
+  }
+
+
+
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: -7%;
+    height: 85%;
+    min-height: 640px;
+
+
+    @include breakpoint (w-lg) {
+      max-height: 745px;
+      height: calc(20rem + 25vw);
+    }
+
+    @include breakpoint (w-med) {
+      height: calc(9rem + 62vw);
+      min-height: auto;
+      max-height: 640px;
+      right: -5%;
+    }
+
+    @include breakpoint (w-sm) {
+      position: relative;
+      width: 100%;
+      height: auto;
+      right: auto;
+
+    }
+  }
+
+
+  .btn__content {
+    font-size: 1.5rem;
+
+    
+  }
+
+  .dot-cover {
+    position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      @include breakpoint (w-med){
+        display:none;
+      }
+
+    .dotty {
+
+      position: absolute;
+      right: 0;
+      width: 20%;
+      bottom: -8vw;
+    }
+  }
+}

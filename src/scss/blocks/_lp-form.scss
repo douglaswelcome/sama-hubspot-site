@@ -1,0 +1,15 @@
+.lp-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  .form-container {
+    grid-column: 2;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: $color-tembo;
+  }
+}

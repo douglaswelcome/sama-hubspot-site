@@ -1,0 +1,22 @@
+
+
+//Sizes
+$title-bar-mobile-height: 40px;
+$screenheight: calc(100vh - 100px);
+$screenheightmobile: calc(100vh - 40px);
+
+//Sizes
+$global-font-size: 18px;
+$headerheight: 75px;
+$mobileheaderheight: 50px;
+
+// transparency scale for white on objects…
+// gray scale though
+$color-spicypink: #F61AA8;
+$color-minty: #1CD7cc;
+$color-purple: #292D3F;
+
+//development variables
+$allyourbase: "https://cdn2.hubspot.net/hubfs/4379491/";
+// $allyourbase: "/file_manager/";
+$staticbase: "#{$allyourbase}custom/assets/static-assets/";

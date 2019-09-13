@@ -1,0 +1,5 @@
+.two-to-one {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  @extend %page-container;
+}

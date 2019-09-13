@@ -1,0 +1,289 @@
+.locations {
+    min-height: 30rem;
+
+    grid-template-columns: 30% 1fr;
+
+    h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    &__office-link {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: .3rem;
+        margin-right: auto;
+
+
+
+        svg {
+            // transition: transform .5s ease-in-out;
+            height: .6rem;
+            padding-left: .3rem;
+            fill: $color-kennedy;
+
+        }
+
+        &:hover {
+            svg {
+                fill: $color-kennedy-2;
+            }
+
+            span::before {
+                opacity: 1;
+                transition-property: opacity;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+            }
+        }
+    }
+
+    &__office-title {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-family: "Barlow Condensed", Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 0.2rem;
+
+        &::before {
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+        }
+
+
+    }
+
+
+
+
+    &__details {
+        padding-left: 1rem;
+        line-height: 1.1;
+        // overflow:hidden;
+        // max-height:0;
+        // transition: max-height .5s ease-in-out;
+        // will-change: max-height;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+
+
+
+
+
+        &.active {
+            .locations__office-title {
+                color: $color-kennedy-2;
+
+                &::before {
+                    opacity: 1;
+                    transition-property: opacity;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease;
+                }
+            }
+
+            svg {
+                fill: $color-kennedy-2;
+            }
+
+            // .locations__details {
+            //     max-height:61px;
+            //     transition: max-height .5s ease-in-out;
+            //     will-change: max-height;
+            // }
+            // img {
+            //     transform: rotate(90deg);
+            //     transition: transform .5s ease-in-out;
+            // }
+        }
+    }
+
+
+
+
+
+
+
+
+}
+
+.map-baby {
+
+    height: 85%;
+
+    position: relative;
+
+    .back-panel {
+        border-radius: 0 0 0 40px;
+    }
+
+
+
+    .mapboxgl-ctrl-attrib {
+        display: none;
+    }
+
+    .mapboxgl-ctrl-logo {
+        display: none;
+    }
+
+    .mapboxgl-ctrl-group {
+        border-radius: 0px;
+        background: transparent;
+
+
+        ::before {
+            border-radius: 0 0 0 5px;
+            content: "";
+            background-color: $color-white;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        button {
+
+            border: 2px solid #291d5421;
+            margin-bottom: 3px;
+            position: relative;
+            border-radius: 0 0 0 8px;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+
+            &:hover {
+                background-color: $color-isabelline;
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+            }
+
+            ::before {
+                display: none;
+            }
+        }
+
+        .mapboxgl-ctrl-icon.mapboxgl-ctrl-compass>.mapboxgl-ctrl-compass-arrow {
+            margin: auto;
+            margin-top: 2px;
+        }
+
+
+
+    }
+
+    &--globe-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 10px 0;
+        border-radius: 0 0 0 8px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #291d5421;
+        padding: 5px;
+        background-color: $color-white;
+
+        &:hover {
+            background-color: $color-isabelline;
+        }
+
+        svg {
+            fill: $color-charcoal;
+        }
+
+        &::before,
+        &::after {
+            display: none;
+
+        }
+    }
+
+    .mapboxgl-ctrl-group:not(:empty) {
+        box-shadow: 0 0 0 0px #291d5421;
+    }
+
+    .mapboxgl-popup {
+        padding-bottom: 3rem;
+        padding-top: .3rem;
+    }
+
+    .mapboxgl-popup-content {
+        position: relative;
+        border-radius: 0 0 0 1.1rem;
+        // box-shadow: 3px 5px 5px rgba($color-kennedy, 0.1);
+        padding: .5rem .5rem .5rem .7rem;
+        pointer-events: auto;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: $color-kennedy;
+            border: 0.1rem solid $color-kennedy;
+            border-radius: 0 0 0 1.1rem;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            transform: translate(0.25rem, 0.25rem);
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+        }
+
+    }
+
+    &__marker {
+        border: none;
+        cursor: pointer;
+        height: 44px;
+        width: 44px;
+        background-image: url(#{$staticbase}img/samamarker.svg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &__wrapper {
+        height: 100%;
+        border-radius: 0 0 0 40px;
+
+    }
+
+
+
+    .item {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+/* Marker tweaks */
+.mapboxgl-popup-close-button {
+    display: none;
+}
+
+.mapboxgl-popup-tip {
+    display: none;
+}
+
+
+.mapboxgl-popup-content {
+    padding: 0;
+
+}
+
+.mapboxgl-popup-content-wrapper {
+    padding: 1%;
+}

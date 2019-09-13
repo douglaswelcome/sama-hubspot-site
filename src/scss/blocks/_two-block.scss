@@ -1,0 +1,287 @@
+.two-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  @extend %page-container;
+  align-items: center;
+
+  @include breakpoint(w-sm) {
+    grid-template-columns: 1fr;
+  }
+
+  .copy {
+
+    text-align: right;
+
+    @include breakpoint (w-sm){
+      text-align: left;
+    }
+
+    h2,
+    h1 {
+      margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint(w-sm) {
+      padding: 1rem;
+    }
+
+    .copy-block {
+      margin-bottom: 1.5rem;
+    }
+
+    button {}
+
+    h5,
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    .icon-list__copy {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .img {
+    position: relative;
+    text-align: center;
+
+    .two-block-img {
+      width: 100%;
+      background-position: center;
+      min-height: 22rem;
+      max-height: 30rem;
+    }
+
+    @include breakpoint(w-sm) {
+      padding: 1rem;
+
+      .two-block-img {
+        min-height: 0;
+      }
+
+    }
+
+  }
+
+  .award-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 1.5rem;
+    grid-column-gap: 1rem;
+
+    p {
+      margin-right: 0;
+    }
+
+    img {
+      height: 110px;
+      margin: none;
+    }
+
+
+
+  }
+
+  &--longform {
+    align-content: flex-start;
+    grid-template-columns: 1fr 30%;
+  
+
+    &two-block--thank-you {
+      grid-template-columns:1fr;
+    }
+
+
+    @include breakpoint(w-med) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2.25rem;
+    }
+
+    .copy {
+      text-align: left;
+      align-self: flex-start;
+
+      @include breakpoint(w-med) {
+        padding:0;
+      }
+
+
+    }
+  }
+
+  h1.two-block__asset-title {
+      margin-bottom:0;
+  
+  }
+
+  .form-card {
+    margin-left:.5rem;
+    margin-right:.5rem;
+    justify-self: center;
+    align-self: self-start;
+    @include breakpoint(w-med) {
+      max-width:30rem
+    }
+  }
+
+  &__rich-body {
+    padding-left:1.5rem;
+  }
+
+  &__lp-upper {
+    display:grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    grid-column-gap:1.25rem;
+margin-bottom:3rem;
+
+@include breakpoint (w-sm){
+  grid-template-columns: 1fr;
+  grid-row-gap:1.5rem;
+  margin-bottom:1.5rem;
+}
+    
+
+    
+  }
+
+  &__asset-wrapper {
+    
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width:100%;
+      
+    }
+  }
+
+
+
+
+  &.reflect {
+    .copy {
+      text-align: left;
+      grid-column: 2;
+      grid-row: 1;
+      padding-left: 0;
+      padding-right: 1.5rem;
+    }
+
+    .img {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    @include breakpoint(w-sm) {
+
+      .copy,
+      .img {
+        grid-row: auto;
+        grid-column: auto;
+      }
+    }
+
+  }
+
+  &__rich-body {
+    ul {
+      padding-left: 3rem;
+    }
+  }
+}
+
+.scorecard {
+
+
+  &__copy {
+    h5 {
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(w-sm) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+
+
+    @include breakpoint(w-sm) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .first-column {
+      grid-column: 1;
+    }
+
+    .second-column {
+      grid-column: 2;
+    }
+
+    .third-column {
+      grid-column: 3;
+    }
+
+    .fourth-column {
+      grid-column: 4;
+    }
+
+    .year {
+      grid-row: 1;
+
+    }
+
+    .quarter-grid {
+      grid-row-start: 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr)
+    }
+
+
+
+    p {
+      margin-bottom: 0.5rem;
+
+    }
+
+    h6 {
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      display: inline-block;
+      width: fit-content;
+
+      p {
+        display: inline-block;
+        color: $color-charcoal;
+        transition: (color, transform) 0.1s ease;
+      }
+
+      &:hover {
+        p {
+          color: $color-kennedy;
+          font-weight: 700;
+          transform: scale(1.1) translate3d(0, 0, 0);
+          transition: (color, transform) 0.1s ease;
+
+        }
+
+      }
+
+    }
+
+  }
+}

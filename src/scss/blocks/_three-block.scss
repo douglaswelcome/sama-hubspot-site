@@ -1,0 +1,78 @@
+.three-block {
+  &__intro {
+    h4{
+      text-align: center;
+    }
+    margin-bottom:4.5rem;
+  }
+
+  &__wrapper {
+    $num-blocks: 3;
+    /* Set number of articles here (need to update markup accordingly) */
+    $med-num-cols: 3;
+    $sm-num-cols: 1;
+
+    $components: ('.block-img',
+        '.block-title',
+        '.block-body'
+      );
+
+    @extend %page-container;
+    display: grid;
+    grid-template-columns: repeat($med-num-cols, 1fr);
+    justify-content: center;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+
+    @include breakpoint(w-sm) {
+      grid-template-columns: repeat($sm-num-cols, 1fr);
+      max-width: 320px;
+
+      .block-body,
+      .block-img,
+      .block-title {
+        grid-row: auto !important;
+      }
+
+      .block-body {
+        margin-bottom: 3rem;
+      }
+
+    }
+
+    .block-img {
+
+      overflow: hidden;
+      grid-row: 1;
+      justify-self: center;
+      display: flex;
+      margin-bottom: 1.5rem;
+
+      img {
+        max-width: 12rem;
+        max-height: 12rem;
+        width: 100%;
+      }
+    }
+
+    .block-title {
+      grid-row: 2;
+      justify-self: center;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      h3.small {
+        font-size:1.7rem;
+      }
+    }
+
+    .block-body {
+      grid-row: 3;
+      justify-self: center;
+      text-align: center;
+    }
+
+  }
+
+}

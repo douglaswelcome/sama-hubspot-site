@@ -1,0 +1,15 @@
+@mixin uppercase-spacing() {
+  $spacing: 5px;
+  line-height: 2;
+  letter-spacing: $spacing;
+  text-transform: uppercase;
+  margin-left: $spacing;
+  margin-bottom: 0;
+}
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

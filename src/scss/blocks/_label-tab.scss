@@ -1,0 +1,99 @@
+section.label-tab {
+  margin-bottom:4.5rem;
+  @include breakpoint (w-sm) {
+  margin-bottom: 1.5rem;
+  }
+}
+
+.label-tab {
+  color: $color-white;
+  display: block;
+  position: relative;
+  padding: 1rem 2rem;
+  text-align: right;
+  width: 55vw;
+  z-index: 2;
+
+
+  @include breakpoint (w-sm) {
+    width: 80vw;
+  }
+
+  h3 {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    background-color: $color-tembo;
+    border-radius: 0 3rem 0 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: $color-sunshine;
+    border-radius: 0 3rem 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(.7rem, .7rem, 0);
+  }
+
+  &--margin-top {
+
+    margin-top:1.5rem;
+
+  }
+
+  
+
+}
+
+
+
+.reflect {
+  .label-tab, &.label-tab {
+    margin-left: auto;
+    text-align: left;
+
+    &:after,
+    &:before {
+      border-radius: 3rem 0 0 0;
+    }
+
+    &:before {
+
+      transform: translate3d(-.7rem, .7rem, 0);
+    }
+  }
+}
+
+.glance,
+.lead-team,
+.six-block {
+  .label-tab {
+    margin-bottom: 3rem;
+  }
+
+  .glance-content {
+    margin-top: 4rem;
+  }
+}
+
+.standalone-page-title {
+  margin-top: 2rem;
+  margin-bottom: 4.7rem;
+
+  .label-tab {
+
+    width: 40%;
+  }
+}

@@ -1,0 +1,64 @@
+.cv-table {
+
+    .center-content {
+        padding:0;
+    }
+
+    .center-feature__head {
+        margin-bottom: 3rem;
+    }
+
+    &__card {
+
+        max-width: 75%;
+        padding: 1.5rem 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        display:inline-block;
+
+        @include breakpoint (w-med){
+            padding:1.5rem;
+            max-width:none;
+        }
+    }
+
+    &__table {
+        border-collapse: collapse;
+        border-spacing: 0px;
+
+
+        padding: 3rem;
+    }
+
+    td {
+        border-bottom: .1rem solid $color-charcoal-6;
+        padding: 1.5rem 1.5rem;
+
+    }
+
+    tr:last-child() {
+        td {
+            border-bottom: none;
+        }
+    }
+
+    &__check {
+
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    &.center-block {
+
+
+        .cv-table__element {
+            p {
+                margin-bottom: 0rem;
+                text-align: left;
+            }
+        }
+
+        }
+    }

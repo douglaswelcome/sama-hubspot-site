@@ -1,0 +1,61 @@
+.privacy-policy {
+    @extend %page-container;
+
+    padding: 0 3rem;
+    
+
+
+
+    &__parent {
+        list-style-type: upper-roman;
+
+        li {
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 1.4;
+
+            @include breakpoint(w-med) {
+                font-size: calc(.8rem + .9vw);
+            }
+
+            h5 {
+
+                padding-bottom: 1rem;
+            }
+        }
+
+    }
+
+    &__list {
+        padding-left: 3rem;
+
+        li {
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 1.4;
+
+            @include breakpoint(w-med) {}
+
+            @include breakpoint(w-sm) {
+                font-size: calc(.7rem + .6vw);
+            }
+        }
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+
+    }
+
+    &__sublist {
+        padding-left: 3rem;
+        list-style-type: lower-alpha;
+
+        li {
+            p {
+                padding-bottom: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+
+.icon-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5rem;
+    grid-row-gap:1rem;
+    &__row {
+        display:grid;
+        grid-template-columns: 10% 1fr;
+        grid-column-gap: 1.5rem;
+        
+        @include breakpoint (w-sm){
+            grid-template-columns:15% 1fr;
+        }
+    }
+
+    &__icon{
+        align-self: center;
+        justify-self: center;
+        
+  
+            max-width: 100%;
+    
+    }
+
+    &__copy {
+        align-self:center;
+        margin-bottom:0;
+    }
+
+    &__body-copy {
+        padding-left:1.5rem;
+        grid-column: 2;
+    }
+}
+

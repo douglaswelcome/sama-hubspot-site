@@ -1,0 +1,250 @@
+.featured-press {
+    &__press-content {
+        @extend %page-container;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 3rem;
+        grid-column-gap: 3rem;
+        align-items: center;
+        justify-items: center;
+        padding-top: 3rem;
+
+        @include breakpoint(w-sm) {
+            grid-template-columns: 1fr;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+
+    }
+
+    &__press-link {
+        display: flex;
+        height: 100%;
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: transform .3s;
+            
+            will-change: transform;
+        }
+    }
+}
+
+.press-card {
+    padding: 1rem;
+
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 0 0 3rem 0;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgba(40, 40, 42, 0.6), rgba(40, 40, 42, 0.6));
+        top: 0;
+        right: 0;
+        border-radius: 0 0 3rem 0;
+
+
+    }
+
+  
+
+
+    &__title {
+        text-align: right;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+
+
+        h5 {
+            color: $color-white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: $color-white;
+            font-size: 1rem;
+        }
+    }
+
+    &__pub-wrapper {
+        position: relative;
+        align-self: self-end;
+    }
+
+    &__pub-card {
+        display: inline-block;
+        background-color: $color-white;
+        border-radius: 0 0 1rem 0;
+        border-width: .2rem;
+        border-color: $color-kennedy;
+        border-style: solid;
+        padding: 1rem 1.5rem;
+        transform: translateX(-2rem);
+
+        img {
+            height: 2rem;
+            max-width: 5rem;
+            backface-visibility: hidden;
+        }
+    }
+}
+
+
+.press-table-header {
+    
+@extend %page-container;
+position:relative;
+display:flex;
+justify-content:center;
+margin-bottom:1.5rem;
+
+
+
+
+    
+   
+
+    .press-table-header__wrapper {
+        position: relative;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        
+        padding: 1.5rem 0;
+        justify-items: center;
+    }
+
+    
+    
+
+    .divider-line {
+        position: absolute;
+        width: calc(50% - 1.5rem);
+        bottom:0;
+        left:0;
+
+        &--left {
+            transform: translateX(.75rem);
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            
+        }
+
+        &--right {
+            transform: translateX(100%) translateX(2.25rem);
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+        }
+    }
+
+    &__category {
+        padding: 0 1rem;
+        cursor: pointer;
+    
+        
+ 
+        &:nth-child(1){
+            
+        }
+        &:nth-child(2) {
+        }
+        
+         h3 {
+             font-size: 1.2rem;
+             
+             color: $color-nguva;
+             transition-property: color;
+            transition-duration: .3s;
+            transition-timing-function: ease;
+         }
+    } 
+
+    &__category--selected {
+        h3{
+            color:$color-charcoal;
+            transition-property: color;
+            transition-duration: .3s;
+            transition-timing-function: ease;
+        }
+    }
+}
+
+.press-table {
+    @extend %page-container;
+
+    &__press-link{
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color:$color-nguva;
+    display:grid;
+    grid-template-columns: 70% auto;
+    grid-column-gap: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    @include breakpoint(w-sm) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+
+    }
+
+    &__title {
+        @include breakpoint(w-sm) {
+        grid-column-end: span 2;
+        }
+    }
+
+    p {
+        color:$color-nguva;
+        font-weight:700;
+        margin-bottom:1rem;
+    }
+
+    h5 {
+        color:$color-charcoal;
+    }
+
+    &__pub-logo {
+        align-self: center;
+        padding: 0rem 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-self:center;
+        img {
+            height:4rem;
+            min-width: 3rem;
+            max-width: 11rem;
+        }
+
+    @include breakpoint(w-sm) {
+        
+        padding: 1.5rem 0rem 0rem;
+        grid-column:2;
+
+        img {
+            height:3rem;
+            min-width: 3rem;
+            max-width: 11rem;
+        }
+
+    }
+
+    }
+
+
+}

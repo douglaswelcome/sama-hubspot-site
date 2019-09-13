@@ -1,0 +1,203 @@
+.hub-overview {
+
+    @extend %page-container;
+
+
+
+    &__window {
+        position: relative;
+        margin-bottom: 3rem;
+        height: 35rem;
+
+    }
+
+    &__demo {
+        width: 75%;
+        height: 35rem;
+        border-radius: 0 0 0 3rem;
+
+        right: 0;
+        line-height: 0;
+        position: absolute;
+        transform: translate(-1rem, 0rem);
+
+        @include breakpoint (w-sm) {
+            width: calc(100% - 1.5rem);
+            height: 20rem;
+            position: relative;
+            transform: translate(0rem, 0rem);
+            }
+
+
+            .video__backpanel {
+                height: 35rem;
+                width: 100%;
+                background-color: $color-charcoal;
+                border-radius: 0 0 0 3rem;
+                @include breakpoint (w-sm) {
+                   
+                    height: 20rem;
+                    }
+            }
+
+            video {
+
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s .5s, opacity .5s linear;
+
+                &.active {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: opacity .5s linear;
+                }
+            }
+        }
+
+
+
+        &__description {
+            position: absolute;
+            width: 35%;
+            top: 10%;
+            height:auto;
+            padding:2rem;
+
+            grid-template-columns: 1fr;
+
+            @include breakpoint (w-sm) {
+                width: calc(100% - 1.5rem);
+               position: relative;
+                }
+
+            &--bucket {
+                position:relative;
+                height: 248px;
+            }
+
+
+
+
+            &--inner-bits {
+
+                text-align: right;
+                position: absolute;
+                z-index: 1;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s .5s, opacity .5s linear;
+                height: auto;
+
+                h4 {
+                    margin-bottom: 1.5rem;
+                    @include breakpoint (w-sm){
+                        margin-bottom: .5rem;
+                    }
+                }
+
+
+                &.active {
+
+
+                    visibility: visible;
+                    opacity: 1;
+                    transition: opacity .5s .5s linear;
+
+                }
+            }
+
+
+
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 100%;
+                background-color: $color-white;
+                border: 0.2rem solid $color-kennedy;
+                border-radius: 0 0 0 3rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate3d(1rem, 1rem, 0);
+                z-index: 0;
+                
+            }
+
+            &:after {
+                content: "";
+                height: 100%;
+                width: 100%;
+                background-color: $color-white;
+                border: 0.2rem solid $color-kennedy;
+                border-radius: 0 0 0 3rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                
+            }
+        }
+
+        &__control {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            @include breakpoint (w-sm) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+
+
+        }
+
+        &__button-wrapper {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+
+            @include breakpoint(w-sm){
+                padding:.75rem;
+            }
+
+        }
+
+        &__button {
+            padding: .5rem;
+            background-color: $color-white;
+            border: 2px solid $color-charcoal-5;
+            border-radius: 0 0 1rem 0;
+            width: 100%;
+            cursor: pointer;
+            transition: .2s all ease-in-out;
+
+            &:hover {
+                background-color: $color-charcoal-8;
+                transition: .2s all ease-in-out;
+            }
+
+            &:active {
+                background-color: $color-charcoal-7;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                color: $color-charcoal-5;
+            }
+
+            &.active {
+                background-color: $color-kennedy;
+                border: 2px solid $color-kennedy;
+
+                h3 {
+                    color: $color-white;
+                }
+            }
+
+        }
+
+
+    }

@@ -1,0 +1,35 @@
+.post-listing {
+    @extend %page-container;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+
+    @include breakpoint (w-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .blog-pagination {
+    text-align: center;
+
+    &__wrapper {
+      display:inline-grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 6rem;
+
+      @include breakpoint(w-sm){
+        grid-column-gap:3rem;
+      }
+    }
+    .button--next-button {
+      grid-column: 2;
+    }
+
+    .button__content {
+      h3{
+        @include breakpoint(w-sm){
+          display:none;
+        }
+      }
+    }
+  }

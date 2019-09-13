@@ -1,0 +1,51 @@
+body,
+html {
+  font-size: $global-font-size;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x:hidden;
+
+  // &.burger-time {
+  //   height: calc(100vh - #{$mobileheaderheight});
+  //   overflow: hidden;
+  // }
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before, &::after {
+    box-sizing: border-box
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+section {
+  margin-bottom: 6rem;
+
+  @include breakpoint (w-med) {
+    margin-bottom:3rem;
+  }
+}
+
+//Global layout extends
+
+
+.content-ups {
+  position: relative;
+  z-index: 1;
+  color: $color-charcoal !important;
+}
+
+.hide-it {
+  visibility: hidden;
+}
+
+.nowrap{
+  white-space: nowrap;
+}

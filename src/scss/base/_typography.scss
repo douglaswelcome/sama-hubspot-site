@@ -1,0 +1,223 @@
+$font-brown: "Brown",
+Arial,
+sans-serif;
+$font-barlow: "Barlow Condensed",
+Arial,
+sans-serif;
+
+body {
+  font-family: $font-brown;
+  color: $color-charcoal;
+}
+
+//p tags
+
+p {
+  font-family: $font-brown;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4;
+
+  @include breakpoint(w-med) {}
+
+  @include breakpoint(w-sm) {
+    font-size: calc(.7rem + .6vw);
+  }
+
+  // margin: auto;
+}
+
+blockquote,
+p {}
+
+cite {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+//headers
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {
+  //secondary titles on page
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  @include breakpoint(w-med) {
+    font-size: calc(1rem + 2.3vw);
+  }
+}
+
+h2 {
+  //big titles
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  @include breakpoint(w-med) {
+    font-size: calc(.8rem + 3.5vw);
+  }
+}
+
+h3 {
+  font-family: $font-barlow;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding-bottom: 0.2rem;
+
+  @include breakpoint(w-med) {
+    font-size: calc(1rem + 1.8vw);
+  }
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.4;
+
+  @include breakpoint(w-med) {
+    font-size: calc(.8rem + 1.3vw);
+  }
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+
+  @include breakpoint(w-med) {
+    font-size: calc(.8rem + .9vw);
+  }
+}
+
+h6 {
+
+  //used for menus
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.unbold {
+  font-weight: 300;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 300;
+  }
+}
+
+.bold,
+b, strong {
+  font-weight: 700 !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 700 !important;
+  }
+}
+
+//lists
+
+li {}
+
+//a href's
+h3 a,
+p a,
+a>span {
+  color: $color-kennedy;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    border-bottom: 5px solid #fffa0c;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 10%;
+  }
+
+
+
+}
+
+h3 a {
+  &::before {
+    height: 77%;
+  }
+}
+
+a:hover,
+a:hover>span {
+  color: $color-kennedy-2;
+}
+
+a,
+a:hover,
+a>span,
+a>svg {
+  transition-property: box-shadow, transform, color, background-color, border-bottom-color, fill, visibility;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active,
+a:hover {}
+
+.clearlink {
+  text-decoration: underline;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {}
+
+  &:hover {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {}
+  }
+
+}
+
+//justifying text 
+
+.text-left {
+  text-align: left !important
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+
+}

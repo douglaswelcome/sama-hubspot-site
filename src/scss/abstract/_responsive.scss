@@ -1,0 +1,73 @@
+// ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
+// REM size @ 16px
+
+// $width-xxxlg: 130em; //
+// $width-xxlg: 110em; //
+$w-xlg: 1374px;
+$w-lg: 1080px;
+$w-med: 800px;
+
+$w-sm: 320px;
+// $width-xsm: 17.777em; // 320px iphone 5 width
+
+//iphone 4,5 = 320px Width
+//iphone 6+ = 375px width
+
+// ____________Heights
+// $height-sm: 31.250rem; // 500px
+// $height-med: 43.750rem; // 700px
+// $height-lg: 50.000rem; // 800px
+
+@mixin breakpoint($width) {
+  @if $width == w-xsm {
+    @media (max-width: $w-sm) {
+      @content;
+    }
+  } @else 
+  if $width == w-sm {
+    @media (max-width: $w-med) {
+      @content;
+    }
+  } @else 
+  if $width == w-med {
+    @media (max-width: $w-lg) {
+      @content;
+    }
+  } @else 
+  if $width == w-lg {
+    @media (max-width: $w-xlg) {
+      @content;
+    }
+  } @else 
+  if $width == w-xlg {
+    @media (min-width: $w-xlg) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: w-sm, w-med, w-lg, w-xlg";
+  }
+}
+
+//page-container widths
+
+$xlg-page-width: 1330px;
+$lg-page-width: 1050px;
+
+%page-container {
+  max-width: $xlg-page-width;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @include breakpoint(w-lg) {
+    max-width: $lg-page-width;
+
+  }
+  @include breakpoint(w-med) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @include breakpoint(w-sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

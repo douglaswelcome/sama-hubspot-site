@@ -1,0 +1,28 @@
+.pattern-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -10;
+
+  .pattern {
+    padding-top: 50vh;
+    will-change: transform;
+
+    img {
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 7000px;
+
+    }
+
+    &.alt1 {
+      padding-top: 65vh;
+    }
+    &.alt2 {
+      padding-top: 10vh;
+    }
+
+  }
+};
