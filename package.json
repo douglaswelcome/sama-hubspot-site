@@ -9,6 +9,14 @@
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "dotenv": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.1"
   }
 }
