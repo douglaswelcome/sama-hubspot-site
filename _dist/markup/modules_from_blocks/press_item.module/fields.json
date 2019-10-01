@@ -1,0 +1,50 @@
+[ {
+  "id" : "0a33e2e1-8a39-8f62-ffff-5de7f3515af3",
+  "name" : "press_link",
+  "label" : "press_link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "picker" : "image",
+  "id" : "dc3fffe4-9f7b-b2ff-67f0-3b2b834bdaa9",
+  "name" : "press_logo",
+  "label" : "press_logo",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/favicon/mstile-70x70.png"
+}, {
+  "id" : "882b2f2d-6e23-ebf2-a401-3d7e68e806a3",
+  "name" : "press_title",
+  "label" : "press_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "7049c94c-fe44-9e29-a6a5-480525fc8d44",
+  "name" : "press_date",
+  "label" : "press_date",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+} ]

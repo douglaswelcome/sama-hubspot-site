@@ -1,0 +1,70 @@
+[ {
+  "id" : "ba1d206a-a8e4-ea78-8d6e-de59d75f7ba6",
+  "name" : "intro_copy",
+  "label" : "intro_copy",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : null
+}, {
+  "id" : "cd6ff56b-52b5-bebf-796c-fbe9d5040e47",
+  "name" : "list_item",
+  "label" : "list_item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2a5e0bca-f480-b224-df20-fd1d76b63a7b",
+    "name" : "list_icon",
+    "label" : "list_icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : "exact"
+    }
+  }, {
+    "id" : "8185bd30-314b-c617-4bfe-48e894f83d8d",
+    "name" : "list_title",
+    "label" : "list_title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : null
+  }, {
+    "id" : "ecea5896-e3b2-01ea-d7ba-509c0892e975",
+    "name" : "list_copy",
+    "label" : "list_copy",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : null
+  } ],
+  "type" : "group",
+  "default" : {
+    "list_icon" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : "exact"
+    }
+  }
+} ]

@@ -1,0 +1,20 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/custom/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/custom/markup/blocks_static/pattern-bg.html' %}
+
+{% include '/custom/markup/blocks_static/header.html' %}
+
+{% module "module_1567350561938110" path="/custom/markup/modules_from_blocks/label_tab", label="label_tab" %}
+
+{% module "module_15657246379019" path="/custom/markup/modules_from_blocks/label_tab", label="label_tab" %}
+
+{% include '/custom/markup/blocks_static/map.html' %}
+
+{% include '/custom/markup/blocks_static/footer.html' %}
+
+{% endblock %}

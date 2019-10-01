@@ -1,0 +1,26 @@
+<!--
+    templateType: blog
+    isAvailableForNewContent: true
+-->
+{% extends 'custom/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include 'custom/markup/blocks_static/pattern-bg1.html' %}
+
+{% include 'custom/markup/blocks_static/header.html' %}
+
+
+
+
+{% include 'custom/markup/blocks_to_convert/blog/blog-post-hero.html' %}
+
+{% include 'custom/markup/blocks_to_convert/blog/blog-post-body.html' %}
+
+{% include 'custom/markup/blocks_to_convert/blog/blog-bio.html' %}
+
+
+{% include 'custom/markup/blocks_static/footer.html' %}
+
+
+
+{% endblock %}

@@ -1,0 +1,198 @@
+[ {
+  "id" : "93a0f46f-6fdf-af93-7815-0f21e3504864",
+  "name" : "contact_form",
+  "label" : "contact_form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "c1b6d083-371e-49c3-8745-6315ddee97a0",
+    "response_type" : "redirect",
+    "redirect_url" : "https://www.samasource.com/home",
+    "redirect_id" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "d041e17b-6762-d0a2-7c84-cbdb1f4ebfe2",
+  "name" : "asset_img",
+  "label" : "asset_img",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : "exact"
+  }
+}, {
+  "id" : "a762b33a-7787-bb11-b403-f2a163b47fb5",
+  "name" : "title_block",
+  "label" : "title_block",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Talk to a Sales Expert"
+}, {
+  "id" : "0e51fb65-17ce-a690-6df0-a837a0af696a",
+  "name" : "text_block1",
+  "label" : "text_block1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : true,
+  "type" : "text",
+  "default" : "Put Your Stuff Here"
+}, {
+  "id" : "1d833024-dd9b-32ed-fa96-4e8b1b38c2b5",
+  "name" : "text_block2",
+  "label" : "text_block2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : true,
+  "type" : "text",
+  "default" : "Put Your Stuff Here"
+}, {
+  "id" : "4e0b4c15-958e-7d35-c5e3-37528c14de3a",
+  "name" : "bullet_icon1",
+  "label" : "bullet_icon1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/icons/accuracy2.svg",
+    "alt" : "accuracy2",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "6adbee80-24c1-fbd8-b206-59e5b7e17fef",
+  "name" : "bullet_text1",
+  "label" : "bullet_text1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "c7e3aa2e-266e-447c-0510-03d3a9cafa32",
+  "name" : "bullet_icon2",
+  "label" : "bullet_icon2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/icons/accuracy2.svg",
+    "alt" : "accuracy2",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "e13a01b4-1d55-0107-a3b8-adb924e2818d",
+  "name" : "bullet_text2",
+  "label" : "bullet_text2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "13469092-a9d5-0090-f733-79fd53ee1514",
+  "name" : "bullet_icon3",
+  "label" : "bullet_icon3",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/icons/accuracy2.svg",
+    "alt" : "accuracy2",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "c159683e-c8c2-9bf2-5178-3a5d6c8f9b75",
+  "name" : "bullet_text3",
+  "label" : "bullet_text3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "4b1007a6-cf62-8b87-f9e8-0e2d668a92a5",
+  "name" : "bullet_icon4",
+  "label" : "bullet_icon4",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/icons/accuracy2.svg",
+    "alt" : "accuracy2",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "13d6ee79-6717-073e-9370-020ac1db8fc3",
+  "name" : "bullet_text4",
+  "label" : "bullet_text4",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "782352bc-471b-03ff-9494-39bfc910b3c4",
+  "name" : "bullet_icon5",
+  "label" : "bullet_icon5",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/icons/accuracy2.svg",
+    "alt" : "accuracy2",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "1e205087-567b-6247-b905-84689ddbffef",
+  "name" : "bullet_text5",
+  "label" : "bullet_text5",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

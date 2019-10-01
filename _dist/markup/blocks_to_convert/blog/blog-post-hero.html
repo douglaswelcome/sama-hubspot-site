@@ -1,0 +1,45 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+<section class="blog-post-hero">
+  <div class="blog-hero-img-wrapper">
+    <div class="blog-hero-img" style="
+  {% if content.post_list_summary_featured_image %}
+  background-image:url(
+    {{ content.post_list_summary_featured_image }}
+    {# {{staticbase}}img/goldblum.jpg #}
+    ) {% endif %}
+  ">
+    </div>
+    <img src="{{staticbase}}img/yellow-dots.svg" class="yellow-dotty" />
+  </div>
+  </div>
+  <div class="blog-title">
+    <h1 class="content-ups">{{ content.name }}</h1>
+    <!-- <div class="content-ups divider-line"></div> -->
+    <h3 class="content-ups" id="author">
+      <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+        {{ content.blog_post_author.display_name }}
+      </a>
+    </h3>
+    <div class="lower-wrapper">
+      <h3 class="content-ups" id="date">{{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}</h3>
+      <div class="content-ups divider-line"></div>
+
+      <h3 class="content-ups" id="read-time">
+        {% set initialPostWords = content.post_body|wordcount %}
+        {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+        {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+        {% set number = finishedPostWords|round %}
+        {% if number < 1 %}
+        1 minute read
+        {% else %}
+        {{ finishedPostWords|round }} minute read
+        {% endif %}
+      </h3>
+    </div>
+
+
+  </div>
+</section>

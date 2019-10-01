@@ -1,0 +1,15 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+{% if topic %}
+{% include 'custom/markup/blocks_to_convert/blog/blog-topic-hero.html' %}
+
+{% elif blog_author %} 
+
+{% include 'custom/markup/blocks_to_convert/blog/blog-author-hero.html' %}
+
+{% else %}
+  {% include 'custom/markup/blocks_to_convert/blog/blog-home-hero.html' %}
+
+{% endif %}

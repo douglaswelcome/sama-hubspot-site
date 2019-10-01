@@ -29,7 +29,7 @@ const jsSinglesPaths = [
 ];
 
 
-//CSS Tasks
+//CSS Tasks_____________________
 
 function scss() {
     return gulp
@@ -49,7 +49,7 @@ function scss() {
     //   .pipe(server.stream());
 }
 
-//JS Tasks
+//JS Tasks__________________________
 
 function jsCompiled() {
     return gulp.src(jsCompiledPaths)
@@ -69,7 +69,7 @@ function jsSingles() {
         .pipe(gulp.dest('_dist/assets/js/'));
 }
 
-//FTP Shizz
+//FTP Shizz______________________
 
 /** Configuration **/
 const user = process.env.FTP_USER
@@ -80,6 +80,8 @@ const localGlob = [
     '_assetDist/**/*'
 ]
 const remoteFolder = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
+
+
 
 async function assetDeploy() {
  
@@ -104,6 +106,8 @@ async function assetDeploy() {
 
 
 gulp.task(scss);
+exports.js = gulp.series(jsCompiled, jsSingles);
+
 gulp.task(jsCompiled);
 gulp.task(jsSingles);
 gulp.task(assetDeploy)

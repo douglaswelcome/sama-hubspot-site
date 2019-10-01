@@ -1,0 +1,33 @@
+<section class="homepage-hero-old">
+  <div
+    class="hero-img"
+    style="background-image:url({{ module.hp_hero_bg }})">
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>{{ module.home_h1 }}</h1>
+        <h2>{{ module.home_h2 }}</h2>
+            
+      <div class="cta-block">
+        
+        {% if module.home_cta %}
+        {% set href = module.home_cta_link.url.href %}
+{% if module.home_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.home_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.home_cta_link.no_follow %}rel="nofollow"{% endif %}
+	>
+          <button class="btn">
+            <h3 class="btn__content">{{ module.home_cta }}</h3>
+          </button>
+</a>
+          
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="{{staticbase}}img/yellow-stamp.svg" class="stamp"/>
+</section>

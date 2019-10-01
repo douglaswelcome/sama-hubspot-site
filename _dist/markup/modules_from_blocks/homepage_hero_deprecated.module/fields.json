@@ -1,0 +1,61 @@
+[ {
+  "id" : "552d7425-58ba-3ec9-b795-a75cf0e7b47e",
+  "name" : "home_h1",
+  "label" : "home_h1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Party On Dudes, Forever"
+}, {
+  "id" : "14e92bb9-b086-1a63-caf6-9e224cada1e9",
+  "name" : "home_h2",
+  "label" : "home_h2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Yeah Boyz. Cause its hot in here and you like it that way."
+}, {
+  "picker" : "image",
+  "id" : "ab29aae0-6956-8f17-e9a8-8d42ecf9a3aa",
+  "name" : "hp_hero_bg",
+  "label" : "hp_hero_bg",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/jeffy.jpg"
+}, {
+  "id" : "4f5cfcc4-837e-ff05-df21-797e6eefa4c3",
+  "name" : "home_cta",
+  "label" : "home_cta",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "3bb9fd7d-241d-c97d-7c9c-33e2c02e2493",
+  "name" : "home_cta_link",
+  "label" : "home_cta_link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "http://www.weirdnj.com",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]
