@@ -23,6 +23,8 @@ function pressSlider() {
 
 }
 
+
+
 $(pressSlider());
 
 

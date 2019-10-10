@@ -1,0 +1,20 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/markup/blocks_static/header.html' %}
+
+{% module "module_156498274538751" path="/custom/markup/modules_from_blocks/label_tab", label="label_tab" %}
+
+{% module "module_156498318654667" path="/custom/markup/modules_from_blocks/two_block_contact", label="two_block_contact" %}
+
+
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}
