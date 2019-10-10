@@ -24,7 +24,7 @@
   },
   "scripts": {
     "devzone": "gulp watch, hs watch",
-    "hubupDEV": "hs upload --portal=DEV _codeDist . --overwrite",
+    "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist ."
   }
 }
