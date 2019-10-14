@@ -8,13 +8,18 @@ const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 const gutil = require('gulp-util');
 const ftp = require('vinyl-ftp');
+const newer = require('gulp-newer');
+const imagemin = require('gulp-imagemin');
+const changed = require('gulp-changed');
 
 
 
 const watchPaths = {
     scssSrc: '_src/scss/**/*.scss',
     jsSrcCompile: '_src/js/compile/**/*.js',
-    jsSrcSingles: '_src/js/singles/**/*.js'
+    jsSrcSingles: '_src/js/singles/**/*.js',
+    imgSrc: '_src/img/**/*',
+    assetLocal: '_assetDist/img/testftp/*'
 }
 
 const jsCompiledPaths = [
@@ -69,6 +74,18 @@ function jsSingles() {
         .pipe(gulp.dest('_codeDist/assets/js/'));
 }
 
+
+// fix those damn huge ass images
+
+async function imgOpt () {
+    gulp.src(watchPaths.imgSrc)
+        .pipe(newer('_assetDist/img/'))
+		.pipe(imagemin())
+		.pipe(gulp.dest('_assetDist/img/'))
+}
+
+
+
 //FTP Shizz______________________
 
 /** Configuration **/
@@ -76,16 +93,18 @@ const user = process.env.FTP_USER
 const password = process.env.FTP_PWD
 const host = 'ftp.hubapi.com'
 const port = 3200
-const assetLocalGlob = '_assetDist/**/*'
+const assetRemoteFolderDEV = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
+const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/testftp/'
+
 // const codeLocalGlob = '_codeDist/**/*'
 
 
-const assetRemoteFolder = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
+
 // const codeRemoteFolder = '/portals/6398568-hubspot-developers-34rjat_com/content/designs/'
 
 
 //non-codey things deploy to File Manager
-async function assetDeploy() {
+async function assetDeploy(status) {
  
     var conn = ftp.create( {
         host:     host,
@@ -94,15 +113,16 @@ async function assetDeploy() {
         password: password,
         parallel: 5,
         log:      gutil.log,
-        secure: true
+        secure: true,
+        
     } );
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
  
-    return gulp.src( assetLocalGlob, { base: '.', buffer: false } )
-        .pipe( conn.newer( assetRemoteFolder ) ) // only upload newer files
-        .pipe( conn.dest( assetRemoteFolder ) );
+    return gulp.src(watchPaths.assetLocal, { base: '', buffer: false } )
+        .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
+        .pipe(conn.dest(assetRemoteFolderPROD));
  
 }
 
@@ -132,30 +152,30 @@ async function assetDeploy() {
 
 
 gulp.task(assetDeploy);
+gulp.task(imgOpt);
 gulp.task(scss);
 gulp.task(jsCompiled);
 gulp.task(jsSingles);
 
 
-
-
 //watchers
 
-function watchFiles () {
+function watchCodeFiles () {
     gulp.watch(watchPaths.scssSrc, scss);
     // gulp.watch(watchPaths.htmlSrc, reload);
     gulp.watch(watchPaths.jsSrcCompile, jsCompiled);
     gulp.watch(watchPaths.jsSrcSingles,jsSingles);
-    gulp.watch(assetLocalGlob, assetDeploy)
+
 }
 
+async function watchAssetFiles () {
+    gulp.watch(watchPaths.imgSrc, imgOpt);
+    gulp.watch(watchPaths.assetLocal, assetDeploy)
+}
 
-// exports.default = gulp.series(scss, js, serve, watchFiles);
-gulp.task(watchFiles);
-//change in scss
-
-// function watchFiles () {
-//     gulp.watch(paths.scssSrc, gulp.series(scss)
-// }
+gulp.task(watchCodeFiles);
+gulp.task(watchAssetFiles);
 
 
+
+exports.maxzone = gulp.parallel(watchCodeFiles, watchAssetFiles)

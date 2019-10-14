@@ -27,13 +27,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {{ standard_header_includes|replace('<script src="/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script>', '')  }}
   {{ require_css(get_public_template_url("/assets/css/main.css")) }}
 
-  {% set allyourbase = "https://cdn2.hubspot.net/hubfs/4379491/" %} 
+  {% set staticbase = "https://www.samasource.com/hubfs/custom/assets/static-assets/" %} 
   {# {% set allyourbase = "/file_manager/" %} #}
-   {% set staticbase = allyourbase + "assetDist/" %}
+  
 
 
 <!--doesn't have much impact because pages are created in hubspot anyway -->
-  {% set linkurl = "http://samasource-4379491-hs-sites-com.sandbox.hs-sites.com/" %}
+{# {% set linkurl = "http://samasource-4379491-hs-sites-com.sandbox.hs-sites.com/" %} #}
 
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />

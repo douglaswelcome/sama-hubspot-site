@@ -4,27 +4,30 @@
   "description": "A dev setup for the Samasource Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devzone": "concurrently --kill-others --raw \"gulp watchCodeFiles\" \"npx hs watch --portal=DEV _codeDist/ .\"",
+    "assetzone": "gulp watchAssetFiles",
+    "hubupDEV": "hs upload --portal=DEV _codeDist . ",
+    "hubupPROD": "hs upload --portal=PROD _codeDist ."
   },
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^5.0.0",
     "dotenv": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
+    "gulp-changed": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-newer": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
-    "vinyl-ftp": "^0.6.1"
+    "vinyl-ftp": "^0.6.1",
+    "yargs": "^14.2.0"
   },
   "dependencies": {
     "@hubspot/cms-cli": "0.0.26"
-  },
-  "scripts": {
-    "devzone": "gulp watch, hs watch",
-    "hubupDEV": "hs upload --portal=DEV _codeDist . ",
-    "hubupPROD": "hs upload --portal=PROD _codeDist ."
   }
 }
