@@ -119,7 +119,8 @@ h6 {
 }
 
 .bold,
-b, strong {
+b,
+strong {
   font-weight: 700 !important;
 
   h1,
@@ -138,7 +139,8 @@ li {}
 //a href's
 h3 a,
 p a,
-a>span {
+a>span,
+h4>a {
   color: $color-kennedy;
   font-weight: 700;
   position: relative;

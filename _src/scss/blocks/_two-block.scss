@@ -13,7 +13,7 @@
 
     text-align: right;
 
-    @include breakpoint (w-sm){
+    @include breakpoint (w-sm) {
       text-align: left;
     }
 
@@ -87,10 +87,10 @@
   &--longform {
     align-content: flex-start;
     grid-template-columns: 1fr 30%;
-  
+
 
     &two-block--thank-you {
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
     }
 
 
@@ -104,7 +104,7 @@
       align-self: flex-start;
 
       @include breakpoint(w-med) {
-        padding:0;
+        padding: 0;
       }
 
 
@@ -112,49 +112,50 @@
   }
 
   h1.two-block__asset-title {
-      margin-bottom:0;
-  
+    margin-bottom: 0;
+
   }
 
   .form-card {
-    margin-left:.5rem;
-    margin-right:.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     justify-self: center;
     align-self: self-start;
+
     @include breakpoint(w-med) {
-      max-width:30rem
+      max-width: 30rem
     }
   }
 
   &__rich-body {
-    padding-left:1.5rem;
+    padding-left: 1.5rem;
   }
 
   &__lp-upper {
-    display:grid;
+    display: grid;
     grid-template-columns: 30% 1fr;
     align-items: center;
-    grid-column-gap:1.25rem;
-margin-bottom:3rem;
+    grid-column-gap: 1.25rem;
+    margin-bottom: 3rem;
 
-@include breakpoint (w-sm){
-  grid-template-columns: 1fr;
-  grid-row-gap:1.5rem;
-  margin-bottom:1.5rem;
-}
-    
+    @include breakpoint (w-sm) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
 
-    
+
+
   }
 
   &__asset-wrapper {
-    
+
 
     img {
       margin-left: auto;
       margin-right: auto;
-      width:100%;
-      
+      width: 100%;
+
     }
   }
 
@@ -190,6 +191,40 @@ margin-bottom:3rem;
     ul {
       padding-left: 3rem;
     }
+  }
+
+  &--cards {
+    @include breakpoint(w-sm){
+      grid-row-gap0rem;
+
+    }
+  }
+  &__copy--cards {
+    height:100%;
+    margin:0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint(w-lg){
+      margin:0 1.5rem;
+
+    }
+
+    @include breakpoint(w-med){
+      margin:0rem;
+
+    }
+    .divider-line {
+      margin-left: auto;
+    }
+  }
+  &__card-title {
+    font-size:1.5rem;
+  }
+  &__button-wrapper {
+    padding-right:.25rem;
+    
   }
 }
 
@@ -284,4 +319,6 @@ margin-bottom:3rem;
     }
 
   }
+
+
 }

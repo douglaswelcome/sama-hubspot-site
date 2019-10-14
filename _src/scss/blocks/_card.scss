@@ -1,5 +1,7 @@
 .card {
     position:relative;
+    border-radius: 0 0 0 3rem;
+    padding:2.25rem;
     &--dark{
         background-color:$color-tembo;
     }
@@ -25,8 +27,7 @@
         }
     }
 
-    border-radius: 0 0 0 3rem;
-    padding:1.5rem;
+    
 
     &--outline {
         &::before {
