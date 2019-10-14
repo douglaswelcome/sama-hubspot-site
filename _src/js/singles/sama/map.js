@@ -47,6 +47,30 @@ var offices = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -83.994403, 9.902545
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "Building 1, 3rd Floor",
+                "address": "Terra Campus Corporativo",
+                "city": "Tres Rios",
+                "country": "Costa Rica",
+                "crossStreet": "",
+                "postalCode": "",
+                "state": "Cartago Province"
+            }
+        },
+
+
+
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -73.596279, 45.527560
                 ]
             },
