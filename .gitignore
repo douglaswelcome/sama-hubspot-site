@@ -90,5 +90,7 @@ typings/
 
 #hubspot config
 hubspot.config.yml
+hubspot.config.yaml
 
-.env
+_src/img/**/*
+_assetDist/**/*

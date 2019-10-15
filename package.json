@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
+    "js-yaml": "^3.13.1",
     "vinyl-ftp": "^0.6.1",
     "yargs": "^14.2.0"
   },
