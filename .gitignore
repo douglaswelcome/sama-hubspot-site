@@ -90,5 +90,4 @@ typings/
 
 #hubspot config
 hubspot.config.yml
-
-.env
+hubspot.config.yaml
