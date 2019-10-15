@@ -22,7 +22,7 @@ jobs:
     - name: Generate hubspot.config.yml and deploy
       env:
         HUBSPOT_PORTAL_ID: 4379491
-        HUBSPOT_API_KEY: ${{ secrets.HubSpotApiKey }}
+        HUBSPOT_API_KEY: ${{ secrets.MyHubApiKey }}
       run: |
         bin/generate-config.js
         bin/deploy.sh
