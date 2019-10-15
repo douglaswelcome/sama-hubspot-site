@@ -114,6 +114,8 @@ async function assetDeploy(status) {
         parallel: 5,
         log:      gutil.log,
         secure: true,
+        timeOffset: 280
+        
         
     } );
 
@@ -121,9 +123,9 @@ async function assetDeploy(status) {
     // turn off buffering in gulp.src for best performance
  
     return gulp.src(watchPaths.assetLocal, { base: '', buffer: false } )
+        // .pipe(conn.changed(assetRemoteFolderPROD))
         .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
         .pipe(conn.dest(assetRemoteFolderPROD));
- 
 }
 
 // //codey things deploy to Design Manager
@@ -175,6 +177,14 @@ async function watchAssetFiles () {
 
 gulp.task(watchCodeFiles);
 gulp.task(watchAssetFiles);
+
+
+
+async function testing (){
+    gulp.watch(watchPaths.assetLocal, assetDeploy)
+}
+
+gulp.task(testing)
 
 
 
