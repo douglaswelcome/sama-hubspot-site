@@ -29,6 +29,8 @@
     "yargs": "^14.2.0"
   },
   "dependencies": {
-    "@hubspot/cms-cli": "0.0.26"
+    "@hubspot/cms-cli": "0.0.26",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
   }
 }
