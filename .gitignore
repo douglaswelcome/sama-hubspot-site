@@ -93,3 +93,4 @@ hubspot.config.yml
 hubspot.config.yaml
 
 _src/img/**/*
+_assetDist/**/*
