@@ -1,0 +1,31 @@
+{
+  "hsModule": {
+    "prefix": [
+      "hsModule"
+    ],
+    "body": [
+      "{% module \"module_$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE$CURRENT_HOUR$CURRENT_MINUTE$CURRENT_SECOND\" path=\"/markup/modules_from_blocks/${4:moduleName}\", label=\"${4:moduleName}\" %}",
+    ],
+    "description": "Choice-Type Field"
+  },
+  "hsField--choice": {
+    "prefix": [
+      "hsField--choice"
+    ],
+    "body": [
+      "{",
+      "\"name\" : \"${1:fieldName}\",",
+      "\"label\" : \"${2:Field Label}\",",
+      "\"sortable\" : false,",
+      "\"required\" : false,",
+      "\"locked\" : false,",
+      "\"display\" : \"${3|select,radio|}\",",
+      "\"choices\" : [[\"${4:choice1}\",\"${4:choice1}\"],[\"${5:choice2}\",\"${5:choice2}\"],[\"${6:choice3}\",\"${6:choice3}\"]],",
+      "\"type\" : \"choice\",",
+      "\"default\" : \"${4:choice1}\"",
+      "}"
+    ],
+    "description": "Choice-Type Field"
+  },
+
+}
