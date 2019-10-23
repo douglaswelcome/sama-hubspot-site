@@ -1,11 +1,47 @@
 .table {
     width: 100%;
+    border-spacing: 0;
+
+    th,
+    td {
+        padding: 1rem 1.5rem;
+    }
 
     &__module-wrapper {
         @extend %page-container;
     }
-    text-align:left;
-    
 
+    text-align:left;
+
+    thead>tr {
+        border-radius: 0 0 1.5rem 0;
+    }
+
+    &__head {
+        border-color: $color-kennedy-2;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+
+
+
+        &:last-child() {
+            border-radius: 0 0 1.5rem 0;
+            border-width: 0 2px 2px 0;
+        }
+
+    }
+
+    &__body {
+
+        border-color: $color-charcoal-7;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+
+    }
 
 }

@@ -8,7 +8,7 @@
     "assetzone": "gulp watchAssetFiles",
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
-    "pullModules": "npx hs fetch --portal=DEV markup/modules_from_blocks/  _codeDist/markup/modules_from_blocks/ "
+    "pullModules": "hs fetch --portal=DEV --overwrite  /markup/modules_from_blocks/  /_codeDist/markup/modules_from_blocks/ "
   },
   "author": "Douglas Welcome",
   "license": "MIT",
