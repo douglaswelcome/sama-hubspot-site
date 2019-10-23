@@ -94,3 +94,5 @@ hubspot.config.yaml
 
 _src/img/**/*
 _assetDist/**/*
+
+local-hubl-server/**/*

@@ -11,6 +11,7 @@ const ftp = require('vinyl-ftp');
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+const browserSync = require('browser-sync').create();
 
 
 
@@ -79,7 +80,7 @@ function jsSingles() {
 
 async function imgOpt () {
     gulp.src(watchPaths.imgSrc)
-        .pipe(newer('_assetDist/img/'))
+        // .pipe(newer('_assetDist/img/'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('_assetDist/img/'))
 }
@@ -153,21 +154,16 @@ async function assetDeploy(status) {
 
 
 
-gulp.task(assetDeploy);
-gulp.task(imgOpt);
-gulp.task(scss);
-gulp.task(jsCompiled);
-gulp.task(jsSingles);
-
 
 //watchers
+
+
 
 function watchCodeFiles () {
     gulp.watch(watchPaths.scssSrc, scss);
     // gulp.watch(watchPaths.htmlSrc, reload);
     gulp.watch(watchPaths.jsSrcCompile, jsCompiled);
     gulp.watch(watchPaths.jsSrcSingles,jsSingles);
-
 }
 
 async function watchAssetFiles () {
@@ -177,6 +173,12 @@ async function watchAssetFiles () {
 
 gulp.task(watchCodeFiles);
 gulp.task(watchAssetFiles);
+gulp.task(assetDeploy);
+gulp.task(imgOpt);
+gulp.task(scss);
+gulp.task(jsCompiled);
+gulp.task(jsSingles);
+gulp.task(serve);
 
 
 
@@ -186,6 +188,32 @@ async function testing (){
 
 gulp.task(testing)
 
+function serve (done) {
+    browserSync.init({
+        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/-temporary-slug-d18912b1-c8b6-4849-8841-2de5046f87c3?hs_preview=MvaNeNDJ-18105079929"
+    });
+    done();
+  
+}
+
+function reload (done) {
+    browserSync.reload();
+    console.log('donker');
+    done();
+  }
 
 
-exports.maxzone = gulp.parallel(watchCodeFiles, watchAssetFiles)
+
+
+
+function watcher() {
+    gulp.watch('_codeDist/**/*', reload);
+    
+}
+
+
+
+
+const maxzone = gulp.parallel(watchCodeFiles, watchAssetFiles);
+
+exports.dev = gulp.parallel(maxzone, gulp.series(serve, watcher))

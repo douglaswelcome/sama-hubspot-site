@@ -194,7 +194,7 @@
   }
   &--cards {
     @include breakpoint(w-sm){
-      grid-row-gap:0rem;
+      grid-row-gap:3rem;
 
     }
   }
