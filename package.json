@@ -4,7 +4,7 @@
   "description": "A dev setup for the Samasource Website",
   "main": "index.js",
   "scripts": {
-    "devzone": "concurrently --kill-others --raw \"gulp watchCodeFiles\" \"npx hs watch --portal=DEV _codeDist/ .\"",
+    "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
     "assetzone": "gulp watchAssetFiles",
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
@@ -13,6 +13,7 @@
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "concurrently": "^5.0.0",
     "dotenv": "^8.1.0",
     "gulp": "^4.0.2",

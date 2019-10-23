@@ -1,0 +1,11 @@
+.table {
+    width: 100%;
+
+    &__module-wrapper {
+        @extend %page-container;
+    }
+    text-align:left;
+    
+
+
+}
