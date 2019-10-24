@@ -1,18 +1,25 @@
 <section class="table__module-wrapper">
+  
     <table class="table">
-        <thead class="table__head">
+        <thead >
             <tr>
-                <th>Element 1</th>
-                <th>Element 1</th>
-                <th>Element 1</th>
+                {% for column in module.column_group %}
+                <th class="table__head"><h3>{{ column.column_header }}</h3></th>
+                {% endfor %}
+
             </tr>
+          
         </thead>
-        <tbody class="table__body">
+        
+        <tbody >
+          {% for row in module.rows %}
             <tr>
-                <td>The table body</td>
-                <td>with two columns</td>
-                <td>with two columns</td>
+            {% for item in row.items_in_row %}
+                <td class="table__body"><p>{{ item.row_item }}</p></td>
+               {% endfor %} 
             </tr>
+          {% endfor %}
+
         </tbody>
     </table>
 </section>

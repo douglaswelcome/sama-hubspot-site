@@ -190,7 +190,7 @@ gulp.task(testing)
 
 function serve (done) {
     browserSync.init({
-        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/-temporary-slug-d18912b1-c8b6-4849-8841-2de5046f87c3?hs_preview=MvaNeNDJ-18105079929"
+        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/"
     });
     done();
   

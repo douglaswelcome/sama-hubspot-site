@@ -59,6 +59,7 @@
     "type" : "text",
     "default" : null
   } ],
+  "tab" : "CONTENT",
   "type" : "group",
   "default" : {
     "list_icon" : {
