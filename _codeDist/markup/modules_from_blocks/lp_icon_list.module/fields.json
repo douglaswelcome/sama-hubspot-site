@@ -1,1 +1,69 @@
-[ ]
+[ {
+  "id" : "6850e57a-fd7f-e8e1-a720-10827a4c3623",
+  "name" : "list_item",
+  "label" : "list_item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5aa01f9d-e9c3-7b49-a4cd-3328840cf649",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "aa90e38d-a183-1ea4-3ef6-9d35f1883446",
+    "name" : "list_icon",
+    "label" : "list_icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/favicon/samalock@1x.svg",
+      "alt" : "samalock@1x",
+      "width" : 518,
+      "height" : 518,
+      "max_width" : 518,
+      "max_height" : 518
+    }
+  }, {
+    "id" : "5aa01f9d-e9c3-7b49-a4cd-3328840cf649",
+    "name" : "list_title",
+    "label" : "list_title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Hee Haw"
+  }, {
+    "id" : "953bbb1d-7168-77e5-03d1-ad6f5949d1dc",
+    "name" : "list_copy",
+    "label" : "list_copy",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "I want a big one. Not one for one night. One for a thousand and one nights."
+  } ],
+  "tab" : "CONTENT",
+  "type" : "group",
+  "default" : {
+    "list_icon" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/favicon/samalock@1x.svg",
+      "alt" : "samalock@1x",
+      "width" : 518,
+      "height" : 518,
+      "max_width" : 518,
+      "max_height" : 518
+    },
+    "list_title" : "Hee Haw",
+    "list_copy" : "I want a big one. Not one for one night. One for a thousand and one nights."
+  }
+} ]
