@@ -11,15 +11,6 @@
   "type" : "text",
   "default" : null
 }, {
-  "picker" : "image",
-  "id" : "ba5c0901-fc9e-096e-f9c0-c04e16e37c8a",
-  "name" : "block1_img",
-  "label" : "block1_img",
-  "required" : false,
-  "locked" : false,
-  "type" : "file",
-  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
-}, {
   "id" : "e7dd66e4-8f01-99ab-96cb-f0d4fc10ac37",
   "name" : "title_size",
   "label" : "title_size",
@@ -29,6 +20,15 @@
   "choices" : [ [ "null", "regular" ], [ "small", "small" ] ],
   "type" : "choice",
   "default" : "null"
+}, {
+  "picker" : "image",
+  "id" : "ba5c0901-fc9e-096e-f9c0-c04e16e37c8a",
+  "name" : "block1_img",
+  "label" : "block1_img",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
 }, {
   "id" : "91c0aad2-1e48-a1c7-a670-6c221e42d5b7",
   "name" : "block1_title",
@@ -60,7 +60,7 @@
   "required" : false,
   "locked" : false,
   "type" : "file",
-  "default" : null
+  "default" : "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/headshots/Loic_headshot.png"
 }, {
   "id" : "f9513693-5a40-046a-1574-d1ed29e0eb9f",
   "name" : "block2_title",

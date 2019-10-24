@@ -20,7 +20,7 @@ const watchPaths = {
     jsSrcCompile: '_src/js/compile/**/*.js',
     jsSrcSingles: '_src/js/singles/**/*.js',
     imgSrc: '_src/img/**/*',
-    assetLocal: '_assetDist/img/testftp/*'
+    assetLocal: '_assetDist/img/**/*'
 }
 
 const jsCompiledPaths = [
@@ -80,7 +80,7 @@ function jsSingles() {
 
 async function imgOpt () {
     gulp.src(watchPaths.imgSrc)
-        // .pipe(newer('_assetDist/img/'))
+        .pipe(newer('_assetDist/img/'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('_assetDist/img/'))
 }
@@ -124,7 +124,7 @@ async function assetDeploy(status) {
     // turn off buffering in gulp.src for best performance
  
     return gulp.src(watchPaths.assetLocal, { base: '', buffer: false } )
-        // .pipe(conn.changed(assetRemoteFolderPROD))
+        // .pipe(conn.newer(assetRemoteFolderPROD))
         .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
         .pipe(conn.dest(assetRemoteFolderPROD));
 }
