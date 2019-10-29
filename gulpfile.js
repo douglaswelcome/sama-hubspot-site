@@ -95,7 +95,7 @@ const password = process.env.FTP_PWD
 const host = 'ftp.hubapi.com'
 const port = 3200
 const assetRemoteFolderDEV = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
-const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/testftp/'
+const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/'
 
 // const codeLocalGlob = '_codeDist/**/*'
 
