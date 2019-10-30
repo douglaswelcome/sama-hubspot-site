@@ -20,7 +20,7 @@ const watchPaths = {
     jsSrcCompile: '_src/js/compile/**/*.js',
     jsSrcSingles: '_src/js/singles/**/*.js',
     imgSrc: '_src/img/**/*',
-    assetLocal: '_assetDist/img/**/*'
+    assetLocal: '_assetDist/**/*'
 }
 
 const jsCompiledPaths = [
@@ -95,7 +95,7 @@ const password = process.env.FTP_PWD
 const host = 'ftp.hubapi.com'
 const port = 3200
 const assetRemoteFolderDEV = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
-const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/'
+const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/'
 
 // const codeLocalGlob = '_codeDist/**/*'
 
@@ -125,7 +125,7 @@ async function assetDeploy(status) {
  
     return gulp.src(watchPaths.assetLocal, { base: '', buffer: false } )
         // .pipe(conn.newer(assetRemoteFolderPROD))
-        .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
+        // .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
         .pipe(conn.dest(assetRemoteFolderPROD));
 }
 
@@ -216,4 +216,4 @@ function watcher() {
 
 const maxzone = gulp.parallel(watchCodeFiles, watchAssetFiles);
 
-exports.dev = gulp.parallel(maxzone, gulp.series(serve, watcher))
+exports.dev = gulp.parallel(watchCodeFiles, gulp.series(serve, watcher))
