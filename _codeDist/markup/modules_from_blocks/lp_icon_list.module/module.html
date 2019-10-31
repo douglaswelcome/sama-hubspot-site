@@ -10,9 +10,16 @@
       <div class="icon-list__row">
         <img src="{{ item.list_icon.src }}"
           class="icon-list__icon">
+
+          {% if item.list_title_shouty == true %}
         <h3 class="icon-list__copy icon-list__title-copy bold">
           {{ item.list_title }}
         </h3>
+        {% else %}
+        <h2 class="icon-list__copy icon-list__title-copy bold">
+          {{ item.list_title }}
+        </h2>
+        {% endif %}
       </div>
       <div class="icon-list__row">
         {% if item.list_copy %}

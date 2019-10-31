@@ -50,6 +50,14 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "I want a big one. Not one for one night. One for a thousand and one nights."
+  }, {
+    "name": "list_title_shouty",
+    "label": "list_title_shouty",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false 
   } ],
   "tab" : "CONTENT",
   "type" : "group",
@@ -64,6 +72,7 @@
       "max_height" : 518
     },
     "list_title" : "Hee Haw",
+    "list_title_shouty" : false,
     "list_copy" : "I want a big one. Not one for one night. One for a thousand and one nights."
   }
 } ]
