@@ -1,0 +1,14 @@
+        <mj-section
+            background-url="https://source.unsplash.com/random/800x600"
+            background-size="cover" background-repeat="no-repeat">
+
+            <mj-column >
+
+                <mj-text align="center" color="#fff" font-size="40px">Slogan here</mj-text>
+
+                <mj-button background-color="#F63A4D" href="#">
+                    boom time
+                </mj-button>
+            </mj-column>
+
+        </mj-section>

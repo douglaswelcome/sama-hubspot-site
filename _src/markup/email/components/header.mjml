@@ -1,0 +1,6 @@
+        <mj-section>
+            <mj-column>
+                <mj-image width="250px"
+                    src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo.svg"></mj-image>
+            </mj-column>
+        </mj-section>

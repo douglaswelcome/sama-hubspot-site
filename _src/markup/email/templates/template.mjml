@@ -1,0 +1,32 @@
+<mjml>
+<mj-head>
+    <mj-attributes>
+        <mj-font name="Brown-Light" href="https://www.samasource.com/hubfs/custom/assets/static-assets/fonts/Brown/Brown-Light.woff2" />
+        <mj-font name="Brown-Bold" href="https://www.samasource.com/hubfs/custom/assets/static-assets/fonts/Brown/Brown-Bold.woff2" />
+      <mj-all font-family="Brown-Light" />
+    </mj-attributes>
+    <mj-preview>Things to address</mj-preview>
+  </mj-head>
+    <mj-body>
+
+      
+      <!-- Company Header -->
+        <mj-include path="../components/header.mjml" />
+
+        <!-- Image Header -->
+        <mj-include path ="../components/hero.mjml"/>
+
+        <!-- Introduction Text -->
+        <mj-include path ="../components/rich-text.mjml"/>
+
+        <!-- 2 columns section -->
+        <mj-section background-color="white"></mj-section>
+
+        <!-- Icons -->
+        <mj-section background-color="#fbfbfb"></mj-section>
+
+        <!-- Social icons -->
+        <mj-section background-color="#f0f0f0"></mj-section>
+
+    </mj-body>
+</mjml>
