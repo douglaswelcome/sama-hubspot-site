@@ -1,0 +1,13 @@
+        <mj-section
+            background-url="https://source.unsplash.com/random/800x600"
+            background-size="cover" background-repeat="no-repeat"
+            padding-top="75px"
+            padding-bottom="75px"
+            >
+            <mj-column>
+
+                <mj-text align="center" color="#fff" font-size="34px" >Slogan here</mj-text>
+
+            </mj-column>
+
+        </mj-section>

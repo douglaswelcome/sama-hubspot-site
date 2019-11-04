@@ -8,7 +8,10 @@
     "assetzone": "gulp watchAssetFiles",
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
-    "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ "
+    "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ ",
+    "mjml": "./node_modules/.bin/mjml ",
+    "mjml:process": "./node_modules/.bin/mjml _src/markup/email/**/* ",
+    "mjml:watch": "onchange '_src/markup/email/**/*' -- mjml _src/markup/email/templates/**/* -o _codeDist/markup/templates_email/"
   },
   "author": "Douglas Welcome",
   "license": "MIT",
@@ -27,6 +30,8 @@
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
     "js-yaml": "^3.13.1",
+    "mjml": "^4.5.1",
+    "onchange": "^6.1.0",
     "vinyl-ftp": "^0.6.1",
     "yargs": "^14.2.0"
   },
