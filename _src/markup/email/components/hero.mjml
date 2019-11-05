@@ -6,7 +6,7 @@
             >
             <mj-column>
 
-                <mj-text align="center" color="#fff" font-size="34px" >Slogan here</mj-text>
+                <mj-text align="center" color="#fff" font-size="34px" font-family="Brown-Bold" >Slogan here</mj-text>
 
             </mj-column>
 

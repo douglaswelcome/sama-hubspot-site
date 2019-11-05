@@ -1,0 +1,34 @@
+<mj-section border-radius="50px" border-bottom="2px solid #28282a" border-right="2px solid #28282a">
+    <mj-column width="40%" background-color="#fffa0c" vertical-align="middle">
+        
+                        <mj-image 
+                        padding-left="25px"
+                        padding-right="25px"
+                
+                
+                        src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo.svg"></mj-image>
+
+
+
+    </mj-column>
+    <mj-column width="60%">
+        <mj-text align="right">
+         <p>
+            {{site_settings.company_name}}
+         </p>
+         <p>
+            {{site_settings.company_street_address_1}} 
+            </br>
+            {{site_settings.company_city}},  {{site_settings.company_state}}   {{site_settings.company_zip}}
+            </p>
+         
+<p>
+    <a href="{{unsubscribe_link}}" >Unsubscribe</a>
+    
+    {{unsubscribe_anchor}}
+</p>
+         
+        </mj-text>
+     </mj-column>
+</mj-section>
+

@@ -1,0 +1,29 @@
+<mj-head>
+    <mj-attributes>
+
+
+        <mj-all font-family="Brown-Light" />
+    </mj-attributes>
+    <mj-font name="Brown-Bold"
+        href="" />
+    <mj-font name="Barlow Condensed"
+        href="https://fonts.googleapis.com/css?family=Barlow+Condensed:600&display=swap" />
+    <mj-preview>Things to address</mj-preview>
+    <mj-raw>
+        <style>
+            @font-face {
+              font-family: 'Brown-Light';
+              src: url(https://www.samasource.com/hubfs/custom/assets/static-assets/fonts/Brown/Brown-Light.woff);
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Brown-Bold';
+                src: url(https://www.samasource.com/hubfs/custom/assets/static-assets/fonts/Brown/Brown-Bold.woff);
+                font-weight: normal;
+                font-style: normal;
+              }
+          </style>
+    </mj-raw>
+</mj-head>
