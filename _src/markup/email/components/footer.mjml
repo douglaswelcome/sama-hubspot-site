@@ -1,34 +1,39 @@
-<mj-section border-radius="50px" border-bottom="2px solid #28282a" border-right="2px solid #28282a">
-    <mj-column width="40%" background-color="#fffa0c" vertical-align="middle">
-        
-                        <mj-image 
-                        padding-left="25px"
-                        padding-right="25px"
-                
-                
-                        src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo.svg"></mj-image>
 
+    <mj-section css-class="round-border">
 
+        <mj-column width="40%" background-color="#fff" vertical-align="middle" >
 
-    </mj-column>
-    <mj-column width="60%">
-        <mj-text align="right">
-         <p>
-            {{site_settings.company_name}}
-         </p>
-         <p>
-            {{site_settings.company_street_address_1}} 
-            </br>
-            {{site_settings.company_city}},  {{site_settings.company_state}}   {{site_settings.company_zip}}
-            </p>
-         
-<p>
-    <a href="{{unsubscribe_link}}" >Unsubscribe</a>
-    
-    {{unsubscribe_anchor}}
-</p>
-         
-        </mj-text>
-     </mj-column>
-</mj-section>
+            <mj-image padding-left="25px" padding-right="25px" 
+                src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo.svg"></mj-image>
+                <mj-social align="left" font-size="15px" icon-size="30px" mode="horizontal" >
+                        <mj-social-element name="facebook" href="https://mjml.io/" src="">
+                            <mj-raw>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116"><title>facebook</title><g id="a259a0ce-2a86-4f39-860b-86745d08a2be" data-name="Layer 2"><g id="e564e74a-ade3-4337-beb1-b45a4ff8b096" data-name="Layer 1"><path d="M77,116H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0H113a3,3,0,0,1,3,3V77A39.05,39.05,0,0,1,77,116ZM6,110H77a33,33,0,0,0,33-33V6H6Z"></path><path d="M73.1,36.36v-9.9a1.35,1.35,0,0,0-1.34-1.34H63.35A15.34,15.34,0,0,0,52,29.46c-2.78,2.84-4.24,6.87-4.24,11.63v7.34H39.34A1.34,1.34,0,0,0,38,49.77V60.43a1.34,1.34,0,0,0,1.34,1.34h8.44V88.66A1.34,1.34,0,0,0,49.12,90h11a1.34,1.34,0,0,0,1.34-1.34V61.77h9.87a1.34,1.34,0,0,0,1.34-1.34V49.77a1.33,1.33,0,0,0-1.37-1.34H61.49V42.21c0-1.72.25-2.7.84-3.37s1.88-1.13,3.77-1.13h5.66A1.35,1.35,0,0,0,73.1,36.36Z"></path></g></g></svg>
+                           </mj-raw>
+                        </mj-social-element>
+                        <mj-social-element name="google" href="https://mjml.io/">
+                   
+                        </mj-social-element>
+                        <mj-social-element  name="twitter" href="https://mjml.io/">
+                         
+                        </mj-social-element>
+                      </mj-social>
+        </mj-column>
+        <mj-column width="60%" vertical-align="middle">
+            <mj-text align="right">
+                <p>
+                    {{site_settings.company_name}}
+                </p>
+                <p>
+                    {{site_settings.company_street_address_1}}
+                    </br>
+                    {{site_settings.company_city}}, {{site_settings.company_state}} {{site_settings.company_zip}}
+                </p>
+                <p>
+                    <a href="{{unsubscribe_link}}">Unsubscribe</a>
 
+                    
+                </p>
+            </mj-text>
+        </mj-column>
+    </mj-section>

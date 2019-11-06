@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
-    "assetzone": "gulp watchAssetFiles",
+    "asset:process": "gulp cleanTemp && gulp imgOpt && gulp assetDeploy",
+    "imgzone": "onchange '_src/img/**/*' -- npm run asset:process",
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
     "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ ",
@@ -13,14 +14,17 @@
     "mjml:process": "mjml _src/markup/email/templates/**/* -o _codeDist/markup/templates_email/ ",
     "mjml:run": "npm run mjml:process && npm run mjml:post",
     "mjml:watch": "onchange '_src/markup/email/**/*' -- npm run mjml:run",
-    "emaildevzone": "concurrently --kill-others --raw \"npm run mjml:watch\" \"npx hs watch --portal=PROD _codeDist/markup/templates_email/ markup/templates_email/\""
+    "emaildevzone": "concurrently --kill-others --raw \"npm run mjml:watch\" \"npx hs watch --portal=PROD _codeDist/markup/templates_email/ markup/templates_email/\"",
+    "all": "concurrently --kill-others --raw \"npm run emaildevzone\" \"npm run imgzone\" \"npm run devzone\""
   },
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "concurrently": "^5.0.0",
+    "del": "^5.1.0",
     "dotenv": "^8.1.0",
+    "ftp": "^0.3.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-changed": "^4.0.2",
@@ -31,6 +35,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
     "gulp-util": "^3.0.8",
+    "imagemin-cli": "^5.0.0",
     "js-yaml": "^3.13.1",
     "mjml": "^4.5.1",
     "onchange": "^6.1.0",
