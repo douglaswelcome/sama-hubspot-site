@@ -1,0 +1,15 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-button font-family="Barlow Condensed" background-color="#291d54" color="white" text-transform="uppercase" font-size="24px" border-radius="0px 0px 20px 0px">
+{% textarea "my_inline_text"
+    value="Baby Now's the Time", 
+    field="field",
+    no_wrapper=true
+%}
+         </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

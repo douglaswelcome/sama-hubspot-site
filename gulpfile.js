@@ -12,6 +12,7 @@ const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const browserSync = require('browser-sync').create();
+const del = require('del');
 
 
 
@@ -40,9 +41,9 @@ const jsSinglesPaths = [
 function scss() {
     return gulp
         .src('_src/scss/main.scss')
-            .pipe(sourcemaps.init({
+        .pipe(sourcemaps.init({
                 loadMaps: true
-                 })
+            })
             .on('error', sass.logError))
         .pipe(sass({
                 includePaths: './static-src/scss',
@@ -78,11 +79,18 @@ function jsSingles() {
 
 // fix those damn huge ass images
 
-async function imgOpt () {
+async function imgOpt() {
     gulp.src(watchPaths.imgSrc)
-        .pipe(newer('_assetDist/img/'))
-		.pipe(imagemin())
-		.pipe(gulp.dest('_assetDist/img/'))
+        .pipe(changed('_assetDist/img/'))
+        .pipe(imagemin())
+        .pipe(gulp.dest('_assetDist/img/'))
+        .pipe(gulp.dest('_tempImg/'))
+}
+
+async function cleanTemp() {
+    return del ([
+        '_tempImg/**/*'
+    ])
 }
 
 
@@ -94,8 +102,8 @@ const user = process.env.FTP_USER
 const password = process.env.FTP_PWD
 const host = 'ftp.hubapi.com'
 const port = 3200
-const assetRemoteFolderDEV = '/portals/6398568-hubspot-developers-34rjat_com/content/files/'
-const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/'
+const imgLocalFolder = '_tempImg/**/*'
+const imgRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/'
 
 // const codeLocalGlob = '_codeDist/**/*'
 
@@ -104,54 +112,34 @@ const assetRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/co
 // const codeRemoteFolder = '/portals/6398568-hubspot-developers-34rjat_com/content/designs/'
 
 
+
+
 //non-codey things deploy to File Manager
 async function assetDeploy(status) {
- 
-    var conn = ftp.create( {
-        host:     host,
-        port:     port,
-        user:     user,
+
+    var conn = ftp.create({
+        host: host,
+        port: port,
+        user: user,
         password: password,
         parallel: 5,
-        log:      gutil.log,
+        log: gutil.log,
         secure: true,
         timeOffset: 280
-        
-        
-    } );
+
+
+    });
+
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
- 
-    return gulp.src(watchPaths.assetLocal, { base: '', buffer: false } )
-        // .pipe(conn.newer(assetRemoteFolderPROD))
-        // .pipe(conn.newer(assetRemoteFolderPROD))// only upload newer files
-        .pipe(conn.dest(assetRemoteFolderPROD));
+
+    return gulp.src(imgLocalFolder, {
+            base: '',
+            buffer: false
+        })
+        .pipe(conn.dest(imgRemoteFolderPROD));
 }
-
-// //codey things deploy to Design Manager
-
-// async function codeDeploy() {
- 
-//     var conn = ftp.create( {
-//         host:     host,
-//         port:     port,
-//         user:     user,
-//         password: password,
-//         parallel: 5,
-//         log:      gutil.log,
-//         secure: true
-//     } );
-
-//     // using base = '.' will transfer everything to /public_html correctly
-//     // turn off buffering in gulp.src for best performance
- 
-//     return gulp.src( codeLocalGlob, { base: '.', buffer: false } )
-//         .pipe( conn.newer( codeRemoteFolder ) ) // only upload newer files
-//         .pipe( conn.dest( codeRemoteFolder ) );
- 
-// }
-
 
 
 
@@ -159,61 +147,42 @@ async function assetDeploy(status) {
 
 
 
-function watchCodeFiles () {
+function watchCodeFiles() {
     gulp.watch(watchPaths.scssSrc, scss);
     // gulp.watch(watchPaths.htmlSrc, reload);
     gulp.watch(watchPaths.jsSrcCompile, jsCompiled);
-    gulp.watch(watchPaths.jsSrcSingles,jsSingles);
+    gulp.watch(watchPaths.jsSrcSingles, jsSingles);
 }
 
-async function watchAssetFiles () {
-    gulp.watch(watchPaths.imgSrc, imgOpt);
-    gulp.watch(watchPaths.assetLocal, assetDeploy)
+
+function serve(done) {
+    browserSync.init({
+        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/"
+    });
+    done();
+
+}
+
+function reload(done) {
+    browserSync.reload();
+    done();
+}
+
+
+function watcher() {
+    gulp.watch('_codeDist/**/*', reload);
+
 }
 
 gulp.task(watchCodeFiles);
-gulp.task(watchAssetFiles);
 gulp.task(assetDeploy);
 gulp.task(imgOpt);
 gulp.task(scss);
 gulp.task(jsCompiled);
 gulp.task(jsSingles);
 gulp.task(serve);
+gulp.task(cleanTemp);
 
 
-
-async function testing (){
-    gulp.watch(watchPaths.assetLocal, assetDeploy)
-}
-
-gulp.task(testing)
-
-function serve (done) {
-    browserSync.init({
-        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/"
-    });
-    done();
-  
-}
-
-function reload (done) {
-    browserSync.reload();
-    console.log('donker');
-    done();
-  }
-
-
-
-
-
-function watcher() {
-    gulp.watch('_codeDist/**/*', reload);
-    
-}
-
-
-
-
-const maxzone = gulp.parallel(watchCodeFiles, watchAssetFiles);
 
 exports.dev = gulp.parallel(watchCodeFiles, gulp.series(serve, watcher))
