@@ -6,16 +6,16 @@
             <mj-image padding-left="25px" padding-right="25px" 
                 src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo.svg"></mj-image>
                 <mj-social align="left" font-size="15px" icon-size="30px" mode="horizontal" >
-                        <mj-social-element background-color="#fff" name="facebook" href="https://mjml.io/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/facebook_charcoal.svg">
-
+                        <mj-social-element background-color="#fff" name="facebook-noshare" href="https://www.facebook.com/samaimpact/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/facebook_charcoal.svg">
                         </mj-social-element>
-                        <mj-social-element  background-color="#fff" name="linkedin" href="https://mjml.io/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/linkedin_charcoal.svg">
-                   
+                        <mj-social-element  background-color="#fff" name="linkedin-noshare" href="https://www.linkedin.com/company/samasource" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/linkedin_charcoal.svg">
                         </mj-social-element>
-                        <mj-social-element background-color="#fff" name="twitter" href="https://mjml.io/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/twitter_charcoal.svg">
-                         
+                        <mj-social-element background-color="#fff" name="twitter-noshare" href="https://twitter.com/Samasource" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/twitter_charcoal.svg">
+                        </mj-social-element>
+                        <mj-social-element background-color="#fff" name="instagram-noshare" href="https://www.instagram.com/samasource/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/insta_charcoal.svg">
                         </mj-social-element>
                       </mj-social>
+
         </mj-column>
         <mj-column width="60%" vertical-align="middle">
             <mj-text align="right">

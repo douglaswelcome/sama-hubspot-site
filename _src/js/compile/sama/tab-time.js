@@ -48,25 +48,20 @@ function openWindow(evt, stuff, vid) {
 $(window).resize(function() {
   
   var dogmeat = $('.stuff.active').attr('id');
-  console.log(dogmeat);
+
   resizeSC(dogmeat);
 });
-
-
-
-
 //function to resize the stuff-container
 function resizeSC(stuff) {
   const stuffHeight = document.getElementById(stuff).clientHeight;
 
   const stuffContainer = document.getElementsByClassName('stuff-container')[0];
 
-  console.log(stuffHeight + 'px');
+
   stuffContainer.style.height = stuffHeight + 'px';
 
 }
 
 var pigmeat = $('.stuff.active').attr('id');
-console.log(pigmeat);
 resizeSC(pigmeat);
 

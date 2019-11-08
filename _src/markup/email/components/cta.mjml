@@ -1,0 +1,20 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column width="175px">
+<mj-raw >
+  {% cta "my_cta"
+    embed_code="embed_code", 
+    full_html="full_html", 
+    image_src="image_src", 
+    image_editor="image_editor", 
+    guid="guid", 
+    image_html="image_html", 
+    image_email="image_email"
+  %}
+</mj-raw>
+</mj-column>
+
+    </mj-section>
+  </mj-body>
+</mjml>

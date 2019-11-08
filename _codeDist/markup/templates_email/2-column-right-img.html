@@ -66,9 +66,9 @@ isAvailableForNewContent: true
         max-width: 100%;
       }
 
-      .mj-column-px-175 {
-        width: 175px !important;
-        max-width: 175px;
+      .mj-column-per-60 {
+        width: 60% !important;
+        max-width: 60%;
       }
 
       .mj-column-per-40 {
@@ -76,9 +76,9 @@ isAvailableForNewContent: true
         max-width: 40%;
       }
 
-      .mj-column-per-60 {
-        width: 60% !important;
-        max-width: 60%;
+      .mj-column-px-175 {
+        width: 175px !important;
+        max-width: 175px;
       }
     }
   </style>
@@ -169,7 +169,7 @@ isAvailableForNewContent: true
         </tr>
       </table>
       <![endif]-->
-    <!-- Introduction Text -->
+    <!-- Img Float Left -->
     <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
@@ -188,34 +188,58 @@ isAvailableForNewContent: true
         <tr>
       
             <td
-               class="" style="vertical-align:top;width:600px;"
+               class="" style="vertical-align:middle;width:360px;"
             >
           <![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <div class="mj-column-per-60 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Brown-Light;font-size:18px;line-height:1;text-align:left;color:#000000;">{% rich_text "my_rich_text"
-                    html="Hi Friend,
-        
-                    Describe what you have to offer the customer. Why should they read? What did you promise them in the subject line? Tell them something cool. Make them laugh. Make them cry. Well, maybe don't do that...
-                    
-                    Use a list to:
-                    
-                    Explain the value of your offer
-                    Remind the reader what they’ll get out of taking action
-                    Show off your skill with bullet points
-                    Make your content easy to scan
-                    LINK TO A LANDING PAGE ON YOUR SITE (This is the really important part.)
-                    
-                    Now wrap it all up with a pithy little reminder of how much you love them.
-                    
-                    Aw. You silver-tongued devil, you.
-                    
-                    Sincerely,
-                    
-                    Your name"
-                %}</div>
+                      <div style="font-family:Brown-Light;font-size:18px;line-height:1;text-align:left;color:#000000;">{% rich_text "rich_text3"
+                        html="Hi Friend,
+            
+                        Describe what you have to offer the customer. Why should they read? What did you promise them in the subject line? Tell them something cool. Make them laugh. Make them cry. Well, maybe don't do that...
+                        
+                        Use a list to:
+                        
+                        Explain the value of your offer
+                        Remind the reader what they’ll get out of taking action
+                        Show off your skill with bullet points
+                        Make your content easy to scan
+                        LINK TO A LANDING PAGE ON YOUR SITE (This is the really important part.)
+                        
+                        Now wrap it all up with a pithy little reminder of how much you love them.
+                        
+                        Aw. You silver-tongued devil, you.
+                        
+                        Sincerely,
+                        
+                        Your name"
+                    %}</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:middle;width:240px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-40 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                  <tr>
+                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:190px;">
+                              <img height="auto" src=" {% image_src " my_image_src" no_wrapper="true" %} " style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="190">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </td>
                   </tr>
                 </table>
