@@ -90,5 +90,4 @@
 $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".video-container").fitVids({ customSelector: "iframe[src^='https://embed.ted.com']"});
-    console.log('for sure bro');
   });
