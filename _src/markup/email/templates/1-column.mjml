@@ -1,4 +1,3 @@
-
 <mjml>
   <mj-include path="../components/head.mjml" />
     <mj-body>
@@ -6,11 +5,11 @@
       <!-- Company Header -->
         <mj-include path="../components/header.mjml" />
 
-
-
         <!-- Introduction Text -->
         <mj-include path ="../components/rich-text.mjml"/>
 
+        <!-- CTA Block -->
+        <mj-include path ="../components/cta.mjml"/>
 
         <!--Footer-->
         <mj-include path ="../components/footer.mjml"/>

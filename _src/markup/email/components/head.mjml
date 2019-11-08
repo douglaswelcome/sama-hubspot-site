@@ -7,6 +7,10 @@
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 35px;
         }
+
+        .btn > table > tbody > tr > td > p {
+        cursor:pointer!important;
+        }
     </mj-style>
     <mj-attributes>
         <mj-all font-family="Brown-Light" />
