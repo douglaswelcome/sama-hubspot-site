@@ -1,5 +1,5 @@
         <mj-section
-            background-url="https://source.unsplash.com/random/800x600"
+            background-url=" {% image_src \"1858957119\" src=\"src\" no_wrapper=true %} "
             background-size="cover" background-repeat="no-repeat"
             padding-top="75px"
             padding-bottom="75px"

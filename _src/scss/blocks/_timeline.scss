@@ -1,0 +1,50 @@
+.timeline {
+    @extends %page-container;
+    display:grid;
+    grid-column-templates: 47% 6% 47%;
+
+
+    &__time-left{
+
+    }
+
+    &__time-center {
+        &::before {
+            content:"";
+            position: absolute;
+            height:100%;
+            width:100%;
+            background-color:rgb(46, 129, 202);
+        }
+        &.timeline--ball-left{
+
+        }
+        &.timeline--ball-right{
+            &::after {
+                content:"";
+                border-radius:100%;
+                background-color: $color-kennedy;
+            }
+
+            &.timeline--ball-right{
+                &::after {
+                    content:"";
+                    border-radius:100%;
+                    background-color: $color-kennedy;
+                }
+            
+
+        }
+    }
+
+    &__time-right{
+
+    }
+
+    &--ball-left {
+
+    }
+
+
+
+}

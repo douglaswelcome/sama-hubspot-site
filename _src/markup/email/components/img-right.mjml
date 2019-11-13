@@ -1,7 +1,7 @@
 <mj-section>
     <mj-column width="60%" vertical-align="middle">
         <mj-text font-size="18px">
-            {% rich_text "rich_text3"
+            {% rich_text "3431085573"
                         html="Hi Friend,
             
                         Describe what you have to offer the customer. Why should they read? What did you promise them in the subject line? Tell them something cool. Make them laugh. Make them cry. Well, maybe don't do that...

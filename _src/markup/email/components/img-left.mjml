@@ -1,6 +1,6 @@
 <mj-section>
     <mj-column width="40%" vertical-align="middle">
-        <mj-image src=' {% image_src "my_image_src" src="src" no_wrapper=true %} '>
+        <mj-image src=' {% image_src "4284429787" src="src" no_wrapper=true %} '>
 
         </mj-image>
     </mj-column>
