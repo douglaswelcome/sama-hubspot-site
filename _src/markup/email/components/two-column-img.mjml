@@ -1,6 +1,6 @@
 <mj-section>
     <mj-column>
-        <mj-image src=' {% image_src "my_image_src" src="src" no_wrapper=true %} ' >
+        <mj-image src=' {% image_src "4084443043" src="src" no_wrapper=true %} ' >
                
         </mj-image>
         <mj-text>
@@ -11,10 +11,9 @@
                     </mj-text>
         </mj-text>
             
-
     </mj-column>
     <mj-column>
-            <mj-image src=' {% image_src "my_image_src" src="src" no_wrapper=true %} ' >
+            <mj-image src=' {% image_src "922502404" src="src" no_wrapper=true %} ' >
                    
             </mj-image>
             <mj-text>
