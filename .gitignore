@@ -96,3 +96,5 @@ _src/img/**/*
 _assetDist/**/*
 
 local-hubl-server/**/*
+
+_tempimg/**/*

@@ -1,48 +1,180 @@
 .timeline {
-    @extends %page-container;
-    display:grid;
-    grid-column-templates: 47% 6% 47%;
+    @extend %page-container;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
 
-    &__time-left{
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+
+    &__row {
+        grid-template-columns: 47% 6% 47%;
+        display: grid;
+        column-gap: 1rem;
+
+        @include breakpoint(w-sm) {
+            grid-template-columns: 6% 94%;
+        }
 
     }
 
-    &__time-center {
+    &__copy {
+        text-align: left;
+    }
+
+    &__center {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        grid-column: 2 / span 1;
+
+
         &::before {
-            content:"";
+            content: '';
+            width: 4px;
+            background-color: $color-charcoal-6;
+            height: 100%;
+            align-items: center;
             position: absolute;
-            height:100%;
-            width:100%;
-            background-color:rgb(46, 129, 202);
-        }
-        &.timeline--ball-left{
+            z-index: -2;
 
         }
-        &.timeline--ball-right{
-            &::after {
-                content:"";
-                border-radius:100%;
-                background-color: $color-kennedy;
+    }
+
+    &__bookends {
+        height: 1rem;
+
+        @include breakpoint (w-sm) {
+            grid-column: 1;
+        }
+
+
+        &--top {
+            &::before {
+                border-radius: .2rem .2rem 0px 0px;
+            }
+        }
+
+        &--bottom {
+            &::before {
+                border-radius:0px 0px .2rem .2rem ;
+            }
+        }
+    }
+
+    &__ball-wrapper {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &::before {
+            content: "";
+            height: 4px;
+            background-color: $color-charcoal-6;
+            width: 50%;
+            position: absolute;
+            z-index: -2;
+
+            @include breakpoint(w-sm){
+                display:none;
+            }
+        }
+
+
+
+    }
+
+    &__ball-wrapper--left {
+        &::before {
+            left: 0;
+            right: auto;
+            border-radius: .2rem 0px 0px .2rem;
+
+        }
+    }
+
+    &__ball-wrapper--right {
+        &::before {
+            left: auto;
+            right: 0;
+            border-radius: 0px .2rem .2rem 0px;
+
+        }
+    }
+
+    &__ball {
+        border-radius: 100%;
+        background-color: $color-kennedy;
+        height: 1.5rem;
+        width: 1.5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: relative;
+            z-index: -1;
+            border-radius: 100%;
+            display: block;
+            background-color: $color-sunshine;
+            height: 1.5rem;
+            width: 1.5rem;
+            transform: translate(.2rem, .2rem);
+
+        }
+    }
+
+
+    &__year:nth-child(even) {
+
+        .timeline__center {
+            order: 2
+        }
+
+        .timeline__copy {
+            grid-column: 1 / span 1;
+            text-align: right;
+            order: 1;
+        }
+    }
+
+    @include breakpoint (w-sm) {
+        &__year:nth-child(even) {
+
+            .timeline__center {
+                order: 1;
+                grid-column: 1;
+
             }
 
-            &.timeline--ball-right{
-                &::after {
-                    content:"";
-                    border-radius:100%;
-                    background-color: $color-kennedy;
-                }
-            
+            .timeline__copy {
+                order: 2;
+                grid-column: 2;
+                text-align: left;
+            }
 
         }
-    }
 
-    &__time-right{
+        &__year:nth-child(odd) {
 
-    }
+            .timeline__center {
+                grid-column: 1;
 
-    &--ball-left {
+            }
 
+            .timeline__copy {}
+
+
+        }
     }
 
 

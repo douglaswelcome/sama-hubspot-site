@@ -22,11 +22,15 @@
     position: relative;
     padding: 4rem;
 
+    @include breakpoint(w-sm) {
+      padding: 2rem 1.5rem 2rem;
+    }
+
     &.center-content--w-label {
       padding: 6rem 4rem 3rem;
 
       @include breakpoint(w-sm) {
-        padding: 4.5rem 1.5rem 3rem;
+        
       }
     }
 
