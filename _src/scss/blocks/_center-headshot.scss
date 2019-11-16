@@ -1,0 +1,29 @@
+.headshot {
+    @extend %page-container;
+    text-align:center;
+    &__img {
+        border-radius: 50%;
+        overflow:hidden;
+        width: 10rem;
+        height:10rem;
+        background-size:cover;
+        background-position:center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:1.5rem;
+
+    }
+
+    &__name {
+        h5, h3 {
+            font-size: 1rem;
+        }
+    }
+    &__body{
+        p{
+            margin-bottom:.5rem;
+        }
+    }
+
+
+}
