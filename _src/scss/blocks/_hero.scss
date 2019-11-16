@@ -354,7 +354,7 @@
 
   height: calc(100vh - #{$headerheight});
 
-  margin-bottom:8rem;
+  margin-bottom: 8rem;
   padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -371,7 +371,7 @@
   }
 
   @include breakpoint (w-sm) {
-    min-height:auto;
+    min-height: auto;
     height: auto;
     grid-row-gap: 1.5rem;
 
@@ -409,10 +409,10 @@
 
     @include breakpoint(w-med) {
       margin-left: 1.5rem;
-      padding:0;
-      
+      padding: 0;
+
     }
-   
+
 
     &::before {
       content: "";
@@ -437,7 +437,7 @@
     position: relative;
     z-index: 1;
 
-    
+
 
     h1 {
       margin-bottom: 1.5rem;
@@ -450,6 +450,7 @@
 
     @include breakpoint (w-med) {
       padding: 4.5rem 25% 4.5rem 1.5rem;
+
       h5 {
         margin-bottom: 1.5rem;
         padding-left: .75rem;
@@ -458,7 +459,7 @@
     }
 
     @include breakpoint (w-sm) {
-      padding: 4.5rem  1.5rem;
+      padding: 4.5rem 1.5rem;
     }
   }
 
@@ -467,15 +468,16 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: 1.5rem;
-    @include breakpoint (w-med){
+
+    @include breakpoint (w-med) {
       margin-left: 0;
 
-    .btn h3{
-      font-size:calc(.5rem + 2vw);
+      .btn h3 {
+        font-size: calc(.5rem + 2vw);
+      }
     }
-  }
 
-   
+
   }
 
 
@@ -514,19 +516,19 @@
   .btn__content {
     font-size: 1.5rem;
 
-    
+
   }
 
   .dot-cover {
     position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 
-      @include breakpoint (w-med){
-        display:none;
-      }
+    @include breakpoint (w-med) {
+      display: none;
+    }
 
     .dotty {
 
@@ -535,5 +537,79 @@
       width: 20%;
       bottom: -8vw;
     }
+  }
+}
+
+//Half hero ------------------------------------
+
+
+.half-hero {
+  margin-top: 3rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 85% auto;
+  @extend %page-container;
+
+  @include breakpoint (w-sm) {
+    grid-template-columns: auto;
+  }
+
+
+  &__content {
+    margin-bottom: 3rem;
+    position: absolute;
+    width:fit-content;
+    max-width: 40rem;
+    right:0;
+
+
+
+
+
+    
+
+    @include breakpoint (w-sm) {
+      margin-bottom: 0;
+
+
+      grid-template-columns: 85% 1fr;
+      min-height: calc(10vh - #{$mobileheaderheight});
+      max-height: calc(60vh - #{$mobileheaderheight});
+      grid-row-gap: 3rem;
+      text-align: right;
+    }
+  }
+
+  &__headline {
+
+    position: relative;
+  
+    margin-left: auto;
+    padding: 3rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:1rem;
+
+
+  }
+
+
+  &__img{
+    position:relative;
+    border-radius: 0px 0px 3rem 0px;
+    overflow:hidden;
+    height:50vh;
+    min-height:30rem;
+    margin-top:3rem;
+    z-index:-2;
+    background-position:center;
+    background-size:cover;
+
+    @include breakpoint (w-sm) {
+      width: 100%;
+
   }
 }
