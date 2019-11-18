@@ -20,6 +20,12 @@
         }
     }
     &__body{
+        padding-left:6rem;
+        padding-right:6rem;
+
+        @include breakpoint(w-sm){
+            padding:0;
+        }
         p{
             margin-bottom:.5rem;
         }
