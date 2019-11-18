@@ -559,15 +559,9 @@
   &__content {
     margin-bottom: 3rem;
     position: absolute;
-    width:fit-content;
+    width: fit-content;
     max-width: 40rem;
-    right:0;
-
-
-
-
-
-    
+    right: 0;
 
     @include breakpoint (w-sm) {
       margin-bottom: 0;
@@ -575,41 +569,37 @@
 
       grid-template-columns: 85% 1fr;
       min-height: calc(10vh - #{$mobileheaderheight});
-      max-height: calc(60vh - #{$mobileheaderheight});
+      max-height: calc(40vh - #{$mobileheaderheight});
       grid-row-gap: 3rem;
       text-align: right;
     }
   }
 
   &__headline {
-
     position: relative;
-  
     margin-left: auto;
     padding: 3rem;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right:1rem;
-
-
+    margin-right: 1rem;
   }
 
 
-  &__img{
-    position:relative;
+  &__img {
+    position: relative;
     border-radius: 0px 0px 3rem 0px;
-    overflow:hidden;
-    height:50vh;
-    min-height:30rem;
-    margin-top:3rem;
-    z-index:-2;
-    background-position:center;
-    background-size:cover;
+    overflow: hidden;
+    height: 40vh;
+    min-height: 20rem;
+    margin-top: 6rem;
+    z-index: -2;
+    background-position: center;
+    background-size: cover;
 
     @include breakpoint (w-sm) {
       width: 100%;
-
+    }
   }
 }
