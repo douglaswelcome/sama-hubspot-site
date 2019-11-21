@@ -3,6 +3,10 @@
 
     grid-template-columns: 30% 1fr;
 
+    @include breakpoint(w-sm){
+        grid-template-columns: 1fr;
+    }
+
     h2,
     p {
         margin-bottom: 1rem;
@@ -115,8 +119,12 @@
 .map-baby {
 
     height: 85%;
-
     position: relative;
+
+    @include breakpoint(w-sm){
+        display:none;
+    }
+
 
     .back-panel {
         border-radius: 0 0 0 40px;
@@ -255,6 +263,7 @@
     &__wrapper {
         height: 100%;
         border-radius: 0 0 0 40px;
+
 
     }
 
