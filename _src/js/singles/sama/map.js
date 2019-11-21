@@ -169,7 +169,27 @@ var offices = {
                 "postalCode": "",
                 "state": ""
             }
-        }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                     103.840850, 1.279358
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "",
+                "address": "30 Bukit Pasoh Rd",
+                "city": "Singapore",
+                "country": "",
+                "crossStreet": "",
+                "postalCode": "089844",
+                "state": ""
+            }
+        },
 
 
 
