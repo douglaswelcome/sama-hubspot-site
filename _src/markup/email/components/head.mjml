@@ -8,6 +8,46 @@
         border-bottom-right-radius: 35px;
         }
 
+        .round-corner {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 35px;
+        overflow: hidden;
+
+        }
+
+        .hero-bg-img, 
+        .hero-bg-img > div > table {
+        background-position:center center;
+        background-size:cover;
+        }
+
+
+
+        .bg-img-overlay {
+
+        background:
+        linear-gradient(
+        rgba(13, 8, 36, 0.7),
+        rgba(13, 8, 36, 0.45)
+        );
+
+    
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         .btn > table > tbody > tr > td > p {
         cursor:pointer!important;
         }

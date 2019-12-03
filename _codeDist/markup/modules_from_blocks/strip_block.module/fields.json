@@ -1,4 +1,14 @@
-[ {
+[ 
+  {
+    "name" : "module_on",
+    "label" : "module_on",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : true
+  },
+  {
   "id" : "80565c09-25d9-3d31-2d15-f0582d3818ae",
   "name" : "image_orientation",
   "label" : "image_orientation",
