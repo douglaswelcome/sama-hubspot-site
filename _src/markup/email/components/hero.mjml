@@ -1,13 +1,23 @@
-        <mj-section
-            background-url=" {% image_src \"1858957119\" src=\"src\" no_wrapper=true %} "
+        <mj-hero
+            background-url="{% image_src '1858957119' src='src' no_wrapper=true %}"
             background-size="cover" background-repeat="no-repeat"
-            padding-top="75px"
-            padding-bottom="75px"
+            
+            css-class="round-corner hero-bg-img"
+            
+            
             >
-            <mj-column>
+           
 
-                <mj-text align="center" color="#fff" font-size="34px" font-family="Brown-Bold" >Slogan here</mj-text>
+                <mj-text align="center" color="#fff" font-size="34px" font-family="Brown-Bold"
+                css-class=" bg-img-overlay"
+                padding-top="125px"
+                padding-bottom="125px"
+                >
+                    {% text "my_text_1"
+                        value="Drop A Hot One (liner) Here"
+                    %}
+                </mj-text>
 
-            </mj-column>
+           
 
-        </mj-section>
+        </mj-hero>
