@@ -44,6 +44,6 @@
     "yargs": "^14.2.0"
   },
   "dependencies": {
-    "@hubspot/cms-cli": "^1.0.1"
+    "@hubspot/cms-cli": "^1.0.2"
   }
 }
