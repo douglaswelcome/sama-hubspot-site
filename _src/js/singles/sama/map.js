@@ -27,19 +27,19 @@ var offices = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.002527, 40.718856
+                    -73.982968, 40.694663,
                 ]
             },
             "properties": {
                 "phoneFormatted": "xxxxxxxxxx",
                 "phone": "xxxxxxxxxx",
-                "suite": "Suite 1711",
-                "address": "401 Broadway",
+                "suite": "Suite 702",
+                "address": "325 Gold Street",
                 "city": "New York",
                 "country": "United States",
                 "crossStreet": "",
-                "postalCode": "10013",
-                "state": "NY"
+                "postalCode": "11201",
+                "state": "NY"    
             }
         },
         {
