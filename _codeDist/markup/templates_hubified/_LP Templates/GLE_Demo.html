@@ -1,0 +1,24 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% include '/markup/blocks_static/pattern-bg.html' %}
+
+{% include '/markup/blocks_static/header.html' %}
+
+
+
+{% module "module_1564677146884126" path='/markup/modules_from_blocks/homepage_hero', label="homepage_hero" %}
+{% module "module_20200116124056" path="/markup/modules_from_blocks/three_block", label="three_block" %}
+{% module "module_20200116131359" path="/markup/modules_from_blocks/center_block_rich_text", label="center_block_rich_text" %}
+
+
+{% module "module_15507293750713347" path="/markup/modules_from_blocks/brag_bar", label="brag_bar" %}
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

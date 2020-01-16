@@ -13,6 +13,12 @@ html {
   // }
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 * {
   box-sizing: border-box;
 
@@ -48,4 +54,8 @@ section {
 
 .nowrap{
   white-space: nowrap;
+}
+
+.page-wrapper-flex {
+  flex:1;
 }

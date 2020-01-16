@@ -45,7 +45,7 @@
     }
 
     h5,
-    p {
+    p, h4 {
       margin-bottom: 1rem;
     }
 
@@ -257,11 +257,17 @@
       padding-left: 0rem;
       padding-right: 0rem;
     }
+
+    &--password{
+      margin-top: 1.75rem;
+    }
   }
 
   &__head {
     margin-bottom: 1.5rem;
   }
+
+
 
 
 
@@ -326,3 +332,4 @@
     }
   }
 }
+
