@@ -2,7 +2,7 @@
   @extend %page-container;
 
   .hs-form {
-    
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -11,7 +11,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .hs-form .hs-form-field > label {
+  .hs-form .hs-form-field>label {
     font-weight: 700;
     font-size: 0.9rem;
     color: $color-tembo;
@@ -34,7 +34,8 @@
   .hs-form input[type="color"],
   .hs-form input[type="file"],
   .hs-form textarea,
-  .hs-form select {
+  .hs-form select,
+  input {
     border-width: 0 3px 3px 0;
     border-radius: 0 0 25px 0;
     border-color: $color-isabelline;
@@ -138,7 +139,9 @@
       }
 
       &:hover {
-        &::after, input {
+
+        &::after,
+        input {
           transform: translate3d(-5px, -5px, 0px);
           transition-property: all;
           transition-duration: 0.3s;
@@ -161,15 +164,45 @@
         transition-property: all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
-        color:$color-charcoal;
+        color: $color-charcoal;
 
       }
     }
   }
 
+  .hs-button {
+
+    justify-content: center;
+    margin-top: 2rem;
+
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 0;
+    // padding: 0.6rem 0.8rem 0.6rem 1rem; // totally unsure of why that right padding and font-metrics are bonked
+    border-radius: 1px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0 0 1.5rem  0;
+    position: relative;
+    border-width: 0px;
+    Background-color:$color-kennedy;
+    color:white;
+    Font-family:$font-barlow;
+    text-transform: uppercase;
+    width:auto;
+    padding: 1rem 1.5rem;
+    
+
+
+    
+  }
+
+  #hs-pwd-widget-password {
+    margin-top: 15px;
+  }
+
 }
-
-
 
 
 
@@ -189,7 +222,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .hs-form .hs-form-field > label {
+  .hs-form .hs-form-field>label {
     font-weight: 700;
     font-size: 0.9rem;
     color: $color-isabelline;
@@ -268,7 +301,7 @@
 
   .legal-consent-container {
     span {
-      color:$color-isabelline;
+      color: $color-isabelline;
     }
   }
 
@@ -321,7 +354,9 @@
       }
 
       &:hover {
-        &::after, input {
+
+        &::after,
+        input {
           transform: translate3d(-5px, -5px, 0px);
           transition-property: all;
           transition-duration: 0.3s;
@@ -329,7 +364,7 @@
         }
 
 
-      
+
       }
 
       input {
@@ -345,7 +380,7 @@
         transition-property: all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
-        color:$color-charcoal;
+        color: $color-charcoal;
 
       }
     }
@@ -353,10 +388,9 @@
 
   .submitted-message {
     p {
-      color:$color-white;
+      color: $color-white;
     }
-    
+
   }
 
 }
-
