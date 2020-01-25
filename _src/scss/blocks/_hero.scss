@@ -565,8 +565,6 @@
 
     @include breakpoint (w-sm) {
       margin-bottom: 0;
-
-
       grid-template-columns: 85% 1fr;
       min-height: calc(10vh - #{$mobileheaderheight});
       max-height: calc(40vh - #{$mobileheaderheight});
@@ -620,7 +618,7 @@ h3 {
       max-width: 100%;
       position:relative;
       margin-bottom:3rem;
-      max-height: auto;
+      max-height: none;
     }
 
   }
