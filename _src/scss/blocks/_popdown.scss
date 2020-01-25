@@ -1,32 +1,64 @@
-.popdown{
-    width:100%;
-    height:3rem;
-    margin-bottom:0rem;
-    background-color:$color-charcoal-1; 
-    color:$color-white;
-    display:flex;
+.popdown {
+    width: 100%;
+
+    height: 3rem;
+    margin-bottom: 0rem;
+    background-color: $color-charcoal-2;
+    color: $color-white;
+    display: flex;
     justify-content: center;
-    font-weight:700;
+    font-weight: 700;
     align-items: center;
     position: relative;
     z-index: 20;
     transition: .5s background-color, color;
-    text-align:center;
-    
-    &__text {
-        padding: 0 1.5rem;
+    padding: .5rem 0;
+    text-align: center;
 
-        @include breakpoint (w-sm){
+    @include breakpoint (w-sm) {
+        flex-direction:column;
+        height: auto;
+    }
+
+
+
+    &__text {
+        padding: 0 1.5rem .2rem;
+
+
+        @include breakpoint (w-sm) {
             font-size: calc(.8rem + .7vw);
         }
     }
 
+    &__cta-text {
+        font-size: .8rem;
+        position: relative;
+        white-space: nowrap;
 
-    &:hover{
-        transition: .5s background-color color;
-        background-color:$color-charcoal;
-        color:$color-sunshine;
+        &::before {
+            content: "";
+            border-bottom: 2px solid #fffa0c;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            bottom: 10%;
+        }
     }
 
-    
+
+    &:hover {
+        transition: .5s background-color, color;
+        background-color: $color-charcoal-1;
+        color: $color-sunshine;
+
+        .popdown__cta-text {
+
+        color:$color-white;
+
+        }
+    }
+
+
 }
