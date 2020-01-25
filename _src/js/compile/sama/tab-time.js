@@ -1,6 +1,6 @@
 function openWindow(evt, stuff, vid) {
   document.getElementById(vid).currentTime = 0;
-  
+
   // Declare all variables
   var i, tabcontent, tablinks, vidlinks;
 
@@ -21,7 +21,7 @@ function openWindow(evt, stuff, vid) {
     vidlinks[i].className = vidlinks[i].className.replace("active", "");
   }
 
-  
+
 
   //change the button
   evt.currentTarget.className += " active";
@@ -33,8 +33,9 @@ function openWindow(evt, stuff, vid) {
 
   document.getElementById(stuff).classList.add("active");
 
-  setTimeout(function() {
-    resizeSC(stuff)}, 500);
+  setTimeout(function () {
+    resizeSC(stuff)
+  }, 500);
 
   //transition the content of the box
 
@@ -45,12 +46,17 @@ function openWindow(evt, stuff, vid) {
 }
 
 
-$(window).resize(function() {
-  
+$(window).resize(function () {
+
   var dogmeat = $('.stuff.active').attr('id');
 
+  // if ($('#stuff').length > 0) {
   resizeSC(dogmeat);
+  // }
+
+
 });
+
 //function to resize the stuff-container
 function resizeSC(stuff) {
   const stuffHeight = document.getElementById(stuff).clientHeight;
@@ -63,5 +69,7 @@ function resizeSC(stuff) {
 }
 
 var pigmeat = $('.stuff.active').attr('id');
-resizeSC(pigmeat);
 
+if ($('#stuff').length > 0) {
+  resizeSC(pigmeat);
+}
