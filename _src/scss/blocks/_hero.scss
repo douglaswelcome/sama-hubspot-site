@@ -552,6 +552,7 @@
 
   @include breakpoint (w-sm) {
     grid-template-columns: auto;
+    margin-top: 0rem;
   }
 
 
@@ -582,12 +583,16 @@
     flex-direction: column;
     justify-content: center;
     margin-right: 1rem;
+
+    @include breakpoint (w-sm) {
+      padding: 1.5rem;
+    }
   }
 
 
   &__img {
     position: relative;
-    border-radius: 0px 3rem 0px  0px;
+    border-radius: 0px 3rem 0px 0px;
     overflow: hidden;
     height: 50vh;
     min-height: 30rem;
@@ -603,33 +608,38 @@
 }
 
 .half-hero--flipped {
-h3 {
-  font-size:1rem;
-  padding-top:1rem;
-  padding-bottom:1rem;
+  h3 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
-}
+  }
+
+
 
   .half-hero__content {
-    bottom:0;
-    margin-bottom:0;
-    
+    bottom: 0;
+    margin-bottom: 0;
+
     @include breakpoint (w-sm) {
-      max-width: 100%;
-      position:relative;
-      margin-bottom:3rem;
+      max-width: 90%;
+      position: relative;
+      
       max-height: none;
+      margin-left: auto;
     }
 
   }
 
   .half-hero__img {
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 6rem;
-    min-height:36rem;
+    min-height: 36rem;
+
     @include breakpoint (w-sm) {
-    margin-bottom:-3rem;
-    min-height:30rem;
+      margin-bottom: -3rem;
+     
+      min-height: 18rem;
     }
   }
 
