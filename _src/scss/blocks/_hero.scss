@@ -563,6 +563,7 @@
     max-width: 45rem;
     right: 0;
 
+
     @include breakpoint (w-sm) {
       margin-bottom: 0;
 
@@ -589,7 +590,7 @@
 
   &__img {
     position: relative;
-    border-radius: 0px 0px 3rem 0px;
+    border-radius: 0px 3rem 0px  0px;
     overflow: hidden;
     height: 50vh;
     min-height: 30rem;
@@ -602,4 +603,19 @@
       width: 100%;
     }
   }
+}
+
+.half-hero--flipped {
+  .half-hero__content {
+    bottom:0;
+    margin-bottom:0;
+    max-width: 80%;
+  }
+
+  .half-hero__img {
+    margin-top:0;
+    margin-bottom: 6rem;
+    min-height:36rem;
+  }
+
 }
