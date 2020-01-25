@@ -59,3 +59,8 @@ section {
 .page-wrapper-flex {
   flex:1;
 }
+
+.scroll-lock {
+  overflow:hidden;
+  height:100vh;
+}

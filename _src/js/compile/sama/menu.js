@@ -7,10 +7,12 @@ $(function() {
       $('.desktop-header').addClass('submenu-open');
       $('.header-cta .hubby-cta').removeClass('secondary');
       $('.submenu').addClass('visible');
+      $('body').addClass('scroll-lock');
     } else {
       $('.desktop-header').removeClass('submenu-open');
       $('.header-cta .hubby-cta').addClass('secondary');
       $('.submenu').removeClass('visible');
+      $('body').removeClass('scroll-lock');
     }
   }
 
