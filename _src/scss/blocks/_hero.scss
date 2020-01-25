@@ -546,7 +546,6 @@
 .half-hero {
   margin-top: 3rem;
   position: relative;
-
   display: grid;
   grid-template-columns: 85% auto;
   @extend %page-container;
@@ -616,13 +615,23 @@ h3 {
   .half-hero__content {
     bottom:0;
     margin-bottom:0;
-    max-width: 80%;
+    
+    @include breakpoint (w-sm) {
+      max-width: 100%;
+      position:relative;
+      margin-bottom:3rem;
+    }
+
   }
 
   .half-hero__img {
     margin-top:0;
     margin-bottom: 6rem;
     min-height:36rem;
+    @include breakpoint (w-sm) {
+    margin-bottom:-1rem;
+    min-height:30rem;
+    }
   }
 
 }
