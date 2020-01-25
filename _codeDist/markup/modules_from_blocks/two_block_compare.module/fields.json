@@ -1,0 +1,61 @@
+[
+  {
+    "name": "text_field_1",
+    "label": "text_field_1",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "isn't it neat",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is default text"
+  },
+  {
+    "name": "text_field_2",
+    "label": "text_field_2",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "isn't it neat",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is default text"
+  },
+
+  
+  {
+    "name": "img1",
+    "label": "img1",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://cdn2.hubspot.net/hubfs/image.jpeg",
+      "alt": "an_image"
+    }
+  },
+  {
+    "name": "img2",
+    "label": "img2",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://cdn2.hubspot.net/hubfs/image.jpeg",
+      "alt": "an_image"
+
+    }
+
+  }
+
+]
