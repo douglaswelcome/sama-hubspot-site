@@ -60,10 +60,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 
-
+  {% block top-insert %}
+  {% endblock %}
+  
+<div class="body-wrapper">
   {% block main %}
 
   {% endblock %}
+</div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

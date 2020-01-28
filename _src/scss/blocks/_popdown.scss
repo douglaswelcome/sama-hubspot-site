@@ -3,7 +3,7 @@
 
     height: 3rem;
     margin-bottom: 0rem;
-    background-color: $color-charcoal-2;
+    background-color: $color-charcoal-1;
     color: $color-white;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
 
     &:hover {
         transition: .5s background-color, color;
-        background-color: $color-charcoal-1;
+        background-color: $color-charcoal-3;
         color: $color-sunshine;
 
         .popdown__cta-text {
