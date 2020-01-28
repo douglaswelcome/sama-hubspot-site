@@ -4,19 +4,18 @@ $(function() {
 
   function moveMenu() {
     if (subState == true) {
-      $('.desktop-header').addClass('submenu-open');
+      $('.header-desktop-wrapper').addClass('submenu-open');
       $('.header-cta .hubby-cta').removeClass('secondary');
-      $('.submenu').addClass('visible');
+    
       $('body').addClass('scroll-lock');
     } else {
-      $('.desktop-header').removeClass('submenu-open');
+      $('.header-desktop-wrapper').removeClass('submenu-open');
       $('.header-cta .hubby-cta').addClass('secondary');
-      $('.submenu').removeClass('visible');
       $('body').removeClass('scroll-lock');
     }
   }
 
-  $('.desktop-header .menu, section.submenu .submenu-content').mouseenter(
+  $('.desktop-header .desktop-menu, section.submenu .submenu-content').mouseenter(
     function() {
       subState = true;
       moveMenu();
@@ -33,7 +32,7 @@ $(function() {
 
   $('.header-desktop-wrapper').mouseleave(
     function() {
-      $('menu.desktop-menu li.open').removeClass('open');
+      $('.desktop-menu li.open').removeClass('open');
     }
   );
 
@@ -41,10 +40,10 @@ $(function() {
 
   //shows which portions of the menu are active
 
-  $('.desktop-header .menu menu.desktop-menu li').mouseover(function() {
+  $('.desktop-header menu.desktop-menu li').mouseover(function() {
     var t = $(this).index();
-    $('.desktop-header .menu menu.desktop-menu li.open').removeClass('open');
-    $('.desktop-header .menu menu.desktop-menu li:eq(' + t + ')').addClass('open');
+    $('.desktop-header menu.desktop-menu li.open').removeClass('open');
+    $('.desktop-header menu.desktop-menu li:eq(' + t + ')').addClass('open');
     $('section.submenu .submenu-content .submenu-item.visible').removeClass('visible');
     $('section.submenu .submenu-content .submenu-item:eq(' + t + ')').addClass('visible');
   });
