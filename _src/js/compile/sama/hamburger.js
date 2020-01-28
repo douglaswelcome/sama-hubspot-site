@@ -8,8 +8,8 @@ hamburger.addEventListener('click', function() {
   // Toggle class "is-active"
   hamburger.classList.toggle('is-active');
   mobileSubMenu.classList.toggle('is-active');
-  body.classList.toggle('burger-time');
-  html.classList.toggle('burger-time');
+  body.classList.toggle('scroll-lock');
+  html.classList.toggle('scroll-lock');
   // hmm lolzin
   //
 });
@@ -20,7 +20,7 @@ $(window).resize(function() {
   if ($(window).width() > 1080) {
     $('.hamburger').removeClass('is-active');
     $('.mobile-submenu').removeClass('is-active');
-    $('body').removeClass('burger-time');
+    $('body').removeClass('scroll-lock');
   }
 
   // if (window.width() > 800 px) {

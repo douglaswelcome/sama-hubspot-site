@@ -7,10 +7,6 @@ html {
   position: relative;
   overflow-x:hidden;
 
-  // &.burger-time {
-  //   height: calc(100vh - #{$mobileheaderheight});
-  //   overflow: hidden;
-  // }
 }
 
 .body-wrapper {
@@ -64,4 +60,11 @@ section {
 .scroll-lock {
   overflow:hidden;
   height:100vh;
+
+  .mobile-submenu {
+    position: absolute;
+    overflow: hidden;
+  }
+
+
 }
