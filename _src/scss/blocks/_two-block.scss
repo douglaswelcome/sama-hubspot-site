@@ -45,7 +45,17 @@
 
   .two-block__text {
     margin-bottom: 1.5rem;
+
+    &--compare {
+      h3{
+        font-size:1.5rem;
+      }
+    }
+
+    
   }
+
+
 
   .img {
     position: relative;
@@ -235,8 +245,6 @@
 }
 
 .scorecard {
-
-
   &__copy {
     h5 {
       margin-bottom: 1rem;
