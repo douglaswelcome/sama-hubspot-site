@@ -5,7 +5,7 @@
     <!-- Company Header -->
     <mj-include path="../components/header.mjml" />
     <!--Hero-->
-    <mj-include path="../components/hero.mjml" />
+    <mj-include path="../components/image.mjml" />
 
     <!-- Introduction Text -->
     <mj-include path="../components/rich-text.mjml" />
