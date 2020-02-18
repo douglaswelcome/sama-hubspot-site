@@ -144,17 +144,20 @@ h4>a {
   color: $color-kennedy;
   font-weight: 700;
   position: relative;
-  white-space: nowrap;
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 6px), rgba($color-sunshine, 1) calc(50% - 6px), rgba($color-sunshine,1) 100% );
+  background-size: 100% 200%;
+    background-position: 0 0;
+  // white-space: nowrap;
 
-  &::before {
-    content: "";
-    border-bottom: 5px solid #fffa0c;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    bottom: 10%;
-  }
+  // &::before {
+  //   content: "";
+  //   border-bottom: 5px solid #fffa0c;
+  //   width: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   z-index: -1;
+  //   bottom: 10%;
+  // }
 
 
 
@@ -168,7 +171,7 @@ h3 a {
 
 a:hover,
 a:hover>span {
-  color: $color-kennedy-2;
+  color: $color-kennedy-3;
 }
 
 a,

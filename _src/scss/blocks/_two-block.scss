@@ -66,6 +66,10 @@
       background-position: center;
       min-height: 22rem;
       max-height: 30rem;
+
+      &--compare {
+        max-height: none;
+      }
     }
 
     @include breakpoint(w-sm) {

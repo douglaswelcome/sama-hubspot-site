@@ -97,9 +97,4 @@ $(document).ready(function () {
 
 });
 
-function ballfondlers() {
-  console.log("ballfondlers");
 
-}
-
-$(ballfondlers());
