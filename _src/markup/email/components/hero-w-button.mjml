@@ -6,9 +6,6 @@
 
                 <mj-text align="center" color="#fff" font-size="40px">Slogan here</mj-text>
 
-                <mj-button background-color="#F63A4D" href="#">
-                    boom time
-                </mj-button>
             </mj-column>
 
-        </mj-section>
+        </mj-section>s
