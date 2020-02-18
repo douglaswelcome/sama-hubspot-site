@@ -8,7 +8,7 @@
     <!-- Introduction Text -->
     <mj-include path="../components/rich-text.mjml" />
     <!--Hero-->
-    <mj-include path="../components/hero.mjml" />
+    <mj-include path="../components/image.mjml" />
 
     <!-- CTA Block -->
     <mj-include path="../components/cta.mjml" />
