@@ -9,7 +9,7 @@
     grid-template-columns: 1fr;
   }
 
-  .copy {
+  &__copy {
 
     text-align: right;
 
@@ -17,9 +17,8 @@
       text-align: left;
     }
 
-    h2,
-    h1 {
-      margin-bottom: 2.5rem;
+    h1,h2 {
+      margin-bottom: 1.5rem;
     }
 
     @include breakpoint(w-sm) {
@@ -30,18 +29,23 @@
       margin-bottom: 1.5rem;
     }
 
-    button {}
+    
 
-    h5,
-    p, h3 {
-      margin-bottom: 1.5rem;
-    }
+   
 
     .icon-list__copy {
       margin-bottom: 0;
     }
 
   }
+
+  &__copy-body {
+   
+      margin-bottom: 1.5rem;
+  
+  }
+
+  
 
   .two-block__text {
     margin-bottom: 1.5rem;
