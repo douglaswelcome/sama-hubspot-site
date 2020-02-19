@@ -1,0 +1,15 @@
+<!-- module html  -->
+{% if module.author_field %}
+<section class="blog-bio leila">
+    <div class="bio-pic" style="background-image:url( {{ module.author_headshot.src }} )">
+      </div>
+      <div class="bio-copy">
+        <h3>
+          {{ module.author_field }}
+        </h3>
+        <h3 class="title">{{ module.author_title }}</h3>
+        <p>
+            {{ module.author_bio_description }}  
+              </div>
+  </section>
+{% endif %}
