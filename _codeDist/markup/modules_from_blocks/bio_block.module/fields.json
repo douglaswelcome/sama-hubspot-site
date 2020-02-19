@@ -47,7 +47,7 @@
   "sortable": false,
   "required": false,
   "locked": false,
-  "resizable": true,
+  "resizable": false,
   "type": "image",
   "default": {
     "src": "https://www.placecage.com/gif/500/500",
