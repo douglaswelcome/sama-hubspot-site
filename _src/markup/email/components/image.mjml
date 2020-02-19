@@ -1,5 +1,5 @@
 <mj-section>
     <mj-column>
-      <mj-image  src=' {% image_src "hero_image_time" src="https://www.placecage.com/c/400/200" no_wrapper=true %} ' />
+      <mj-image  src=' {% image_src "hero_image_time" src="https://www.placecage.com/c/400/200" no_wrapper=true %} ' href=' {% text "hero_img_link" label="Enter Image Link", value="https://www.samasource.com" %}' />
     </mj-column>
   </mj-section>
