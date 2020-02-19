@@ -595,7 +595,7 @@
     border-radius: 0px 3rem 0px 0px;
     overflow: hidden;
     height: 50vh;
-    min-height: 30rem;
+    min-height: 35rem;
     margin-top: 6rem;
     z-index: -2;
     background-position: center;
@@ -634,7 +634,7 @@
   .half-hero__img {
     margin-top: 0;
     margin-bottom: 6rem;
-    min-height: 36rem;
+
 
     @include breakpoint (w-sm) {
       margin-bottom: -3rem;
