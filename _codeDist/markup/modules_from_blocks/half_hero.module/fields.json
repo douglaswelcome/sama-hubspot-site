@@ -44,10 +44,10 @@
     "required": false,
     "locked": false,
     "responsive": false,
-    "resizable": true,
+    "resizable": false,
     "type": "image",
     "default": {
-      "src": "https://source.unsplash.com/random/1200x600",
+      "src": "https://www.placecage.com/c/1200/600",
       "alt": "an_image",
       "width": 100,
       "height": 100
