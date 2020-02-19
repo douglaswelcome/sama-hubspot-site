@@ -16,18 +16,19 @@
         {{ module.two_block_body_small }}
       </p>
       {% endif %}
-    </div>
 
 
-    <div class="award-grid">
-      {% if module.two_block_body_small_bold %}
-      <p><b>
-          {{ module.two_block_body_small_bold }}
-        </b> </p>
-      {% endif %}
-      {% if module.award_img.src %}
-      <img src="{{ module.award_img.src }}" alt="{{ module.award_img.alt }}" />
-      {% endif %}
+
+      <div class="award-grid">
+        {% if module.two_block_body_small_bold %}
+        <p><b>
+            {{ module.two_block_body_small_bold }}
+          </b> </p>
+        {% endif %}
+        {% if module.award_img.src %}
+        <img src="{{ module.award_img.src }}" alt="{{ module.award_img.alt }}" />
+        {% endif %}
+      </div>
     </div>
 
 
