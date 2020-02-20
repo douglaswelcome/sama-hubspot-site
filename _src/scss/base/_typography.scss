@@ -226,3 +226,18 @@ a:hover {}
   text-align: right !important;
 
 }
+
+
+blockquote {
+  position: relative;
+  margin-right:1.5rem;
+  margin-left:1.5rem;
+  padding-left: 1.5rem; 
+  border-left: .25rem solid $color-kennedy;
+  
+  p {
+    font-size:2rem;
+   
+  }
+}
+
