@@ -1,0 +1,53 @@
+[
+  {
+  "id" : "",
+  "name": "bg_img",
+  "label": "bg_img",
+  "sortable": false,
+  "required": false,
+  "locked": false,
+  "resizable":false,
+  "type": "image",
+  "default": {
+    "src": "https://source.unsplash.com/random/800X300",
+    "alt": null} 
+  },
+    {
+    "id" : "",
+    "name": "flipped",
+    "label": "Flip it?",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false 
+  },
+    {
+    "id" : "",
+    "name": "section_header",
+    "label": "Section Header",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null 
+  },
+    {
+    "id" : "",
+    "name" : "section_number",
+    "label" : "Section Number",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "min" : null,
+    "max" : null,
+    "default" : null 
+  }
+]
