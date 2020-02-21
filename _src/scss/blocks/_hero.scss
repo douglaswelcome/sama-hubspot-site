@@ -548,6 +548,9 @@
   position: relative;
   display: grid;
   grid-template-columns: 85% auto;
+  height: calc(100vh - #{$headerheight} - 5rem);
+  min-height: 29rem;
+  max-height: 45rem;
   @extend %page-container;
 
   @include breakpoint (w-sm) {
@@ -560,7 +563,7 @@
     margin-bottom: 3rem;
     position: absolute;
     width: fit-content;
-    max-width: 45rem;
+    max-width: 55rem;
     right: 0;
 
 
@@ -587,6 +590,10 @@
     @include breakpoint (w-sm) {
       padding: 1.5rem;
     }
+
+    h1 {
+      margin-bottom: .75rem;
+    }
   }
 
 
@@ -595,7 +602,8 @@
     border-radius: 0px 0px 3rem 0px;
     overflow: hidden;
 
-    min-height: 34rem;
+  
+    
     margin-top: 6rem;
     z-index: -2;
     background-position: center;
