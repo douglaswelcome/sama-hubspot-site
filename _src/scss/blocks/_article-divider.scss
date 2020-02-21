@@ -5,13 +5,18 @@
 
 
     &__container {
-        min-height: 24rem;
+        min-height: 20rem;
         border-radius: 0 0 0 6rem;
         overflow: hidden;
         width: 85%;
         margin-left: auto;
         background-size: cover;
         background-position: center;
+
+        @include breakpoint(w-med) {
+            min-height: 15rem;
+            height: 38vh;
+        }
 
     }
 
@@ -31,8 +36,12 @@
         @extend %page-container;
         color: $color-white;
         text-align: right;
+        padding-left: 25%;
         h2{
-            font-size: 3rem;
+            font-size:2.5rem;
+            @include breakpoint(w-med) {
+                font-size: calc(1rem + 2.3vw);
+              }
         }
     }
 
@@ -46,6 +55,8 @@
 
         .article-divider__copy {
             text-align: left;
+            padding-left: 1rem;
+            padding-right:25%;
         }
 
 
