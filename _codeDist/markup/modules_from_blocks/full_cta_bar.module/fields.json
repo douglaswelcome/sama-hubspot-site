@@ -61,21 +61,7 @@
     "type": "text",
     "default": null
   },
-  {
-    "id": "e02f5c1e-6bbe-e350-a1d9-016ac31d4485",
-    "name": "cta_number",
-    "label": "cta_number",
-    "required": false,
-    "locked": false,
-    "display": "select",
-    "placeholder": "Please Select Number of CTA's",
-    "choices": [
-      ["one-button", "One Button"],
-      ["two-button", "Two Button"]
-    ],
-    "type": "choice",
-    "default": "one-button"
-  },
+ 
   {
     "id": "fa4ae82b-6572-f73f-acf4-c46f99315a18",
     "name": "cta1_text",
@@ -137,5 +123,15 @@
       "open_in_new_tab": false,
       "no_follow": false
     }
-  }
+  },
+  {
+  "id" : "",
+  "name": "hyperlink_cta",
+  "label": "Hyperlink CTA",
+  "sortable": false,
+  "required": false,
+  "locked": false,
+  "type": "cta",
+  "default": null
+ }
 ]

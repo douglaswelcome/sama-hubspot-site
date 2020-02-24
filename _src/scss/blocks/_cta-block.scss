@@ -1,5 +1,6 @@
 .cta-block {
   @extend %page-container;
+  text-align:center;
 
   .button-row {
     display: flex;
@@ -37,15 +38,15 @@
 
     .divider-line {
       margin-right: auto;
-      margin-left:auto;
-      display:block;
-      margin-bottom:1.5rem;
+      margin-left: auto;
+      display: block;
+      margin-bottom: 1.5rem;
     }
 
     .cta-subtitle-bar {
       display: block;
       text-align: center;
-      margin-bottom:1.1rem;
+      margin-bottom: 1.1rem;
 
     }
 
@@ -65,7 +66,7 @@
       }
 
       .btn {
-        margin-bottom:.75rem;
+        margin-bottom: .75rem;
       }
     }
 
@@ -78,7 +79,13 @@
 
   .btn {
     h3 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
+    }
   }
-}
+
+  &__hyperlink {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    
+  }
 }
