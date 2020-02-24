@@ -1,9 +1,8 @@
- .btn {
+.btn {
   display: inline-block;
   cursor: pointer;
   box-sizing: border-box;
   margin-left: 0;
- 
   border-radius: 1px;
   text-align: center;
   background-color: transparent;
@@ -21,7 +20,7 @@
     width: 100%;
     background-color: $color-kennedy;
     border: 0rem solid $color-kennedy;
-    border-radius: 0 0 0 1.1rem;
+    border-radius: 0 0 0 1rem;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -29,7 +28,7 @@
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-    padding:.01rem;
+    padding: .01rem;
     transform: translate3d(5px, 5px, 0);
 
   }
@@ -38,7 +37,7 @@
     content: "";
     background-color: $color-sunshine;
     box-shadow: 0 0 0 1px $color-sunshine;
-    border-radius: 0 0 0 1.1rem;
+    border-radius: 0 0 0 1rem;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -50,17 +49,20 @@
     transition-timing-function: ease;
   }
 
-  .button-content, .icon-button__content, .button__content, .btn__content,
+  .button-content,
+  .icon-button__content,
+  .button__content,
+  .btn__content,
   h3 {
     padding: 0.6rem 0.7rem 0.7rem 0.75rem;
-    color: $color-charcoal!important;
+    color: $color-charcoal ;
     position: relative;
     z-index: 2;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     font-size: 1rem;
-    margin:0;
+    margin: 0;
 
   }
 
@@ -78,8 +80,11 @@
       transition-timing-function: ease;
     }
 
-    .button-content, .icon-button__content, .button__content, .btn__content, h3 
-     {
+    .button-content,
+    .icon-button__content,
+    .button__content,
+    .btn__content,
+    h3 {
       transform: translate3d(-5px, -5px, 0px);
       transition-property: all;
       transition-duration: 0.3s;
@@ -88,17 +93,19 @@
 
   }
 
-  &.secondary {
+  &.secondary, &--secondary {
     background-color: transparent;
 
     &::before {
       background-color: $color-white;
-      border: 0.15rem solid $color-kennedy;
+      border: 0.1rem solid $color-kennedy;
+      box-shadow: none;
     }
 
     &::after {
       background-color: $color-white;
-      border: 0.15rem solid $color-kennedy;
+      border: 0.1rem solid $color-kennedy;
+      box-shadow: none;
     }
 
     &:hover {
@@ -111,9 +118,47 @@
       h6 {}
 
     }
+
+    
   }
 
+  &.btn--secondary-neg {
+
+    h3{
+    color:$color-white;
+    }
+    &::before {
+      background-color: $color-charcoal-2;
+      border: 0.1rem solid $color-white;
+      box-shadow: none;
+    }
+
+    &::after {
+      background-color: $color-charcoal-2;
+      border: 0.1rem solid $color-white;
+      box-shadow: none;
+    }
+  }
+
+  &--no-shadow {
+    &::before {
+    display:none;
+    }
+  }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
 
 
 .hubby-cta {
@@ -133,7 +178,7 @@
   border: 0;
   text-decoration: none;
 
-  
+
 
   &::before {
     content: "";
@@ -141,7 +186,7 @@
     width: 100%;
     background-color: $color-kennedy;
     border: 0.1rem solid $color-kennedy;
-    border-radius: 0 0 0 1.1rem;
+    border-radius: 0 0 0 1rem;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -156,7 +201,7 @@
     content: "";
     background-color: $color-sunshine;
     border: 0.1rem solid $color-sunshine;
-    border-radius: 0 0 0 1.1rem;
+    border-radius: 0 0 0 1rem;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -168,11 +213,11 @@
     transition-timing-function: ease;
   }
 
-  
+
 
   h3 {
     padding: 0.6rem 0.7rem 0.55rem 1rem;
-    color: $color-charcoal!important;
+    color: $color-charcoal;
     position: relative;
     z-index: 2;
     transition-property: all;
@@ -195,7 +240,7 @@
       transition-timing-function: ease;
     }
 
-    
+
     h3 {
       transform: translate3d(-5px, -5px, 0px);
       transition-property: all;
@@ -230,20 +275,24 @@
 }
 
 .icon-button {
-  width:60px;
-  height:60px;
- 
+  width: 60px;
+  height: 60px;
+
 }
 
-.icon-button__content, .button__content, .btn__content {
-  display:flex;
+.icon-button__content,
+.button__content,
+.btn__content {
+  display: flex;
   justify-content: center;
+
   h3 {
-    display:inline-block;
+    display: inline-block;
   }
 
 }
 
-.icon-button__img, .button__img {
+.icon-button__img,
+.button__img {
   height: 40px;
 }

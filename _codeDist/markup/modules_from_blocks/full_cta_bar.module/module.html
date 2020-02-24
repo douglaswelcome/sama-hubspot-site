@@ -17,16 +17,14 @@
   </div>
   {% endif %}
 
-  <div class="button-grid {{ module.cta_number }}">
+  {% if module.cta1_text %}
+  <div class="button-grid">
 
 
     {% if module.cta1_text %}
     <div class="button-wrapper">
       {% set href = module.cta1_url.url.href %}
-      {% if module.cta1_url.url.type is equalto "EMAIL_ADDRESS" %}
-      {% set href = "mailto:" + href %}
-      {% endif %}
-      <a href="{{ href }}" {% if module.cta1_url.open_in_new_tab %}target="_blank" {% endif %}
+      <a href="{{ href }}" {% if module.cta1_url.open_in_new_tab %} {% endif %}
         {% if module.cta1_url.no_follow %}rel="nofollow" {% endif %}>
         <button class="btn">
           <h3 class="btn__content">{{ module.cta1_text }}</h3>
@@ -38,10 +36,7 @@
     {% if module.cta2_text %}
     <div class="button-wrapper">
       {% set href = module.cta2_url.url.href %}
-      {% if module.cta2_url.url.type is equalto "EMAIL_ADDRESS" %}
-      {% set href = "mailto:" + href %}
-      {% endif %}
-      <a href="{{ href }}" {% if module.cta2_url.open_in_new_tab %}target="_blank" {% endif %}
+      <a href="{{ href }}" {% if module.cta2_url.open_in_new_tab %} {% endif %}
         {% if module.cta2_url.no_follow %}rel="nofollow" {% endif %}>
         <button class="btn">
           <h3 class="btn__content">{{ module.cta2_text }}</h3>
@@ -52,4 +47,28 @@
 
 
   </div>
+  {% endif %}
+
+  {% if module.hyperlink_cta %}
+  <div class="cta-block__hyperlink">
+    <!--HubSpot Call-to-Action Code -->
+    <span class="hs-cta-wrapper"
+      id="hs-cta-wrapper-{{ module.hyperlink_cta }}"><span
+        class="hs-cta-node hs-cta-{{ module.hyperlink_cta }}"
+        id="hs-cta-{{ module.hyperlink_cta }}">
+        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
+          href="https://cta-redirect.hubspot.com/cta/redirect/6398568/{{ module.hyperlink_cta }}"><img
+            class="hs-cta-img" id="hs-cta-img-{{ module.hyperlink_cta }}" style="border-width:0px;"
+            src="https://no-cache.hubspot.com/cta/default/6398568/{{ module.hyperlink_cta }}.png"
+            alt="Read the Blog Post" /></a></span>
+      <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+      <script type="text/javascript">
+        hbspt.cta.load(6398568, '{{ module.hyperlink_cta }}', {});
+      </script>
+    </span>
+   
+    <!-- end HubSpot Call-to-Action Code -->
+    <div class="hyperlink__arrow">-></div>
+  </div>
+  {% endif %}
 </section>
