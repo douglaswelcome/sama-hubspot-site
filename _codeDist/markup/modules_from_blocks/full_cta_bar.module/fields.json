@@ -67,25 +67,24 @@
     "name": "cta1_text",
     "label": "cta1_text",
     "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove Element",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": ""
-  },
-  {
-    "id": "8a7db014-2114-a300-1889-b649d418e802",
-    "name": "cta1_url",
-    "label": "cta1_url",
-    "required": false,
-    "locked": false,
-    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
-    "type": "link",
-    "default": {
-      "url": {
-        "content_id": null,
+          "locked": false,
+          "validation_regex": "",
+          "placeholder": "Leave Blank to Remove Element",
+          "allow_new_line": false,
+          "show_emoji_picker": false,
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "cta1_url",
+          "label": "cta1_url",
+          "required": false,
+          "locked": false,
+          "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+          "type": "link",
+          "default": {
+            "url": {
+              "content_id": null,
         "type": "EXTERNAL",
         "href": ""
       },
@@ -125,13 +124,13 @@
     }
   },
   {
-  "id" : "",
-  "name": "hyperlink_cta",
-  "label": "Hyperlink CTA",
-  "sortable": false,
-  "required": false,
-  "locked": false,
-  "type": "cta",
-  "default": null
- }
+    "id": "",
+    "name": "hyperlink_cta",
+    "label": "Hyperlink CTA",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "cta",
+    "default": null
+  }
 ]

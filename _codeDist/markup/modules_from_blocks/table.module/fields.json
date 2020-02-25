@@ -1,7 +1,7 @@
 [ {
   "id" : "ca2b0087-41d6-bdce-114a-4b4b74a9a318",
   "name" : "column_group",
-  "label" : "columns",
+  "label" : "Columns",
   "help_text" : "Add items to generate column headings.",
   "required" : false,
   "locked" : false,

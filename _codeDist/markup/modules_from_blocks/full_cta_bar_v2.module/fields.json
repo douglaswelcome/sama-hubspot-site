@@ -1,0 +1,162 @@
+[{
+  "id": "eda38e31-5502-519f-83c5-46b0bec8b23a",
+  "name": "text_weight",
+  "label": "text_weight",
+  "required": false,
+  "locked": false,
+  "display": "select",
+  "choices": [
+    ["null", "Regular"],
+    ["bold", "Bold"]
+  ],
+  "type": "choice",
+  "default": "null"
+},
+{
+  "id": "bb37fb43-fcb5-2fcb-08e8-ea51b0a64da5",
+  "name": "cta_subtitle",
+  "label": "cta-subtitle",
+  "required": false,
+  "locked": false,
+  "validation_regex": "",
+  "placeholder": "Leave Blank to remove Element",
+  "allow_new_line": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "default": "Learn all the things"
+},
+{
+  "id": "8cde9e5a-907b-5a7c-bc21-e27ea7e04bba",
+  "name": "divider_on",
+  "label": "divider_on",
+  "help_text": "Turns on the little divider line.",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": false
+},
+{
+  "id": "86b0860a-e408-534e-6fb7-a97ce1e6bd68",
+  "name": "cta_body",
+  "label": "cta_body",
+  "required": false,
+  "locked": false,
+  "validation_regex": "",
+  "placeholder": "Leave Empty to Remove",
+  "allow_new_line": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "default": null
+},
+{
+
+  "name": "cta_body__video_embed",
+  "label": "cta_body__video_embed",
+  "required": false,
+  "locked": false,
+  "validation_regex": "",
+  "placeholder": "Leave Empty to Remove",
+  "allow_new_line": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "default": null
+},
+
+{
+  "name": "non_cta_button1",
+  "label": "Non-CTA Button 1",
+  "help_text": "Buttons that are not Hubby CTA's",
+  "required": false,
+  "locked": false,
+  "children": [{
+    "name": "non_cta1",
+    "label": "Non-CTA Button 1",
+    "help_text": "",
+    "required": false,
+    "locked": false,
+
+    "children": [
+      {
+        "name": "cta1_text",
+        "label": "cta1_text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave Blank to Remove Element",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "cta1_url",
+        "label": "cta1_url",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false
+        }
+      }
+    ],
+    "tab": "CONTENT",
+    "type": "group"
+  }],
+  "tab": "CONTENT",
+  "type": "group"
+},
+
+
+
+
+
+
+
+
+{
+  "name": "cta2_text",
+  "label": "cta2_text",
+  "required": false,
+  "locked": false,
+  "validation_regex": "",
+  "placeholder": "Leave Blank to Remove The Element",
+  "allow_new_line": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "default": ""
+},
+{
+
+  "name": "cta2_url",
+  "label": "cta2_url",
+  "required": false,
+  "locked": false,
+  "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+  "type": "link",
+  "default": {
+    "url": {
+      "content_id": null,
+      "type": "EXTERNAL",
+      "href": ""
+    },
+    "open_in_new_tab": false,
+    "no_follow": false
+  }
+},
+{
+  "id": "",
+  "name": "hyperlink_cta",
+  "label": "Hyperlink CTA",
+  "sortable": false,
+  "required": false,
+  "locked": false,
+  "type": "cta",
+  "default": null
+}
+]
