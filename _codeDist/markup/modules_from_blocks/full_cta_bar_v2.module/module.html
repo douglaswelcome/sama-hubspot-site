@@ -19,7 +19,7 @@
   {% endif %}
 
 
-  {#---------------old buttons --------- #}
+{# ---------------new and improved hubby CTA Buttons --------- #}
 
   {% if module.cta_buttons.cta1 %}
   <div class="button-grid ">
@@ -67,41 +67,9 @@
   </div>
   {% endif %}
 
-  {# ---------------new and improved hubby CTA Buttons --------- 
-  
-    {% if module.cta1_text %}
-    <div class="button-grid ">
   
   
-      {% if module.cta1_text %}
-      <div class="button-wrapper">
-        {% set href = module.cta1_url.url.href %}
-        <a href="{{ href }}" {% if module.cta1_url.open_in_new_tab %} {% endif %}
-          {% if module.cta1_url.no_follow %}rel="nofollow" {% endif %}>
-          <button class="btn">
-            <h3 class="btn__content">{{ module.cta1_text }}</h3>
-          </button>
-        </a>
-      </div>
-      {% endif %}
-  
-      {% if module.cta2_text %}
-      <div class="button-wrapper">
-        {% set href = module.cta2_url.url.href %}
-        <a href="{{ href }}" {% if module.cta2_url.open_in_new_tab %} {% endif %}
-          {% if module.cta2_url.no_follow %}rel="nofollow" {% endif %}>
-          <button class="btn">
-            <h3 class="btn__content">{{ module.cta2_text }}</h3>
-          </button>
-        </a>
-      </div>
-      {% endif %}
-  
-  
-    </div>
-    {% endif %}
-  
-    #}
+
 
   {#---------------new and improved hubby CTA Hyperlink --------- #}
 
