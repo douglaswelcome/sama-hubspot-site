@@ -61,30 +61,30 @@
     "type": "text",
     "default": null
   },
- 
+
   {
     "id": "fa4ae82b-6572-f73f-acf4-c46f99315a18",
     "name": "cta1_text",
     "label": "cta1_text",
     "required": false,
-          "locked": false,
-          "validation_regex": "",
-          "placeholder": "Leave Blank to Remove Element",
-          "allow_new_line": false,
-          "show_emoji_picker": false,
-          "type": "text",
-          "default": ""
-        },
-        {
-          "name": "cta1_url",
-          "label": "cta1_url",
-          "required": false,
-          "locked": false,
-          "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
-          "type": "link",
-          "default": {
-            "url": {
-              "content_id": null,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "cta1_url",
+    "label": "cta1_url",
+    "required": false,
+    "locked": false,
+    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+    "type": "link",
+    "default": {
+      "url": {
+        "content_id": null,
         "type": "EXTERNAL",
         "href": ""
       },
@@ -122,6 +122,38 @@
       "open_in_new_tab": false,
       "no_follow": false
     }
+  },
+  {
+    "name": "cta_buttons",
+    "label": "CTA Buttons",
+    "help_text": "Buttons that are Hubby CTA's",
+    "required": false,
+    "locked": false,
+
+
+    "children": [{
+        "id": "",
+        "name": "cta1",
+        "label": "CTA Button 1",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "type": "cta",
+        "default": null
+      },
+      {
+        "id": "",
+        "name": "cta2",
+        "label": "CTA Button 2",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "type": "cta",
+        "default": null
+      }
+    ],
+    "tab": "CONTENT",
+    "type": "group"
   },
   {
     "id": "",
