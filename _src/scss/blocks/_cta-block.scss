@@ -1,6 +1,6 @@
 .cta-block {
   @extend %page-container;
-  text-align:center;
+  text-align: center;
 
   .button-row {
     display: flex;
@@ -86,6 +86,18 @@
   &__hyperlink {
     display: inline-grid;
     grid-template-columns: auto auto;
-    
+    align-items: center;
+
   }
+}
+
+.hyperlink__arrow {
+  display: flex;
+  align-content: center;
+
+  svg {
+    height: 1.5rem;
+    padding-left: .5rem;
+  }
+
 }
