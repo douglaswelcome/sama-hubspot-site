@@ -553,9 +553,14 @@
   max-height: 45rem;
   @extend %page-container;
 
+  @include breakpoint (w-med){
+    height:auto;
+  }
+
   @include breakpoint (w-sm) {
     grid-template-columns: auto;
     margin-top: 0rem;
+    
   }
 
 
@@ -647,8 +652,7 @@
 
     @include breakpoint (w-sm) {
       margin-bottom: -3rem;
-     
-      min-height: 18rem;
+      min-height: 15rem;
     }
   }
 
