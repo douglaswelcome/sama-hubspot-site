@@ -10,7 +10,8 @@
     margin-bottom: 1rem;
   }
   img {
-    width:100%;
+    width:100%!important; //this is because the fucking image thing inside the rich text editor forces a inline width. Fuck that shit
+    
     padding: 3rem 1rem;
   }
 
