@@ -53,8 +53,15 @@
         }
 
         .cta-width {
-            max-width: 50%
+            max-width: 33%;
         }
+
+        @media screen and (max-width: 480px) {
+            .cta-width {
+                max-width: 50%;
+            }
+            }
+
     </mj-style>
 
 
