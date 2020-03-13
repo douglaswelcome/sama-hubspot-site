@@ -1,6 +1,6 @@
-<mj-section>
-    <mj-column>
-            <mj-text font-size="18px">
+<mj-section padding-top="0px">
+    <mj-column >
+            <mj-text font-size="18px"  padding-top="0px">
                 {% rich_text "my_rich_text"
                     html="Hi Friend,
         
