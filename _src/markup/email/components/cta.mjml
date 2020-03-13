@@ -1,6 +1,6 @@
 
-    <mj-section>
-      <mj-column css-class="cta-width">
+<mj-section padding-top="0px">
+      <mj-column css-class="cta-width" padding-top="0px">
 <mj-raw >
   {% cta "my_cta"
     embed_code="embed_code", 
