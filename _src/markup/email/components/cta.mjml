@@ -1,7 +1,6 @@
-<mjml>
-  <mj-body>
+
     <mj-section>
-      <mj-column width="175px">
+      <mj-column css-class="cta-width">
 <mj-raw >
   {% cta "my_cta"
     embed_code="embed_code", 
@@ -16,5 +15,3 @@
 </mj-column>
 
     </mj-section>
-  </mj-body>
-</mjml>

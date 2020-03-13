@@ -16,42 +16,48 @@
 
         }
 
-        .hero-bg-img, 
+        .hero-bg-img,
         .hero-bg-img > div > table {
         background-position:center center;
         background-size:cover;
         }
 
-
-
         .bg-img-overlay {
-
         background:
         linear-gradient(
         rgba(13, 8, 36, 0.7),
         rgba(13, 8, 36, 0.45)
         );
-
-    
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         .btn > table > tbody > tr > td > p {
         cursor:pointer!important;
         }
+
+
     </mj-style>
+
+    <mj-style>
+        .social-align {
+        text-align:left;
+        }
+
+        @media screen and (max-width: 480px) {
+        .social-align {
+        text-align:right;
+        }
+        }
+
+        .header-logo > table {
+        width:50%;
+        }
+
+        .cta-width {
+            max-width: 50%
+        }
+    </mj-style>
+
+
     <mj-attributes>
         <mj-all font-family="Brown-Light" />
     </mj-attributes>
@@ -75,4 +81,5 @@
             }
         </style>
     </mj-raw>
+
 </mj-head>
