@@ -1,10 +1,10 @@
+<mj-wrapper padding="0px 15px 15px 15px">
+    <mj-section css-class="round-border" >
 
-    <mj-section css-class="round-border">
-
-        <mj-column width="40%" background-color="#fff" vertical-align="bottom" >
+        <mj-column background-color="#fff" vertical-align="bottom" css-class="social-align">
 
             
-                <mj-social align="left" font-size="15px" icon-size="30px" mode="horizontal" >
+                <mj-social  font-size="15px" icon-size="30px" mode="horizontal" css-class="social-align">
                         <mj-social-element background-color="#fff" name="facebook-noshare" href="https://www.facebook.com/samaimpact/" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/facebook_charcoal_raster.png">
                         </mj-social-element>
                         <mj-social-element  background-color="#fff" name="linkedin-noshare" href="https://www.linkedin.com/company/samasource" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/social/linkedin_charcoal_raster.png">
@@ -16,7 +16,7 @@
                       </mj-social>
 
         </mj-column>
-        <mj-column width="60%" vertical-align="bottom">
+        <mj-column  vertical-align="bottom">
             <mj-text align="right">
                 <p>
                     {{site_settings.company_name}}
@@ -34,3 +34,6 @@
             </mj-text>
         </mj-column>
     </mj-section>
+</mj-wrapper>
+
+
