@@ -1,12 +1,14 @@
 <!-- module html  -->
-<a href="/company-announcement">
+{% if module.module_on %}
+<a href="{{ module.url.href }}">
     <section class="popdown">
         <p class="popdown__text ">
-            Samasource Mourns the Loss of CEO and Founder, Leila Janah
+            {{ module.text_field }}
         </p>
         <h3 class="popdown__cta-text">
-            Read the Announcement
+            {{ module.cta_text}}
         </h3>
 
     </section>
 </a>
+{% endif %}
