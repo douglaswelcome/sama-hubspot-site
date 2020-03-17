@@ -34,6 +34,10 @@
         cursor:pointer!important;
         }
 
+        .footer-link > div > p > a {
+            line-height: 1.3;
+        }
+
 
     </mj-style>
 
