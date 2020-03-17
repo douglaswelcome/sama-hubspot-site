@@ -1,7 +1,7 @@
         <mj-section >
 
             <mj-column >
-                <mj-image css-class="header-logo" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo_raster.png" ></mj-image>
+                <mj-image css-class="header-logo" src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/logos/logo_raster.png" href="https://www.samasource.com" ></mj-image>
             </mj-column>
 
         </mj-section>
