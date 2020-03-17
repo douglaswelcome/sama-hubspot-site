@@ -22,9 +22,8 @@
                     {{site_settings.company_name}}
                 </p>
                 <p>
-                    <a href="https://www.samasource.com">
-                    Samasource.com
-                    </a>
+                    <a href="https://www.samasource.com">Samasource.com</a>
+                </br>
                     {{site_settings.company_street_address_1}}
                     </br>
                     {{site_settings.company_city}}, {{site_settings.company_state}} {{site_settings.company_zip}}
