@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "headline_text",
     "label": "Headline text",
     "sortable": false,
