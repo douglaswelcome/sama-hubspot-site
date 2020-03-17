@@ -20,4 +20,17 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : null
-} ]
+},
+{
+"id" : "",
+"name": "subheadline_date",
+"label": "Date of Post",
+"sortable": false,
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "Leave Blank to Hide",
+"default": null } ]
