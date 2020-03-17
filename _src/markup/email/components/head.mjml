@@ -70,7 +70,7 @@
     </mj-attributes>
     <mj-font name="Brown-Bold" href="" />
     <mj-font name="Barlow Condensed" href="https://fonts.googleapis.com/css?family=Barlow+Condensed:600&display=swap" />
-    <mj-preview>{% text "Preview Text" no_wrapper=True %}</mj-preview>
+    <mj-preview>{% text "Preview Text" no_wrapper=True label="Preview Text for Email Clients"%}</mj-preview>
     <mj-raw>
         <style>
             @font-face {
