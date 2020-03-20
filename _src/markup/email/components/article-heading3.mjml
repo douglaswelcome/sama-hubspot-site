@@ -1,0 +1,9 @@
+<mjml-section>
+    <mj-column>
+        <mj-text font-size="14px" padding-top="0px" line-height="1.5">
+            <h3>
+                {% text "article_title" label="Enter text here", value="This is the default value for this text field" no_wrapper=true %}
+            </h3>
+        </mj-text>
+    </mj-column>
+</mjml-section>

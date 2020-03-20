@@ -8,6 +8,11 @@
         border-bottom-right-radius: 35px;
         }
 
+        .round-border--light {
+            border-right: 2px solid #ceced0;
+            border-bottom: 2px solid #ceced0;
+            }
+
         .round-corner {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
