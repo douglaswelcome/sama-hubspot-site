@@ -4,11 +4,28 @@
 
     <!-- Company Header -->
     <mj-include path="../components/header.mjml" />
-   
+   <!-- Hero Image -->
+    <mj-include path="../components/image.mjml" />
+    <!-- opening text -->
+    <mj-include path="../components/rich-text.mjml" />
+    
+    <mj-include path="../components/divider.mjml" />
+    <!-- Section -->
+    <mj-include path="../components/article-heading3.mjml" />
+    
+    <mj-include path="../components/article-heading1.mjml" />
+
     <mj-include path="../components/image.mjml" />
 
     <mj-include path="../components/rich-text.mjml" />
+
+    <mj-include path="../components/divider.mjml" />
+
+     <!--title-->
+
     <mj-include path="../components/rich-text.mjml" />
+
+
 
 
 
