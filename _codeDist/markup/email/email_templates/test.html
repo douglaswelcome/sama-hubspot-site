@@ -7,8 +7,12 @@
 {% block email-body %}
     {% include /markup/email/email_static/header.html %}
 
-    {% module "module_20200323093312" path="/markup/email/email_modules/rich-text", label="rich-text" %}
+    {% module "module_20200323093312" path="/markup/email/email_modules/rich-text", label="Rich Text Block" %}
 
+    {% include /markup/email/email_static/divider.html %}
+
+    {% module "module_20200323164948" path="/markup/email/email_modules/article-heading3", label="Heading 3" %}
+    
     {% include /markup/email/email_static/footer.html %}
     
 

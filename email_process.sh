@@ -13,4 +13,8 @@
 #   echo "blam"
 # done
 
-npx mjml _src/markup/email_modules/static/header.mjml -o _codeDist/markup/email/email_static/header.html
+# npx mjml _src/markup/email_modules/static/divider.mjml -o _codeDist/markup/email/email_static/divider.html
+
+
+npx hs create module article-heading3 _codeDist/markup/email/email_modules
+  npx mjml _src/markup/email_modules/components/article-heading3.mjml -o _codeDist/markup/email/email_modules/article-heading3.module/module.html
