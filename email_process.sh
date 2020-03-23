@@ -13,4 +13,4 @@
 #   echo "blam"
 # done
 
-npx mjml _src/markup/email_modules/components/rich-text.mjml -o _codeDist/markup/email/email_modules/module.html
+npx mjml _src/markup/email_modules/static/header.mjml -o _codeDist/markup/email/email_static/header.html
