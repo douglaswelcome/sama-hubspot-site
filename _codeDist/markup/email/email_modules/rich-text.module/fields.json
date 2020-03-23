@@ -1,9 +1,9 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
+    "default": "Automatically, all of these beautiful, beautiful things will happen. Every single thing in the world has its own personality - and it is up to you to make friends with the little rascals. I can't think of anything more rewarding than being able to express yourself to others through painting. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. There are no limits in this world. I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself.",
+    "label": "Rich Text Block",
     "locked": false,
-    "name": "text",
+    "name": "rich_text",
     "required": false,
     "type": "richtext",
     "validation_regex": ""

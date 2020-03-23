@@ -1,6 +1,10 @@
 <mjml>
     <mj-include path="../static/head.mjml" />
     <mj-body>
-   
+      <mj-raw>
+      {% block email-body %}
+
+      {% endblock %}
+    </mj-raw>
     </mj-body>
   </mjml>
