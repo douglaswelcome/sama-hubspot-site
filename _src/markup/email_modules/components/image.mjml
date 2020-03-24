@@ -9,8 +9,8 @@
     <mj-section padding-top="0px">
       <mj-column>
         <mj-image padding-top="0px"
-          src='  {% image_src "hero_image_time" src="https://www.placecage.com/c/400/200" no_wrapper=true %} '
-          href=' {% text "hero_img_link" label="Enter Image Link", value="https://www.samasource.com" no_wrapper=True %}' />
+          src='  {{ module.img.href }} '
+          href=' {{ module.link.url.href }}' />
       </mj-column>
     </mj-section>
 

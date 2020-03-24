@@ -16,5 +16,5 @@
 # npx mjml _src/markup/email_modules/static/divider.mjml -o _codeDist/markup/email/email_static/divider.html
 
 
-npx hs create module article-heading1 _codeDist/markup/email/email_modules
-  npx mjml _src/markup/email_modules/components/article-heading1.mjml -o _codeDist/markup/email/email_modules/article-heading1.module/module.html
+# npx hs create module article-heading1 _codeDist/markup/email/email_modules
+  npx mjml _src/markup/email_modules/components/image.mjml -o _codeDist/markup/email/email_modules/image.module/module.html
