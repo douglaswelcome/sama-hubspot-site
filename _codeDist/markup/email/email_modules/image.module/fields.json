@@ -1,3 +1,35 @@
-[
-  
+[{
+        "id": "",
+        "name": "img",
+        "label": "Image Field",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "resizable": false,
+        "type": "image",
+        "default": {
+            "src": "",
+            "alt": null
+        }
+    },
+    {
+        "id": "",
+        "name": "link",
+        "label": "Image Link",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "default": {
+            "url": {
+                "content_id": null,
+                "type": "EXTERNAL",
+                "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+        }
+    }
+
 ]
