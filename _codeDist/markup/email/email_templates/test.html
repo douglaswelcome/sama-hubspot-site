@@ -2,10 +2,16 @@
     templateType: email
     isAvailableForNewContent: true
 -->
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
 {% extends '/markup/email/email_static/base.html' %}
 
 {% block email-body %}
     {% include /markup/email/email_static/header.html %}
+
+    {% module "module_20200324172335" path="/markup/email/email_modules/image", label="Image" %}
 
     {% module "module_20200323093312" path="/markup/email/email_modules/rich-text", label="Rich Text Block" %}
 
