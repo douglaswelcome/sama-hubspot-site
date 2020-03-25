@@ -1,0 +1,15 @@
+<mjml>
+    <mj-include path="../static/head.mjml" />
+    <mj-body>
+        <!--begin module-->
+        <mj-section padding-top="0px">
+            <mj-column css-class="cta-width" padding-top="0px">
+                <mj-raw>
+                    {{ module.cta }}
+                </mj-raw>
+            </mj-column>
+
+        </mj-section>
+        <!--end module-->
+    </mj-body>
+</mjml>
