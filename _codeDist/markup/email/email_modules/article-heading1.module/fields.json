@@ -11,6 +11,6 @@
     "show_emoji_picker": false,
     "type": "text",
     "placeholder": "",
-    "default": null 
+    "default": "Heading 1 Here"
   }
 ]
