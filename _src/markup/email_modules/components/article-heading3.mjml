@@ -2,10 +2,10 @@
     <mj-include path="../no-touchy/head.mjml" />
     <mj-body>
         <!--begin module-->
-        <mj-section>
+        <mj-section padding="0px">
             <mj-column>
-                <mj-text font-size="14px" padding-top="0px" line-height="1.5">
-                    <h3>
+                <mj-text font-size="14px" padding-top="0px" line-height="1.5" padding-top="0px" padding-bottom="0px">
+                    <h3 >
                         {{ module.text }}
                     </h3>
                 </mj-text>
