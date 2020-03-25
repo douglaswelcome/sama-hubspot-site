@@ -2,8 +2,8 @@
     <mj-include path="../no-touchy/head.mjml" />
     <mj-body>
 <!--begin module-->
-<mj-wrapper padding="0px 15px 20px 15px">
-    <mj-section css-class="round-border round-border--light" >
+<mj-wrapper padding="0px 15px 10px 15px">
+    <mj-section css-class="round-border round-border--light" padding="0px 0px 20px 0px;">
     </mj-section>
 </mj-wrapper>
 <!--end module-->
