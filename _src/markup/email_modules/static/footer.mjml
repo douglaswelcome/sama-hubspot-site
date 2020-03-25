@@ -1,5 +1,5 @@
 <mjml>
-    <mj-include path="../static/head.mjml" />
+    <mj-include path="../no-touchy/head.mjml" />
     <mj-body>
 <!--begin module-->
 <mj-wrapper padding="0px 15px 15px 15px">
