@@ -102,9 +102,17 @@
                 line-height: 1;
             }
 
-            p, ul, h1, h2, h3 {
+            p, ul, ol, h1, h2, h3 {
                 padding:  0px 0px 15px 0px;
+                padding-top: 0px;
+                padding-bottom:15px;
                 margin: 0px;
+                margin-top:0px;
+                margin-bottom:0px;
+            }
+
+            ul, ol {
+                padding-left:25px!important;
             }
 
             .header-logo {
@@ -113,7 +121,7 @@
                 .header-logo > table {
                     width:50%;
                 }
-        
+                
 
 
         </mj-style>
@@ -139,6 +147,19 @@
             .cta-width {
             max-width: 50%;
             }
+            }
+
+            p, ul, ol, h1, h2, h3 {
+                padding:  0px 0px 15px 0px;
+                padding-top: 0px;
+                padding-bottom:15px;
+                margin: 0px;
+                margin-top:0px;
+                margin-bottom:0px;
+            }
+
+            ul, ol {
+                padding-left:25px!important;
             }
 
         </mj-style>
