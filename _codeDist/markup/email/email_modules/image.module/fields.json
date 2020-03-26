@@ -8,7 +8,7 @@
         "resizable": false,
         "type": "image",
         "default": {
-            "src": "",
+            "src": "https://source.unsplash.com/random/550x350",
             "alt": null
         }
     },
@@ -25,7 +25,7 @@
             "url": {
                 "content_id": null,
                 "type": "EXTERNAL",
-                "href": "https://source.unsplash.com/random/550x350"
+                "href": ""
             },
             "open_in_new_tab": false,
             "no_follow": false
