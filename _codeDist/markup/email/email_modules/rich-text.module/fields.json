@@ -1,6 +1,6 @@
 [
   {
-    "default": "Automatically, all of these beautiful, beautiful things will happen. Every single thing in the world has its own personality - and it is up to you to make friends with the little rascals. I can't think of anything more rewarding than being able to express yourself to others through painting. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. There are no limits in this world. I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself.",
+    "default": "<p>Automatically, all of these beautiful, </p><ul><li>beautiful things will happen. Every single thing in the world has its own personality</li><li>and it is up to you to make friends with the little rascals.</li></ul> <p>I can't think of anything more rewarding than being able to express yourself to others through painting. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. There are no limits in this world. I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself.</p>",
     "label": "Rich Text Block",
     "locked": false,
     "name": "rich_text",
