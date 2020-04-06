@@ -1,9 +1,16 @@
 <!-- module html  -->
-{% set table = hubdb_table(2609928) %}
 
-{% set categories = hubdb_table_column(2609928, "category") %}
+{% set prodtab = 2614739 %}
 
-{% set rows = hubdb_table_rows(2609928, "" ) %}
+{% set devtab = 2609928 %}
+
+{% set dataz = prodtab %}
+
+{% set table = hubdb_table(dataz) %}
+
+{% set categories = hubdb_table_column(dataz, "category") %}
+
+{% set rows = hubdb_table_rows(dataz, "" ) %}
 
 {% set tools = rows|groupby('category') %}
 
