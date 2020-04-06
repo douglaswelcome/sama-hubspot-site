@@ -157,7 +157,9 @@ function watchCodeFiles() {
 
 function serve(done) {
     browserSync.init({
-        proxy: "https://hubspot-developers-34rjat-6398568.hs-sites.com/"
+        proxy: {
+            target: "https://hubspot-developers-34rjat-6398568.hs-sites.com/",
+        }
     });
     done();
 
