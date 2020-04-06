@@ -1,0 +1,432 @@
+<!-- module html  -->
+{% set table = hubdb_table(2609928) %}
+
+{% set categories = hubdb_table_column(2609928, "category") %}
+
+{% set rows = hubdb_table_rows(2609928, "" ) %}
+
+{% set tools = rows|groupby('category') %}
+
+
+<!-- 
+<ul>
+    {% for xyzcat in tools %}
+        <li>{{ xyzcat.grouper }}
+        <ul>
+            {% for item in xyacat.list %}
+              <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        </li>
+    {% endfor %}
+    </ul> -->
+
+
+
+<section class="">
+
+    <div class="offering-grid ">
+
+        <!--Header Row-->
+        <div class="offering-grid__plan offering-grid--low">
+            <h3>Starter</h3>
+            <div class="divider-line divider-line--horizontal"></div>
+            <p>
+                Easily get started solving your labeling needs. Ideal for a lower volume of data and number of uses
+                cases.
+            </p>
+            <button class="btn">
+                <h3>Click Me baby</h3>
+            </button>
+        </div>
+        <div class="offering-grid__plan offering-grid--mid">
+            <h3>Grow</h3>
+            <div class="divider-line divider-line--horizontal"></div>
+            <p>
+                Access our advanced modules to solve your more complex labeling challenges. Designed for teams who need
+                high-quality data at scale.
+            </p>
+            <button class="btn">
+                <h3>Click Me baby</h3>
+            </button>
+        </div>
+        <div class="offering-grid__plan offering-gris--high">
+            <h3>Enterprise</h3>
+            <div class="divider-line divider-line--horizontal"></div>
+            <p>
+                Optimize your model quality and accuracy for production use cases. For high-volume training data
+                throughput, multiple workflows and challenging edge cases.
+            </p>
+            <button class="btn">
+                <h3>Click Me baby</h3>
+            </button>
+        </div>
+
+        <!--loop for each category-->
+        {% for cat in categories.options %}
+
+
+        <div class="offering-grid__category">
+            <h3> {{ cat.name }} </h3>
+        </div>
+
+        {% for row in rows %}
+        {#------sort by categories-----#}
+        {% if row.category.name==cat.name %}
+
+        {#-------first get all the starters------#}
+        {% if row.low.name=="Yes" %}
+        <div class="offering-grid__feature   ">
+            <p>{{ row.feature }}</p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+
+        {# -----then the Add-Ons in the Starters------ #}
+        {% if row.low.name=="Add-On" %}
+        <div class="offering-grid__feature">
+            <p>{{ row.feature }}</p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {# -----then the Grows------ #}
+        {%if row.low.name=="No" && row.mid.name=="Yes"%}
+        <div class="offering-grid__feature">
+            <p>{{ row.feature }}</p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+        {# -----then the Grow Add-Ons------ #}
+        {%if row.low.name=="No" && row.mid.name=="Add-On"%}
+        <div class="offering-grid__feature">
+            <p>{{ row.feature }}</p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {# -----now add the Enterprise------ #}
+        {%if row.low.name=="No" && row.mid.name=="No" && row.high.name=="Yes" %}
+        <div class="offering-grid__feature">
+            <p>{{ row.feature }} </p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+
+
+        {# -----now add the Enterprise------ #}
+        {%if row.low.name=="No" && row.mid.name=="No" && row.high.name=="Add-On" %}
+        <div class="offering-grid__feature">
+            <p>{{ row.feature }}</p>
+        </div>
+        <div class="offering-grid__check">
+            {% if row.low.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.low.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.mid.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.mid.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        <div class="offering-grid__check">
+            {% if row.high.name=="Yes" %}
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+            {% elif row.high.name=="Add-On"%}
+            <p>Add-On</p>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<section class="offering-mobile">
+
+    <div class="offering-mobile__card">
+        <div class="offering-mobile__plan">
+            <h3>Starter</h3>
+            <div class="divider-line divider-line--horizontal"></div>
+            <p>This is where we talk about how cool this thing is</p>
+        </div>
+        <button class="btn offering-mobile__btn">
+            <h3>Click Me baby</h3>
+        </button>
+        <div>
+            <!--loop for each category-->
+            {% for cat in categories.options %}
+            {% if cat.name!="Extensions" %}
+            <div class="offering-mobile__category">
+                <h6 class="bold">
+                    {{ cat.name }}
+                </h6>
+            </div>
+            {% endif %}
+
+            <div class="offering-mobile__feature-wrapper">
+            {% for row in rows %}
+            
+                {% if row.category.name==cat.name %}
+                {%if row.low.name=="Yes" %}
+
+                <div class="offering-mobile__check">
+                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                </div>
+                <div class="offering-mobile__feature">
+                        <p> {{ row.feature }}</p>
+                </div>
+                    {% endif %}
+                    {% endif %}
+                
+                {% endfor %}
+            </div>
+
+                {% endfor %}
+
+                <div class="offering-mobile__category">
+                    <h6 class="bold"> Available Add-Ons </h6>
+                </div>
+                <div class="offering-mobile__feature-wrapper">
+                    {% for row in rows %}
+                    {% if row.low.name=="Add-On" %}
+                    <div class="offering-mobile__check">
+                        <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    </div>
+                    <div class="offering-mobile__feature">
+                            <p> {{ row.feature }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="offering-mobile__card">
+            <div class="offering-mobile__plan">
+                <h3>Grow</h3>
+                <div class="divider-line divider-line--horizontal"></div>
+                <p>This is where we talk about how cool this thing is</p>
+            </div>
+            <button class="btn offering-mobile__btn">
+                <h3>Click Me baby</h3>
+            </button>
+            <div>
+                <!--loop for each category-->
+                {% for cat in categories.options %}
+                {% if cat.name!="Quality and Performance" && cat.name!="Support" && cat.name!="Extensions"%}
+                <div class="offering-mobile__category">
+                    <h6 class="bold">
+                        {{ cat.name }}
+                    </h6>
+                </div>
+                {% endif %}
+    
+                <div class="offering-mobile__feature-wrapper">
+                {% for row in rows %}
+                
+                    {% if row.category.name==cat.name %}
+                    {%if row.low.name=="No" && row.mid.name=="Yes" %}
+    
+                    <div class="offering-mobile__check">
+                        <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    </div>
+                    <div class="offering-mobile__feature">
+                            <p> {{ row.feature }}</p>
+                    </div>
+                        {% endif %}
+                        {% endif %}
+                    
+                    {% endfor %}
+                </div>
+    
+                    {% endfor %}
+    
+                    <div class="offering-mobile__category">
+                        <h6 class="bold"> Available Add-Ons </h6>
+                    </div>
+                    <div class="offering-mobile__feature-wrapper">
+                        {% for row in rows %}
+                        {% if row.mid.name=="Add-On" %}
+                        <div class="offering-mobile__check">
+                            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                        </div>
+                        <div class="offering-mobile__feature">
+                                <p> {{ row.feature }}</p>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="offering-mobile__card">
+                <div class="offering-mobile__plan">
+                    <h3>Enterprise</h3>
+                    <div class="divider-line divider-line--horizontal"></div>
+                    <p>This is where we talk about how cool this thing is</p>
+                </div>
+                <button class="btn offering-mobile__btn">
+                    <h3>Click Me baby</h3>
+                </button>
+                <div>
+                    <!--loop for each category-->
+                    {% for cat in categories.options %}
+                    {% if cat.name!="Support" && cat.name!="Extensions"%}
+                    <div class="offering-mobile__category">
+                        <h6 class="bold">
+                            {{ cat.name }}
+                        </h6>
+                    </div>
+                    {% endif %}
+        
+                    <div class="offering-mobile__feature-wrapper">
+                    {% for row in rows %}
+                    
+                        {% if row.category.name==cat.name %}
+                        {%if row.low.name=="No" && (row.mid.name=="No" || row.mid.name=="Add-On") && row.high.name=="Yes" %}
+        
+                        <div class="offering-mobile__check">
+                            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                        </div>
+                        <div class="offering-mobile__feature">
+                                <p> {{ row.feature }}</p>
+                        </div>
+                            {% endif %}
+                            {% endif %}
+                        
+                        {% endfor %}
+                    </div>
+        
+                        {% endfor %}
+        
+                        <div class="offering-mobile__category">
+                            <h6 class="bold"> Available Add-Ons </h6>
+                        </div>
+                        <div class="offering-mobile__feature-wrapper">
+                            {% for row in rows %}
+                            {% if  row.high.name=="Add-On" %}
+                            <div class="offering-mobile__check">
+                                <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                            </div>
+                            <div class="offering-mobile__feature">
+                                    <p> {{ row.feature }}</p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+</section>

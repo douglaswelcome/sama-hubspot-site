@@ -21,7 +21,7 @@ p {
   @include breakpoint(w-med) {}
 
   @include breakpoint(w-sm) {
-    font-size: calc(.7rem + .6vw);
+    font-size: calc(.6rem + .6vw);
   }
 
   // margin: auto;
