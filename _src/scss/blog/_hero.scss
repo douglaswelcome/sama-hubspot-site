@@ -158,6 +158,10 @@
   z-index: 0;
   margin-bottom: 12rem;
 
+  @include breakpoint(w-sm){
+    margin-bottom:6rem;
+  }
+
   .hero-content {
     
 
