@@ -6,6 +6,11 @@
     display: grid;
     grid-template-columns: 40% 1fr 1fr 1fr;
 
+    @include breakpoint (w-lg){
+        padding-left:1rem;
+        padding-right: 1rem;
+    }
+
    
 
     @include breakpoint (w-sm) {
