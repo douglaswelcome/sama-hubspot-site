@@ -1,0 +1,23 @@
+[
+  {
+    "name" : "headline",
+    "label" : "Hero Headline",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "This is Your Big Day"
+  }, {
+    "name" : "subheadline",
+    "label" : "Hero Subheadline",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Isn't it great to do something you can't fail at? I'm a water fanatic. I love water. Trees grow in all kinds of ways."
+  }
+]

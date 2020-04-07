@@ -4,7 +4,8 @@
     padding-left: 5rem;
     padding-right: 5rem;
     display: grid;
-    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-columns: 40% 1fr 1fr 1fr;
+
    
 
     @include breakpoint (w-sm) {
@@ -16,6 +17,7 @@
 
     &__plan:first-of-type {
         grid-column-start: 2;
+        
     }
 
     &__plan {
@@ -23,6 +25,7 @@
         padding-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
 
         h3,
         p {
@@ -54,13 +57,19 @@
     }
 
     &__category {
-        grid-column: 1 / -1;
-        border-radius: 0 0 1.5rem 0;
+        border-radius: 0 0  0 1rem;
         border-color: $color-charcoal-7;
-        border-width: 0 2px 2px 0;
+        border-width: 0 0 2px 2px;
         border-style: solid;
-        padding: 0 0 .75rem .25rem;
+        padding: 0 0 .5rem 1rem;
         margin-top:1.5rem;
+        margin-right:1.5rem;
+    }
+
+    
+
+    &--filler {
+        background-color:$color-charcoal-10;
     }
 
     &__check {
@@ -91,6 +100,7 @@
         padding-bottom: 1rem;
         border-bottom: 1px solid $color-charcoal-9;
         margin-left: 1rem;
+        grid-column-start: 1;
 
     p{
         line-height:1;

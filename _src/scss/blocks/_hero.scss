@@ -648,3 +648,11 @@
   }
 
 }
+
+.hero-center {
+  @extend %page-container;
+  text-align:center;
+  margin-top:3rem;
+  max-width: 40rem;
+
+}
