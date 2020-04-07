@@ -1,4 +1,14 @@
-html{
+html {
     visibility: hidden;
-    opacity:0;
+    opacity: 0;
+}
+
+.no-js {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.js {
+    visibility: visible;
+    opacity: 1;
 }
