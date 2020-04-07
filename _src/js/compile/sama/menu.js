@@ -41,11 +41,15 @@ $(function() {
   //shows which portions of the menu are active
 
   $('.desktop-header menu.desktop-menu li').mouseover(function() {
-    var t = $(this).index();
+    var t = $(this).attr('id');
+    var sub = t + '-sub';
+
+    console.log(t);
+    console.log(sub);
     $('.desktop-header menu.desktop-menu li.open').removeClass('open');
-    $('.desktop-header menu.desktop-menu li:eq(' + t + ')').addClass('open');
+    $('#' + t).addClass('open');
     $('section.submenu .submenu-content .submenu-item.visible').removeClass('visible');
-    $('section.submenu .submenu-content .submenu-item:eq(' + t + ')').addClass('visible');
+    $('#' + sub).addClass('visible');
   });
 
 
