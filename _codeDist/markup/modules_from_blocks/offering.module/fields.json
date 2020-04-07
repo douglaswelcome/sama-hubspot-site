@@ -1,12 +1,73 @@
-[
-  {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
+[{
+    "id": "",
+    "name": "low_text",
+    "label": "Good Description",
     "sortable": false,
-    "type": "richtext",
-    "validation_regex": ""
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "Description for Good Option",
+    "default": "Just a little indication. There it is. Look at them little rascals. Follow the lay of the land. It's most important."
+  },
+  {
+    "id": "",
+    "name": "mid_text",
+    "label": "Better Description",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "Description for Better Option",
+    "default": "Just a little indication. There it is. Look at them little rascals. Follow the lay of the land. It's most important."
+  },
+  {
+    "id": "",
+    "name": "high_text",
+    "label": "Best Description",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "Description for Best Option",
+    "default": "Just a little indication. There it is. Look at them little rascals. Follow the lay of the land. It's most important."
+  },
+  {
+    "id": "",
+    "name": "low_cta",
+    "label": "Good CTA",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "cta",
+    "default": null
+  },
+  {
+    "id": "",
+    "name": "mid_cta",
+    "label": "Better CTA",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "cta",
+    "default": null
+  },
+  {
+    "id": "",
+    "name": "high_cta",
+    "label": "Best CTA",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "cta",
+    "default": null
   }
 ]
