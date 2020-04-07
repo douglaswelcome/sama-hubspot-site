@@ -4,7 +4,7 @@
 
 {% set devtab = 2609928 %}
 
-{% set dataz = prodtab %}
+{% set dataz = devtab %}
 
 {% set table = hubdb_table(dataz) %}
 
@@ -39,34 +39,31 @@
             <h3>Starter</h3>
             <div class="divider-line divider-line--horizontal"></div>
             <p>
-                Easily get started solving your labeling needs. Ideal for a lower volume of data and number of uses
-                cases.
+                {{module.low_text}}
             </p>
-            <button class="btn">
-                <h3>Click Me baby</h3>
-            </button>
+            <div class="offering-grid__btn">
+                {% cta guid="{{ module.low_cta }}" %}
+             </div>
         </div>
         <div class="offering-grid__plan offering-grid--mid">
             <h3>Grow</h3>
             <div class="divider-line divider-line--horizontal"></div>
             <p>
-                Access our advanced modules to solve your more complex labeling challenges. Designed for teams who need
-                high-quality data at scale.
+                {{module.mid_text}}
             </p>
-            <button class="btn">
-                <h3>Click Me baby</h3>
-            </button>
+            <div class="offering-grid__btn">
+                {% cta guid="{{ module.mid_cta }}" %}
+           </div>
         </div>
         <div class="offering-grid__plan offering-gris--high">
             <h3>Enterprise</h3>
             <div class="divider-line divider-line--horizontal"></div>
             <p>
-                Optimize your model quality and accuracy for production use cases. For high-volume training data
-                throughput, multiple workflows and challenging edge cases.
+                {{module.high_text}}
             </p>
-            <button class="btn">
-                <h3>Click Me baby</h3>
-            </button>
+            <div class="offering-grid__btn">
+                {% cta guid="{{ module.high_cta }}" %}
+           </div>
         </div>
 
         <!--loop for each category-->
@@ -266,11 +263,8 @@
         <div class="offering-mobile__plan">
             <h3>Starter</h3>
             <div class="divider-line divider-line--horizontal"></div>
-            <p>This is where we talk about how cool this thing is</p>
+            <p>{{module.mid_text}}</p>
         </div>
-        <button class="btn offering-mobile__btn">
-            <h3>Click Me baby</h3>
-        </button>
         <div>
             <!--loop for each category-->
             {% for cat in categories.options %}
@@ -318,17 +312,18 @@
                     {% endfor %}
                 </div>
             </div>
+            <div class="offering-mobile__btn">
+                {% cta guid="{{ module.low_cta }}" %}
+            </div>
         </div>
 
         <div class="offering-mobile__card">
             <div class="offering-mobile__plan">
                 <h3>Grow</h3>
                 <div class="divider-line divider-line--horizontal"></div>
-                <p>This is where we talk about how cool this thing is</p>
+                <p>{{module.mid_text}}</p>
             </div>
-            <button class="btn offering-mobile__btn">
-                <h3>Click Me baby</h3>
-            </button>
+           
             <div>
                 <!--loop for each category-->
                 {% for cat in categories.options %}
@@ -376,17 +371,17 @@
                         {% endfor %}
                     </div>
                 </div>
+                <div class="offering-mobile__btn">
+                    {% cta guid="{{ module.mid_cta }}" %}
+                </div>
             </div>
 
             <div class="offering-mobile__card">
                 <div class="offering-mobile__plan">
                     <h3>Enterprise</h3>
                     <div class="divider-line divider-line--horizontal"></div>
-                    <p>This is where we talk about how cool this thing is</p>
+                    <p>{{module.high_text}}</p>
                 </div>
-                <button class="btn offering-mobile__btn">
-                    <h3>Click Me baby</h3>
-                </button>
                 <div>
                     <!--loop for each category-->
                     {% for cat in categories.options %}
@@ -433,6 +428,9 @@
                             {% endif %}
                             {% endfor %}
                         </div>
+                    </div>
+                    <div class="offering-mobile__btn">
+                        {% cta guid="{{ module.high_cta }}" %}
                     </div>
                 </div>
 
