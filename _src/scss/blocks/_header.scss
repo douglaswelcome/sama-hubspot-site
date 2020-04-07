@@ -45,7 +45,7 @@
 
   .desktop-menu {
     display: inline-grid;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     grid-column-gap: 1.5rem;
     height: 100%;
 
@@ -147,15 +147,15 @@
         display: grid;
       }
 
-      &#products {
+      &#products-sub {
         grid-template-columns: 1fr 1fr;
       }
 
-      &#why {
+      &#why-sub {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
-      &#company {
+      &#about-sub {
         grid-template-columns: 1fr 1fr 1fr;
 
       }
