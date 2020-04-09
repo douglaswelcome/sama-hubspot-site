@@ -4,7 +4,7 @@
 
 {% set devtab = 2609928 %}
 
-{% set dataz = prodtab %}
+{% set dataz = devtab %}
 
 {% set table = hubdb_table(dataz) %}
 
@@ -99,7 +99,7 @@
         </div>
         
             <!--loop for each category-->
-            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|groupby('category') %}
+            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|selectattr('low.name', 'containing', '1-Yes')|groupby('category') %}
             {% set name = tool.grouper|split("'") %}
 
             <div class="offering-mobile__category">
@@ -152,11 +152,11 @@
         <div class="offering-mobile__plan">
             <h3>Grow</h3>
             <div class="divider-line divider-line--horizontal"></div>
-            <p>{{module.mid_text}}</p>
+            <p>{{module.mid_text}} Starter features plus:</p>
         </div>
         
             <!--loop for each category-->
-            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|groupby('category') %}
+            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|rejectattr('low.name','containing','1-Yes')|selectattr('mid.name', 'containing', '1-Yes')|groupby('category') %}
             {% set name = tool.grouper|split("'") %}
 
             <div class="offering-mobile__category">
@@ -211,11 +211,11 @@
         <div class="offering-mobile__plan">
             <h3>Enterprise</h3>
             <div class="divider-line divider-line--horizontal"></div>
-            <p>{{module.high_text}}</p>
+            <p>{{module.high_text}} Grow features plus: </p>
         </div>
         
             <!--loop for each category-->
-            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|groupby('category') %}
+            {% for tool in rows|rejectattr('category.name', 'equalto', 'Extensions')|rejectattr('low.name','containing','1-Yes')|rejectattr('mid.name', 'containing', '1-Yes')|selectattr('high.name', 'containing', '1-Yes')|groupby('category') %}
             {% set name = tool.grouper|split("'") %}
 
             <div class="offering-mobile__category">
@@ -240,7 +240,9 @@
 
             {%endfor%}
 
-            <div class="offering-mobile__category">
+
+
+            <!-- <div class="offering-mobile__category">
                 <h6 class="bold"> Available Add-Ons </h6>
             </div>
             <div class="offering-mobile__feature-wrapper">
@@ -254,7 +256,7 @@
                 </div>
 
             {% endfor %}
-            </div>
+            </div> -->
 
             
         
