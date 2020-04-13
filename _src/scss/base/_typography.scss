@@ -238,14 +238,7 @@ blockquote {
   margin-top:3rem;
   margin-bottom:3rem;
   
-  p {
-    font-size:2rem;
-
-    @include breakpoint(w-med){
-      font-size: calc(1rem + .9vw);
-    }
-   
-  }
+  
 
 
 }
