@@ -12,7 +12,7 @@ body {
 
 //p tags
 
-p {
+p, .blog-body li{
   font-family: $font-brown;
   font-weight: 300;
   font-size: 1rem;
@@ -128,9 +128,7 @@ strong {
 
 //lists
 
-li {
-  font-size:1rem;
-}
+
 
 //a href's
 h3 a,

@@ -9,13 +9,14 @@
   p {
     margin-bottom: 1rem;
   }
+
   img {
-    width:100%!important; //this is because the fucking image thing inside the rich text editor forces a inline width. Fuck that shit
-    
+    width: 100% !important; //this is because the fucking image thing inside the rich text editor forces a inline width. Fuck that shit
+
     padding: 3rem 1rem;
   }
 
-  a{
+  a {
     // text-decoration: underline;
     // text-decoration-color: $color-sunshine;
 
@@ -24,19 +25,18 @@
     // }
   }
 
- ol, ul {
-   padding: 1rem 0rem 1rem 3rem;
-   li {
-    line-height: 1.4;
+  ol,
+  ul {
+    padding: 1rem 0rem 1rem 3rem;
+  }
+  li {
     margin-bottom: 1rem;
-   }
- }
+  }
 
- h4 {
-   font-weight:700;
-   margin-bottom: 1rem;
-   margin-top: 3rem;
- }
+
+h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
-
-
+}
