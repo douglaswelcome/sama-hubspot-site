@@ -141,8 +141,7 @@ span>a,
   color: $color-kennedy;
   font-weight: 700;
   position: relative;
-  background-image: linear-gradient( transparent 0%, transparent calc(50% - 6px), rgba($color-sunshine, 1) calc(50% - 6px), rgba($color-sunshine,1) 100% );
-  background-size: 100% 200%;
+  background-image: linear-gradient(transparent 0%, transparent 60%, $color-sunshine 60%, $color-sunshine 80%, transparent 80%, transparent 100%);
   background-position: 0 0;
 
 }
