@@ -137,7 +137,7 @@ a>span,
 h4>a,
 span>a,
 .blog-body a,
-.hubby-cta__hyperlink, {
+.hubby-cta__hyperlink {
   color: $color-kennedy;
   font-weight: 700;
   position: relative;
@@ -145,10 +145,6 @@ span>a,
   background-position: 0 0;
 
 }
-
-
-
-
 
 h3 a {
   &::before {
