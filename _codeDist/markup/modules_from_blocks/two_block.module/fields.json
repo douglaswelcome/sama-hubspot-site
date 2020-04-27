@@ -131,4 +131,14 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : ""
-} ]
+},
+{
+"name": "track_this",
+"label": "CTA Button",
+"sortable": false,
+"required": false,
+"locked": false,
+"type": "cta",
+"default": null 
+}
+]
