@@ -17,7 +17,13 @@
       </p>
       {% endif %}
 
-    </div>
+   
+    {% if module.two_block_cta_lede %}
+    <h5>
+      {{ module.two_block_cta_lede }}
+    </h5>
+    {% endif %}
+  </div>
 
     {% if module.two_block_cta_text %}
 
@@ -26,11 +32,7 @@
     {% set href = "mailto:" + href %}
     {% endif %}
 
-    {% if module.two_block_cta_lede %}
-    <h5>
-      {{ module.two_block_cta_lede }}
-    </h5>
-    {% endif %}
+    
     <a href="{% if module.link_or_anchor == "link" %}         
          {{ href }}
          {% elif module.link_or_anchor == "anchor" %}
@@ -47,6 +49,10 @@
         </h3>
       </button>
     </a>
+
+    {% endif %}
+    {% if module.track_this %}
+    {% cta guid="{{ module.track_this }}" %}
 
     {% endif %}
   </div>
