@@ -15,7 +15,7 @@
     "mjml:run": "npm run mjml:process && npm run mjml:post",
     "mjml:watch": "onchange '_src/markup/email/**/*' -- npm run mjml:run",
     "emaildevzone": "concurrently --kill-others --raw \"npm run mjml:watch\" \"npx hs watch --portal=PROD _codeDist/markup/templates_email/ markup/templates_email/\"",
-    "all": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\""
+    "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\""
   },
   "author": "Douglas Welcome",
   "license": "MIT",
