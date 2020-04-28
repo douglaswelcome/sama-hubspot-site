@@ -28,20 +28,17 @@ Right now this tooling uses a Gulp script to upload via FTP, but Hubspot has int
 
 ### **Email Development**
 
-Currently, our team is assesing how we want to create and develop email templates. There is a robust tooling here that uses MJML
+Currently, our team is assesing how we want to create and develop email templates. There is a custom robust tooling here that uses MJML to spit out Hubspot friendly html modules. These can then be combined to create quick email templates. For now the tooling for these is run seperately. For more information, ask Douglas (dwelcome@samasource.com).
 
+## **To Get Started:**
 
-
-
-
-
-
-Required:
+### Required:
 * node version `^11.6.0`
 * npm version `^6.14.4`
 
-### To Get Started:
-* run `npm install` to install all your dependencies
+### To Run Web Development and Images Optimization/Uploading
+
+* run `npm install`
 * Create a `hubspot.config.yml` file, either manually or with `hs init`
 * Put in your api credentials to `hubspot.config.yml` like so:
     ```
@@ -65,12 +62,18 @@ Required:
     FTP_USER=Yyouremail@samasource.com
     FTP_PWD=yourhubspotpassword
     ```
-* Your Set!
+* run `npm run web`
+* Your Set! You'll see a new browser open with a warning. This has to do with the SSL cert, but since we are developing its not a problem. Hit the `advanced` button then proceed to site.
 
+## **A Few Considerations:**
 
-
+The staging server, run by browsersync, is actually proxying the hubspot sandbox portal. To view a page, create a page on the sandbox portal and then add the slug to the localhost:XXXX in your browser. If you are experiencing slow reload, I suggest using the IP address (you'll see it in your terminal). MacOSX has a strange thing with Bonjour (<a href="https://stackoverflow.com/questions/24807786/browsersync-extremely-slow">see here</a>) but I am not sure how to implement a fix at this time.
 
 
 
 ### Further Resources:
+
+* <a href="https://designers.hubspot.com/docs?_ga=2.52381166.650833058.1588003746-332362308.1582046786">Hubspot Documentation</a>
+* <a href="https://mjml.io/documentation/">MJML Documentation</a>
+* <a href="https://designers.hubspot.com/slack">Join the Hubspot Dev Slack</a>
 
