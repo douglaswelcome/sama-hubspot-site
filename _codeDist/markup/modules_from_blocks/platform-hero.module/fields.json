@@ -1,14 +1,15 @@
 [ {
   "id" : "139d3a69-9445-4beb-43fa-68c485fdbfef",
   "name" : "label_tab",
-  "label" : "label_tab",
+  "label" : "Top Label",
   "required" : false,
   "locked" : false,
   "validation_regex" : "",
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "Samahub Platform"
+  "default" :"",
+  "placeholder" : "Leave Blank to Remove"
 }, {
   "id" : "f4acb575-4119-3d51-f7c2-b87a27adcd83",
   "name" : "hero_title",
@@ -19,7 +20,7 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "Deploy Machine Learning Faster"
+  "default" : "Big Headline Baby"
 }, {
   "id" : "972cd482-1cc5-a15d-d986-011753c02fa2",
   "name" : "hero_text",
@@ -27,10 +28,10 @@
   "required" : false,
   "locked" : false,
   "validation_regex" : "",
-  "allow_new_line" : false,
+  "allow_new_line" : true,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "SamaHub is Samasource’s proprietary training data annotation platform used to manage the entire annotation lifecycle. The platform ensures high-quality, human-powered training data and validation for world leading AI teams. Get the full solution brief below. "
+  "default" : "Put a little body on it"
 }, {
   "id" : "794e061a-cc9e-73d8-fd34-42c90e30d7e2",
   "name" : "background_img",
