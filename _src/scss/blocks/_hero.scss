@@ -353,6 +353,7 @@
 
 
   height: calc(100vh - #{$headerheight});
+  max-height: 750px;
 
   margin-bottom: 8rem;
   padding-bottom: 1.5rem;
@@ -360,8 +361,9 @@
   flex-direction: column;
 
 
+
   @include breakpoint (w-lg) {
-    min-height: 820px;
+    min-height: 650px;
   }
 
   @include breakpoint (w-med) {
@@ -379,8 +381,8 @@
   }
 
   .label-tab {
-    position: absolute;
 
+    margin-bottom: -1.5rem;
     &::before,
     &::after {
       border-radius: 0 0 3rem 0;
@@ -392,7 +394,7 @@
   }
 
   &__body {
-    margin-top: 3rem;
+
     margin-left: 4.5rem;
     padding-top: 3rem;
     padding-right: 45%;
