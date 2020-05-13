@@ -6,11 +6,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
-const gutil = require('gulp-util');
-
-
-
-
+const imagemin = require('gulp-imagemin');
+const changed = require('gulp-changed');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 
@@ -79,59 +76,13 @@ function jsSingles() {
 
 // fix those damn huge ass images
 
-// async function imgOpt() {
-//     gulp.src(watchPaths.imgSrc)
-//         .pipe(changed('_assetDist/img/'))
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('_assetDist/img/'))
-//         .pipe(gulp.dest('_tempImg/'))
-// }
-
-// async function cleanTemp() {
-//     return del ([
-//         '_tempImg/**/*'
-//     ])
-// }
-
-
-
-//FTP Shizz______________________
-
-// /** Configuration **/
-// const user = process.env.FTP_USER
-// const password = process.env.FTP_PWD
-// const host = 'ftp.hubapi.com'
-// const port = 3200
-// const imgLocalFolder = '_tempImg/**/*'
-// const imgRemoteFolderPROD = '/portals/4379491-hubspot-developers-34rjat_com/content/files/custom/assets/static-assets/img/'
-
-
-//non-codey things deploy to File Manager
-// async function assetDeploy(status) {
-
-//     var conn = ftp.create({
-//         host: host,
-//         port: port,
-//         user: user,
-//         password: password,
-//         parallel: 5,
-//         log: gutil.log,
-//         secure: true,
-//         timeOffset: 280
-
-
-//     });
-
-
-    // using base = '.' will transfer everything to /public_html correctly
-    // turn off buffering in gulp.src for best performance
-
-//     return gulp.src(imgLocalFolder, {
-//             base: '',
-//             buffer: false
-//         })
-//         .pipe(conn.dest(imgRemoteFolderPROD));
-// }
+async function imgOpt() {
+    gulp.src(watchPaths.imgSrc)
+        .pipe(changed('_assetDist/img/'))
+        .pipe(imagemin())
+        .pipe(gulp.dest('_assetDist/img/'))
+        .pipe(gulp.dest('_tempImg/'))
+}
 
 
 
@@ -175,7 +126,8 @@ gulp.task(scss);
 gulp.task(jsCompiled);
 gulp.task(jsSingles);
 gulp.task(serve);
-// gulp.task(cleanTemp);
+gulp.task(imgOpt);
+
 
 
 

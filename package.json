@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
-    "asset:process": "gulp imgOpt",
+    "imagemin_script": "onchange -o '> .npm-scripts/imagemin/.changelog' '_src/img/**/*' -- echo '{{changed}}'",
+    "asset:optimize": "gulp imgOpt",
+    "asset:upload":"hs filemanager upload --portal=PROD _tempImg custom/assets/static-assets/img/" ,
+    "asset:cleanTemp":"del _tempImg/**/*",
+    "asset:process": "npm run asset:optimize && npm run asset:upload && npm run asset:cleanTemp",
     "imgzone": "onchange '_src/img/**/*' -- npm run asset:process",
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
@@ -22,18 +26,24 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "concurrently": "^5.2.0",
-    "del": "^5.1.0",
+    "del-cli": "^3.0.0",
     "dotenv": "^8.1.0",
     "ftp": "^0.3.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-changed": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
-    "gulp-util": "^3.0.8",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^5.1.0",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.1.0",
     "js-yaml": "^3.13.1",
     "mjml": "^4.6.2",
     "onchange": "^6.1.0",
@@ -42,7 +52,6 @@
     "yargs": "^14.2.0"
   },
   "dependencies": {
-    "@hubspot/cms-cli": "^1.1.2",
-    "imagemin": "^7.0.1"
+    "@hubspot/cms-cli": "^1.1.2"
   }
 }
