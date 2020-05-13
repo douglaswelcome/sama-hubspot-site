@@ -24,7 +24,7 @@ To work on this project, use best git practices:
 
 When running the tooling, any img's uploaded to the `_src/img` directory will automatically be optimized and unploaded to the **PRODUCTION** portal. This allows designers to quickly overwrite images and immediately see updates on the web. The Sandbox Portal uses the Production portal's static file links, hence why you are able to see assets (fonts, images, etc) while still on the Sandbox Portal
 
-Right now this tooling uses a Gulp script to upload via FTP, but Hubspot has introduced FTP access, so that will be a future update for this project.
+Right now this tooling relies on npm-scripts and the gulp-imagemin script, but Hubspot will be rolling out a `watch` feature on their upload CLI tooling, so that will be a future update for this project.
 
 ### **Email Development**
 
