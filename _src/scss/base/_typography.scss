@@ -44,9 +44,6 @@ h1 {
   @include breakpoint(w-med) {
     font-size: calc(1rem + 1.75vw);
   }
-  @include breakpoint(w-sm) {
-    font-size: calc(1rem + 1vw);
-  }
 
 }
 

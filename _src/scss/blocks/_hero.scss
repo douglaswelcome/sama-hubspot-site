@@ -67,132 +67,51 @@
 .homepage-hero {
 
   @extend %page-container;
-  height: calc(100vh - #{$headerheight});
-  max-height: 1000px;
-  min-height: 860px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr 1fr;
   padding-bottom: 1rem;
 
-  @include breakpoint (w-lg) {
-    min-height: 820px;
-  }
+  @include breakpoint (w-lg) {}
 
   @include breakpoint (w-med) {
     grid-template-columns: 1fr;
-    min-height: 900px;
-
-  }
-
-  @include breakpoint (w-sm) {
-    min-height: auto;
-    height: auto;
     grid-row-gap: 1.5rem;
   }
 
+  @include breakpoint (w-sm) {}
+
 
   &__left {
-    padding-top: 3rem;
-  }
 
-  &__text {
+    align-self: center;
 
     @include breakpoint (w-med) {
-      padding-right: 45%;
+    justify-self:center;
+    text-align:center;
     }
-
-    @include breakpoint (w-sm) {
-      padding-right: 20%;
-    }
-
-    h1 {
-      font-size: 3.8rem;
-      margin-bottom: .7rem;
-
-      @include breakpoint (w-lg) {
-        font-size: 3rem;
-
-
-      }
-
-      @include breakpoint (w-med) {
-        font-size: calc(1.5rem + 2.3vw);
-      }
-
-      @include breakpoint (w-sm) {
-        font-size: calc(1.2rem + 2.3vw);
-      }
-
-    }
-
-    h4 {
-
-      margin-bottom: 1.5rem;
-
-    }
-  }
-
-  &__cta-block {
-
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 1.5rem;
-  }
-
-
-  &__right {
-    position: relative;
 
   }
 
   &__img {
-    position: absolute;
-    bottom: 0;
-    right: -7%;
-    height: 85%;
-    min-height: 640px;
-
-
-    @include breakpoint (w-lg) {
-      max-height: 745px;
-      height: calc(20rem + 25vw);
-    }
-
+   
     @include breakpoint (w-med) {
-      height: calc(9rem + 62vw);
-      min-height: auto;
-      max-height: 640px;
-      right: -5%;
-    }
-
-    @include breakpoint (w-sm) {
-      position: relative;
-      width: 100%;
-      height: auto;
-      right: auto;
-
-    }
-  }
-
-  #homepage-hero__cta-1,
-  #homepage-hero__cta-2 {
-
-
-    .btn__content {
-      font-size: 1.5rem;
-
-      @include breakpoint (w-sm) {
-        font-size: calc(.6rem + 2.3vw);
+      display:none;
       }
-    }
-
   }
 
-  #homepage-hero__cta-1 {}
-
-  #homepage-hero__cta-2 {}
 
 
+
+
+  &__cta-block {
+    margin: 1rem 0;
+
+    display: grid;
+
+    grid-column-gap: 1.5rem;
+  }
 
 }
 
@@ -383,6 +302,7 @@
   .label-tab {
 
     margin-bottom: -1.5rem;
+
     &::before,
     &::after {
       border-radius: 0 0 3rem 0;
@@ -555,14 +475,14 @@
   max-height: 45rem;
   @extend %page-container;
 
-  @include breakpoint (w-med){
-    height:auto;
+  @include breakpoint (w-med) {
+    height: auto;
   }
 
   @include breakpoint (w-sm) {
     grid-template-columns: auto;
     margin-top: 0rem;
-    
+
   }
 
 
@@ -609,8 +529,8 @@
     border-radius: 0px 0px 3rem 0px;
     overflow: hidden;
 
-  
-    
+
+
     margin-top: 6rem;
     z-index: -2;
     background-position: center;
@@ -630,7 +550,7 @@
     @include breakpoint (w-sm) {
       max-width: 90%;
       position: relative;
-      
+
       max-height: none;
       margin-left: auto;
     }
@@ -653,8 +573,8 @@
 
 .hero-center {
   @extend %page-container;
-  text-align:center;
-  margin-top:3rem;
+  text-align: center;
+  margin-top: 3rem;
   max-width: 40rem;
 
 }
