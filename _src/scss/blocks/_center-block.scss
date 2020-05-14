@@ -112,7 +112,7 @@
       cursor: pointer;
 
       svg {
-        height: .7rem;
+        height: .75rem;
         margin-right: .5rem;
         fill: $color-charcoal;
         transition: transform .2s ease-in-out;
@@ -138,12 +138,12 @@
       &--list {
         padding-left: 3rem;
         line-height: 1.4;
-        margin-bottom: .4rem;
+        margin-bottom: .5rem;
       }
 
       &--text {
 
-        margin-bottom: .4rem;
+        margin-bottom: .5rem;
       }
     }
 
@@ -207,7 +207,7 @@
   }
 
   &.reflect {
-    padding-left: 0.7rem;
+    padding-left: 0.75rem;
     padding-right: 0;
 
     .center-content {
