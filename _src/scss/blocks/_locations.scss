@@ -44,11 +44,11 @@
 
     &__office-title {
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-family: "Barlow Condensed", Arial, sans-serif;
         text-transform: uppercase;
         font-weight: 700;
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.25rem;
 
         &::before {
             opacity: 0;
@@ -160,7 +160,7 @@
         button {
 
             border: 2px solid #291d5421;
-            margin-bottom: 3px;
+            margin-bottom: .125rem;
             position: relative;
             border-radius: 0 0 0 8px;
             transition-property: all;
@@ -226,8 +226,8 @@
 
     .mapboxgl-popup-content {
         position: relative;
-        border-radius: 0 0 0 1.1rem;
-        // box-shadow: 3px 5px 5px rgba($color-kennedy, 0.1);
+        border-radius: 0 0 0 1.125rem;
+        // box-shadow: .125rem 5px 5px rgba($color-kennedy, 0.1);
         padding: .5rem .5rem .5rem .7rem;
         pointer-events: auto;
 
@@ -236,8 +236,8 @@
             height: 100%;
             width: 100%;
             background-color: $color-kennedy;
-            border: 0.1rem solid $color-kennedy;
-            border-radius: 0 0 0 1.1rem;
+            border: 0.125rem solid $color-kennedy;
+            border-radius: 0 0 0 1.125rem;
             position: absolute;
             z-index: -1;
             top: 0;

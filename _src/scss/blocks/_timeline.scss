@@ -59,13 +59,13 @@
 
         &--top {
             &::before {
-                border-radius: .2rem .2rem 0px 0px;
+                border-radius: .25rem .25rem 0px 0px;
             }
         }
 
         &--bottom {
             &::before {
-                border-radius:0px 0px .2rem .2rem ;
+                border-radius:0px 0px .25rem .25rem ;
             }
         }
     }
@@ -98,7 +98,7 @@
         &::before {
             left: 0;
             right: auto;
-            border-radius: .2rem 0px 0px .2rem;
+            border-radius: .25rem 0px 0px .25rem;
 
         }
     }
@@ -107,7 +107,7 @@
         &::before {
             left: auto;
             right: 0;
-            border-radius: 0px .2rem .2rem 0px;
+            border-radius: 0px .25rem .25rem 0px;
 
         }
     }
@@ -128,7 +128,7 @@
             background-color: $color-sunshine;
             height: 1.5rem;
             width: 1.5rem;
-            transform: translate(.2rem, .2rem);
+            transform: translate(.25rem, .25rem);
 
         }
     }
