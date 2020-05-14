@@ -95,7 +95,6 @@
   }
 
   &__img {
-   
     @include breakpoint (w-med) {
       display:none;
       }
