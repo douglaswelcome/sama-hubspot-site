@@ -1,2 +1,2 @@
 #!/bin/bash
-npx hs upload --portal=PROD _codeDist .
+npx hs upload _codeDist .
