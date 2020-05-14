@@ -44,7 +44,6 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.1.0",
-    "js-yaml": "^3.13.1",
     "mjml": "^4.6.2",
     "onchange": "^6.1.0",
     "replace-in-file": "^4.2.0",
@@ -52,6 +51,7 @@
     "yargs": "^14.2.0"
   },
   "dependencies": {
-    "@hubspot/cms-cli": "^1.1.2"
+    "@hubspot/cms-cli": "^1.1.2",
+    "js-yaml": "^3.13.1"
   }
 }
