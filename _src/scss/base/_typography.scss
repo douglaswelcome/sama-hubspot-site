@@ -125,10 +125,34 @@ strong {
 
 .display-1 {
   font-size: 6rem;
+  @include breakpoint (w-lg){
+    font-size: 4.75rem;
+  }
+
+  @include breakpoint(w-med)
+  {
+      --maxFontSize: 4.75rem;
+      --minFontSize: 3.8rem;
+      --scaler: 7vw;
+      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  }
+
 }
 
 .display-2 {
   font-size: 4.75rem;
+
+  @include breakpoint (w-lg){
+    font-size: 3.8rem;
+  }
+
+  @include breakpoint(w-med)
+  {
+      --maxFontSize: 3.8rem;
+      --minFontSize: 3rem;
+      --scaler: 7vw;
+      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  }
 }
 
 .display-3 {
@@ -140,7 +164,7 @@ strong {
 
   @include breakpoint(w-med)
   {
-       --maxFontSize: 3rem;
+      --maxFontSize: 3rem;
       --minFontSize: 2.4rem;
       --scaler: 7vw;
       font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
