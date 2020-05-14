@@ -1,6 +1,6 @@
 body,
 html {
-  font-size: $global-font-size;
+  font-size: var(--base-font-size);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

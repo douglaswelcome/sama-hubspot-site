@@ -123,6 +123,34 @@ strong {
   }
 }
 
+.display-1 {
+  font-size: 6rem;
+}
+
+.display-2 {
+  font-size: 4.75rem;
+}
+
+.display-3 {
+  font-size: 3.8rem;
+
+  @include breakpoint (w-lg){
+    font-size: 3rem;
+  }
+
+  @include breakpoint(w-med)
+  {
+       --maxFontSize: 3rem;
+      --minFontSize: 2.4rem;
+      --scaler: 7vw;
+      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  }
+
+
+}
+
+
+
 //lists
 
 
