@@ -98,13 +98,13 @@
 
     &::before {
       background-color: $color-white;
-      border: 0.1rem solid $color-kennedy;
+      border: 0.125rem solid $color-kennedy;
       box-shadow: none;
     }
 
     &::after {
       background-color: $color-white;
-      border: 0.1rem solid $color-kennedy;
+      border: 0.125rem solid $color-kennedy;
       box-shadow: none;
     }
 
@@ -129,13 +129,13 @@
     }
     &::before {
       background-color: $color-charcoal-2;
-      border: 0.1rem solid $color-white;
+      border: 0.125rem solid $color-white;
       box-shadow: none;
     }
 
     &::after {
       background-color: $color-charcoal-2;
-      border: 0.1rem solid $color-white;
+      border: 0.125rem solid $color-white;
       box-shadow: none;
     }
   }
@@ -185,7 +185,7 @@
     height: 100%;
     width: 100%;
     background-color: $color-kennedy;
-    border: 0.1rem solid $color-kennedy;
+    border: 0.125rem solid $color-kennedy;
     border-radius: 0 0 0 1rem;
     position: absolute;
     z-index: 1;
@@ -200,7 +200,7 @@
   &::after {
     content: "";
     background-color: $color-sunshine;
-    border: 0.1rem solid $color-sunshine;
+    border: 0.125rem solid $color-sunshine;
     border-radius: 0 0 0 1rem;
     height: 100%;
     width: 100%;
@@ -255,12 +255,12 @@
 
     &::before {
       background-color: $color-white;
-      border: 0.1rem solid $color-kennedy;
+      border: 0.125rem solid $color-kennedy;
     }
 
     &::after {
       background-color: $color-white;
-      border: 0.1rem solid $color-kennedy;
+      border: 0.125rem solid $color-kennedy;
     }
 
     &:hover {

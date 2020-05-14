@@ -70,7 +70,7 @@
 
     @include breakpoint (w-med) {
       max-width: 55%;
-      padding: 1.2rem;
+      padding: 1.25rem;
       bottom: 0;
       margin-left: 3%;
     }
@@ -91,7 +91,7 @@
   
 
     h1 {
-      margin-bottom: .2rem;
+      margin-bottom: .25rem;
 
     }
 
@@ -125,7 +125,7 @@
       height: 100%;
       width: 100%;
       background-color: $color-white;
-      border: 0.2rem solid $color-kennedy;
+      border: 0.25rem solid $color-kennedy;
       border-radius: 0 0 0 3rem;
       position: absolute;
       top: 0;
@@ -139,7 +139,7 @@
       height: 100%;
       width: 100%;
       background-color: $color-white;
-      border: 0.2rem solid $color-kennedy;
+      border: 0.25rem solid $color-kennedy;
       border-radius: 0 0 0 3rem;
       position: absolute;
       top: 0;
@@ -197,7 +197,7 @@
       
 
       @include breakpoint (w-sm) {
-        padding: 1.2rem;
+        padding: 1.25rem;
       }
       
     
@@ -207,7 +207,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-white;
-        border: 0.2rem solid $color-kennedy;
+        border: 0.25rem solid $color-kennedy;
         border-radius: 0 0 0 3rem;
         position: absolute;
         top: 0;
@@ -221,7 +221,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-white;
-        border: 0.2rem solid $color-kennedy;
+        border: 0.25rem solid $color-kennedy;
         border-radius: 0 0 0 3rem;
         position: absolute;
         top: 0;

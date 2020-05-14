@@ -1,19 +1,22 @@
-$font-brown: "Brown",
-Arial,
-sans-serif;
-$font-barlow: "Barlow Condensed",
-Arial,
-sans-serif;
+:root {
+  --font-brown: "Brown",
+    Arial,
+    sans-serif;
+  --font-barlow: "Barlow Condensed",
+    Arial,
+    sans-serif;
+}
 
 body {
-  font-family: $font-brown;
+  font-family: var(--font-brown);
   color: $color-charcoal;
 }
 
 //p tags
 
-p, .blog-body li{
-  font-family: $font-brown;
+p,
+.blog-body li {
+  font-family: var(--font-brown);
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.4;
@@ -38,7 +41,7 @@ h1 {
   line-height: 1.3;
 
   @include breakpoint(w-lg) {
-    font-size:2rem;
+    font-size: 2rem;
   }
 
   @include breakpoint(w-med) {
@@ -59,11 +62,11 @@ h2 {
 }
 
 h3 {
-  font-family: $font-barlow;
+  font-family: var(--font-barlow);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.75rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.25rem;
 
   @include breakpoint(w-med) {
     font-size: calc(1rem + 1.8vw);
@@ -125,16 +128,16 @@ strong {
 
 .display-1 {
   font-size: 6rem;
-  @include breakpoint (w-lg){
+
+  @include breakpoint (w-lg) {
     font-size: 4.75rem;
   }
 
-  @include breakpoint(w-med)
-  {
-      --maxFontSize: 4.75rem;
-      --minFontSize: 3.8rem;
-      --scaler: 7vw;
-      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  @include breakpoint(w-med) {
+    --maxFontSize: 4.75rem;
+    --minFontSize: 3.8rem;
+    --scaler: 7vw;
+    font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
   }
 
 }
@@ -142,32 +145,30 @@ strong {
 .display-2 {
   font-size: 4.75rem;
 
-  @include breakpoint (w-lg){
+  @include breakpoint (w-lg) {
     font-size: 3.8rem;
   }
 
-  @include breakpoint(w-med)
-  {
-      --maxFontSize: 3.8rem;
-      --minFontSize: 3rem;
-      --scaler: 7vw;
-      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  @include breakpoint(w-med) {
+    --maxFontSize: 3.8rem;
+    --minFontSize: 3rem;
+    --scaler: 7vw;
+    font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
   }
 }
 
 .display-3 {
   font-size: 3.8rem;
 
-  @include breakpoint (w-lg){
+  @include breakpoint (w-lg) {
     font-size: 3rem;
   }
 
-  @include breakpoint(w-med)
-  {
-      --maxFontSize: 3rem;
-      --minFontSize: 2.4rem;
-      --scaler: 7vw;
-      font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  @include breakpoint(w-med) {
+    --maxFontSize: 3rem;
+    --minFontSize: 2.4rem;
+    --scaler: 7vw;
+    font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
   }
 
 
@@ -262,15 +263,16 @@ a:hover {}
 
 blockquote {
   position: relative;
-  margin-right:1.5rem;
-  margin-left:1.5rem;
-  padding-left: 1.5rem; 
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
   border-left: .25rem solid $color-kennedy;
-  margin-top:0rem;
-  margin-bottom:0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 
-  p{
-    font-size:1.25rem;
+  p {
+    font-size: 1.25rem;
+
     @include breakpoint(w-med) {
       font-size: calc(.8rem + .9vw);
     }
@@ -280,8 +282,7 @@ blockquote {
 }
 
 h3.date {
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-
