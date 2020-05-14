@@ -1,5 +1,4 @@
 [ {
-  "id" : "06e89757-963b-8996-670b-23b615d5ee5c",
   "name" : "image_position",
   "label" : "image_position",
   "required" : false,
@@ -9,7 +8,6 @@
   "type" : "choice",
   "default" : "null"
 }, {
-  "id" : "0c753e9b-b1ff-72f8-5ca4-875f2d52294b",
   "name" : "two_block_title",
   "label" : "two_block_title",
   "required" : false,
@@ -21,7 +19,6 @@
   "type" : "text",
   "default" : "What's with airplanes, am I right?"
 }, {
-  "id" : "9c6639ec-78fe-dd0b-7c28-083da3507d4b",
   "name" : "two_block_body_small",
   "label" : "two_block_body_small",
   "required" : false,
@@ -45,7 +42,6 @@
   "type" : "text",
   "default" : ""
 }, {
-  "id" : "a16686e4-39af-896c-68b5-98e5942cbf77",
   "name" : "two_block_body_big",
   "label" : "two_block_body_big",
   "required" : false,
@@ -66,7 +62,6 @@
   "type" : "file",
   "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/impactV.svg"
 }, {
-  "id" : "aad1c091-1789-e577-92b4-c726f35f3d8e",
   "name" : "two_block_cta",
   "label" : "two_block_cta",
   "required" : false,
@@ -83,7 +78,6 @@
     "no_follow" : false
   }
 }, {
-  "id" : "a6e6ff76-bb3b-7029-2fba-128b13952c4e",
   "name" : "two_block_cta_text",
   "label" : "two_block_cta_text",
   "required" : false,
@@ -95,7 +89,6 @@
   "type" : "text",
   "default" : ""
 }, {
-  "id" : "64550022-0ba6-70f8-1c92-679e46b9f848",
   "name" : "award_img",
   "label" : "award_img",
   "required" : false,
