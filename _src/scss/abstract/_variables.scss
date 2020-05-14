@@ -6,7 +6,7 @@ $screenheight: calc(100vh - 100px);
 $screenheightmobile: calc(100vh - 40px);
 
 //Sizes
-$global-font-size: 112.5%;
+
 $headerheight: 75px;
 $mobileheaderheight: 50px;
 
@@ -20,3 +20,7 @@ $color-purple: #292D3F;
 $allyourbase: "https://cdn2.hubspot.net/hubfs/4379491/";
 // $allyourbase: "/file_manager/";
 $staticbase: "#{$allyourbase}custom/assets/static-assets/";
+
+:root {
+    --base-font-size: 112.5%;
+}
