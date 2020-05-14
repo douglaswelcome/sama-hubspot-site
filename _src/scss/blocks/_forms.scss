@@ -36,10 +36,10 @@
   .hs-form textarea,
   .hs-form select,
   input {
-    border-width: 0 3px 3px 0;
+    border-width: 0 .125rem .125rem 0;
     border-radius: 0 0 25px 0;
     border-color: $color-isabelline;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     padding: 0.7rem;
     width: 100%;
     margin-bottom: 0.5rem;
@@ -113,7 +113,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-kennedy;
-        border: 0.1rem solid $color-kennedy;
+        border: 0.125rem solid $color-kennedy;
         border-radius: 0 0 0 1.5rem;
         position: absolute;
         z-index: 1;
@@ -125,7 +125,7 @@
       &::after {
         content: "";
         background-color: $color-sunshine;
-        border: 0.1rem solid $color-sunshine;
+        border: 0.125rem solid $color-sunshine;
         border-radius: 0 0 0 1.5rem;
         height: 100%;
         width: 100%;
@@ -155,10 +155,10 @@
         cursor: pointer;
         position: relative;
         z-index: 2;
-        padding: .7rem 1.1rem .7rem 1.4rem;
+        padding: .7rem 1.125rem .7rem 1.4rem;
         background-color: transparent;
         border: 0;
-        font-family: $font-barlow;
+        font-family: var(--font-barlow);
         text-transform: uppercase;
         font-size: 1rem;
         transition-property: all;
@@ -188,7 +188,7 @@
     border-width: 0px;
     Background-color:$color-kennedy;
     color:white;
-    Font-family:$font-barlow;
+    Font-family:var(--font-barlow);
     text-transform: uppercase;
     width:auto;
     padding: 1rem 1.5rem;
@@ -248,7 +248,7 @@
   .hs-form select {
     border-width: 0;
     border-radius: 0 0 25px 0;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     padding: 0.7rem;
     width: 100%;
     margin-bottom: 0.5rem;
@@ -328,7 +328,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-kennedy;
-        border: 0.1rem solid $color-kennedy;
+        border: 0.125rem solid $color-kennedy;
         border-radius: 0 0 0 1.5rem;
         position: absolute;
         z-index: 1;
@@ -340,7 +340,7 @@
       &::after {
         content: "";
         background-color: $color-sunshine;
-        border: 0.1rem solid $color-sunshine;
+        border: 0.125rem solid $color-sunshine;
         border-radius: 0 0 0 1.5rem;
         height: 100%;
         width: 100%;
@@ -371,10 +371,10 @@
         cursor: pointer;
         position: relative;
         z-index: 2;
-        padding: .7rem 1.1rem .7rem 1.4rem;
+        padding: .7rem 1.125rem .7rem 1.4rem;
         background-color: transparent;
         border: 0;
-        font-family: $font-barlow;
+        font-family: var(--font-barlow);
         text-transform: uppercase;
         font-size: 1rem;
         transition-property: all;
