@@ -17,6 +17,7 @@
   transition-property: color, background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+  image-rendering: crisp-edges;
 
   @include breakpoint(w-med) {
     display: none;
@@ -194,7 +195,9 @@
         &:hover {
           p {
             color: $color-sunshine;
-            transform: scale(1.1);
+            transform: perspective(1px) scale(1.1);
+           
+
             // border: solid $color-sunshine;
             transition-property: all;
             transition-duration: 0.4s;
@@ -275,7 +278,7 @@
 
     svg {
       fill: $color-sunshine;
-      height: calc(#{$mobileheaderheight} * 0.6);
+      height: calc(#{$mobileheaderheight} * 0.5);
       line-height: 1;
     }
 
