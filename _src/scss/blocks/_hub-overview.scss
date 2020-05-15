@@ -89,9 +89,7 @@
                 height: auto;
 
                 h4 {
-                    margin-bottom: 1.5rem;
                     @include breakpoint (w-sm){
-                        margin-bottom: .5rem;
                     }
                 }
 
