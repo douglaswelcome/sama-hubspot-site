@@ -49,17 +49,15 @@ $w-sm: 320px; //320px - 800px
 
 //page-container widths
 
-$xlg-page-width: 1330px;
-$lg-page-width: 1050px;
+
 
 %page-container {
-  max-width: $xlg-page-width;
+  max-width: var(--xlg-page-width);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   @include breakpoint(w-lg) {
-    max-width: $lg-page-width;
-
+    max-width: var(--lg-page-width);
   }
   @include breakpoint(w-med) {
     padding-left: 1rem;

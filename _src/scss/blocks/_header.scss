@@ -85,7 +85,7 @@
 
 
   .submenu-content {
-    margin-top: calc(#{$headerheight});
+    margin-top: calc(#{var(--headerheight)});
     background-color: $color-charcoal-1;
     color: $color-white;
     border-radius: 0 0 0 7rem;
@@ -262,7 +262,7 @@
   background-color: $color-charcoal;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: $mobileheaderheight;
+  height: var(--mobileheaderheight);
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 1.5rem;
@@ -278,7 +278,7 @@
 
     svg {
       fill: $color-sunshine;
-      height: calc(#{$mobileheaderheight} * 0.5);
+      height: calc(#{var(--mobileheaderheight)} * 0.5);
       line-height: 1;
     }
 
@@ -312,7 +312,7 @@
   background-color: $color-black-trans;
   opacity: 0;
   z-index: 5;
-  min-height: calc(100vh - #{$mobileheaderheight});
+  min-height: calc(100vh - #{var(--mobileheaderheight)});
   display: flex;
   visibility: hidden;
   overflow-y: auto;
