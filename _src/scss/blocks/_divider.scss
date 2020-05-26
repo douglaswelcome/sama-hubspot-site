@@ -34,6 +34,10 @@
         ;
     }
 
+    &--vertical{
+        display: inline-flex;
+    }
+
     &--right-align {
         margin-left:auto;
     }
