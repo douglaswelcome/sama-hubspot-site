@@ -24,7 +24,8 @@ p,
   @include breakpoint(w-med) {}
 
   @include breakpoint(w-sm) {
-    font-size: calc(.6rem + .6vw);
+
+
   }
 }
 
