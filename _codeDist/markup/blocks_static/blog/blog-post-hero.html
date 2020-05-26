@@ -47,11 +47,23 @@
 
 <section class="grid blog-post-hero">
   <div class="blog-post-hero__info">
-    <h1> This a a fucking killer blog post</h1>
-    <h5> by Dick Pickler</h5>
-    <h5>August 20, 2020 | Read Time 5 Minutes</h5>
+    <h1 class="blog-post-hero__title"> {{ content.name }}</h1>
+    <p class="blog-post-hero__author"> <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+      {{ content.blog_post_author.display_name }}
+    </a>
+  </p>
+    <p class="blog-post-hero__meta">{{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }} | 
+      {% set initialPostWords = content.post_body|wordcount %}
+      {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+      {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+      {% set number = finishedPostWords|round %}
+      {% if number < 1 %}
+      1 minute read
+      {% else %}
+      {{ finishedPostWords|round }} Minute Read
+      {% endif %}</h5>
   </div>
-  <div class="blog-post-hero__img">
-    <img src="https://www.placecage.com/c/500/700"/>
+  <div class="blog-post-hero__img-wrapper" style="background-image:url('https://source.unsplash.com/random')">
+
 </div>
 </section>

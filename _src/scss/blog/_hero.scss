@@ -1,11 +1,20 @@
 .blog-post-hero {
 
+  height: 22rem;
+  margin-top: 1.5rem;
+ 
 
-  &__img {
-    width:100%;
+
+  &__img-wrapper {
+   
     overflow:hidden;
     grid-column-start: 7;
     grid-column-end:11;
+    background-position:center;
+    background-size:cover;
+    border-radius: 0 0 3rem 0;
+
+
     }
 
 
@@ -14,6 +23,15 @@
   &__info {
     grid-column-start: 3;
     grid-column-end:7;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    background-color: $color-charcoal-9;
+  }
+
+  &__author, &__meta {
+    justify-self: flex-end;
   }
 
 }
