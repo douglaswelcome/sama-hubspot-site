@@ -2,13 +2,13 @@
     templateType: none
     isAvailableForNewContent: true
 -->
-<section class="blog-post-hero">
+{# <section class="blog-post-hero">
   <div class="blog-hero-img-wrapper">
     <div class="blog-hero-img" style="
   {% if content.post_list_summary_featured_image %}
   background-image:url(
     {{ content.post_list_summary_featured_image }}
-    {# {{staticbase}}img/goldblum.jpg #}
+
     ) {% endif %}
   ">
     </div>
@@ -42,4 +42,16 @@
 
 
   </div>
+</section> #}
+
+
+<section class="grid blog-post-hero">
+  <div class="blog-post-hero__info">
+    <h1> This a a fucking killer blog post</h1>
+    <h5> by Dick Pickler</h5>
+    <h5>August 20, 2020 | Read Time 5 Minutes</h5>
+  </div>
+  <div class="blog-post-hero__img">
+    <img src="https://www.placecage.com/c/500/700"/>
+</div>
 </section>
