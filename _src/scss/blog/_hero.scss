@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
-    background-color: $color-charcoal-9;
+    background-color: $color-charcoal-8;
      @include breakpoint (w-lg) {
        grid-column-start:2;
      }
