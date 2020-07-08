@@ -140,8 +140,8 @@ var offices = {
             "properties": {
                 "phoneFormatted": "xxxxxxxxxx",
                 "phone": "xxxxxxxxxx",
-                "address": "Airfield Road",
-                "suite": "Plot 3 B Bar Dege Division Gulu Municipality",
+                "address": "Plot 3 B Bar Dege Division Gulu Municipality",
+                "suite": "Airfield Road",
                 "city": "Gulu District",
                 "country": "Uganda",
                 "crossStreet": "",
