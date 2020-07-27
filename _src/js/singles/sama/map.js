@@ -140,9 +140,9 @@ var offices = {
             "properties": {
                 "phoneFormatted": "xxxxxxxxxx",
                 "phone": "xxxxxxxxxx",
-                "address": "Gulu University",
-                "suite": "Adjacent to Block D & E",
-                "city": "Gulu",
+                "address": "Plot 3 B Bar Dege Division Gulu Municipality",
+                "suite": "Airfield Road",
+                "city": "Gulu District",
                 "country": "Uganda",
                 "crossStreet": "",
                 "postalCode": "",
