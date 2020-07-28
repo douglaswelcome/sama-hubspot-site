@@ -1,5 +1,5 @@
 [ {
-  "id" : "139d3a69-9445-4beb-43fa-68c485fdbfef",
+
   "name" : "label_tab",
   "label" : "Top Label",
   "required" : false,
@@ -11,7 +11,7 @@
   "default" :"",
   "placeholder" : "Leave Blank to Remove"
 }, {
-  "id" : "f4acb575-4119-3d51-f7c2-b87a27adcd83",
+
   "name" : "hero_title",
   "label" : "hero_title",
   "required" : false,
@@ -22,7 +22,7 @@
   "type" : "text",
   "default" : "Big Headline Baby"
 }, {
-  "id" : "972cd482-1cc5-a15d-d986-011753c02fa2",
+
   "name" : "hero_text",
   "label" : "hero_text",
   "required" : false,
@@ -33,7 +33,7 @@
   "type" : "text",
   "default" : "Put a little body on it"
 }, {
-  "id" : "794e061a-cc9e-73d8-fd34-42c90e30d7e2",
+
   "name" : "background_img",
   "label" : "background_img",
   "required" : false,
@@ -51,7 +51,7 @@
     "max_height" : 994
   }
 }, {
-  "id" : "4ba0f060-a5fb-e239-e2c7-8584429156ab",
+
   "name" : "cta_text",
   "label" : "cta_text",
   "required" : false,
@@ -63,7 +63,7 @@
   "type" : "text",
   "default" : "Download Now"
 }, {
-  "id" : "bd80c15e-22c2-b55a-2da6-15f7230cce34",
+
   "name" : "cta",
   "label" : "cta",
   "required" : false,
