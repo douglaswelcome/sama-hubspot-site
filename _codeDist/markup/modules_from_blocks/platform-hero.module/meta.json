@@ -1,14 +1,12 @@
 {
-  "content_tags" : [ ],
-  "css_assets" : [ ],
-  "external_js" : [ ],
-  "extra_classes" : "",
-  "global" : false,
-  "host_template_types" : [ "PAGE" ],
-  "js_assets" : [ ],
-  "other_assets" : [ ],
-  "placement_rules" : [ ],
-  "smart_type" : "NOT_SMART",
-  "module_id" : 9622558,
-  "is_available_for_new_content" : true
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
 }
