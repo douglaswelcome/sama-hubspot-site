@@ -1,4 +1,7 @@
 ._tr_slidebox.bottom.tr_ready {
-    border-radius:0;
+    border-radius:0 !important;
 }
 
+._tr_slidebox.bottom.tr_ready {
+    box-shadow: none!important;
+}
