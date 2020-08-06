@@ -1,0 +1,36 @@
+.three-card {
+  @extend %grid;
+
+  &__intro {
+    grid-column: 2 /span 10;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  &__headline {
+    margin-bottom: 1rem;
+  }
+
+  &__subheadline {
+    margin-bottom: 1rem;
+  }
+
+  &__card-row {
+    grid-row: 2;
+    grid-column: 2 /span 10;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: left;
+    text-align: left;
+    grid-column-gap: 2rem;
+
+
+  }
+
+}
+
+.dark-mode .three-card {
+  .three-card__card-row{
+    color:var(--color-charcoal-1);
+  }
+}
