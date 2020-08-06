@@ -1,6 +1,6 @@
 .hub-overview {
 
-    @extend %page-container;
+    @extend %grid;
 
 
 
@@ -32,7 +32,7 @@
             .video__backpanel {
                 height: 35rem;
                 width: 100%;
-                background-color: $color-charcoal;
+                background-color: var(--color-charcoal-1);
                 border-radius: 0 0 0 3rem;
                 @include breakpoint (w-sm) {
                    
@@ -112,7 +112,7 @@
                 height: 100%;
                 width: 100%;
                 background-color: $color-white;
-                border: 0.25rem solid $color-kennedy;
+                border: 0.25rem solid var(--color-charcoal-2);
                 border-radius: 0 0 0 3rem;
                 position: absolute;
                 top: 0;
@@ -127,7 +127,7 @@
                 height: 100%;
                 width: 100%;
                 background-color: $color-white;
-                border: 0.25rem solid $color-kennedy;
+                border: 0.25rem solid var(--color-charcoal-2);
                 border-radius: 0 0 0 3rem;
                 position: absolute;
                 top: 0;
@@ -187,8 +187,8 @@
             }
 
             &.active {
-                background-color: $color-kennedy;
-                border: .125rem solid $color-kennedy;
+                background-color: var(--color-charcoal-2);
+                border: .125rem solid var(--color-charcoal-2);
 
                 h3 {
                     color: $color-white;

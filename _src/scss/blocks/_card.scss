@@ -3,7 +3,7 @@
     border-radius: 0 0 0 3rem;
     padding:2.25rem;
     &--dark{
-        background-color:$color-tembo;
+        background-color:var(--color-charcoal-3);
     }
 
     &--yellow-bg{
@@ -35,7 +35,7 @@
             height: 100%;
             width: 100%;
             background-color: $color-white;
-            border: 0.25rem solid $color-kennedy;
+            border: 0.25rem solid var(--color-charcoal-2);
             border-radius: 0 0 0 3rem;
             position: absolute;
             top: 0;
@@ -49,7 +49,7 @@
             height: 100%;
             width: 100%;
             background-color: $color-white;
-            border: 0.25rem solid $color-kennedy;
+            border: 0.25rem solid var(--color-charcoal-2);
             border-radius: 0 0 0 3rem;
             position: absolute;
             top: 0;

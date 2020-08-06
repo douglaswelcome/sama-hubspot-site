@@ -1,5 +1,5 @@
 footer {
-  background-color: $color-charcoal;
+  background-color: var(--color-charcoal-1);
 
   padding: 3rem 0 1rem;
   @include breakpoint(w-med) {
@@ -7,7 +7,7 @@ footer {
   }
 
   .upper {
-    @extend %page-container;
+    @extend %grid;
     border: .125rem solid #fffa0c;
     border-top: 0;
     border-left: 0;
@@ -36,7 +36,7 @@ footer {
 
       a {
 
-        color: $color-isabelline;
+        color: var(--color-charcoal-7);
 
         &:hover {
           cursor: pointer;
@@ -114,8 +114,8 @@ footer {
     h6 {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      @extend %page-container;
-      color: $color-isabelline;
+      @extend %grid;
+      color: var(--color-charcoal-7);
     }
   }
 }

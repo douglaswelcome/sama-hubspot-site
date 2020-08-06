@@ -1,0 +1,10 @@
+.hero-center {
+    grid-column: 3 / span 8;
+    text-align: center;
+
+
+    &__subheadline {
+    margin-bottom: 1.5rem;
+    }
+
+  }

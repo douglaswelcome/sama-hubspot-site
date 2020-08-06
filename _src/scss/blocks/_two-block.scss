@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
-  @extend %page-container;
+  @extend %grid;
   align-items: center;
 
   @include breakpoint(w-sm) {
@@ -325,13 +325,13 @@
 
       p {
         display: inline-block;
-        color: $color-charcoal;
+        color: var(--color-charcoal-1);
         transition: (color, transform) 0.1s ease;
       }
 
       &:hover {
         p {
-          color: $color-kennedy;
+          color: var(--color-charcoal-2);
           font-weight: 700;
           transform: scale(1.1) translate3d(0, 0, 0);
           transition: (color, transform) 0.1s ease;

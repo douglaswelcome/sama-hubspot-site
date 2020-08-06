@@ -15,7 +15,7 @@
   }
 
   .strip-content {
-    @extend %page-container;
+    @extend %grid;
     position: relative;
     z-index: 1;
     display: grid;
@@ -90,7 +90,7 @@
 
   &::after {
     content: "";
-    background-color: $color-tembo;
+    background-color: var(--color-charcoal-3);
     border-radius: 0 3rem 0 0;
     height: 100%;
     width: 100%;

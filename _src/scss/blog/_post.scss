@@ -1,5 +1,5 @@
 .blog-body {
-  @extend %page-container;
+  @extend %grid;
   max-width: 40rem;
 
   .hubby-cta {

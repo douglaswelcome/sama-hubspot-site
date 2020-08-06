@@ -4,7 +4,7 @@
   }
 
   .brag-body {
-    @extend %page-container;
+    @extend %grid;
     width: 70%;
     text-align: center;
     margin-bottom: 4rem;
@@ -16,7 +16,7 @@
     display: grid;
     grid-column-gap: 1rem;
     grid-row-gap: 3rem;
-    @extend %page-container;
+    @extend %grid;
     @include breakpoint(w-sm) {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 10vw;

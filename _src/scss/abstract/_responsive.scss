@@ -1,12 +1,14 @@
 // ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
 // REM size @ 16px
 
+:root{
+
 // $width-xxxlg: 130em; //
 // $width-xxlg: 110em; //
-$w-xlg: 1374px; //1374 px and up
-$w-lg: 1080px; //1080px - 1374px
-$w-med: 800px;//800px - 1080px
-$w-sm: 320px; //320px - 800px
+--w-xlg: 1296px; //1374 px and up
+--w-lg: 1088px; //1080px - 1374px
+--w-med: 800px;//800px - 1080px
+--w-sm: 320px; //320px - 800px
 // $width-xsm: 17.777em; // 320px iphone 5 width
 
 //iphone 4,5 = 320px Width
@@ -15,31 +17,33 @@ $w-sm: 320px; //320px - 800px
 // ____________Heights
 // $height-sm: 31.250rem; // 500px
 // $height-med: 43.750rem; // 700px
-// $height-lg: 50.000rem; // 800px
+// $height-lg: 50.000rem; // 800px'
+
+}
 
 @mixin breakpoint($width) {
   @if $width == w-xsm {
-    @media (max-width: $w-sm) {
+    @media (max-width: var(--w-sm)) {
       @content;
     }
   } @else 
   if $width == w-sm {
-    @media (max-width: $w-med) {
+    @media (max-width: var(--w-med)) {
       @content;
     }
   } @else 
   if $width == w-med {
-    @media (max-width: $w-lg) {
+    @media (max-width: var(--w-lg)) {
       @content;
     }
   } @else 
   if $width == w-lg {
-    @media (max-width: $w-xlg) {
+    @media (max-width: var(--w-xlg)) {
       @content;
     }
   } @else 
   if $width == w-xlg {
-    @media (min-width: $w-xlg) {
+    @media (min-width: var(--w-xlg)) {
       @content;
     }
   } @else {
@@ -51,20 +55,31 @@ $w-sm: 320px; //320px - 800px
 
 
 
-%page-container {
-  max-width: var(--xlg-page-width);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  @include breakpoint(w-lg) {
-    max-width: var(--lg-page-width);
-  }
-  @include breakpoint(w-med) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  @include breakpoint(w-sm) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+
+:root {
+    
 }
+
+
+
+%grid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: var(--xlg-page-width);
+    align-self: center;
+    @include breakpoint(w-lg) {
+      max-width: var(--lg-page-width);
+    }
+
+    @include breakpoint(w-med) {
+        max-width: var(--med-page-width);
+      }
+
+  }
+
+  .grid-wrapper {
+    @extend %grid;
+  }
+
+
+

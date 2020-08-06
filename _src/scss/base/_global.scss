@@ -9,11 +9,14 @@ html {
 
 }
 
-.body-wrapper {
+.flex-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  position:relative;
+}
+
+.flex-content {
+  flex:1;
 }
 
 * {
@@ -29,10 +32,13 @@ html {
 }
 
 section {
-  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+  padding-top:6rem;
 
   @include breakpoint (w-med) {
-    margin-bottom:3rem;
+    padding-bottom:3rem;
   }
 }
 

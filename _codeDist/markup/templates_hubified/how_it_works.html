@@ -1,0 +1,21 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% include '/markup/blocks_static/header.html' %}
+<div class="flex-content">
+
+{% module "module_20200805092815" path="/markup/modules_from_blocks/hero_center", label="Hero" %}
+
+{% module "module_20200805191842" path="/markup/modules_from_blocks/three_block", label="three_block" %}
+
+
+</div>
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

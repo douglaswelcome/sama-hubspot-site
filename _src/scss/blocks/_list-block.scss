@@ -1,5 +1,5 @@
 .list-block {
-    @extend %page-container;
+    @extend %grid;
 
     &__intro {
         h4 {

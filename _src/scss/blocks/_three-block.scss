@@ -1,4 +1,5 @@
 .three-block {
+  
   &__intro {
     h4{
       text-align: center;
@@ -17,7 +18,7 @@
         '.block-body'
       );
 
-    @extend %page-container;
+    @extend %grid;
     display: grid;
     grid-template-columns: repeat($med-num-cols, 1fr);
     justify-content: center;

@@ -24,13 +24,13 @@
             // transition: transform .5s ease-in-out;
             height: .6rem;
             padding-left: .3rem;
-            fill: $color-kennedy;
+            fill: var(--color-charcoal-2);
 
         }
 
         &:hover {
             svg {
-                fill: $color-kennedy-2;
+                fill: var(--color-charcoal-3);
             }
 
             span::before {
@@ -81,7 +81,7 @@
 
         &.active {
             .locations__office-title {
-                color: $color-kennedy-2;
+                color: var(--color-charcoal-3);
 
                 &::before {
                     opacity: 1;
@@ -92,7 +92,7 @@
             }
 
             svg {
-                fill: $color-kennedy-2;
+                fill: var(--color-charcoal-3);
             }
 
             // .locations__details {
@@ -168,7 +168,7 @@
             transition-timing-function: ease;
 
             &:hover {
-                background-color: $color-isabelline;
+                background-color: var(--color-charcoal-7);
                 transition-property: all;
                 transition-duration: 0.3s;
                 transition-timing-function: ease;
@@ -201,11 +201,11 @@
         background-color: $color-white;
 
         &:hover {
-            background-color: $color-isabelline;
+            background-color: var(--color-charcoal-7);
         }
 
         svg {
-            fill: $color-charcoal;
+            fill: var(--color-charcoal-1);
         }
 
         &::before,
@@ -235,8 +235,8 @@
             content: "";
             height: 100%;
             width: 100%;
-            background-color: $color-kennedy;
-            border: 0.125rem solid $color-kennedy;
+            background-color: var(--color-charcoal-2);
+            border: 0.125rem solid var(--color-charcoal-2);
             border-radius: 0 0 0 1.125rem;
             position: absolute;
             z-index: -1;

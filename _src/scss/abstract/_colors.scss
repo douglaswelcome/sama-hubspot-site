@@ -10,32 +10,6 @@
 $color-sunshine: #fffa0c;
 $color-sunshine-trans: rgba(#fffa0c, 0.8);
 
-//Charcoal
-$color-charcoal: #28282a;
-$color-charcoal-trans: rgba(#28282a, 0.8);
-
-
-
-//Tembo
-$color-tembo: #505052;
-$color-tembo-trans: rgba(#505052, 0.4);
-
-//Nguva
-$color-nguva: #9ba0a5;
-$color-nguva-trans: rgba(#9ba0a5, 0.4);
-
-//Isabelline
-$color-isabelline: #ededef;
-$color-isabelline-trans: rgba(#ededef, 0.7);
-
-//Kennedy
-$color-kennedy: #291d54;
-$color-kennedy-trans: rgba(#291d54, 0.7);
-
-$color-kennedy-1: #291d54;
-$color-kennedy-2:#4E4080;
-$color-kennedy-3: #756B99;
-
 //white
 $color-white: #fff;
 
@@ -58,7 +32,22 @@ $color-charcoal-7:#d8d8da;
 $color-charcoal-8:#f9f9fb;
 
 
- //Data Viz
+:root {
+    --color-white: #ffffff;
+
+    --color-charcoal-1: #28282a;
+    --color-charcoal-2: #424244;
+    --color-charcoal-3: #5d5d5f;
+    --color-charcoal-4: #7a7a7c;
+    --color-charcoal-5: #98989a;
+    --color-charcoal-6: #b7b7b9;
+    --color-charcoal-7: #d8d8da;
+    --color-charcoal-8: #f9f9fb;
+
+    --color-sunshine: #fffa0c;
+}
+
+//Data Viz
 // "#fffa0c",
 // "#291d54",
 // "#815ab9",

@@ -1,71 +1,79 @@
 {% if module.module_on == true %}
 
-<section class="three-block">
+<section class="dark-mode bg-charcoal-3">
+  <div class="grid-wrapper">
+    <div class="three-block">
 
-  
-  
-  {% if module.intro_copy %}
-  <div class="three-block__intro">
-    <h4>
-      {{ module.intro_copy }}
-    </h4>
 
-    
-  </div>
-  {% endif %}
+      {% if module.intro_headline %}
+      <div class="three-block__headline">
+        <h2>
+          {{ module.intro_headline }}
+        </h2>
+      </div>
+      {% endif %}
 
-  <div class="three-block__wrapper">
+      {% if module.intro_copy %}
+      <div class="three-block__intro">
+        <h4>
+          {{ module.intro_copy }}
+        </h4>
+      </div>
+      {% endif %}
 
-    <div class="block-img">
-      <img src="{{ module.block1_img }}" />
-    </div>
+      <div class="three-block__wrapper">
 
-    {% if module.block1_title %}
-    <div class="block-title">
-      <h3 class="{{ module.title_size }}"> 
-        {{ module.block1_title }}
-      </h3>
-    </div>
-    {% endif %}
-    <div class="block-body">
-      <p>
-        {{ module.block1_body }}
-      </p>
+        <div class="block-img">
+          <img src="{{ module.block1_img }}" />
     </div>
 
-    <div class="block-img">
-      <img src="{{ module.block2_img }}" />
-    </div>
-    {% if module.block2_title %}
-    <div class="block-title">
-       <h3 class="{{ module.title_size }}"> 
-        {{ module.block2_title }}
-      </h3>
-    </div>
-    {% endif %}
-    <div class="block-body">
-      <p>
-        {{ module.block2_body }}
-      </p>
-    </div>
+          {% if module.block1_title %}
+          <div class="block-title">
+            <h3 class="{{ module.title_size }}">
+              {{ module.block1_title }}
+            </h3>
+          </div>
+          {% endif %}
+          <div class="block-body">
+            <p>
+              {{ module.block1_body }}
+            </p>
+          </div>
 
-    <div class="block-img">
-      <img src="{{ module.block3_img }}" />
+          <div class="block-img">
+            <img src="{{ module.block2_img }}" />
     </div>
-    {% if module.block3_title %}
-    <div class="block-title">
-   <h3 class="{{ module.title_size }}"> 
-        {{ module.block3_title }}
-      </h3>
-    </div>
-    {% endif %}
-    <div class="block-body">
-      <p>
-        {{ module.block3_body }}
-      </p>
-    </div>
-  </div>
+            {% if module.block2_title %}
+            <div class="block-title">
+              <h3 class="{{ module.title_size }}">
+                {{ module.block2_title }}
+              </h3>
+            </div>
+            {% endif %}
+            <div class="block-body">
+              <p>
+                {{ module.block2_body }}
+              </p>
+            </div>
 
-  
+            <div class="block-img">
+              <img src="{{ module.block3_img }}" />
+            </div>
+              {% if module.block3_title %}
+              <div class="block-title">
+                <h3 class="{{ module.title_size }}">
+                  {{ module.block3_title }}
+                </h3>
+              </div>
+              {% endif %}
+              <div class="block-body">
+                <p>
+                  {{ module.block3_body }}
+                </p>
+              </div>
+          </div>
+
+          </div>
+        </div>
 </section>
 {% endif %}

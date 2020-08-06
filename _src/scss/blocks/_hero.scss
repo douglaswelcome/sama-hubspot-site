@@ -7,7 +7,7 @@
   position: relative;
 
   .hero-left-bar {
-    background-color: $color-charcoal;
+    background-color: var(--color-charcoal-1);
     border-radius: 0 0 5rem 0;
 
     position: relative;
@@ -66,7 +66,7 @@
 
 .homepage-hero {
 
-  @extend %page-container;
+  @extend %grid;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   display: grid;
@@ -354,7 +354,7 @@
   }
 
   &__content {
-    @extend %page-container;
+    @extend %grid;
     position: relative;
     z-index: 1;
 
@@ -472,7 +472,7 @@
   height: calc(100vh - #{var(--headerheight)} - 5rem);
   min-height: 29rem;
   max-height: 45rem;
-  @extend %page-container;
+  @extend %grid;
 
   @include breakpoint (w-med) {
     height: auto;
@@ -570,10 +570,3 @@
 
 }
 
-.hero-center {
-  @extend %page-container;
-  text-align: center;
-  margin-top: 3rem;
-  max-width: 40rem;
-
-}
