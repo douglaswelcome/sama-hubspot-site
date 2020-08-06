@@ -1,4 +1,4 @@
-.three-block {
+.three-card {
 @extend %grid;
 
   &__intro {
@@ -48,20 +48,6 @@
 
     
 
-    .block-img {
-      
-      overflow: hidden;
-      grid-row: 1;
-      justify-self: left;
-      display: flex;
-      margin-bottom: 2rem;
-
-      img {
-        max-width: 4rem;
-        max-height: 4rem;
-        width: 100%;
-      }
-    }
 
     .block-title {
       

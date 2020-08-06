@@ -1,0 +1,25 @@
+.split-cta {
+    @extend %grid;
+
+    &__left {
+        grid-column: span 8;
+    }
+    &__right {
+        grid-column: 9/span 4;
+        display:flex;
+        justify-content:center;
+
+
+        
+    }
+    &__headline {
+        margin-bottom:1rem;
+    }
+
+    &__subheadline {
+        margin-bottom: 1rem;
+    }
+
+    
+
+}

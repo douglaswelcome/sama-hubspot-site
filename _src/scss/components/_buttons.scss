@@ -1,20 +1,18 @@
 .btn {
   display: inline-block;
   cursor: pointer;
- 
   border-radius: 3px;
   border:0;
   text-align: center;
   background-color: var(--color-charcoal-1);
   position: relative;
-  margin-top: 5px;
+  border: .125rem solid ;
+  border-color: var(--charcoal-1);
 
   h3 {
-    padding: .75rem 1.25rem .75rem 1.25rem;
+    padding: 1rem 2rem 1rem 2rem;
     color: var(--color-white) ;
     margin: 0;
-    font-size:1.25rem;
-
   }
 
   
@@ -25,28 +23,12 @@
 
   &.secondary, &--secondary {
     background-color: transparent;
-
-    &::before {
-      background-color: $color-white;
-      border: 0.125rem solid var(--color-charcoal-2);
-      box-shadow: none;
-    }
-
-    &::after {
-      background-color: $color-white;
-      border: 0.125rem solid var(--color-charcoal-2);
-      box-shadow: none;
-    }
-
-    &:hover {
-      &::after {}
-
-      &::before {
-        background-color:var(--color-charcoal-4);
-      }
-
-      h6 {}
-
+    border: .125rem solid;
+    border-color: var(--charcoal-1);
+    
+    
+    h3{
+      color: var(--color-charcoal-1);
     }
   }
 
@@ -87,7 +69,18 @@
 .dark-mode .btn {
   background-color: var(--color-sunshine);
   h3{
-    color: var(--color-charcoal);
+    color: var(--color-charcoal-1);
+  }
+
+  &.secondary, &--secondary {
+    background-color: transparent;
+    border: .125rem solid;
+    border-color: var(--color-white);
+    
+    
+    h3{
+      color: var(--color-white);
+    }
   }
 }
 
@@ -231,4 +224,23 @@
 .icon-button__img,
 .button__img {
   height: 40px;
+}
+
+
+
+
+
+//BUTON ROW
+
+.btn-wrapper {
+       
+  display:grid;
+  align-items:center;
+   grid-auto-columns:1fr;
+  column-gap:.5rem;
+  grid-auto-flow: column;
+}
+
+.btn-wrapper .btn{
+   width:100%;
 }

@@ -1,0 +1,27 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% include '/markup/blocks_static/header.html' %}
+<div class="flex-content">
+
+{% module "module_20200805092815" path="/markup/modules_from_blocks/hero_center", label="Hero" %}
+
+{% module "module_20200805223356" path="/markup/modules_from_blocks/two_block", label="Two Column" %}
+
+{% module "module_20200805223443" path="/markup/modules_from_blocks/two_block", label="Two Column" %}
+
+{% module "module_20200805223509" path="/markup/modules_from_blocks/two_block", label="Two Column" %}
+
+{% module "module_20200805235642" path="/markup/modules_from_blocks/three-cards", label="Three Cards" %}
+
+
+</div>
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

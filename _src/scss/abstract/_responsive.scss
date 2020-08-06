@@ -64,9 +64,12 @@
 
 %grid {
     display:grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     width: var(--xlg-page-width);
     align-self: center;
+    column-gap: .25rem;
+    padding-left:.125rem;
+    padding-right:.125rem;
     @include breakpoint(w-lg) {
       max-width: var(--lg-page-width);
     }

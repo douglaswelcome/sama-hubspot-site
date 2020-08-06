@@ -10,10 +10,10 @@
     "show_emoji_picker": false,
     "type": "text",
     "default": null
-  }, 
+  },
   {
     "name": "subheadline",
-    "label": "Subheadline",
+    "label": "subheadline",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -22,19 +22,11 @@
     "show_emoji_picker": false,
     "type": "text",
     "default": null
-  }, 
-  {
-    "picker": "image",
+  },
+    {
 
-    "name": "block1_img",
-    "label": "block1_img",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
-  }, {
-    "name": "block1_title",
-    "label": "block1_title",
+    "name": "card1_title",
+    "label": "card1_title",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -44,8 +36,32 @@
     "type": "text",
     "default": "Jergenize"
   }, {
-    "name": "block1_body",
-    "label": "block1_body",
+
+    "name": "card1_body",
+    "label": "card1_body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  },  {
+
+    "name": "card2_title",
+    "label": "card2_title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  }, {
+
+    "name": "card2_body",
+    "label": "card2_body",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -54,16 +70,9 @@
     "type": "text",
     "default": "This is truly an almighty mountain. There are no limits in this world."
   }, {
-    "picker": "image",
-    "name": "block2_img",
-    "label": "block2_img",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/headshots/Loic_headshot.png"
-  }, {
-    "name": "block2_title",
-    "label": "block2_title",
+   
+    "name": "card3_title",
+    "label": "card3_title",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -73,37 +82,9 @@
     "type": "text",
     "default": "Jergenize"
   }, {
-    "name": "block2_body",
-    "label": "block2_body",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "This is truly an almighty mountain. There are no limits in this world."
-  }, {
-    "picker": "image",
-    "name": "block3_img",
-    "label": "block3_img",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
-  }, {
-    "name": "block3_title",
-    "label": "block3_title",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove Element",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "Jergenize"
-  }, {
-    "name": "block3_body",
-    "label": "block3_body",
+
+    "name": "card3_body",
+    "label": "card3_body",
     "required": false,
     "locked": false,
     "validation_regex": "",
