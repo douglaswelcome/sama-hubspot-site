@@ -22,7 +22,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: left;
     text-align: left;
-    grid-column-gap: 2rem;
+    column-gap: 2rem;
+    margin-bottom:1.5rem;
 
 
   }

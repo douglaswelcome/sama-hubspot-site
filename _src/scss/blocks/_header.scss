@@ -23,7 +23,7 @@ background-color: rgba($color-charcoal-1, 1);
   
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-columns: auto 8fr auto;
   grid-column-gap: 3rem;
   grid-template-rows: 75px;
   z-index: 12;
@@ -75,10 +75,7 @@ background-color: rgba($color-charcoal-1, 1);
     }
   }
 
-  .header-cta {
-    padding-top: 0.5rem;
-    padding-bottom: calc(5px + 0.5rem);
-  }
+ 
 
 }
 

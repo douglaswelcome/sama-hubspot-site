@@ -1,5 +1,4 @@
 [ {
-
   "name" : "image_position",
   "label" : "image_position",
   "required" : false,
@@ -34,7 +33,6 @@
   "default" : ""
 }, {
   "picker" : "image",
-
   "name" : "two_block_img",
   "label" : "two_block_img",
   "required" : false,

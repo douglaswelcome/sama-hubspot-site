@@ -2,76 +2,61 @@
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
-  border:0;
   text-align: center;
   background-color: var(--color-charcoal-1);
   position: relative;
   border: .125rem solid ;
   border-color: var(--charcoal-1);
+  transition: transform 200ms;
 
-  h3 {
+  &__bottoms{
+    background-color:var(--color-charcoal-6);
+    border-radius: 3px;   
+  }
+
+  .btn__text {
     padding: 1rem 2rem 1rem 2rem;
     color: var(--color-white) ;
     margin: 0;
   }
 
-  
 
-    
+  &:hover{
+    transform:translate(.5rem, -.5rem)
+  }
 
-  
+  &:active{
+    transform:translate(.25rem, -.25rem)
+  }
 
    &--secondary {
-    background-color: transparent;
+    background-color: var(--color-white);
     border: .125rem solid;
-    border-color: var(--charcoal-1);
+    border-color: var(--color-charcoal-1);
+
     
     
-    h3{
+    
+    .btn__text{
       color: var(--color-charcoal-1);
     }
+
   }
 
-  
-
 
 
   
-
-
-  &.btn--secondary-neg {
-
-    h3{
-    color:$color-white;
-    }
-    &::before {
-      background-color: $color-charcoal-2;
-      border: 0.125rem solid $color-white;
-      box-shadow: none;
-    }
-
-    &::after {
-      background-color: $color-charcoal-2;
-      border: 0.125rem solid $color-white;
-      box-shadow: none;
-    }
-  }
-
-  
-
-
-
-
-
-
 
 
 }
 
+
+
+
 .btn--small {
   
 
-  h3{
+  .btn__text {
     font-size:1rem;
     padding: .75rem 1.25rem;
     
@@ -80,21 +65,35 @@
 
 .dark-mode .btn {
   background-color: var(--color-sunshine);
-  h3{
+  border-color:var(--color-sunshine);
+  .btn__text{
     color: var(--color-charcoal-1);
   }
 
-  &.secondary, &--secondary {
-    background-color: transparent;
+  &__bottoms{
+    background-color:var(--color-charcoal-4);
+  }
+
+  &--secondary {
+    background-color: var(--color-charcoal-1);
     border: .125rem solid;
-    border-color: var(--color-white);
+    border-color: var(--color-white); 
     
-    
-    h3{
+  .btn__text{
       color: var(--color-white);
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,7 +248,7 @@
   display:grid;
   align-items:center;
    grid-auto-columns:1fr;
-  column-gap:.5rem;
+  column-gap:.75rem;
   grid-auto-flow: column;
 }
 
