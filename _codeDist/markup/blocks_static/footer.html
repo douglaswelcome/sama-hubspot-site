@@ -3,9 +3,10 @@
     isAvailableForNewContent: false
 -->
 <footer class="">
-  <div class="upper">
-    <div class="left">
-      <a href="/">
+  <div class="grid-wrapper">
+    <div class="upper">
+      <div class="left">
+        <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4244.34 636">
           <title>logo</title>
           <g id="Layer_2" data-name="Layer 2">
@@ -37,42 +38,47 @@
           </g>
         </svg>
       </a>
-    </div>
-    <div class="right">
-
-      <h6>
-        <a href="/our-team">Our Team</a>
-      </h6>
-
-      <h6>
-        <a href="/careers">Careers</a>
-      </h6>
-
-      <h6>
-        <a href="/contact-us">Contact</a>
-      </h6>
-
-      <h6>
-        <a href="/global-locations">Global Locations</a>
-      </h6>
-      <h6>
-        <a href="/privacy-policy">Privacy Policy</a>
-      </h6> 
-
-      <div class="social">
-        <ul>
-          {% include '/markup/blocks_static/social-icons.html' %}
-        </ul>
       </div>
-    </div>
+      <div class="right">
 
-  </div>
-  <div class="lower">
-    <h6>
-      Copyright ©
-      {{year}}
-      Samasource Inc. All rights reserved.
-    </h6>
+        <h6>
+          <a href="/our-team">Our Team</a>
+        </h6>
+
+        <h6>
+          <a href="/careers">Careers</a>
+        </h6>
+
+        <h6>
+          <a href="/contact-us">Contact</a>
+        </h6>
+
+        <h6>
+          <a href="/global-locations">Global Locations</a>
+        </h6>
+        <h6>
+          <a href="/privacy-policy">Privacy Policy</a>
+        </h6>
+
+        <div class="social">
+          <ul>
+            {% include '/markup/blocks_static/social-icons.html' %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="lower">
+      <h6>
+        Copyright © {{year}}
+      </h6>
+      <h6>
+        Samasource Inc.
+      </h6>
+      <h6>
+        All rights reserved.
+      </h6>
+    </div>
   </div>
 
 </footer>

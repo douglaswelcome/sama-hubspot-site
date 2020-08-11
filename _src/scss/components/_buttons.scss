@@ -21,7 +21,7 @@
 
   
 
-  &.secondary, &--secondary {
+   &--secondary {
     background-color: transparent;
     border: .125rem solid;
     border-color: var(--charcoal-1);
@@ -31,6 +31,8 @@
       color: var(--color-charcoal-1);
     }
   }
+
+  
 
 
 
@@ -64,6 +66,16 @@
 
 
 
+}
+
+.btn--small {
+  
+
+  h3{
+    font-size:1rem;
+    padding: .75rem 1.25rem;
+    
+  }
 }
 
 .dark-mode .btn {
