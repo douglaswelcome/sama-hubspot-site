@@ -1,0 +1,34 @@
+<!-- module html  -->
+<section class="bg-charcoal-2 dark-mode">
+    <div class="tab-window">
+        <div class="tab-window__title">
+            <div class="tab-window__headline">
+                <h2>
+                    {{ module.headline }}
+                </h2>
+            </div>
+
+        </div>
+        <div class="tabs tabs__tab-bar">
+            <div class="tabs__tab active">
+                <h5 class="tabs__label">{{ module.tab_1}}</h5>
+            </div>
+            <div class="tabs__tab">
+                <h5 class="tabs__label">{{ module.tab_2}}</h5>
+            </div>
+            <div class="tabs__tab">
+                <h5 class="tabs__label">{{ module.tab_3}}</h5>
+            </div>
+        </div>
+        <div class="tab-window__window">
+            <div class="tab-window__feature">
+                <div class="tab-window__img">
+                    <img src="{{ module.img_1.src }}" alt="{{ module.img_1.alt }}" />
+                </div>
+                    <div class="tab-window__text">
+                        {{ module.text_1}}
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

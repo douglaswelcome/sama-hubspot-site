@@ -1,17 +1,19 @@
 footer {
-  background-color: $color-charcoal;
+  background-color: var(--color-charcoal-1);
+  padding-top:3rem;
+  padding-bottom:3rem;
+  display:flex;
+  justify-content:center;
 
-  padding: 3rem 0 1rem;
-  @include breakpoint(w-med) {
-    padding: 3rem 2rem 1rem;
-  }
+
+
 
   .upper {
-    @extend %page-container;
+    grid-column: 1/ span 12;
     border: .125rem solid #fffa0c;
     border-top: 0;
     border-left: 0;
-    border-radius: 0 0 3rem 0;
+    border-right:0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 1rem;
@@ -36,7 +38,7 @@ footer {
 
       a {
 
-        color: $color-isabelline;
+        color: var(--color-charcoal-7);
 
         &:hover {
           cursor: pointer;
@@ -111,11 +113,14 @@ footer {
   }
 
   .lower {
+    grid-row:2;
+  
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.5rem;
     h6 {
       margin-top: 1rem;
-      margin-bottom: 1rem;
-      @extend %page-container;
-      color: $color-isabelline;
+      color: var(--color-charcoal-7);
     }
   }
 }

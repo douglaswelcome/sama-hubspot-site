@@ -1,22 +1,28 @@
 .brag-bar {
-  .label-tab {
-    margin-bottom: 4rem;
-  }
+  @extend %grid;
 
-  .brag-body {
-    @extend %page-container;
-    width: 70%;
+  &__body {
+    grid-column: 3 / span 8;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
   }
 
-  .brag-scroller {
-    grid-template-columns: repeat(6, 1fr);
+  &__headline {
+    margin-bottom:1.5rem;
+  }
+
+  &__subheadline {
+    margin-bottom: 1.5rem
+  }
+
+
+  .brag-bar__logos {
+    grid-column: 1 / span 12;
+    grid-row:2;
+    grid-template-columns: repeat(12, minmax(0,1fr));
     display: grid;
     grid-column-gap: 1rem;
-    grid-row-gap: 3rem;
-    @extend %page-container;
     @include breakpoint(w-sm) {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 10vw;
@@ -24,6 +30,7 @@
   }
 
   .logo {
+    grid-column: span 2;
     align-self: center;
     text-align: center;
 

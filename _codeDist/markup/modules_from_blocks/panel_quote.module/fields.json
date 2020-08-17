@@ -1,0 +1,38 @@
+[
+{
+"name": "quote",
+"label": "Quote Text",
+"sortable": false,
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "",
+"default": "Give me the whole slice" },
+{
+"name": "author",
+"label": "Quote Author",
+"sortable": false,
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "",
+"default": "-Jeff Goldblum, CEO of Magic"},
+{
+"name": "img",
+"label": "Headshot",
+"sortable": false,
+"required": false,
+"locked": false,
+"resizable": false,
+"type": "image",
+"default": {
+  "src": "",
+  "alt": null} }
+
+]

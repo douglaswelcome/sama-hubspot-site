@@ -1,0 +1,52 @@
+.tab-window {
+    @extend %grid;
+
+    &__title {
+        grid-column: 2 / span 10;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+
+    &__tab {
+
+        text-align: center;
+
+
+    }
+
+
+
+    &__window {
+        grid-row: 3;
+        grid-column: 3 /span 8;
+    }
+
+    .tabs__tab-bar {
+        grid-row: 2;
+        grid-column: 2/span 10;
+
+        margin-bottom: 3rem;
+
+
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            display:block;
+
+        }
+    }
+
+    &__text {
+        width: 100%;
+        background-color: var(--color-charcoal-5);
+        padding: 1.5rem 3rem;
+
+        
+
+    }
+
+
+}

@@ -1,0 +1,70 @@
+[{
+    "name": "headline",
+    "label": "Headline",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+  {
+    "id": "features",
+    "name": "features",
+    "type": "group",
+    "label": "Features",
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "children": [{
+        "id": "features.da_name",
+        "name": "da_name",
+        "label": "Feature Name",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "API Baby"
+      },
+      {
+        "id": "features.img",
+        "name": "img",
+        "label": "Feature Image",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "baby, baby",
+          "alt": null
+        }
+      },
+      {
+        "id": "features.description",
+        "name": "description",
+        "label": "Feature Description",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
+      }
+    ]
+  }
+
+]

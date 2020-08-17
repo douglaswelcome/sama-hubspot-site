@@ -2,13 +2,14 @@
     templateType: page
     isAvailableForNewContent: false
 -->
-<header class="header">
-  <div class="header-desktop-wrapper">
+<header class="dark-mode">
+  <div class="header">
+    <div class="header-desktop-wrapper">
 
 
-    <div class="desktop-header">
-      <div class="logo">
-        <a href="https://www.samasource.com">
+      <div class="desktop-header">
+        <div class="logo">
+          <a href="https://www.samasource.com">
           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4244.34 636">
             <title>logo</title>
             <g id="Layer_2" data-name="Layer 2">
@@ -45,55 +46,40 @@
             </g>
           </svg>
         </a>
-      </div>
+        </div>
 
-      <menu class="desktop-menu">
-        <li id="products">
-          <h6>Solutions</h6>
-        </li>
-        
-        <li id="why">
-          <h6>Why Samasource</h6>
-        </li>
-        <li id="about">
-          <h6>About</h6>
-        </li>
-        <li id="resources">
+        <menu class="desktop-menu">
+          <li id="products">
+            <h6>Solutions</h6>
+          </li>
+
+          <li id="why">
+            <h6>Why Samasource</h6>
+          </li>
+          <li id="about">
+            <h6>About</h6>
+          </li>
+          <li id="resources">
             <h6>Resources</h6>
-        </li>
-      </menu>
+          </li>
+        </menu>
 
-      <div class="header-cta">
+        <div class="header-cta">
 
-        <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper"
-          id="hs-cta-wrapper-971ed28e-018c-4e20-8c14-63a085ebd769"><span
-            class="hs-cta-node hs-cta-971ed28e-018c-4e20-8c14-63a085ebd769"
-            id="hs-cta-971ed28e-018c-4e20-8c14-63a085ebd769">
-            <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
-              href="https://cta-redirect.hubspot.com/cta/redirect/4379491/971ed28e-018c-4e20-8c14-63a085ebd769"><img
-                class="hs-cta-img" id="hs-cta-img-971ed28e-018c-4e20-8c14-63a085ebd769" style="border-width:0px;"
-                src="https://no-cache.hubspot.com/cta/default/4379491/971ed28e-018c-4e20-8c14-63a085ebd769.png"
-                alt="Request Demo  &lt;&gt;" /></a></span>
-          <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-          <script type="text/javascript">
-            hbspt.cta.load(4379491, '971ed28e-018c-4e20-8c14-63a085ebd769', {});
-          </script>
-        </span><!-- end HubSpot Call-to-Action Code -->
-
-
-
-        <!-- <a href="request-a-demo">
-          <button class="secondary">
-            <h3>Request Demo</h3>
+          <a href="#" class="btn__bottoms">
+          <button class="btn btn--secondary btn--small">
+            <h3 class="btn__text">
+              Request a Demo
+            </h3>
           </button>
-        </a> -->
+        </a>
+        </div>
       </div>
+
+      {# {% include '/markup/blocks_static/desktop-submenu.html' %} #}
     </div>
 
-    {% include '/markup/blocks_static/desktop-submenu.html' %}
-  </div>
-
-  <div class="site-header mobile-header">
+    {# <div class="site-header mobile-header">
     <div class="logo">
       <a href="https://www.samasource.com">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4244.34 636">
@@ -142,5 +128,6 @@
     </div>
   </div>
 
-  {% include '/markup/blocks_static/mobile-submenu.html' %}
+  {% include '/markup/blocks_static/mobile-submenu.html' %} #}
+  </div>
 </header>

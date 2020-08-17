@@ -1,76 +1,84 @@
 .three-block {
+@extend %grid;
+
   &__intro {
-    h4{
-      text-align: center;
-    }
-    margin-bottom:4.5rem;
+    grid-column: 3 /span 8;
+    text-align: center;
+    margin-bottom:4rem;
+  
+
+    
   }
 
-  &__wrapper {
-    $num-blocks: 3;
-    /* Set number of articles here (need to update markup accordingly) */
-    $med-num-cols: 3;
-    $sm-num-cols: 1;
+  &__headline {
+    margin-bottom:1rem;
+  }
 
-    $components: ('.block-img',
-        '.block-title',
-        '.block-body'
-      );
+  &__subheadline {
+    margin-bottom:1rem;
+  }
 
-    @extend %page-container;
+  &__blocks {
+    grid-row:2;
+    grid-column: 2 /span 10;
     display: grid;
-    grid-template-columns: repeat($med-num-cols, 1fr);
-    justify-content: center;
-    grid-row-gap: 1rem;
-    grid-column-gap: 5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: left;
+    text-align:left;
 
-    @include breakpoint(w-sm) {
-      grid-template-columns: repeat($sm-num-cols, 1fr);
-      max-width: 320px;
 
-      .block-body,
-      .block-img,
-      .block-title {
-        grid-row: auto !important;
-      }
+    grid-column-gap: 2rem;
+    
 
-      .block-body {
-        margin-bottom: 3rem;
-      }
+    // @include breakpoint(w-sm) {
+    //   grid-template-columns: repeat($sm-num-cols, 1fr);
+    //   max-width: 320px;
 
-    }
+    //   .block-body,
+    //   .block-img,
+    //   .block-title {
+    //     grid-row: auto !important;
+    //   }
+
+    //   .block-body {
+    //     margin-bottom: 3rem;
+    //   }
+
+    // }
+
+    
 
     .block-img {
-
+      
       overflow: hidden;
       grid-row: 1;
-      justify-self: center;
+      justify-self: left;
       display: flex;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
 
       img {
-        max-width: 12rem;
-        max-height: 12rem;
+        max-width: 4rem;
+        max-height: 4rem;
         width: 100%;
       }
     }
 
     .block-title {
+      
       grid-row: 2;
-      justify-self: center;
-      text-align: center;
+      justify-self: left;
+ 
       display: flex;
       align-items: center;
+      margin-bottom: 1rem;
 
-      h3.small {
-        font-size:1.7rem;
-      }
     }
 
     .block-body {
+      
       grid-row: 3;
       justify-self: center;
-      text-align: center;
+
     }
 
   }

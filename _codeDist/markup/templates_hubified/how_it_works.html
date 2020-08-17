@@ -1,0 +1,26 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% include '/markup/blocks_static/header.html' %}
+<div class="flex-content">
+
+{% module "module_20200805092815" path="/markup/modules_from_blocks/hero_center", label="Hero" %}
+
+{% module "module_20200805191842" path="/markup/modules_from_blocks/three_block", label="3 Values" %}
+
+{% module "module_20200806085147" path="/markup/modules_from_blocks/feature_window", label="Feature Window" %}
+
+{% module "module_20200811012803" path="/markup/modules_from_blocks/panel_quote", label="Quote Baby" %}
+
+{% module "module_20200805204019" path="/markup/modules_from_blocks/split_cta", label="Closing CTA" %}
+
+</div>
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

@@ -1,16 +1,29 @@
+header {
+display:flex;
+justify-content:center;
+background-color: rgba($color-charcoal-1, 1);
+}
+
+.header {
+  @extend %grid;
+
+}
+
 .header-desktop-wrapper {
-  background-color: rgba($color-charcoal-2, 0);
+  grid-column: 1 / span 12;
   transition-property: color, background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
 .desktop-header {
-  @extend %page-container;
+  color: $color-white;
+ 
 
+  
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 8fr auto;
   grid-column-gap: 3rem;
   grid-template-rows: 75px;
   z-index: 12;
@@ -28,7 +41,7 @@
   }
 
   a {
-    color: $color-charcoal;
+    color: var(--color-charcoal-1);
     height: 100%;
     flex: 1;
     display: flex;
@@ -38,7 +51,7 @@
 
   svg {
     height: 1.7rem;
-    fill: $color-black;
+    fill: var(--color-sunshine);
     transition-property: fill;
     transition-duration: 0.4s;
     transition-timing-function: ease;
@@ -62,10 +75,7 @@
     }
   }
 
-  .header-cta {
-    padding-top: 0.5rem;
-    padding-bottom: calc(5px + 0.5rem);
-  }
+ 
 
 }
 
@@ -91,7 +101,7 @@
     border-radius: 0 0 0 7rem;
     overflow: hidden;
 
-    @extend %page-container;
+    @extend %grid;
 
     .submenu-item {
       display: none;
@@ -121,7 +131,7 @@
         }
 
         &:hover {
-          background-color: $color-tembo;
+          background-color: var(--color-charcoal-3);
           transition-property: background-color;
           transition-duration: 0.4s;
           transition-timing-function: ease;
@@ -168,7 +178,7 @@
 
       h3 {
         font-size: 1.3rem;
-        color: $color-nguva;
+        color: var(--color-charcoal-5);
         display: inline-block;
         cursor: default;
         padding-bottom: 1.5rem;
@@ -259,7 +269,7 @@
 
 .mobile-header {
   display: none;
-  background-color: $color-charcoal;
+  background-color: var(--color-charcoal-1);
   grid-template-columns: 1fr 1fr;
   align-items: center;
   height: var(--mobileheaderheight);
@@ -345,7 +355,7 @@
   .mobile-submenu-container {
 
     width: 320px;
-    background-color: $color-tembo;
+    background-color: var(--color-charcoal-3);
     padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -370,7 +380,7 @@
       }
 
       h3 {
-        color: $color-nguva;
+        color: var(--color-charcoal-5);
         font-size: 0.9rem;
         padding-bottom: 0.5rem;
         border-bottom: 2px solid;

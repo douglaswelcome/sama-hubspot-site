@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @extend %page-container;
+  @extend %grid;
 
   @include breakpoint(w-sm) {
     width: 250px
