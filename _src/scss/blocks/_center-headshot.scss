@@ -1,5 +1,5 @@
 .headshot {
-    @extend %page-container;
+    @extend %grid;
     text-align:center;
     &__img {
         border-radius: 50%;

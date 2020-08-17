@@ -47,17 +47,31 @@ $color-charcoal: #28282a;
 $color-charcoal-trans: rgba(#28282a, 0.8);
 
 $color-charcoal-1:#28282a;
-$color-charcoal-2:#323234;
-$color-charcoal-3:#404042;
-$color-charcoal-4:#5a5a5c;
-$color-charcoal-5:#757577;
-$color-charcoal-6:#929294;
-$color-charcoal-7:#afafb1;
-$color-charcoal-8:#ceced0;
-$color-charcoal-9:#ededef;
-$color-charcoal-10:#f7f7f9;
+$color-charcoal-2:#424244;
+$color-charcoal-3:#5d5d5f;
+$color-charcoal-4:#7a7a7c;
+$color-charcoal-5:#98989a;
+$color-charcoal-6:#b7b7b9;
+$color-charcoal-7:#d8d8da;
+$color-charcoal-8:#f9f9fb;
 
- //Data Viz
+
+:root {
+    --color-white: #ffffff;
+
+    --color-charcoal-1: #28282a;
+    --color-charcoal-2: #424244;
+    --color-charcoal-3: #5d5d5f;
+    --color-charcoal-4: #7a7a7c;
+    --color-charcoal-5: #98989a;
+    --color-charcoal-6: #b7b7b9;
+    --color-charcoal-7: #d8d8da;
+    --color-charcoal-8: #f9f9fb;
+
+    --color-sunshine: #fffa0c;
+}
+
+//Data Viz
 // "#fffa0c",
 // "#291d54",
 // "#815ab9",

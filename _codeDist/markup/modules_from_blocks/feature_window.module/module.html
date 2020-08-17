@@ -1,0 +1,42 @@
+<!-- module html  -->
+<section>
+    <div class="feature-window">
+        <div class="feature-window__upper">
+            <div class="headline">
+                <h2>
+                    {{ module.headline }}
+                </h2>
+            </div>
+        </div>
+        <div class="feature-window__lower">
+            <div class="feature-window__sidebar">
+                {% for item in module.features %}
+                <div class="feature-window__selector
+                {% if loop.index == 1 %} active {% endif %}">
+                    <h5 class="feature-window__da-name">
+                        {{ item.da_name }}
+                    </h5>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="feature-window__divider"></div>
+            <div class="feature-window__window">
+                {% for item in module.features %}
+                <div class="feature-window__detail-wrapper 
+                {% if loop.index == 1 %} active {% endif %}">
+                    <div class="feature-window__img">
+                        <img src="{{ item.img.src }}" />
+                    </div>
+                    <div class="feature-window__description">
+                          <h5> 
+                              {{ item.description}}
+                             </h5>
+                    </div>
+                    
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+

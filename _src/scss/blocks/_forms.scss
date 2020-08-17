@@ -1,5 +1,5 @@
 .form-wrapper {
-  @extend %page-container;
+  @extend %grid;
 
   .hs-form {
 
@@ -14,7 +14,7 @@
   .hs-form .hs-form-field>label {
     font-weight: 700;
     font-size: 0.9rem;
-    color: $color-tembo;
+    color: var(--color-charcoal-3);
 
   }
 
@@ -38,7 +38,7 @@
   input {
     border-width: 0 .125rem .125rem 0;
     border-radius: 0 0 25px 0;
-    border-color: $color-isabelline;
+    border-color: var(--color-charcoal-7);
     font-size: 1.125rem;
     padding: 0.7rem;
     width: 100%;
@@ -72,12 +72,12 @@
   .hs-form input[type="file"]:focus,
   .hs-form textarea:focus,
   .hs-form select:focus {
-    border-color: $color-nguva;
+    border-color: var(--color-charcoal-5);
   }
 
   .hs-form .hs-error-msgs label {
     font-size: .7rem;
-    color: $color-kennedy;
+    color: var(--color-charcoal-2)
 
   }
 
@@ -112,8 +112,8 @@
         content: "";
         height: 100%;
         width: 100%;
-        background-color: $color-kennedy;
-        border: 0.125rem solid $color-kennedy;
+        background-color: var(--color-charcoal-2);
+        border: 0.125rem solid var(--color-charcoal-2);
         border-radius: 0 0 0 1.5rem;
         position: absolute;
         z-index: 1;
@@ -164,7 +164,7 @@
         transition-property: all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
-        color: $color-charcoal;
+        color: var(--color-charcoal-1)
 
       }
     }
@@ -186,7 +186,7 @@
     border-radius: 0 0 1.5rem  0;
     position: relative;
     border-width: 0px;
-    Background-color:$color-kennedy;
+    Background-color:var(--color-charcoal-2);
     color:white;
     Font-family:var(--font-barlow);
     text-transform: uppercase;
@@ -211,7 +211,7 @@
 
 
 .form-wrapper.form-wrapper--dark {
-  @extend %page-container;
+  @extend %grid;
 
   .hs-form {
     margin-left: auto;
@@ -225,7 +225,7 @@
   .hs-form .hs-form-field>label {
     font-weight: 700;
     font-size: 0.9rem;
-    color: $color-isabelline;
+    color: var(--color-charcoal-7);
 
   }
 
@@ -281,7 +281,7 @@
   .hs-form input[type="file"]:focus,
   .hs-form textarea:focus,
   .hs-form select:focus {
-    border-color: $color-nguva;
+    border-color: var(--color-charcoal-5);
   }
 
   .hs-form .hs-error-msgs label {
@@ -301,7 +301,7 @@
 
   .legal-consent-container {
     span {
-      color: $color-isabelline;
+      color: var(--color-charcoal-7);
     }
   }
 
@@ -327,8 +327,8 @@
         content: "";
         height: 100%;
         width: 100%;
-        background-color: $color-kennedy;
-        border: 0.125rem solid $color-kennedy;
+        background-color: var(--color-charcoal-2);
+        border: 0.125rem solid var(--color-charcoal-2);
         border-radius: 0 0 0 1.5rem;
         position: absolute;
         z-index: 1;
@@ -380,7 +380,7 @@
         transition-property: all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
-        color: $color-charcoal;
+        color: var(--color-charcoal-1);
 
       }
     }

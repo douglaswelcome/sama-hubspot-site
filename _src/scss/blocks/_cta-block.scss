@@ -1,5 +1,5 @@
 .cta-block {
-  @extend %page-container;
+  @extend %grid;
   text-align: center;
 
   .button-row {
@@ -35,7 +35,7 @@
   }
 
   &.full-cta-bar {
-    @extend %page-container;
+    @extend %grid;
 
     .divider-line {
       margin-right: auto;

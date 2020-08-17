@@ -1,0 +1,38 @@
+.panel-quote {
+    height:auto;
+    &__back {
+        grid-row: 1;
+        grid-column: 5 / span 6;
+        background-color: var(--color-charcoal-1);
+        height:100%;
+    }
+
+    &__front {
+        grid-row:1;
+        grid-column: 3 / span 7;
+        margin: 3rem 0;
+        background-color: var(--color-sunshine);
+        display:grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    &__quote{
+        padding: 3rem;
+    }
+
+    &__quote-text{
+        margin-bottom: 1rem;
+    }
+
+    &__quote-author {
+        text-align:right;
+    }
+
+    &__headshot {
+        width: 18rem;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+}
