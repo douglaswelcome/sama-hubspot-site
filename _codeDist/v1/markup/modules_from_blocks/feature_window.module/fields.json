@@ -34,7 +34,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "API Baby"
+        "default": "Feature 1"
       },
       {
         "id": "features.img",
@@ -46,7 +46,7 @@
         "resizable": false,
         "type": "image",
         "default": {
-          "src": "baby, baby",
+          "src": "https://source.unsplash.com/random",
           "alt": null
         }
       },
