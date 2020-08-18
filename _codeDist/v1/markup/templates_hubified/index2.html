@@ -1,0 +1,50 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends 'markup/blocks_static/base.html' %}
+
+{% block top-insert %}
+
+{% module "module_20200125102523" path="/v1/markup/modules_from_blocks/popdown_announcement", label="popdown_announcement" %}
+
+{% endblock %}
+
+{% block main %}
+
+{% include '/v1/markup/blocks_static/pattern-bg.html' %}
+
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+{# eat it #}
+
+{% module "module_20200514093702" path="/v1/markup/modules_from_blocks/homepage_hero", label="homepage_hero" %}
+
+{% module "module_15507301700363387" path="/v1/markup/modules_from_blocks/center_block", label="center_block" %}
+
+
+
+{% module "module_1550710676047301" path="/v1/markup/modules_from_blocks/three-block", label="three-block" %}
+
+{% module "module_156986340077531" path="/v1/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% module "module_20200727231259" path="/v1/markup/modules_from_blocks/two_block_cards", label="two_block_cards" %}
+
+{% module "module_15688267706975" path="/v1/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% module "module_156806516689677" path="/v1/markup/modules_from_blocks/center_block_vision", label="center_block_vision" %}
+
+{% module "module_155098672855052" path="/v1/markup/modules_from_blocks/strip_block", label="strip_block" %}
+
+{% module "module_15688268897436" path="/v1/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% module "module_15507278760891492" path="/v1/markup/modules_from_blocks/strip_block", label="strip_block" %}
+
+{% module "module_20200514104844" path="/v1/markup/modules_from_blocks/two_block_award", label="two_block_award" %}
+
+{% module "module_20200727213053" path="/v1/markup/modules_from_blocks/brag_bar", label="brag_bar" %}
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

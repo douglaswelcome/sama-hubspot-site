@@ -1,0 +1,25 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+{% module "module_155077569662166" path="/v1/markup/modules_from_blocks/page_hero", label="page_hero" %}
+
+{% module "module_155254325777395" path="/v1/markup/modules_from_blocks/center_block", label="center_block" %}
+
+{% module "module_20200727214252" path="/v1/markup/modules_from_blocks/lead_team", label="lead_team" %}
+
+{# {% include '/v1/markup/blocks_static/press-block.html' %} #}
+
+{% module "module_155254443445497" path="/v1/markup/modules_from_blocks/strip_block", label="strip_block" %}
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+
+{% endblock %}

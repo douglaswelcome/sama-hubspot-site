@@ -1,0 +1,19 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+{% module "module_156202424392625" path="/v1/markup/modules_from_blocks/page_hero_variant", label="page_hero_variant" %}
+
+{% include '/v1/markup/blocks_static/privacy-policy.html' %}
+
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}
