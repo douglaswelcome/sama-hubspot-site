@@ -1,0 +1,67 @@
+[ {
+  "name" : "headline",
+  "label" : "Headline",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "High Quality Data. <br> Smarter AI."
+}, {
+
+  "name" : "subheadline",
+  "label" : "Subheadline",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Quickly train and validate your machine learning model."
+}, 
+{
+
+"name": "image",
+"label": "Hero Image",
+"required": false,
+"locked": false,
+"help_text": "",
+"responsive": true,
+"resizable": false,
+"type": "image",
+"default": {
+  "src": "https://source.unsplash.com/random/600x600",
+  "alt": null} 
+},
+ {
+ "name": "btn_text",
+ "label": "Button Text",
+ "required": false,
+ "locked": false,
+ "validation_regex": "",
+ "allow_new_line": false,
+ "show_emoji_picker": false,
+ "type": "text",
+ "placeholder": "",
+ "default": null
+ },
+{
+
+"name" : "btn_link",
+"label" : "Button Link",
+"required" : false,
+"locked" : false,
+"supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+"type" : "link",
+"inline_help_text": "Shows Teaser image when toggled on",
+"help_text": "",
+"default" : {
+  "url" : {
+    "content_id" : null,
+    "type" : "EXTERNAL",
+    "href" : ""
+  }
+} 
+}
+ ]

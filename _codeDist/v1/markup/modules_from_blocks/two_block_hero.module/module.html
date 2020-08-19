@@ -1,0 +1,36 @@
+<!-- module html  -->
+
+<section class="dark-mode bg-charcoal-1">
+    <div class="two-block-hero">
+        <div class="two-block-hero__copy">
+            <div class="two-block-hero__headline">
+                <h1>
+                    {{module.headline}}
+                </h1>
+            </div>
+            <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+            <div class="two-block-hero__subheadline">
+                <h5>
+                    {{module.subheadline}}
+                </h5>
+            </div>
+            <div class="two-block-hero__btn-row">
+                
+                    <a href="{{ module.btn_link.href }}" class="btn__bottoms">
+                        <button class="btn ">
+                         <h3 class="btn__text">{{ module.btn_text}}</h3>
+                        </button>
+                      </a>
+                    
+                
+            </div>
+        </div>
+        <div class="two-cblock-hero__img">
+            <img src="{{ module.image.src}}" alt="module.img.alt" />
+        </div>
+
+    </div>
+</section>
+
+
+

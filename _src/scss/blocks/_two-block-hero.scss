@@ -1,0 +1,14 @@
+.two-block-hero {
+    @extend %grid;
+    align-items: center;
+
+    &__copy {
+        grid-column: span 6;
+        
+    }
+
+    &__btn-row{
+        margin-top: 2rem;
+
+    }
+}
