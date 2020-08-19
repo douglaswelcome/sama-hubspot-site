@@ -4,6 +4,7 @@
 
     &__copy {
         grid-column: span 6;
+        padding-right:1rem
         
     }
 
@@ -14,5 +15,8 @@
         display: flex;
         align-items: center;
 
+    }
+    &__img{
+        padding-left:1rem;
     }
 }
