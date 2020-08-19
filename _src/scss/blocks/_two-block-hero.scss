@@ -10,13 +10,15 @@
 
     &__btn-row{
         margin-top: 3rem;
-        
-
         display: flex;
         align-items: center;
 
     }
     &__img{
         padding-left:1rem;
+        grid-column:span 6;
+        img{
+            width:100%;
+        }
     }
 }
