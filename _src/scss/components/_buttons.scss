@@ -16,10 +16,6 @@
     grid-auto-columns:1fr;
     column-gap:1.25rem;
     grid-auto-flow: column;
-    
-
-    
-   
   }
 
   &__wrapper{
@@ -43,12 +39,6 @@
     color: var(--color-white) ;
     margin: 0;
   }
-
-
-  
-
-  
-
    &--secondary {
     background-color: var(--color-white);
     border: .125rem solid;
@@ -59,6 +49,11 @@
     
     .btn__text{
       color: var(--color-charcoal-1);
+      background-image: none;
+    }
+    
+    a.cta_button {
+      background-image: none;
     }
 
   }

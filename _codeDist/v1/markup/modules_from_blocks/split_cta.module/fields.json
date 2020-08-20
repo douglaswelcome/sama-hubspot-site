@@ -25,30 +25,24 @@
 "placeholder": "",
 "default": null },
 {
-"id" : "",
-"name":"button_1",
-"label": "Button 1 Text",
-"sortable": false,
+
+"name": "cta1",
+"label": "Primary CTA",
 "required": false,
 "locked": false,
-"validation_regex": "",
-"allow_new_line": false,
-"show_emoji_picker": false,
-"type": "text",
-"placeholder": "",
+"inline_help_text": "Shows Teaser image when toggled on",
+"help_text": "",
+"type": "cta",
 "default": null },
 {
-"id" : "",
-"name": "button_2",
-"label": "Button 2 Text",
-"sortable": false,
+
+"name": "cta2",
+"label": "Secondary CTA",
 "required": false,
 "locked": false,
-"validation_regex": "",
-"allow_new_line": false,
-"show_emoji_picker": false,
-"type": "text",
-"placeholder": "",
+"inline_help_text": "Shows Teaser image when toggled on",
+"help_text": "",
+"type": "cta",
 "default": null }
 
 ]
