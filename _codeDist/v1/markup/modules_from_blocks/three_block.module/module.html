@@ -17,7 +17,25 @@
           </54>
 
       </div>
+      <div class="btn__row">
+        {% if module.cta1 %}
+        <div class="btn__wrapper">
+          <button class="btn">
+                            {% cta guid="{{ module.cta1 }}" %}
+                      </button>
+        </div>
+        {% endif %}
+        {% if module.cta2 %}
+        <div class="btn__wrapper">
+          <button class="btn btn--secondary">
+                          {% cta guid="{{ module.cta2 }}" %}
+                        </button>
+        </div>
+        {% endif %}
+      </div>
     </div>
+
+
 
 
     <div class="three-block__blocks">
@@ -26,52 +44,52 @@
         <img src="{{ module.block1_img }}" />
       </div>
 
-      <div class="block-title">
-        <h4 class="{{ module.title_size }}">
-          {{ module.block1_title }}
-        </h4>
+        <div class="block-title">
+          <h4 class="{{ module.title_size }}">
+            {{ module.block1_title }}
+          </h4>
+        </div>
+
+        <div class="block-body">
+          <p>
+            {{ module.block1_body }}
+          </p>
+        </div>
+
+        <div class="block-img">
+          <img src="{{ module.block2_img }}" />
       </div>
 
-      <div class="block-body">
-        <p>
-          {{ module.block1_body }}
-        </p>
+          <div class="block-title">
+            <h4 class="{{ module.title_size }}">
+              {{ module.block2_title }}
+            </h4>
+          </div>
+
+          <div class="block-body">
+            <p>
+              {{ module.block2_body }}
+            </p>
+          </div>
+
+          <div class="block-img">
+            <img src="{{ module.block3_img }}" />
       </div>
 
-      <div class="block-img">
-        <img src="{{ module.block2_img }}" />
-      </div>
+            <div class="block-title">
+              <h4 class="{{ module.title_size }}">
+                {{ module.block3_title }}
+              </h4>
+            </div>
 
-      <div class="block-title">
-        <h4 class="{{ module.title_size }}">
-          {{ module.block2_title }}
-        </h4>
-      </div>
-
-      <div class="block-body">
-        <p>
-          {{ module.block2_body }}
-        </p>
-      </div>
-
-      <div class="block-img">
-        <img src="{{ module.block3_img }}" />
-      </div>
-
-      <div class="block-title">
-        <h4 class="{{ module.title_size }}">
-          {{ module.block3_title }}
-        </h4>
-      </div>
-
-      <div class="block-body">
-        <p>
-          {{ module.block3_body }}
-        </p>
-      </div>
+            <div class="block-body">
+              <p>
+                {{ module.block3_body }}
+              </p>
+            </div>
 
 
 
-    </div>
-  </div>
+          </div>
+        </div>
 </section>
