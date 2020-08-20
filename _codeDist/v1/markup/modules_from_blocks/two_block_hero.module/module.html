@@ -15,22 +15,33 @@
                 </h5>
             </div>
             <div class="two-block-hero__btn-row">
-                
-                    <a href="{{ module.btn_link.url.href }}" class="btn__bottoms">
-                        <button class="btn ">
-                         <h3 class="btn__text">{{ module.btn_text }}</h3>
-                        </button>
-                      </a>
-                    
-                
+
+
+
+                <div class="btn__row">
+                <div class="btn__wrapper">  
+                <button class="btn">
+                            {% cta guid="{{ module.cta }}" %}
+                </button>
+                </div> 
+                <div class="btn__wrapper">   
+                <button class="btn">
+                    {% cta guid="{{ module.cta }}" %}
+        </button>
+        </div>
+                </div>
+
+
+
             </div>
         </div>
         <div class="two-block-hero__img">
             <img src="{{ module.image.src}}" alt="module.img.alt" />
         </div>
 
-    </div>
+        </div>
 </section>
+
 
 
 
