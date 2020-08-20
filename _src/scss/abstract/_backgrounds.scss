@@ -1,15 +1,19 @@
 .bg-charcoal-1 {
-    background-color:var(--color-charcoal-1);
+    --parent-bg:var(--color-charcoal-1);
+    background-color:var(--parent-bg);
 }
 
 .bg-charcoal-2 {
-    background-color:var(--color-charcoal-2);
+    --parent-bg:var(--color-charcoal-2);
+    background-color:var(--parent-bg);
 }
 
 .bg-charcoal-3 {
-    background-color:var(--color-charcoal-3);
+    --parent-bg:var(--color-charcoal-3);
+    background-color:var(--parent-bg);
 }
 
 .bg-sunny{
-background-color: var(--color-sunshine);
+    --parent-bg:var(--color-sunshine);
+    background-color:var(--parent-bg);
 }
