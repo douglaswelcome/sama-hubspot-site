@@ -71,7 +71,8 @@
     &__img {
         width:100%;
 
-        margin-bottom: 2rem;
+       
+        align-self:center;
 
         img{
             display:block;
@@ -83,6 +84,8 @@
      grid-area: 1 /1;
      display: grid;
      grid-template-columns: 1fr;
+     grid-template-rows: 1fr auto;
+     row-gap: 3rem;
      
      visibility: hidden;
     }
