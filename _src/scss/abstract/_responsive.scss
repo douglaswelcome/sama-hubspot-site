@@ -1,6 +1,11 @@
 // ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
 // REM size @ 16px
 
+$w-xlg: 1296px; //1374 px and up
+$w-lg: 1088px; //1080px - 1374px
+$w-med: 800px;//800px - 1080px
+$w-sm: 320px; //320px - 800px
+
 :root{
 
 // $width-xxxlg: 130em; //
@@ -9,6 +14,9 @@
 --w-lg: 1088px; //1080px - 1374px
 --w-med: 800px;//800px - 1080px
 --w-sm: 320px; //320px - 800px
+
+
+
 // $width-xsm: 17.777em; // 320px iphone 5 width
 
 //iphone 4,5 = 320px Width
@@ -18,32 +26,39 @@
 // $height-sm: 31.250rem; // 500px
 // $height-med: 43.750rem; // 700px
 // $height-lg: 50.000rem; // 800px'
+   
+
+// Page Widths
+    
+  --xlg-page-width: 1296px;
+  --lg-page-width: 1056px;
+
 
 }
 
 @mixin breakpoint($width) {
   @if $width == w-xsm {
-    @media (max-width: var(--w-sm)) {
+    @media (max-width: $w-sm) {
       @content;
     }
   } @else 
   if $width == w-sm {
-    @media (max-width: var(--w-med)) {
+    @media (max-width: $w-med)) {
       @content;
     }
   } @else 
   if $width == w-med {
-    @media (max-width: var(--w-lg)) {
+    @media (max-width: $w-lg) {
       @content;
     }
   } @else 
   if $width == w-lg {
-    @media (max-width: var(--w-xlg)) {
+    @media (max-width: $w-xlg) {
       @content;
     }
   } @else 
   if $width == w-xlg {
-    @media (min-width: var(--w-xlg)) {
+    @media (min-width: $w-xlg) {
       @content;
     }
   } @else {
@@ -70,8 +85,9 @@
     column-gap: .25rem;
     padding-left:.125rem;
     padding-right:.125rem;
+    
     @include breakpoint(w-lg) {
-      max-width: var(--lg-page-width);
+      width: var(--lg-page-width);
     }
 
     @include breakpoint(w-med) {
@@ -80,9 +96,6 @@
 
   }
 
-  .grid-wrapper {
-    @extend %grid;
-  }
 
 
 

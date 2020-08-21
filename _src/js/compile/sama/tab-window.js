@@ -16,11 +16,6 @@ function tabWindow() {
         tabContent[i].classList.add('active');
     });
 
-
-  
-
-
-
 }
 
 $(tabWindow());
