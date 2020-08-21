@@ -11,68 +11,61 @@
     "placeholder": "",
     "default": null
   },
-  {
-    "name": "tab_1",
-    "label": "Tab 1",
-    "sortable": false,
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "placeholder": "",
-    "default": null
-  },
-  {
-    "name": "img_1",
-    "label": "Image 1",
-    "sortable": false,
-    "required": false,
-    "locked": false,
-    "resizable": false,
-    "type": "image",
-    "default": {
-      "src": "",
-      "alt": null
-    }
-  },
-  {
-    "name": "text_1",
-    "label": "Text 1",
-    "sortable": false,
-    "required": false,
-    "locked": false,
-    "type": "richtext",
-    "default": null,
-    "enabled_features" : ["link","lists", "source_code", "block"]
-  },
 
   {
-    "name": "tab_2",
-    "label": "Tab 2",
-    "sortable": false,
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "placeholder": "",
-    "default": null
-  },
-  {
-    "name": "tab_3",
-    "label": "Tab 3",
-    "sortable": false,
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "placeholder": "",
-    "default": null
+
+    "name": "tabs",
+    "type": "group",
+    "label": "Tab",
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "children": [
+      {
+        "name": "labelText",
+        "label": "Tab Label Text",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Label Goes Here"
+      },
+      {
+        "name": "img",
+        "label": "Tab Image",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random/900x400",
+          "alt": null
+        }
+      },
+      {
+
+        "name": "description",
+        "label": "Tab Description",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "richtext",
+        "enabled_features":["bulleted_list", "source_code"],
+        "placeholder": "",
+        "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
+      }
+    ]
   }
 
 ]

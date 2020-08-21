@@ -1,52 +1,91 @@
-[ {
-  "name" : "image_position",
-  "label" : "image_position",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "null", "Image Right" ], [ "reflect", "Image Left" ] ],
-  "type" : "choice",
-  "default" : "null"
-}, {
+[{
+    "name": "image_position",
+    "label": "image_position",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      ["null", "Image Right"],
+      ["reflect", "Image Left"]
+    ],
+    "type": "choice",
+    "default": "null"
+  },
 
-  "name" : "two_block_title",
-  "label" : "two_block_title",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Leave blank to omit this field",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "What's with airplanes, am I right?"
-},  {
+  {
+    "id": "",
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
 
-  "name" : "two_block_body_big",
-  "label" : "two_block_body_big",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Leave blank to omit this field",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : ""
-}, {
-  "picker" : "image",
-  "name" : "two_block_img",
-  "label" : "two_block_img",
-  "required" : false,
-  "locked" : false,
-  "type" : "file",
-  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/impactV.svg"
-},  
-{
-"name": "track_this",
-"label": "CTA Button",
-"sortable": false,
-"required": false,
-"locked": false,
-"type": "cta",
-"default": null 
-}
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+    [
+      "bg-charcoal-1",
+      "Charcoal 1 (Darkest)"
+    ],
+    [
+      "bg-charcoal-2",
+      "Charcoal 2 (Medium Dark)"
+    ],
+    [
+      "bg-charcoal-3",
+      "Charcoal 3 (Light Dark)"
+    ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default":  "bg-charcoal-1"   
+
+  },
+
+  {
+
+    "name": "two_block_title",
+    "label": "two_block_title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave blank to omit this field",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "What's with airplanes, am I right?"
+  }, 
+  {
+
+    "name": "two_block_body_big",
+    "label": "two_block_body_big",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave blank to omit this field",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+  "name": "img",
+  "label": "Image",
+  "required": false,
+  "locked": false,
+  "responsive": true,
+  "resizable": false,
+  "type": "image",
+  "default": {
+    "src": "https://source.unsplash.com/random/400x400",
+    "alt": null} }
 ]

@@ -10,25 +10,30 @@
 
         </div>
         <div class="tabs tabs__tab-bar">
-            <div class="tabs__tab active">
-                <h5 class="tabs__label">{{ module.tab_1}}</h5>
+            {% for item in module.tabs %}
+            <div class="tabs__tab
+        {% if loop.index == 1 %} active {% endif %}
+            ">
+                <h5 class="tabs__label">{{ item.labelText }}</h5>
             </div>
-            <div class="tabs__tab">
-                <h5 class="tabs__label">{{ module.tab_2}}</h5>
-            </div>
-            <div class="tabs__tab">
-                <h5 class="tabs__label">{{ module.tab_3}}</h5>
-            </div>
+            {% endfor %}
+
         </div>
         <div class="tab-window__window">
-            <div class="tab-window__feature">
+            {% for item in module.tabs %}
+            <div class="tab-window__feature
+        {% if loop.index == 1 %} active {% endif %}
+            ">
                 <div class="tab-window__img">
-                    <img src="{{ module.img_1.src }}" alt="{{ module.img_1.alt }}" />
+                    <img src="{{ item.img.src }}" alt="{{ item.img.alt }}" >
                 </div>
                     <div class="tab-window__text">
-                        {{ module.text_1}}
+                        <h5>
+                            {{ item.description}}
+                        </h5>
                     </div>
                 </div>
+
+                {% endfor %}
             </div>
-        </div>
 </section>

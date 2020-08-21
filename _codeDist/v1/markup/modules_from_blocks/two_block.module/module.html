@@ -1,4 +1,8 @@
-<section class="dark-mode bg-charcoal-3">
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %} ">
   <div class="grid-wrapper">
     <div class="two-block {{ module.image_position }}">
       <div class="two-block__copy">
@@ -13,34 +17,14 @@
             {{ module.two_block_body_big }}
           </h5>
         </div>
-        <div class="btn__row">
-          {% if module.cta1 %}
-          <div class="btn__wrapper">
-              <button class="btn">
-                  {% cta guid="{{ module.cta1 }}" %}
-            </button>
-          </div>
-                  {% endif %}
-          {% if module.cta2 %}
-          <div class="btn__wrapper">
-              <button class="btn btn--secondary">
-                {% cta guid="{{ module.cta2 }}" %}
-              </button>
-          </div>
-                {% endif %}
-      </div>
-
-
-
-
-
+       
       </div>
 
      
   
   <div class="two-block__img">
     <div class="two-block__panel"></div>
-    <img src="{{ module.two_block_img }}" class=""/>
+    <img src="{{ module.img.src }}" alt="{{ module.img.alt}}" class=""/>
 
   </div>
   </div>

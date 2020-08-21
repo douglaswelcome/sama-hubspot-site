@@ -2,9 +2,6 @@ function featureWindow() {
 
     const featureSelector = document.querySelectorAll('.feature-window__selector');
     const windowContent = document.querySelectorAll('.feature-window__detail-wrapper');
-
-    console.log(featureSelector);
-    console.log(windowContent);
     
     // add the active to 
     $('.feature-window__selector').click(function () {
@@ -26,5 +23,7 @@ function featureWindow() {
 }
 
 $(featureWindow());
+
+
 
 
