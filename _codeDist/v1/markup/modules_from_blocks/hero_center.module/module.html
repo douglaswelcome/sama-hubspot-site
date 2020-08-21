@@ -13,15 +13,21 @@
                     {{module.subheadline}}
                 </h5>
             </div>
-            <div class="hero-center__btn-row">
-                <div class="btn-wrapper">
-                    <a href="#" class="btn__bottoms">
-                        <button class="btn ">
-                         <h3 class="btn__text">Learn More</h3>
-                        </button>
-                      </a>
-                    
+            <div class="btn__row">
+                {% if module.cta1 %}
+                <div class="btn__wrapper">
+                    <button class="btn">
+                        {% cta guid="{{ module.cta1 }}" %}
+                  </button>
                 </div>
+                        {% endif %}
+                {% if module.cta2 %}
+                <div class="btn__wrapper">
+                    <button class="btn btn--secondary">
+                      {% cta guid="{{ module.cta2 }}" %}
+                    </button>
+                </div>
+                      {% endif %}
             </div>
         </div>
 

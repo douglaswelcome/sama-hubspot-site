@@ -19,5 +19,23 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "Isn't it great to do something you can't fail at? I'm a water fanatic. I love water. Trees grow in all kinds of ways."
-  }
+  },
+  {
+  "name": "cta1",
+  "label": "Primary CTA",
+  "required": false,
+  "locked": false,
+  "inline_help_text": "Shows Teaser image when toggled on",
+  "help_text": "",
+  "type": "cta",
+  "default": null },
+  {
+  "name": "cta2",
+  "label": "Secondary CTA",
+  "required": false,
+  "locked": false,
+  "inline_help_text": "Shows Teaser image when toggled on",
+  "help_text": "",
+  "type": "cta",
+  "default": null }
 ]
