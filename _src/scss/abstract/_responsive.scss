@@ -91,7 +91,7 @@ $w-sm: 320px; //320px - 800px
     }
 
     @include breakpoint(w-med) {
-        max-width: var(--med-page-width);
+        width: var(--med-page-width);
       }
 
   }
