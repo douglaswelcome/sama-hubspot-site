@@ -1,19 +1,19 @@
 // ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
 // REM size @ 16px
 
-$w-xlg: 1296px; //1374 px and up
-$w-lg: 1088px; //1080px - 1374px
-$w-med: 800px;//800px - 1080px
+$w-xlg: 1360px; //1360 px and up
+$w-lg: 1120px; //1120px - 1360px
+$w-med: 816px;//816px - 1120px
 $w-sm: 320px; //320px - 800px
 
 :root{
 
 // $width-xxxlg: 130em; //
 // $width-xxlg: 110em; //
---w-xlg: 1296px; //1374 px and up
---w-lg: 1088px; //1080px - 1374px
---w-med: 800px;//800px - 1080px
---w-sm: 320px; //320px - 800px
+--w-xlg: 1360px; //1360 px and up
+--w-lg: 1120px; //1120px - 1360px
+--w-med: 816px;//816px - 1120px
+--w-sm: 320px; //320px - 816px
 
 
 
@@ -31,7 +31,9 @@ $w-sm: 320px; //320px - 800px
 // Page Widths
     
   --xlg-page-width: 1296px;
-  --lg-page-width: 1056px;
+  --lg-page-width: 1104px;
+  --med-page-width: 804px;
+
 
 
 }
@@ -43,7 +45,7 @@ $w-sm: 320px; //320px - 800px
     }
   } @else 
   if $width == w-sm {
-    @media (max-width: $w-med)) {
+    @media (max-width: $w-med) {
       @content;
     }
   } @else 
@@ -76,26 +78,34 @@ $w-sm: 320px; //320px - 800px
 }
 
 
+%page-width {
+  width: var(--xlg-page-width);
+  padding-left:.125rem;
+    padding-right:.125rem;
+  @include breakpoint(w-lg){
+    width: var(--lg-page-width);
+  }
+
+  @include breakpoint(w-med) {
+      width: var(--med-page-width);
+    }
+    @include breakpoint(w-sm) {
+      margin-left:.5rem;
+      margin-right:.5rem;
+    }
+}
+
 
 %grid {
+
+    @extend %page-width;
     display:grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    width: var(--xlg-page-width);
     align-self: center;
     column-gap: .25rem;
-    padding-left:.125rem;
-    padding-right:.125rem;
-    
-    @include breakpoint(w-lg) {
-      width: var(--lg-page-width);
-    }
-
-    @include breakpoint(w-med) {
-        width: var(--med-page-width);
-      }
 
   }
 
-
-
-
+  .grid-wrapper {
+    @extend %page-width;
+  }

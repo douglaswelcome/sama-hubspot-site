@@ -16,10 +16,6 @@ function featureWindow() {
     });
 
 
-  
-
-
-
 }
 
 $(featureWindow());
