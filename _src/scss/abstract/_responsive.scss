@@ -3,33 +3,33 @@
 
 $w-xlg: 1360px; //1360 px and up
 $w-lg: 1120px; //1120px - 1360px
-$w-med: 816px;//816px - 1120px
+$w-med: 816px; //816px - 1120px
 $w-sm: 320px; //320px - 800px
 
-:root{
+:root {
 
-// $width-xxxlg: 130em; //
-// $width-xxlg: 110em; //
---w-xlg: 1360px; //1360 px and up
---w-lg: 1120px; //1120px - 1360px
---w-med: 816px;//816px - 1120px
---w-sm: 320px; //320px - 816px
+  // $width-xxxlg: 130em; //
+  // $width-xxlg: 110em; //
+  --w-xlg: 1360px; //1360 px and up
+  --w-lg: 1120px; //1120px - 1360px
+  --w-med: 816px; //816px - 1120px
+  --w-sm: 320px; //320px - 816px
 
 
 
-// $width-xsm: 17.777em; // 320px iphone 5 width
+  // $width-xsm: 17.777em; // 320px iphone 5 width
 
-//iphone 4,5 = 320px Width
-//iphone 6+ = 375px width
+  //iphone 4,5 = 320px Width
+  //iphone 6+ = 375px width
 
-// ____________Heights
-// $height-sm: 31.250rem; // 500px
-// $height-med: 43.750rem; // 700px
-// $height-lg: 50.000rem; // 800px'
-   
+  // ____________Heights
+  // $height-sm: 31.250rem; // 500px
+  // $height-med: 43.750rem; // 700px
+  // $height-lg: 50.000rem; // 800px'
 
-// Page Widths
-    
+
+  // Page Widths
+
   --xlg-page-width: 1296px;
   --lg-page-width: 1104px;
   --med-page-width: 804px;
@@ -39,31 +39,37 @@ $w-sm: 320px; //320px - 800px
 }
 
 @mixin breakpoint($width) {
-  @if $width == w-xsm {
+  @if $width==w-xsm {
     @media (max-width: $w-sm) {
       @content;
     }
-  } @else 
-  if $width == w-sm {
+  }
+
+  @else if $width==w-sm {
     @media (max-width: $w-med) {
       @content;
     }
-  } @else 
-  if $width == w-med {
+  }
+
+  @else if $width==w-med {
     @media (max-width: $w-lg) {
       @content;
     }
-  } @else 
-  if $width == w-lg {
+  }
+
+  @else if $width==w-lg {
     @media (max-width: $w-xlg) {
       @content;
     }
-  } @else 
-  if $width == w-xlg {
+  }
+
+  @else if $width==w-xlg {
     @media (min-width: $w-xlg) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn "Breakpoint mixin supports: w-sm, w-med, w-lg, w-xlg";
   }
 }
@@ -73,39 +79,43 @@ $w-sm: 320px; //320px - 800px
 
 
 
-:root {
-    
-}
+:root {}
 
 
-%page-width {
+
+
+
+ @mixin page-width {
   width: var(--xlg-page-width);
-  padding-left:.125rem;
-    padding-right:.125rem;
-  @include breakpoint(w-lg){
+  padding-left: .125rem;
+  padding-right: .125rem;
+
+  @include breakpoint(w-lg) {
     width: var(--lg-page-width);
   }
 
   @include breakpoint(w-med) {
-      width: var(--med-page-width);
-    }
-    @include breakpoint(w-sm) {
-      margin-left:.5rem;
-      margin-right:.5rem;
-    }
+    width: var(--med-page-width);
+  }
+
+  @include breakpoint(w-sm) {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
 }
 
+.page-width {
+  @include page-width;
+}
 
 %grid {
+  @include page-width;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-self: center;
+  column-gap: .25rem;
+}
 
-    @extend %page-width;
-    display:grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    align-self: center;
-    column-gap: .25rem;
-
-  }
-
-  .grid-wrapper {
-    @extend %page-width;
-  }
+.grid-wrapper {
+  @extend %grid;
+}
