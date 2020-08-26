@@ -1,1 +1,50 @@
 <!-- module html  -->
+<section class="dark-mode bg-charcoal-3">
+    <div class="news-feature">
+        <div class="news-feature__headline">
+            <h2 class="display-small">
+                {{ module.headline }}
+            </h2>
+        </div>
+        <div class="news-feature__main" style="background-image:url({{module.article1.bg.src}})">
+            <div class="news-feature__category">
+                <p class="bold">
+                    {{ module.article1.category }}
+                </p>
+            </div>
+            <div class="news-feature__title">
+                <h2 class="bold">
+                    {{ module.article1.title }}
+                </h2>
+            </div>
+        </div>
+        <div class="news-feature__secondary-wrapper">
+            <a href="{{ module.article1.link.url.href }}" class="news-feature__secondary-article news-feature--link" style="background-image:url({{module.article2.bg.src}})">
+                <div class="news-feature__category">
+                    <p class="bold">
+                      {{ module.article2.category }}
+                     </p>
+                 </div>
+            
+                 <div class="news-feature__title">
+                      <h4 class="bold">
+                       {{ module.article2.title }}
+                     </h4>
+                 </div>
+            </a>
+            <a href="{{ module.article1.link.url.href }}" class="news-feature__secondary-article news-feature--link" style="background-image:url({{module.article2.bg.src}})">
+                <div class="news-feature__category">
+                    <p class="bold">
+                        {{ module.article2.category }}
+                    </p>
+                </div>
+                <div class="news-feature__title">
+                    <h4 class="bold">
+                        {{ module.article2.title }}
+                    </h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>

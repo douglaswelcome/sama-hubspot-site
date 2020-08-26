@@ -1,11 +1,218 @@
-[
-  {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
+[{
+    "name": "headline",
+    "label": "Headline",
     "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": "News and Features"
+  },
+  {
+    "id": "",
+    "name": "article1",
+    "label": "Feature Article",
+    "required": false,
+    "locked": false,
+
+    "children": [
+      {
+        "name": "title",
+        "label": "Article Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Samasource is a Kick Ass Company in 2020"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "news"
+      },
+      {
+        "name": "link",
+        "label": "Article Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": "https://slapkirk.com"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "bg",
+        "label": "Article Background",
+        "required": false,
+        "locked": false,
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null
+        }
+      }
+    ],
+    "type": "group",
+    "default": {}
+  },
+  {
+    "id": "",
+    "name": "article2",
+    "label": "Second Article",
+    "required": false,
+    "locked": false,
+
+    "children": [
+      {
+        "name": "title",
+        "label": "Article Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Samasource is a Kick Ass Company in 2020"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "news"
+      },
+      {
+        "name": "link",
+        "label": "Article Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": "https://slapkirk.com"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "bg",
+        "label": "Article Background",
+        "required": false,
+        "locked": false,
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null
+        }
+      }
+    ],
+    "type": "group",
+    "default": {}
+  },
+  {
+    "id": "",
+    "name": "article3",
+    "label": "Third Article",
+    "required": false,
+    "locked": false,
+
+    "children": [
+      {
+        "name": "title",
+        "label": "Article Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Samasource is a Kick Ass Company in 2020"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "news"
+      },
+      {
+        "name": "link",
+        "label": "Article Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": "https://slapkirk.com"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "bg",
+        "label": "Article Background",
+        "required": false,
+        "locked": false,
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null
+        }
+      }
+    ],
+    "type": "group",
+    "default": {}
   }
+  
 ]
