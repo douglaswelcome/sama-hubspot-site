@@ -1,38 +1,28 @@
 .center-block {
+  @extend %grid;
+
   position: relative;
-  margin-bottom: 8.7rem;
-  padding-right: 0.7rem;
-
   @include breakpoint (w-sm) {
-    margin-bottom: 3.75rem;
-    ;
+    
+    
   }
 
-  .label-tab {
-    transform: translateY(1.5rem);
-  }
+  
 
 
 
   .center-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
+ 
+    grid-column: 3 / span 8;
     text-align: center;
     position: relative;
-    padding: 4rem;
+
 
     @include breakpoint(w-sm) {
       padding: 2rem 1.5rem 2rem;
     }
 
-    &.center-content--w-label {
-      padding: 6rem 4rem 3rem;
-
-      @include breakpoint(w-sm) {
-        
-      }
-    }
+    
 
 
 
@@ -44,59 +34,17 @@
       width: calc(100% - 6vw);
     }
 
-    h5,
-    p, h4 {
-      margin-bottom: 1rem;
-    }
+   
 
-    &::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: $color-white;
-      border: 0.25rem solid var(--color-charcoal-2);
-      border-radius: 0 0 0 3rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate3d(1rem, 1rem, 0);
-      z-index: -2;
-    }
 
-    &::after {
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: $color-white;
-      border: 0.25rem solid var(--color-charcoal-2);
-      border-radius: 0 0 0 3rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    &--hide-cards {
-
-      &::after,
-      &::before {
-        content: none;
-      }
-    }
-
-    .content-ups,
-    h4,
-    h5,
-    p,
-    ol {
-      position: relative;
-      z-index: 1;
-      color: $color-charcoal !important;
-    }
 
 
 
   }
+
+
+
+
 
   &.faq {
 

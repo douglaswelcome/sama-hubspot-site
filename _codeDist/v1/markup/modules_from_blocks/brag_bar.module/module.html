@@ -14,43 +14,16 @@
       </div>
 
     </div>
-    <div class="brag-bar__logos">
-      <div class="logo">
-        <img src="{{ module.brag_logo1 }}" />
+    <div class="brag-bar__logo-row">
+      <div class="brag-bar__logos">
+      {% for logo in module.logos %}  
+      <div class="brag-bar__logo">
+        <img src="{{ logo.src }}" alt="{{logo.alt }}" />
       </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo2 }}" />
+      {%endfor%}
       </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo3 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo4 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo5 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo6 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo7 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo8 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo9 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo10 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo11 }}" />
-      </div>
-      <div class="logo">
-        <img src="{{ module.brag_logo12 }}" />
-      </div>
+
+   
     </div>
   </div>
 </section>

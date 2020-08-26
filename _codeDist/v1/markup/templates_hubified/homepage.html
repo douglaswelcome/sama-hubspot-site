@@ -1,0 +1,37 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block top-insert %}
+
+{# {% module "module_20200125102523" path="/v1/markup/modules_from_blocks/popdown_announcement", label="popdown_announcement" %} #}
+
+{% endblock %}
+
+{% block main %}
+
+{% module "module_20200824230923" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+{% module "module_20200824232812" path="/v1/markup/modules_from_blocks/two_block_hero", label="Hero" %}
+
+{% module "module_20200825093701" path="/v1/markup/modules_from_blocks/big_display", label="Big Display" %}
+
+{% module "module_20200825101429" path="/v1/markup/modules_from_blocks/brag_bar", label="Brag Bar" %}
+
+{% module "module_20200825143432" path="/v1/markup/modules_from_blocks/icon_block", label="Icon Grid" %}
+
+{% module "module_20200825151657" path="/v1/markup/modules_from_blocks/panel_quote", label="Quote Panel" %}
+
+{% module "module_20200825160606" path="/v1/markup/modules_from_blocks/panel_feature", label="Fancy Panel" %}
+
+
+{% module "module_20200825155548" path="/v1/markup/modules_from_blocks/split_cta", label="CTA Bottoms" %}
+
+
+
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

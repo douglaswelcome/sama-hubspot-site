@@ -1,0 +1,92 @@
+[{
+    "name": "img",
+    "label": "Side Image",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "Shows Teaser image when toggled on",
+    "help_text": "",
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://source.unsplash.com/random",
+      "alt": null
+    }
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null,
+    "inline_help_text": "Shows Teaser image when toggled on",
+    "help_text": ""
+  },
+  {
+    "name": "body_copy",
+    "label": "Body Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+  {
+    "name": "awards",
+    "label": "Award Logo",
+    "occurrence": {
+      "min": 1,
+      "max": 3,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "required": false,
+    "locked": false,
+    "inline_help_text": "Shows Teaser image when toggled on",
+    "help_text": "",
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": [
+      {
+      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+      "alt": null
+    },
+    {
+      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+      "alt": null
+    },{
+      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+      "alt": null
+    }
+   ]
+  },
+  {
+    "name": "cta1",
+    "label": "Primary CTA",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  },
+  {
+    "name": "cta2",
+    "label": "Secondary CTA",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  }
+
+
+]

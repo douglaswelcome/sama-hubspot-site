@@ -1,0 +1,52 @@
+<!-- module html  -->
+<section class="dark-mode bg-charcoal-1">
+    <div class="panel-feature panel-feature--shadow">
+        <div class="panel-feature__img" style="background-image:url({{module.img.src}})">
+            
+        </div>
+        <div class="panel-feature__copy">
+            <div class="panel-feature__headline">
+                <h2>
+                    {{ module.headline }}
+                </h2>
+            </div>
+            <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+            <div class="panel-feature__subheadline">
+                <h5>
+                    {{ module.body_copy }}
+                </h5>
+            </div>
+            <div class="panel-feature__awards">
+                {% for award in module.awards %}
+                    <img src="{{ award.src }}" alt="{{ award.alt }}" />
+                {% endfor %}
+            </div>
+            <div class="panel-feature__btn-row">
+
+
+
+                <div class="btn__row">
+                    {% if module.cta1 %}
+                    <div class="btn__wrapper">
+                        <button class="btn">
+                            {% cta guid="{{ module.cta1 }}" %}
+                      </button>
+                    </div>
+                            {% endif %}
+                    {% if module.cta2 %}
+                    <div class="btn__wrapper">
+                        <button class="btn btn--secondary">
+                          {% cta guid="{{ module.cta2 }}" %}
+                        </button>
+                    </div>
+                          {% endif %}
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</section> 
+

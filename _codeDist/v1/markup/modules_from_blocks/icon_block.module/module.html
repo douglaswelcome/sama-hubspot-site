@@ -1,0 +1,84 @@
+<section class="dark-mode bg-charcoal-3">
+  <div class="icon-block">
+    <div class="icon-block__intro">
+
+
+
+      <div class="icon-block__headline">
+        <h2>
+          {{ module.headline }}
+        </h2>
+      </div>
+
+
+      <div class="icon-block__subheadline">
+        <h5>
+          {{ module.subheadline }}
+          </54>
+
+      </div>
+      <div class="btn__row">
+        {% if module.cta1 %}
+        <div class="btn__wrapper">
+          <button class="btn">
+                            {% cta guid="{{ module.cta1 }}" %}
+                      </button>
+        </div>
+        {% endif %}
+        {% if module.cta2 %}
+        <div class="btn__wrapper">
+          <button class="btn btn--secondary">
+                          {% cta guid="{{ module.cta2 }}" %}
+                        </button>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+
+
+
+    <div class="icon-block__row icon-block__row--1">
+      {% for icon in module.row1_icons %}
+      <div class="block-img">
+        <img src="{{ icon.img.src }}" />
+      </div>
+
+        <div class="block-title">
+          <h4 class="">
+            {{ icon.title }} 
+          </h4>
+        </div>
+
+        <div class="block-body">
+          <p>
+            {{ icon.body_copy }}
+          </p>
+        </div>
+      {% endfor %}
+
+    </div>
+
+      {% if module.row2_icons %}
+    <div class="icon-block__row icon-block__row--2">
+      {% for icon in module.row2_icons %}
+      <div class="block-img">
+        <img src="{{ icon.img.src }}" />
+      </div>
+
+        <div class="block-title">
+          <h4 class="">
+            {{ icon.title }} 
+          </h4>
+        </div>
+
+        <div class="block-body">
+          <p>
+            {{ icon.body_copy }}
+          </p>
+        </div>
+      {% endfor %}
+
+    </div>
+    {%endif%}
+</section>

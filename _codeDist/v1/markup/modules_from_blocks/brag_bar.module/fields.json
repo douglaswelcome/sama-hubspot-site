@@ -1,5 +1,4 @@
-[
-   {
+[{
 
     "name": "headline",
     "label": "Headline",
@@ -20,101 +19,29 @@
     "show_emoji_picker": false,
     "type": "text",
     "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo1",
-    "label": "brag_logo1",
+  },
+  {
+    "name": "logos",
+    "label": "Logos",
     "required": false,
     "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo2",
-    "label": "brag_logo2",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo3",
-    "label": "brag_logo3",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo4",
-    "label": "brag_logo4",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo5",
-    "label": "brag_logo5",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo6",
-    "label": "brag_logo6",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo7",
-    "label": "brag_logo7",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo8",
-    "label": "brag_logo8",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo9",
-    "label": "brag_logo9",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo10",
-    "label": "brag_logo10",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo11",
-    "label": "brag_logo11",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
-  }, {
-    "picker": "image",
-    "name": "brag_logo12",
-    "label": "brag_logo12",
-    "required": false,
-    "locked": false,
-    "type": "file",
-    "default": null
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": [{
+      "src": "",
+      "alt": null
+    }]
   }
+
+
+
+
+
 ]

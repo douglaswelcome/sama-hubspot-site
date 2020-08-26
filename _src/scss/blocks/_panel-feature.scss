@@ -1,0 +1,43 @@
+.panel-feature {
+    @extend %grid;
+    background-color: var(--color-charcoal-2);
+    @include panel-shadow;
+
+    &__img {
+        grid-column: span 4;
+        overflow: hidden;
+        margin-left: -.125rem;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    &__copy {
+        grid-column: span 8;
+
+        padding: 6rem;
+    }
+
+    &__subheadline {
+        margin-bottom: 2rem;
+    }
+
+    &__awards {
+        margin-bottom: 3rem;
+        display: inline-flex;
+        column-gap: 3rem;
+
+        img {
+            height: auto;
+            width: auto;
+            max-width: 7rem;
+            max-height: 7rem;
+        }
+
+
+
+    }
+
+
+
+}
