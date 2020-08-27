@@ -50,7 +50,7 @@
     "required": false,
     "locked": false,
     "occurrence": {
-      "min": 3,
+      "min": null,
       "max": 3,
       "sorting_label_field": null,
       "default": null
@@ -108,7 +108,7 @@
     "required": false,
     "locked": false,
     "occurrence": {
-      "min": 3,
+      "min": null,
       "max": 3,
       "sorting_label_field": null,
       "default": null
