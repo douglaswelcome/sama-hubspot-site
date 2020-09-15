@@ -17,22 +17,29 @@
           </54>
 
       </div>
-      <div class="btn__row">
+      
         {% if module.cta1 %}
-        <div class="btn__wrapper">
-          <button class="btn">
-                            {% cta guid="{{ module.cta1 }}" %}
-                      </button>
+        <div class="hyperlink__wrapper">
+          <div class="hyperlink__ahref">
+            {% cta guid="{{ module.cta1 }}" %}
+
+           </div> 
+           <div class="hyperlink__arrow ">
+            <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8"
+              xml:space="preserve">
+              <style type="text/css">
+
+              </style>
+              <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+	C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+	c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+            </svg>
+            </div>
+          </div>
         </div>
         {% endif %}
-        {% if module.cta2 %}
-        <div class="btn__wrapper">
-          <button class="btn btn--secondary">
-                          {% cta guid="{{ module.cta2 }}" %}
-                        </button>
-        </div>
-        {% endif %}
-      </div>
+     
     </div>
 
 
@@ -46,7 +53,7 @@
 
         <div class="block-title">
           <h4 class="">
-            {{ icon.title }} 
+            {{ icon.title }}
           </h4>
         </div>
 
@@ -55,30 +62,30 @@
             {{ icon.body_copy }}
           </p>
         </div>
-      {% endfor %}
+        {% endfor %}
 
-    </div>
-
-      {% if module.row2_icons %}
-    <div class="icon-block__row icon-block__row--2">
-      {% for icon in module.row2_icons %}
-      <div class="block-img">
-        <img src="{{ icon.img.src }}" />
       </div>
 
-        <div class="block-title">
-          <h4 class="">
-            {{ icon.title }} 
-          </h4>
-        </div>
+      {% if module.row2_icons %}
+      <div class="icon-block__row icon-block__row--2">
+        {% for icon in module.row2_icons %}
+        <div class="block-img">
+          <img src="{{ icon.img.src }}" />
+      </div>
 
-        <div class="block-body">
-          <p>
-            {{ icon.body_copy }}
-          </p>
-        </div>
-      {% endfor %}
+          <div class="block-title">
+            <h4 class="">
+              {{ icon.title }}
+            </h4>
+          </div>
 
-    </div>
-    {%endif%}
+          <div class="block-body">
+            <p>
+              {{ icon.body_copy }}
+            </p>
+          </div>
+          {% endfor %}
+
+        </div>
+        {%endif%}
 </section>

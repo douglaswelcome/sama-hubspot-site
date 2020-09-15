@@ -34,17 +34,6 @@
     "default": null
   },
   {
-    "id": "",
-    "name": "cta2",
-    "label": "Secondary CTA",
-    "required": false,
-    "locked": false,
-    "inline_help_text": "Shows Teaser image when toggled on",
-    "help_text": "",
-    "type": "cta",
-    "default": null
-  },
-  {
     "name": "row1_icons",
     "label": "Row 1 Icons",
     "required": false,
