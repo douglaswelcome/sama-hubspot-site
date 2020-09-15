@@ -1,0 +1,29 @@
+section {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+    padding-top:6rem;
+  
+    @include breakpoint (w-med) {
+      padding-bottom:3rem;
+    }
+  }
+  
+  .section {
+    &--sm {
+        padding-bottom: 3rem;
+        padding-top:3rem;
+    }
+  }
+
+
+
+
+
+
+ //Padding things....
+
+  .no-top-pad {
+    padding-top:0;
+  }

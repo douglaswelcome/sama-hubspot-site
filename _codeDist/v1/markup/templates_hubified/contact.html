@@ -5,17 +5,18 @@
 {% extends '/v1/markup/blocks_static/base.html' %}
 
 {% block main %}
-{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
-
-{% include '/v1/markup/blocks_static/header.html' %}
-
-{% module "module_1552951663331272" path="/v1/markup/modules_from_blocks/page_title", label="page_title" %}
-
-{% include '/v1/markup/blocks_static/bitty-bit.html' %}
-
-{% module "module_155267197218472" path="/v1/markup/modules_from_blocks/form_block", label="form_block" %}
 
 
+{% module "module_20200915012401" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+<div class="flex-content">
+
+{% module "module_20200915012423" path="/v1/markup/modules_from_blocks/hero_center_small", label="Hero" %}
+
+
+
+
+
+</div>
 {% include '/v1/markup/blocks_static/footer.html' %}
 
 {% endblock %}
