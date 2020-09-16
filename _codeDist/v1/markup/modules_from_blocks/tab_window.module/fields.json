@@ -38,18 +38,37 @@
         "default": "Label Goes Here"
       },
       {
-        "name": "img",
-        "label": "Tab Image",
-        "sortable": false,
-        "required": false,
-        "locked": false,
-        "resizable": false,
-        "type": "image",
-        "default": {
-          "src": "https://source.unsplash.com/random/900x400",
-          "alt": null
-        }
-      },
+      "name": "media_type",
+      "label": "Media Type",
+      "required": false,
+      "locked": false,
+      "display": "select",
+      "inline_help_text": "Is this an image or a video?",
+      "help_text": "",
+      "choices": [
+      [
+        "video",
+        "Video"
+      ],
+      [
+        "image",
+        "Image"
+      ]
+      ],
+      "type": "choice",
+      "placeholder": "",
+      "default": null 
+    },
+      {
+
+      "picker": "file",
+      "name": "media",
+      "label": "Media File",
+      "required": false,
+      "locked": false,
+      "type": "file",
+      "default": "https://images-assets.nasa.gov/video/jsc2019m000564_HistoricMissionControl_FB_MP4/jsc2019m000564_HistoricMissionControl_FB_MP4~orig.mp4"
+    },
       {
 
         "name": "description",
