@@ -60,7 +60,6 @@
       "default": null 
     },
       {
-
       "picker": "file",
       "name": "media",
       "label": "Media File",
@@ -69,6 +68,18 @@
       "type": "file",
       "default": "https://images-assets.nasa.gov/video/jsc2019m000564_HistoricMissionControl_FB_MP4/jsc2019m000564_HistoricMissionControl_FB_MP4~orig.mp4"
     },
+    {
+    "name": "alt",
+    "label": "Image Alt Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null 
+  },
       {
 
         "name": "description",
