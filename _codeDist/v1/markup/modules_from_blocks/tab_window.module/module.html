@@ -25,9 +25,11 @@
         {% if loop.index == 1 %} active {% endif %}
             ">
                 <div class="tab-window__media-wrapper">
-                    {% if item.media_type == "image" %}
+                    {{item.media_type}}
+
+                    {% if item.media_type == "image" %} 
                     <img src="{{ item.media_file }}" alt="{{ item.img-alt }}" class="tab-window__media">
-                    {% endif %}
+                     {% endif %} 
                     {% if item.media_type == "video" %}
                         <video class="hero-halfsies__vid" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="true" >
                     <source
