@@ -1,219 +1,210 @@
 .center-block {
   @extend %grid;
+  row-gap: 3rem;
 
-  position: relative;
-  @include breakpoint (w-sm) {
-    
-    
+  &__intro {
+    grid-column: 3 /span 8;
+    text-align: center;
+
   }
 
-  
+  &__headline {
+    margin-bottom: 1rem;
+  }
 
+  &__subheadline {
+    margin-bottom: 1rem;
+  }
+
+  &__link {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OLD SHit
+
+&.faq {
 
 
   .center-content {
- 
-    grid-column: 3 / span 8;
+    text-align: left;
+
+  }
+
+  .faq__question {
+    display: inline-block;
+    height: auto;
+    cursor: pointer;
+
+    svg {
+      height: .75rem;
+      margin-right: .5rem;
+      fill: var(--color-charcoal-1);
+      transition: transform .2s ease-in-out;
+
+    }
+
+    &.active {
+      svg {
+        transform: rotate(90deg);
+        transition: transform .2s ease-in-out;
+      }
+    }
+  }
+
+  .faq__answer {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+
+    &--list {
+      padding-left: 3rem;
+      line-height: 1.4;
+      margin-bottom: .5rem;
+    }
+
+    &--text {
+
+      margin-bottom: .5rem;
+    }
+  }
+
+
+
+
+}
+
+&.vision-block {
+  .center-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85vw;
     text-align: center;
     position: relative;
-
-
-    @include breakpoint(w-sm) {
-      padding: 2rem 1.5rem 2rem;
-    }
-
-    
-
-
+    padding: 6rem 4rem 0;
 
     @include breakpoint(w-med) {
-      width: calc(90% - 6vw);
+      padding: 4rem 0 0;
     }
 
-    @include breakpoint(w-sm) {
-      width: calc(100% - 6vw);
+
+
+    button {
+      margin-right: 3rem;
+      margin-bottom: 3rem;
+
+      @include breakpoint(w-sm) {
+        margin: 0 auto 3rem;
+        display: block;
+      }
     }
 
-   
+    button.secondary::after,
+    button.secondary::before {
+      border-width: .125rem;
 
+    }
 
+    .button-content {
+      display: grid;
+      grid-template-columns: 4rem 7rem;
+      margin: 0.5rem;
+      grid-column-gap: 1rem;
+      align-items: center;
+    }
 
+    img {
+      width: 100%;
+    }
 
-
-  }
-
-
-
-
-
-  &.faq {
-
-
-    .center-content {
+    h6 {
       text-align: left;
-
-    }
-
-    .faq__question {
-      display: inline-block;
-      height: auto;
-      cursor: pointer;
-
-      svg {
-        height: .75rem;
-        margin-right: .5rem;
-        fill: var(--color-charcoal-1);
-        transition: transform .2s ease-in-out;
-
-      }
-
-      &.active {
-        svg {
-          transform: rotate(90deg);
-          transition: transform .2s ease-in-out;
-        }
-      }
-    }
-
-    .faq__answer {
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
-
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.2s ease-in-out;
-
-      &--list {
-        padding-left: 3rem;
-        line-height: 1.4;
-        margin-bottom: .5rem;
-      }
-
-      &--text {
-
-        margin-bottom: .5rem;
-      }
-    }
-
-
-
-
-  }
-
-  &.vision-block {
-    .center-content {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 85vw;
-      text-align: center;
-      position: relative;
-      padding: 6rem 4rem 0;
-
-      @include breakpoint(w-med) {
-        padding: 4rem 0 0;
-      }
-
-
-
-      button {
-        margin-right: 3rem;
-        margin-bottom: 3rem;
-
-        @include breakpoint(w-sm) {
-          margin: 0 auto 3rem;
-          display: block;
-        }
-      }
-
-      button.secondary::after,
-      button.secondary::before {
-        border-width: .125rem;
-
-      }
-
-      .button-content {
-        display: grid;
-        grid-template-columns: 4rem 7rem;
-        margin: 0.5rem;
-        grid-column-gap: 1rem;
-        align-items: center;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      h6 {
-        text-align: left;
-        font-weight: 700;
-      }
-    }
-
-    .vision-header {
-      margin-bottom: 4.5rem;
+      font-weight: 700;
     }
   }
 
-  &.reflect {
-    padding-left: 0.75rem;
-    padding-right: 0;
+  .vision-header {
+    margin-bottom: 4.5rem;
+  }
+}
 
-    .center-content {
+&.reflect {
+  padding-left: 0.75rem;
+  padding-right: 0;
 
-      &::before,
-      &:after {
-        border-radius: 0 0 3rem 0;
-      }
+  .center-content {
 
-      &::before {
-        transform: translate3d(-1rem, 1rem, 0);
-      }
+    &::before,
+    &:after {
+      border-radius: 0 0 3rem 0;
+    }
+
+    &::before {
+      transform: translate3d(-1rem, 1rem, 0);
     }
   }
+}
 
-  &--feature {
-    .center-content {
-      padding: 0rem 6rem;
-
-      @include breakpoint (w-sm) {
-        padding: 0;
-      }
-
-      &__showcase {
-        margin-top: 3rem;
-
-        img {
-          max-width: 50rem;
-        }
-      }
-    }
-  }
-
-
-
-  &__form {
-    max-width: 35rem;
-    margin-right: auto;
-    margin-left: auto;
-
-    @include breakpoint (w-med) {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+&--feature {
+  .center-content {
+    padding: 0rem 6rem;
 
     @include breakpoint (w-sm) {
-      padding-left: 0rem;
-      padding-right: 0rem;
+      padding: 0;
     }
 
-    &--password{
-      margin-top: 1.75rem;
+    &__showcase {
+      margin-top: 3rem;
+
+      img {
+        max-width: 50rem;
+      }
     }
   }
+}
 
-  &__head {
-    margin-bottom: 1.5rem;
+
+
+&__form {
+  max-width: 35rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint (w-med) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
+
+  @include breakpoint (w-sm) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  &--password {
+    margin-top: 1.75rem;
+  }
+}
+
+&__head {
+  margin-bottom: 1.5rem;
+}
 
 
 
@@ -280,4 +271,3 @@
     }
   }
 }
-

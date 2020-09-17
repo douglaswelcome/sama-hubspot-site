@@ -1,26 +1,70 @@
-[ {
-  "id" : "892406dc-8102-e6eb-a4b1-972b40998bea",
-  "name" : "center_title",
-  "label" : "center_title",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Leave Blank to Remove This Element",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : ""
-}, {
-  "id" : "fcbff846-b7b3-1ce1-5f56-2c18bca2ea96",
-  "name" : "center_body",
-  "label" : "center_body",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "placeholder" : "Leave Blank to remove entire element",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : ""
-}
+[
+  {
+  "name": "darkmode",
+  "label": "Dark Mode?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": true
+},
+{
+  "name": "bg_color",
+  "label": "Dark Mode Background Color",
+  "required": false,
+  "locked": false,
+  "display": "select",
+  "help_text": "",
+  "choices": [
+  [
+    "bg-charcoal-1",
+    "Charcoal 1 (Darkest)"
+  ],
+  [
+    "bg-charcoal-2",
+    "Charcoal 2 (Medium Dark)"
+  ],
+  [
+    "bg-charcoal-3",
+    "Charcoal 3 (Light Dark)"
+  ]
+  ],
+  "type": "choice",
+  "placeholder": "",
+  "default":  "bg-charcoal-1"   
+},
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove This Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": ""
+  }, {
+
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to remove entire element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "",
+    "name": "cta1",
+    "label": "Hyperlink CTA",
+    "required": false,
+    "locked": false,
+
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  }
 ]
