@@ -39,7 +39,7 @@
     "required": false,
     "locked": false,
     "occurrence": {
-      "min": null,
+      "min": 2,
       "max": 3,
       "sorting_label_field": null,
       "default": null

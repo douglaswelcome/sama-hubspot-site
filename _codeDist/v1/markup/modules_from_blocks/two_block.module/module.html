@@ -17,6 +17,25 @@ dark-mode
             {{ module.two_block_body_big }}
           </h5>
         </div>
+        {% if module.cta1 %}
+        <div class="btn__row">
+          {% if module.cta1 %}
+          <div class="btn__wrapper">
+              <button class="btn">
+                  {% cta guid="{{ module.cta1 }}" %}
+            </button>
+          </div>
+                  {% endif %}
+          {% if module.cta2 %}
+          <div class="btn__wrapper">
+              <button class="btn btn--secondary">
+                {% cta guid="{{ module.cta2 }}" %}
+              </button>
+          </div>
+                {% endif %}
+      </div>
+    {% endif %}
+
        
       </div>
 
