@@ -40,7 +40,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "news"
+        "default": "News"
       },
       {
         "name": "link",
@@ -73,6 +73,21 @@
           "src": "https://source.unsplash.com/random",
           "alt": null
         }
+      },
+      {
+
+      "name": "logo",
+      "label": "Logo File",
+      "required": false,
+      "locked": false,
+      "inline_help_text": "Shows Teaser image when toggled on",
+      "help_text": "",
+      "responsive": true,
+      "resizable": true,
+      "type": "image",
+      "default": {
+        "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+        "alt": "Company Logo"} 
       }
     ],
     "type": "group",
@@ -141,7 +156,22 @@
           "src": "https://source.unsplash.com/random",
           "alt": null
         }
-      }
+      },
+      {
+
+        "name": "logo",
+        "label": "Logo File",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": true,
+        "type": "image",
+        "default": {
+          "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+          "alt": "Company Logo"} 
+        }
     ],
     "type": "group",
     "default": {}
@@ -209,7 +239,22 @@
           "src": "https://source.unsplash.com/random",
           "alt": null
         }
-      }
+      },
+      {
+
+        "name": "logo",
+        "label": "Logo File",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+          "alt": "Company Logo"} 
+        }
     ],
     "type": "group",
     "default": {}
