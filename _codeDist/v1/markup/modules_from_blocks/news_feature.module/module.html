@@ -7,7 +7,11 @@
             </h2>
             <p>Read about out amazing work in the world and why we love magic and suspense</p>
         </div>
-        <a href="{{ module.article1.link.url.href }}" class="news-feature__main news-feature--link" style="background-image:url({{module.article1.bg.src}})">
+
+
+        <div class=" news-feature__main news-feature--article-bg">
+
+            <a href="{{ module.article1.link.url.href }}" class=" news-feature--link" style="background-image:url({{module.article1.bg.src}})">
 
 
             <div class="news-feature__category">
@@ -22,12 +26,17 @@
             </div>
             <div class="news-feature__logo">
                 <img src="{{ module.article1.logo.src }}" />
-                </div>
+            </div>
 
  
-        </a>
+            </a>
+        </div>
+
+
         <div class="news-feature__secondary-wrapper">
-            <a href="{{ module.article2.link.url.href }}" class="news-feature__secondary-article news-feature--link" style="background-image:url({{module.article2.bg.src}})">
+
+            <div class="news-feature__secondary-article news-feature--article-bg">
+                <a href="{{ module.article2.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article2.bg.src}})">
                 <div class="news-feature__category">
                     <p class="bold">
                       {{ module.article2.category }}
@@ -42,22 +51,28 @@
                  <div class="news-feature__logo">
                     <img src="{{ module.article2.logo.src }}" />
                 </div>
-            </a>
-            <a href="{{ module.article3.link.url.href }}" class="news-feature__secondary-article news-feature--link" style="background-image:url({{module.article3.bg.src}})">
-                <div class="news-feature__category">
-                    <p class="bold">
-                        {{ module.article3.category }}
-                    </p>
-                </div>
-                <div class="news-feature__title">
-                    <h4 class="bold">
-                        {{ module.article3.title }}
-                    </h4>
-                </div>
-                <div class="news-feature__logo">
-                    <img src="{{ module.article3.logo.src }}" />
-                </div>
-            </a>
+             </a>
+            </div>
+
+            <div class="news-feature__secondary-article news-feature--article-bg">
+                <a href="{{ module.article3.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article3.bg.src}})">
+                    <div class="news-feature__category">
+                        <p class="bold">
+                            {{ module.article3.category }}
+                        </p>
+                    </div>
+                    <div class="news-feature__title">
+                        <h4 class="bold">
+                            {{ module.article3.title }}
+                        </h4>
+                    </div>
+                    <div class="news-feature__logo">
+                        <img src="{{ module.article3.logo.src }}" />
+                    </div>
+                </a>
+            </div>
+
+
         </div>
     </div>
 
