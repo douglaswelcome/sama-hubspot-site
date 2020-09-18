@@ -14,7 +14,7 @@
         transition-timing-function: ease;
         
 
-        &:hover {
+        &--hover:hover {
             transform: translate(1rem, -1rem);
         }
     }

@@ -1,25 +1,79 @@
-[
-  {
-  "name": "form",
-  "label": "Form",
-  "required": false,
-  "locked": false,
-  "type": "form",
-  "default": {
-    "response_type": "inline",
-    "message": "Thanks for submitting the form." } 
+[{
+    "name": "form",
+    "label": "Form",
+    "required": false,
+    "locked": false,
+    "type": "form",
+    "default": {
+      "response_type": "inline",
+      "message": "Thanks for submitting the form."
+    }
   },
+
   {
-  "name": "text_field",
-  "label": "Text field",
-  "required": false,
-  "locked": false,
-  "validation_regex": "",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "default": null 
-}
+    "id": "",
+    "name": "headline",
+    "label": "Body Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+
+  {
+    "name": "body_text",
+    "label": "Body Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+
+  {
+    "name": "bullets",
+    "label": "Icon Bullets",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": null,
+      "max": null,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+        "name": "img",
+        "label": "Icon",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image"
+      },
+      {
+        "name": "item",
+        "label": "Bullet Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": ""
+
+      }
+    ],
+    "type": "group",
+    "default": [{}]
+  }
 
 ]
