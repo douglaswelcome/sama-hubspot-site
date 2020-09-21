@@ -15,9 +15,7 @@
     display: grid;
     grid-template-rows: auto auto auto;
     justify-items: center;
-    padding-bottom: 3rem;
-    border-radius: 50%;
-    overflow: hidden;
+
 
     @include breakpoint(w-sm) {
       padding-bottom: 3rem;
@@ -26,6 +24,7 @@
     img {
       height: 200px;
       margin-bottom: 1rem;
+      border-radius: 50%;
     }
 
     h3 {
