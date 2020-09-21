@@ -16,6 +16,8 @@
     grid-template-rows: auto auto auto;
     justify-items: center;
     padding-bottom: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
 
     @include breakpoint(w-sm) {
       padding-bottom: 3rem;
