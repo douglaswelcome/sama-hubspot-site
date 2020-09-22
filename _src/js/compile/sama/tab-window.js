@@ -16,10 +16,11 @@ function tabWindow() {
         $('.tabs__tab').removeClass('active');
         tabSelector[i].classList.add('active');
 
-        
-        // $('.tab-window__feature').removeClass('active');
-        // tabContent[i].classList.add('active');
-
+        if ($('.tab-window__feature').length > 0) {
+            $('.tab-window__feature').removeClass('active');
+            tabContent[i].classList.add('active');
+          }
+       
         const width = tabSelector[i].getBoundingClientRect().width;
         // const height = this.getBoundingClientRect().height;
         const left = tabSelector[i].offsetLeft;
