@@ -1,6 +1,8 @@
-{% set table = hubdb_table_rows(1052854, "&orderBy=-date")%}
+{% set tableID = 2681033 %}  
 
-<section class="featured-press reflect">
+{% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
+
+{# <section class="featured-press reflect">
   <div class="label-tab">
     <h3>Featured Press</h3>
   </div>
@@ -32,25 +34,27 @@
 
   </div>
 
-</section>
+</section> #}
 
-<section class="press-table-header">
-  <div class="press-table-header__wrapper">
-    <div class="press-table-header__category press-table-header__category--selected" >
-      <h3>in the news</h3>
+<section class="">
+    <div class="tabs tabs__tab-bar">
+       
+        <div class="tabs__tab active ">
+            <h5 class="tabs__label">In the News</h5>
+        </div>
+        <div class="tabs__tab ">
+            <h5 class="tabs__label">Press Releases</h5>
+        </div>
+        <div class="tabs__tab-underline"></div>
+       
+
     </div>
-    <div class="press-table-header__category">
-      <h3>press releases</h3>
-    </div>
-    <div class="divider-line divider-line--horizontal divider-line--left" id="slider-divider"></div>
     
-  </div>
-  
-
 </section>
 
 
-<section class="press-table">
+<section class="">
+  <div class="press-table">
 {% for row in table %}
   <a href="{{row.article_url}}" type="{{row.type.name}}" class="press-table__press-link">
     <div class="press-table__title">
@@ -69,7 +73,7 @@
   </a>
 
 {% endfor %} 
-
+</div>
 
 </section>
 

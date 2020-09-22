@@ -9,15 +9,17 @@
             </div>
 
         </div>
-        <div class="tabs tabs__tab-bar">
-            {% for item in module.tabs %}
-            <div class="tabs__tab
+        <div class="tab-window__tab-bar">
+            <div class="tabs tabs__tab-bar">
+                {% for item in module.tabs %}
+                <div class="tabs__tab
         {% if loop.index == 1 %} active {% endif %}
             ">
-                <h5 class="tabs__label">{{ item.labelText }}</h5>
+                    <h5 class="tabs__label">{{ item.labelText }}</h5>
+                </div>
+                {% endfor %}
+                <div class="tabs__tab-underline"></div>
             </div>
-            {% endfor %}
-
         </div>
         <div class="tab-window__window">
             {% for item in module.tabs %}
@@ -25,24 +27,23 @@
         {% if loop.index == 1 %} active {% endif %}
             ">
                 <div class="tab-window__media-wrapper">
-                    {% if item.media_type == "image" %} 
+                    {% if item.media_type == "image" %}
                     <img src="{{ item.media_file }}" alt="{{ item.img-alt }}" class="tab-window__media">
-                     {% endif %} 
+                     {% endif %}
                     {% if item.media_type == "video" %}
-                        <video class="hero-halfsies__vid" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="true" >
-                    <source
-                        src="{{ item.media_file }}"
-                        type="video/mp4">
-                </video>
+                    <video class="hero-halfsies__vid" autoplay="autoplay" loop="loop" playsinline="playsinline"
+                        muted="true">
+                        <source src="{{ item.media_file }}" type="video/mp4">
+                    </video>
                     {% endif %}
                 </div>
-                    <div class="tab-window__text">
-                        <h5>
-                            {{ item.description}}
-                        </h5>
-                    </div>
+                <div class="tab-window__text">
+                    <h5>
+                        {{ item.description}}
+                    </h5>
                 </div>
-
-                {% endfor %}
             </div>
+
+            {% endfor %}
+        </div>
 </section>

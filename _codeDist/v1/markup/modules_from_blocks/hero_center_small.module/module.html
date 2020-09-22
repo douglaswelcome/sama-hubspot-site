@@ -1,5 +1,10 @@
 <!-- module html  -->
-<section class="section--sm">
+<section class="section--sm
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+    {% endif %}
+">
 
         <div class="hero-center-small">
             <div class="hero-center-small__headline">
@@ -7,11 +12,13 @@
                     {{module.headline}}
                 </h1>
             </div>
+            {% if module.subheadline %}
             <div class="hero-center-small__subheadline">
                 <h5>
                     {{module.subheadline}}
                 </h5>
             </div>
+            {%endif%}
             
         </div>
 

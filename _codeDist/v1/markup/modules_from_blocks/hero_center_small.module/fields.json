@@ -1,5 +1,43 @@
 [
   {
+    "id": "",
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+    [
+      "bg-charcoal-1",
+      "Charcoal 1 (Darkest)"
+    ],
+    [
+      "bg-charcoal-2",
+      "Charcoal 2 (Medium Dark)"
+    ],
+    [
+      "bg-charcoal-3",
+      "Charcoal 3 (Light Dark)"
+    ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default":  "bg-charcoal-1"   
+
+  },
+  {
     "name" : "headline",
     "label" : "Hero Headline",
     "required" : false,
@@ -20,4 +58,6 @@
     "type" : "text",
     "default" : "Isn't it great to do something you can't fail at? I'm a water fanatic. I love water. Trees grow in all kinds of ways."
   }
+
+
 ]
