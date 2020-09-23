@@ -22,18 +22,12 @@ function tabWindow() {
           }
        
         const width = tabSelector[i].getBoundingClientRect().width;
-        // const height = this.getBoundingClientRect().height;
         const left = tabSelector[i].offsetLeft;
-        // const top = this.getBoundingClientRect().top;
 
-
-        console.log (left);
        
         underline.style.width = `${width}px`;
-        // target.style.height = `${height}px`;
         underline.style.left = `${left}px`;
-        // target.style.top = `${top}px`;
-        // target.style.transform = "none";
+
 
 
     });

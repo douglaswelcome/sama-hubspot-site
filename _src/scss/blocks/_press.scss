@@ -172,8 +172,10 @@
 
 .press-table {
     @extend %grid;
+    
 
     &__press-link{
+        grid-column: span 12;
         border-width: 0 0 1px 0;
         border-style: solid;
         border-color:var(--color-charcoal-5);
