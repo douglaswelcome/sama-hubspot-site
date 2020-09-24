@@ -10,12 +10,10 @@
 body {
   font-family: var(--font-brown);
   color: var(--color-charcoal-1)
-
-  
 }
 
 .dark-mode {
-  color:var(--color-white)
+  color: var(--color-white)
 }
 
 //p tags
@@ -29,10 +27,7 @@ p,
 
   @include breakpoint(w-med) {}
 
-  @include breakpoint(w-sm) {
-
-
-  }
+  @include breakpoint(w-sm) {}
 }
 
 cite {
@@ -169,69 +164,50 @@ strong {
 }
 
 //a href's
-h3 a,
+
+a {
+  text-decoration: none;
+
+}
+
 p a,
-a>span,
-h4>a,
-span>a,
-.blog-body a,
-.hubby-cta__hyperlink {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  transition: 300ms all;
   color: var(--color-charcoal-2);
   font-weight: 700;
-  position: relative;
-  background-image: linear-gradient(transparent 0%, transparent 60%, $color-sunshine 60%, $color-sunshine 80%, transparent 80%, transparent 100%);
-  background-position: 0 0;
-
-}
-
-h3 a {
-  &::before {
-    height: 77%;
-  }
-}
-
-a:hover,
-a:hover>span {
-  color: var(--color-charcoal-4);
-}
-
-a,
-a:hover,
-a>span,
-a>svg {
-  transition-property: box-shadow, transform, color, background-color, border-bottom-color, fill, visibility;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:active,
-a:hover {}
-
-.clearlink {
-  text-decoration: underline;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {}
+  text-decoration: underline var(--color-sunshine);
 
   &:hover {
+      color: var(--color-charcoal-4);
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {}
   }
-
 }
+
+.dark-mode {
+
+  p a,
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: var(--color-white);
+    
+    &:hover {
+        color: var(--color-charcoal-6);
+
+    }
+  }
+}
+
+
+
 
 //justifying text 
 
@@ -274,4 +250,3 @@ h3.date {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-

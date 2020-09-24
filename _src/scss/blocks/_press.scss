@@ -102,78 +102,21 @@
 }
 
 
-.press-table-header {
+.press-tab {
+
+    &__section {
+        padding-bottom: 1.5rem;
+    }
     
-// @extend %grid;
-//     .press-table-header__wrapper {
-//         grid-column:5 / span 4;
-//         position: relative;
-//         display: inline-grid;
-//         grid-template-columns: 1fr 1fr;
-//         justify-items: center;
-//         border-bottom: .125rem solid var(--color-charcoal-4);
-//     }
 
-//     .divider-line {
-//         position: absolute;
-//         width: calc(50%);
-//         bottom:-0.1875rem;
-//         left:0;
-//         margin:0;
-//         z-index:1;
-//         height: .25rem;
-
-//         &--left {
-
-//             transition-property: transform;
-//             transition-duration: 0.3s;
-//             transition-timing-function: ease;
-            
-//         }
-
-//         &--right {
-//             transform: translateX(100%) ;
-//             transition-property: transform;
-//             transition-duration: 0.3s;
-//             transition-timing-function: ease;
-//         }
-//     }
-
-//     &__category {
-//         cursor: pointer;
-    
-        
- 
-//         &:nth-child(1){
-            
-//         }
-//         &:nth-child(2) {
-//         }
-        
-//          h3 {
-//              font-size: 1.25rem;
-             
-//              color: var(--color-charcoal-5);
-//              transition-property: color;
-//             transition-duration: .3s;
-//             transition-timing-function: ease;
-//          }
-//     } 
-
-//     &__category--selected {
-//         h3{
-//             color:var(--color-charcoal-1);
-//             transition-property: color;
-//             transition-duration: .3s;
-//             transition-timing-function: ease;
-//         }
-//     }
 }
 
 .press-table {
     @extend %grid;
     
-
+    &__section{
+        padding-top:0;
+    }
     &__press-link{
         grid-column: span 12;
         border-width: 0 0 1px 0;
