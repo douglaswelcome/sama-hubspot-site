@@ -5,20 +5,23 @@
 {% extends '/v1/markup/blocks_static/base.html' %}
 
 {% block main %}
-{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
 
-{% include '/v1/markup/blocks_static/header.html' %}
+{% module "module_20200924112622" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+<div class="flex-content">
 
-{% module "module_155077569662166" path="/v1/markup/modules_from_blocks/page_hero", label="page_hero" %}
+    {% module "module_20200924112756" path="/v1/markup/modules_from_blocks/hero_center", label="Hero" %}
+    {% module "module_20200924112909" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea #1" %}
+    {% module "module_20200924112927" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea #2" %}
 
-{% module "module_155254381504996" path="/v1/markup/modules_from_blocks/two_block", label="two_block" %}
+    {% module "module_20200924115025" path="/v1/markup/modules_from_blocks/panel_quote", label="Quote" %}
+    {% module "module_20200924115102" path="/v1/markup/modules_from_blocks/split_cta", label="Closer CTA" %}
 
-{% module "module_1552555346122150" path="/v1/markup/modules_from_blocks/two_block", label="two_block" %}
 
-{% module "module_20200727205520" path="/v1/markup/modules_from_blocks/center_block_trainer", label="center_block_trainer" %}
 
-{% module "module_155254443445497" path="/v1/markup/modules_from_blocks/strip_block", label="strip_block" %}
 
+
+
+</div>
 {% include '/v1/markup/blocks_static/footer.html' %}
 
 {% endblock %}

@@ -1,5 +1,8 @@
 <!-- module html  -->
-<section class="dark-mode bg-charcoal-1">
+<section class="{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+    {% endif %}">
     <div class="grid-wrapper">
         <div class="hero-center">
             <div class="hero-center__headline">

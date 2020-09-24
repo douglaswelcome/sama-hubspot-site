@@ -1,4 +1,12 @@
 [
+  {
+  "name": "flip",
+  "label": "Flip It?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": true
+},
 {
 "name": "quote",
 "label": "Quote Text",

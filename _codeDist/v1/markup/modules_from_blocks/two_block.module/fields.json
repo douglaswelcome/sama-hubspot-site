@@ -1,6 +1,6 @@
 [{
     "name": "image_position",
-    "label": "image_position",
+    "label": "Image Left or Right?",
     "required": false,
     "locked": false,
     "display": "select",
@@ -54,7 +54,7 @@
   {
 
     "name": "two_block_title",
-    "label": "two_block_title",
+    "label": "Headline",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -67,7 +67,7 @@
   {
 
     "name": "two_block_body_big",
-    "label": "two_block_body_big",
+    "label": "Body Copy",
     "required": false,
     "locked": false,
     "validation_regex": "",

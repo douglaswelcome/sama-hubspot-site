@@ -1,6 +1,10 @@
 <!-- module html  -->
 <section class="">
-    <div class="grid-wrapper panel-quote">
+    <div class="panel-quote
+    {% if module.flip==true %}
+        panel-quote--flip-it
+    {% endif %}
+    ">
         <div class="panel-quote__back">
 
         </div>
