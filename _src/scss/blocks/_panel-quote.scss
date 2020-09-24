@@ -45,9 +45,11 @@
         .panel-quote__front {
             grid-column: 2 / span 11;
             grid-template-columns: auto 1fr;
+            grid-template-row: 1fr;
         }
         .panel-quote__headshot {
             grid-column: 1;
+            grid-row:1
         }
 
         .panel-quote__quote {
