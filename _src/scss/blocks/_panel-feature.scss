@@ -18,11 +18,10 @@
         padding: 6rem;
     }
 
-    &__subheadline {
-        margin-bottom: 2rem;
-    }
+    &__subheadline {}
 
     &__awards {
+        margin-top: 2rem;
         margin-bottom: 3rem;
         display: inline-flex;
         column-gap: 3rem;
@@ -36,6 +35,18 @@
 
 
 
+    }
+
+    &--flip {
+        .panel-feature__img {
+            grid-column-start: 9/ span 4;
+            grid-row:1;
+        }
+
+        .panel-feature__copy {
+            grid-column: 1/ span 8;
+            grid-row:1;
+        }
     }
 
 

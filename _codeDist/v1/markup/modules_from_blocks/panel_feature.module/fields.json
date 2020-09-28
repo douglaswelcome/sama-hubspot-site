@@ -5,11 +5,11 @@
   "locked": false,
   "display": "select",
   "choices": [
-    ["null", "Image Right"],
-    ["flip", "Image Left"]
+    ["flip", "Image Right"],
+    ["null", "Image Left"]
   ],
   "type": "choice",
-  "default": "null"
+  "default": "Image Left"
 },
 {
   "name": "darkmode",
@@ -89,6 +89,15 @@
     "default": null
   },
   {
+
+  "name": "award_toggle",
+  "label": "Award Icon Row?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": true 
+},
+  {
     "name": "awards",
     "label": "Award Logo",
     "occurrence": {
@@ -99,8 +108,6 @@
     },
     "required": false,
     "locked": false,
-    "inline_help_text": "Shows Teaser image when toggled on",
-    "help_text": "",
     "responsive": true,
     "resizable": false,
     "type": "image",

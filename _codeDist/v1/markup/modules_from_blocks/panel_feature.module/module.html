@@ -5,7 +5,12 @@
     {{ module.bg_color }}
     {% endif %}
     ">
-    <div class="panel-feature panel-feature--shadow">
+    <div class="panel-feature panel-feature--shadow 
+    {% if module.image_position=="flip" %}
+        panel-feature--flip
+        
+    {% endif %}
+    ">
         <div class="panel-feature__img" style="background-image:url({{module.img.src}})">
             
         </div>
@@ -21,15 +26,23 @@
                     {{ module.body_copy }}
                 </h5>
             </div>
+
+            
+
+                
+                
+           {% if module.award_toggle == true %}
             <div class="panel-feature__awards">
                 {% for award in module.awards %}
                     <img src="{{ award.src }}" alt="{{ award.alt }}" />
                 {% endfor %}
             </div>
+            {% endif %}
+       
+
+
+            {% if module.cta1 %}
             <div class="panel-feature__btn-row">
-
-
-
                 <div class="btn__row">
                     {% if module.cta1 %}
                     <div class="btn__wrapper">
@@ -50,6 +63,7 @@
 
 
             </div>
+            {% endif %}
         </div>
 
     </div>
