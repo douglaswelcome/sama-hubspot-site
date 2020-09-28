@@ -1,1 +1,115 @@
-[ ]
+[{
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Get it Baby"
+    },
+    {
+        "name": "top_person",
+        "label": "Top Person",
+        "required": false,
+        "locked": false,
+        "children": [{
+                "name": "img",
+                "label": "Headshot",
+                "required": false,
+                "locked": false,
+                "responsive": true,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                    "src": "",
+                    "alt": null
+                }
+            },
+            {
+                "name": "person",
+                "label": "Name",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": null
+            },
+            {
+                "name": "job",
+                "label": "Title",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": null
+            }
+        ],
+        "type": "group",
+        "default": {}
+    },
+
+    {
+        "name": "people",
+        "label": "Rest of Team",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+            "min": null,
+            "max": null,
+            "sorting_label_field": null,
+            "default": null
+        },
+        "children": [{
+                "name": "img",
+                "label": "Headshot",
+                "required": false,
+                "locked": false,
+                "responsive": true,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                    "src": "",
+                    "alt": null
+                }
+            },
+            {
+                "name": "person",
+                "label": "Name",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": null
+            },
+            {
+                "name": "job",
+                "label": "Title",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": null
+            }
+        ],
+        "type": "group",
+        "default": {}
+    }
+
+
+
+]
