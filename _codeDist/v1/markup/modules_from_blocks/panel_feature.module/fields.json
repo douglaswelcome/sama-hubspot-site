@@ -1,4 +1,53 @@
 [{
+  "name": "image_position",
+  "label": "Image Left or Right?",
+  "required": false,
+  "locked": false,
+  "display": "select",
+  "choices": [
+    ["null", "Image Right"],
+    ["flip", "Image Left"]
+  ],
+  "type": "choice",
+  "default": "null"
+},
+{
+  "name": "darkmode",
+  "label": "Dark Mode?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": true
+},
+
+{
+  "name": "bg_color",
+  "label": "Dark Mode Background Color",
+  "required": false,
+  "locked": false,
+  "display": "select",
+
+  "help_text": "",
+  "choices": [
+  [
+    "bg-charcoal-1",
+    "Charcoal 1 (Darkest)"
+  ],
+  [
+    "bg-charcoal-2",
+    "Charcoal 2 (Medium Dark)"
+  ],
+  [
+    "bg-charcoal-3",
+    "Charcoal 3 (Light Dark)"
+  ]
+  ],
+  "type": "choice",
+  "placeholder": "",
+  "default":  "bg-charcoal-1"   
+
+},
+  {
     "name": "img",
     "label": "Side Image",
     "required": false,
@@ -43,7 +92,7 @@
     "name": "awards",
     "label": "Award Logo",
     "occurrence": {
-      "min": 1,
+      "min": null,
       "max": 3,
       "sorting_label_field": null,
       "default": 1

@@ -1,5 +1,10 @@
 <!-- module html  -->
-<section class="dark-mode bg-charcoal-1">
+<section class="
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+    {% endif %}
+    ">
     <div class="panel-feature panel-feature--shadow">
         <div class="panel-feature__img" style="background-image:url({{module.img.src}})">
             
