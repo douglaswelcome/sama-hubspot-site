@@ -9,7 +9,7 @@
     ["null", "Image Left"]
   ],
   "type": "choice",
-  "default": "Image Left"
+  "default": "null"
 },
 {
   "name": "darkmode",
@@ -88,15 +88,6 @@
     "placeholder": "",
     "default": null
   },
-  {
-
-  "name": "award_toggle",
-  "label": "Award Icon Row?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "default": true 
-},
   {
     "name": "awards",
     "label": "Award Logo",
