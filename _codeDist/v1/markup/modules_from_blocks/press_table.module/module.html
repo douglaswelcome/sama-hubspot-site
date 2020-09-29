@@ -1,26 +1,28 @@
-{% set tableID = 2681033 %}
+{% set tableID = 1052854 %}
 
 {% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
 
 
-  <section class="dark-mode bg-charcoal-3">
-    <div class="news-feature">
-        <div class="news-feature__headline">
-            <h2 class="display-small">
-                {{ module.headline }}
-            </h2>
-            <p>Read about out amazing work in the world and why we love magic and suspense</p>
-        </div>
+<section class="dark-mode bg-charcoal-3">
+  <div class="news-feature">
+    <div class="news-feature__headline">
+      <h2 class="display-small">
+        {{ module.headline }}
+      </h2>
+      <p>Read about out amazing work in the world and why we love magic and suspense</p>
+    </div>
 
-        {% for row in table %}{% if row.featured=="First" %}
-        <div class=" news-feature__main news-feature--article-bg">
+    {% for row in table %}
+    {% if row.featured.name=="First" %}
 
-            <a href="{{row.article_url}}" class=" news-feature--link" style="background-image:url({{row.background.url}})">
+    <div class=" news-feature__main news-feature--article-bg">
+
+      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background_img.url}})">
 
 
             <div class="news-feature__category">
                 <p class="bold">
-                    {{ module.article1.category }}
+                    {{ row.type }}
                 </p>
             </div>
             <div class="news-feature__title">
@@ -29,56 +31,67 @@
                 </h2>
             </div>
             <div class="news-feature__logo">
-                <img src="{{ module.article1.logo.src }}" />
+                <img src="{{row.publication_icon.url}}" />
             </div>
 
  
             </a>
-        </div>
-      {% endif %}{% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
 
-        <div class="news-feature__secondary-wrapper">
+    <div class="news-feature__secondary-wrapper">
 
-            <div class="news-feature__secondary-article news-feature--article-bg">
-                <a href="{{ module.article2.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article2.bg.src}})">
+      {% for row in table %}
+      {% if row.featured.name=="Second" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background_img.url}})">
                 <div class="news-feature__category">
                     <p class="bold">
-                      {{ module.article2.category }}
+                      {{ row.type }}
                      </p>
                  </div>
             
                  <div class="news-feature__title">
                       <h4 class="bold">
-                       {{ module.article2.title }}
+                        {{row.headline}}
                      </h4>
                  </div>
                  <div class="news-feature__logo">
                     <img src="{{row.publication_icon.url}}" />
                 </div>
              </a>
-            </div>
+      </div>
 
-            <div class="news-feature__secondary-article news-feature--article-bg">
-                <a href="{{ module.article3.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article3.bg.src}})">
-                    <div class="news-feature__category">
-                        <p class="bold">
-                            {{ module.article3.category }}
-                        </p>
-                    </div>
-                    <div class="news-feature__title">
-                        <h4 class="bold">
-                            {{ module.article3.title }}
-                        </h4>
-                    </div>
-                    <div class="news-feature__logo">
-                        <img src="{{ module.article3.logo.src }}" />
-                    </div>
-                </a>
-            </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for row in table %}
+      {% if row.featured.name=="Third" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background_img.url}})">
+              <div class="news-feature__category">
+                  <p class="bold">
+                    {{ row.type }}
+                   </p>
+               </div>
+          
+               <div class="news-feature__title">
+                    <h4 class="bold">
+                      {{row.headline}}
+                   </h4>
+               </div>
+               <div class="news-feature__logo">
+                  <img src="{{row.publication_icon.url}}" />
+              </div>
+           </a>
+      </div>
+      {% endif %}
+      {% endfor %}
 
 
-        </div>
     </div>
+  </div>
 
 </section>
 
