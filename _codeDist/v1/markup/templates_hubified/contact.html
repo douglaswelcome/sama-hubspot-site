@@ -2,15 +2,28 @@
     templateType: page
     isAvailableForNewContent: true
 -->
+
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
 {% extends '/v1/markup/blocks_static/base.html' %}
 
 {% block main %}
 
 
-{% module "module_20200915012401" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+{% module "module_20200930131958" path="/v1/markup/modules_from_blocks/header", label="Header" %}
 <div class="flex-content">
 
-{% module "module_20200915012423" path="/v1/markup/modules_from_blocks/hero_center_small", label="Hero" %}
+{% module "module_20200930133119" path="/v1/markup/modules_from_blocks/hero_center_small", label="Hero" %}
+
+    {% module "module_20200930133147" path="/v1/markup/modules_from_blocks/contact_cards", label="Contact Cards" %}
+
+
+
+    {% include '/v1/markup/blocks_static/map.html' %}
+
+        
 
 
 
@@ -20,3 +33,5 @@
 {% include '/v1/markup/blocks_static/footer.html' %}
 
 {% endblock %}
+
+
