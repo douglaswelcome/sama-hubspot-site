@@ -13,11 +13,11 @@
     </div>
 
     {% for row in table %}
-    {% if row.featured.name=="First" %}
+    {% if row.featured_order.name=="First" %}
 
     <div class=" news-feature__main news-feature--article-bg">
 
-      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background_img.url}})">
+      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background.url}})">
 
 
             <div class="news-feature__category">
@@ -43,9 +43,9 @@
     <div class="news-feature__secondary-wrapper">
 
       {% for row in table %}
-      {% if row.featured.name=="Second" %}
+      {% if row.featured_order.name=="Second" %}
       <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background_img.url}})">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})">
                 <div class="news-feature__category">
                     <p class="bold">
                       {{ row.type }}
@@ -67,9 +67,9 @@
       {% endfor %}
 
       {% for row in table %}
-      {% if row.featured.name=="Third" %}
+      {% if row.featured_order.name=="Third" %}
       <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background_img.url}})">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})">
               <div class="news-feature__category">
                   <p class="bold">
                     {{ row.type }}
