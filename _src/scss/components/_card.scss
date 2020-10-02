@@ -12,6 +12,7 @@
         transition-property: box-shadow, transform, color, background-color, border-bottom-color, fill, visibility;
         transition-duration: 0.2s;
         transition-timing-function: ease;
+        height: 100%;
         
 
         &--hover:hover {
