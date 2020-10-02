@@ -1,20 +1,41 @@
 <!-- module html  -->
-<section>
-    <div class="location__hq">
-        
-    </div>
+<section class="
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+    {% endif %}
+    location-cards__section
+">
+   
 
-    <div class="location__head">
-        <h2>
-            North America
-        </h2>
-    </div>
-    <div class=="location__cards">
-        Card #1
-    </div>
-    <div class="location__head">
-        <h2>
-            North America
-        </h2>
-    </div>
+<div class="location-cards ">
+{% for location in module.locations %}
+
+
+    <div class="card location-cards__card">
+        <div class="card__inner ">
+            <div class="card__icon location-cards__icon">
+                <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/samamarker.svg" alt="map pinned icon">
+            </div>
+          <div class="card__title">
+            <h4 class="">
+              {{ location.place }}
+            </h4>
+          </div>
+          <div class="card__body">
+            <p>
+              {{ location.address }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+{% endfor %}
+
+
+</div>
+
+
+
+
 </section>
