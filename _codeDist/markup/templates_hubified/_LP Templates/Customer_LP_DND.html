@@ -1,0 +1,35 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% include '/markup/blocks_static/header-lp.html' %}
+
+
+
+    
+{% module "module_20201005153208" path="/markup/modules_from_blocks/platform_hero", label="moduleName" %}
+
+
+
+{% dnd_area "unique_name", class="main" %}
+
+{% end_dnd_area %}
+
+
+
+
+
+
+
+
+
+
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}
