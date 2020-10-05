@@ -44,17 +44,16 @@
 
     &__office-title {
         display: inline-block;
-        font-size: 1.25rem;
-        font-family: "Barlow Condensed", Arial, sans-serif;
-        text-transform: uppercase;
+
         font-weight: 700;
         padding-bottom: 0.25rem;
+        transition-property: opacity;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
 
         &::before {
             opacity: 0;
-            transition-property: opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
+            
         }
 
 
@@ -63,14 +62,14 @@
 
 
 
-    &__details {
-        padding-left: 1rem;
-        line-height: 1.1;
-        // overflow:hidden;
-        // max-height:0;
-        // transition: max-height .5s ease-in-out;
-        // will-change: max-height;
-    }
+    // &__details {
+    //     padding-left: 1rem;
+    //     line-height: 1.1;
+    //     // overflow:hidden;
+    //     // max-height:0;
+    //     // transition: max-height .5s ease-in-out;
+    //     // will-change: max-height;
+    // }
 
     &__item {
         margin-bottom: 1rem;

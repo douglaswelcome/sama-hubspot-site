@@ -2,20 +2,20 @@
     templateType: page
     isAvailableForNewContent: false
 -->
-<section class="two-block locations">
-    <div>
-        
-        <div class="locations__list" id="listings">
+<section class="">
+    <div class="panel-half">
+        <div class="panel-half__copy">
+            <div class="locations__list" id="listings">
 
+            </div>
         </div>
-    </div>
-    <div class="map-baby">
-        <div class="back-panel"></div>
-        <div id="map" class="map-baby__wrapper">
-    
-        <script src=""></script>
-        <script src='{{ get_public_template_url("/v1/assets/js/map.js") }}'></script>
-        <button class="btn map-baby--globe-button" id="globe">
+
+        <div class="panel-half__img map-baby">
+            <div id="map" class="map-baby__wrapper">
+
+                <script src=""></script>
+                <script src='{{ get_public_template_url("/v1/assets/js/map.js") }}'></script>
+                <button class="btn map-baby--globe-button" id="globe">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
                     <title>globe_1-layer</title>
                     <g id="a532c5e1-71a2-4beb-a92a-0c666456b77e" data-name="Layer 2">
@@ -26,10 +26,11 @@
                     </g>
                 </svg>
 
-            </button>    
-    </div>
-        
+            </button>
+            </div>
+
+        </div>
+
     </div>
 
 </section>
-
