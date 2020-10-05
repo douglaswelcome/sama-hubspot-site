@@ -1,5 +1,7 @@
 function tabWindow() {
 
+    if ($(".tabs__tab")[0]){
+
     const tabSelector = document.querySelectorAll('.tabs__tab');
     const tabContent = document.querySelectorAll('.tab-window__feature');
     const underline = document.querySelector('.tabs__tab-underline');
@@ -31,6 +33,7 @@ function tabWindow() {
 
 
     });
+}
 
 }
 

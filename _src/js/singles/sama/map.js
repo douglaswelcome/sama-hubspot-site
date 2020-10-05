@@ -19,13 +19,7 @@ var offices = {
                 "postalCode": "94110",
                 "state": "CA"
             }
-        }
-
-
-
-
-
-    ]
+        }]
 }
 
 buildOfficeList(offices);
@@ -34,9 +28,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHdlbGNvbWUiLCJhIjoiY2p6MXNkdmZiMGF3OTNibzFoM
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/dwelcome/cjz1t5chs2trc1cqmuyt3ut8d',
-    center: [-24.547817, 36.980944],
+    center: [-122.419532, 37.764734],
     // initial zoom
-    zoom: 1
+    zoom: 12
 });
 
 
@@ -202,8 +196,6 @@ function buildOfficeList(data) {
                 activeItem[0].classList.remove('active');
             }
             this.parentNode.classList.add('active');
-
-
         });
 
         //  This Creates the list and details. A new div with the class 'details' for each store is created
@@ -229,6 +221,8 @@ function buildOfficeList(data) {
         //     row3.innerHTML += ' ' + prop.postalCode;
         // };
         // row3.innerHTML += ', ' + prop.country;
+
+        console.log('baby baby')
     }
 
 

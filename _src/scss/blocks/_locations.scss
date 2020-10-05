@@ -44,6 +44,7 @@
 
     &__office-title {
         display: inline-block;
+        color:var(--color-charcoal);
 
         font-weight: 700;
         padding-bottom: 0.25rem;
@@ -117,7 +118,7 @@
 
 .map-baby {
 
-    height: 85%;
+    height: 100%;
     position: relative;
 
     @include breakpoint(w-sm){
@@ -125,9 +126,7 @@
     }
 
 
-    .back-panel {
-        border-radius: 0 0 0 40px;
-    }
+    
 
 
 
@@ -145,9 +144,9 @@
 
 
         ::before {
-            border-radius: 0 0 0 5px;
+            border-radius: 3px;
             content: "";
-            background-color: $color-white;
+            background-color: var(--color-white);
             height: 100%;
             width: 100%;
             position: absolute;
@@ -158,10 +157,11 @@
 
         button {
 
-            border: 2px solid #291d5421;
+            border: 2px solid;
+            border-color:var(--color-charcoal-7);
             margin-bottom: .125rem;
             position: relative;
-            border-radius: 0 0 0 8px;
+            border-radius: 3px;
             transition-property: all;
             transition-duration: 0.3s;
             transition-timing-function: ease;
@@ -192,10 +192,11 @@
         bottom: 0;
         right: 0;
         margin: 0 10px 10px 0;
-        border-radius: 0 0 0 8px;
+        border-radius: 3px;
         width: 45px;
         height: 45px;
-        border: 2px solid #291d5421;
+        border: 2px solid;
+            border-color:var(--color-charcoal-7);
         padding: 5px;
         background-color: $color-white;
 
@@ -261,7 +262,6 @@
 
     &__wrapper {
         height: 100%;
-        border-radius: 0 0 0 40px;
 
 
     }
