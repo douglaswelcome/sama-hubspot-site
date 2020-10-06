@@ -2,7 +2,12 @@
 {% if module.darkmode == true %}
 dark-mode
 {{ module.bg_color }}
-{% endif %} ">
+{% endif %}
+{% if module.headline %}
+{% else %}
+no-top-pad
+{% endif %}
+ ">
   <div class="three-card">
 
     {% if module.headline %}
