@@ -17,6 +17,7 @@
         align-items: center;
         margin-bottom: .3rem;
         margin-right: auto;
+        color: var(--color-white);
 
 
 
@@ -44,23 +45,22 @@
 
     &__office-title {
         display: inline-block;
-        color:var(--color-charcoal);
-
-        font-weight: 700;
-        padding-bottom: 0.25rem;
-        transition-property: opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
-
-        &::before {
-            opacity: 0;
-            
-        }
-
-
     }
 
 
+
+    &__row5 {
+        margin-top: 1rem;
+    }
+    &__row6{
+        a{
+            color:var(--color-white);
+
+            &:hover {
+                color:var(--color-charcoal-8);
+            }
+        }
+    }
 
 
     // &__details {
@@ -75,20 +75,11 @@
     &__item {
         margin-bottom: 1rem;
 
-
-
-
-
         &.active {
             .locations__office-title {
-                color: var(--color-charcoal-3);
+                
 
-                &::before {
-                    opacity: 1;
-                    transition-property: opacity;
-                    transition-duration: 0.3s;
-                    transition-timing-function: ease;
-                }
+               
             }
 
             svg {
@@ -105,6 +96,17 @@
             //     transition: transform .5s ease-in-out;
             // }
         }
+    }
+
+    &__list{
+      
+    }
+    &__hq-label {
+        text-transform:uppercase;
+        margin-bottom: 2rem;
+        padding-bottom:1rem;
+        border-bottom: 2px solid;
+        border-color:var(--color-sunshine);
     }
 
 
@@ -144,7 +146,6 @@
 
 
         ::before {
-            border-radius: 3px;
             content: "";
             background-color: var(--color-white);
             height: 100%;
@@ -220,42 +221,35 @@
     }
 
     .mapboxgl-popup {
-        padding-bottom: 3rem;
-        padding-top: .3rem;
+       top: -60px;
     }
 
     .mapboxgl-popup-content {
         position: relative;
-        border-radius: 0 0 0 1.125rem;
-        // box-shadow: .125rem 5px 5px rgba($color-kennedy, 0.1);
-        padding: .5rem .5rem .5rem .7rem;
+        background: var(--color-white);
+        border: 2px solid;
+        border-radius: 3px;
+        border-color: var(--color-charcoal-1);
+        padding: 1rem 1rem;
+        // transform: translate(.5rem, -.5rem);
         pointer-events: auto;
+        color: var(--color-charcoal-1);
 
-        &::before {
-            content: "";
-            height: 100%;
-            width: 100%;
-            background-color: var(--color-charcoal-2);
-            border: 0.125rem solid var(--color-charcoal-2);
-            border-radius: 0 0 0 1.125rem;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            transform: translate(0.25rem, 0.25rem);
-            transition-property: all;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
+        .city {
+            font-weight: 300;
         }
+        
+
+       
 
     }
 
     &__marker {
         border: none;
         cursor: pointer;
-        height: 44px;
-        width: 44px;
-        background-image: url(#{$staticbase}img/samamarker.svg);
+        height: 60px;
+        width: 60px;
+        background-image: url(#{$staticbase}img/samamarker3.svg);
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
     }

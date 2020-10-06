@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "headline",
     "label": "Headline",
     "required": false,
@@ -13,7 +12,7 @@
   },
   {
     "name": "subheadline",
-    "label": "subheadline",
+    "label": "Subheadline",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -23,73 +22,264 @@
     "type": "text",
     "default": null
   },
-    {
-    "name": "card1_title",
-    "label": "card1_title",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove Element",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "Jergenize"
-  }, 
+
+
+
   {
-    "name": "card1_body",
-    "label": "card1_body",
+    "name": "card1",
+    "label": "Card 1",
     "required": false,
     "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "This is truly an almighty mountain. There are no limits in this world."
-  },  
-  {
-    "name": "card2_title",
-    "label": "card2_title",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove Element",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "Jergenize"
+    "children": [{
+        "name": "title",
+        "label": "Card 1 Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave Blank to Remove Element",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Jergenize"
+      },
+      {
+        "name": "body_copy",
+        "label": "Card 1 Body",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "This is truly an almighty mountain. There are no limits in this world."
+      },
+      {
+        "name": "icon",
+        "label": "Card 1 Icon",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": null
+        }
+      },
+      {
+        "name": "link",
+        "label": "Card 1 Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "linktext",
+        "label": "Card 1 Link Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+
   },
+
+
+
+
+
+
+
   {
-    "name": "card2_body",
-    "label": "card2_body",
+    "name": "card2",
+    "label": "Card 2",
     "required": false,
     "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "This is truly an almighty mountain. There are no limits in this world."
+    "children": [{
+        "name": "title",
+        "label": "Card 1 Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave Blank to Remove Element",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Jergenize"
+      },
+      {
+        "name": "body_copy",
+        "label": "Card 1 Body",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "This is truly an almighty mountain. There are no limits in this world."
+      },
+      {
+        "name": "icon",
+        "label": "Card 1 Icon",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": null
+        }
+      },
+      {
+        "name": "link",
+        "label": "Card 1 Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "linktext",
+        "label": "Card 1 Link Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+
   },
+
   {
-    "name": "card3_title",
-    "label": "card3_title",
+    "name": "card3",
+    "label": "Card 3",
     "required": false,
     "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove Element",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "Jergenize"
-  },
-  {
-    "name": "card3_body",
-    "label": "card3_body",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": "This is truly an almighty mountain. There are no limits in this world."
+    "children": [{
+        "name": "title",
+        "label": "Card 1 Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave Blank to Remove Element",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Jergenize"
+      },
+      {
+        "name": "body_copy",
+        "label": "Card 1 Body",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "This is truly an almighty mountain. There are no limits in this world."
+      },
+      {
+        "name": "icon",
+        "label": "Card 1 Icon",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": null
+        }
+      },
+      {
+        "name": "link",
+        "label": "Card 1 Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "linktext",
+        "label": "Card 1 Link Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+
   }
 ]

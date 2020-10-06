@@ -15,16 +15,55 @@
         height: 100%;
         
 
+        
+        
+
         &--hover:hover {
             transform: translate(1rem, -1rem);
+            .card__link {
+                    p{
+                    color: var(--color-charcoal-4);
+                    }
+                    .hyperlink__arrow svg {
+                        fill: var(--color-charcoal-4);
+                    }
+              
+              
+            }
         }
+    }
+
+    a .card__inner {
+        color: var(--color-charcoal-1);
+    }
+
+    &__link {
+        display: flex;
+        align-content: center;
+        p{
+            
+            display: inline-block;
+        transition: 300ms all;
+        color: var(--color-charcoal-2);
+        font-weight: 700;
+        text-decoration: underline var(--color-charcoal-6);
+        line-height:1;
+        }
+        .hyperlink__arrow {
+            margin-left: .5rem;
+            margin-top: -1px;
+             svg{
+                width:16px;
+             }
+        }
+    
     }
 
     &__icon{
         margin-bottom: 1rem;
     } 
 
-
+    
 
 
     &__title {

@@ -1,36 +1,14 @@
-var offices = {
-    "type": "FeatureCollection",
-    "features": [{
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.419532, 37.764734
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "Suite 301",
-                "address": "2017 Mission St",
-                "city": "San Francisco",
-                "country": "United States",
-                "crossStreet": "at 16th Street",
-                "postalCode": "94110",
-                "state": "CA"
-            }
-        }]
-}
+
 
 buildOfficeList(offices);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHdlbGNvbWUiLCJhIjoiY2p6MXNkdmZiMGF3OTNibzFoMm1ocG05cSJ9.xZ8njmOGIVM4sLRiit4xdg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/dwelcome/cjz1t5chs2trc1cqmuyt3ut8d',
+    style: 'mapbox://styles/dwelcome/ckfxhibcm08vf1aoaxw0c2nj5',
     center: [-122.419532, 37.764734],
     // initial zoom
-    zoom: 12
+    zoom: 11.5
 });
 
 
@@ -122,8 +100,7 @@ function createPopUp(currentFeature) {
             closeOnClick: false
         })
         .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML('<h6 class="bold">' + 'Samasource' + '<h6>' +
-            '<h6>' + currentFeature.properties.city + '</h6>')
+        .setHTML('<h6>' + 'Samasource HQ' + '</h6>' + '<h6 class="city">' + 'San Francisco, CA' + '</h6>')
         .addTo(map);
 }
 
@@ -201,28 +178,41 @@ function buildOfficeList(data) {
         //  This Creates the list and details. A new div with the class 'details' for each store is created
         //   and fill it with the city and phone number
 
-        // var details = listing.appendChild(document.createElement('div'));
+        var details = listing.appendChild(document.createElement('div'));
 
-        // details.className = "locations__details";
+        details.className = "locations__details";
 
-        // var row1 = details.appendChild(document.createElement('p'));
-        // var row2 = details.appendChild(document.createElement('p'));
-        // var row3 = details.appendChild(document.createElement('p'));
-        // var row4 = details.appendChild(document.createElement('p'));
-        // if (prop.suite) {
-        //     row1.innerHTML += prop.suite;
-        // };
-        // row2.innerHTML += prop.address;
-        // row3.innerHTML += prop.city;
-        // if (prop.state) {
-        //     row3.innerHTML += ', ' + prop.state;
-        // };
-        // if (prop.postalCode) {
-        //     row3.innerHTML += ' ' + prop.postalCode;
-        // };
-        // row3.innerHTML += ', ' + prop.country;
+        var row1 = details.appendChild(document.createElement('p'));
+        var row2 = details.appendChild(document.createElement('p'));
+        var row3 = details.appendChild(document.createElement('p'));
+        var row4 = details.appendChild(document.createElement('p'));
+        var row5 = details.appendChild(document.createElement('p'));
+        var row6 = details.appendChild(document.createElement('p'));
 
-        console.log('baby baby')
+        row1.className = 'locations__row1';
+        row2.className = 'locations__row2';
+        row3.className = 'locations__row3';
+        row4.className = 'locations__row4';
+        row5.className = 'locations__row5';
+        row6.className = 'locations__row6';
+
+        
+
+        if (prop.suite) {
+            row1.innerHTML += prop.suite;
+        };
+        row2.innerHTML += prop.address;
+        row3.innerHTML += prop.city;
+        if (prop.state) {
+            row3.innerHTML += ', ' + prop.state;
+        };
+        if (prop.postalCode) {
+            row3.innerHTML += ' ' + prop.postalCode;
+        };
+        row4.innerHTML += prop.country;
+        row5.innerHTML += prop.phone;
+        row6.innerHTML += '<a href=\'mailto:' + prop.email+ '\'>' + prop.email +'</a>';
+    
     }
 
 
