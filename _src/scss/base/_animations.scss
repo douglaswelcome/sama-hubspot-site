@@ -11,3 +11,116 @@
   animation-duration: 0.2s;
   animation-timing-function: linear;
 }
+
+.floater {
+  -webkit-animation-name: floater-animation;
+  animation-name: floater-animation;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.645,.045,.355,1);
+  animation-timing-function: cubic-bezier(.645,.045,.355,1);
+  background: no-repeat 50%;
+  background-size: contain;
+  border-radius: 100%;
+  position: absolute;
+  width: 140px
+}
+
+.floater:before {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.floater-1 {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 4s;
+  background-image: url(../img/home/floater-1.png);
+}
+
+.floater-2 {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  background-image: url(../img/home/floater-2.png)
+}
+
+.floater-3 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 14s;
+  animation-duration: 14s;
+  background-image: url(../img/home/floater-3.png)
+}
+
+.floater-4 {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s;
+  background-image: url(../img/home/floater-4.png)
+}
+
+.floater-5 {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  -webkit-animation-duration: 13s;
+  animation-duration: 13s;
+  background-image: url(../img/home/floater-5.png)
+}
+
+.floater-6 {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  -webkit-animation-duration: 14s;
+  animation-duration: 14s;
+  background-image: url(../img/home/floater-6.png)
+}
+
+.floater-7 {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+  background-image: url(../img/home/floater-7.png)
+}
+
+.floater-8 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  background-image: url(../img/home/floater-8.png)
+}
+
+.floater-9 {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  background-image: url(../img/home/floater-9.png)
+}
+
+.floater-9,.floater-10 {
+  -webkit-animation-duration: 13s;
+  animation-duration: 13s
+}
+
+.floater-10 {
+  -webkit-animation-delay: -7s;
+  animation-delay: -7s;
+  background-image: url(../img/home/floater-10.png)
+}
+
+@-webkit-keyframes floater-animation {
+  50% {
+      transform: none
+  }
+}
+
+@keyframes floater-animation {
+  50% {
+      transform: none
+  }
+}

@@ -1,0 +1,79 @@
+.headshot {
+    @extend %grid;
+
+    &__dot-panel {
+
+
+        height: 40%;
+        grid-column: 1 / span 5;
+        grid-row:1;
+  
+
+        canvas {
+            height:100%;
+            width:100%;
+
+        }
+
+
+    }
+
+    &__bottom-panel {
+        grid-column: 7 / span 6;
+        background-color: var(--color-charcoal-4);
+        grid-row: 1;
+        height: 60%;
+        margin-top: auto;
+      
+    }
+
+    &__top-panel {
+        grid-column: 3 / span 8;
+        grid-row: 1;
+        background-color: var(--color-sunshine);
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        text-align: center;
+        padding: 3rem;
+        position: relative;
+        z-index:1;
+    }
+
+    &__img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__name {
+        color: var(--color-charcoal-1);
+
+    }
+
+    &__body {
+        text-align: left;
+        color: var(--color-charcoal-1);
+
+
+        p {
+            margin-bottom: .5rem;
+        }
+    }
+
+
+
+}

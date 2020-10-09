@@ -6,20 +6,34 @@
 {% extends '/v1/markup/blocks_static/base.html' %}
 
 {% block main %}
-{% include '/v1/markup/blocks_static/pattern-bg.html' %}
 
-{% include '/v1/markup/blocks_static/header.html' %}
 
-{% module "module_20191115081249" path="/v1/markup/modules_from_blocks/half_hero", label="half_hero" %}
 
-{# {% module "module_20191113102757" path="/v1/markup/modules_from_blocks/center_block", label="center_block" %}  #}
+{% module "module_20201007104337" path="/v1/markup/modules_from_blocks/header", label="Header" %}
 
-{% module "module_20191114091059" path="/v1/markup/modules_from_blocks/label_tab", label="label_tab" %}
+<div class="flex-content">
+
+{#{% module "module_20191115081249" path="/v1/markup/modules_from_blocks/half_hero", label="half_hero" %}#}
+
+
+
+
 
 {% include '/v1/markup/blocks_static/timeline.html' %}
 
-{% module "module_20191114144108" path="/v1/markup/modules_from_blocks/center_headshot", label="center_headshot" %}
+{% module "module_20191114144108" path="/v1/markup/modules_from_blocks/center_headshot", label="Headshot Panel" %}
+
+</div>
 
 {% include '/v1/markup/blocks_static/footer.html' %}
 
 {% endblock %}
+
+
+
+
+
+
+
+
+

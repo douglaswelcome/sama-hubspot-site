@@ -70,7 +70,7 @@
     "locked": false,
     "children": [{
         "name": "title",
-        "label": "Card 1 Title",
+        "label": "Card Title",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -82,7 +82,7 @@
       },
       {
         "name": "body_copy",
-        "label": "Card 1 Body",
+        "label": "Card Body",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -93,7 +93,7 @@
       },
       {
         "name": "icon",
-        "label": "Card 1 Icon",
+        "label": "Card Icon",
         "required": false,
         "locked": false,
         "inline_help_text": "Shows Teaser image when toggled on",
@@ -108,7 +108,7 @@
       },
       {
         "name": "link",
-        "label": "Card 1 Link",
+        "label": "Card Link",
         "required": false,
         "locked": false,
         "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
@@ -127,7 +127,7 @@
       },
       {
         "name": "linktext",
-        "label": "Card 1 Link Text",
+        "label": "Card Link Text",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -160,7 +160,7 @@
     "locked": false,
     "children": [{
         "name": "title",
-        "label": "Card 1 Title",
+        "label": "Card Title",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -172,7 +172,7 @@
       },
       {
         "name": "body_copy",
-        "label": "Card 1 Body",
+        "label": "Card Body",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -183,7 +183,7 @@
       },
       {
         "name": "icon",
-        "label": "Card 1 Icon",
+        "label": "Card Icon",
         "required": false,
         "locked": false,
         "inline_help_text": "Shows Teaser image when toggled on",
@@ -198,7 +198,7 @@
       },
       {
         "name": "link",
-        "label": "Card 1 Link",
+        "label": "Card Link",
         "required": false,
         "locked": false,
         "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
@@ -217,7 +217,7 @@
       },
       {
         "name": "linktext",
-        "label": "Card 1 Link Text",
+        "label": "Card Link Text",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -244,7 +244,7 @@
     "locked": false,
     "children": [{
         "name": "title",
-        "label": "Card 1 Title",
+        "label": "Card Title",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -256,7 +256,7 @@
       },
       {
         "name": "body_copy",
-        "label": "Card 1 Body",
+        "label": "Card Body",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -267,7 +267,7 @@
       },
       {
         "name": "icon",
-        "label": "Card 1 Icon",
+        "label": "Card Icon",
         "required": false,
         "locked": false,
         "inline_help_text": "Shows Teaser image when toggled on",
@@ -282,7 +282,7 @@
       },
       {
         "name": "link",
-        "label": "Card 1 Link",
+        "label": "Card Link",
         "required": false,
         "locked": false,
         "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
@@ -301,7 +301,7 @@
       },
       {
         "name": "linktext",
-        "label": "Card 1 Link Text",
+        "label": "Card Link Text",
         "required": false,
         "locked": false,
         "validation_regex": "",

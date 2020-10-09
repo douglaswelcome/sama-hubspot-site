@@ -1,22 +1,35 @@
 <!-- module html  -->
-<section class="headshot">
-    <div class="headshot__img" style="background-image:url('{{ module.headshot_img.src }}')">
-    </div>
-    <div class="headshot__name">
-        <h3>
-           {{ module.text_name}}
-        </h3>
-        <h5>
-            {{module.text_title}}
-        </h5>
-    </div>
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+">
+    <div class="headshot">
+        <div class="headshot__dot-panel">
+            <canvas id="dotCanvas"></canvas>
+        </div>
+        <div class="headshot__bottom-panel"></div>
+        <div class="headshot__top-panel">
+            <div class="headshot__img" ">
+            <img src=" {{ module.headshot_img.src }}" alt="">
+            </div>
+            <div class="headshot__name">
+                <h4>
+                    {{ module.person }}
+                </h4>
+                <h5>
+                    {{ module.job_title }}
+                </h5>
+            </div>
 
 
-    {% if ( (module.cta_subtitle) and (module.cta_body) ) or (module.divider_on) %}
-    <div class="divider-line divider-line--horizontal"></div>
-    {% endif %}
-    <div class="headshot__body">
-        {{module.body_text}}
+            {% if ( (module.cta_subtitle) and (module.cta_body) ) or (module.divider_on) %}
+            <div class="divider-line divider-line--horizontal divider-line--charcoal"></div>
+            {% endif %}
+            <div class="headshot__body">
+                {{module.body_text}}
+            </div>
+        </div>
     </div>
-
 </section>
