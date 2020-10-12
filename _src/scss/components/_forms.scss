@@ -1,6 +1,8 @@
 .form-wrapper {
 
 
+
+
   .hs-form {
 
     margin-left: auto;
@@ -13,25 +15,14 @@
     height: auto;
   }
 
-  .hs-form .hs-form-field>label {
+  .hs-form-field label {
+    display: inline-block;
+    margin-bottom:.5rem;
     font-weight: 700;
     font-size: .875rem;
 
     line-height: 1;
     color: var(--color-charcoal-3);
-
-
-    // INITIAL STATE
-    // position: absolute;
-    // height:100%;
-    // display: flex;
-    // margin-top: .125rem;
-    // align-items: center;
-    // margin-left: 1rem;
-
-
-
-
 
   }
 
@@ -53,7 +44,7 @@
   .hs-form textarea,
   .hs-form select,
   input {
-    border-width: .125rem;
+    border: .125rem solid;
     border-radius: 3px;
     border-color: var(--color-charcoal-1);
     font-size: 1.125rem;
@@ -64,8 +55,6 @@
   }
 
   .hs-form select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     position: relative;
@@ -88,7 +77,7 @@
   .hs-form input[type="file"]:focus,
   .hs-form textarea:focus,
   .hs-form select:focus {
-    border-color: blue;
+    border-color:var(--color-blue);
 
 
 
@@ -97,6 +86,10 @@
   .hs-form .hs-error-msgs label {
     font-size: .7rem;
     color: var(--color-charcoal-2)
+  }
+
+  .hs_error_rollup{
+    display:none;
   }
 
   li {
@@ -114,131 +107,86 @@
     margin-top: 2rem;
 
     .actions {
-      overflow:visible;
-      display: inline-block;
-      cursor: pointer;
       border-radius: 3px;
-      text-align: center;
+      cursor: pointer;
       background-color: var(--color-charcoal-6);
       position: relative;
-      border: .125rem solid;
-      border-color: var(--charcoal-1);
-      transition-property: all;
-      transition-duration: 0.3s;
-      transition-timing-function: ease;
-      font-size: 1.25rem;
-      color: var(--color-white);
+
+
       &:before {
         content: "";
         background-color: var(--color-charcoal-1);
-        display:block;
-        height:100%;
+        border: .125rem solid;
+        border-color: var(--color-charcoal-1);
+        border-radius: 3px;
+        display: block;
+        height: 100%;
         width: 100%;
         position: absolute;
         transition-property: all;
         transition-duration: 0.3s;
         transition-timing-function: ease;
-        
-      }
-      &:hover {
 
-        input {
+      }
+
+      &:hover {
+        .hs-button {
           transform: translate(.5rem, -.5rem);
         }
+
         &:before {
           transform: translate(.5rem, -.5rem);
-          
         }
-
       }
 
       &:active {
-
-        input {
+        .hs-button {
           transform: translate(.25rem, -.25rem);
         }
+
         &:before {
           transform: translate(.25rem, -.25rem);
-          
         }
-
       }
-
-    input {
-
-      transition-property: all;
-      transition-duration: 0.3s;
-      transition-timing-function: ease;
-      cursor: pointer;
-      position: relative;
-
-      padding: 1rem 2rem 1rem 2rem;
-      background-color: transparent;
-      border: 0;
-      font-family: var(--font-barlow);
-      text-transform: uppercase;
-      font-size: 1.25rem;
     }
   }
-}
-
-.hs-button {
-
-  justify-content: center;
-
-
-  display: inline-block;
-  cursor: pointer;
-  box-sizing: border-box;
-  margin-left: 0;
-  // padding: 0.6rem 0.8rem 0.6rem 1rem; // totally unsure of why that right padding and font-metrics are bonked
-  border-radius: 1px;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 0 0 1.5rem 0;
-  position: relative;
-  border-width: 0px;
-  Background-color: var(--color-charcoal-2);
-  color: white;
-  Font-family: var(--font-barlow);
-  text-transform: uppercase;
-  width: auto;
-  padding: 1rem 1.5rem;
 
 
 
+  .hs-button {
 
-}
-
-#hs-pwd-widget-password {
-  margin-top: 15px;
-}
-
-}
-
-
-
-
-
-
-
-.form-wrapper.form-wrapper--dark {
-  @extend %grid;
-
-  .hs-form {
-    margin-left: auto;
-    margin-right: auto;
+    border-width: 0px;
+    color: var(--color-white);
+    width: auto;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    position: relative;
+    padding: .75rem 2rem .75rem 2rem;
+    font-family: var(--font-barlow);
+    text-transform: uppercase;
+    font-size: 1.25rem;
   }
 
-  .hs-form .hs-form-field {
-    margin-bottom: 1.5rem;
+  
+
+  #hs-pwd-widget-password {
+    margin-top: 15px;
   }
 
-  .hs-form .hs-form-field>label {
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--color-charcoal-7);
+}
 
+
+
+
+
+
+
+.form-wrapper.form-wrapper--dark-mode {
+
+ .hs-form-field label {
+    color: var(--color-white);
   }
 
   .hs-form input[type="text"],
@@ -258,22 +206,14 @@
   .hs-form input[type="file"],
   .hs-form textarea,
   .hs-form select {
-    border-width: 0;
-    border-radius: 0 0 25px 0;
-    font-size: 1.125rem;
-    padding: 0.7rem;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    background-color: $color-white;
+    border-color: var(--color-charcoal-4);
+    background-color: var(--color-charcoal-4);
+    color:var(--color-white);
+
   }
 
   .hs-form select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background-color: $color-white;
-    position: relative;
   }
 
   .hs-form input[type="text"]:focus,
@@ -293,23 +233,14 @@
   .hs-form input[type="file"]:focus,
   .hs-form textarea:focus,
   .hs-form select:focus {
-    border-color: var(--color-charcoal-5);
+    border-color: var(--color-blue);
   }
 
   .hs-form .hs-error-msgs label {
-    font-size: .7rem;
     color: $color-sunshine;
 
   }
 
-  li {
-    list-style: none;
-    margin-bottom: 1.5rem;
-  }
-
-  .hs-form input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
 
   .legal-consent-container {
     span {
@@ -318,85 +249,45 @@
   }
 
   .hs_submit {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-
     .actions {
-      display: inline-block;
-      cursor: pointer;
-      box-sizing: border-box;
-      margin-left: 0;
-      // padding: 0.6rem 0.8rem 0.6rem 1rem; // totally unsure of why that right padding and font-metrics are bonked
-      border-radius: 1px;
-      text-align: center;
-      background-color: transparent;
-      border-radius: 0 0 0 1.5rem;
-      position: relative;
-      border: 0;
 
-      &::before {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: var(--color-charcoal-2);
-        border: 0.125rem solid var(--color-charcoal-2);
-        border-radius: 0 0 0 1.5rem;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transform: translate3d(5px, 5px, 0);
-      }
+      background-color: var(--color-charcoal-4);
 
-      &::after {
-        content: "";
-        background-color: $color-sunshine;
-        border: 0.125rem solid $color-sunshine;
-        border-radius: 0 0 0 1.5rem;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transition-property: all;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
+
+
+      &:before {
+        background-color: var(--color-sunshine);
+        border-color: var(--color-sunshine);
       }
 
       &:hover {
-
-        &::after,
-        input {
-          transform: translate3d(-5px, -5px, 0px);
-          transition-property: all;
-          transition-duration: 0.3s;
-          transition-timing-function: ease;
+        .hs-button {
+          transform: translate(.5rem, -.5rem);
         }
 
-
-
+        &:before {
+          transform: translate(.5rem, -.5rem);
+        }
       }
 
-      input {
-        cursor: pointer;
-        position: relative;
-        z-index: 2;
-        padding: .7rem 1.125rem .7rem 1.4rem;
-        background-color: transparent;
-        border: 0;
-        font-family: var(--font-barlow);
-        text-transform: uppercase;
-        font-size: 1rem;
-        transition-property: all;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        color: var(--color-charcoal-1);
+      &:active {
+        .hs-button {
+          transform: translate(.25rem, -.25rem);
+        }
 
+        &:before {
+          transform: translate(.25rem, -.25rem);
+        }
       }
     }
+    .hs-button {
+      color: var(--color-charcoal-1);
+    }
+
   }
+
+  
+
 
   .submitted-message {
     p {
@@ -405,4 +296,21 @@
 
   }
 
+
+
+
+  &.form-wrapper--button-left {
+    .hs_submit {
+      justify-content: flex-start;
+    }
+  }
+
+
+
+
+
+
 }
+
+
+

@@ -44,8 +44,8 @@ var vw = getDocumentWidth(),
 
 function drawDots() {
     var r = 4,
-        cw = 54,
-        ch = 54;
+        cw = 44,
+        ch = 44;
 
     for (
         var x = 20; 
