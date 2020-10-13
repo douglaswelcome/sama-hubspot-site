@@ -36,6 +36,9 @@
 
 }
 
-.panel-two.dark-mode {
+.dark-mode {
+    .panel-two {
+        box-shadow: -1rem 1rem var(--color-charcoal-4);
+    }
 
 }
