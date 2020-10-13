@@ -36,15 +36,17 @@ no-top-pad
 
 
       <div class="card">
+        {% if module.card1.link.url.href %}
         <a href="{{ module.card1.link.url.href }}" >
+          {% endif %}
         <div class="card__inner 
-        {% if module.card1.link %}
+        {% if module.card1.link.url.href %}
         card__inner--hover
         {% endif %}">
-          {% if module.card1.icon %}
+          {% if module.card1.icon.src %}
           <div class="card__icon location-cards__icon">
             <img src="{{ module.card1.icon.src }}" alt="{{ module.card1.icon.alt }}">
-        </div>
+           </div>
           {% endif %}
           <div class="card__title">
             <h4 class="">
@@ -78,16 +80,21 @@ no-top-pad
 
 
         </div>
+        {% if module.card1.link.url.href %}
       </a>
+        {% endif %}
       </div>
 
       <div class="card">
+        {% if module.card2.link.url.href %}
         <a href="{{ module.card2.link.url.href }}" >
+          {% endif %}
+
         <div class="card__inner 
-        {% if module.card2.link %}
+        {% if module.card2.link.url.href %}
         card__inner--hover
         {% endif %}">
-          {% if module.card1.icon %}
+          {% if module.card2.icon.src %}
           <div class="card__icon location-cards__icon">
             <img src="{{ module.card2.icon.src }}" alt="{{ module.card2.icon.alt }}">
         </div>
@@ -124,17 +131,21 @@ no-top-pad
 
 
         </div>
+        {% if module.card2.link.url.href %}
       </a>
+        {% endif %}
       </div>
 
 
       <div class="card">
+        {% if module.card3.link.url.href %}
         <a href="{{ module.card3.link.url.href }}" >
+          {% endif %}
       <div class="card__inner 
-      {% if module.card3.link %}
+      {% if module.card3.link.url.href  %}
       card__inner--hover
       {% endif %}">
-        {% if module.card3.icon %}
+        {% if module.card3.icon.src %}
         <div class="card__icon location-cards__icon">
           <img src="{{ module.card3.icon.src }}" alt="{{ module.card3.icon.alt }}">
       </div>
@@ -171,7 +182,9 @@ no-top-pad
 
 
       </div>
+      {% if module.card3.link.url.href %}
     </a>
+    {% endif %}
       </div>
 
 

@@ -1,0 +1,155 @@
+[{
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-1"
+  },
+  {
+    "name": "top_pad",
+    "label": "Top Padding?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": true
+  },
+  {
+    "name": "left_panel",
+    "label": "Left Panel",
+    "required": false,
+    "locked": false,
+    "children": [
+      {
+      "name": "img",
+      "label": "Image",
+      "required": false,
+      "locked": false,
+      "inline_help_text": "",
+      "help_text": "",
+      "responsive": true,
+      "resizable": true,
+      "type": "image",
+      "default": {
+        "src": "https://source.unsplash.com/random",
+        "alt": null} 
+      },
+      
+      {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      },
+
+      {
+        "name": "body_copy",
+        "label": "Body Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "default": {}
+  },
+
+  {
+    "name": "right_panel",
+    "label": "Right Panel",
+    "required": false,
+    "locked": false,
+    "children": [
+      {
+        "name": "img",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "resizable": true,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null} 
+        },
+      {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      },
+
+      {
+        "name": "body_copy",
+        "label": "Body Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "default": {}
+  }
+]

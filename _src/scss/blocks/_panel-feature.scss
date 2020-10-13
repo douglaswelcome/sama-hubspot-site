@@ -1,12 +1,12 @@
 .panel-feature {
     @extend %grid;
     background-color: var(--color-charcoal-2);
-    @include panel-shadow;
+    box-shadow: -1rem 1rem var(--color-charcoal-6);
 
     &__img {
         grid-column: span 4;
         overflow: hidden;
-        margin-left: -.125rem;
+        margin-right: -.125rem;
         background-size: cover;
         background-position: center;
 
@@ -14,17 +14,18 @@
 
     &__copy {
         grid-column: span 8;
-
+        color: var(--color-white);
         padding: 6rem;
     }
 
     &__subheadline {}
 
     &__awards {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 3rem;
-        display: inline-flex;
+        display: flex;
         column-gap: 3rem;
+        justify-content: flex-start;
 
         img {
             height: auto;
@@ -40,15 +41,19 @@
     &--flip {
         .panel-feature__img {
             grid-column-start: 9/ span 4;
-            grid-row:1;
+            grid-row: 1;
         }
 
         .panel-feature__copy {
             grid-column: 1/ span 8;
-            grid-row:1;
+            grid-row: 1;
         }
     }
 
 
 
+}
+
+.panel-feature.dark-mode{
+    box-shadow: -1rem 1rem var(--color-charcoal-4);
 }

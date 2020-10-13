@@ -1,0 +1,46 @@
+<!-- module html  -->
+<section class="
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+    {% endif %}
+
+    {% if module.top_pad %}
+    {% else %}
+    no-top-pad
+    {% endif %}
+
+">
+    <div class="panel-two">
+        <div class="panel-two__left-panel">
+            <div class="panel-two__img">
+                <img src="{{ module.left_panel.img.src }}" alt="{{ module.left_panel.img.alt }}">
+            </div> 
+            <div class="panel-two__copy">
+            <h4 class="panel-two__headline">
+                {{ module.left_panel.headline }}
+            </h4>
+
+            <p class="panel-two__body">
+                {{ module.left_panel.body_copy }}
+            </p>
+        </div>
+        </div>
+        <div class="panel-two__right-panel">
+            <div class="panel-two__img">
+                <img src="{{ module.right_panel.img.src }}" alt="{{ module.right_panel.img.alt }}">
+            </div> 
+            <div class="panel-two__copy">
+            <h4 class="panel-two__headline">
+                {{ module.right_panel.headline }}
+            </h4>
+
+            <p class="panel-two__body">
+                {{ module.right_panel.body_copy }}
+            </p>
+        </div>
+        </div>
+    </div>
+
+
+</section>
