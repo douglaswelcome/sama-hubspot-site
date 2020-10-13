@@ -6,7 +6,7 @@
     &__img {
         grid-column: span 4;
         overflow: hidden;
-        margin-right: -.125rem;
+        margin-left: -.125rem;
         background-size: cover;
         background-position: center;
 
@@ -42,6 +42,8 @@
         .panel-feature__img {
             grid-column-start: 9/ span 4;
             grid-row: 1;
+            margin-right: -.125rem;
+            margin-left: 0rem;
         }
 
         .panel-feature__copy {
@@ -54,6 +56,8 @@
 
 }
 
-.panel-feature.dark-mode{
+.dark-mode{
+    .panel-feature{
     box-shadow: -1rem 1rem var(--color-charcoal-4);
+    }
 }
