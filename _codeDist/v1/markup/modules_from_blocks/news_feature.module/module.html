@@ -24,9 +24,11 @@
                     {{ module.article1.title }}
                 </h2>
             </div>
+            {% if module.article1.logo.src %}
             <div class="news-feature__logo">
                 <img src="{{ module.article1.logo.src }}" />
             </div>
+            {% endif %}
 
  
             </a>
@@ -48,9 +50,11 @@
                        {{ module.article2.title }}
                      </h4>
                  </div>
+                 {% if module.article2.logo.src %}
                  <div class="news-feature__logo">
                     <img src="{{ module.article2.logo.src }}" />
                 </div>
+                {% endif %}
              </a>
             </div>
 
@@ -66,9 +70,11 @@
                             {{ module.article3.title }}
                         </h4>
                     </div>
+                    {% if module.article3.logo.src %}
                     <div class="news-feature__logo">
                         <img src="{{ module.article3.logo.src }}" />
                     </div>
+                    {% endif %}
                 </a>
             </div>
 
