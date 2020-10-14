@@ -1,17 +1,19 @@
 <!-- module html  -->
 <section class="bg-sunny">
     <div class="grid-wrapper">
-    <div class="big-quote">
-        <div class="big-quote__quote">
-        <h2 class="display-large">
-            {{ module.quote }}
-        </h2>
+        <div class="big-quote">
+            <div class="big-quote__quote">
+                <h2 class="display-large">
+                    {{ module.quote }}
+                </h2>
+            </div>
+            {{ if module.author }}
+            <div class="big-quote__author">
+                <h2 class="display-small">
+                    {{module.author}}
+                </h2>
+            </div>
+            {{ endif }}
+        </div>
     </div>
-        <div class="big-quote__author">
-        <h2 class="display-small">
-            {{module.author}}
-        </h2>
-    </div>
-    </div>
-</div>
 </section>
