@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: left;
-    text-align:left;
+    text-align:center;
 
 
     grid-column-gap: 2rem;
@@ -52,13 +52,13 @@
       
       overflow: hidden;
       grid-row: 1;
-      justify-self: left;
+      justify-self: center;
       display: flex;
       margin-bottom: 1rem;
 
       img {
-        max-width: 3rem;
-        max-height: 3rem;
+        max-width: 10rem;
+        max-height: 10rem;
         width: 100%;
       }
     }
@@ -66,7 +66,7 @@
     .block-title {
       
       grid-row: 2;
-      justify-self: left;
+      justify-self: center;
  
       display: flex;
       align-items: center;
