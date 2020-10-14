@@ -1,0 +1,58 @@
+
+
+<section class="">
+  <div class="hero-lg-img">
+
+    <div class="hero-lg-img__copy">
+      <div class="hero-lg-img__headline">
+          <h1>
+              {{module.headline}}
+          </h1>
+      </div>
+      <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+      <div class="hero-lg-img__subheadline">
+          <h5>
+              {{module.subheadline}}
+          </h5>
+      </div>
+      <div class="hero-lg-img__btn-row">
+
+
+
+          <div class="btn__row">
+              {% if module.cta1 %}
+              <div class="btn__wrapper">
+                  <button class="btn">
+                      {% cta guid="{{ module.cta1 }}" %}
+                </button>
+              </div>
+              {% endif %}
+              {% if module.cta2 %}
+              <div class="btn__wrapper">
+                  <button class="btn btn--secondary">
+                    {% cta guid="{{ module.cta2 }}" %}
+                  </button>
+              </div>
+              {% endif %}
+          </div>
+
+
+
+      </div>
+  </div>
+  <div class="hero-lg-img__img">
+      <img src="{{ module.img.src}}" alt="module.img.alt" />
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  
+</section>
