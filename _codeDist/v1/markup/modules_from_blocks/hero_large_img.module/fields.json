@@ -33,7 +33,7 @@
 "resizable": true,
 "type": "image",
 "default": {
-  "src": "",
+  "src": "https://source.unsplash.com/random",
   "alt": null} 
 },
 

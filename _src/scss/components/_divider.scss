@@ -2,7 +2,7 @@
     display: inline-block;
     width: .125rem;
     position:relative;
-    background-color: $color-sunshine;
+    background-color: var(--color-charcoal-6);
 
     &--horizontal {
         
@@ -24,12 +24,7 @@
 
     &--negative {
         
-        &::before {
-            background-color: $color-charcoal-7; 
-        }
-        &::after {
-            background-color: $color-sunshine;
-        }
+        background-color:var(--color-sunshine);
     }
 
     &--no-shadow {

@@ -37,7 +37,7 @@
         </div>
       </div>
 
-    {% endif %}
+      {% endif %}
     </div>
 
 
@@ -47,45 +47,111 @@
 
     <div class="gallery-block__row gallery-block__row--1">
       {% for image in module.row1_gallery %}
-      <div class="block-img">
-        <img src="{{ image.img.src }}" />
-      </div>
 
-        <div class="block-title">
+     
+<!--IMAGE-->
+
+        {% if image.link.url.href|length > 1 %}
+        <a href="{{image.link.url.href}}" class="gallery-block__item-img">
+         <img src="{{ image.img.src }}" />
+         </a>
+        {% else %}
+        <div class="gallery-block__item-img">
+          <img src="{{ image.img.src }}" />
+        </div>
+        {% endif %}
+
+       <!-- TITLE --> 
+
+        {% if image.link.url.href|length > 1 %}
+        <div class="gallery-block__item-title">
           <h4 class="">
             {{ image.title }}
           </h4>
+          <div class="hyperlink__arrow ">
+            <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+              <style type="text/css">
+  
+              </style>
+              <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+    C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+    c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+            </svg>
+          </div>
         </div>
+        {% else %}
+        <div class="gallery-block__item-title">
+          <h4 class="">
+            {{ image.title }} 
+          </h4>
+        </div>
+        {% endif %}
 
-        <div class="block-body">
+        <div class="gallery-block__item-body">
           <p>
             {{ image.body_copy }}
           </p>
         </div>
-        {% endfor %}
+        
 
-      </div>
+      {% endfor %}
+
+    </div>
 
       {% if module.row2_gallery %}
       <div class="gallery-block__row gallery-block__row--2">
         {% for image in module.row2_gallery %}
-        <div class="block-img">
+
+
+        <!-- IMAGE -->
+        {% if image.link.url.href|length > 1 %}
+        <a href="{{image.link.url.href}}" class="gallery-block__item-img">
+         <img src="{{ image.img.src }}" />
+         </a>
+        {% else %}
+        <div class="gallery-block__item-img">
           <img src="{{ image.img.src }}" />
-      </div>
-
-          <div class="block-title">
-            <h4 class="">
-              {{ image.title }}
-            </h4>
-          </div>
-
-          <div class="block-body">
-            <p>
-              {{ image.body_copy }}
-            </p>
-          </div>
-          {% endfor %}
-
         </div>
-        {%endif%}
+        {% endif %}
+
+
+<!-- TITLE -->
+
+          {% if image.link.url.href|length > 1 %}
+        <div class="gallery-block__item-title">
+          <h4 class="">
+            {{ image.title }}
+          </h4>
+          <div class="hyperlink__arrow ">
+            <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+              <style type="text/css">
+  
+              </style>
+              <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+    C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+    c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+            </svg>
+          </div>
+        </div>
+        {% else %}
+        <div class="gallery-block__item-title">
+          <h4 class="">
+            {{ image.title }} 
+          </h4>
+        </div>
+        {% endif %}
+
+            
+
+            <div class="gallery-block__item-body">
+              <p>
+                {{ image.body_copy }}
+              </p>
+            </div>
+            {% endfor %}
+
+          </div>
+          {%endif%}
 </section>
