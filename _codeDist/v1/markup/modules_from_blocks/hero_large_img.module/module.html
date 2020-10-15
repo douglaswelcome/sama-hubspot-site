@@ -1,6 +1,6 @@
 
 
-<section class="dark-mode hero-lg-img__section">
+<section class=" hero-lg-img__section">
     <div class="hero-lg-img__bg-wrapper">
 
         <div class="hero-lg-img__bg1"></div>
@@ -14,21 +14,23 @@
   <div class="hero-lg-img__content">
 
     <div class="hero-lg-img__copy">
+        <div class="hero-lg-img__copy-panel">
       <div class="hero-lg-img__headline">
           <h1>
               {{module.headline}}
           </h1>
       </div>
-      <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+      <div class="divider-line divider-line--horizontal "></div>
       <div class="hero-lg-img__subheadline">
           <h5>
-              {{module.subheadline}}
+              {{module.subheadline}} {{module.cta1}}
           </h5>
       </div>
+      {% if module.cta1 %}
       <div class="hero-lg-img__btn-row">
 
 
-
+        
           <div class="btn__row">
               {% if module.cta1 %}
               <div class="btn__wrapper">
@@ -45,10 +47,13 @@
               </div>
               {% endif %}
           </div>
+         
 
 
 
       </div>
+      {% endif %}
+    </div>
   </div>
   <div class="hero-lg-img__img">
     <div class="hero-lg-img__img-grad"></div>

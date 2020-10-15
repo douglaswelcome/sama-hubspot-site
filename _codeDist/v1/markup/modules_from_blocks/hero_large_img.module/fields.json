@@ -30,7 +30,7 @@
 "inline_help_text": "",
 "help_text": "",
 "responsive": true,
-"resizable": true,
+"resizable": false,
 "type": "image",
 "default": {
   "src": "https://source.unsplash.com/random",
