@@ -1,19 +1,21 @@
 .panel-avatar-quote {
     height: auto;
     @extend %grid;
+    color:var(--color-charcoal-1);
 
     &__back {
         grid-row: 1;
-        grid-column: 5 / span 6;
+        grid-column: 5 / span 7;
         background-color: var(--color-charcoal-1);
         height:100%;
     }
 
     &__front {
         grid-row:1;
-        grid-column: 3 / span 7;
+        grid-column: 2 / span 9;
         margin: 3rem 0;
         background-color: var(--color-sunshine);
+        color:var(--color-charcoal-1);
 
     }
 
@@ -46,7 +48,7 @@
 
     &__author-block {
         display: grid;
-        grid-template-columns: 10rem 1fr;
+        grid-template-columns: auto 1fr;
         column-gap: 1rem;
         align-items: center;
 
@@ -55,7 +57,7 @@
 
     &__author-text {
         display:grid;
-        row-gap: 1rem;
+        row-gap: .25rem;
     }
 
     &__author {
@@ -63,8 +65,8 @@
     }
 
     &__headshot-wrapper{
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: 8rem;
         border-radius: 50%;
         overflow: hidden;
 
@@ -73,7 +75,7 @@
     &__headshot {
         height:100%;
         width:100%;
-       object-fit:cover;
+        object-fit:cover;
 
     }
 

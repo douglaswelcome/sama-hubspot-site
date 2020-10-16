@@ -3,8 +3,11 @@
     align-items: center;
 
     &__copy {
-        grid-column: span 6;
-        padding-right:1rem
+        grid-column: 1/ span 6;
+        padding-right:1rem;
+        grid-row: 1;
+        position:relative;
+        z-index:1;
         
     }
 
@@ -15,10 +18,18 @@
 
     }
     &__img{
-        padding-left:1rem;
-        grid-column:span 6;
-        img{
-            width:100%;
+        grid-column: 5 /span 8;
+        grid-row: 1;
+        height: 33rem;
+
+        display: flex;
+        
+
+        img {
+            width: 100%;
+            
+            object-fit: contain;
+            object-position: 50% 50%;
         }
     }
 }

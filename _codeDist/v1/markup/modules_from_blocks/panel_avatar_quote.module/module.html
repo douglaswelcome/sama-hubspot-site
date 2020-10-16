@@ -1,5 +1,10 @@
 <!-- module html  -->
-<section class="">
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+">
     <div class="panel-avatar-quote">
         <div class="panel-avatar-quote__back">
 

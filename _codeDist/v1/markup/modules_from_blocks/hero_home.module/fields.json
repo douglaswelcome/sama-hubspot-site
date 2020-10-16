@@ -31,7 +31,7 @@
     "resizable": false,
     "type": "image",
     "default": {
-      "src": "https://source.unsplash.com/random/600x600",
+      "src": "https://source.unsplash.com/random",
       "alt": null
     }
   },

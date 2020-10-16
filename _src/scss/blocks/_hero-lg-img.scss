@@ -16,7 +16,7 @@
     }
 
     &__bg1 {
-        height: calc(100% - 9rem);
+        min-height: calc(100% - 9rem);
         width: 100%;
         background-color: var(--color-charcoal-1);
 
@@ -62,7 +62,7 @@
 
         grid-column: 4 / span 9;
         grid-row: 1;
-        height: 40rem;
+        min-height: 40rem;
         box-shadow: -1rem 1rem var(--color-charcoal-4);
         position: relative;
 
