@@ -3,11 +3,11 @@
     align-items: center;
 
     &__copy {
-        grid-column: 1/ span 6;
+        grid-column: 1/ span 5;
         padding-right:1rem;
         grid-row: 1;
         position:relative;
-        z-index:1;
+
         
     }
 
@@ -18,18 +18,20 @@
 
     }
     &__img{
-        grid-column: 5 /span 8;
+        grid-column: 6 /span 7;
         grid-row: 1;
         height: 33rem;
 
         display: flex;
-        
+        height:auto;
+        width:auto;
+
 
         img {
             width: 100%;
-            
+
             object-fit: contain;
-            object-position: 50% 50%;
+            object-position: 100% 50%;
         }
     }
 }

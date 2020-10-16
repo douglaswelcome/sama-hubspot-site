@@ -14,10 +14,10 @@
                     {{module.subheadline}}
                 </h5>
             </div>
+
+
+            {% if module.cta1 %}
             <div class="two-block-hero__btn-row">
-
-
-
                 <div class="btn__row">
                     {% if module.cta1 %}
                     <div class="btn__wrapper">
@@ -34,10 +34,9 @@
                     </div>
                     {% endif %}
                 </div>
-
-
-
             </div>
+
+            {% endif %}
         </div>
         <div class="two-block-hero__img">
             <img src="{{ module.image.src}}" alt="module.img.alt" />
