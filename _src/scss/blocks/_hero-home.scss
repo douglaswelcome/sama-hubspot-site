@@ -7,8 +7,9 @@
     }
 
     &__copy {
-        padding-top: 3rem;
-        grid-column: 1 / span 4;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        grid-column: 1 / span 6;
         padding-right: 1rem;
         grid-row: 1;
 
@@ -22,6 +23,7 @@
     }
 
     &__img {
+        
         grid-column: 5 /span 8;
         grid-row: 1;
         clip-path: circle(120% at 100% 94%);
@@ -30,6 +32,7 @@
 
         align-content: center;
         display: flex;
+        display:none;
 
         img {
             width: 100%;
