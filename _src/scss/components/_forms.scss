@@ -83,6 +83,22 @@
 
   }
 
+  .hs-form input[type="checkbox"],
+  .hs-form input[type="radio"]
+  {
+    width: auto;
+
+  }
+
+  label.hs-form-booleancheckbox-display {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    column-gap: .75rem;
+  }
+
+
+
+
   .hs-form .hs-error-msgs label {
     font-size: .7rem;
     color: var(--color-charcoal-2)
@@ -97,9 +113,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .hs-form input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
+  
 
   .hs_submit {
     display: flex;
@@ -175,6 +189,16 @@
     margin-top: 15px;
   }
 
+  .legal-consent-container {
+
+  
+    .hs-form-booleancheckbox-display>span {
+      margin-left:0px;
+    }
+   
+
+  }
+
 }
 
 
@@ -242,7 +266,10 @@
   }
 
 
+
+
   .legal-consent-container {
+   
     span {
       color: var(--color-charcoal-7);
     }

@@ -206,6 +206,24 @@ h6 a {
   }
 }
 
+.dark-mode .card {
+
+  p a,
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: var(--color-charcoal-2);
+    
+    &:hover {
+      color: var(--color-charcoal-4);
+
+    }
+  }
+}
+
 
 
 

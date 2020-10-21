@@ -2,14 +2,13 @@
     templateType: page
     isAvailableForNewContent: false
 -->
-<header class="dark-mode bg-charcoal-1">
-  <div class="header">
-    <div class="header-desktop-wrapper">
+<header class="dark-mode desktop-header">
 
 
-      <div class="desktop-header">
-        <div class="logo">
-          <a href="https://www.samasource.com">
+
+  <div class="desktop-header__inner">
+
+    <a href="https://www.samasource.com" class="desktop-header__logo">
           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4244.34 636">
             <title>logo</title>
             <g id="Layer_2" data-name="Layer 2">
@@ -46,39 +45,61 @@
             </g>
           </svg>
         </a>
+
+
+    <menu class="desktop-header__nav ">
+      <li class="desktop-header__nav-item" id="platform">
+        <p class="bold desktop-header__nav-item-label">Platform</p>
+        <div class="card desktop-header__nav-card">
+          <div class="card__inner desktop-header__link-list">
+            <a href="" class="desktop-header__card-link">
+              <p class="bold">
+                How It Works
+              </p>
+            </a>
+
+
+            <a href="" class="desktop-header__card-link">
+              <p class="bold">
+                Video Annotation
+              </p>
+            </a>
+
+            <a href="" class="desktop-header__card-link">
+              <p class="bold">
+                Blah 
+              </p>
+            </a>
+
+            <a href="" class="desktop-header__card-link">
+              <p class="bold">
+               Blah Blah
+              </p>
+            </a>
+          </div>
+
         </div>
+      </li>
 
-        <menu class="desktop-menu">
-          <li id="products">
-            <h6>Solutions</h6>
-          </li>
 
-          <li id="why">
-            <h6>Why Samasource</h6>
-          </li>
-          <li id="about">
-            <h6>About</h6>
-          </li>
-          <li id="resources">
-            <h6>Resources</h6>
-          </li>
-        </menu>
 
-        <div class="header-cta">
-                {% if module.cta %}
-                <div class="btn__wrapper">
-                    <button class="btn btn--secondary btn--small">
+    </menu>
+
+    <div class="desktop-header__cta">
+      {% if module.cta %}
+      <div class="btn__wrapper">
+        <button class="btn btn--secondary btn--small">
                         {% cta guid="{{ module.cta }}" %}
                   </button>
-                </div>
-                        {% endif %}
-        </div>
       </div>
-
-      {# {% include '/v1/markup/blocks_static/desktop-submenu.html' %} #}
+      {% endif %}
     </div>
+  </div>
 
-    {# <div class="site-header mobile-header">
+  {# {% include '/v1/markup/blocks_static/desktop-submenu.html' %} #}
+
+
+  {# <div class="site-header mobile-header">
     <div class="logo">
       <a href="https://www.samasource.com">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 4244.34 636">
@@ -128,5 +149,5 @@
   </div>
 
   {% include '/v1/markup/blocks_static/mobile-submenu.html' %} #}
-  </div>
+
 </header>

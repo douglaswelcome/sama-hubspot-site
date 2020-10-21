@@ -48,16 +48,16 @@
             opacity: 0;
          
             &#people{
-                animation: 2s ease 0s normal forwards 1 fadein;
+                animation:fadein 2s ease normal forwards 1 ;
             }
             &#cars{
-                animation: 2s ease 1s normal forwards 1 fadein;
+                animation:fadein 2s ease 1s  normal forwards 1 ;
             }
             &#sign{
-                animation: 2s ease 2s normal forwards 1 fadein;
+                animation:fadein 2s ease 2s normal forwards 1 ;
             }
             &#trolley{
-                animation: 2s ease 3s normal forwards 1 fadein;
+                animation:fadein 2s ease 3s normal forwards 1;
             }
         }
 
