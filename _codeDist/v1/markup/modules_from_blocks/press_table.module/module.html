@@ -8,8 +8,9 @@
     <div class="news-feature__headline">
       <h2 class="display-small">
         {{ module.headline }}
-      </h2>
-      <p>Read about out amazing work in the world and why we love magic and suspense</p>
+    </h2>
+    <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+    <h5>{{ module.subheadline}}</h5>
     </div>
 
     {% for row in table %}
@@ -17,7 +18,7 @@
 
     <div class=" news-feature__main news-feature--article-bg">
 
-      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background.url}})">
+      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
 
 
             <div class="news-feature__category">
@@ -45,7 +46,7 @@
       {% for row in table %}
       {% if row.featured_order.name=="Second" %}
       <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
                 <div class="news-feature__category">
                     <p class="bold">
                       {{ row.type.name }}
@@ -69,7 +70,7 @@
       {% for row in table %}
       {% if row.featured_order.name=="Third" %}
       <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
               <div class="news-feature__category">
                   <p class="bold">
                     {{ row.type.name }}
@@ -117,7 +118,7 @@
 <section class="press-table__section">
   <div class="press-table">
     {% for row in table %}
-    <a href="{{row.article_url}}" type="{{row.type}}" class="press-table__press-link">
+    <a href="{{row.article_url}}" type="{{row.type}}" class="press-table__press-link" target="_blank">
     <div class="press-table__title">
       <p>{{row.date|datetimeformat('%B %e, %Y')}}</p>
       <div class="divider-line divider-line--horizontal"></div>

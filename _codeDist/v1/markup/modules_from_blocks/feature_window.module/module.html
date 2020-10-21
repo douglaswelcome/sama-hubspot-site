@@ -24,19 +24,19 @@
                 {% for item in module.features %}
                 <div class="feature-window__detail-wrapper 
                 {% if loop.index == 1 %} active {% endif %}">
+                    <div class="feature-window__description">
+                        <h5>
+                            {{ item.description}}
+                        </h5>
+                    </div>
                     <div class="feature-window__img">
                         <img src="{{ item.img.src }}" />
                     </div>
-                    <div class="feature-window__description">
-                          <h5> 
-                              {{ item.description}}
-                             </h5>
+
+
                     </div>
-                    
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </div>
-    </div>
 </section>
-
