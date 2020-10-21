@@ -59,3 +59,14 @@
 
 }
 
+.dark-mode .panel-quote {
+    
+
+    &__quote-text{
+        color:var(--color-charcoal-1);
+    }
+
+    &__quote-author {
+        color:var(--color-charcoal-1);
+    }
+}
