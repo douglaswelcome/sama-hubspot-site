@@ -1,0 +1,37 @@
+.hero-fidy {
+    @extend %grid;
+    align-items: center;
+
+    &__copy {
+        grid-column: 1/ span 6;
+        padding-right:1rem;
+        grid-row: 1;
+        position:relative;
+
+        
+    }
+
+    &__btn-row{
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+
+    }
+    &__img{
+        grid-column: 7 /span 6;
+        grid-row: 1;
+        height: 33rem;
+
+        display: flex;
+        height:auto;
+        width:auto;
+
+
+        img {
+            width: 100%;
+
+            object-fit: contain;
+            object-position: 100% 50%;
+        }
+    }
+}
