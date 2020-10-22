@@ -37,7 +37,7 @@
 }
 
 .dark-mode {
-    .panel-two {
+    &__left-panel, &__right-panel {
         box-shadow: -1rem 1rem var(--color-charcoal-4);
     }
 

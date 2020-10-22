@@ -4,7 +4,12 @@
     dark-mode
     {{ module.bg_color }}
     {% endif %}
-    location-cards__section
+    location-cards__section 
+
+    {% if module.last_section == true %}
+    location-cards__last-section
+    {% endif %}
+
 ">
    
 

@@ -70,5 +70,16 @@
     ],
     "type": "group",
     "default": {}
-  }
+  },
+  {
+  "name": "last_section",
+  "label": "Last Section?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "inline_help_text": "",
+  "help_text": "",
+  "default": false 
+}
+
 ]
