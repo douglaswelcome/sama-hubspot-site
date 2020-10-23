@@ -217,6 +217,7 @@ h6 a {
   h5 a,
   h6 a {
     color: var(--color-charcoal-2);
+    text-decoration: underline var(--color-charcoal-6);
     
     &:hover {
       color: var(--color-charcoal-4);
