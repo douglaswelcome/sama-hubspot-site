@@ -114,7 +114,7 @@
   }
 
   &__link-list {
-    display: inline-grid;
+    display: grid;
     grid-auto-flow: row;
     row-gap: 1rem;
   }
@@ -160,8 +160,22 @@
     display: grid;
     grid-auto-flow: column;
     column-gap: 1.5rem;
-    align-content: start;
+    align-items: start;
 
+  }
+
+  &__vert-divider {
+    align-self: center;
+    height: 100%
+  }
+
+&__col-label {
+  font-weight: 300;
+}
+
+  &__label-divider {
+    margin-top: 0rem;
+    margin-bottom: .5rem;
   }
 }
 
