@@ -42,7 +42,7 @@
       {
         "name": "type",
         "label": "Is this an image or svg?",
-        "required": false,
+        "required": true,
         "locked": false,
         "display": "select",
         "inline_help_text": "",
