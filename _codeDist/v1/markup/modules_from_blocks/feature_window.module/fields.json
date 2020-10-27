@@ -11,19 +11,22 @@
     "placeholder": "",
     "default": null
   },
+
+
   {
-    "id": "features",
     "name": "features",
-    "type": "group",
     "label": "Features",
+    "required": false,
+    "locked": false,
     "occurrence": {
-      "min": 1,
+      "min": null,
       "max": null,
       "sorting_label_field": null,
-      "default": 1
+      "default": null
     },
-    "children": [{
-        "id": "features.da_name",
+
+    "children": [
+      {
         "name": "da_name",
         "label": "Feature Name",
         "sortable": false,
@@ -37,7 +40,28 @@
         "default": "Feature 1"
       },
       {
-        "id": "features.img",
+        "name": "type",
+        "label": "Is this an image or svg?",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "inline_help_text": "",
+        "help_text": "",
+        "choices": [
+          [
+            "img",
+            "Image"
+          ],
+          [
+            "svg",
+            "SVG"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": null
+      },
+      {
         "name": "img",
         "label": "Feature Image",
         "sortable": false,
@@ -51,7 +75,18 @@
         }
       },
       {
-        "id": "features.description",
+        "name": "svg",
+        "label": "SVG",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "inline_help_text": "Paste SVG into Code Editor",
+        "help_text": "",
+        "enabled_features": ["source_code"],
+        "default": null
+      },
+      {
+
         "name": "description",
         "label": "Feature Description",
         "sortable": false,
@@ -64,7 +99,13 @@
         "placeholder": "",
         "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
       }
-    ]
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
   }
+
+
 
 ]
