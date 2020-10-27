@@ -71,6 +71,12 @@
     &__img {
         width:100%;
         align-self:center;
+        height: 500px;
+    width: 100%;
+    /* display: flex; */
+    overflow: hidden;
+    display: grid;
+    align-content: center;
 
         img{
             display:block;
