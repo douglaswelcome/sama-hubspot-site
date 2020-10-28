@@ -14,8 +14,6 @@ function featureWindow() {
         $('.feature-window__detail-wrapper').removeClass('active');
         windowContent[i].classList.add('active');
     });
-
-
 }
 
 $(featureWindow());
