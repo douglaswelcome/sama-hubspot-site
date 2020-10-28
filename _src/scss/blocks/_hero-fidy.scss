@@ -8,6 +8,10 @@
         grid-row: 1;
         position:relative;
 
+        @include breakpoint (w-sm){
+            grid-column: 1/span 12;
+        }
+
         
     }
 
@@ -26,6 +30,11 @@
         height:auto;
         width:auto;
 
+        @include breakpoint (w-sm){
+            grid-column: 1/span 12;
+            grid-row: 2;
+
+        }
 
         img {
             width: 100%;
