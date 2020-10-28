@@ -5,6 +5,10 @@
   &__body {
     grid-column: 3 / span 8;
     text-align: center;
+
+    @include breakpoint (w-sm){
+      grid-column: 1 / span 12;
+    }
     
 
   }

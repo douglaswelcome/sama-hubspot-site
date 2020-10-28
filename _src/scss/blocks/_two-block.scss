@@ -8,16 +8,13 @@
 
   @include breakpoint(w-sm) {
     grid-template-columns: 1fr;
+
+    row-gap: 1.5rem;
   }
 
   &__copy {
 
     text-align: left;
-
-
-    @include breakpoint(w-sm) {
-      padding: 1rem;
-    }
 
   }
 
@@ -40,13 +37,11 @@
       width: calc(100% - 3rem);
       line-height: 1;
       padding-bottom: 3rem;
-    }
 
-
-
-
-    @include breakpoint(w-sm) {
-      padding: 1rem;
+       @include breakpoint (w-sm){
+        width: calc(100% - 1rem);
+        padding-bottom: 1rem;
+       } 
     }
 
   }
@@ -57,8 +52,8 @@
     right: 0;
     z-index: -1;
     background-color: var(--color-charcoal-7);
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
   }
 
 
@@ -77,12 +72,6 @@
     grid-column: 1;
     grid-row: 1;
     text-align: right;
-
-    img {
-      width: calc(100% - 3rem);
-      line-height: 1;
-      padding-bottom: 3rem;
-    }
 
   }
 
