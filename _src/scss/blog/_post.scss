@@ -1,6 +1,12 @@
 .blog-body {
   @extend %grid;
   max-width: 40rem;
+  padding-top: 3rem;
+  padding-bottom:3rem;
+
+  &__inner{
+  grid-column: span 12;
+  }
 
   .hubby-cta {
     text-decoration: none;
