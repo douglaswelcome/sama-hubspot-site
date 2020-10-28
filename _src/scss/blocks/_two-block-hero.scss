@@ -2,11 +2,19 @@
     @extend %grid;
     align-items: center;
 
+    @include breakpoint (w-sm){
+        row-gap: 1.5rem;
+    }
+
     &__copy {
         grid-column: 1/ span 5;
         padding-right:1rem;
         grid-row: 1;
         position:relative;
+
+        @include breakpoint (w-sm){
+            grid-column: 1/ span 12;
+        }
 
         
     }
@@ -25,6 +33,10 @@
         display: flex;
         height:auto;
         width:auto;
+        @include breakpoint (w-sm){
+            grid-column: 1/ span 12;
+            grid-row: auto;
+        }
 
 
         img {

@@ -5,6 +5,10 @@
     grid-column: 3 /span 8;
     text-align: center;
     margin-bottom:4rem;
+
+    @include breakpoint (w-sm){
+      grid-column: 1 /span 12;
+    }
   
 
     
@@ -25,9 +29,14 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: left;
     text-align:center;
-
-
     grid-column-gap: 2rem;
+
+    @include breakpoint (w-sm){
+      grid-column: 1 /span 12;
+      grid-template-columns: 1fr;
+
+  
+    }
     
 
     // @include breakpoint(w-sm) {
@@ -61,6 +70,11 @@
         max-height: 6rem;
         width: 100%;
       }
+
+      @include breakpoint (w-sm){
+        grid-row: auto;
+      }
+
     }
 
     .block-title {
@@ -71,12 +85,20 @@
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
+      @include breakpoint (w-sm){
+        grid-row: auto;
+      }
 
     }
 
     .block-body {
       
       grid-row: 3;
+      @include breakpoint (w-sm){
+        grid-row: auto;
+
+        margin-bottom: 1.5rem;
+      }
 
     }
 

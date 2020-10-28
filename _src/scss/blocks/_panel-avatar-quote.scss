@@ -70,6 +70,8 @@
         @include breakpoint (w-sm) {
             grid-template-columns: 1fr;
             row-gap: 1.25em;
+            justify-items: right;
+    text-align: right;
         }
 
 
