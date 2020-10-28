@@ -112,6 +112,9 @@
 
         @include breakpoint (w-sm) {
           padding-bottom: 1.5rem;
+          justify-self: center;
+          text-align: center;
+        
         }
   
       }
