@@ -1,0 +1,118 @@
+[
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+    [
+      "bg-charcoal-1",
+      "Charcoal 1 (Darkest)"
+    ],
+    [
+      "bg-charcoal-2",
+      "Charcoal 2 (Medium Dark)"
+    ],
+    [
+      "bg-charcoal-3",
+      "Charcoal 3 (Light Dark)"
+    ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default":  "bg-charcoal-1"   
+
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+    {
+    "name": "card1_title",
+    "label": "Card 1 Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  }, 
+  {
+    "name": "card1_body",
+    "label": "Card 1 Body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  }, 
+  {
+    "name": "cta1",
+    "label": "Card 1 Hyperlink CTA",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "type": "cta",
+    "default": null 
+  }, 
+  {
+    "name": "card2_title",
+    "label": "Card 2 Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  },
+  {
+    "name": "card2_body",
+    "label": "Card 2 Body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  },
+  {
+  "name": "cta2",
+  "label": "Card 2 Hyperlink CTA",
+  "required": false,
+  "locked": false,
+  "help_text": "",
+  "type": "cta",
+  "default": null 
+}
+]

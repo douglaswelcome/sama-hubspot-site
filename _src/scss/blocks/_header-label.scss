@@ -1,0 +1,21 @@
+.header-label {
+ @extend %grid;
+
+ &__section {
+  padding-bottom: 2rem;
+ }
+
+  &__headline {
+    grid-column: span 12;
+    border-bottom: 2px solid;
+    border-bottom-color: var(--color-charcoal-7);
+    padding-bottom: .5rem;
+  }
+}
+
+.dark-mode {
+   .header-label__headline{
+     color:var(--color-white);
+     border-bottom-color: var(--color-sunshine);
+   }
+}

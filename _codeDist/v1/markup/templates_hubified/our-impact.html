@@ -1,0 +1,42 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+
+{% module "module_20201007104337" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+<div class="flex-content">
+
+{% module "module_20201019162244" path="/v1/markup/modules_from_blocks/hero_lg_img", label="Hero" %}
+
+{% module "module_20201012215346" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea" %}
+
+{% module "module_20201012215410" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea" %}
+
+{% module "module_20201012215423" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea" %}
+
+{% module "module_20201012223609" path="/v1/markup/modules_from_blocks/panel_feature", label="Fancy Feature" %}
+
+{% module "module_20201012231411" path="/v1/markup/modules_from_blocks/panel_two", label="Dual Panels" %}
+
+{% module "module_20201014115713" path="/v1/markup/modules_from_blocks/brag_bar", label="Brag Logos" %}
+
+{% module "module_20201014115623" path="/v1/markup/modules_from_blocks/panel_quote", label="Big Quote" %}
+
+{% module "module_20201014115644" path="/v1/markup/modules_from_blocks/split_cta", label="CTA Module" %}
+
+
+
+
+
+</div>
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

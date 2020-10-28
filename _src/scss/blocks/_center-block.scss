@@ -1,271 +1,210 @@
 .center-block {
-  position: relative;
-  margin-bottom: 8.7rem;
-  padding-right: 0.7rem;
+  @extend %grid;
+  row-gap: 3rem;
 
-  @include breakpoint (w-sm) {
-    margin-bottom: 3.75rem;
-    ;
+  &__intro {
+    grid-column: 3 /span 8;
+    text-align: center;
+
   }
 
-  .label-tab {
-    transform: translateY(1.5rem);
+  &__headline {
+    margin-bottom: 1rem;
   }
 
+  &__subheadline {
+    margin-bottom: 1rem;
+  }
+
+  &__link {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OLD SHit
+
+&.faq {
 
 
   .center-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    text-align: center;
-    position: relative;
-    padding: 4rem;
+    text-align: left;
 
-    @include breakpoint(w-sm) {
-      padding: 2rem 1.5rem 2rem;
+  }
+
+  .faq__question {
+    display: inline-block;
+    height: auto;
+    cursor: pointer;
+
+    svg {
+      height: .75rem;
+      margin-right: .5rem;
+      fill: var(--color-charcoal-1);
+      transition: transform .2s ease-in-out;
+
     }
 
-    &.center-content--w-label {
-      padding: 6rem 4rem 3rem;
+    &.active {
+      svg {
+        transform: rotate(90deg);
+        transition: transform .2s ease-in-out;
+      }
+    }
+  }
+
+  .faq__answer {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+
+    &--list {
+      padding-left: 3rem;
+      line-height: 1.4;
+      margin-bottom: .5rem;
+    }
+
+    &--text {
+
+      margin-bottom: .5rem;
+    }
+  }
+
+
+
+
+}
+
+&.vision-block {
+  .center-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85vw;
+    text-align: center;
+    position: relative;
+    padding: 6rem 4rem 0;
+
+    @include breakpoint(w-med) {
+      padding: 4rem 0 0;
+    }
+
+
+
+    button {
+      margin-right: 3rem;
+      margin-bottom: 3rem;
 
       @include breakpoint(w-sm) {
-        
+        margin: 0 auto 3rem;
+        display: block;
       }
     }
 
+    button.secondary::after,
+    button.secondary::before {
+      border-width: .125rem;
 
-
-    @include breakpoint(w-med) {
-      width: calc(90% - 6vw);
     }
 
-    @include breakpoint(w-sm) {
-      width: calc(100% - 6vw);
+    .button-content {
+      display: grid;
+      grid-template-columns: 4rem 7rem;
+      margin: 0.5rem;
+      grid-column-gap: 1rem;
+      align-items: center;
     }
 
-    h5,
-    p, h4 {
-      margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
+
+    h6 {
+      text-align: left;
+      font-weight: 700;
+    }
+  }
+
+  .vision-header {
+    margin-bottom: 4.5rem;
+  }
+}
+
+&.reflect {
+  padding-left: 0.75rem;
+  padding-right: 0;
+
+  .center-content {
+
+    &::before,
+    &:after {
+      border-radius: 0 0 3rem 0;
     }
 
     &::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: $color-white;
-      border: 0.25rem solid $color-kennedy;
-      border-radius: 0 0 0 3rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate3d(1rem, 1rem, 0);
-      z-index: -2;
-    }
-
-    &::after {
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: $color-white;
-      border: 0.25rem solid $color-kennedy;
-      border-radius: 0 0 0 3rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    &--hide-cards {
-
-      &::after,
-      &::before {
-        content: none;
-      }
-    }
-
-    .content-ups,
-    h4,
-    h5,
-    p,
-    ol {
-      position: relative;
-      z-index: 1;
-      color: $color-charcoal !important;
-    }
-
-
-
-  }
-
-  &.faq {
-
-
-    .center-content {
-      text-align: left;
-
-    }
-
-    .faq__question {
-      display: inline-block;
-      height: auto;
-      cursor: pointer;
-
-      svg {
-        height: .75rem;
-        margin-right: .5rem;
-        fill: $color-charcoal;
-        transition: transform .2s ease-in-out;
-
-      }
-
-      &.active {
-        svg {
-          transform: rotate(90deg);
-          transition: transform .2s ease-in-out;
-        }
-      }
-    }
-
-    .faq__answer {
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
-
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.2s ease-in-out;
-
-      &--list {
-        padding-left: 3rem;
-        line-height: 1.4;
-        margin-bottom: .5rem;
-      }
-
-      &--text {
-
-        margin-bottom: .5rem;
-      }
-    }
-
-
-
-
-  }
-
-  &.vision-block {
-    .center-content {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 85vw;
-      text-align: center;
-      position: relative;
-      padding: 6rem 4rem 0;
-
-      @include breakpoint(w-med) {
-        padding: 4rem 0 0;
-      }
-
-
-
-      button {
-        margin-right: 3rem;
-        margin-bottom: 3rem;
-
-        @include breakpoint(w-sm) {
-          margin: 0 auto 3rem;
-          display: block;
-        }
-      }
-
-      button.secondary::after,
-      button.secondary::before {
-        border-width: .125rem;
-
-      }
-
-      .button-content {
-        display: grid;
-        grid-template-columns: 4rem 7rem;
-        margin: 0.5rem;
-        grid-column-gap: 1rem;
-        align-items: center;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      h6 {
-        text-align: left;
-        font-weight: 700;
-      }
-    }
-
-    .vision-header {
-      margin-bottom: 4.5rem;
+      transform: translate3d(-1rem, 1rem, 0);
     }
   }
+}
 
-  &.reflect {
-    padding-left: 0.75rem;
-    padding-right: 0;
-
-    .center-content {
-
-      &::before,
-      &:after {
-        border-radius: 0 0 3rem 0;
-      }
-
-      &::before {
-        transform: translate3d(-1rem, 1rem, 0);
-      }
-    }
-  }
-
-  &--feature {
-    .center-content {
-      padding: 0rem 6rem;
-
-      @include breakpoint (w-sm) {
-        padding: 0;
-      }
-
-      &__showcase {
-        margin-top: 3rem;
-
-        img {
-          max-width: 50rem;
-        }
-      }
-    }
-  }
-
-
-
-  &__form {
-    max-width: 35rem;
-    margin-right: auto;
-    margin-left: auto;
-
-    @include breakpoint (w-med) {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+&--feature {
+  .center-content {
+    padding: 0rem 6rem;
 
     @include breakpoint (w-sm) {
-      padding-left: 0rem;
-      padding-right: 0rem;
+      padding: 0;
     }
 
-    &--password{
-      margin-top: 1.75rem;
+    &__showcase {
+      margin-top: 3rem;
+
+      img {
+        max-width: 50rem;
+      }
     }
   }
+}
 
-  &__head {
-    margin-bottom: 1.5rem;
+
+
+&__form {
+  max-width: 35rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint (w-med) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
+
+  @include breakpoint (w-sm) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  &--password {
+    margin-top: 1.75rem;
+  }
+}
+
+&__head {
+  margin-bottom: 1.5rem;
+}
 
 
 
@@ -332,4 +271,3 @@
     }
   }
 }
-

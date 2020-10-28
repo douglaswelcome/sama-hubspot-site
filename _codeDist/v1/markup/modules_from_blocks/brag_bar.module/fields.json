@@ -1,0 +1,47 @@
+[{
+
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "The world’s technology leaders trust Samasource to fuel AI and believe in the impact we can make together. Join us."
+  }, {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "name": "logos",
+    "label": "Logos",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": [{
+      "src": "",
+      "alt": null
+    }]
+  }
+
+
+
+
+
+]

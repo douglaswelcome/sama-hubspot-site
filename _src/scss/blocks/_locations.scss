@@ -17,6 +17,7 @@
         align-items: center;
         margin-bottom: .3rem;
         margin-right: auto;
+        color: var(--color-white);
 
 
 
@@ -24,13 +25,13 @@
             // transition: transform .5s ease-in-out;
             height: .6rem;
             padding-left: .3rem;
-            fill: $color-kennedy;
+            fill: var(--color-charcoal-2);
 
         }
 
         &:hover {
             svg {
-                fill: $color-kennedy-2;
+                fill: var(--color-charcoal-3);
             }
 
             span::before {
@@ -44,55 +45,45 @@
 
     &__office-title {
         display: inline-block;
-        font-size: 1.25rem;
-        font-family: "Barlow Condensed", Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding-bottom: 0.25rem;
+    }
 
-        &::before {
-            opacity: 0;
-            transition-property: opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
+
+
+    &__row5 {
+        margin-top: 1rem;
+    }
+    &__row6{
+        a{
+            color:var(--color-white);
+
+            &:hover {
+                color:var(--color-charcoal-8);
+            }
         }
-
-
     }
 
 
-
-
-    &__details {
-        padding-left: 1rem;
-        line-height: 1.1;
-        // overflow:hidden;
-        // max-height:0;
-        // transition: max-height .5s ease-in-out;
-        // will-change: max-height;
-    }
+    // &__details {
+    //     padding-left: 1rem;
+    //     line-height: 1.1;
+    //     // overflow:hidden;
+    //     // max-height:0;
+    //     // transition: max-height .5s ease-in-out;
+    //     // will-change: max-height;
+    // }
 
     &__item {
         margin-bottom: 1rem;
 
-
-
-
-
         &.active {
             .locations__office-title {
-                color: $color-kennedy-2;
+                
 
-                &::before {
-                    opacity: 1;
-                    transition-property: opacity;
-                    transition-duration: 0.3s;
-                    transition-timing-function: ease;
-                }
+               
             }
 
             svg {
-                fill: $color-kennedy-2;
+                fill: var(--color-charcoal-3);
             }
 
             // .locations__details {
@@ -107,6 +98,17 @@
         }
     }
 
+    &__list{
+      
+    }
+    &__hq-label {
+        text-transform:uppercase;
+        margin-bottom: 2rem;
+        padding-bottom:1rem;
+        border-bottom: 2px solid;
+        border-color:var(--color-sunshine);
+    }
+
 
 
 
@@ -118,17 +120,11 @@
 
 .map-baby {
 
-    height: 85%;
+    height: 100%;
     position: relative;
 
-    @include breakpoint(w-sm){
-        display:none;
-    }
 
-
-    .back-panel {
-        border-radius: 0 0 0 40px;
-    }
+    
 
 
 
@@ -146,9 +142,8 @@
 
 
         ::before {
-            border-radius: 0 0 0 5px;
             content: "";
-            background-color: $color-white;
+            background-color: var(--color-white);
             height: 100%;
             width: 100%;
             position: absolute;
@@ -159,16 +154,17 @@
 
         button {
 
-            border: 2px solid #291d5421;
+            border: 2px solid;
+            border-color:var(--color-charcoal-7);
             margin-bottom: .125rem;
             position: relative;
-            border-radius: 0 0 0 8px;
+            border-radius: 3px;
             transition-property: all;
             transition-duration: 0.3s;
             transition-timing-function: ease;
 
             &:hover {
-                background-color: $color-isabelline;
+                background-color: var(--color-charcoal-7);
                 transition-property: all;
                 transition-duration: 0.3s;
                 transition-timing-function: ease;
@@ -193,19 +189,20 @@
         bottom: 0;
         right: 0;
         margin: 0 10px 10px 0;
-        border-radius: 0 0 0 8px;
+        border-radius: 3px;
         width: 45px;
         height: 45px;
-        border: 2px solid #291d5421;
+        border: 2px solid;
+            border-color:var(--color-charcoal-7);
         padding: 5px;
         background-color: $color-white;
 
         &:hover {
-            background-color: $color-isabelline;
+            background-color: var(--color-charcoal-7);
         }
 
         svg {
-            fill: $color-charcoal;
+            fill: var(--color-charcoal-1);
         }
 
         &::before,
@@ -220,49 +217,41 @@
     }
 
     .mapboxgl-popup {
-        padding-bottom: 3rem;
-        padding-top: .3rem;
+       top: -60px;
     }
 
     .mapboxgl-popup-content {
         position: relative;
-        border-radius: 0 0 0 1.125rem;
-        // box-shadow: .125rem 5px 5px rgba($color-kennedy, 0.1);
-        padding: .5rem .5rem .5rem .7rem;
+        background: var(--color-white);
+        border: 2px solid;
+        border-radius: 3px;
+        border-color: var(--color-charcoal-1);
+        padding: 1rem 1rem;
+        // transform: translate(.5rem, -.5rem);
         pointer-events: auto;
+        color: var(--color-charcoal-1);
 
-        &::before {
-            content: "";
-            height: 100%;
-            width: 100%;
-            background-color: $color-kennedy;
-            border: 0.125rem solid $color-kennedy;
-            border-radius: 0 0 0 1.125rem;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            transform: translate(0.25rem, 0.25rem);
-            transition-property: all;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
+        .city {
+            font-weight: 300;
         }
+        
+
+       
 
     }
 
     &__marker {
         border: none;
         cursor: pointer;
-        height: 44px;
-        width: 44px;
-        background-image: url(#{$staticbase}img/samamarker.svg);
+        height: 60px;
+        width: 60px;
+        background-image: url(#{$staticbase}img/samamarker3.svg);
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
     }
 
     &__wrapper {
         height: 100%;
-        border-radius: 0 0 0 40px;
 
 
     }

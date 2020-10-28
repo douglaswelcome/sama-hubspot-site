@@ -1,0 +1,99 @@
+[
+  {
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+    [
+      "bg-charcoal-1",
+      "Charcoal 1 (Darkest)"
+    ],
+    [
+      "bg-charcoal-2",
+      "Charcoal 2 (Medium Dark)"
+    ],
+    [
+      "bg-charcoal-3",
+      "Charcoal 3 (Light Dark)"
+    ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default":  "bg-charcoal-1"   
+
+  },
+  {
+  "name": "logo",
+  "label": "Company Logo",
+  "required": false,
+  "locked": false,
+  "responsive": true,
+  "resizable": false,
+  "type": "image",
+  "default": {
+    "src": "https://f.hubspotusercontent10.net/hubfs/6398568/google.svg",
+    "alt": "Company Logo"} 
+  },
+{
+"name": "quote",
+"label": "Quote Text",
+"sortable": false,
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "",
+"default": "\"There comes a nice little fluffer. A thin paint will stick to a thick paint. You create the dream - then you bring it into your world.\"" },
+{
+"name": "author",
+"label": "Quote Author",
+"sortable": false,
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "",
+"default": "Jeff Goldblum"},
+{
+  "name": "title",
+  "label": "Author Job Title",
+  "sortable": false,
+  "required": false,
+  "locked": false,
+  "validation_regex": "",
+  "allow_new_line": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "placeholder": "",
+  "default": "CEO of Magic, Computers Incorporated"
+},
+{
+"name": "img",
+"label": "Headshot",
+"sortable": false,
+"required": false,
+"locked": false,
+"resizable": false,
+"type": "image",
+"default": {
+  "src": "https://pyxis.nymag.com/v1/imgs/c70/cb0/d46f0218de633d6c620b97e80c6dba364e-28-jeff-goldblum.rsquare.w1200.jpg",
+  "alt": null} }
+
+]

@@ -1,48 +1,75 @@
 // ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
 // REM size @ 16px
 
-// $width-xxxlg: 130em; //
-// $width-xxlg: 110em; //
-$w-xlg: 1374px; //1374 px and up
-$w-lg: 1080px; //1080px - 1374px
-$w-med: 800px;//800px - 1080px
+$w-xlg: 1360px; //1360 px and up
+$w-lg: 1120px; //1120px - 1360px
+$w-med: 816px; //816px - 1120px
 $w-sm: 320px; //320px - 800px
-// $width-xsm: 17.777em; // 320px iphone 5 width
 
-//iphone 4,5 = 320px Width
-//iphone 6+ = 375px width
+:root {
 
-// ____________Heights
-// $height-sm: 31.250rem; // 500px
-// $height-med: 43.750rem; // 700px
-// $height-lg: 50.000rem; // 800px
+  // $width-xxxlg: 130em; //
+  // $width-xxlg: 110em; //
+  --w-xlg: 1360px; //1360 px and up
+  --w-lg: 1120px; //1120px - 1360px
+  --w-med: 816px; //816px - 1120px
+  --w-sm: 320px; //320px - 816px
+
+
+
+  // $width-xsm: 17.777em; // 320px iphone 5 width
+
+  //iphone 4,5 = 320px Width
+  //iphone 6+ = 375px width
+
+  // ____________Heights
+  // $height-sm: 31.250rem; // 500px
+  // $height-med: 43.750rem; // 700px
+  // $height-lg: 50.000rem; // 800px'
+
+
+  // Page Widths
+
+  --xlg-page-width: 1296px;
+  --lg-page-width: 1104px;
+  --med-page-width: 804px;
+
+
+
+}
 
 @mixin breakpoint($width) {
-  @if $width == w-xsm {
+  @if $width==w-xsm {
     @media (max-width: $w-sm) {
       @content;
     }
-  } @else 
-  if $width == w-sm {
+  }
+
+  @else if $width==w-sm {
     @media (max-width: $w-med) {
       @content;
     }
-  } @else 
-  if $width == w-med {
+  }
+
+  @else if $width==w-med {
     @media (max-width: $w-lg) {
       @content;
     }
-  } @else 
-  if $width == w-lg {
+  }
+
+  @else if $width==w-lg {
     @media (max-width: $w-xlg) {
       @content;
     }
-  } @else 
-  if $width == w-xlg {
+  }
+
+  @else if $width==w-xlg {
     @media (min-width: $w-xlg) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn "Breakpoint mixin supports: w-sm, w-med, w-lg, w-xlg";
   }
 }
@@ -51,20 +78,54 @@ $w-sm: 320px; //320px - 800px
 
 
 
-%page-container {
-  max-width: var(--xlg-page-width);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+
+:root {}
+
+
+
+
+
+ @mixin page-width {
+  width: var(--xlg-page-width);
+  padding-left: .125rem;
+  padding-right: .125rem;
+
   @include breakpoint(w-lg) {
-    max-width: var(--lg-page-width);
+    width: var(--lg-page-width);
   }
+
   @include breakpoint(w-med) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: var(--med-page-width);
   }
+
   @include breakpoint(w-sm) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
+}
+
+.page-width {
+  @include page-width;
+}
+
+%grid {
+  @include page-width;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-self: center;
+  column-gap: .25rem;
+}
+
+.grid-wrapper {
+  @extend %grid;
+}
+
+@mixin small-pad () {
+
+  @include breakpoint (w-sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+
 }

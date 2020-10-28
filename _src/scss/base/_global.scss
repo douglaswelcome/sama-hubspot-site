@@ -9,11 +9,14 @@ html {
 
 }
 
-.body-wrapper {
+.flex-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  position:relative;
+}
+
+.flex-content {
+  flex:1;
 }
 
 * {
@@ -28,13 +31,9 @@ html {
   }
 }
 
-section {
-  margin-bottom: 6rem;
 
-  @include breakpoint (w-med) {
-    margin-bottom:3rem;
-  }
-}
+
+
 
 //Global layout extends
 
@@ -64,4 +63,8 @@ section {
     position: absolute;
     overflow: hidden;
   }
+}
+
+#hubspot-messages-iframe-container {
+  z-index: 20!important;
 }

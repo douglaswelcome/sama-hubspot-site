@@ -1,0 +1,49 @@
+.two-block-hero {
+    @extend %grid;
+    align-items: center;
+
+    @include breakpoint (w-sm){
+        row-gap: 1.5rem;
+    }
+
+    &__copy {
+        grid-column: 1/ span 5;
+        padding-right:1rem;
+        grid-row: 1;
+        position:relative;
+
+        @include breakpoint (w-sm){
+            grid-column: 1/ span 12;
+        }
+
+        
+    }
+
+    &__btn-row{
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+
+    }
+    &__img{
+        grid-column: 6 /span 7;
+        grid-row: 1;
+        height: 33rem;
+
+        display: flex;
+        height:auto;
+        width:auto;
+        @include breakpoint (w-sm){
+            grid-column: 1/ span 12;
+            grid-row: auto;
+        }
+
+
+        img {
+            width: 100%;
+
+            object-fit: contain;
+            object-position: 100% 50%;
+        }
+    }
+}

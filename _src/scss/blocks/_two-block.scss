@@ -1,94 +1,111 @@
 .two-block {
+  grid-column: 1 / span 12;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3rem;
-  @extend %page-container;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 6rem;
+
   align-items: center;
 
   @include breakpoint(w-sm) {
     grid-template-columns: 1fr;
+
+    row-gap: 1.5rem;
   }
 
   &__copy {
 
+    text-align: left;
+
+  }
+
+  &__headline {
+    margin-bottom: 1.5rem;
+  }
+
+  &__subheadline {
+    margin-bottom: 1.5rem;
+  }
+
+
+  &__img {
+    position: relative;
+    height: auto;
+    width: auto;
+    z-index: 10;
+
+    img {
+      width: calc(100% - 3rem);
+      line-height: 1;
+      padding-bottom: 3rem;
+
+       @include breakpoint (w-sm){
+        width: calc(100% - 1rem);
+        padding-bottom: 1rem;
+       } 
+    }
+
+  }
+
+  &__panel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--color-charcoal-7);
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+  }
+
+
+}
+
+.two-block.reflect {
+  .two-block__copy {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 0;
+    padding-right: 1.5rem;
+  }
+
+  .two-block__img {
+    grid-column: 1;
+    grid-row: 1;
     text-align: right;
 
-    @include breakpoint (w-sm) {
-      text-align: left;
-    }
-
-    h1,h2 {
-      margin-bottom: 1.5rem;
-    }
-
-    @include breakpoint(w-sm) {
-      padding: 1rem;
-    }
-
-    .copy-block {
-      margin-bottom: 1.5rem;
-    }
-
-    
-
-   
-
-    .icon-list__copy {
-      margin-bottom: 0;
-    }
-
   }
 
-  &__copy-body {
-
-      p{
-        margin-bottom: 1.5rem;
-      }
-   
-      margin-bottom: 1.5rem;
-  
-  }
-
-  
-
-  .two-block__text {
-    margin-bottom: 1.5rem;
-
-    &--compare {
-      h3{
-        font-size:1.5rem;
-      }
-    }
-
-    
+  .two-block__panel {
+    left: 0;
+    right: auto;
   }
 
 
+  @include breakpoint(w-sm) {
 
-  .img {
-    position: relative;
-    text-align: center;
-
-    .two-block-img {
-     
-      background-position: center;
-      height:30rem;
-      &--compare {
-        max-height: none;
-      }
+    .two-block__copy,
+    .two-block__img {
+      grid-row: auto;
+      grid-column: auto;
     }
-
-    @include breakpoint(w-sm) {
-      padding: 1rem;
-
-      .two-block-img {
-        min-height: 0;
-      }
-
-    }
-
   }
 
+}
+
+
+
+.dark-mode .two-block__panel {
+  background-color: var(--color-charcoal-4);
+
+}
+
+
+
+
+
+
+
+.two-block {
   .award-grid {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -186,70 +203,52 @@
 
 
 
-  &.reflect {
-    .copy {
-      text-align: left;
-      grid-column: 2;
-      grid-row: 1;
-      padding-left: 0;
-      padding-right: 1.5rem;
-    }
 
-    .img {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    @include breakpoint(w-sm) {
-
-      .copy,
-      .img {
-        grid-row: auto;
-        grid-column: auto;
-      }
-    }
-
-  }
 
   &__rich-body {
     ul {
       padding-left: 3rem;
     }
   }
+
   &--cards {
-    @include breakpoint(w-sm){
+    @include breakpoint(w-sm) {
       grid-row-gap: 3rem;
     }
   }
+
   &__copy--cards {
-    height:100%;
-    margin:0 3rem;
+    height: 100%;
+    margin: 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @include breakpoint(w-lg){
-      margin:0 1.5rem;
+    @include breakpoint(w-lg) {
+      margin: 0 1.5rem;
 
     }
 
-    @include breakpoint(w-med){
-      margin:0rem;
+    @include breakpoint(w-med) {
+      margin: 0rem;
 
     }
+
     .divider-line {
       margin-left: auto;
     }
   }
+
   &__card-title {
-    font-size:1.5rem;
-  }
-  &__button-wrapper {
-    padding-right:.25rem;
-    
+    font-size: 1.5rem;
   }
 
-  
+  &__button-wrapper {
+    padding-right: .25rem;
+
+  }
+
+
 
 
 }
@@ -325,13 +324,13 @@
 
       p {
         display: inline-block;
-        color: $color-charcoal;
+        color: var(--color-charcoal-1);
         transition: (color, transform) 0.1s ease;
       }
 
       &:hover {
         p {
-          color: $color-kennedy;
+          color: var(--color-charcoal-2);
           font-weight: 700;
           transform: scale(1.1) translate3d(0, 0, 0);
           transition: (color, transform) 0.1s ease;

@@ -1,0 +1,154 @@
+[{
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "id": "",
+    "name": "cta1",
+    "label": "Primary CTA",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "Shows Teaser image when toggled on",
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  },
+  {
+    "name": "row1_icons",
+    "label": "Row 1 Icons",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 2,
+      "max": 3,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+        "name": "img",
+        "label": "Block Icon or Image",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons_rev/speed_1-layer_yellow.svg",
+          "alt": null
+        }
+      },
+      {
+
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Goldblumology"
+      },
+      {
+        "id": "",
+        "name": "body_copy",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
+      }
+
+
+    ],
+    "type": "group",
+    "default": [{}]
+  },
+  {
+    "name": "row2_icons",
+    "label": "Row 2 Icons",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": null,
+      "max": 3,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+        "name": "img",
+        "label": "Block Icon or Image",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons_rev/speed_1-layer_yellow.svg",
+          "alt": null
+        }
+      },
+      {
+
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Goldblumology"
+      },
+      {
+        "id": "",
+        "name": "body_copy",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
+      }
+
+
+    ],
+    "type": "group",
+    "default": [{}]
+  }
+
+
+]

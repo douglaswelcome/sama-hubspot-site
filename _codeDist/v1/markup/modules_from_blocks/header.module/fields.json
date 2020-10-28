@@ -1,0 +1,9 @@
+[
+ {
+ "name": "cta",
+ "label": "Header CTA",
+ "required": false,
+ "locked": false,
+ "type": "cta",
+ "default": null }
+]

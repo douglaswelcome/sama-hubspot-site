@@ -1,0 +1,38 @@
+<!-- module html  -->
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+">
+    <div class="panel-avatar-quote">
+        <div class="panel-avatar-quote__back">
+
+        </div>
+        <div class="panel-avatar-quote__front">
+            <div class="panel-avatar-quote__body">
+                <div class="panel-avatar-quote__logo-wrapper">
+                    <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" class="panel-avatar-quote__logo" />
+                </div>
+                
+                <h2 class="panel-avatar-quote__quote-text">{{ module.quote }} </h2>
+                <div class="panel-avatar-quote__author-block">
+                    
+                    <div class="panel-avatar-quote__headshot-wrapper">
+                    <img src="{{ module.img.src }}" alt="{{ module.img.alt }}" class="panel-avatar-quote__headshot" />
+                </div>
+                    <div class="panel-avatar-quote__author-text">
+                        <h4 class="panel-avatar-quote__author">{{ module.author }}</h4>
+                        <h5 class="panel-avatar-quote__author">{{ module.title }}</h5>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>

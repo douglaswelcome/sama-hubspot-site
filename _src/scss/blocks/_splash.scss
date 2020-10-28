@@ -1,7 +1,7 @@
 .splash {
   height: 100vh;
   width: 100vw;
-  background-color: $color-charcoal;
+  background-color: var(--color-charcoal-1);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,34 +1,100 @@
 .headshot {
-    @extend %page-container;
-    text-align:center;
+    @extend %grid;
+
+    &__dot-panel {
+
+
+        height: 40%;
+        grid-column: 1 / span 5;
+        grid-row:1;
+
+        @include breakpoint (w-sm){
+            grid-column: 1 / span 9;
+            transform:translate(-1.75rem);
+            height: 60%;
+            display:none;
+            
+        }
+  
+
+        canvas {
+            height:100%;
+            width:100%;
+
+        }
+
+
+    }
+
+    &__bottom-panel {
+        grid-column: 7 / span 6;
+        background-color: var(--color-charcoal-4);
+        grid-row: 1;
+        height: 60%;
+        margin-top: auto;
+      
+        @include breakpoint (w-sm){
+            display:none;
+            
+        }
+    }
+
+    &__top-panel {
+        grid-column: 3 / span 8;
+        grid-row: 1;
+        background-color: var(--color-sunshine);
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        text-align: center;
+        padding: 3rem;
+        position: relative;
+        z-index:1;
+
+        @include breakpoint (w-sm){
+            grid-column: 1 / span 12;
+            padding:1.5rem;
+            margin-bottom: 0rem;
+        margin-top: 0rem;
+        }
+    }
+
     &__img {
         border-radius: 50%;
-        overflow:hidden;
-        width: 10rem;
-        height:10rem;
-        background-size:cover;
-        background-position:center;
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom:1.5rem;
+        overflow: hidden;
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
 
+        @include  breakpoint (w-sm){
+            width: 15rem;
+        height: 15rem;
+        }
+
+        img {
+            object-fit: contain;
+        }
     }
 
     &__name {
-        h5, h3 {
-            font-size: 1rem;
-        }
-    }
-    &__body{
-        padding-left:6rem;
-        padding-right:6rem;
+        color: var(--color-charcoal-1);
 
-        @include breakpoint(w-sm){
-            padding:0;
+    }
+
+    &__body {
+        text-align: left;
+        color: var(--color-charcoal-1);
+
+
+        p {
+            margin-bottom: .5rem;
         }
-        p{
-            margin-bottom:.5rem;
-        }
+
+
     }
 
 

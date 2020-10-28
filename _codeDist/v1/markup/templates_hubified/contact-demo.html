@@ -1,0 +1,21 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+    {% include '/v1/markup/blocks_static/lp-hero.html' %}
+<div class="flex-content">
+
+{% module "module_20200918160106" path="/v1/markup/modules_from_blocks/hero_center_small", label="Hero" %}
+
+{% module "module_20200918160122" path="/v1/markup/modules_from_blocks/split_contact", label="Contact Body" %}
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

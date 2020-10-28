@@ -49,7 +49,7 @@ function scss() {
             .on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write(''))
-        .pipe(gulp.dest('_codeDist/assets/css/'))
+        .pipe(gulp.dest('_codeDist/v1/assets/css/'))
     //   .pipe(server.stream());
 }
 
@@ -61,7 +61,7 @@ function jsCompiled() {
         // .pipe(jshint.reporter('default'))
         .pipe(concat('sama.js'))
         .pipe(terser())
-        .pipe(gulp.dest('_codeDist/assets/js/'));
+        .pipe(gulp.dest('_codeDist/v1/assets/js/'));
 }
 
 function jsSingles() {
@@ -70,7 +70,7 @@ function jsSingles() {
         // .pipe(jshint.reporter('default'))
 
         .pipe(terser())
-        .pipe(gulp.dest('_codeDist/assets/js/'));
+        .pipe(gulp.dest('_codeDist/v1/assets/js/'));
 }
 
 

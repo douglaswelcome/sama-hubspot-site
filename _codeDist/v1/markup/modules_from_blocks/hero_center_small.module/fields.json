@@ -1,0 +1,63 @@
+[
+  {
+    "id": "",
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+    [
+      "bg-charcoal-1",
+      "Charcoal 1 (Darkest)"
+    ],
+    [
+      "bg-charcoal-2",
+      "Charcoal 2 (Medium Dark)"
+    ],
+    [
+      "bg-charcoal-3",
+      "Charcoal 3 (Light Dark)"
+    ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default":  "bg-charcoal-1"   
+
+  },
+  {
+    "name" : "headline",
+    "label" : "Hero Headline",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "This is Your Big Day"
+  }, 
+  {
+  "name" : "subheadline",
+  "label": "Hero Subheadline",
+  "required": false,
+  "locked": false,
+  "enabled_features": ["link"],
+  "type": "richtext",
+  "default": "Get your dress on. Get pretty. It's all downhill after this."
+}
+
+
+
+]

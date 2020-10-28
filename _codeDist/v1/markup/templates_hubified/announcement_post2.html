@@ -1,0 +1,28 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+
+{% module "module_20200317103227" path="/v1/markup/modules_from_blocks/page_hero_variant", label="page_hero_variant" %}
+
+
+{% module "module_20200317103137" path="/v1/markup/modules_from_blocks/center_body", label="center_body" %}
+
+{% module "module_20200317103159" path="/v1/markup/modules_from_blocks/bio_block", label="bio_block" %}
+
+
+
+
+
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

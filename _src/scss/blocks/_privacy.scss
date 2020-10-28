@@ -1,5 +1,6 @@
 .privacy-policy {
-    @extend %page-container;
+    @extend %grid;
+    
 
     padding: 0 3rem;
     
@@ -8,6 +9,7 @@
 
     &__parent {
         list-style-type: upper-roman;
+        grid-column: 2 /span 10;
 
         li {
             font-size: 1.4rem;

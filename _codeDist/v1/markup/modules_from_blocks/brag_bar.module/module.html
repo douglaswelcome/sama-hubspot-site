@@ -1,0 +1,34 @@
+<section class="">
+  {% if module.headline %}
+  <div class="brag-bar">
+    {% if module.headline %}
+    <div class="brag-bar__body">
+      <div class="brag-bar__headline"> 
+        <h2>
+        {{ module.headline }}
+        </h2>
+      </div>
+      {% endif %}
+      {% if module.subheadline %}
+      <div class="brag-bar__subheadline">
+        <h5>
+          {{ module.subheadline }}
+        </h5>
+      </div>
+      {% endif %}
+
+    </div>
+{% endif %}
+    <div class="brag-bar__logo-row">
+      <div class="brag-bar__logos">
+      {% for logo in module.logos %}  
+      <div class="brag-bar__logo">
+        <img src="{{ logo.src }}" alt="{{logo.alt }}" />
+      </div>
+      {%endfor%}
+      </div>
+
+   
+    </div>
+  </div>
+</section>

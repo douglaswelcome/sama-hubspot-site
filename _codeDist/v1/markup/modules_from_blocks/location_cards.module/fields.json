@@ -1,0 +1,85 @@
+[{
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+
+  {
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-1"
+
+  },
+  {
+    "name": "locations",
+    "label": "Locations",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": null,
+      "max": null,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+        "name": "place",
+        "label": "Office Location Name",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+      },
+      {
+        "name": "address",
+        "label": "Address Info",
+        "required": false,
+        "locked": false,
+        "enabled_features": ["link"],
+        "type": "richtext",
+
+        "default": null
+      }
+    ],
+    "type": "group",
+    "default": {}
+  },
+  {
+  "name": "last_section",
+  "label": "Last Section?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "inline_help_text": "",
+  "help_text": "",
+  "default": false 
+}
+
+]

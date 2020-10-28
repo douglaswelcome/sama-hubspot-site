@@ -71,11 +71,11 @@
                 }
 
                 &:hover {
-                    color:$color-isabelline;
+                    color:var(--color-charcoal-7);
 
                     &::before {
 
-                        border-bottom-color: $color-kennedy;
+                        border-bottom-color: var(--color-charcoal-2);
                         transition-duration: .3s;
 
 

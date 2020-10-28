@@ -1,62 +1,63 @@
-$(function() {
-  var subState = true; //toggles the menu state
+// $(function() {
+//   var subState = true; //toggles the menu state
 
 
-  function moveMenu() {
-    if (subState == true) {
-      $('.header-desktop-wrapper').addClass('submenu-open');
-      $('.header-cta .hubby-cta').removeClass('secondary');
+//   function moveMenu() {
+//     if (subState == true) {
+//       $('.desktop-header').addClass('desktop-header--submenu-open');
     
-      $('body').addClass('scroll-lock');
-    } else {
-      $('.header-desktop-wrapper').removeClass('submenu-open');
-      $('.header-cta .hubby-cta').addClass('secondary');
-      $('body').removeClass('scroll-lock');
-    }
-  }
+//       $('body').addClass('scroll-lock');
 
-  $('.desktop-header .desktop-menu, section.submenu .submenu-content').mouseenter(
-    function() {
-      subState = true;
-      moveMenu();
-    }
-  );
+//     } else {
+//       $('.desktop-header').removeClass('desktop-header--submenu-open');
+//       $('body').removeClass('scroll-lock');
+//     }
+//   }
 
-  $('.desktop-header, section.submenu .submenu-content').mouseleave(
-    function() {
-      subState = false;
-      moveMenu();
+//   $('.desktop-header .desktop-header__nav, desktop-submenu__content').mouseenter(
+//     function() {
+//       subState = true;
+//       // moveMenu();
+//       console.log(subState);
+//     }
+//   );
 
-    }
-  );
+//   $('.desktop-header .desktop-header__nav, desktop-submenu__content').mouseleave(
+//     function() {
+//       subState = false;
+//       // moveMenu();
+//       console.log(subState);
 
-  $('.header-desktop-wrapper').mouseleave(
-    function() {
-      $('.desktop-menu li.open').removeClass('open');
-    }
-  );
+//     }
+//   );
+
+//   // $('.header-desktop-wrapper').mouseleave(
+//   //   function() {
+//   //     $('.desktop-menu li.open').removeClass('open');
+//   //   }
+//   // );
 
 
 
-  //shows which portions of the menu are active
+//   //shows which portions of the menu are active
 
-  $('.desktop-header menu.desktop-menu li').mouseover(function() {
-    var t = $(this).attr('id');
-    var sub = t + '-sub';
+//   $('.desktop-header menu.desktop-menu li').mouseover(function() {
+//     var t = $(this).attr('id');
+//     var sub = t + '-sub';
 
-    console.log(t);
-    console.log(sub);
-    $('.desktop-header menu.desktop-menu li.open').removeClass('open');
-    $('#' + t).addClass('open');
-    $('section.submenu .submenu-content .submenu-item.visible').removeClass('visible');
-    $('#' + sub).addClass('visible');
-  });
+//     console.log(t);
+//     console.log(sub);
+//     $('.desktop-header menu.desktop-menu li.open').removeClass('open');
+//     $('#' + t).addClass('open');
+//     $('section.submenu .submenu-content .submenu-item.visible').removeClass('visible');
+//     $('#' + sub).addClass('visible');
+//   });
 
 
 
   
 
-});
+// });
 
 
 

@@ -1,0 +1,39 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% module "module_20200918094743" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+<div class="flex-content">
+
+    {% module "module_20200918095158" path="/v1/markup/modules_from_blocks/two_block_hero", label="Hero" %}
+
+    {% module "module_20200918095257" path="/v1/markup/modules_from_blocks/brag_bar", label="Braggers" %}
+
+    {% module "module_20200918095401" path="/v1/markup/modules_from_blocks/tab_window", label="Annotation" %}
+
+        {% module "module_20200918095822" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea #1" %}
+
+            {% module "module_20200918095840" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea #2" %}
+        
+            {% module "module_20200918095856" path="/v1/markup/modules_from_blocks/two_block", label="Big Idea #3" %}
+
+    {% module "module_20200918104042" path="/v1/markup/modules_from_blocks/three_block", label="three_block" %}
+
+    {% module "module_20200918095703" path="/v1/markup/modules_from_blocks/panel_avatar_quote", label="Quote" %}
+
+ 
+        {% module "module_20200918102011" path="/v1/markup/modules_from_blocks/gallery_block", label="Six Shapes" %}
+
+    {% module "module_20200918095117" path="/v1/markup/modules_from_blocks/split_cta", label="Closer CTA" %}
+
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

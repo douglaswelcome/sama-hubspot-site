@@ -4,7 +4,7 @@
       "hsModule"
     ],
     "body": [
-      "{% module \"module_$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE$CURRENT_HOUR$CURRENT_MINUTE$CURRENT_SECOND\" path=\"/markup/modules_from_blocks/${4:moduleName}\", label=\"${4:moduleName}\" %}",
+      "{% module \"module_$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE$CURRENT_HOUR$CURRENT_MINUTE$CURRENT_SECOND\" path=\"/v1/markup/modules_from_blocks/${4:moduleName}\", label=\"${4:moduleName}\" %}",
     ],
     "description": "Choice-Type Field"
   },

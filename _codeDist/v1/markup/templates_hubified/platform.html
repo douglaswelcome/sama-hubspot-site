@@ -1,0 +1,32 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/v1/markup/blocks_static/pattern-bg.html' %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+{% module "module_20200727221301" path="/v1/markup/modules_from_blocks/platform_hero", label="platform_hero" %}
+
+{% module "module_15657246379019" path="/v1/markup/modules_from_blocks/label_tab", label="label_tab" %}
+
+{% include '/v1/markup/blocks_static/hub-overview.html' %}
+
+{% module "module_156641099930836" path="/v1/markup/modules_from_blocks/label_tab", label="label_tab" %}
+
+{% module "module_20200727214959" path="/v1/markup/modules_from_blocks/list_block", label="list_block" %}
+
+{% module "module_156641090509234" path="/v1/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% module "module_156806492074565" path="/v1/markup/modules_from_blocks/center_block_vision", label="center_block_vision" %}
+
+
+
+{% include '/v1/markup/blocks_static/center-block-faq.html' %}
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

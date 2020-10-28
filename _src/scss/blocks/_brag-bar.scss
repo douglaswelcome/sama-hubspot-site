@@ -1,37 +1,61 @@
 .brag-bar {
-  .label-tab {
-    margin-bottom: 4rem;
-  }
+  @extend %grid;
+  row-gap: 1.5rem;
 
-  .brag-body {
-    @extend %page-container;
-    width: 70%;
+  &__body {
+    grid-column: 3 / span 8;
     text-align: center;
-    margin-bottom: 4rem;
+
+    @include breakpoint (w-sm){
+      grid-column: 1 / span 12;
+    }
+    
 
   }
 
-  .brag-scroller {
-    grid-template-columns: repeat(6, 1fr);
-    display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 3rem;
-    @extend %page-container;
+  &__headline {
+    margin-bottom:1.5rem;
+  }
+
+  &__subheadline {
+    margin-bottom: 1.5rem
+  }
+
+
+  &__logo-row {
+    grid-column: 1 / span 12;
+    grid-row:2;
+    text-align:center;
+    
+
     @include breakpoint(w-sm) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 10vw;
+
     }
   }
 
-  .logo {
+  &__logos {
+    display:inline-flex;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+  }
+
+  &__logo {
+    
     align-self: center;
     text-align: center;
+    
 
     img {
       max-height: 70px;
-      max-width: 150px;
-      margin-right: auto;
-      margin-left: auto;
+      min-width: 8rem;
+
+      @include breakpoint (w-sm){
+        min-width: 7rem;
+      }
     }
   }
 

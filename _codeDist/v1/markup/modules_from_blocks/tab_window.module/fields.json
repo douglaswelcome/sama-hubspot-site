@@ -1,0 +1,102 @@
+[{
+    "name": "headline",
+    "label": "Headline",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+
+  {
+
+    "name": "tabs",
+    "type": "group",
+    "label": "Tab",
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "children": [
+      {
+        "name": "labelText",
+        "label": "Tab Label Text",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Label Goes Here"
+      },
+      {
+        "name": "media_type",
+        "label": "Media Type",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "inline_help_text": "Is this an image or a video?",
+        "help_text": "",
+        "choices": [
+          [
+            "video",
+            "Video"
+          ],
+          [
+            "image",
+            "Image"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "video"
+      },
+      {
+        "name": "media_file",
+        "label": "Media File",
+        "required": false,
+        "locked": false,
+        "type": "file",
+        "picker": "file",
+        "default": "https://images-assets.nasa.gov/video/jsc2019m000564_HistoricMissionControl_FB_MP4/jsc2019m000564_HistoricMissionControl_FB_MP4~orig.mp4"
+      },
+      {
+        "name": "alt",
+        "label": "Image Alt Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Samasource",
+        "inline_help_text": "If you picked an image, give it an alt description why dontcha?"
+      },
+      {
+
+        "name": "description",
+        "label": "Tab Description",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "richtext",
+        "enabled_features": ["bulleted_list", "source_code"],
+        "placeholder": "",
+        "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
+      }
+    ]
+  }
+
+]

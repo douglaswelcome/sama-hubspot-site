@@ -1,0 +1,77 @@
+.legal{
+    @extend %grid;
+
+    &__content {
+        grid-column: 2 /span 10;
+    }
+
+    
+
+    ol {
+        list-style-type: upper-roman;
+        padding-left: 1rem;
+    }
+
+    ul{
+        padding-left:2rem;
+        padding-bottom: 1rem;
+        li>p{
+            padding-bottom:0;
+            line-height:1;
+        }
+    }
+
+    h5 {
+        padding-bottom: 1rem;
+    }
+    p {
+        padding-bottom: 1rem;
+    }
+
+    ol,ul {
+        
+        li {
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 1.4;
+
+            @include breakpoint(w-med) {
+                font-size: calc(.8rem + .9vw);
+            }
+
+            
+        }
+
+    }
+
+    ol>li>ol {
+        padding-left: 3rem;
+
+        li {
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 1.4;
+
+            @include breakpoint(w-med) {}
+
+            @include breakpoint(w-sm) {
+                font-size: calc(.7rem + .6vw);
+            }
+        }
+
+        
+
+
+    }
+
+    ol>li>ol>li>ol {
+        padding-left: 3rem;
+        list-style-type: lower-alpha;
+
+        li {
+            p {
+                padding-bottom: .5rem;
+            }
+        }
+    }
+}

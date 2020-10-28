@@ -1,10 +1,11 @@
 .timeline {
-    @extend %page-container;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    @extend %grid;
+   
 
 
-
+    &__wrapper {
+        grid-column: span 12; 
+    }
     h3 {
         margin-bottom: 1rem;
     }
@@ -114,7 +115,7 @@
 
     &__ball {
         border-radius: 100%;
-        background-color: $color-kennedy;
+        background-color: var(--color-charcoal-2);
         height: 1.5rem;
         width: 1.5rem;
         position: relative;

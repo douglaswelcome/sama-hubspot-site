@@ -1,6 +1,6 @@
 .featured-press {
     &__press-content {
-        @extend %page-container;
+        @extend %grid;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 3rem;
@@ -88,7 +88,7 @@
         background-color: $color-white;
         border-radius: 0 0 1rem 0;
         border-width: .25rem;
-        border-color: $color-kennedy;
+        border-color: var(--color-charcoal-2);
         border-style: solid;
         padding: 1rem 1.5rem;
         transform: translateX(-2rem);
@@ -102,93 +102,26 @@
 }
 
 
-.press-table-header {
-    
-@extend %page-container;
-position:relative;
-display:flex;
-justify-content:center;
-margin-bottom:1.5rem;
+.press-tab {
 
-
-
-
-    
-   
-
-    .press-table-header__wrapper {
-        position: relative;
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        
-        padding: 1.5rem 0;
-        justify-items: center;
+    &__section {
+        padding-bottom: 1.5rem;
     }
-
-    
     
 
-    .divider-line {
-        position: absolute;
-        width: calc(50% - 1.5rem);
-        bottom:0;
-        left:0;
-
-        &--left {
-            transform: translateX(.75rem);
-            transition-property: transform;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
-            
-        }
-
-        &--right {
-            transform: translateX(100%) translateX(2.25rem);
-            transition-property: transform;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
-        }
-    }
-
-    &__category {
-        padding: 0 1rem;
-        cursor: pointer;
-    
-        
- 
-        &:nth-child(1){
-            
-        }
-        &:nth-child(2) {
-        }
-        
-         h3 {
-             font-size: 1.25rem;
-             
-             color: $color-nguva;
-             transition-property: color;
-            transition-duration: .3s;
-            transition-timing-function: ease;
-         }
-    } 
-
-    &__category--selected {
-        h3{
-            color:$color-charcoal;
-            transition-property: color;
-            transition-duration: .3s;
-            transition-timing-function: ease;
-        }
-    }
 }
 
 .press-table {
-    @extend %page-container;
-
+    @extend %grid;
+    
+    &__section{
+        padding-top:0;
+    }
     &__press-link{
+        grid-column: span 12;
         border-width: 0 0 1px 0;
         border-style: solid;
-        border-color:$color-nguva;
+        border-color:var(--color-charcoal-5);
     display:grid;
     grid-template-columns: 70% auto;
     grid-column-gap: 2rem;
@@ -210,13 +143,13 @@ margin-bottom:1.5rem;
     }
 
     p {
-        color:$color-nguva;
+        color:var(--color-charcoal-5);
         font-weight:700;
         margin-bottom:1rem;
     }
 
     h5 {
-        color:$color-charcoal;
+        color:var(--color-charcoal-1);
     }
 
     &__pub-logo {
