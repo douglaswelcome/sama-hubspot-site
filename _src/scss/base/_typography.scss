@@ -141,6 +141,12 @@ strong {
     --scaler: 7vw;
     font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
   }
+  @include breakpoint(w-sm) {
+    --maxFontSize: 3.8rem;
+    --minFontSize: 2.4rem;
+    --scaler: 7vw;
+    font-size: m#{i}n(m#{a}x(var(--minFontSize), var(--scaler)), var(--maxFontSize));
+  }
 
 }
 

@@ -23,6 +23,7 @@
 
         @include breakpoint (w-sm) {
             grid-column: 1 / span 11; 
+            margin: 1rem 0;
         }
 
     }
