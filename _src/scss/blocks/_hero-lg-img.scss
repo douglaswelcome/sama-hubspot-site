@@ -1,0 +1,117 @@
+.hero-lg-img {
+
+
+
+    &__section {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    &__bg-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__bg1 {
+        min-height: calc(100% - 9rem);
+        width: 100%;
+    
+        background-color: var(--color-charcoal-1);
+
+
+    }
+
+
+
+
+    &__content {
+        @extend %grid;
+
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+    &__copy {
+
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        grid-column: 1/ span 5;
+        grid-row: 1;
+
+        z-index: 2;
+        position: relative;
+
+        @include breakpoint (w-sm){
+            grid-column: 1/ span 11;
+            padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin-bottom: -2rem;
+        }
+       
+
+    }
+
+    &__copy-panel {
+        --bg-color:var(--color-sunshine);
+        background-color:var(--bg-color);
+        padding: 3rem;
+        @include breakpoint (w-sm){
+            padding: 1.5rem;
+        }
+    }
+
+    &__btn-row {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+
+        .btn--secondary {
+            background-color:var(--bg-color);
+        }
+    }
+
+
+
+    &__img {
+
+        grid-column: 4 / span 9;
+        grid-row: 1;
+        min-height: 40rem;
+        max-height: 50rem;
+        box-shadow: -1rem 1rem var(--color-charcoal-4);
+        position: relative;
+        display: flex;
+        height:auto;
+        width:auto;
+        
+        img {
+            width: 100%;
+
+            object-fit: cover;
+            object-position: 100% 50%;
+        }
+
+        @include breakpoint (w-sm){
+            grid-column: 2 / span 11;
+            grid-row:2;
+            min-height: 15rem;
+            max-height: 20rem;
+        }
+    }
+
+    &__img-grad {
+
+        z-index: 1;
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        opacity: 0.8;
+        // background: linear-gradient(90deg, rgba(40,40,42,1) 0%, rgba(255,255,255,0) 100%);
+
+    }
+
+}

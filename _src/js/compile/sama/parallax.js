@@ -1,6 +1,6 @@
-window.addEventListener('scroll', function(e) {
-  var scrolled = window.pageYOffset;
+// window.addEventListener('scroll', function(e) {
+//   var scrolled = window.pageYOffset;
 
-  var background = document.querySelector('.pattern');
-  background.style.transform = 'translateY(' + (scrolled * .3) + 'px' + ')';
-});
+//   var background = document.querySelector('.pattern');
+//   background.style.transform = 'translateY(' + (scrolled * .3) + 'px' + ')';
+// });

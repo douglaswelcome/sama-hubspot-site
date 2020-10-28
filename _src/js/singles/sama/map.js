@@ -1,210 +1,14 @@
-var offices = {
-    "type": "FeatureCollection",
-    "features": [{
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.419532, 37.764734
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "Suite 301",
-                "address": "2017 Mission St",
-                "city": "San Francisco",
-                "country": "United States",
-                "crossStreet": "at 16th Street",
-                "postalCode": "94110",
-                "state": "CA"
-            }
-        },
 
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -73.982968, 40.694663,
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "Suite 702",
-                "address": "325 Gold Street",
-                "city": "New York",
-                "country": "United States",
-                "crossStreet": "",
-                "postalCode": "11201",
-                "state": "NY"    
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -83.994403, 9.902545
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "Building 1, 3rd Floor",
-                "address": "Terra Campus Corporativo",
-                "city": "Tres Rios",
-                "country": "Costa Rica",
-                "crossStreet": "",
-                "postalCode": "",
-                "state": "Cartago Province"
-            }
-        },
-
-
-
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -73.596279, 45.527560
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "Suite 710",
-                "address": "5455 Av. De Gaspé",
-                "city": "Montréal",
-                "country": "Canada",
-                "crossStreet": "",
-                "postalCode": "H2T 3B3",
-                "state": "Québec"
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    4.318325, 52.078561
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "address": "Kalvermarkt 53",
-                "city": "The Hague",
-                "country": "Netherlands",
-                "crossStreet": "",
-                "postalCode": "2511 CB",
-                "state": ""
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    36.867291, -1.329689,
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "2nd Floor, Block D3, Unit D1b and D2",
-                "address": "LR NO 12081/10 Sameer Business Park Mombasa Road",
-                "city": "Nairobi",
-                "country": "Kenya",
-                "crossStreet": "",
-                "postalCode": "",
-                "state": ""
-            }
-        },
-
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    32.316805, 2.787991
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "address": "Plot 3 B Bar Dege Division Gulu Municipality",
-                "suite": "Airfield Road",
-                "city": "Gulu District",
-                "country": "Uganda",
-                "crossStreet": "",
-                "postalCode": "",
-                "state": ""
-            }
-        },
-
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    32.591360, 0.341677
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "The Wildlife Tower, Ground Floor",
-                "address": "31 Kanjokya Street",
-                "city": "Kampala",
-                "country": "Uganda",
-                "crossStreet": "",
-                "postalCode": "",
-                "state": ""
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                     103.840850, 1.279358
-                ]
-            },
-            "properties": {
-                "phoneFormatted": "xxxxxxxxxx",
-                "phone": "xxxxxxxxxx",
-                "suite": "",
-                "address": "30 Bukit Pasoh Rd",
-                "city": "Singapore",
-                "country": "",
-                "crossStreet": "",
-                "postalCode": "089844",
-                "state": ""
-            }
-        },
-
-
-
-    ]
-}
 
 buildOfficeList(offices);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHdlbGNvbWUiLCJhIjoiY2p6MXNkdmZiMGF3OTNibzFoMm1ocG05cSJ9.xZ8njmOGIVM4sLRiit4xdg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/dwelcome/cjz1t5chs2trc1cqmuyt3ut8d',
-    center: [-24.547817, 36.980944],
+    style: 'mapbox://styles/dwelcome/ckfxhibcm08vf1aoaxw0c2nj5',
+    center: [-122.419532, 37.764734],
     // initial zoom
-    zoom: 1
+    zoom: 11.5
 });
 
 
@@ -288,6 +92,7 @@ function flyToDefault() {
 
 
 //Popup shop. sell that organic honey, beard cream, and vintage scandanavian fashion pieces
+
 function createPopUp(currentFeature) {
     removePopup();
 
@@ -295,8 +100,7 @@ function createPopUp(currentFeature) {
             closeOnClick: false
         })
         .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML('<h6 class="bold">' + 'Samasource' + '<h6>' +
-            '<h6>' + currentFeature.properties.city + '</h6>')
+        .setHTML('<h6>' + 'Samasource HQ' + '</h6>' + '<h6 class="city">' + 'San Francisco, CA' + '</h6>')
         .addTo(map);
 }
 
@@ -346,14 +150,16 @@ function buildOfficeList(data) {
         link.href = 'javascript:void();';
         link.className = 'locations__office-link';
         link.dataPosition = i;
-        link.innerHTML = '<span class="locations__office-title">' + prop.city + '</span>' +
-            `<?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-            <path class="st0" d="M5.7,20c-0.3,0-0.7-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l7.8-7.8L4.7,2.2c-0.5-0.5-0.5-1.3,0-1.8
-                c0.5-0.5,1.3-0.5,1.8,0l8.7,8.7c0.5,0.5,0.5,1.3,0,1.8l-8.7,8.7C6.3,19.9,6,20,5.7,20z"/>
-            </svg>`;
+        link.innerHTML = '<span class="locations__office-title">' + '<h2>' + prop.city + '</h2>' + '</span>'
+        // +
+        // `<?xml version="1.0" encoding="utf-8"?>
+        // <!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        // <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        //      width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+        // <path class="st0" d="M5.7,20c-0.3,0-0.7-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l7.8-7.8L4.7,2.2c-0.5-0.5-0.5-1.3,0-1.8
+        //     c0.5-0.5,1.3-0.5,1.8,0l8.7,8.7c0.5,0.5,0.5,1.3,0,1.8l-8.7,8.7C6.3,19.9,6,20,5.7,20z"/>
+        // </svg>`
+        ;
         link.addEventListener('click', function (e) {
             // Update the currentFeature to the store associated with the clicked link
             var clickedListing = data.features[this.dataPosition];
@@ -367,20 +173,31 @@ function buildOfficeList(data) {
                 activeItem[0].classList.remove('active');
             }
             this.parentNode.classList.add('active');
-
-
         });
 
-        //   Create a new div with the class 'details' for each store
+        //  This Creates the list and details. A new div with the class 'details' for each store is created
         //   and fill it with the city and phone number
+
         var details = listing.appendChild(document.createElement('div'));
 
         details.className = "locations__details";
 
-        var row1 = details.appendChild(document.createElement('h6'));
-        var row2 = details.appendChild(document.createElement('h6'));
-        var row3 = details.appendChild(document.createElement('h6'));
-        var row4 = details.appendChild(document.createElement('h6'));
+        var row1 = details.appendChild(document.createElement('p'));
+        var row2 = details.appendChild(document.createElement('p'));
+        var row3 = details.appendChild(document.createElement('p'));
+        var row4 = details.appendChild(document.createElement('p'));
+        var row5 = details.appendChild(document.createElement('p'));
+        var row6 = details.appendChild(document.createElement('p'));
+
+        row1.className = 'locations__row1';
+        row2.className = 'locations__row2';
+        row3.className = 'locations__row3';
+        row4.className = 'locations__row4';
+        row5.className = 'locations__row5';
+        row6.className = 'locations__row6';
+
+        
+
         if (prop.suite) {
             row1.innerHTML += prop.suite;
         };
@@ -392,7 +209,10 @@ function buildOfficeList(data) {
         if (prop.postalCode) {
             row3.innerHTML += ' ' + prop.postalCode;
         };
-        row3.innerHTML += ', ' + prop.country;
+        row4.innerHTML += prop.country;
+        row5.innerHTML += prop.phone;
+        row6.innerHTML += '<a href=\'mailto:' + prop.email+ '\'>' + prop.email +'</a>';
+    
     }
 
 

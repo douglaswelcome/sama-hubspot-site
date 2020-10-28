@@ -1,6 +1,6 @@
 .offering-grid {
 
-    @extend %page-container;
+    @extend %grid;
     padding-left: 5rem;
     padding-right: 5rem;
     display: grid;
@@ -126,7 +126,7 @@
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 3rem;
-    @extend %page-container;
+    @extend %grid;
 
     @include breakpoint(w-sm) {
         grid-template-columns: 1fr;

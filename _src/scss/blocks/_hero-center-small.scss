@@ -1,0 +1,23 @@
+.hero-center-small {
+    @extend %grid;
+    
+    text-align: center;
+    row-gap: 1.5rem;
+
+    &__headline {
+      grid-column: 3 / span 8;
+    }
+
+
+
+    &__subheadline {
+    margin-bottom: 1.5rem;
+    grid-column: 3 / span 8;
+    }
+
+    &__btn-row {
+      display:flex;
+      justify-content:center;
+    }
+
+  }

@@ -1,0 +1,39 @@
+.split-cta {
+    @extend %grid;
+
+    &__left {
+        grid-column:2 / span 5;
+
+        @include breakpoint (w-sm) {
+            grid-column:1 / span 12;
+        }
+    }
+    &__right {
+        grid-column:7 /span 5;
+        display:flex;
+        justify-content:center;
+
+        @include breakpoint (w-sm) {
+            grid-column:1 / span 12;
+        }
+
+
+        
+    }
+    &__headline {
+        margin-bottom:1rem;
+    }
+
+    &__subheadline {
+        margin-bottom: 1rem;
+    }
+
+    &__headline, &__subheadline {
+        @include breakpoint (w-sm) {
+            text-align:center;
+        }
+    }
+
+    
+
+}

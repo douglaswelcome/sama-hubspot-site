@@ -1,0 +1,172 @@
+[{
+  "id": "",
+  "name": "darkmode",
+  "label": "Dark Mode?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": true
+},
+
+{
+
+  "name": "bg_color",
+  "label": "Dark Mode Background Color",
+  "required": false,
+  "locked": false,
+  "display": "select",
+
+  "help_text": "",
+  "choices": [
+  [
+    "bg-charcoal-1",
+    "Charcoal 1 (Darkest)"
+  ],
+  [
+    "bg-charcoal-2",
+    "Charcoal 2 (Medium Dark)"
+  ],
+  [
+    "bg-charcoal-3",
+    "Charcoal 3 (Light Dark)"
+  ]
+  ],
+  "type": "choice",
+  "placeholder": "",
+  "default":  "bg-charcoal-1"   
+
+},
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  }, 
+  {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  }, 
+  {
+  "id" : "",
+  "name": "cta1",
+  "label": "Primary CTA",
+  "required": false,
+  "locked": false,
+  "inline_help_text": "Shows Teaser image when toggled on",
+  "help_text": "",
+  "type": "cta",
+  "default": null },
+  {
+  "id" : "",
+  "name": "cta2",
+  "label": "Secondary CTA",
+  "required": false,
+  "locked": false,
+  "inline_help_text": "Shows Teaser image when toggled on",
+  "help_text": "",
+  "type": "cta",
+  "default": null },
+  {
+    "picker": "image",
+
+    "name": "block1_img",
+    "label": "block1_img",
+    "required": false,
+    "locked": false,
+    "type": "file",
+    "default": "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
+  }, {
+    "name": "block1_title",
+    "label": "block1_title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  }, {
+    "name": "block1_body",
+    "label": "block1_body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  }, {
+    "picker": "image",
+    "name": "block2_img",
+    "label": "block2_img",
+    "required": false,
+    "locked": false,
+    "type": "file",
+    "default": "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/headshots/Loic_headshot.png"
+  }, {
+    "name": "block2_title",
+    "label": "block2_title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  }, {
+    "name": "block2_body",
+    "label": "block2_body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  }, {
+    "picker": "image",
+    "name": "block3_img",
+    "label": "block3_img",
+    "required": false,
+    "locked": false,
+    "type": "file",
+    "default": "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
+  }, {
+    "name": "block3_title",
+    "label": "block3_title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Jergenize"
+  }, {
+    "name": "block3_body",
+    "label": "block3_body",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "This is truly an almighty mountain. There are no limits in this world."
+  }
+]

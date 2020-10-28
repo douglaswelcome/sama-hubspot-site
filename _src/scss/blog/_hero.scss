@@ -106,7 +106,7 @@
     position: relative;
 
 
-    @extend %page-container;
+    @extend %grid;
 
     @include breakpoint (w-sm) {
       margin-bottom: 0;
@@ -142,7 +142,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-white;
-        border: 0.25rem solid $color-kennedy;
+        border: 0.25rem solid var(--color-charcoal-2);
         border-radius: 0 0 0 3rem;
         position: absolute;
         top: 0;
@@ -156,7 +156,7 @@
         height: 100%;
         width: 100%;
         background-color: $color-white;
-        border: 0.25rem solid $color-kennedy;
+        border: 0.25rem solid var(--color-charcoal-2);
         border-radius: 0 0 0 3rem;
         position: absolute;
         top: 0;
@@ -195,7 +195,7 @@
 
 .blog-author-hero {
   padding-top: 1.5rem;
-  @extend %page-container;
+  @extend %grid;
 
 
 
@@ -227,7 +227,7 @@
 
 .blog-topic-hero {
   padding-top: 1.5rem;
-  @extend %page-container;
+  @extend %grid;
 
 
 

@@ -1,0 +1,343 @@
+.form-wrapper {
+
+
+
+
+  .hs-form {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hs-form .hs-form-field {
+    margin-bottom: 1.5rem;
+    position: relative;
+    height: auto;
+  }
+
+  .hs-form-field label {
+    display: inline-block;
+    margin-bottom:.5rem;
+    font-weight: 700;
+    font-size: .875rem;
+
+    line-height: 1;
+    color: var(--color-charcoal-3);
+
+  }
+
+  .hs-form input[type="text"],
+  .hs-form input[type="password"],
+  .hs-form input[type="datetime"],
+  .hs-form input[type="datetime-local"],
+  .hs-form input[type="date"],
+  .hs-form input[type="month"],
+  .hs-form input[type="time"],
+  .hs-form input[type="week"],
+  .hs-form input[type="number"],
+  .hs-form input[type="email"],
+  .hs-form input[type="url"],
+  .hs-form input[type="search"],
+  .hs-form input[type="tel"],
+  .hs-form input[type="color"],
+  .hs-form input[type="file"],
+  .hs-form textarea,
+  .hs-form select,
+  input {
+    border: .125rem solid;
+    border-radius: 3px;
+    border-color: var(--color-charcoal-1);
+    font-size: 1.125rem;
+    padding: .75rem;
+    width: 100%;
+
+    background-color: transparent;
+  }
+
+  .hs-form select {
+    appearance: none;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .hs-form input[type="text"]:focus,
+  .hs-form input[type="password"]:focus,
+  .hs-form input[type="datetime"]:focus,
+  .hs-form input[type="datetime-local"]:focus,
+  .hs-form input[type="date"]:focus,
+  .hs-form input[type="month"]:focus,
+  .hs-form input[type="time"]:focus,
+  .hs-form input[type="week"]:focus,
+  .hs-form input[type="number"]:focus,
+  .hs-form input[type="email"]:focus,
+  .hs-form input[type="url"]:focus,
+  .hs-form input[type="search"]:focus,
+  .hs-form input[type="tel"]:focus,
+  .hs-form input[type="color"]:focus,
+  .hs-form input[type="file"]:focus,
+  .hs-form textarea:focus,
+  .hs-form select:focus {
+    border-color:var(--color-blue);
+
+
+
+  }
+
+  .hs-form input[type="checkbox"],
+  .hs-form input[type="radio"]
+  {
+    width: auto;
+
+  }
+
+  label.hs-form-booleancheckbox-display {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    column-gap: .75rem;
+  }
+
+
+
+
+  .hs-form .hs-error-msgs label {
+    font-size: .7rem;
+    color: var(--color-charcoal-2)
+  }
+
+  .hs_error_rollup{
+    display:none;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+
+  
+
+  .hs_submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .actions {
+      border-radius: 3px;
+      cursor: pointer;
+      background-color: var(--color-charcoal-6);
+      position: relative;
+
+
+      &:before {
+        content: "";
+        background-color: var(--color-charcoal-1);
+        border: .125rem solid;
+        border-color: var(--color-charcoal-1);
+        border-radius: 3px;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+
+      }
+
+      &:hover {
+        .hs-button {
+          transform: translate(.5rem, -.5rem);
+        }
+
+        &:before {
+          transform: translate(.5rem, -.5rem);
+        }
+      }
+
+      &:active {
+        .hs-button {
+          transform: translate(.25rem, -.25rem);
+        }
+
+        &:before {
+          transform: translate(.25rem, -.25rem);
+        }
+      }
+    }
+  }
+
+
+
+  .hs-button {
+
+    border-width: 0px;
+    color: var(--color-white);
+    width: auto;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    position: relative;
+    padding: .75rem 2rem .75rem 2rem;
+    font-family: var(--font-barlow);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+
+  
+
+  #hs-pwd-widget-password {
+    margin-top: 15px;
+  }
+
+  .legal-consent-container {
+
+  
+    .hs-form-booleancheckbox-display>span {
+      margin-left:0px;
+    }
+   
+
+  }
+
+}
+
+
+
+
+
+
+
+.form-wrapper.form-wrapper--dark-mode {
+
+ .hs-form-field label {
+    color: var(--color-white);
+  }
+
+  .hs-form input[type="text"],
+  .hs-form input[type="password"],
+  .hs-form input[type="datetime"],
+  .hs-form input[type="datetime-local"],
+  .hs-form input[type="date"],
+  .hs-form input[type="month"],
+  .hs-form input[type="time"],
+  .hs-form input[type="week"],
+  .hs-form input[type="number"],
+  .hs-form input[type="email"],
+  .hs-form input[type="url"],
+  .hs-form input[type="search"],
+  .hs-form input[type="tel"],
+  .hs-form input[type="color"],
+  .hs-form input[type="file"],
+  .hs-form textarea,
+  .hs-form select {
+    border-color: var(--color-charcoal-4);
+    background-color: var(--color-charcoal-4);
+    color:var(--color-white);
+
+  }
+
+  .hs-form select {
+    background-color: $color-white;
+  }
+
+  .hs-form input[type="text"]:focus,
+  .hs-form input[type="password"]:focus,
+  .hs-form input[type="datetime"]:focus,
+  .hs-form input[type="datetime-local"]:focus,
+  .hs-form input[type="date"]:focus,
+  .hs-form input[type="month"]:focus,
+  .hs-form input[type="time"]:focus,
+  .hs-form input[type="week"]:focus,
+  .hs-form input[type="number"]:focus,
+  .hs-form input[type="email"]:focus,
+  .hs-form input[type="url"]:focus,
+  .hs-form input[type="search"]:focus,
+  .hs-form input[type="tel"]:focus,
+  .hs-form input[type="color"]:focus,
+  .hs-form input[type="file"]:focus,
+  .hs-form textarea:focus,
+  .hs-form select:focus {
+    border-color: var(--color-blue);
+  }
+
+  .hs-form .hs-error-msgs label {
+    color: $color-sunshine;
+
+  }
+
+
+
+
+  .legal-consent-container {
+   
+    span {
+      color: var(--color-charcoal-7);
+    }
+  }
+
+  .hs_submit {
+    .actions {
+
+      background-color: var(--color-charcoal-4);
+
+
+
+      &:before {
+        background-color: var(--color-sunshine);
+        border-color: var(--color-sunshine);
+      }
+
+      &:hover {
+        .hs-button {
+          transform: translate(.5rem, -.5rem);
+        }
+
+        &:before {
+          transform: translate(.5rem, -.5rem);
+        }
+      }
+
+      &:active {
+        .hs-button {
+          transform: translate(.25rem, -.25rem);
+        }
+
+        &:before {
+          transform: translate(.25rem, -.25rem);
+        }
+      }
+    }
+    .hs-button {
+      color: var(--color-charcoal-1);
+    }
+
+  }
+
+  
+
+
+  .submitted-message {
+    p {
+      color: $color-white;
+    }
+
+  }
+
+
+
+
+  &.form-wrapper--button-left {
+    .hs_submit {
+      justify-content: flex-start;
+    }
+  }
+
+
+
+
+
+
+}
+
+
+

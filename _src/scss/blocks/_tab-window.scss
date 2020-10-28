@@ -1,0 +1,80 @@
+.tab-window {
+    @extend %grid;
+
+    &__title {
+        grid-column: 2 / span 10;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+
+    &__tab-bar {
+        grid-row: 2;
+        grid-column: 2/span 10;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @include breakpoint (w-sm){
+            grid-column: 1/span 12;
+        }
+
+
+    }
+
+
+
+    &__window {
+        grid-row: 3;
+        grid-column: 3 /span 8;
+        display: grid;
+        position: relative;
+
+        @include breakpoint (w-sm){
+            grid-column: 1/span 12;
+        }
+
+
+
+    }
+
+    &__feature {
+        grid-area: 1/1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        visibility: hidden;
+
+    }
+
+    &__feature.active {
+        visibility: visible;
+    }
+
+
+
+
+    &__media-wrapper {
+        grid-row: 1;
+
+    }
+
+    &__media {
+
+        width: 100%;
+        display: block;
+
+
+    }
+
+    &__text {
+        grid-row: 2;
+        width: 100%;
+        background-color: var(--color-charcoal-5);
+        padding: 1.5rem 3rem;
+
+
+
+    }
+
+
+}

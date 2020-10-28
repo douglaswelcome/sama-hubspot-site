@@ -14,8 +14,6 @@ $color-sunshine-trans: rgba(#fffa0c, 0.8);
 $color-charcoal: #28282a;
 $color-charcoal-trans: rgba(#28282a, 0.8);
 
-
-
 //Tembo
 $color-tembo: #505052;
 $color-tembo-trans: rgba(#505052, 0.4);
@@ -55,10 +53,28 @@ $color-charcoal-4:#7a7a7c;
 $color-charcoal-5:#98989a;
 $color-charcoal-6:#b7b7b9;
 $color-charcoal-7:#d8d8da;
+
 $color-charcoal-8:#f9f9fb;
 
 
- //Data Viz
+:root {
+    --color-white: #ffffff;
+
+    --color-charcoal-1: #28282a;
+    --color-charcoal-2: #424244;
+    --color-charcoal-3: #5d5d5f;
+    --color-charcoal-4: #7a7a7c;
+    --color-charcoal-5: #98989a;
+    --color-charcoal-6: #b7b7b9;
+    --color-charcoal-7: #d8d8da;
+    --color-charcoal-8: #f9f9fb;
+
+    --color-sunshine: #fffa0c;
+
+    --color-blue: #37B2FB;
+}
+
+//Data Viz
 // "#fffa0c",
 // "#291d54",
 // "#815ab9",

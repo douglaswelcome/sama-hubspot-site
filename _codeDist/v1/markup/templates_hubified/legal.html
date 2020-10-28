@@ -1,0 +1,27 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% module "module_20200921223818" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+<div class="flex-content">
+
+    {% module "module_20200921223953" path="/v1/markup/modules_from_blocks/hero_center_small", label="Hero" %}
+
+    {% module "module_20200930220618" path="/v1/markup/modules_from_blocks/center_legal", label="Page Body" %}
+
+
+
+
+
+
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

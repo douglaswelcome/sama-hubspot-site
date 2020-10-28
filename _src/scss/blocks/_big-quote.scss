@@ -1,0 +1,8 @@
+.big-quote {
+    grid-column: 1 / span 12;
+    text-align: right;
+    &__author {
+        margin-top: 3rem;
+    }
+
+}

@@ -1,0 +1,29 @@
+[
+    {
+    "name": "quote",
+    "label": "Quote Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "You can do anything here. Just make sure you're super duper happy." },
+    {
+    "name": "author",
+    "label": "Author",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Dr. Dre" }
+  
+]

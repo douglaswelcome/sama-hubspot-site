@@ -1,0 +1,57 @@
+.three-card {
+  @extend %grid;
+
+  &__intro {
+    grid-column: 2 /span 10;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  &__headline {
+    margin-bottom: 1rem;
+  }
+
+  &__subheadline {
+    margin-bottom: 1rem;
+  }
+
+  &__card-row {
+    grid-row: 2;
+    grid-column: 2 /span 10;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: left;
+    text-align: left;
+    column-gap: 3rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint (w-sm) {
+
+      grid-column: 1/ span 12;
+      grid-template-columns: 1fr auto 1fr;
+      row-gap: 1.5rem;
+
+      column-gap: 0rem;
+
+    }
+
+  }
+
+  &__card {
+    @include breakpoint (w-sm) {
+      width: 17.75rem;
+      grid-column: 2;
+
+    }
+  }
+
+
+}
+
+
+
+.dark-mode .three-card {
+  .three-card__card-row {
+    color: var(--color-charcoal-1);
+  }
+}

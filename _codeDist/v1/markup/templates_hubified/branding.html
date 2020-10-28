@@ -1,0 +1,24 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+
+{% include '/v1/markup/blocks_static/lotsa-text-center.html' %}
+
+{% module "module_155077571691869" path="/v1/markup/modules_from_blocks/two_block", label="two_block" %}
+
+{% module "module_20200727231132" path="/v1/markup/modules_from_blocks/page_title", label="page_title" %}
+
+
+
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

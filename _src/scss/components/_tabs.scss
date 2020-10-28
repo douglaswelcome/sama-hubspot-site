@@ -1,0 +1,110 @@
+.tabs {
+    &__tab-bar {
+        align-items: center;
+        border-bottom: .125rem solid #{var(--color-charcoal-5)};
+        display: inline-flex;
+        margin: .25rem 0 (.25rem - .125rem) 0;
+        position:relative;
+
+    }
+
+    &__label {
+        text-decoration: none;
+        color: var(--color-charcoal-5);
+        transition: all 300ms;
+    }
+
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+        margin-bottom: -3px;
+        padding: 1rem 2rem;
+        text-align: center;
+
+        &:focus,
+        &:hover {
+
+            .tabs__label {
+                text-decoration: none;
+                color: var(--color-charcoal-1);
+                transform: scale(1.05);
+            }
+        }
+
+        &.active {
+            .tabs__label {
+                color: var(--color-charcoal-1);
+            }
+        }
+
+        // &.tab-block {
+        //     .tab-item {
+        //       flex: 1 0 0;
+        //       text-align: center;
+
+        //       a {
+        //         margin: 0;
+        //       }
+
+        //       .badge {
+        //         &[data-badge]::after {
+        //           position: absolute;
+        //           right: $unit-h;
+        //           top: $unit-h;
+        //           transform: translate(0, 0);
+        //         }
+        //       }
+        //     }
+        //   }
+
+        //   &:not(.tab-block) {
+        //     .badge {
+        //       padding-right: 0;
+        //     }
+        //   }
+    }
+
+    &__tab-underline {
+        position:absolute;
+        height:.25rem;
+        
+        background-color: var(--color-sunshine);
+        bottom: -.1875rem;
+        transition: all .2s;
+    }
+
+}
+
+
+
+
+.dark-mode {
+    .tabs__tab-bar {
+        border-bottom: .125rem solid #{var(--color-charcoal-4)};
+    }
+
+    .tabs__tab {
+
+        &:focus,
+        &:hover {
+            .tabs__label {
+                color: var(--color-white);
+            }
+        }
+
+        &.active {
+            .tabs__label {
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .tabs__label {
+
+        color: var(--color-charcoal-4);
+
+    }
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-1"
+
+  },
+  {
+    "name": "person",
+    "label": "Person's Name",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "isn't it neat",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Name Here"
+  },
+
+  {
+    "name": "job_title",
+    "label": "Person's Job title",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "isn't it neat",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Job Title Here"
+  },
+
+
+
+  {
+    "name": "headshot_img",
+    "label": "headshot_img",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "responsive": false,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://cdn2.hubspot.net/hubfs/image.jpeg",
+      "alt": "an_image",
+      "width": 100,
+      "height": 100
+    }
+  },
+
+  {
+    "name": "divider_on",
+    "label": "divider_on",
+    "help_text": "Turns on the little divider line.",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+
+  {
+    "default": "<p>Hello, world!</p>",
+    "label": "rich_text_field",
+    "locked": false,
+    "name": "body_text",
+    "required": false,
+    "sortable": false,
+    "type": "richtext"
+  }
+
+]

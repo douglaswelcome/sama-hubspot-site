@@ -1,0 +1,40 @@
+.divider-line {
+    display: inline-block;
+    width: .125rem;
+    position:relative;
+    background-color: var(--color-charcoal-6);
+
+    &--horizontal {
+        
+        height: .125rem;
+        width: 6rem;
+        margin-bottom: 1.5rem;
+        margin-top:1.25rem;
+        ;
+    }
+
+    &--vertical{
+        display: inline-flex;
+        
+    }
+
+    &--right-align {
+        margin-left:auto;
+    }
+
+    &--negative {
+        
+        background-color:var(--color-sunshine);
+    }
+
+    &--no-shadow {
+        &::before{
+            display:none;
+        }
+    }
+
+    &--charcoal {
+        background-color: $color-charcoal-4;
+    }
+} 
+

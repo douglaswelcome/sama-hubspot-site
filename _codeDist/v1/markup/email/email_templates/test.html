@@ -1,0 +1,50 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/email/email_static/base.html' %}
+
+{% block email-body %}
+    {% include /markup/email/email_static/header.html %}
+
+    {% module "module_20200324172335" path="/v1/markup/email/email_modules/image", label="Image" %}
+
+    {% module "module_20200323093312" path="/v1/markup/email/email_modules/rich-text", label="Rich Text Block" %}
+
+    <!--Feature-->
+
+    {% include /markup/email/email_static/divider.html %}
+
+    {% module "module_20200323164948" path="/v1/markup/email/email_modules/article-heading3", label="Heading 3" %}
+
+    {% module "module_20200323172659" path="/v1/markup/email/email_modules/article-heading1", label="Heading 1" %}
+
+    {% module "module_20200323172735" path="/v1/markup/email/email_modules/image", label="Image" %}
+
+    {% module "module_20200324094127" path="/v1/markup/email/email_modules/rich-text", label="Rich Text Block" %}
+
+    <!--Around the Web-->
+
+    {% include /markup/email/email_static/divider.html %}
+
+    {% module "module_20200324094210" path="/v1/markup/email/email_modules/article-heading3", label="Heading 3" %}
+
+    {% module "module_20200324094251" path="/v1/markup/email/email_modules/rich-text", label="Rich Text Block" %}
+
+    <!--Up Coming-->
+
+    {% include /markup/email/email_static/divider.html %}
+
+    {% module "module_20200324094433" path="/v1/markup/email/email_modules/article-heading3", label="Heading 3" %}
+
+    {% module "module_20200324094448" path="/v1/markup/email/email_modules/image", label="Image" %}
+    
+    {% include /markup/email/email_static/footer.html %}
+    
+
+
+{% endblock %}

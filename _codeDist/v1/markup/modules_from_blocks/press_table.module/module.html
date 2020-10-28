@@ -1,0 +1,140 @@
+{% set tableID = 1052854 %}
+
+{% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
+
+
+<section class="dark-mode bg-charcoal-3">
+  <div class="news-feature">
+    <div class="news-feature__headline">
+      <h2 class="display-small">
+        {{ module.headline }}
+    </h2>
+    <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+    <h5>{{ module.subheadline}}</h5>
+    </div>
+
+    {% for row in table %}
+    {% if row.featured_order.name=="First" %}
+
+    <div class=" news-feature__main news-feature--article-bg">
+
+      <a href="{{row.article_url}}" class="news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
+
+
+            <div class="news-feature__category">
+                <p class="bold">
+                    {{ row.type.name }}
+                </p>
+            </div>
+            <div class="news-feature__title">
+                <h2 class="bold">
+                  {{row.headline}}
+                </h2>
+            </div>
+            <div class="news-feature__logo">
+                <img src="{{row.publication_icon.url}}" />
+            </div>
+
+ 
+            </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="news-feature__secondary-wrapper">
+
+      {% for row in table %}
+      {% if row.featured_order.name=="Second" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
+                <div class="news-feature__category">
+                    <p class="bold">
+                      {{ row.type.name }}
+                     </p>
+                 </div>
+            
+                 <div class="news-feature__title">
+                      <h4 class="bold">
+                        {{row.headline}}
+                     </h4>
+                 </div>
+                 <div class="news-feature__logo">
+                    <img src="{{row.publication_icon.url}}" />
+                </div>
+             </a>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+      {% for row in table %}
+      {% if row.featured_order.name=="Third" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.article_url}}" class="  news-feature--link" style="background-image:url({{row.background.url}})" target="_blank">
+              <div class="news-feature__category">
+                  <p class="bold">
+                    {{ row.type.name }}
+                   </p>
+               </div>
+          
+               <div class="news-feature__title">
+                    <h4 class="bold">
+                      {{row.headline}}
+                   </h4>
+               </div>
+               <div class="news-feature__logo">
+                  <img src="{{row.publication_icon.url}}" />
+              </div>
+           </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<section class="press-tab__section">
+  <div class="tabs tabs__tab-bar">
+
+    <div class="press-table-tab__category tabs__tab active ">
+      <h5 class="tabs__label">In the News</h5>
+    </div>
+    <div class="press-table-tab__category tabs__tab ">
+      <h5 class="tabs__label">Press Releases</h5>
+    </div>
+    <div class="tabs__tab-underline"></div>
+
+  </div>
+</section>
+
+
+
+<section class="press-table__section">
+  <div class="press-table">
+    {% for row in table %}
+    <a href="{{row.article_url}}" type="{{row.type}}" class="press-table__press-link" target="_blank">
+    <div class="press-table__title">
+      <p>{{row.date|datetimeformat('%B %e, %Y')}}</p>
+      <div class="divider-line divider-line--horizontal"></div>
+
+      <h5>"{{row.headline}}"</h5>
+
+
+    </div>
+
+    <div class="press-table__pub-logo">
+      <img src="{{row.publication_icon.url}}" />
+    </div>
+    
+  </a>
+
+    {% endfor %}
+  </div>
+
+</section>

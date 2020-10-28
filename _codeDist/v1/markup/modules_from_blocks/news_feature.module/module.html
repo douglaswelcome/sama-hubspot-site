@@ -1,0 +1,86 @@
+<!-- module html  -->
+<section class="dark-mode bg-charcoal-3">
+    <div class="news-feature">
+        <div class="news-feature__headline">
+            <h2 class="display-small">
+                {{ module.headline }}
+            </h2>
+            <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+            <h5>{{ module.subheadline}}</h5>
+        </div>
+
+
+        <div class=" news-feature__main news-feature--article-bg">
+
+            <a href="{{ module.article1.link.url.href }}" class=" news-feature--link" style="background-image:url({{module.article1.bg.src}})" target="_blank" >
+
+
+            <div class="news-feature__category">
+                <p class="bold">
+                    {{ module.article1.category }}
+                </p>
+            </div>
+            <div class="news-feature__title">
+                <h2 class="bold">
+                    {{ module.article1.title }}
+                </h2>
+            </div>
+            {% if module.article1.logo.src %}
+            <div class="news-feature__logo">
+                <img src="{{ module.article1.logo.src }}" />
+            </div>
+            {% endif %}
+
+ 
+            </a>
+        </div>
+
+
+        <div class="news-feature__secondary-wrapper">
+
+            <div class="news-feature__secondary-article news-feature--article-bg">
+                <a href="{{ module.article2.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article2.bg.src}})" target="_blank">
+                <div class="news-feature__category">
+                    <p class="bold">
+                      {{ module.article2.category }}
+                     </p>
+                 </div>
+            
+                 <div class="news-feature__title">
+                      <h4 class="bold">
+                       {{ module.article2.title }}
+                     </h4>
+                 </div>
+                 {% if module.article2.logo.src %}
+                 <div class="news-feature__logo">
+                    <img src="{{ module.article2.logo.src }}" />
+                </div>
+                {% endif %}
+             </a>
+            </div>
+
+            <div class="news-feature__secondary-article news-feature--article-bg">
+                <a href="{{ module.article3.link.url.href }}" class="  news-feature--link" style="background-image:url({{module.article3.bg.src}})" target="_blank">
+                    <div class="news-feature__category">
+                        <p class="bold">
+                            {{ module.article3.category }}
+                        </p>
+                    </div>
+                    <div class="news-feature__title">
+                        <h4 class="bold">
+                            {{ module.article3.title }}
+                        </h4>
+                    </div>
+                    {% if module.article3.logo.src %}
+                    <div class="news-feature__logo">
+                        <img src="{{ module.article3.logo.src }}" />
+                    </div>
+                    {% endif %}
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>

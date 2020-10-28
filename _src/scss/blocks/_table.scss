@@ -8,7 +8,7 @@
     }
 
     &__module-wrapper {
-        @extend %page-container;
+        @extend %grid;
     }
 
     text-align:left;
@@ -18,7 +18,7 @@
     }
 
     &__head {
-        border-color: $color-kennedy-2;
+        border-color: var(--color-charcoal-3);
         border-width: 0 0 2px 0;
         border-style: solid;
 

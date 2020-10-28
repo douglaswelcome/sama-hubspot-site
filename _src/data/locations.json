@@ -1,0 +1,171 @@
+[
+     {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.982968, 40.694663,
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "Suite 702",
+                "address": "325 Gold Street",
+                "city": "New York",
+                "country": "United States",
+                "crossStreet": "",
+                "postalCode": "11201",
+                "state": "NY"    
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.994403, 9.902545
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "Building 1, 3rd Floor",
+                "address": "Terra Campus Corporativo",
+                "city": "Tres Rios",
+                "country": "Costa Rica",
+                "crossStreet": "",
+                "postalCode": "",
+                "state": "Cartago Province"
+            }
+        },
+
+
+
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.596279, 45.527560
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "Suite 710",
+                "address": "5455 Av. De Gaspé",
+                "city": "Montréal",
+                "country": "Canada",
+                "crossStreet": "",
+                "postalCode": "H2T 3B3",
+                "state": "Québec"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.318325, 52.078561
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "address": "Kalvermarkt 53",
+                "city": "The Hague",
+                "country": "Netherlands",
+                "crossStreet": "",
+                "postalCode": "2511 CB",
+                "state": ""
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.867291, -1.329689,
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "2nd Floor, Block D3, Unit D1b and D2",
+                "address": "LR NO 12081/10 Sameer Business Park Mombasa Road",
+                "city": "Nairobi",
+                "country": "Kenya",
+                "crossStreet": "",
+                "postalCode": "",
+                "state": ""
+            }
+        },
+
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.316805, 2.787991
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "address": "Plot 3 B Bar Dege Division Gulu Municipality",
+                "suite": "Airfield Road",
+                "city": "Gulu District",
+                "country": "Uganda",
+                "crossStreet": "",
+                "postalCode": "",
+                "state": ""
+            }
+        },
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.591360, 0.341677
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "The Wildlife Tower, Ground Floor",
+                "address": "31 Kanjokya Street",
+                "city": "Kampala",
+                "country": "Uganda",
+                "crossStreet": "",
+                "postalCode": "",
+                "state": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                     103.840850, 1.279358
+                ]
+            },
+            "properties": {
+                "phoneFormatted": "xxxxxxxxxx",
+                "phone": "xxxxxxxxxx",
+                "suite": "",
+                "address": "30 Bukit Pasoh Rd",
+                "city": "Singapore",
+                "country": "",
+                "crossStreet": "",
+                "postalCode": "089844",
+                "state": ""
+            }
+        },
+
+]

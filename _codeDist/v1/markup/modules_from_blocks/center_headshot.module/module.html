@@ -1,0 +1,35 @@
+<!-- module html  -->
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+">
+    <div class="headshot no-dark">
+        <div class="headshot__dot-panel">
+            <canvas id="dotCanvas"></canvas>
+        </div>
+        <div class="headshot__bottom-panel"></div>
+        <div class="headshot__top-panel">
+            <div class="headshot__img" ">
+            <img src=" {{ module.headshot_img.src }}" alt="">
+            </div>
+            <div class="headshot__name">
+                <h4>
+                    {{ module.person }}
+                </h4>
+                <h5>
+                    {{ module.job_title }}
+                </h5>
+            </div>
+
+
+            {% if ( (module.cta_subtitle) and (module.cta_body) ) or (module.divider_on) %}
+            <div class="divider-line divider-line--horizontal divider-line--charcoal"></div>
+            {% endif %}
+            <div class="headshot__body">
+                {{module.body_text}}
+            </div>
+        </div>
+    </div>
+</section>

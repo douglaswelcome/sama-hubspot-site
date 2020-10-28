@@ -1,0 +1,111 @@
+[{
+    "name": "headline",
+    "label": "Headline",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+
+
+  {
+    "name": "features",
+    "label": "Features",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": null,
+      "max": null,
+      "sorting_label_field": null,
+      "default": null
+    },
+
+    "children": [
+      {
+        "name": "da_name",
+        "label": "Feature Name",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Feature 1"
+      },
+      {
+        "name": "type",
+        "label": "Is this an image or svg?",
+        "required": true,
+        "locked": false,
+        "display": "select",
+        "inline_help_text": "",
+        "help_text": "",
+        "choices": [
+          [
+            "img",
+            "Image"
+          ],
+          [
+            "svg",
+            "SVG"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": null
+      },
+      {
+        "name": "img",
+        "label": "Feature Image",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null
+        }
+      },
+      {
+        "name": "svg",
+        "label": "SVG",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "inline_help_text": "Paste SVG into Code Editor",
+        "help_text": "",
+        "enabled_features": ["source_code"],
+        "default": null
+      },
+      {
+
+        "name": "description",
+        "label": "Feature Description",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+  }
+
+
+
+]

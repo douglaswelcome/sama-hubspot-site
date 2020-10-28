@@ -1,0 +1,102 @@
+.panel-feature {  
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: var(--color-charcoal-2);
+    box-shadow: -1rem 1rem var(--color-charcoal-6);
+    overflow: hidden;
+
+    &__wrapper {
+        @extend %grid;
+        padding-left:1rem;
+    }
+    
+
+    &__img {
+        grid-column: span 4;
+        overflow: hidden;
+        margin-left: -.125rem;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint (w-sm){
+            grid-column: span 12; 
+            height: 18rem;
+        }
+
+    }
+
+    &__copy {
+        grid-column: span 8;
+        color: var(--color-white);
+        padding: 6rem;
+
+        @include breakpoint (w-sm){
+            grid-column: span 12; 
+            padding: 2rem;
+        }
+    }
+
+    &__subheadline {}
+
+    &__awards {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        column-gap: 3rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @include breakpoint (w-sm) {
+            column-gap: 1.5rem;
+            justify-content: center;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+            max-width: 7rem;
+            max-height: 7rem;
+
+            @include breakpoint (w-sm) {
+                max-width: 5rem;
+            max-height: 5rem;
+            }
+        }
+
+
+
+    }
+
+    &--flip {
+        .panel-feature__img {
+            grid-column-start: 9/ span 4;
+            grid-row: 1;
+            margin-right: -.125rem;
+            margin-left: 0rem;
+
+            @include breakpoint (w-sm){
+                grid-column: 1/ span 12; 
+            }
+
+        }
+
+        .panel-feature__copy {
+            grid-column: 1/ span 8;
+            grid-row: 1;
+            @include breakpoint (w-sm){
+                grid-column: 1/ span 12; 
+                grid-row: 2;
+            }
+        }
+    }
+
+
+
+}
+
+.dark-mode{
+    .panel-feature{
+    box-shadow: -1rem 1rem var(--color-charcoal-4);
+    }
+}
