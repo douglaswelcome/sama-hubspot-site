@@ -49,6 +49,7 @@
 
         @include breakpoint (w-sm) {
             column-gap: 1.5rem;
+            justify-content: center;
         }
 
         img {
@@ -58,8 +59,8 @@
             max-height: 7rem;
 
             @include breakpoint (w-sm) {
-                max-width: 4rem;
-            max-height: 4rem;
+                max-width: 5rem;
+            max-height: 5rem;
             }
         }
 
@@ -85,6 +86,7 @@
             grid-row: 1;
             @include breakpoint (w-sm){
                 grid-column: 1/ span 12; 
+                grid-row: 2;
             }
         }
     }

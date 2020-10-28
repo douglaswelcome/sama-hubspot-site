@@ -2,10 +2,21 @@
     @extend %grid;
     column-gap: 3rem;
 
+    @include breakpoint (w-sm){
+        column-gap: 0rem;
+        row-gap: 3rem;
+    }
+
     &__left-panel, &__right-panel {
+        margin-left: 1rem;
         grid-column: span 6;
         background-color:var(--color-charcoal-8);
         box-shadow: -1rem 1rem var(--color-charcoal-6);
+
+        @include breakpoint (w-sm){
+            grid-column: span 12;
+            
+        }
     }
 
     &__img{
@@ -21,6 +32,9 @@
 
     &__copy{
         padding: 3rem;
+        @include breakpoint (w-sm){
+            padding: 1.5rem;
+        }
     }
 
     &__headline {
