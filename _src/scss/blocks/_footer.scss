@@ -7,6 +7,10 @@ footer {
 
   color: var(--color-white);
 
+  @include breakpoint (w-sm){
+    padding-top: 3rem;
+  }
+
   .footer {
 
     @extend %grid;
@@ -20,6 +24,11 @@ footer {
       column-gap: 1.5rem;
       margin-bottom: 2rem;
 
+      @include breakpoint (w-sm) {
+        grid-template-columns: 1fr;
+        row-gap:1.5rem;
+      }
+
 
 
     }
@@ -32,6 +41,10 @@ footer {
       justify-content: flex-end;
       column-gap: 4rem;
       display: flex;
+
+      @include breakpoint (w-sm){
+        justify-content: flex-start;
+      }
 
     }
 
@@ -92,41 +105,35 @@ footer {
 
       @include breakpoint(w-med) {
         grid-template-columns: 1fr;
-        border-radius: 0 0 1.5rem 0;
-
-        .left {
-
-          margin-bottom: 2rem;
-
-          svg {
-            width: 200px;
-          }
-        }
-
-        .right {
-          padding-right: 0.25rem;
-
-          h6 {
-            text-align: left;
-          }
-        }
+        row-gap: 1rem;
+        
       }
 
     }
 
     &__mid-left {
 
-      align-self: end;
+      
 
       svg {
         fill: #fffa0c;
         width: 300px;
+
+        @include breakpoint (w-sm) {
+          width: 175px;
+        }
       }
     }
 
     &__mid-right {
 
       text-align: right;
+
+      @include breakpoint (w-sm){
+        text-align: left;
+      }
+
+     
 
 
     }
@@ -138,6 +145,10 @@ footer {
       grid-auto-flow: column;
       column-gap: 1.5rem;
 
+      @include breakpoint (w-sm){
+        column-gap: .5rem;
+      }
+
 
 
     }
@@ -146,13 +157,20 @@ footer {
       display: grid;
       justify-items: center;
       align-items: center;
-      border: 3px solid;
+      border: 2px solid;
       border-radius: 50%;
       border-color: var(--color-sunshine);
       transition: ease 0.5s;
 
       width: 3rem;
       height: 3rem;
+
+      @include breakpoint (w-sm) {
+        width: 2rem;
+      height: 2rem;
+      }
+
+
 
 
 
@@ -162,6 +180,11 @@ footer {
         transition: ease 0.5s;
         max-width: 1.25rem;
         max-height: 1.25rem;
+
+        @include breakpoint (w-sm) {
+          max-width: .75rem;
+        max-height: .75rem;
+        }
 
 
 
@@ -190,7 +213,10 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 1.5rem;
-
+      
+      @include breakpoint (w-sm){
+        grid-template-columns: 1fr;
+      }
 
 
       h6 {
