@@ -3,11 +3,31 @@
 
     column-gap: 4rem;
 
+
+    @include breakpoint (w-sm){
+        column-gap: 0rem;
+        grid-template-columns: 1fr auto 1fr;
+        width: 100%;
+        row-gap: 2rem;
+        margin:0rem;
+    }
+
+    &__card {
+        @include breakpoint (w-sm) {
+            width: calc(100vw - 2rem);
+            
+        }
+    }
     
     
 
     &__form {
         grid-column: span 6;
+
+        @include breakpoint (w-sm) {
+            grid-column: span 12;
+            
+        }
     }
 
     &__description {
@@ -15,6 +35,10 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        @include breakpoint (w-sm) {
+            grid-column: span 12;
+        }
 
 
     }
