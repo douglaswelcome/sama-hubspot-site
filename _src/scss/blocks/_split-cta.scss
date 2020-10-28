@@ -28,6 +28,12 @@
         margin-bottom: 1rem;
     }
 
+    &__headline, &__subheadline {
+        @include breakpoint (w-sm) {
+            text-align:center;
+        }
+    }
+
     
 
 }
