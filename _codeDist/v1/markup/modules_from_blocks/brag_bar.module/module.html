@@ -1,14 +1,15 @@
 <section class="">
   {% if module.headline %}
   <div class="brag-bar">
-
+    {% if module.headline %}
     <div class="brag-bar__body">
       <div class="brag-bar__headline"> 
         <h2>
         {{ module.headline }}
         </h2>
       </div>
-      {% if module.headline %}
+      {% endif %}
+      {% if module.subheadline %}
       <div class="brag-bar__subheadline">
         <h5>
           {{ module.subheadline }}

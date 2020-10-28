@@ -40,6 +40,12 @@
     padding: .75rem 2rem .75rem 2rem;
     color: var(--color-white) ;
     margin: 0;
+
+    @include breakpoint (w-sm){
+      font-size: 1rem;
+      padding: .5rem 1.5rem .5rem 1.5rem;
+    }
+
   }
    &--secondary {
     background-color: var(--color-white);

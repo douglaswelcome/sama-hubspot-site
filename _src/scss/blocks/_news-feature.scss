@@ -3,15 +3,26 @@
     column-gap: 1.5rem;
     min-height: 40rem;
 
+    @include breakpoint (w-sm){
+        row-gap: 1.5rem;
+    }
+
     &__headline {
         grid-column: span 4;
         background-color: var(--color-charcoal-1);
         padding: 3rem 1.5rem;
 
+        @include breakpoint (w-sm){
+            grid-column: span 12; 
+        }
+
     }
 
     &__main {
         grid-column: 5 / span 4;
+        @include breakpoint (w-sm){
+            grid-column: span 12; 
+        }
 
     }
 
@@ -22,6 +33,9 @@
         grid-template-rows: 1fr 1fr;
         row-gap: 1.5rem;
 
+        @include breakpoint (w-sm){
+            grid-column: span 12; 
+        }
     }
 
     &__secondary-article {     
@@ -49,6 +63,7 @@
         transition-timing-function: ease;
         text-decoration: none;
         color: var(--color-white);
+        margin-bottom: 1.5rem;
     }
 
     &__article-wrapper {}

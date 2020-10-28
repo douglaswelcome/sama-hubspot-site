@@ -1,6 +1,6 @@
 .brag-bar {
   @extend %grid;
-  row-gap: 3rem;
+  row-gap: 1.5rem;
 
   &__body {
     grid-column: 3 / span 8;
@@ -48,6 +48,10 @@
     img {
       max-height: 70px;
       min-width: 8rem;
+
+      @include breakpoint (w-sm){
+        min-width: 7rem;
+      }
     }
   }
 
