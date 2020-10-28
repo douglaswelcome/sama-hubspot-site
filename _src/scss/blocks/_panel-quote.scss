@@ -7,6 +7,10 @@
         grid-column: 3 / span 10;
         background-color: var(--color-charcoal-1);
         height:100%;
+
+        @include breakpoint (w-sm){
+            grid-column:2/ span 11;
+        }
     }
 
     &__front {
@@ -16,10 +20,19 @@
         background-color: var(--color-sunshine);
         display:grid;
         grid-template-columns: 1fr auto;
+
+        @include breakpoint (w-sm){
+            grid-template-columns: 1fr;
+            margin: 1rem 0;
+        }
     }
 
     &__quote{
-        padding: 3rem;
+        padding: 3rem;;
+
+        @include breakpoint (w-sm){
+            padding: 1.5rem
+        }
     }
 
     &__quote-text{
@@ -41,19 +54,36 @@
     &--flip-it {
         .panel-quote__back {
             grid-column: 1 / span 10;
+            @include breakpoint (w-sm){
+                grid-column:1/ span 11;
+            }
+
         }
         .panel-quote__front {
             grid-column: 2 / span 11;
             grid-template-columns: auto 1fr;
             grid-template-row: 1fr;
+            @include breakpoint (w-sm){
+                grid-template-columns: 1fr;
+            }
         }
         .panel-quote__headshot {
             grid-column: 1;
-            grid-row:1
+            grid-row:1;
+
+            @include breakpoint (w-sm){
+                grid-row:auto;
+                min-height: 20rem;
+                width: 100%;
+            }
+            
         }
 
         .panel-quote__quote {
             grid-column:2;
+            @include breakpoint (w-sm){
+                grid-column: 1;
+            }
         }
     }
 
