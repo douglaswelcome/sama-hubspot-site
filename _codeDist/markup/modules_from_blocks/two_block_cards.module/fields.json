@@ -1,0 +1,93 @@
+[ {
+  "id" : "1b97ecc5-f14b-d6c3-df13-75e5310db02d",
+  "name" : "card1_title",
+  "label" : "card1_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title #1"
+}, {
+  "id" : "abe5f3ef-d4e5-e46b-e2e4-ad8145f2bd80",
+  "name" : "card1_body",
+  "label" : "card1_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Text Goes Here"
+}, {
+  "id" : "83fbd6a7-d222-faa6-5d98-537ffe7f3762",
+  "name" : "card1_cta_text",
+  "label" : "card1_cta-text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Click Me"
+}, {
+  "id" : "c67fdae8-5d3f-66db-6be2-d69db96e8f26",
+  "name" : "card1_cta_url",
+  "label" : "card1_cta-url",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "a90b68c6-df46-a560-a02c-9cd141dcd09f",
+  "name" : "card2_title",
+  "label" : "card2_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title #2"
+}, {
+  "id" : "fcb08472-dbd0-6ed2-f521-c5b404053cb7",
+  "name" : "card2_body",
+  "label" : "card2_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Text Goes Here"
+}, {
+  "id" : "16e1491c-a3e6-f8a5-8d77-152970bfb439",
+  "name" : "card2_cta_text",
+  "label" : "card2_cta-text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Click Me"
+}, {
+  "id" : "be199bc6-a688-a375-6fcc-92502cae566a",
+  "name" : "card2_cta_url",
+  "label" : "card2_cta-url",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

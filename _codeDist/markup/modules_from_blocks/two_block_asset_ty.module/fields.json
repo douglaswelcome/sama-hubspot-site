@@ -1,0 +1,34 @@
+[ {
+  "id" : "d041e17b-6762-d0a2-7c84-cbdb1f4ebfe2",
+  "name" : "asset_img",
+  "label" : "asset_img",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : "exact"
+  }
+}, {
+  "id" : "a762b33a-7787-bb11-b403-f2a163b47fb5",
+  "name" : "title_block",
+  "label" : "title_block",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Talk to a Sales Expert"
+}, {
+  "id" : "5f578eaf-4f25-56b4-28ce-a67adf593243",
+  "name" : "rich_text_field",
+  "label" : "rich_text_field",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

@@ -1,0 +1,48 @@
+[ {
+  "id" : "author_field",
+  "name" : "author_field",
+  "label" : "author_field",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Provide an author name to create module",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "author_title",
+  "name" : "author_title",
+  "label" : "author_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "author_bio_description",
+  "name" : "author_bio_description",
+  "label" : "author_bio_description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "author_headshot",
+  "name" : "author_headshot",
+  "label" : "author_headshot",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.placecage.com/gif/500/500",
+    "alt" : null
+  }
+} ]

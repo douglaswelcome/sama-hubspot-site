@@ -1,0 +1,84 @@
+[ {
+  "id" : "a5bae642-182a-ff4b-d243-9d6ed96cfe2a",
+  "name" : "label_position",
+  "label" : "label_position",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "null", "Label Left" ], [ "reflect", "Label Right" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "id" : "892406dc-8102-e6eb-a4b1-972b40998bea",
+  "name" : "center_title",
+  "label" : "center_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove This Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "fcbff846-b7b3-1ce1-5f56-2c18bca2ea96",
+  "name" : "center_body",
+  "label" : "center_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to remove entire element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "8c160257-c099-dbba-a2d7-e6b70f3d1aa7",
+  "name" : "center_large_text_bold",
+  "label" : "center_large_text_bold",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "null", "regular" ], [ "bold", "bold" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "id" : "89033583-3c35-2b29-8970-e2c4ec24acce",
+  "name" : "center_body_small",
+  "label" : "center_body_small",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "02a1ed3a-856c-fea1-ac1f-f3d2236050a8",
+  "name" : "center_block_cta_text",
+  "label" : "center_block_cta_text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e2bf60ca-a248-c13c-256d-7e5c701044c5",
+  "name" : "center_block_cta",
+  "label" : "center_block_cta",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "http://weirdnj.com",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+} ]

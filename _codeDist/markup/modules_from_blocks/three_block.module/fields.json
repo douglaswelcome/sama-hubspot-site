@@ -1,0 +1,127 @@
+[ {
+  "id" : "module_on",
+  "name" : "module_on",
+  "label" : "module_on",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "933b0e5a-5209-f59c-76fb-729c1d210d0a",
+  "name" : "intro_copy",
+  "label" : "intro_copy",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e7dd66e4-8f01-99ab-96cb-f0d4fc10ac37",
+  "name" : "title_size",
+  "label" : "title_size",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "null", "regular" ], [ "small", "small" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "picker" : "image",
+  "id" : "ba5c0901-fc9e-096e-f9c0-c04e16e37c8a",
+  "name" : "block1_img",
+  "label" : "block1_img",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
+}, {
+  "id" : "91c0aad2-1e48-a1c7-a670-6c221e42d5b7",
+  "name" : "block1_title",
+  "label" : "block1_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Jergenize"
+}, {
+  "id" : "426b9a13-b85e-1867-40fb-4c2f43759bff",
+  "name" : "block1_body",
+  "label" : "block1_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This is truly an almighty mountain. There are no limits in this world."
+}, {
+  "picker" : "image",
+  "id" : "51318a24-586f-880b-6b79-c46dd4e0305f",
+  "name" : "block2_img",
+  "label" : "block2_img",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/6398568/_assetDist/img/headshots/Loic_headshot.png"
+}, {
+  "id" : "f9513693-5a40-046a-1574-d1ed29e0eb9f",
+  "name" : "block2_title",
+  "label" : "block2_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Jergenize"
+}, {
+  "id" : "e8000f91-3c73-7905-e2d7-f38971867b43",
+  "name" : "block2_body",
+  "label" : "block2_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This is truly an almighty mountain. There are no limits in this world."
+}, {
+  "picker" : "image",
+  "id" : "fd529614-fe0a-410c-5837-2dcbc5e550aa",
+  "name" : "block3_img",
+  "label" : "block3_img",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/cat.jpg"
+}, {
+  "id" : "cbb865d8-855b-7cef-87b6-71f6a1595bc1",
+  "name" : "block3_title",
+  "label" : "block3_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Jergenize"
+}, {
+  "id" : "d615bcd3-930a-ebc2-a2a4-e1bf0ba8f31e",
+  "name" : "block3_body",
+  "label" : "block3_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This is truly an almighty mountain. There are no limits in this world."
+} ]

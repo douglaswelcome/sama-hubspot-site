@@ -1,0 +1,63 @@
+{% if module.module_on == true  %}
+<section class="brag-bar reflect">
+    <div class="label-tab">
+      <h3>
+        {{ module.brag_bar_title }}
+      </h3>
+      </div>
+      <div class="brag-body">
+       {% if  module.brag_bar_body  %}
+        <h4>
+          {{ module.brag_bar_body }}
+          </h4>
+        {% endif %}
+        {% if  module.brag_bar_body_small  %}
+          <h5>
+          {{ module.brag_bar_body_small }}
+          </h5>  
+        {% endif %}
+
+        </div>
+    <div class="brag-scroller">
+      <div class="logo">
+        <img src="{{ module.brag_logo1 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo2 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo3 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo4 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo5 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo6 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo7 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo8 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo9 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo10 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo11 }}">
+      </div>
+      <div class="logo">
+        <img src="{{ module.brag_logo12 }}">
+      </div>
+      
+
+
+    </div>
+  </section>
+{% endif %}

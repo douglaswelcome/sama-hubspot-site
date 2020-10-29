@@ -1,0 +1,37 @@
+<section class="platform-hero">
+    <div class="label-tab">
+        <h3>{{ module.label_tab }}</h3>
+    </div>
+    <div class="platform-hero__body shaded-img" style="background-image:url(
+          {{ module.background_img.src }})">
+        <div class="platform-hero__content">
+            <h1>{{ module.hero_title }}</h1>
+            <h5>
+                {{ module.hero_text }}
+            </h5>
+
+            <div class="cta-block">
+                {% if module.cta_text  %}
+              
+                {% set href = module.cta.url.href %}
+                {% if module.cta.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ module.cta.url.href }}" {% if module.cta.open_in_new_tab %}target="_blank" {% endif %}
+                    {% if module.cta.no_follow %}rel="nofollow" {% endif %}>
+                    
+                  
+                  <button class="btn">
+                        <h3 class="button-content">
+                            {{ module.cta_text }}
+                        </h3>
+                    </button>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="dot-cover">
+            <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/dotty2.svg" class="dotty">
+        </div>
+    </div>
+</section>
