@@ -1,0 +1,24 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+
+{% include '/markup/blocks_static/header.html' %}
+
+{% module "module_20200407010616" path="/markup/modules_from_blocks/hero_center", label="Hero" %}
+
+{% module "module_20200407014401" path="/markup/modules_from_blocks/offering", label="Offering Table" %}
+
+{% module "module_20200406152022" path="/markup/modules_from_blocks/strip_block", label="Customer Testimonial" %}
+
+{% module "module_20200406153232" path="/markup/modules_from_blocks/brag_bar", label="brag_bar" %}
+
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

@@ -24,6 +24,7 @@
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
+    "@hubspot/cms-cli": "^2.2.0",
     "browser-sync": "^2.26.13",
     "concurrently": "^5.3.0",
     "del-cli": "^3.0.1",
@@ -51,7 +52,6 @@
     "yargs": "^14.2.3"
   },
   "dependencies": {
-    "@hubspot/cms-cli": "^1.1.10",
     "js-yaml": "^3.14.0"
   }
 }

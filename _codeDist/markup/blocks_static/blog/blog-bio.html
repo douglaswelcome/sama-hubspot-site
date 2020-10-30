@@ -1,0 +1,17 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+<section class="blog-bio">
+  <div class="bio-pic" style="background-image:url({{ content.blog_post_author.avatar }})">
+    </div>
+    <div class="bio-copy">
+      <h3>
+          <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a>
+      </h3>
+      {# <h3 class="title">Senior VP, Shuffleboard</h3> #}
+      <p>
+          {{ content.blog_post_author.bio }}
+                </p>
+      </div>
+</section>

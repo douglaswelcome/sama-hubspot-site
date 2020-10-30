@@ -1,0 +1,57 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+
+{% extends '/markup/blocks_static/base-hybrid.html' %}
+
+{% block main %}
+
+
+{% include '/markup/blocks_static/header.html' %}
+
+{% module "module_20200727233308" path="/markup/modules_from_blocks/half_hero", label="Hero" %}
+
+{% module "module_20200727233320" path="/markup/modules_from_blocks/two_block", label="Image/Text" %}
+
+{# SECTION 1 #}
+
+{% module "module_20200727232933" path="/markup/modules_from_blocks/article_divider", label="Section" %}
+
+{% module "module_20200727232949" path="/markup/modules_from_blocks/center_body", label="Text" %}
+
+{% module "module_20200727233007" path="/markup/modules_from_blocks/full_cta_bar", label="CTA" %}
+
+{% module "module_20200727233017" path="/markup/modules_from_blocks/center_body", label="Text" %}
+
+{% module "module_20200727233055" path="/markup/modules_from_blocks/full_cta_bar", label="CTA" %}
+
+
+{# SECTION 2 #}
+
+{% module "module_20200727233153" path="/markup/modules_from_blocks/article_divider", label="Section" %}
+
+{% module "module_20200727233227" path="/markup/modules_from_blocks/center_body", label="Text" %}
+
+{% module "module_20200727233244" path="/markup/modules_from_blocks/full_cta_bar", label="CTA" %}
+
+
+{# SECTION 3 #}
+
+{% module "module_20200727233832" path="/markup/modules_from_blocks/article_divider", label="Section" %}
+
+{% module "module_20200727233812" path="/markup/modules_from_blocks/center_body", label="Text" %}
+
+
+
+
+
+
+{# Bottom Section Get IT #}
+
+{% module "module_20200727233341" path="/markup/modules_from_blocks/center_card", label="Charcoal Card" %}
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

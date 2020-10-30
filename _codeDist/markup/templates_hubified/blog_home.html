@@ -1,0 +1,24 @@
+<!--
+    templateType: blog
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base-hybrid.html' %}
+
+
+{% block main %}
+
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+{% include '/markup/blocks_static/blog/blog-listing-hero.html' %}
+
+{% include '/markup/blocks_static/blog/blog-listings.html' %}
+
+{#{% include '/v1/markup/blocks_static/blog/blog-pagnation.html' %} #}
+
+
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}
+

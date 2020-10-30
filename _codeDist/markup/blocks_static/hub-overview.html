@@ -1,0 +1,112 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+<section class="hub-overview">
+    <div class="hub-overview__window">
+        <div class="hub-overview__demo">
+            <div class="video__backpanel"></div>
+            <div class="video__wrapper">
+
+                    
+                 <video class="vid active" autoplay="autoplay" loop="loop" playsinline="playsinline" muted id="vid-one">
+                    {# <source src="{% static "img/video/about2.webm" %}" type="video/webm"> #}
+                    <source
+                        src="https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/video/Vector.mp4"
+                        type="video/mp4">
+                </video>
+
+                <video class="vid " autoplay="autoplay" loop="loop" playsinline="playsinline" muted id="vid-two">
+                    {# <source src="{% static "img/video/about2.webm" %}" type="video/webm"> #}
+                    <source
+                        src="https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/video/Segmentation.mp4"
+                        type="video/mp4">
+                </video>
+
+                <video class="vid " autoplay="autoplay" loop="loop" playsinline="playsinline" muted id="vid-three">
+                    {# <source src="{% static "img/video/about2.webm" %}" type="video/webm"> #}
+                    <source
+                        src="https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/video/SensorPackages.mp4"
+                        type="video/mp4">
+                </video>
+
+                <video class="vid " autoplay="autoplay" loop="loop" playsinline="playsinline" muted id="vid-four">
+                    {# <source src="{% static "img/video/about2.webm" %}" type="video/webm"> #}
+                    <source
+                        src="https://cdn2.hubspot.net/hubfs/4379491/custom/assets/static-assets/img/video/DynamicLabeling.mp4"
+                        type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+        <div class="hub-overview__description ">
+            <div class="hub-overview__description--bucket stuff-container">
+                <div class="hub-overview__description--inner-bits stuff active" id="stuff-one">
+                    <h4 class="bold ">
+                        Vector Annotation
+                    </h4>
+                    <div class="divider-line divider-line--horizontal"></div>
+                    <p class="">
+                            Annotate 2D images, video and 3D objects with efficiency using cuboids, bounding boxes, polygons, lines and more. 
+                                           </p>
+                </div>
+
+
+
+                <div class="hub-overview__description--inner-bits stuff " id="stuff-two">
+                    <h4 class="bold ">
+                            Semantic Segmentation
+                    </h4>
+                    <div class="divider-line divider-line--horizontal"></div>
+                    <p class="">
+                            Segment images with raster masks using paint, fill and superpixel segmentation tools to add pixel-level labels.                    </p>
+                </div>
+
+
+
+                <div class="hub-overview__description--inner-bits stuff " id="stuff-three">
+                    <h4 class="bold ">
+                        Sensor Packages
+                    </h4>
+                    <div class="divider-line divider-line--horizontal"></div>
+                    <p class="">
+                            Visualize and label 3D LiDAR and radar point cloud data and synchronize ground truth data across sensors.                    </p>
+                </div>
+
+
+
+                <div class="hub-overview__description--inner-bits stuff " id="stuff-four">
+                    <h4 class="bold ">
+                        Object Tracking
+                    </h4>
+                    <div class="divider-line divider-line--horizontal"></div>
+                    <p class="">
+                        Label and track change in position and characteristics of unique objects across multiple frames with automatic interpolation for video and 3D annotation.                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hub-overview__control">
+        <div class="hub-overview__button-wrapper">
+            <button class="hub-overview__button clicker active" onclick="openWindow(event, 'stuff-one', 'vid-one')">
+                <h3>Vector Annotation</h3>
+            </button>
+        </div>
+        <div class=" hub-overview__button-wrapper">
+            <button class="hub-overview__button clicker" onclick="openWindow(event, 'stuff-two', 'vid-two')">
+                <h3>Semantic Segmentation</h3>
+            </button>
+        </div>
+        <div class=" hub-overview__button-wrapper">
+            <button class="hub-overview__button clicker" onclick="openWindow(event, 'stuff-three', 'vid-three')">
+                <h3>Sensor Packages</h3>
+            </button>
+        </div>
+        <div class=" hub-overview__button-wrapper">
+            <button class="hub-overview__button clicker" onclick="openWindow(event, 'stuff-four', 'vid-four')">
+                <h3>Dynamic Labeling</h3>
+            </button>
+        </div>
+    </div>
+
+</section>
