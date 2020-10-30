@@ -1,17 +1,21 @@
 .article-divider {
-
+    @extend %grid-section;
     position: relative;
-    display: flex;
+
 
 
     &__container {
+        grid-column: 2/ span 2;
         min-height: 20rem;
-        border-radius: 0 0 0 6rem;
+        grid-row:1;
         overflow: hidden;
-        width: 85%;
+        width: 100%;
         margin-left: auto;
         background-size: cover;
         background-position: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
+
+        
 
         @include breakpoint(w-med) {
             min-height: 15rem;
@@ -20,19 +24,13 @@
 
     }
 
-    &__copy-wrapper {
 
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 3rem;
 
-    }
+    
 
     &__copy {
+        grid-column: 2;
+        grid-row: 1;
         @extend %grid;
         color: $color-white;
         text-align: right;
@@ -44,6 +42,12 @@
               }
         }
     }
+
+    &__section {
+
+    }
+
+
 
     &--flipped {
 

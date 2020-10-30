@@ -1,40 +1,13 @@
-section {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 6rem;
-    padding-top:6rem;
+//Padding things....
 
-    @include breakpoint (w-sm){
-      padding-bottom: 3rem;
-    padding-top:3rem;
-    }
-  
+.no-top-pad {
+  padding-top: 0;
+}
 
-  }
-  
-  .section {
-    &--sm {
-        padding-bottom: 3rem;
-        padding-top:3rem;
-    }
-  }
+.no-bottom-pad {
+  padding-bottom: 0;
+}
 
-
-
-
-
-
- //Padding things....
-
-  .no-top-pad {
-    padding-top:0;
-  }
-
-  .no-bottom-pad {
-    padding-bottom:0;
-  }
-
-  .flex-filler {
-    flex:1
-  }
+.flex-filler {
+  flex: 1
+}

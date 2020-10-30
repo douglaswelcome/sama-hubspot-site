@@ -41,6 +41,28 @@ flex-direction: column;
 }
 
 
+section {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+  padding-top:6rem;
+
+  @include breakpoint (w-sm){
+    padding-bottom: 3rem;
+  padding-top:3rem;
+  }
+
+
+}
+
+.section {
+  &--sm {
+      padding-bottom: 3rem;
+      padding-top:3rem;
+  }
+}
+
 
 
 
