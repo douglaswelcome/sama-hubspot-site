@@ -1,35 +1,24 @@
-.cta-block {
+.center-cta-simple {
+
+
+  &__inner{
   @extend %grid;
   text-align: center;
+  }
 
   .button-row {
     display: flex;
     justify-content: center;
   }
 
-  &#trainer {
-    .button-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  &#six-block {
-    .button-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-  }
+ 
 
   .button-wrapper {
     text-align: center;
 
   }
 
-  h5,
-  p,
-  h4 {
+   {
     margin-bottom: 1.5rem;
 
   }
@@ -80,17 +69,8 @@
     }
   }
 
-  .btn {
-    h3 {
-      font-size: 1.5rem;
-    }
-  }
 
-  &__hyperlink {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    align-items: center;
 
-  }
+
 }
 
