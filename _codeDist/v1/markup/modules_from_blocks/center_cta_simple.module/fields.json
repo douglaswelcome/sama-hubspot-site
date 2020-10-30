@@ -33,19 +33,6 @@
     "type": "text",
     "default": null
   },
-  {
-
-    "name": "cta_body__video_embed",
-    "label": "cta_body__video_embed",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Empty to Remove",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": null
-  },
 
 
 
