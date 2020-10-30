@@ -118,7 +118,7 @@
 <section class="press-table__section">
   <div class="press-table">
     {% for row in table %}
-    <a href="{{row.article_url}}" type="{{row.type}}" class="press-table__press-link" target="_blank">
+    <a href="{{row.article_url}}" type="{{row.type.name}}" class="press-table__press-link" target="_blank">
     <div class="press-table__title">
       <p>{{row.date|datetimeformat('%B %e, %Y')}}</p>
       <div class="divider-line divider-line--horizontal"></div>
