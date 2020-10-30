@@ -4,46 +4,79 @@
 -->
 {% extends '/v1/markup/blocks_static/base_404.html' %}
 
-{% block main %}
-{% include '/v1/markup/blocks_static/pattern-bg2.html' %}
 
+
+
+
+
+{% block main %}
 {% include '/v1/markup/blocks_static/header.html' %}
 
+<div class="flex-content flexy-flex">
 
-<section class="center-block ">
 
-  <div class="label-tab" >
-    <h3>
-      Error!?! What!?!
-    </h3>
-  </div>
+    <section class="
+dark-mode
 
-  <div class="center-content">
-    <h5>
-Oh No! Looks like we can't find what you were looking for! We did just launch a new site, so chances are you are using an outdated link. But no worries. Have a look around. Stay a while. And we're always here if you just want to talk.
-  </h5>
+    bg-charcoal-2
     
+    ">
+        <div class="headshot no-dark">
+            <div class="headshot__dot-panel">
+                <canvas id="dotCanvas"></canvas>
+            </div>
+            <div class="headshot__bottom-panel"></div>
+            <div class="headshot__top-panel">
+                <!-- <div class="headshot__img" ">
+                <img src="https://static.independent.co.uk/2020/10/10/15/newFile-2.jpg?width=640" alt="">
+                </div> -->
+                <div class="headshot__name">
+                    <h1 class="display-small">
+                      We're Sorry!
+                    </h1>
     
-    
-    
+                    <div class="divider-line divider-line--horizontal divider-line--charcoal"></div> 
 
-<a href="contact-us"	>
+                    <h5>
+                       The page you are looking for has been moved or deleted. If you need any help, feel free to <a href="mailto:contact@samasource.com"> contact us</a>.
+                    </h5>
 
-	<button class="btn">
-        <h3>
-          Let's Talk
-        </h3>
-      </button>
-</a>
+                    
     
     
     
+                </div>
+                
+                <div class="btn__row headshot__btn-row">
+                  <div class="btn__wrapper headshot__btn-wrapper">
+                    <a href="/">
+                    <button class="btn btn--secondary headshot__btn">
+                                    <h3 class="headshot__btn-text  btn__text"> Get me Outta Here! </h3>
+                              </button>
+                            </a>
+                  </div>
+                  </div>
+              </div>
     
     
+               
+    
+                <div class="headshot__body">
+                  
+            </div>
+        </div>
+    </section>
+    
+    <section class=" dark-mode bg-charcoal-2 flex-filler">
+    
+    </section>
 
-    </div>
 
-</section>
+
+
+</div>
+
+
 
 
 
