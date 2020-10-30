@@ -1,9 +1,14 @@
 .center-cta-simple {
-
-
-  &__inner{
   @extend %grid;
-  text-align: center;
+
+  &__inner {
+    grid-column: 4 / span 6;
+    text-align: center;
+  }
+
+
+  &__subheadline{
+    margin-bottom:2rem;
   }
 
   .button-row {
@@ -11,66 +16,4 @@
     justify-content: center;
   }
 
- 
-
-  .button-wrapper {
-    text-align: center;
-
-  }
-
-   {
-    margin-bottom: 1.5rem;
-
-  }
-
-  &.full-cta-bar {
-    @extend %grid;
-
-    .divider-line {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      margin-bottom: 1.5rem;
-    }
-
-    .cta-subtitle-bar {
-      display: block;
-      text-align: center;
-      margin-bottom: 1.125rem;
-
-    }
-
-    .full-cta-bar__body {
-      text-align: center;
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-
-    .button-grid {
-      text-align: center;
-
-      .button-wrapper {
-        display: inline-block;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        margin-bottom: 1.5rem;
-        
-      }
-
-      .btn {
-        margin-bottom: .75rem;
-      }
-    }
-
-
-
-    @include breakpoint(w-sm) {
-      grid-column-gap: 1.5rem;
-    }
-  }
-
-
-
-
 }
-

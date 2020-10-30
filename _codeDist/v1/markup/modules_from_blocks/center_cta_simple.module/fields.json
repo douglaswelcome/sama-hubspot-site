@@ -33,9 +33,6 @@
     "type": "text",
     "default": null
   },
-
-
-
   {
     "name": "cta1",
     "label": "CTA 1",
