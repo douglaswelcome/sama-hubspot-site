@@ -1,5 +1,8 @@
 <!-- module html  -->
-<section class="article-divider {% if module.flipped %} article-divider--flipped {% endif %}">
+<section class="article-divider 
+{% if module.flipped %} article-divider--flipped {% endif %}
+{% if module.top_padding == false %} no-top-pad{% endif %}
+">
     <div class="article-divider__container" style="background-image:url('{{ module.bg_img.src}}')">
     </div>
     <div class="article-divider__copy-wrapper">

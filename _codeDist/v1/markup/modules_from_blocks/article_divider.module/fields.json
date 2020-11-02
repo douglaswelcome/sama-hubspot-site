@@ -1,5 +1,15 @@
 [
   {
+    "name": "top_padding",
+    "label": "Top Padding?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": true 
+  },
+  {
   "id" : "",
   "name": "bg_img",
   "label": "bg_img",
