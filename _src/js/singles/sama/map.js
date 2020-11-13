@@ -1,5 +1,3 @@
-
-
 buildOfficeList(offices);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHdlbGNvbWUiLCJhIjoiY2p6MXNkdmZiMGF3OTNibzFoMm1ocG05cSJ9.xZ8njmOGIVM4sLRiit4xdg';

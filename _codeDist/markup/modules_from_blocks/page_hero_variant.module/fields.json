@@ -1,0 +1,32 @@
+[ {
+  "id" : "fa6bc715-02a5-3dca-a596-ac3c0997b470",
+  "name" : "page_hero_title",
+  "label" : "page_hero_title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "cbdf81ca-f264-115c-6fbb-6bfe9ff2539b",
+  "name" : "page_hero_subtitle",
+  "label" : "page_hero_subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "subheadline_date",
+  "name" : "subheadline_date",
+  "label" : "Date of Post",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to Hide",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

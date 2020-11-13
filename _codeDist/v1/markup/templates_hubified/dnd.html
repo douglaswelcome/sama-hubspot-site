@@ -1,0 +1,21 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% module "module_20201029143459" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+
+
+{% dnd_area "body_dnd_area" %}
+
+{% end_dnd_area %}
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

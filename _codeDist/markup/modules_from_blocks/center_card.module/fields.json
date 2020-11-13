@@ -1,0 +1,50 @@
+[ {
+  "id" : "text_headline",
+  "name" : "text_headline",
+  "label" : "Headline Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This is Your Title. Please Update"
+}, {
+  "id" : "card_body",
+  "name" : "card_body",
+  "label" : "Card Body",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem Ipsum Yo"
+}, {
+  "id" : "button_copy",
+  "name" : "button_copy",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Click Me"
+}, {
+  "id" : "button_link",
+  "name" : "button_link",
+  "label" : "Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

@@ -1,0 +1,25 @@
+<section class="two-block">
+  <div class="two-block__copy">
+ 
+    
+       <h1 class="">
+     {{module.title_block}}
+    </h1>
+
+   
+    <div class="two-block__rich-body">
+      {% inline_rich_text field="rich_text_field" value="{{ module.rich_text_field }}" %}
+    </div>
+    </div>
+  
+    <div class="img">
+     {% if module.asset_img.src %}
+	<img src="{{ module.asset_img.src }}" class="asset-img two-block-img" />
+          {% endif %}
+  </div>
+       
+  
+
+
+  
+</section>

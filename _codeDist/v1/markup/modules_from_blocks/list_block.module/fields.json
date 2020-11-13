@@ -1,7 +1,17 @@
-[ {
-  "id" : "ba1d206a-a8e4-ea78-8d6e-de59d75f7ba6",
+[ 
+  {
+    "name": "top_padding",
+    "label": "Top Padding?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": true 
+  },
+  {
   "name" : "intro_copy",
-  "label" : "intro_copy",
+  "label" : "Headline",
   "required" : false,
   "locked" : false,
   "validation_regex" : "",
@@ -11,9 +21,8 @@
   "type" : "text",
   "default" : null
 }, {
-  "id" : "cd6ff56b-52b5-bebf-796c-fbe9d5040e47",
   "name" : "list_item",
-  "label" : "list_item",
+  "label" : "List Item",
   "required" : false,
   "locked" : false,
   "occurrence" : {
@@ -25,7 +34,7 @@
   "children" : [ {
     "id" : "2a5e0bca-f480-b224-df20-fd1d76b63a7b",
     "name" : "list_icon",
-    "label" : "list_icon",
+    "label" : "Icon",
     "required" : false,
     "locked" : false,
     "responsive" : false,
@@ -39,7 +48,7 @@
   }, {
     "id" : "8185bd30-314b-c617-4bfe-48e894f83d8d",
     "name" : "list_title",
-    "label" : "list_title",
+    "label" : "Item Headline",
     "required" : false,
     "locked" : false,
     "validation_regex" : "",
@@ -50,7 +59,7 @@
   }, {
     "id" : "ecea5896-e3b2-01ea-d7ba-509c0892e975",
     "name" : "list_copy",
-    "label" : "list_copy",
+    "label" : "Item Copy",
     "required" : false,
     "locked" : false,
     "validation_regex" : "",

@@ -1,0 +1,42 @@
+
+
+<section class="page-hero">
+  <div class="label-tab">
+    <h3>
+      {{ module.page_label }}
+    </h3>
+  </div>
+  <div class="hero-content">
+    <div class="page-headline">
+      <h1>
+        {{ module.page_headline }}
+      </h1>
+      <h5>{{ module.page_subheadline }}</h5>
+      
+      {% if module.page_cta_text  %}
+      {% set href = module.page_cta.url.href %}
+{% if module.page_cta.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.page_cta.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.page_cta.no_follow %}rel="nofollow"{% endif %}
+	>   
+      <button class="btn">
+        <h3 class="button-content">
+          {{ module.page_cta_text }}
+        </h3>
+      </button>
+  </a>
+      {% endif %}
+
+    </div>
+    <div class="hero-img-wrapper">
+      <div class="dot-cover">
+        <img src="{{staticbase}}img/dotty.svg" class="dotty"/>
+      </div>
+      <div class="hero-img {{ module.shaded_img }}" style="background-image:url({{ module.hero_img }})"></div>
+
+    </div>
+  </div>
+</section>

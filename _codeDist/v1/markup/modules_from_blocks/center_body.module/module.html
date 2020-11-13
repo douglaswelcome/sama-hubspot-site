@@ -1,4 +1,12 @@
+<section class="center-body 
+{% if module.top_padding == false %}
+    no-top-pad
+{% endif %}
+">
+    <div class="center-body__grid-inner">
+        <div class="center-body__content">
+            {{ module.center_body}}
+        </div>
+    </div>
 
-<section class="blog-body ">
-{{ module.center_body}}
 </section>

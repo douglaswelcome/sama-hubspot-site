@@ -1,0 +1,24 @@
+<!-- module html  -->
+<section class="half-hero {% if module.vert_flipped %} half-hero--flipped {% endif %}">
+    <div class="half-hero__img" style="background-image:url('{{ module.hero_bg_img.src}}')"></div>
+    <div class="half-hero__content ">
+
+        <div class="half-hero__headline card--outline">
+            <h1 class="content-ups">{{module.headline_text}}</h1>
+            <div class="content-ups divider-line"></div>
+            <h5 class="content-ups">
+                {{module.subheadline_text}}
+            </h5>
+            {%if module.subheadline_date %}
+            <h3 class="content-ups date">
+                {{module.subheadline_date}}
+            </h3>
+            {% endif %}
+
+        </div>
+
+
+
+    </div>
+
+</section>

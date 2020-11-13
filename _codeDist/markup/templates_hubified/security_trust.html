@@ -1,0 +1,33 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/markup/blocks_static/pattern-bg2.html' %}
+
+{% include '/markup/blocks_static/header.html' %}
+
+{% module "module_155185803220924" path="/markup/modules_from_blocks/page_hero", label="page_hero" %}
+
+{% module "module_156764015810266" path="/markup/modules_from_blocks/showcase", label="showcase" %}
+
+
+
+
+
+{% module "module_156703503603186" path="/markup/modules_from_blocks/two_block", label="two_block" %}
+
+{% module "module_155189135087126" path="/markup/modules_from_blocks/two_block", label="two_block" %}
+{% module "module_156762636911249" path="/markup/modules_from_blocks/two_block", label="two_block" %}
+
+{% module "module_156762974969150" path="/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+
+
+
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

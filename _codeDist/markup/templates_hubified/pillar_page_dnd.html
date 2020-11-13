@@ -1,0 +1,21 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+
+{% extends '/markup/blocks_static/base-hybrid.html' %}
+
+{% block main %}
+
+{% include '/v1/markup/blocks_static/header.html' %}
+
+
+
+{% dnd_area "body_dnd_area" %}
+
+{% end_dnd_area %}
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

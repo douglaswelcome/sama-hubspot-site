@@ -1,0 +1,79 @@
+[
+  {
+    "name": "top_padding",
+    "label": "Top Padding?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": true 
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to remove Element",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Learn all the things"
+  },
+  {
+
+    "name": "divider_on",
+    "label": "Divider On?",
+    "help_text": "Turns on the little divider line.",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+  {
+
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Empty to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+
+  
+  {
+    "name": "cta1_type",
+    "label": "Is this CTA1 a Hyperlink?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": false
+  },
+  {
+    "name": "cta1",
+    "label": "CTA 1",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  },
+  {
+    "name": "cta2",
+    "label": "CTA 2",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "type": "cta",
+    "inline_help_text": "Must be a button",
+    "default": null
+  }
+
+]

@@ -1,0 +1,71 @@
+{% if module.module_on == true %}
+
+<section class="three-block">
+
+  
+  
+  {% if module.intro_copy %}
+  <div class="three-block__intro">
+    <h4>
+      {{ module.intro_copy }}
+    </h4>
+
+    
+  </div>
+  {% endif %}
+
+  <div class="three-block__wrapper">
+
+    <div class="block-img">
+      <img src="{{ module.block1_img }}" />
+    </div>
+
+    {% if module.block1_title %}
+    <div class="block-title">
+      <h3 class="{{ module.title_size }}"> 
+        {{ module.block1_title }}
+      </h3>
+    </div>
+    {% endif %}
+    <div class="block-body">
+      <p>
+        {{ module.block1_body }}
+      </p>
+    </div>
+
+    <div class="block-img">
+      <img src="{{ module.block2_img }}" />
+    </div>
+    {% if module.block2_title %}
+    <div class="block-title">
+       <h3 class="{{ module.title_size }}"> 
+        {{ module.block2_title }}
+      </h3>
+    </div>
+    {% endif %}
+    <div class="block-body">
+      <p>
+        {{ module.block2_body }}
+      </p>
+    </div>
+
+    <div class="block-img">
+      <img src="{{ module.block3_img }}" />
+    </div>
+    {% if module.block3_title %}
+    <div class="block-title">
+   <h3 class="{{ module.title_size }}"> 
+        {{ module.block3_title }}
+      </h3>
+    </div>
+    {% endif %}
+    <div class="block-body">
+      <p>
+        {{ module.block3_body }}
+      </p>
+    </div>
+  </div>
+
+  
+</section>
+{% endif %}

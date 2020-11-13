@@ -3,14 +3,21 @@
     
     text-align: center;
     row-gap: 1.5rem;
+    grid-auto-flow: row;
 
     &__headline {
       grid-column: 3 / span 8;
+      
     }
 
+    &__line {
 
+      grid-column: 6/ span 2;
+      justify-self: center;
+    }
 
     &__subheadline {
+
     margin-bottom: 1.5rem;
     grid-column: 3 / span 8;
     }

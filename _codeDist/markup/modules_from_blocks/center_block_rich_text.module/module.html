@@ -1,0 +1,29 @@
+<!-- module html  -->
+<section class="center-block {{ module.label_position }}">
+    {% if module.center_title %}
+    <div class="label-tab" >
+      <h3>
+        {{ module.center_title }}
+      </h3>
+    </div>
+    {% endif %}
+    <div class="center-content">
+     
+      
+      
+      <h5 class="{{ module.center_large_text_bold }}">
+  {{ module.center_body }}
+    </h5>
+
+    {{ module.center_rich_text }}
+      
+      
+      {% if module.center_body_small %}
+       <p>
+  {{ module.center_body_small }}
+    </p>
+      {% endif %}
+  
+      </div>
+  
+  </section>

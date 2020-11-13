@@ -1,0 +1,164 @@
+.blog-home-hero {
+  padding-top: 3rem;
+
+  position: relative;
+  z-index: 0;
+  margin-bottom: 12rem;
+
+  @include breakpoint(w-sm) {
+    margin-bottom: 6rem;
+  }
+
+  .hero-content {
+
+
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    position: relative;
+
+
+    @extend %grid;
+
+    @include breakpoint (w-sm) {
+      margin-bottom: 0;
+
+
+      grid-template-columns: 85% 1fr;
+      min-height: calc(10vh - #{var(--mobileheaderheight)});
+      max-height: calc(60vh - #{var(--mobileheaderheight)});
+      grid-row-gap: 3rem;
+      text-align: right;
+    }
+
+    .page-headline {
+
+      position: relative;
+      width: 100%;
+
+      padding: 3rem;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+      @include breakpoint (w-sm) {
+        padding: 1.25rem;
+      }
+
+
+
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: $color-white;
+        border: 0.25rem solid var(--color-charcoal-2);
+        border-radius: 0 0 0 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate3d(1rem, 1rem, 0);
+        z-index: 0;
+      }
+
+      &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: $color-white;
+        border: 0.25rem solid var(--color-charcoal-2);
+        border-radius: 0 0 0 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .stripe-texture {
+      align-self: end;
+      position: absolute;
+      right: 0;
+      transform: translate(0, 80%);
+
+      z-index: -1;
+
+      @include breakpoint (w-sm) {
+        width: 90%;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+.yellow-dotty {
+  position: absolute;
+  top: 75%;
+  left: -10%;
+  z-index: 1;
+}
+
+.blog-author-hero {
+  padding-top: 1.5rem;
+  @extend %grid;
+
+
+
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+
+  }
+
+  &__author {
+    margin-bottom: .5rem;
+  }
+
+  &__bio {
+    text-align: center;
+    max-width: 40rem;
+  }
+
+}
+
+.blog-author-hero__bio-pic {
+  @extend .bio-pic;
+  margin-bottom: 1rem;
+}
+
+
+.blog-topic-hero {
+  padding-top: 1.5rem;
+  @extend %grid;
+
+
+
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+
+
+  }
+
+  &__author {
+    margin-bottom: .5rem;
+  }
+
+}
+
+.blog-author-hero__bio-pic {
+  @extend .bio-pic;
+  margin-bottom: 1rem;
+}

@@ -129,3 +129,23 @@ $w-sm: 320px; //320px - 800px
   
 
 }
+
+%grid-section {
+  --center-width: var(--xlg-page-width);
+  @include breakpoint(w-lg) {
+    --center-width: var(--lg-page-width);
+  }
+
+  @include breakpoint(w-med) {
+    --center-width: var(--med-page-width);
+  }
+
+  @include breakpoint(w-sm) {
+    --center-width: calc (100% - 2rem);
+  }
+
+
+  display: grid;
+  grid-template-columns: 1fr var(--center-width) 1fr;
+ 
+}

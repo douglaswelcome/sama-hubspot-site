@@ -1,0 +1,46 @@
+.center-body {
+
+    &__grid-inner{
+        @extend %grid;
+    
+    }
+
+    &__content {
+        grid-column: 3 / span 8;
+
+    }
+  
+    .hubby-cta {
+      text-decoration: none;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+    }
+  
+    img {
+      width: 100% !important; //this is because the fucking image thing inside the rich text editor forces a inline width. Fuck that shit
+  
+      padding: 3rem 0rem;
+    }
+  
+    a {
+      // text-decoration: underline;
+      // text-decoration-color: $color-sunshine;
+  
+      // &::before {
+      //   display:none;
+      // }
+    }
+  
+    ol,
+    ul {
+      padding: 1rem 0rem 1rem 3rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+      
+
+
+}

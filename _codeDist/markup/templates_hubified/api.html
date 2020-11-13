@@ -1,0 +1,27 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+{% extends '/markup/blocks_static/base.html' %}
+
+{% block main %}
+{% include '/markup/blocks_static/pattern-bg.html' %}
+
+{% include '/markup/blocks_static/header.html' %}
+
+{% module "module_20200727225723" path="/markup/modules_from_blocks/platform_hero", label="platform_hero" %}
+
+{% module "module_20191021120432" path="/markup/modules_from_blocks/showcase", label="showcase" %}
+
+
+{% module "module_20191021122101" path="/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% module "module_20191021141243" path="/markup/modules_from_blocks/table", label="table" %}
+
+
+{% module "module_20191021122303" path="/markup/modules_from_blocks/full_cta_bar", label="full_cta_bar" %}
+
+{% include '/markup/blocks_static/footer.html' %}
+
+{% endblock %}

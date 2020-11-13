@@ -2,73 +2,38 @@
     templateType: none
     isAvailableForNewContent: true
 -->
-{# <section class="blog-post-hero">
-  <div class="blog-hero-img-wrapper">
-    <div class="blog-hero-img" style="
-  {% if content.post_list_summary_featured_image %}
-  background-image:url(
-    {{ content.post_list_summary_featured_image }}
-
-    ) {% endif %}
-  ">
-    </div>
-    <img src="{{staticbase}}img/yellow-dots.svg" class="yellow-dotty" />
-  </div>
-
-  <div class="blog-title">
-    <h1 class="content-ups">{{ content.name }}</h1>
-    <!-- <div class="content-ups divider-line"></div> -->
-    <h3 class="content-ups" id="author">
-      <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
-        {{ content.blog_post_author.display_name }}
-      </a>
-    </h3>
-    <div class="lower-wrapper">
-      <h3 class="content-ups" id="date">{{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}</h3>
-      <div class="content-ups divider-line"></div>
-
-      <h3 class="content-ups" id="read-time">
-        {% set initialPostWords = content.post_body|wordcount %}
-        {% set calculatedPostWords = (initialPostWords/100) * 100 %}
-        {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
-        {% set number = finishedPostWords|round %}
-        {% if number < 1 %}
-        1 minute read
-        {% else %}
-        {{ finishedPostWords|round }} minute read
-        {% endif %}
-      </h3>
-    </div>
 
 
-  </div>
-</section> #}
 
-
-<section class="grid blog-post-hero">
-  <div class="blog-post-hero__info">
-    <h1 class="blog-post-hero__title"> {{ content.name }}</h1>
-    <p class="blog-post-hero__author"><a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+<section class="">
+  <div class="blog-post-hero">
+    <div class="blog-post-hero__wrapper">
+      <div class="blog-post-hero__info">
+        <h1 class="blog-post-hero__title"> {{ content.name }}</h1>
+        <p class="blog-post-hero__author"><a class="blog-post-hero__author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
       {{ content.blog_post_author.display_name }}
     </a>
-    </p>
-    <div class="blog-post-hero__meta">
-      <p class="blog-post-hero__date">{{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}</p>
-      <div class="divider-line divider-line--vertical"></div>
-      <p class="blog-post-hero__time">
-        {% set initialPostWords = content.post_body|wordcount %}
-        {% set calculatedPostWords = (initialPostWords/100) * 100 %}
-        {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
-        {% set number = finishedPostWords|round %}
-        {% if number < 1 %}
-        1 minute read
-        {% else %}
-        {{ finishedPostWords|round }} Minute Read
-        {% endif %}
-      </p>
-    </div>
-  </div>
-  <div class="blog-post-hero__img-wrapper" style="background-image:url(' {{ content.post_list_summary_featured_image }}')">
+        </p>
+        <div class="blog-post-hero__meta">
+          <p class="blog-post-hero__date">{{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}</p>
+          <div class="divider-line divider-line--vertical"></div>
+          <p class="blog-post-hero__time">
+            {% set initialPostWords = content.post_body|wordcount %}
+            {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+            {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+            {% set number = finishedPostWords|round %}
+            {% if number < 1 %}
+            1 minute read
+            {% else %}
+            {{ finishedPostWords|round }} Minute Read
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="blog-post-hero__img-wrapper"
+        style="background-image:url(' {{ content.post_list_summary_featured_image }}')">
 
+      </div>
+    </div>
   </div>
 </section>

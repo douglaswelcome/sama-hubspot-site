@@ -40,9 +40,12 @@
     }
 
     &__top-panel {
+        --parent-bg:var(--color-sunshine);
+
         grid-column: 3 / span 8;
         grid-row: 1;
-        background-color: var(--color-sunshine);
+        
+        background-color: var(--parent-bg);
         margin-bottom: 4rem;
         margin-top: 4rem;
         text-align: center;
@@ -96,6 +99,31 @@
 
 
     }
+
+    &.no-dark {
+
+
+        .headshot__btn-row{
+            margin-top: 2rem;
+        }
+        .headshot__btn-wrapper{
+            background-color: var(--color-charcoal-7);
+        }
+    
+        .headshot__btn,
+         .headshot__btn-text {
+            border-color: var(--color-charcoal-1);
+            color:var(--color-charcoal-1);
+        }
+    
+        .btn--secondary {
+            background-color: var(--parent-bg);
+        }
+
+
+    }
+
+    
 
 
 

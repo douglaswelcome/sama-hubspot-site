@@ -3,7 +3,6 @@
     grid-template-rows: auto auto;
     grid-row-gap: 5rem;
     padding: 1rem;
-    border-radius: 0 0 3rem 0;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -11,6 +10,9 @@
     cursor:pointer;
     transition: transform .3s;
     will-change: transform;
+    min-height: 20rem;
+
+    
 
     &::before {
         content: "";

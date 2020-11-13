@@ -1,0 +1,86 @@
+[ {
+  "id" : "eda38e31-5502-519f-83c5-46b0bec8b23a",
+  "name" : "text_weight",
+  "label" : "text_weight",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "null", "Regular" ], [ "bold", "Bold" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "id" : "bb37fb43-fcb5-2fcb-08e8-ea51b0a64da5",
+  "name" : "cta_subtitle",
+  "label" : "cta-subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Blank to remove Element",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn all the things"
+}, {
+  "id" : "8cde9e5a-907b-5a7c-bc21-e27ea7e04bba",
+  "name" : "divider_on",
+  "label" : "divider_on",
+  "help_text" : "Turns on the little divider line.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "86b0860a-e408-534e-6fb7-a97ce1e6bd68",
+  "name" : "cta_body",
+  "label" : "cta_body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Empty to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "cta_body__video_embed",
+  "name" : "cta_body__video_embed",
+  "label" : "cta_body__video_embed",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Leave Empty to Remove",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "cta_buttons",
+  "name" : "cta_buttons",
+  "label" : "CTA Buttons",
+  "help_text" : "Buttons that are Hubby CTA's",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cta_buttons.cta1",
+    "name" : "cta1",
+    "label" : "CTA Button 1",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta"
+  }, {
+    "id" : "cta_buttons.cta2",
+    "name" : "cta2",
+    "label" : "CTA Button 2",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta"
+  } ],
+  "tab" : "CONTENT",
+  "type" : "group"
+}, {
+  "id" : "hyperlink_cta",
+  "name" : "hyperlink_cta",
+  "label" : "Hyperlink CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta"
+} ]
