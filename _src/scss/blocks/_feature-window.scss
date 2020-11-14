@@ -167,3 +167,16 @@
         }
     }
 }
+
+.dark-mode {
+    .feature-window{
+        &__lower{
+            box-shadow: -1rem 1rem var(--color-charcoal-4);
+            color: var(--color-charcoal-1);
+            background-color: var(--color-white);
+        }
+        
+
+
+    }
+}
