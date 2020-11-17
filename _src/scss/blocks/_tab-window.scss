@@ -58,12 +58,20 @@
 
     }
 
-    &__media {
-
+    &__img {
         width: 100%;
+
+        object-fit: cover;
         display: block;
+        height: 100%;
+    }
 
+    &__vid {
+        width: 100%;
 
+        object-fit: cover;
+        display: block;
+        height: 100%;
     }
 
     &__text {
