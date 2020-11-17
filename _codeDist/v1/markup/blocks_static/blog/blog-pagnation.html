@@ -6,22 +6,29 @@
 <section class="blog-pagination">
     <div class="blog-pagination__wrapper">
         
-        <button class="btn secondary button--previous-button {% if not last_page_num %} hide-it {% endif %}">
-            <a class="previous-posts-link button__content" href="{{ blog_page_link(last_page_num) }}">
+        <a         
+        href="{{ blog_page_link(last_page_num) }}"
+        class="
+        blog-pagination__link  
+        blog-pagination__link--prev 
+        {% if not last_page_num %} hide-it {% endif %}"
+        >
                 
                 <img src="{{staticbase}}img/icons/arrow-left.svg" alt="arrow-left" class="button__img">
-                 <h3>Prev Posts</h3> 
-            </a>
-        </button>
+
+    </a>
         
         {# <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a> #}
         
-        <button class="btn secondary button--next-button {% if not next_page_num %} hide-it {% endif %}">
-            <a class="next-posts-link button__content" href="{{ blog_page_link(next_page_num) }}">
-                <h3>More Posts</h3>
+        <a href="{{ blog_page_link(next_page_num) }}"
+        class="
+        blog-pagination__link  
+        blog-pagination__link-next 
+        {% if not next_page_num %} hide-it {% endif %}"
+        >
+               
                 <img src="{{staticbase}}img/icons/arrow-right.svg" alt="arrow-right" class="button__img">
-            </a>
-        </button>
+        </a>
         
     </div>
 </section>

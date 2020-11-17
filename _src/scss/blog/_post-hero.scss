@@ -76,6 +76,7 @@
 
     width: auto;
     height: auto;
+    display: flex;
 
     @include breakpoint (w-sm) {
       max-height: 300px;
@@ -87,6 +88,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    align-self: center;
   }
 
 
