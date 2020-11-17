@@ -6,7 +6,6 @@
 
   @include breakpoint(w-sm) {
     margin-top: .5rem;
-    grid-template-rows: 1fr 1fr;
     height: auto;
   }
 
