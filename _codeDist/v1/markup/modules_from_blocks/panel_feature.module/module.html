@@ -33,11 +33,13 @@
 
 
                 {% if module.awards %}
+                <div class="panel-feature__awards-wrapper">
                 <div class="panel-feature__awards">
                     {% for award in module.awards %}
                     <img src="{{ award.src }}" alt="{{ award.alt }}" />
                 {% endfor %}
             </div>
+        </div>
                     {% endif %}
 
 

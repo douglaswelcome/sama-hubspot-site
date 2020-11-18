@@ -39,13 +39,17 @@
 
     &__subheadline {}
 
+    &__awards-wrapper {
+        padding-top: 2rem;
+    }
+
     &__awards {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
         display: flex;
-        column-gap: 3rem;
         justify-content: flex-start;
         flex-wrap: wrap;
+        --gap: 2rem;
+        margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+        width: calc(100% + var(--gap));
 
         @include breakpoint (w-sm) {
             column-gap: 1.5rem;
@@ -53,6 +57,7 @@
         }
 
         img {
+            margin: var(--gap) 0 0 var(--gap);
             height: auto;
             width: auto;
             max-width: 7rem;
