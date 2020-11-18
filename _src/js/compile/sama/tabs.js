@@ -39,5 +39,8 @@ function tabWindow() {
 
 $(tabWindow());
 
+$(window).resize (tabWindow());
+
+
 
 
