@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @include breakpoint (w-sm) {
+    @include breakpoint (w-med) {
       grid-template-columns: 1fr;
     }
   }
