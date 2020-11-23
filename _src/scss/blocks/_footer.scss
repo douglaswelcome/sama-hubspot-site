@@ -50,11 +50,7 @@ footer {
 
     &__link-head {
       color: var(--color-white);
-      margin-bottom: 1rem;
-      padding-bottom: .5rem;
 
-      border-bottom: 2px solid;
-      border-bottom-color: var(--color-sunshine);
     }
 
     &__link {
@@ -75,6 +71,11 @@ footer {
 
     }
 
+    &__link-line {
+      margin-top:.5rem;
+      margin-bottom:.75rem;
+    }
+
     &__form {
 
       padding-top: 1rem;
@@ -93,7 +94,8 @@ footer {
 
     &__middle {
       grid-column: span 12;
-      border: .125rem solid #fffa0c;
+      border: .125rem solid;
+      border-color: var(--color-sunshine);
       border-top: 0;
       border-left: 0;
       border-right: 0;
@@ -116,7 +118,7 @@ footer {
       
 
       svg {
-        fill: #fffa0c;
+        fill: var(--color-sunshine);
         width: 300px;
 
         @include breakpoint (w-sm) {
