@@ -24,6 +24,10 @@
         padding: 1rem 2rem;
         text-align: center;
 
+        @include breakpoint (w-sm){
+            padding: 1rem;
+        }
+
         &:focus,
         &:hover {
 

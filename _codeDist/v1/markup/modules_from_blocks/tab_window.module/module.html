@@ -28,10 +28,10 @@
             ">
                 <div class="tab-window__media-wrapper">
                     {% if item.media_type == "image" %}
-                    <img src="{{ item.media_file }}" alt="{{ item.img-alt }}" class="tab-window__media">
+                    <img src="{{ item.media_file }}" alt="{{ item.img-alt }}" class="tab-window__img">
                      {% endif %}
                     {% if item.media_type == "video" %}
-                    <video class="hero-halfsies__vid" autoplay="autoplay" loop="loop" playsinline="playsinline"
+                    <video class="tab-window__vid" autoplay="autoplay" loop="loop" playsinline="playsinline"
                         muted="true">
                         <source src="{{ item.media_file }}" type="video/mp4">
                     </video>

@@ -239,25 +239,6 @@ h6 a {
   }
 }
 
-
-
-
-//justifying text 
-
-.text-left {
-  text-align: left !important
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-right {
-  text-align: right !important;
-
-}
-
-
 blockquote {
   position: relative;
   margin-right: 1.5rem;
@@ -278,8 +259,20 @@ blockquote {
 
 }
 
-h3.date {
-  font-size: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+//justifying text 
+
+.text-left {
+  text-align: left !important
 }
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+
+}
+
+

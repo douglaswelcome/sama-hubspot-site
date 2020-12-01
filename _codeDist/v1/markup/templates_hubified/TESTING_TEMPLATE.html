@@ -4,16 +4,21 @@
 -->
 {% extends '/v1/markup/blocks_static/base.html' %}
 
+{% block top-insert %}
+
+{# {% module "module_20200125102523" path="/v1/markup/modules_from_blocks/popdown_announcement", label="popdown_announcement" %} #}
+
+{% endblock %}
+
 {% block main %}
-{% include '/v1/markup/blocks_static/pattern-bg.html' %}
 
-{% include '/v1/markup/blocks_static/header.html' %}
+{% module "module_20200824230923" path="/v1/markup/modules_from_blocks/header", label="Header" %}
 
-{% include '/v1/markup/blocks_static/type.html' %}
+{%include '/v1/markup/blocks_static/animation-sample.html' %}
 
-{# booyah #}
+
+
 
 {% include '/v1/markup/blocks_static/footer.html' %}
-
 
 {% endblock %}

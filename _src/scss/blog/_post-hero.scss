@@ -1,95 +1,99 @@
 .blog-post-hero {
-    @extend %grid;
-    column-gap:0rem;
-    
+  @extend %grid;
+  column-gap: 0rem;
 
 
-    @include breakpoint(w-sm){
-      margin-top: .5rem;
-      grid-template-rows: 1fr 1fr;
-      height: auto;
-    }
-    
-    &__wrapper {
-        grid-column: 2/ span 10;
-        box-shadow: -1rem 1rem var(--color-charcoal-6);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
-    &__info {
-        color:var(--color-white);
-      
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr auto auto;
-      background-color: var(--color-charcoal-3);
-       @include breakpoint (w-lg) {
-
-       }
-       @include breakpoint (w-sm){
-
-       }
-  
-    }
-  
-    &__author, &__meta {
-        
-      display: flex;
-      justify-content: flex-end;
-      @include breakpoint (w-sm){
-      }
-    }
-  
-    &__author {
-      margin-bottom:.5rem;
-    }
-
-    &__author-link {
-        color: var(--color-white)
-    }
-  
-    &__time, &__date {
-        display: inline;
-    }
-  
-    &__time {
-      padding-left:.5rem;
-    }
-  
-    &__date {
-      padding-right:.5rem;
-    }
-  
-    &__title {
-      margin-bottom: 3rem;
-    }
-  
-  
-    &__img-wrapper {
-     
-      overflow:hidden;
-
-      background-position:center;
-      background-size:cover;
-      
-  
-      @include breakpoint(w-lg){
-      grid-column-end:12;
-      }
-      @include breakpoint (w-sm){
-        grid-column-start:1;
-         grid-column-end: 13;
-         grid-row:2;
-      }
-  
-  
-      }
-  
-  
-  
-  
-  
-  
+  @include breakpoint(w-sm) {
+    margin-top: .5rem;
+    height: auto;
   }
+
+  &__wrapper {
+    grid-column: 2/ span 10;
+    box-shadow: -1rem 1rem var(--color-charcoal-6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint (w-med) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    color: var(--color-white);
+
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    background-color: var(--color-charcoal-3);
+
+    @include breakpoint (w-lg) {}
+
+    @include breakpoint (w-sm) {}
+
+  }
+
+  &__author,
+  &__meta {
+
+    display: flex;
+    justify-content: flex-end;
+
+    @include breakpoint (w-sm) {}
+  }
+
+  &__author {
+    margin-bottom: .5rem;
+  }
+
+  &__author-link {
+    color: var(--color-white)
+  }
+
+  &__time,
+  &__date {
+    display: inline;
+  }
+
+  &__time {
+    padding-left: .5rem;
+  }
+
+  &__date {
+    padding-right: .5rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+
+  &__img-wrapper {
+
+    overflow: hidden;
+
+    width: auto;
+    height: auto;
+    display: flex;
+
+    @include breakpoint (w-sm) {
+      max-height: 300px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    align-self: center;
+  }
+
+
+
+
+
+
+}
