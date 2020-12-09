@@ -101,7 +101,7 @@ $w-sm: 320px; //320px - 800px
   @include breakpoint(w-sm) {
     margin-left: 1rem;
     margin-right: 1rem;
-    width: auto;
+
   }
 }
 
