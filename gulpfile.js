@@ -101,7 +101,7 @@ function watchCodeFiles() {
 function serve(done) {
     browserSync.init({
         proxy: {
-            target: "https://hubspot-developers-34rjat-6398568.hs-sites.com/",
+            target: process.env.SANDBOX_URL,
         },
         online: true,
         https: true

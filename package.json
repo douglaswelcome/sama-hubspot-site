@@ -5,21 +5,20 @@
   "main": "index.js",
   "scripts": {
     "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
-    "imagemin_script": "onchange -o '> .npm-scripts/imagemin/.changelog' '_src/img/**/*' -- echo '{{changed}}'",
+    
     "asset:optimize": "gulp imgOpt",
     "asset:upload": "hs filemanager upload --portal=PROD _tempImg custom/assets/static-assets/img/",
     "asset:cleanTemp": "del _tempImg/**/*",
     "asset:process": "npm run asset:optimize && npm run asset:upload && npm run asset:cleanTemp",
     "imgzone": "onchange '_src/img/**/*' -- npm run asset:process",
+    
+    "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\"",
+
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
-    "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ ",
-    "mjml:post": "replace-in-file '<!doctype html>' '<!--\ntemplateType: email \nisAvailableForNewContent: true\n--> \n<!doctype html>' _codeDist/markup/templates_email/**/*.html --verbose",
-    "mjml:process": "mjml _src/markup/email/templates/**/* -o _codeDist/markup/templates_email/ ",
-    "mjml:run": "npm run mjml:process && npm run mjml:post",
-    "mjml:watch": "onchange '_src/markup/email/**/*' -- npm run mjml:run",
-    "emaildevzone": "concurrently --kill-others --raw \"npm run mjml:watch\" \"npx hs watch --portal=PROD _codeDist/markup/templates_email/ markup/templates_email/\"",
-    "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\""
+    "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ "
+   
+    
   },
   "author": "Douglas Welcome",
   "license": "MIT",
@@ -45,10 +44,8 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.1.0",
-    "mjml": "^4.7.1",
     "onchange": "^6.1.1",
     "replace-in-file": "^4.3.1",
-    "vinyl-ftp": "^0.6.1",
     "yargs": "^14.2.3"
   },
   "dependencies": {
