@@ -1,6 +1,6 @@
 # **Hi There Sama Family**
 
-This is the repo for the Samasource Marketing Website and Email templates, built on the Hubspot CMS.
+This is the repo for the Samasource Marketing Website, built on the Hubspot CMS.
 
 ### **Here's how this project works**
 
@@ -10,7 +10,7 @@ Here are the major functions under this project:
 
 ### **Website Development**
 
-Currently, the website development environment consists of a development aka 'sandbox' portal on Hubspot and Samasource's production portal. In order to run the HUBL templating code properly, there is no local server development at this time. Rather, when developing and running the tooling, all code changes are pushed automatically to the sandbox server and can be reviewed in real time. In other words, the sandbox is a reflection of whatever branch you are currently running locally.
+Currently, the website development environment consists of a development aka 'sandbox' portal on Hubspot and Samasource's production portal. In order to run the HUBL templating code properly, there is no local server development at this time. Rather, when developing and running the tooling, all code changes are pushed automatically to the a sandbox server and can be reviewed in real time. In other words, the sandbox is a reflection of whatever branch you are currently running locally.
 
 To work on this project, use best git practices: 
 * Pull `develop`
@@ -26,15 +26,13 @@ When running the tooling, any img's uploaded to the `_src/img` directory will au
 
 Right now this tooling relies on npm-scripts and the gulp-imagemin script, but Hubspot will be rolling out a `watch` feature on their upload CLI tooling, so that will be a future update for this project.
 
-### **Email Development**
-
-Currently, our team is assesing how we want to create and develop email templates. There is a custom robust tooling here that uses MJML to spit out Hubspot friendly html modules. These can then be combined to create quick email templates. For now the tooling for these is run seperately. For more information, ask Douglas (dwelcome@samasource.com).
-
 ## **To Get Started:**
 
 ### Required:
 * node version `^11.6.0`
 * npm version `^6.14.4`
+* access to Samasource production Portal (email dwelcome@samasource.org for access)
+* your own sandbox portal for development (instructions can be found here: https://offers.hubspot.com/free-cms-developer-sandbox)
 
 ### To Run Web Development and Images Optimization/Uploading
 
@@ -57,10 +55,9 @@ Currently, our team is assesing how we want to create and develop email template
     ```
 
 * create a `.env` file
-* Put in your FTP credentials to your `.env` like so:
+* Put in your sandbox rott credentials to your `.env` like so:
     ```
-    FTP_USER=Yyouremail@samasource.com
-    FTP_PWD=yourhubspotpassword
+    SANDBOX_URL="https://hubspot-developers-34rjat-6398568.hs-sites.com/"
     ```
 * run `npm run web`
 * Your Set! You'll see a new browser open with a warning. This has to do with the SSL cert, but since we are developing its not a problem. Hit the `advanced` button then proceed to site.
