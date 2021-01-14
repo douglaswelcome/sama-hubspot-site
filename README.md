@@ -1,6 +1,6 @@
 # **Hi There Sama Family**
 
-This is the repo for the Samasource Marketing Website, built on the Hubspot CMS.
+This is the repo for the sama Marketing Website, built on the Hubspot CMS.
 
 ### **Here's how this project works**
 
@@ -10,7 +10,7 @@ Here are the major functions under this project:
 
 ### **Website Development**
 
-Currently, the website development environment consists of a development aka 'sandbox' portal on Hubspot and Samasource's production portal. In order to run the HUBL templating code properly, there is no local server development at this time. Rather, when developing and running the tooling, all code changes are pushed automatically to the a sandbox server and can be reviewed in real time. In other words, the sandbox is a reflection of whatever branch you are currently running locally.
+Currently, the website development environment consists of a development aka 'sandbox' portal on Hubspot and sama's production portal. In order to run the HUBL templating code properly, there is no local server development at this time. Rather, when developing and running the tooling, all code changes are pushed automatically to the a sandbox server and can be reviewed in real time. In other words, the sandbox is a reflection of whatever branch you are currently running locally.
 
 To work on this project, use best git practices: 
 * Pull `develop`
@@ -18,7 +18,7 @@ To work on this project, use best git practices:
 * When done, submit pull request to `develop`
 * Submit pull request from `develop` to `master` to push code live
 
-**DO NOT COMMIT/PUSH TO MASTER** unless you want your code to go live. Any commits to the master branch will trigger a github action that will deploy to the Samasource Production Portal aka **GO LIVE**.
+**DO NOT COMMIT/PUSH TO MASTER** unless you want your code to go live. Any commits to the master branch will trigger a github action that will deploy to the sama Production Portal aka **GO LIVE**.
 
 ### **Image Uploading and Optimization**
 
@@ -31,7 +31,7 @@ Right now this tooling relies on npm-scripts and the gulp-imagemin script, but H
 ### Required:
 * node version `^11.6.0`
 * npm version `^6.14.4`
-* access to Samasource production Portal (email dwelcome@samasource.org for access)
+* access to sama production Portal (email dwelcome@sama.org for access)
 * your own sandbox portal for development (instructions can be found here: https://offers.hubspot.com/free-cms-developer-sandbox)
 
 ### To Run Web Development and Images Optimization/Uploading

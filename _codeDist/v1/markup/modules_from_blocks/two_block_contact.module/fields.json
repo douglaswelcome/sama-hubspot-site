@@ -8,7 +8,7 @@
   "default" : {
     "form_id" : "c1b6d083-371e-49c3-8745-6315ddee97a0",
     "response_type" : "redirect",
-    "redirect_url" : "https://www.samasource.com/home",
+    "redirect_url" : "https://www.sama.com/home",
     "redirect_id" : null,
     "gotowebinar_webinar_key" : null,
     "form_type" : "HUBSPOT"
