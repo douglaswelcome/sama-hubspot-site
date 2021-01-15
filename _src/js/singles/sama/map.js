@@ -98,7 +98,7 @@ function createPopUp(currentFeature) {
             closeOnClick: false
         })
         .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML('<h6>' + 'Samasource HQ' + '</h6>' + '<h6 class="city">' + 'San Francisco, CA' + '</h6>')
+        .setHTML('<h6>' + 'sama HQ' + '</h6>' + '<h6 class="city">' + 'San Francisco, CA' + '</h6>')
         .addTo(map);
 }
 
