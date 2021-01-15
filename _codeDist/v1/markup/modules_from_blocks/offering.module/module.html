@@ -62,21 +62,21 @@
     </div>
     <div class="offering-grid__check offering-grid--filler">
         {% if row.low.name=="1-Yes" %}
-        <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+        <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
             {% elif row.low.name=="2-Add-On"%}
         <p>Add-On</p>
         {% endif %}
     </div>
     <div class="offering-grid__check">
         {% if row.mid.name=="1-Yes" %}
-        <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+        <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
             {% elif row.mid.name=="2-Add-On"%}
         <p>Add-On</p>
         {% endif %}
     </div>
     <div class="offering-grid__check offering-grid--filler">
         {% if row.high.name=="1-Yes" %}
-        <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+        <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
             {% elif row.high.name=="2-Add-On"%}
         <p>Add-On</p>
         {% endif %}
@@ -112,7 +112,7 @@
                 {% for row in tool.list|selectattr('low.name', 'containing', '1-Yes') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p>{{ row.feature }}</p>
@@ -131,7 +131,7 @@
             {% for addys in rows|selectattr('low.name', 'containing', '2-Add-On') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p> {{ addys.feature }}</p>
@@ -169,7 +169,7 @@
                 {% for row in tool.list|selectattr('mid.name', 'containing', '1-Yes')|rejectattr('low.name', 'containing', '1-Yes') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p>{{ row.feature }}</p>
@@ -188,7 +188,7 @@
             {% for addys in rows|rejectattr('low.name', 'containing', '2-Add-On')|selectattr('mid.name', 'containing', '2-Add-On') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p> {{ addys.feature }}</p>
@@ -228,7 +228,7 @@
                 {% for row in tool.list|selectattr('high.name', 'containing', '1-Yes')|rejectattr('mid.name', 'containing', '1-Yes') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p>{{ row.feature }}</p>
@@ -249,7 +249,7 @@
             {% for addys in rows|rejectattr('mid.name', 'containing', '2-Add-On')|selectattr('high.name', 'containing', '2-Add-On') %}
 
                 <div class="offering-mobile__check">
-                    <img src="https://www.samasource.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
+                    <img src="https://www.sama.com/hubfs/custom/assets/static-assets/img/icons/checkmark_2-layer.svg"/>
                 </div>
                 <div class="offering-mobile__feature">
                     <p> {{ addys.feature }}</p>

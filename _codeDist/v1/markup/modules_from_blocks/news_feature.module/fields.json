@@ -40,7 +40,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "Samasource is a Kick Ass Company in 2020"
+        "default": "sama is a Kick Ass Company in 2020"
       },
       {
         "name": "category",
@@ -98,7 +98,7 @@
       "resizable": true,
       "type": "image",
       "default": {
-        "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+        "src": "https://www.sama.com/hubfs/press-logos/forbes.svg",
         "alt": "Company Logo"} 
       }
     ],
@@ -123,7 +123,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "Samasource is a Kick Ass Company in 2020"
+        "default": "sama is a Kick Ass Company in 2020"
       },
       {
         "name": "category",
@@ -181,7 +181,7 @@
         "resizable": true,
         "type": "image",
         "default": {
-          "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+          "src": "https://www.sama.com/hubfs/press-logos/forbes.svg",
           "alt": "Company Logo"} 
         }
     ],
@@ -206,7 +206,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "Samasource is a Kick Ass Company in 2020"
+        "default": "sama is a Kick Ass Company in 2020"
       },
       {
         "name": "category",
@@ -264,7 +264,7 @@
         "resizable": false,
         "type": "image",
         "default": {
-          "src": "https://www.samasource.com/hubfs/press-logos/forbes.svg",
+          "src": "https://www.sama.com/hubfs/press-logos/forbes.svg",
           "alt": "Company Logo"} 
         }
     ],

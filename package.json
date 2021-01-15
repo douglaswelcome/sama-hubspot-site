@@ -1,7 +1,7 @@
 {
-  "name": "samasource_site_boom",
+  "name": "sama_site_boom",
   "version": "1.0.0",
-  "description": "A dev setup for the Samasource Website",
+  "description": "A dev setup for the sama Website",
   "main": "index.js",
   "scripts": {
     "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
