@@ -8,7 +8,7 @@
 
         <div class="btn__wrapper {% if not last_page_num %} hide-it {% endif %}">
         <a         
-        href="/{{ blog_page_link(last_page_num) }}"
+        href="{{ blog_page_link(last_page_num) }}"
         class="
         blog-pagination__link  
         blog-pagination__link--prev
@@ -26,7 +26,7 @@
         
 
         <div class="btn__wrapper {% if not next_page_num %} hide-it {% endif %}">
-        <a href="/{{ blog_page_link(next_page_num) }}"
+        <a href="{{ blog_page_link(next_page_num) }}"
         class="
         blog-pagination__link  
         blog-pagination__link-next 
