@@ -78,7 +78,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "default": "sama",
+        "default": "Sama",
         "inline_help_text": "If you picked an image, give it an alt description why dontcha?"
       },
       {
