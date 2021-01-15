@@ -119,10 +119,10 @@ footer {
 
       svg {
         fill: var(--color-sunshine);
-        width: 300px;
+        height: 3rem;
 
         @include breakpoint (w-sm) {
-          width: 175px;
+          height: 2rem;
         }
       }
     }
