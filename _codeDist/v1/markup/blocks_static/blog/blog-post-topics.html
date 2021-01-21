@@ -1,0 +1,21 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+<div class="blog-post-topics">
+  <div class="blog-author-hero__intro">
+    Filed Under:
+  </div>
+  <div class="blog-post-topics__list">
+    {% if content.topic_list %}
+      {% for topic in content.topic_list %}
+          <a class="news-feature__category"
+             href="/blog/tag/{{ topic.slug }}">
+            <p class="bold">
+              {{ topic.name }}
+            </p>
+          </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

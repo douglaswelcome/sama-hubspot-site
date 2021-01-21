@@ -2,16 +2,27 @@
     templateType: none
     isAvailableForNewContent: true
 -->
-<section class="blog-bio">
-  <div class="bio-pic" style="background-image:url({{ content.blog_post_author.avatar }})">
-    </div>
-    <div class="bio-copy">
-      <h3>
-          <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a>
-      </h3>
-      {# <h3 class="title">Senior VP, Shuffleboard</h3> #}
-      <p>
-          {{ content.blog_post_author.bio }}
-                </p>
-      </div>
-</section>
+<div class="blog-author-hero__intro">
+  Words by:
+</div>
+<div class="two-block-hero
+            blog-author-hero
+            blog-author-hero--small">
+  <div class="blog-author-hero__image
+              blog-author-hero__image--small">
+    <img src="{{ content.blog_author.avatar }}"
+         alt=""
+         loading="lazy">
+  </div>
+  <div class="blog-author-hero__copy">
+    <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"
+       class="blog-listing-hero__author
+              blog-author-hero__title
+              blog-author-hero__title--small">
+      {{ content.blog_author.display_name }}
+    </a>
+    <p class="blog-author-hero__subtitle">
+      {{ content.blog_author.bio }}
+    </p>
+  </div>
+</div>

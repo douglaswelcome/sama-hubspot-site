@@ -3,60 +3,27 @@
     isAvailableForNewContent: true
 -->
 <section class="blog-body">
+  <div class="blog-body__share-buttons
+              blog-share">
+    <div class="blog-share__track">
+      <a class="social-share
+                facebook"
+         href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url|urlencode }}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.1 64.89"><title>facebook</title><g id="fb3209c8-23d4-4288-984d-a2b8f32b7f0c" data-name="Layer 2"><g id="ba1a815d-13f1-45f9-9321-18e9a3cfa5db" data-name="Layer 1"><path d="M35.1,11.26V1.36A1.35,1.35,0,0,0,33.76,0H25.35A15.34,15.34,0,0,0,14,4.35C11.24,7.2,9.78,11.22,9.78,16v7.34H1.34A1.34,1.34,0,0,0,0,24.66V35.32a1.35,1.35,0,0,0,1.34,1.35H9.78V63.55a1.34,1.34,0,0,0,1.34,1.34h11a1.34,1.34,0,0,0,1.34-1.34V36.67h9.87a1.35,1.35,0,0,0,1.34-1.35V24.66a1.37,1.37,0,0,0-.7-1.18,1.47,1.47,0,0,0-.67-.16H23.49V17.1c0-1.72.25-2.69.84-3.37s1.88-1.13,3.77-1.13h5.66A1.34,1.34,0,0,0,35.1,11.26Z"></path></g></g></svg>
+      </a>
+      <a class="social-share
+                twitter"
+         href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20blog%20post%20I%20just%20read&url={{ content.absolute_url|urlencode }}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 51.19"><title>twitter</title><g id="e7743e55-1863-47ad-a995-4b7f1f924f07" data-name="Layer 2"><g id="ec8c6fd9-2f52-4507-9a24-804bc60dbc33" data-name="Layer 1"><path d="M23.59,51.19c-10.35,0-18.53-1.81-22.44-5l-.07-.06L1,46.1a3.19,3.19,0,0,1-.84-3.35l0-.1a3.24,3.24,0,0,1,3-2,26.57,26.57,0,0,0,7.06-1,13.45,13.45,0,0,1-7.07-8.16,2.92,2.92,0,0,1,1-3.38,3.06,3.06,0,0,1,.88-.45,19.52,19.52,0,0,1-4-7.18l0-.08,0-.09a3,3,0,0,1,1.4-3.23,3,3,0,0,1,1.43-.4,15.15,15.15,0,0,1-1.14-3.49A14.59,14.59,0,0,1,4.24,3.47l.38-.77a2.15,2.15,0,0,1,3.44-.56l.7.7c5.53,5.81,10.49,8.56,19.06,10.44a15.17,15.17,0,0,1,4.1-8.75A14.39,14.39,0,0,1,42.19,0h0c2.84,0,6.36,1.62,8.49,2.77,1.83-.6,4-1.53,6.32-2.51a2.88,2.88,0,0,1,3.22.57,2.85,2.85,0,0,1,.62,3.11c-.17.47-.36.92-.57,1.36a3.07,3.07,0,0,1,.84.58,3.13,3.13,0,0,1,.78,2.92l0,.1a11.92,11.92,0,0,1-4.78,6.56C56.73,35.23,41.84,51.19,23.59,51.19Z"></path></g></g></svg>
+      </a>
+      <a class="social-share
+                linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url|urlencode }}&title={{ content.name|urlencode }}&source={{ home_url|urlencode }}&summary=Check%20out%20this%20great%20blog%20post%20I%20just%20read">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.71 60.79"><title>linkedin</title><g id="bd073dff-b6ea-4cf0-bfeb-c3ce392ee6a5" data-name="Layer 2"><g id="f6b6eb77-7c10-4e27-a3d0-6f8b14e97f2e" data-name="Layer 1"><path d="M59.65,60.79l-12.35,0,0-19.36c0-4.62-.07-10.56-6.41-10.58s-7.44,5-7.45,10.21l0,19.7-12.36,0,.09-40.95,11.87,0v6.57h.16c1.66-3.13,5.7-6.42,11.73-6.41,12.51,0,14.81,8.28,14.79,19l-.05,21.85Z"></path><path d="M7.17,14.35a7.18,7.18,0,1,1,7.18-7.18A7.17,7.17,0,0,1,7.17,14.35Z"></path><rect x="0.98" y="19.8" width="12.39" height="40.95"></rect></g></g></svg>
+      </a>
+    </div>
+  </div>
   <div class="blog-body__inner">
-  <!-- <p><img src="https://cdn2.hubspot.net/hubfs/4379491/50.jpeg" ></p>
-  <h4>ANNOUNCING 3D POINT CLOUD ANNOTATION</h4>
- 
-  <p>The world has three dimensions. Why shouldn't your AI?</p>
-  <p>Today, <a href="?p=766">Sama is announcing</a> the production availability of our new 3D annotation engine for the Sama Hub. This new offering allows our expert annotation team to nimbly explore your lidar point clouds, searching for objects of interest and producing the highest quality 3D labels.</p>
-  <p>As much as we love a good "3D" joke, we can't leave out the important 4th dimension -- time. Building on the object tracking expertise from our video annotation toolkit, we support lengthy sequences of point cloud data, tracking moving objects thWAIT, WHAT ARE POINT CLOUDS?</h4>
-  <p>Before we get too deep into the weeds on 3D annotation, let's take a step back and talk about 3D point clouds and why they are important.</p>
-  <p>Throughout the history of computer vision technology, two-dimensional camera images have dominated. Techniques to detect edges and extract objects from the background, approaches to estimate relative distances in order to construct implied dimensions, and carefully-calibrated dual-camera captures that triangulate all incrementally nudged forward a machine's ability to "see."</p>
-  <p>Advances in deep neural nets dramatically improved computer vision with a greater degree of robustness -- and kicked off the current race to bring self-driving cars to market.</p>
-  <p>Cars are heavy and filled with combustible material. They travel at high velocities. They share the same space as other hurtling vehicles, ambling humans, and wandering animals. This makes the perception of distance absolutely critical. Recognizing an obstruction in the road is step 1; step 2 is estimating distance and making the appropriate response (slam on the brakes? maneuver safely around?).</p>
-  <p>Hence, lidar technology has been rapidly adopted as the key enabler for self-driving cars. <a target="_blank" href="https://medium.com/kylevogt/how-were-solving-the-lidar-problem-8b4363ff30db">Kyle Vogt, CEO of GM Cruise</a>, says, “sensors are a critical enabler for deploying self-driving cars at scale, and LIDARs are currently the bottleneck.” Rapid innovation to make lidar sensors faster, smaller, and cheaper with higher density, higher accuracy data make adoption near inevitable.</p>
-  <p>What does the data look like? Rather than a 2D image displayed on a flat screen, a lidar sensor generates a 3D snapshot of the surrounding environment. It scans the area with pinpricks of light, measuring the time-of-flight of reflections, and thus precisely capturing a collection of (X, Y, Z) points. We can reconstruct this to display on our screens, much like an Xbox game.</p>
-  <p><img src="https://cdn2.hubspot.net/hubfs/4379491/51.jpeg" alt="51" width="760" style="width: 760px;"></p>
-  <p>The richness and fidelity of this type of data feeds a new generation of AI algorithms (e.g., see <a target="_blank" href="https://arxiv.org/abs/1711.06396">this paper</a> about deep neural nets with direct voxel inputs by Apple), making depth perception much easier.</p>
-  <h4>MUCH MORE THAN SELF-DRIVING CARS</span></p>
-  <p>It's not just self-driving cars. 3D point clouds power a variety of machine vision use cases.</p>
-  <p>While an autonomous vehicle may use a technique like SLAM to dynamically build a 3D map of the environment, providers of high fidelity mapping data collect their own point clouds so that they can provide the ground-truth reference map. For example, providers like HERE could build 3D into their <a target="_blank" href="https://www.here.com/en/solutions/industries/automotive/autonomous-driving">HD Localization maps</a>.</p>
-  <p>Delivery robots are another exciting use case for lidar sensor based perception. The navigation concepts are very similar to automotive, but many delivery robots can more easily traverse sidewalks and coexist with pedestrians.</p>
-  <p>In a warehouse context, robots with 3D lidar sensing are able to shift materials around, rapidly picking up and transporting pallets to reconfigure the warehouse or optimize manufacturing workflows. Collision avoidance in the presence of human operators as well as indoor navigation and mapping round out the common ways that 3D point cloud data power cognitive robots.</p>
-  <p>Finally, unmanned aerial vehicles -- otherwise known as drones -- can use lidar to collect high resolution 3D data, such as when "corridor mapping" a pipeline, surveying a construction site, or performing visual structural inspections.</p>
-  <p><img src="https://cdn2.hubspot.net/hubfs/4379491/52.jpeg" alt="52" width="788" style="width: 788px;"></p>
-  <h4>EMPOWERING THE HUMAN ELEMENT</h4>
-  <p>Sama has extensive project experience annotating lidar sensor data from cutting-edge instruments. While we quickly ramped projects to produce those annotations on our clients’ own in-house apps, we wanted to create a tool flexible enough for the broader market.</p>
-  <p>That's why we're launching our 3D annotation tool that supports a wide range of 3D data types from essentially all lidar sensors. We have likely worked with sensor data from your lidar vendor of choice.</p>
-  <p>There's more to it beyond the raw data.</p>
-  <p>The Sama mission is to use human ingenuity to accelerate AI development, and one of our favorite tricks is to use algorithms to assist and interact with our expert human annotators. Our new 3D tool has some powerful time-saving features such as:</p>
-  <ul>
-  <li>
-  <p>automatic cuboid estimation to quickly capture an entire object after clicking only a single point;</p>
-  </li>
-  <li>
-  <p>automatic ground-plan extraction to make objects and environs easier to discriminate;</p>
-  </li>
-  <li>
-  <p>synchronized camera images for 2D confirmation of the 3D points; and</p>
-  </li>
-  <li>
-  <p>object tracking estimation to accelerate annotation and predict movement even when objects are occluded or only partially visible</p>
-  </li>
-  </ul>
-  <p>This approach lets us combine the skills of expert annotators, who can cleverly correlate what a camera shows with even sparse point clouds, with algorithms to accelerate the manipulation of 3D annotations in space and time. Together, we rapidly produce ground-truth annotations of the highest quality to power 3D perception.</p>
-  <p><img src="https://cdn2.hubspot.net/hubfs/4379491/53.jpeg" alt="53" width="788" style="width: 788px;"></p>
-  <p>&nbsp;</p>
-  <p>The bottom line: our clients get to market faster with their latest 3D perception algorithms. Quality and throughput make a difference.</p>
-  <h4>EXPERIENCE MATTERS</h4>
-  <p>We have run many projects through our teams, and consistently produce the quality results made possible only by long-term, dedicated annotation experts. The Sama model allows our agents to concentrate on a single client's data, understanding the nuances and unique requirements of their machine learning team (e.g., how precisely to enclose an object, whether to include side-view mirrors or bicycle racks, how to treat objects that pass out of view, what constitutes sufficient visual contact, and so on).</p>
-  <p>One project included side-mounted lidar sensors that produced data rotated by 90 degrees. Rather than expecting our team to annotate with their necks tilted at an angle, our engineering team whipped up a quick "rotate camera" tool to quickly reorient the workspace. Between continuous improvements of our Hub annotation studio, iterative refinement of the project objectives and annotation goals, and experience with point cloud data from nearly every lidar sensor out there, there's a bright future in 3D annotation here at Sama.</p>
-  <h4>READY TO DISCUSS YOUR PROJECT?</h4>
-  <p>Partnering with Sama, <a href="#">you can get the most from your 3D lidar projects</a>. We’re incredibly excited about this production-ready 3D annotation tool and the future of high-performance lidar. If you have 3D annotation on your mind and would like to see a demo of our SamaHub annotation platform in action: <a href="?p=1596">Drop us a line</a><a target="_blank" href="https://www.sama.org/sales">!</a></p>
-  <hr>
-  <p style="font-size: 12px;"><span style="font-size: 12px;">[1] © <a target="_blank" href="https://commons.wikimedia.org/wiki/User:Dllu">User:Dllu</a> / <a target="_blank" href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> / <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA-4.0</a></span></p>
-  <p style="font-size: 12px;"><span style="font-size: 12px;">[2] <a target="_blank" href="https://www.businesswire.com/news/home/20170915005120/en/AEye-Demos-Commercial-360-Degree-Solid-State">AEye Demos First Commercial 360 Degree Solid State LiDAR System</a>, Businesswire, 2017-09-15</span></p>
-  <p style="font-size: 12px;"><span style="font-size: 12px;">[3] <a target="_blank" href="https://www.yellowscan-lidar.com/applications-and-users/corridor-mapping">https://www.yellowscan-lidar.com/applications-and-users/corridor-mapping</a>, retrieved 2018-11-20</span></p> -->
   {{ content.post_body }}
 </div>
 </section>
