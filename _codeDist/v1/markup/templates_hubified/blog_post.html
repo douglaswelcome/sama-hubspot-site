@@ -8,13 +8,26 @@
 
 
 {% include '/v1/markup/blocks_static/header.html' %}
+<link href="{{ get_asset_url('/v1/assets/css/blog-v2.css') }}" rel="stylesheet">
 
-{% include '/v1/markup/blocks_static/blog/blog-post-hero.html' %}
+{% module "module_16098669978076" path="/v1/markup/blog/blog-header", label="blog-header" %}
 
-{% include '/v1/markup/blocks_static/blog/blog-post-body.html' %}
 
-{% include '/v1/markup/blocks_static/blog/blog-bio.html' %}
+{% include '/v1/markup/blog/blog-post-hero.html' %}
 
+{% include '/v1/markup/blog/blog-post-body.html' %}
+
+<div class="single-post-meta">
+  <div class="single-post-meta__topics">
+    {% include '/v1/markup/blog/blog-post-topics.html' %}
+  </div>
+  <div class="single-post-meta__bio">
+    {% include '/v1/markup/blog/blog-bio.html' %}
+  </div>
+  <div class="single-post-meta__related">
+    {% include '/v1/markup/blog/blog-related-posts.html' %}
+  </div>
+</div>
 
 {% include '/v1/markup/blocks_static/footer.html' %}
 
