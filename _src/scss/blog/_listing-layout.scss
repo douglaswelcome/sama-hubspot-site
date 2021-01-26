@@ -98,3 +98,29 @@
   max-width: 100%;
   padding: 2em;
 }
+
+.load-button {
+  margin: 0 auto;
+  display: block;
+  width: 8em;
+  height: 3em;
+  font-weight: bold;
+}
+
+.blog-pagination__link {
+  font-size: 1.2em;
+  height: 80px;
+  width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-1);
+  font-weight: bold;
+}
+
+.btn__wrapper.disabled,
+.btn__wrapper.disabled a {
+  pointer-events: none;
+  opacity: 0.25;
+  cursor: not-allowed;
+}
