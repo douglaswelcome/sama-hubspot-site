@@ -1,0 +1,15 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+{% if topic %}
+{% include '/v1/markup/blog/blog-topic-hero.html' %}
+
+{% elif blog_author %} 
+
+{% include '/v1/markup/blog/blog-author-hero.html' %}
+
+{% else %}
+  {% include '/v1/markup/blog/blog-home-hero.html' %}
+
+{% endif %}

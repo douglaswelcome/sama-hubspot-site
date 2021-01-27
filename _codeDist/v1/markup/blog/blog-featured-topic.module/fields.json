@@ -1,0 +1,29 @@
+[ {
+  "id" : "caa160a6-bf08-bcb4-218e-cb2db1b236d8",
+  "name" : "featured_tag",
+  "label" : "Featured Tag",
+  "required" : false,
+  "locked" : true,
+  "tag_value" : "NAME",
+  "type" : "tag",
+  "default" : "Featured"
+}, {
+  "id" : "1d702d8f-e315-b019-db00-b2cbd49cbab3",
+  "name" : "section_title",
+  "label" : "Section Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Feature Posts"
+}, {
+  "id" : "2bab7aec-0ec7-de03-007e-b3c5bd31abf7",
+  "name" : "blurb",
+  "label" : "Blurb",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Morbi nec metus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Vestibulum ullamcorper mauris at ligula.</p>"
+} ]

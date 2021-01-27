@@ -1,0 +1,27 @@
+<section class="section--sm
+                dark-mode
+                bg-charcoal-3">
+
+  <div class="desktop-header__inner
+              blog-header-grid">
+    <div class="blog-nav">
+      {% for item in module.links %}
+        <a href="{{ item.link_url.href }}"
+           class="blog-nav__link">
+          {{ item.link_label }}
+        </a>
+      {% endfor %}
+    </div>
+    <div class="blog-search-wrapper">
+      <div class="blog-search">
+          <input type="search"
+                 class="blog-search__field"
+                 placeholder="I'm interested in...">
+          <div class="blog-search__results">
+            <div class="blog-search__results-list"
+                 data-portal="{{ hub_id }}"><!-- Results Here --></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
