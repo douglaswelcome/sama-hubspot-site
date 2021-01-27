@@ -4,7 +4,8 @@
 -->
 <link href="{{ get_asset_url('/v1/assets/css/blog-v2.css') }}" rel="stylesheet">
 
-{% module "module_16098669978076" path="/v1/markup/blog/blog-header", label="blog-header" %}
+
+{% module "module_16117065367712" path="/v1/markup/blog/blog-header", label="blog-header" %}
 
 {% if topic %}
 {% include '/v1/markup/blog/blog-header-topic-v2.html' %}
@@ -16,4 +17,5 @@
 {% else %}
   {% include '/v1/markup/blog/blog-home-hero-v2.html' %}
   {% module "module_160997346229524" path="/v1/markup/blog/blog-featured-topic", label="blog-featured-topic" %}
+
 {% endif %}
