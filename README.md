@@ -38,22 +38,7 @@ Right now this tooling relies on npm-scripts and the gulp-imagemin script, but H
 
 * run `npm install`
 * Create a `hubspot.config.yml` file, either manually or with `hs init`
-* Put in your api credentials to `hubspot.config.yml` like so:
-    ```
-    defaultPortal: 'DEV'
-    portals:
-   Sample apikey entry, manually entered
-  - name: 'DEV'
-    portalId: XXXXXXX
-    authType: 'apikey'
-    apiKey: 'XXXXXXXXXXXXXXXXXXXXXX'
-  
-  - name: 'PROD'
-    portalId: XXXXXXX
-    authType: 'apikey'
-    apiKey: 'XXXXXXXXXXXXXXXXXXXXXX' 
-    ```
-
+* Follow Instructions here to create a personal key for your sandbox account: https://developers.hubspot.com/docs/cms/personal-cms-access-key
 * create a `.env` file
 * Put in your sandbox rott credentials to your `.env` like so:
     ```
@@ -71,7 +56,6 @@ The staging server, run by browsersync, is actually proxying the hubspot sandbox
 ### Further Resources:
 
 * <a href="https://designers.hubspot.com/docs?_ga=2.52381166.650833058.1588003746-332362308.1582046786">Hubspot Documentation</a>
-* <a href="https://mjml.io/documentation/">MJML Documentation</a>
 * <a href="https://designers.hubspot.com/slack">Join the Hubspot Dev Slack</a>
 
 
