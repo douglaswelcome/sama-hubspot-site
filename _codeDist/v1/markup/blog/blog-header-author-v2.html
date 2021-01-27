@@ -1,0 +1,23 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+<div class="two-block-hero
+            blog-author-hero">
+  <div class="blog-author-hero__image">
+    <img src="{{ blog_author.avatar }}"
+         alt=""
+         loading="lazy">
+  </div>
+  <div class="blog-author-hero__copy">
+    <div class="blog-author-hero__intro">
+      Words by:
+    </div>
+    <h1 class="blog-author-hero__title">
+      {{ blog_author.display_name }}
+    </h1>
+    <p class="blog-author-hero__subtitle">
+      {{ blog_author.bio }}
+    </p>
+  </div>
+</div>

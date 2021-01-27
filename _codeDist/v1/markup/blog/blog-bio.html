@@ -1,0 +1,28 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+<div class="blog-author-hero__intro">
+  Words by:
+</div>
+<div class="two-block-hero
+            blog-author-hero
+            blog-author-hero--small">
+  <div class="blog-author-hero__image
+              blog-author-hero__image--small">
+    <img src="{{ content.blog_author.avatar }}"
+         alt=""
+         loading="lazy">
+  </div>
+  <div class="blog-author-hero__copy">
+    <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"
+       class="blog-listing-hero__author
+              blog-author-hero__title
+              blog-author-hero__title--small">
+      {{ content.blog_author.display_name }}
+    </a>
+    <p class="blog-author-hero__subtitle">
+      {{ content.blog_author.bio }}
+    </p>
+  </div>
+</div>

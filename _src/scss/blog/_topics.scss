@@ -1,0 +1,34 @@
+.blog-topic-hero__title {
+  grid-column: 3 / 11;
+  text-align: center;
+  background-color: var(--color-charcoal-1);
+  color: #fff;
+  padding: 1em;
+  position: relative;
+  margin: 2em 0;
+}
+
+.blog-topic-hero__title::before {
+  content: '';
+  position: absolute;
+  top: -1.66em;
+  right: -2em;
+  bottom: -1.33em;
+  left: 44%;
+  background-image: url(https://www.samasource.com/hubfs/custom/assets/static-assets/img/top-dots.svg);
+  background-size: cover;
+  background-position: top right;
+  z-index: -0002;
+  opacity: 0.33;
+}
+
+.blog-topic-hero__title::after {
+  content: '';
+  position: absolute;
+  top: -0.66em;
+  right: 33%;
+  bottom: 0.66em;
+  left: -2.33em;
+  background-color: var(--color-sunshine);
+  z-index: -0001;
+}

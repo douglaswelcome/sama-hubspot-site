@@ -1,0 +1,120 @@
+<!--
+    templateType: none
+    isAvailableForNewContent: true
+-->
+{% if not simple_list_page %}
+
+{% set page_list = [-2, -1, 0, 1, 2] %}
+{% if contents.total_page_count - current_page_num == 1 %}
+  {% set offset = -1 %}
+{% elif contents.total_page_count - current_page_num == 0 %}
+  {% set offset = -2 %}
+{% elif current_page_num == 2 %}
+  {% set offset = 1 %}
+{% elif current_page_num == 1 %}
+  {% set offset = 2 %}
+{% else %}
+  {% set offset = 0 %}
+{% endif %}
+
+{% if not topic %}
+
+<div class="-btn__wrapper">
+  <button class="load-button
+            btn
+            btn--secondary
+            js-load-more">
+    Load More
+  </button>
+</div>
+
+{% endif %}
+
+<section class="blog-pagination">
+    <div class="blog-pagination__wrapper
+                btn__row"
+         style="   visibility: hidden;height: 0;overflow: hidden;">
+
+        <div class="btn__wrapper
+                    {% if not last_page_num %} disabled {% endif %}">
+          <a href="{{ blog_page_link(last_page_num) }}"
+             class="blog-pagination__link  
+                    blog-pagination__link--prev
+                    btn
+                    btn--secondary">
+            <img src="{{staticbase}}img/icons/arrow-left.svg"
+                 alt="arrow-left"
+                 class="button__img"
+                 loading="lazy">
+          </a>
+        </div>
+
+        {# <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a> #}
+      
+        {% for page in page_list %}
+            {% set this_page = current_page_num + page + offset %}
+            {% if this_page > 0 and this_page <= contents.total_page_count %}
+                <div class="btn__wrapper">
+                  <a class="blog-pagination__link  
+                            blog-pagination__link-next 
+                            btn
+                            btn--secondary
+                            {% if this_page == current_page_num %}active{% endif %}"
+                     href="{{ blog_page_link(this_page) }}">
+                    {{ this_page }}
+                  </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+        <div class="btn__wrapper
+                    {% if not next_page_num %} disabled {% endif %}">
+          <a href="{{ blog_page_link(next_page_num) }}"
+            class="blog-pagination__link  
+                   blog-pagination__link-next 
+                   btn
+                   btn--secondary">
+            <img src="{{staticbase}}img/icons/arrow-right.svg"
+                 alt="arrow-right"
+                 class="button__img"
+                 loading="lazy">
+          </a> 
+        </div>
+
+    </div>
+</section>
+
+{% require_js %}
+<script>
+
+  $(function() {
+    
+    var pageToFind = 2;
+    
+    $('.js-load-more').on('click', function() {
+      
+      var next;
+      
+      $.get('/blog/page/' + pageToFind, function(data) {
+        $('#blog-feed').append('<svg class="loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="58px" height="58px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(30 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(60 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(90 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(120 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(150 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(180 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(210 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(240 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(270 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(300 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>  </rect></g><g transform="rotate(330 50 50)">  <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#eeeeee">    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>  </rect></g></svg>');
+      })
+      .done(function(data){
+        $('#blog-feed').append($(data).find('#blog-feed').html());
+        $('.loading').remove();
+      })
+      .fail(function(data){
+        console.log('No More Posts');
+        $('.js-load-more').remove();
+      });
+      
+      pageToFind++;
+      
+      
+    });
+  });
+  
+</script>
+
+{% end_require_js %}
+
+{% endif %}

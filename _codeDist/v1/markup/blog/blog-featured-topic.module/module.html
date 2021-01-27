@@ -1,0 +1,52 @@
+{% set feature_topic = module.featured_tag %}
+{% set featured = blog_recent_tag_posts('default', feature_topic, 3) %}
+
+<div class="section--sm
+                dark-mode
+                bg-charcoal-3">
+  <div class="feature-wrap">
+    <div class="feature-intro">
+      <h2 class="feature-intro__title">
+        {{ module.section_title }}
+      </h2>
+      <div class="feature-intro__body">
+        {{ module.blurb }}
+      </div>
+    </div>
+    <div class="feature-grid">
+      {% for post in featured %}
+
+        <div class="feature-grid--item
+                    news-feature--article-bg">
+          <div class="news-feature--link
+                      news-feature--link--medium">
+            <div>
+            <a href="{{ post.absolute_url}}"
+               class="card-image"
+               style="background-image: url({{ post.post_list_summary_featured_image }});"></a>
+              {% if post.topic_list %}
+                {% for topic in post.topic_list %}
+                  {% if loop.index == 1 %}
+                    <a class="news-feature__category"
+                       href="/blog/tag/{{ topic.slug }}">
+                      <p class="bold">
+                        {{ topic.name }}
+                      </p>
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              <a href="{{ post.absolute_url}}"
+                 class="news-feature__title">
+                <h2 class="bold">
+                  {{ post.name }}
+                </h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>

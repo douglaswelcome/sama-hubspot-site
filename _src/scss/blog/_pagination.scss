@@ -12,7 +12,14 @@
     }
 
     &__link {
-        padding: 1rem;
+        font-size: 1.2em;
+        height: 80px;
+        width: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-charcoal-1);
+        font-weight: bold;
         &--next {
             grid-column: 2;
         }
@@ -23,4 +30,11 @@
 
     }
 
+}
+
+.btn__wrapper.disabled,
+.btn__wrapper.disabled a {
+    pointer-events: none;
+    opacity: 0.25;
+    cursor: not-allowed;
 }
