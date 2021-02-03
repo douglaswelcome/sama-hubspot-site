@@ -1,5 +1,5 @@
 .blog-menu {
-  display: block;
+  @extend %grid;
   z-index: 20;
 }
 
