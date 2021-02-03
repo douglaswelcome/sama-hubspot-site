@@ -1,7 +1,7 @@
 var waitId = null;
-$(".blog-search__field").on("keyup", function(e) {
-	var searchTerm = $(".blog-search__field").val(),
-		searchList = $(".blog-search__results-list"),
+$(".blog-menu__search-field").on("keyup", function(e) {
+	var searchTerm = $(".blog-menu__search-field").val(),
+		searchList = $(".blog-menu__search-results-list"),
 		portalId = searchList.data("portal");
 
 	if (searchTerm) {
@@ -67,6 +67,6 @@ $(".blog-search__field").on("keyup", function(e) {
 		$(".search__results--list").empty();
 	}
 });
-$('input[type="search"].blog-search__field').on("click", function(){
-    	$('.blog-search__results-list .search__item').remove()
+$('input[type="search"].blog-menu__search-field').on("click", function(){
+    	$('.blog-menu__search-results-list .search__item').remove()
 })

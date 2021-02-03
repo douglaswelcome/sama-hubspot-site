@@ -3,22 +3,22 @@
                 bg-charcoal-3">
 
   <div class="desktop-header__inner
-              blog-header-grid">
-    <div class="blog-nav">
+              blog-menu">
+    <div class="blog-menu__nav">
       {% for item in module.links %}
         <a href="{{ item.link_url.href }}"
-           class="blog-nav__link">
+           class="blog-menu__nav-link">
           {{ item.link_label }}
         </a>
       {% endfor %}
     </div>
-    <div class="blog-search-wrapper">
-      <div class="blog-search">
+    <div class="blog-menu__search-wrapper">
+      <div class="blog-menu__search">
           <input type="search"
-                 class="blog-search__field"
+                 class="blog-menu__search-field"
                  placeholder="I'm interested in...">
-          <div class="blog-search__results">
-            <div class="blog-search__results-list"
+          <div class="blog-menu__search-results">
+            <div class="blog-menu__search-results-list"
                  data-portal="{{ hub_id }}"><!-- Results Here --></div>
           </div>
       </div>
