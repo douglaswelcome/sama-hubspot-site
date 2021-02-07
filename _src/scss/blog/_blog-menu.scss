@@ -96,6 +96,28 @@
   flex: 1;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  /* Remove default */
+  -webkit-appearance: none;
+}
+
+.blog-menu__search-clear {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.75em;
+  bottom: 1px;
+  cursor: pointer;
+  visibility: hidden;
+  z-index: 2;
+  &.show{
+    visibility: visible;
+  }
+}
+
 @media (min-width: 1120px) {
 
   .blog-menu__search-field {
