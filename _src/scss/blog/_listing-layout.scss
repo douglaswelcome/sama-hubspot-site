@@ -39,19 +39,6 @@
 .news-feature--link-light {
   box-shadow: none;
   background-color: #F0F0F2;
-  display: flex;
-  flex-direction: column;
-}
-
-.news-feature--link-light>div {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow-wrap: break-word;
-}
-
-.news-feature--link-light .news-feature__title {
-  flex: 1;
 }
 
 .card-image {
