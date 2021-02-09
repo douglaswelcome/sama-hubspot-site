@@ -70,3 +70,20 @@ $(".blog-menu__search-field").on("keyup", function(e) {
 $('input[type="search"].blog-menu__search-field').on("click", function(){
     	$('.blog-menu__search-results-list .search__item').remove()
 })
+
+//clear search input button
+const searchInput = document.querySelector('.blog-menu__search-field');
+const clearButton = document.querySelector('.blog-menu__search-clear');
+
+searchInput.addEventListener("keyup", (e) => {
+	if(!clearButton.classList.contains('show')){
+		clearButton.classList.add('show');
+	}else if(!e.target.value.length > 0){
+		clearButton.classList.remove('show');
+	}
+});
+
+clearButton.addEventListener('click', (e) => {
+	searchInput.value = '';
+	clearButton.classList.remove('show');
+});
