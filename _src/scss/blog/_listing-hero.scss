@@ -6,14 +6,12 @@
 }
 
 @media (max-width: 768px) {
-
   .blog-list-hero {
     display: block;
     margin: 0 !important;
     max-width: 100%;
     padding: 0 2em;
   }
-
 }
 
 .blog-list-hero__image {
@@ -34,8 +32,9 @@
 }
 
 .blog-list-hero__image img {
-  max-width: 100%;
+  width: 100%;
   position: relative;
+  object-fit: cover;
 }
 
 .blog-list-hero__copy {
