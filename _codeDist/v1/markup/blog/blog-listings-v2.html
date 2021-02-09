@@ -14,7 +14,6 @@
                   js-blog-post">
         <div class="news-feature--link
                     news-feature--link-light">
-          <div>
           <a href="{{ content.absolute_url}}"
              class="card-image"
              style="background-image: url({{ content.post_list_summary_featured_image }});"></a>
@@ -37,23 +36,22 @@
               {{ content.name }}
             </h2>
           </a>
-            <div class="blog-listing__meta">
-              <a class="blog-listing-hero__author"
-                 href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
-                {{ content.blog_post_author.display_name }}
-              </a>
-              <div class="blog-listing-hero__datetime">
-                {{ content.publish_date|datetimeformat('%B %e, %Y') }} | 
-                {% set initialPostWords = content.post_body|wordcount %}
-                {% set calculatedPostWords = (initialPostWords/100) * 100 %}
-                {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
-                {% set number = finishedPostWords|round %}
-                {% if number < 1 %}
-                  1 Min Read
-                {% else %}
-                  {{ finishedPostWords|round }} Min Read
-                {% endif %}
-              </div>
+          <div class="blog-listing__meta">
+            <a class="blog-listing-hero__author"
+                href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
+              {{ content.blog_post_author.display_name }}
+            </a>
+            <div class="blog-listing-hero__datetime">
+              {{ content.publish_date|datetimeformat('%B %e, %Y') }} | 
+              {% set initialPostWords = content.post_body|wordcount %}
+              {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+              {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+              {% set number = finishedPostWords|round %}
+              {% if number < 1 %}
+                1 Min Read
+              {% else %}
+                {{ finishedPostWords|round }} Min Read
+              {% endif %}
             </div>
           </div>
         </div>
