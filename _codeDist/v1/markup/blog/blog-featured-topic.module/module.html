@@ -20,29 +20,27 @@
                     news-feature--article-bg">
           <div class="news-feature--link
                       news-feature--link--medium">
-            <div>
             <a href="{{ post.absolute_url}}"
                class="card-image"
                style="background-image: url({{ post.post_list_summary_featured_image }});"></a>
-              {% if post.topic_list %}
-                {% for topic in post.topic_list %}
-                  {% if loop.index == 1 %}
-                    <a class="news-feature__category"
-                       href="/blog/tag/{{ topic.slug }}">
-                      <p class="bold">
-                        {{ topic.name }}
-                      </p>
-                    </a>
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-              <a href="{{ post.absolute_url}}"
-                 class="news-feature__title">
-                <h2 class="bold">
-                  {{ post.name }}
-                </h2>
-              </a>
-            </div>
+            {% if post.topic_list %}
+              {% for topic in post.topic_list %}
+                {% if loop.index == 1 %}
+                  <a class="news-feature__category"
+                      href="/blog/tag/{{ topic.slug }}">
+                    <p class="bold">
+                      {{ topic.name }}
+                    </p>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            <a href="{{ post.absolute_url}}"
+                class="news-feature__title">
+              <h2 class="bold">
+                {{ post.name }}
+              </h2>
+            </a>
           </div>
         </div>
 
