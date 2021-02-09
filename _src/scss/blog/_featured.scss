@@ -53,4 +53,9 @@
 
 .feature-grid .news-feature--article-bg {
   background: none;
+  .news-feature--link{
+    &:hover {
+      transform: none;
+    }
+  }
 }
