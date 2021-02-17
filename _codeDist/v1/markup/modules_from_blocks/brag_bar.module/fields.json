@@ -1,4 +1,15 @@
-[{
+[
+  {
+"name": "on",
+"label": "Display Module?",
+"required": false,
+"locked": false,
+"type": "boolean",
+"inline_help_text": "",
+"help_text": "",
+"default": true 
+},
+  {
 
     "name": "headline",
     "label": "Headline",
