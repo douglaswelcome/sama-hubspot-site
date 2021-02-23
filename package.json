@@ -5,20 +5,15 @@
   "main": "index.js",
   "scripts": {
     "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
-    
     "asset:optimize": "gulp imgOpt",
     "asset:upload": "hs filemanager upload --portal=PROD _tempImg custom/assets/static-assets/img/",
     "asset:cleanTemp": "del _tempImg/**/*",
     "asset:process": "npm run asset:optimize && npm run asset:upload && npm run asset:cleanTemp",
     "imgzone": "onchange '_src/img/**/*' -- npm run asset:process",
-    
     "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\"",
-
     "hubupDEV": "hs upload --portal=DEV _codeDist . ",
     "hubupPROD": "hs upload --portal=PROD _codeDist .",
     "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ "
-   
-    
   },
   "author": "Douglas Welcome",
   "license": "MIT",
