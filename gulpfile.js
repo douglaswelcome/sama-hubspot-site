@@ -9,7 +9,6 @@ const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const browserSync = require('browser-sync').create();
-const del = require('del');
 
 
 

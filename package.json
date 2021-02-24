@@ -4,29 +4,25 @@
   "description": "A dev setup for the Sama Website",
   "main": "index.js",
   "scripts": {
-    "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --portal=DEV _codeDist/ .\"",
+    "devzone": "concurrently --kill-others --raw \"gulp dev\" \"npx hs watch --initial-upload --portal=DEV _codeDist/ .\"",
     "asset:optimize": "gulp imgOpt",
     "asset:upload": "hs filemanager upload --portal=PROD _tempImg custom/assets/static-assets/img/",
     "asset:cleanTemp": "del _tempImg/**/*",
     "asset:process": "npm run asset:optimize && npm run asset:upload && npm run asset:cleanTemp",
     "imgzone": "onchange '_src/img/**/*' -- npm run asset:process",
-    "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\"",
-    "hubupDEV": "hs upload --portal=DEV _codeDist . ",
-    "hubupPROD": "hs upload --portal=PROD _codeDist .",
-    "pullModules": "hs fetch --portal=DEV --overwrite    _codeDist/markup/modules_from_blocks/ markup/modules_from_blocks/ "
+    "web": "concurrently --kill-others --raw \"npm run imgzone\" \"npm run devzone\""
   },
   "author": "Douglas Welcome",
   "license": "MIT",
   "devDependencies": {
-    "@hubspot/cms-cli": "^2.2.0",
+    "@hubspot/cli": "^3.0.2",
     "browser-sync": "^2.26.13",
     "concurrently": "^5.3.0",
     "del-cli": "^3.0.1",
     "dotenv": "^8.2.0",
-    "ftp": "^0.3.10",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-changed": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^3.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
@@ -34,14 +30,12 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.4.0",
     "imagemin": "^7.0.1",
-    "imagemin-cli": "^5.1.0",
+    "imagemin-cli": "^6.0.0",
     "imagemin-giflossy": "^5.1.10",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.1.0",
-    "onchange": "^6.1.1",
-    "replace-in-file": "^4.3.1",
-    "yargs": "^14.2.3"
+    "onchange": "^6.1.1"
   },
   "dependencies": {
     "js-yaml": "^3.14.0"
