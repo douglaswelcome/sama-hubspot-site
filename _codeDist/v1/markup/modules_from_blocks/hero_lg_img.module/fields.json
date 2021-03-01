@@ -1,60 +1,58 @@
-[  {
-
-  "name" : "headline",
-  "label" : "Headline",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Magic Sauce. Soup. Eat up boys and girls."
-}, 
- {
-
-  "name" : "subheadline",
-  "label" : "Subheadline",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "And this is where we say a little more about how the thing above can rock your world."
-}, 
-{
-"name": "img",
-"label": "Image",
-"required": false,
-"locked": false,
-"inline_help_text": "",
-"help_text": "",
-"responsive": true,
-"resizable": false,
-"type": "image",
-"default": {
-  "src": "https://source.unsplash.com/random",
-  "alt": null} 
-},
-
-{
-"name": "cta1",
-"label": "CTA #1",
-"required": false,
-"locked": false,
-"inline_help_text": "",
-"help_text": "",
-"type": "cta",
-"default": null 
-},
-{
-  "name": "cta2",
-  "label": "CTA #2",
-  "required": false,
-  "locked": false,
-  "inline_help_text": "",
-  "help_text": "",
-  "type": "cta",
-  "default": null 
-}
+[{
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Magic Sauce. Soup. Eat up boys and girls."
+  },
+  {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "And this is where we say a little more about how the thing above can rock your world."
+  },
+  {
+    "name": "img",
+    "label": "Image",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://source.unsplash.com/random",
+      "alt": null
+    }
+  },
+  {
+    "name": "cta1",
+    "label": "CTA #1",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  },
+  {
+    "name": "cta2",
+    "label": "CTA #2",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  }
 ]
