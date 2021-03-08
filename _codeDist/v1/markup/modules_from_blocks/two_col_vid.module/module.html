@@ -83,10 +83,9 @@ dark-mode
 
     <div class="two-col-vid__vid">
       {# <div class="two-col-vid__panel"></div> #}
-      <div class="two-col-vid__vid-embed video-container">
+      <div class="two-col-vid__vid-embed {{ module.vid_responsive }}">
        
-        <iframe src="https://player.vimeo.com/video/{{ module.vid_id }}" frameborder="0"
-          allow="fullscreen; picture-in-picture"></iframe>
+        {{ module.vid_embed }}
 
       </div>
 
