@@ -22,7 +22,7 @@
 
   &__vid {
     grid-column: 7/ span 6;
-    height: 500px;
+
 
     @include breakpoint (w-sm) {
       // width: calc(100% - 1rem);
