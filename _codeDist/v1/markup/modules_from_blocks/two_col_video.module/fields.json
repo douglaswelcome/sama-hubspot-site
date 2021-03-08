@@ -76,28 +76,29 @@
     "default": ""
   },
   {
-    "name": "img",
-    "label": "Image",
+    "name": "vid_id",
+    "label": "Vimeo Id Number",
     "required": false,
     "locked": false,
-    "responsive": true,
-    "resizable": false,
-    "type": "image",
-    "default": {
-      "src": "https://source.unsplash.com/random/400x400",
-      "alt": null
-    }
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "10620647"
   },
   {
-  "name": "cta1_type",
-  "label": "Is this CTA1 a Hyperlink?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": false
-},
+    "name": "cta1_type",
+    "label": "Is this CTA1 a Hyperlink?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": false
+  },
   {
     "id": "",
     "name": "cta1",
