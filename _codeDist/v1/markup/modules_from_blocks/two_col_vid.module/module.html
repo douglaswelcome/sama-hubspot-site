@@ -84,12 +84,7 @@ dark-mode
     <div class="two-col-vid__vid">
       {# <div class="two-col-vid__panel"></div> #}
       <div class="two-col-vid__vid-embed">
-       <script>
-            $(document).ready(function(){
-
-              $(".two-col-vid__vid-embed").fitVids();
-            });
-          </script> 
+       
         <iframe src="https://player.vimeo.com/video/{{ module.vid_id }}" frameborder="0"
           allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
 
@@ -97,6 +92,13 @@ dark-mode
 
     </div>
   </div>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".two-col-vid__vid-embed").fitVids();
+    });
+  </script> 
 
 
 </section>
