@@ -1,5 +1,5 @@
 [{
-    "name": "video_position",
+    "name": "vid_position",
     "label": "Video Left or Right?",
     "required": false,
     "locked": false,
@@ -110,7 +110,8 @@
   ],
   "type": "choice",
   "placeholder": "",
-  "default": "no" },
+  "default": "video-container" 
+},
 
   
   {
