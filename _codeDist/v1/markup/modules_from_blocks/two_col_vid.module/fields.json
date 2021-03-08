@@ -75,9 +75,10 @@
     "type": "text",
     "default": ""
   },
+ 
   {
-    "name": "vid_id",
-    "label": "Vimeo Id Number",
+    "name": "vid_embed",
+    "label": "Video Embed Snippet",
     "required": false,
     "locked": false,
     "validation_regex": "",
@@ -85,10 +86,33 @@
     "show_emoji_picker": false,
     "type": "text",
     "placeholder": "",
-    "inline_help_text": "",
+    "inline_help_text": "Copy and Paste the iframe snippet only. Do not include any tags or text that follows the iframe.",
     "help_text": "",
-    "default": "10620647"
+    "default": "<iframe src=\"https://player.vimeo.com/video/10620647\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
   },
+  {
+  "name": "vid_responsive",
+  "label": "Is your embed snippet responsive?",
+  "required": false,
+  "locked": false,
+  "display": "select",
+  "inline_help_text": "If your embed snippet has a fixed height and width in pixels, the answer is no.",
+  "help_text": "",
+  "choices": [
+  [
+    "video-container",
+    "No"
+  ],
+  [
+    "null",
+    "Yes"
+  ]
+  ],
+  "type": "choice",
+  "placeholder": "",
+  "default": "no" },
+
+  
   {
     "name": "cta1_type",
     "label": "Is this CTA1 a Hyperlink?",
