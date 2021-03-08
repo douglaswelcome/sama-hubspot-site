@@ -1,6 +1,7 @@
 .two-col-vid {
   @extend %grid;
   align-items: center;
+  column-gap: 2rem;
 
   @include breakpoint(w-sm) {
     grid-template-columns: 1fr;
@@ -53,13 +54,13 @@
 
 .two-col-vid.reflect {
   .two-col-vid__copy {
-    text-align: left;
-    grid-column: 7;
+
+    grid-column: 7 / span 6;
     grid-row: 1;
   }
 
   .two-col-vid__vid {
-    grid-column: 1;
+    grid-column: 1 / span 6;
     grid-row: 1;
 
   }
