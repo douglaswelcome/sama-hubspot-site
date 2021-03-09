@@ -1,0 +1,35 @@
+<!-- module html  -->
+<section class="">
+    <div class="two-col-form">
+        <div class="two-col-form__description">
+            <h1 class="two-col-form__headline display-small">
+                {{ module.headline}}
+            </h1>
+            <div class="divider-line divider-line--horizontal"></div>
+            <h5 class="two-col-form__text">
+                {{ module.body_text }}
+            </h5>
+            <div class="two-col-vid__icon-bullets">
+                {% for bullet in module.bullets %}
+                <img src="{{ bullet.img.src }}" alt="{{bullet.img.alt}}" class="two-col-vid__icon" />
+                <h5 class="bold two-col-vid__bullet-text">
+                    {{ bullet.item }}
+                </h5>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="two-col-form__form ">
+            <div class="two-col-vid__form form-wrapper">
+                {% form
+                form_to_use="{{ module.form.form_id }}"
+                response_response_type="{{ module.form.response_type }}"
+                response_message="{{ module.form.message }}"
+                response_redirect_id="{{ module.form.redirect_id }}"
+                response_redirect_url="{{module.form.redirect_url}}"
+                gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+                %}
+            </div>
+        </div>
+    </div>
+</section>
