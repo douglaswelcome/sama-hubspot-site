@@ -29,8 +29,8 @@ Right now this tooling relies on npm-scripts and the gulp-imagemin script, but H
 ## **To Get Started:**
 
 ### Required:
-* node version `^14.16.0`
-* npm version `^6.14.4`
+* node version `14.16.0` (because of Gulp, we cannot use node 15+ at this time. We are working to fix this))
+* npm version `7.6.0`
 * access to Sama production Portal (email dwelcome@sama.com for access)
 * your own sandbox portal for development (instructions can be found here: https://offers.hubspot.com/free-cms-developer-sandbox)
 
