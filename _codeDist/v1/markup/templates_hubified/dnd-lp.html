@@ -8,13 +8,14 @@
 
 {% block main %}
 
-{% module "module_20201029143459" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+{% include '/v1/markup/blocks_static/header-lp.html' %}
 
 
-<div class="flex-content"></div>
+<div class="flex-content">
 {% dnd_area "body_dnd_area" %}
 
 {% end_dnd_area %}
+
 </div>
 {% include '/v1/markup/blocks_static/footer.html' %}
 
