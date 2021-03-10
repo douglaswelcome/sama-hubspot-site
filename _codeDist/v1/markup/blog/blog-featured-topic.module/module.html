@@ -1,15 +1,16 @@
 {% set feature_topic = module.featured_tag %}
 {% set featured = blog_recent_tag_posts('default', feature_topic, 3) %}
 
-<div class="section--sm
+<section class="section--sm
                 dark-mode
                 bg-charcoal-3">
-  <div class="feature-wrap">
-    <div class="feature-intro">
-      <h2 class="feature-intro__title">
+  <div class="blog-feature">
+    <div class="blog-feature__intro">
+      <h2 class="blog-feature__title">
         {{ module.section_title }}
       </h2>
-      <div class="feature-intro__body">
+      <div class="divider-line divider-line--horizontal"></div>
+      <div class="blog-feature__body">
         {{ module.blurb }}
       </div>
     </div>
@@ -47,4 +48,4 @@
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
