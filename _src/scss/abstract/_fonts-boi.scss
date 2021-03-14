@@ -40,6 +40,7 @@
     font-style: $style;
     font-weight: $weight;
     src: $src;
+    font-display: swap;
   }
 }
 
@@ -49,4 +50,4 @@
 
 //Barlow for those big boi titles
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:600');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:600&display=swap');
