@@ -100,5 +100,5 @@ local-hubl-server/**/*
 
 _tempimg/**/*
 
-main.css
-main.css.map
+_codeDist/v1/assets/css/main.css
+_codeDist/v1/assets/css/main.css.map
