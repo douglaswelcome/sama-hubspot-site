@@ -99,3 +99,6 @@ _assetDist/**/*
 local-hubl-server/**/*
 
 _tempimg/**/*
+
+main.css
+main.css.map
