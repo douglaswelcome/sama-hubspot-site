@@ -22,6 +22,7 @@
                       news-feature--link--medium">
             <a href="{{ post.absolute_url}}"
                class="card-image"
+               aria-label="{{ post.name }}"
                style="background-image: url({{ post.post_list_summary_featured_image }});"></a>
             {% if post.topic_list %}
               {% for topic in post.topic_list %}
