@@ -2,8 +2,6 @@
     @extend %grid-section;
     position: relative;
 
-
-
     &__container {
         grid-column: 2/ span 2;
         min-height: 20rem;
@@ -31,16 +29,17 @@
         align-self:end;
         transform:translate(0, 3rem);
         @extend %grid;
+        @include breakpoint(w-sm){
+            margin: 0;
+            max-width: 100%;    
+        }
     }
     
 
     &__copy {
-
         grid-column: 5 /span 8;
         background: var(--color-charcoal-2);
-        
         padding:3rem;
-
         color: $color-white;
         text-align: right;
         h2{
@@ -49,13 +48,10 @@
                 font-size: calc(1rem + 2.3vw);
               }
         }
+        @include breakpoint(w-sm){
+            padding: 2rem;
+        }
     }
-
-    &__section {
-
-    }
-
-
 
     &--flipped {
 
@@ -68,9 +64,8 @@
             grid-column: 1/ span 8;
         }
 
-     
-
-
     }
-
+    @include breakpoint(w-sm){
+        padding-bottom: 6rem;
+    }
 }
