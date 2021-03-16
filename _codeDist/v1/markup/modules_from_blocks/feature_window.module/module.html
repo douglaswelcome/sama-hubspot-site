@@ -37,11 +37,14 @@ dark-mode
                     </div>
                     <div class="feature-window__img">
                         {% if item.type=="svg" %}
-                            {{ item.svg }}
+                        
+                        {{ item.svg }}
                         {% else %}
                         <img src="{{ item.img.src }}" />
                         {% endif %}
                     </div>
+
+
                     </div>
                     {% endfor %}
                 </div>
