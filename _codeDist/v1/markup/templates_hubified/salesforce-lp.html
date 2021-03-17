@@ -1,0 +1,23 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% include '/v1/markup/blocks_static/header-lp.html' %}
+
+<div class="flex-content flexy-flex">
+
+
+{% module "module_20210317095501" path="/v1/markup/modules_from_blocks/two_block_hero", label="two_block_hero" %}
+
+
+{% include '/v1/markup/blocks_static/flex-filler.html' %}
+
+
+</div>
+
+
+{% endblock %}

@@ -8,6 +8,19 @@
   padding-bottom: 0;
 }
 
-.flex-filler {
-  flex: 1
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+.flex-content, .flex-filler {
+  flex:1;
+
+}
+
+.flexy-flex{
+display: flex;
+flex-direction: column;
+}
+
