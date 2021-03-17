@@ -1,34 +1,37 @@
-.single-post-meta {
-  width: var(--lg-page-width);
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2em;
-}
+.post-meta {
+@extend %grid;
+column-gap:2rem;
 
-.single-post-meta__topics {
-  flex: 3;
-}
-
-.single-post-meta__bio {
-  flex: 5;
-}
-
-.single-post-meta__related {
-  min-width: 100%;
-}
-
-@media (min-width: 830px) {
-
-  .single-post-meta {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .single-post-meta__topics {
-    padding-right: 2em;
-  }
+&__tags {
+  grid-column:span 4;
 
 }
+
+&__bio {
+  grid-column: span 8;
+}
+
+&__related {
+ grid-row: 2;
+ grid-column: span 12;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .blog-author-hero--small {
   padding: 0 0 2em;

@@ -5,32 +5,58 @@
 
 {% if not simple_list_page %}
 
-<section class="post-listing">
+<section class="post-listing section--sm"
+         id="blog-feed">
   {% for content in contents %}
-
-  <div class="blog-post-card"
-    style="{% if content.post_list_summary_featured_image %}background-image:url({{ content.post_list_summary_featured_image }}) {% endif %}"
-    onclick="location.href='{{ content.absolute_url}}'">
-    <div class="blog-post-card__title">
-      <h2>{{ content.name }}</h2>
-    </div>
-    <div class="blog-post-card__author-date">
-      {%if content.blog_post_author %}
-      <h3>
-        <a class="" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
-
-          {{ content.blog_post_author.display_name }}
-
-        </a>
-      </h3>
-
-      {# <h3>
-        {{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}
-      </h3> #}
-      {% endif %}
-    </div>
-  </div>
-
+    {#% if loop.index > 1 %#}
+  
+      <div class="news-feature--article-bg-light
+                  js-blog-post">
+        <div class="news-feature--link
+                    news-feature--link-light">
+          <a href="{{ content.absolute_url}}"
+             class="card-image"
+             style="background-image: url({{ content.post_list_summary_featured_image }});"></a>
+          {% if content.topic_list %}
+            {% for topic in content.topic_list %}
+              {% if loop.index == 1 %}
+                <a class="news-feature__category"
+                   href="/blog/tag/{{ topic.slug }}">
+                  <p class="bold">
+                    {{ topic.name }}
+                  </p>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          <a href="{{ content.absolute_url}}"
+             class="news-feature__title
+                    news-feature__title--dark">
+            <h2 class="bold">
+              {{ content.name }}
+            </h2>
+          </a>
+          <div class="blog-listing__meta">
+            <a class="blog-listing-hero__author"
+                href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
+              {{ content.blog_post_author.display_name }}
+            </a>
+            <div class="blog-listing-hero__datetime">
+              {{ content.publish_date|datetimeformat('%B %e, %Y') }} | 
+              {% set initialPostWords = content.post_body|wordcount %}
+              {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+              {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+              {% set number = finishedPostWords|round %}
+              {% if number < 1 %}
+                1 Min Read
+              {% else %}
+                {{ finishedPostWords|round }} Min Read
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {#% endif %#}
   {% endfor %}
 
 </section>

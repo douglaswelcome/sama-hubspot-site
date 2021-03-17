@@ -5,6 +5,7 @@
                 dark-mode
                 bg-charcoal-3">
   <div class="blog-feature">
+ 
     <div class="blog-feature__intro">
       <h2 class="blog-feature__title">
         {{ module.section_title }}
@@ -14,11 +15,12 @@
         {{ module.blurb }}
       </div>
     </div>
-    <div class="feature-grid">
+
+
+   
       {% for post in featured %}
 
-        <div class="feature-grid--item
-                    news-feature--article-bg">
+        <div class="blog-feature__item">
           <div class="news-feature--link
                       news-feature--link--medium">
             <a href="{{ post.absolute_url}}"
@@ -47,6 +49,6 @@
         </div>
 
       {% endfor %}
-    </div>
+    
   </div>
 </section>

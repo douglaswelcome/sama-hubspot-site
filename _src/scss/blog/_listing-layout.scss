@@ -2,8 +2,8 @@
   @extend %grid;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
 
   @include breakpoint (w-sm) {
     grid-template-columns: 1fr;
@@ -82,10 +82,7 @@
   text-align: right;
 }
 
-.post-listing {
-  max-width: 100%;
-  padding: 2em;
-}
+
 
 .load-button {
   margin: 0 auto;
