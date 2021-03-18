@@ -5,22 +5,27 @@
 
 {% if not simple_list_page %}
 
-<section class="post-listing section--sm"
-         id="blog-feed">
+<section class="section--sm">
+         <div class="post-listing" id="blog-feed">
+
+<!-----Blog Listing Card -->
+
   {% for content in contents %}
     {#% if loop.index > 1 %#}
-  
-      <div class="news-feature--article-bg-light
-                  js-blog-post">
-        <div class="news-feature--link
-                    news-feature--link-light">
-          <a href="{{ content.absolute_url}}"
-             class="card-image"
-             style="background-image: url({{ content.post_list_summary_featured_image }});"></a>
+    <a href="{{ content.absolute_url}}" class="blog-card
+    js-blog-post">
+      <div class="blog-card__img">
+      <img src="content."
+          
+            
+             
+            
+            
+            </a>
           {% if content.topic_list %}
             {% for topic in content.topic_list %}
               {% if loop.index == 1 %}
-                <a class="news-feature__category"
+                <a class="blog-card__category"
                    href="/blog/tag/{{ topic.slug }}">
                   <p class="bold">
                     {{ topic.name }}
@@ -36,6 +41,8 @@
               {{ content.name }}
             </h2>
           </a>
+
+
           <div class="blog-listing__meta">
             <a class="blog-listing-hero__author"
                 href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
@@ -55,9 +62,12 @@
             </div>
           </div>
         </div>
+
+
       </div>
     {#% endif %#}
   {% endfor %}
+</div>
 
 </section>
 
