@@ -4,9 +4,9 @@
   <div class="brag-bar">
     {% if module.headline %}
     <div class="brag-bar__body">
-      <div class="brag-bar__headline"> 
+      <div class="brag-bar__headline">
         <h2>
-        {{ module.headline }}
+          {{ module.headline }}
         </h2>
       </div>
       {% endif %}
@@ -19,18 +19,18 @@
       {% endif %}
 
     </div>
-{% endif %}
+    {% endif %}
     <div class="brag-bar__logo-row">
       <div class="brag-bar__logos">
-      {% for logo in module.logos %}  
-      <div class="brag-bar__logo">
-        <img src="{{ logo.src }}" alt="{{logo.alt }}" />
-      </div>
-      {%endfor%}
-      </div>
+        {% for logo in module.logos %}
+        <div class="brag-bar__logo">
+          <img src="{{ logo.src }}" alt="{{logo.alt }}"/>
+        </div>
+          {%endfor%}
+        </div>
 
-   
+
+      </div>
     </div>
-  </div>
 </section>
 {%endif%}
