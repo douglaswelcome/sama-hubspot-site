@@ -10,9 +10,13 @@
 
 {% endblock %}
 
+
+
 {% block main %}
 
 {% module "module_20200824230923" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+<div class="flex-content">
 
 {% module "module_20201015140552" path="/v1/markup/modules_from_blocks/hero_home", label="Hero" %}
 
@@ -27,6 +31,8 @@
 {% module "module_20200826133035" path="/v1/markup/modules_from_blocks/news_feature", label="Newsy News" %}
 
 {% module "module_20200825155548" path="/v1/markup/modules_from_blocks/split_cta", label="CTA Bottoms" %}
+
+</div>
 
 {% include '/v1/markup/blocks_static/footer.html' %}
 
