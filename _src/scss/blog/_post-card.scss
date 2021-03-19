@@ -1,7 +1,9 @@
-.blog-post-card {
+.blog-card {
     display: grid;
     grid-template-rows: auto auto;
-    grid-row-gap: 5rem;
+    grid-row-gap: 2rem;
+    grid-column: span 4;
+    
     padding: 1rem;
     background-size: cover;
     background-position: center;
@@ -11,6 +13,7 @@
     transition: transform .3s;
     will-change: transform;
     min-height: 20rem;
+    
 
     
 

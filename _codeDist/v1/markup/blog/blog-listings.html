@@ -6,22 +6,20 @@
 {% if not simple_list_page %}
 
 <section class="section--sm">
-         <div class="post-listing" id="blog-feed">
+  <div class="post-listing" id="blog-feed">
 
-<!-----Blog Listing Card -->
+    <!-----Blog Listing Card -->
 
-  {% for content in contents %}
+    {% for content in contents %}
     {#% if loop.index > 1 %#}
     <a href="{{ content.absolute_url}}" class="blog-card
     js-blog-post">
       <div class="blog-card__img">
-      <img src="content."
+      <img src="{{ content.post_list_summary_featured_image }}"/>
+      </div>
           
             
-             
             
-            
-            </a>
           {% if content.topic_list %}
             {% for topic in content.topic_list %}
               {% if loop.index == 1 %}
@@ -31,10 +29,10 @@
                     {{ topic.name }}
                   </p>
                 </a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          <a href="{{ content.absolute_url}}"
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <a href="{{ content.absolute_url}}"
              class="news-feature__title
                     news-feature__title--dark">
             <h2 class="bold">
@@ -43,52 +41,47 @@
           </a>
 
 
-          <div class="blog-listing__meta">
-            <a class="blog-listing-hero__author"
+    <div class="blog-listing__meta">
+      <a class="blog-listing-hero__author"
                 href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
               {{ content.blog_post_author.display_name }}
             </a>
-            <div class="blog-listing-hero__datetime">
-              {{ content.publish_date|datetimeformat('%B %e, %Y') }} | 
-              {% set initialPostWords = content.post_body|wordcount %}
-              {% set calculatedPostWords = (initialPostWords/100) * 100 %}
-              {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
-              {% set number = finishedPostWords|round %}
-              {% if number < 1 %}
-                1 Min Read
-              {% else %}
-                {{ finishedPostWords|round }} Min Read
-              {% endif %}
-            </div>
-          </div>
-        </div>
-
-
+      <div class="blog-listing-hero__datetime">
+        {{ content.publish_date|datetimeformat('%B %e, %Y') }} |
+        {% set initialPostWords = content.post_body|wordcount %}
+        {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+        {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+        {% set number = finishedPostWords|round %}
+        {% if number < 1 %}
+        1 Min Read
+        {% else %}
+        {{ finishedPostWords|round }} Min Read
+        {% endif %}
       </div>
-    {#% endif %#}
-  {% endfor %}
+    </div>
+    </a>
+
 </div>
+  {#% endif %#}
+  {% endfor %}
+  </div>
 
 </section>
 
 {% else %}
 
-    {% for content in contents %}
-    <section class="blog-list">
-      <h5>{{ content.name }}</h5>
-      by <h3>
-        <a class="" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
+{% for content in contents %}
+<section class="blog-list">
+  <h5>{{ content.name }}</h5>
+  by <h3>
+    <a class="" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
 
           {{ content.blog_post_author.display_name }}
 
         </a>
-      </h3>
-    </section>
+  </h3>
+</section>
 
-    {% endfor %}
+{% endfor %}
 
 {% endif %}
-
-
-
-
