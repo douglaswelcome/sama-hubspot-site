@@ -8,7 +8,7 @@
 <section class="post-listing"
          id="blog-feed">
   {% for content in contents %}
-    {#% if loop.index > 1 %#}
+    {% if loop.index > 1 %}
   
       <div class="news-feature--article-bg-light
                   js-blog-post">
@@ -56,7 +56,7 @@
           </div>
         </div>
       </div>
-    {#% endif %#}
+    {% endif %}
   {% endfor %}
 
 </section>
