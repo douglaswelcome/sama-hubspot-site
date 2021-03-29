@@ -18,9 +18,9 @@
           {% if content.topic_list %}
             {% for topic in content.topic_list %}
               {% if loop.index == 1 %}
-                <a class="news-feature__category"
+                <a class="tag-label"
                    href="/blog/tag/{{ topic.slug }}">
-                  <p class="bold">
+                  <p class="bold tag-label__text">
                     {{ topic.name }}
                   </p>
                 </a>

@@ -26,7 +26,16 @@
         padding:2rem 1.5rem;
     }
 
-    
+    &__tag {
+        display: inline-block;
+        padding: .5rem .5rem .125rem .5rem;
+        text-transform: uppercase;
+        background-color: var(--color-sunshine);
+        color: var(--color-charcoal-1);
+        margin-bottom: 1.5rem;
+        width: fit-content;
+
+    }
 
     &__title {
 
