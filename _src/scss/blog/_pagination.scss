@@ -38,3 +38,21 @@
     opacity: 0.25;
     cursor: not-allowed;
 }
+
+.btn__wrapper.disabled,
+.btn__wrapper.disabled a {
+  pointer-events: none;
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.blog-pagination__link {
+    font-size: 1.2em;
+    height: 80px;
+    width: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-charcoal-1);
+    font-weight: bold;
+  }
