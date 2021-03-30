@@ -1,34 +1,59 @@
-.single-post-meta {
-  width: var(--lg-page-width);
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2em;
-}
+.post-meta {
+  @extend %grid;
+  column-gap: 2rem;
 
-.single-post-meta__topics {
-  flex: 3;
-}
-
-.single-post-meta__bio {
-  flex: 5;
-}
-
-.single-post-meta__related {
-  min-width: 100%;
-}
-
-@media (min-width: 830px) {
-
-  .single-post-meta {
-    display: flex;
-    flex-wrap: wrap;
+  &__header {
+    border-bottom: 2px solid currentColor;
+    color: var(--color-charcoal-5);
+    padding-bottom: 0.66em;
+    margin-bottom: 1.66em;
+    font-size: 1.66em;
   }
 
-  .single-post-meta__topics {
-    padding-right: 2em;
+  &__tags {
+    grid-column: span 4;
+
+  }
+
+  &__bio {
+    grid-column: span 8;
+  }
+
+  &__related {
+    grid-column: span 12;
+  }
+
+  &__related-card-grid>span {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap:2rem;
+
+  }
+
+  &__related-item {
+    --card-bg:var(--color-charcoal-3);
+    --text-color:var(--color-white);
+    
+    grid-column: span 4;
+    min-height: 10rem;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .blog-author-hero--small {
   padding: 0 0 2em;
@@ -164,38 +189,22 @@ body {
 
 }
 
-.news-feature--link--small {
-  box-shadow: inset 0 0 0 1000px #313132;
-}
 
-.news-feature--link--small .card-image {
-  height: 6em;
-}
 
-.news-feature--link--small .news-feature__title h2 {
-  font-size: 1em;
-}
 
-.news-feature--link--small .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1em 1em 0;
-  min-width: 55%;
-}
 
-.news-feature--link--small .news-feature__category {
-  align-self: flex-end;
-  margin-bottom: 1em;
-}
+
+
+
+
+
+
 
 .news-feature--link--small .news-feature__title {
   margin-bottom: 0.66em;
 }
 
-.news-feature--link--small .news-feature__category p {
-  font-size: 0.8em;
-}
+
 
 .feature-grid--item {
   margin-bottom: 2em;
@@ -203,7 +212,7 @@ body {
 
 @media (min-width: 800px) {
 
-  .related-grid > span {
+  .related-grid>span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;

@@ -17,74 +17,24 @@
   {% set offset = 0 %}
 {% endif %}
 
-{% if not topic && contents.total_page_count > 1 %}
 
-<div class="-btn__wrapper">
-  <button class="load-button
+{% if not topic && contents.total_page_count > 1 %}
+<section class="section--sm no-top-pad">
+<div class="btn__wrapper">
+  <button class="
             btn
             btn--secondary
             js-load-more"
         data-at="{{contents.total_page_count}}"
     >
-    Load More
+   <h3 class="btn__text">Load More </h3> 
   </button>
 </div>
+</section>
 
 {% endif %}
 
-<section class="blog-pagination">
-    <div class="blog-pagination__wrapper
-                btn__row"
-         style="   visibility: hidden;height: 0;overflow: hidden;">
 
-        <div class="btn__wrapper
-                    {% if not last_page_num %} disabled {% endif %}">
-          <a href="{{ blog_page_link(last_page_num) }}"
-             class="blog-pagination__link  
-                    blog-pagination__link--prev
-                    btn
-                    btn--secondary">
-            <img src="{{staticbase}}img/icons/arrow-left.svg"
-                 alt="arrow-left"
-                 class="button__img"
-                 loading="lazy">
-          </a>
-        </div>
-
-        {# <a class="all-posts-link" href="{{ group.absolute_url }}/all">All posts</a> #}
-      
-        {% for page in page_list %}
-            {% set this_page = current_page_num + page + offset %}
-            {% if this_page > 0 and this_page <= contents.total_page_count %}
-                <div class="btn__wrapper">
-                  <a class="blog-pagination__link  
-                            blog-pagination__link-next 
-                            btn
-                            btn--secondary
-                            {% if this_page == current_page_num %}active{% endif %}"
-                     href="{{ blog_page_link(this_page) }}">
-                    {{ this_page }}
-                  </a>
-                </div>
-            {% endif %}
-        {% endfor %}
-
-        <div class="btn__wrapper
-                    {% if not next_page_num %} disabled {% endif %}">
-          <a href="{{ blog_page_link(next_page_num) }}"
-            class="blog-pagination__link  
-                   blog-pagination__link-next 
-                   btn
-                   btn--secondary">
-            <img src="{{staticbase}}img/icons/arrow-right.svg"
-                 alt="arrow-right"
-                 class="button__img"
-                 loading="lazy">
-          </a> 
-        </div>
-
-    </div>
-</section>
 
 {% require_js %}
 <script>

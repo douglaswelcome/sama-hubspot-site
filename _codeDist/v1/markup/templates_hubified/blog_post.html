@@ -11,25 +11,13 @@
 
 {% module "module_20210202212350" path="/v1/markup/blog/blog-menu", label="blog-menu" %}
 
-
 {% include '/v1/markup/blog/blog-post-hero.html' %}
 
 {% include '/v1/markup/blog/blog-post-body.html' %}
 
-<div class="single-post-meta">
-  <div class="single-post-meta__topics">
-    {% include '/v1/markup/blog/blog-post-topics.html' %}
-  </div>
-  <div class="single-post-meta__bio">
-    {% include '/v1/markup/blog/blog-bio.html' %}
-  </div>
-  <div class="single-post-meta__related">
-    {% include '/v1/markup/blog/blog-related-posts.html' %}
-  </div>
-</div>
+{% include '/v1/markup/blog/post-meta.html' %}
 
 {% include '/v1/markup/blocks_static/footer.html' %}
-
 
 
 {% endblock %}
