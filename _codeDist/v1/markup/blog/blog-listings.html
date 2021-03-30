@@ -11,7 +11,8 @@
 
   {% for content in contents %}
   <div class="post-listing-card" onclick="location.href='{{ content.absolute_url}}'">
-    <img src="{{ content.post_list_summary_featured_image }}" class="post-listing-card__img" />
+      <img src="{{ content.post_list_summary_featured_image }}" class="post-listing-card__img" />
+
 
     <div class="post-listing-card__data">
 
@@ -30,9 +31,9 @@
         {% endif %}
 
         {# blog post title #}
-        <h2 class="post-listing-card__title">
+        <h4 class="post-listing-card__title">
           {{ content.name }}
-        </h2>
+        </h4>
 
 
         <h6 class="post-listing-card__author">
