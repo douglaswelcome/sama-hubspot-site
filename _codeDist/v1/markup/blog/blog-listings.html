@@ -5,40 +5,60 @@
 
 {% if not simple_list_page %}
 
-<section class="post-listing">
+<section class="post-listing" id="blog">
 
   {% for content in contents %}
   <div onclick="location.href='{{ content.absolute_url}}'" class="post-listing-card">
     <img src="{{ content.post_list_summary_featured_image }}" class="post-listing-card__img" />
+
     <div class="post-listing-card__data">
-      {% if content.topic_list %}
-            {% for topic in content.topic_list %}
-              {% if loop.index == 1 %}
-                <a class="news-feature__tag-label tag-label"
-                   href="/blog/tag/{{ topic.slug }}">
-                  <p class="bold tag-label__text">
-                    {{ topic.name }}
-                  </p>
-                </a>
-              {% endif %}
-            {% endfor %}
+
+        {# Top Tag #}
+        {% if content.topic_list %}
+        {% for topic in content.topic_list %}
+        {% if loop.index == 1 %}
+        <a class="post-listing-card__tag-label tag-label"
+               href="/blog/tag/{{ topic.slug }}">
+              <p class="bold tag-label__text">
+                {{ topic.name }}
+              </p>
+            </a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+        {# blog post title #}
+        <h2 class="post-listing-card__title">
+          {{ content.name }}
+        </h2>
+
+
+        <h6 class="post-listing-card__author">
+          <a class="" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
+                {{ content.blog_post_author.display_name }}
+              </a>
+        </h6>
+
+
+        <h6 class="unbold post-listing-card__datetime">
+          {{ content.publish_date|datetimeformat('%B %e, %Y') }} |
+          {% set initialPostWords = content.post_body|wordcount %}
+          {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+          {% set finishedPostWords = calculatedPostWords|divide(200)|round(2) %}
+          {% set number = finishedPostWords|round %}
+          {% if number < 1 %}
+          1 Min Read
+          {% else %}
+          {{ finishedPostWords|round }} Min Read
           {% endif %}
-      <h2 class="post-listing-card__title">
-        {{ content.name }}
-      </h2>
+        </h6>
 
-      <h5 class="post-listing-card__author">
-         <a class="" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">
-          {{ content.blog_post_author.display_name }}
-        </a> 
-       </h5>
+      {#author#}
 
-       <h6 class="post-listing-card__date">
-        {{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}
-       </h6> 
-       <h6 class="post-listing-card__date">
-        {{ content.publish_date_local_time|datetimeformat('%B %e, %Y') }}
-       </h6> 
+
+
+
+
 
     </div>
 
