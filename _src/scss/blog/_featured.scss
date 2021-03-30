@@ -8,6 +8,9 @@
 }
 
   &__item {
+    --card-bg:var(--color-charcoal-1);
+    --text-color:var(--color-white);
+
     grid-column: span 4;
     grid-row: 2;
     min-height: 8rem;

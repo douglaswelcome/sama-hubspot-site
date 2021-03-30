@@ -1,7 +1,7 @@
 .blog-card-sm {
     display: grid;
     grid-template-columns: 33% 1fr;
-    background: var(--color-charcoal-2);
+    background-color:var(--card-bg);
     cursor: pointer;
     height:100%;
 
@@ -12,8 +12,6 @@
     @include breakpoint (w-sm) {
         grid-column: span 12;
     }
-
-
 
     &__img-wrap {
         overflow: hidden;
@@ -34,6 +32,10 @@
         object-position: 50% 50%;
     }
 
+    &__title {
+        color:var(--text-color);
+    }
+
     &__data-lower {
         flex: 1;
         display: flex;
@@ -41,7 +43,5 @@
         margin-left: auto;
     }
 
-    &__tag-label {
-        
-    }
+   
 }

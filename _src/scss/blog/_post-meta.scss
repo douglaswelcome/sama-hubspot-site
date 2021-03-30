@@ -23,7 +23,7 @@
     grid-column: span 12;
   }
 
-  &__related-card-grid {
+  &__related-card-grid>span {
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap:2rem;
@@ -31,7 +31,11 @@
   }
 
   &__related-item {
+    --card-bg:var(--color-charcoal-3);
+    --text-color:var(--color-white);
+    
     grid-column: span 4;
+    min-height: 10rem;
   }
 
 }
