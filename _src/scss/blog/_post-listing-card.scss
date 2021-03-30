@@ -1,15 +1,20 @@
 .post-listing-card {
     grid-column: span 4;
-
-
     display: grid;
     grid-template-rows: 15rem auto;
     grid-template-columns: 1fr;
     grid-row-gap: 0rem;
- 
     cursor: pointer;
     min-height: 32rem;
     background:var(--color-charcoal-8);
+
+    @include breakpoint (w-med){
+        grid-column:span 6;
+    }
+
+    @include breakpoint (w-sm){
+        grid-column: span 12;
+    }
 
    
     &__img {
@@ -33,7 +38,7 @@
     
 
     &__title {
-
+margin-bottom:2rem;
     }
 
     &__author{ 
