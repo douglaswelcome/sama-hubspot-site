@@ -6,101 +6,49 @@
     grid-row-gap: 0rem;
     cursor: pointer;
     min-height: 32rem;
-    background:var(--color-charcoal-8);
+    background: var(--color-charcoal-8);
 
-    @include breakpoint (w-med){
-        grid-column:span 6;
+    @include breakpoint (w-med) {
+        grid-column: span 6;
     }
 
-    @include breakpoint (w-sm){
+    @include breakpoint (w-sm) {
         grid-column: span 12;
     }
 
-   
+
     &__img {
         object-fit: cover;
         object-position: 30% 50%;
-        height:100%;
+        height: 100%;
         width: 100%;
 
     }
 
-    &__data{
-        display:flex;
-        flex-direction:column;
-        padding:2rem 1.5rem;
+    &__data {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
 
     }
 
- 
-
-
-    
+    &__tag-label {
+        margin-bottom: 1rem;
+    }
 
     &__title {
-margin-bottom:2rem;
+        margin-bottom: 2rem;
     }
 
-    &__author{ 
-        text-align:right;
-        margin-top:auto;
+
+    &__author {
+        text-align: right;
+        margin-top: auto;
     }
 
     &__datetime {
-     
-  
-        text-align:right;
+        text-align: right;
         width: 100%;
     }
 
-    &__author-date {
-        align-self: end;
-        z-index: 1;
-
-        h3 {
-            font-size: 1rem;
-            color: $color-white;
-
-            a {
-                color: $color-white;
-                font-weight: 700;
-                position: relative;
-                z-index: 1;
-                background: none;
-
-                &::before {
-                    content: "";
-                    border-bottom-width: .125rem;
-                    border-bottom-style: solid;
-                    border-bottom-color: $color-sunshine;
-                    width: 100%;
-                    height: 105%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    transition-duration: .3s;
-
-                }
-
-                &:hover {
-                    color:var(--color-charcoal-7);
-
-                    &::before {
-
-                        border-bottom-color: var(--color-charcoal-2);
-                        transition-duration: .3s;
-
-
-                    }
-
-                }
-
-            }
-
-        }
-
-
-
-    }
 }

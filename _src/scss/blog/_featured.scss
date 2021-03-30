@@ -1,42 +1,15 @@
-
-
 .blog-feature {
   @extend %grid;
   row-gap:2rem;
   column-gap:2rem;
 
-  &__intro {
-      grid-column: span 12;
-      row-gap: 2rem;
-  }
-
-  &__body {
-  }
-  
-  &__title {
-  }
+&__intro {
+  grid-column: span 12;
+}
 
   &__item {
     grid-column: span 4;
     grid-row: 2;
   }
  
-}
-
-
-
- 
-
-
-
-
-
-
-.feature-grid .news-feature--article-bg {
-  background: none;
-  .news-feature--link{
-    &:hover {
-      transform: none;
-    }
-  }
 }

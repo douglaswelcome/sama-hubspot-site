@@ -10,7 +10,7 @@
 
 
   {% for content in contents %}
-  <div onclick="location.href='{{ content.absolute_url}}'" class="post-listing-card">
+  <div class="post-listing-card" onclick="location.href='{{ content.absolute_url}}'">
     <img src="{{ content.post_list_summary_featured_image }}" class="post-listing-card__img" />
 
     <div class="post-listing-card__data">

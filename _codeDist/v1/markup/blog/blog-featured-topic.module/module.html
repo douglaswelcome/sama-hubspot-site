@@ -5,50 +5,59 @@
                 dark-mode
                 bg-charcoal-3">
   <div class="blog-feature">
- 
+
     <div class="blog-feature__intro">
       <h2 class="blog-feature__title">
         {{ module.section_title }}
       </h2>
       <div class="divider-line divider-line--horizontal"></div>
-      <div class="blog-feature__body">
+      <h5 class="blog-feature__body">
         {{ module.blurb }}
-      </div>
+      </h5>
     </div>
 
 
-   
-      {% for post in featured %}
 
-        <div class="blog-feature__item">
-          <div class="news-feature--link
-                      news-feature--link--medium">
-            <a href="{{ post.absolute_url}}"
-               class="card-image"
-               aria-label="{{ post.name }}"
-               style="background-image: url({{ post.post_list_summary_featured_image }});"></a>
-            {% if post.topic_list %}
+    {% for post in featured %}
+
+    <div class="blog-feature__item">
+      <div class="blog-card-sm" onclick="location.href='{{ content.absolute_url}}'">
+        <div class="blog-card-sm__img-wrap">
+          <img src="{{ post.post_list_summary_featured_image }}" class="blog-card-sm__img" aria-label="{{ post.name }}"/>
+            </div>
+
+          <div class="blog-card-sm__data-wrap">
+
+
+
+            <p class="blog-card-sm__title bold">
+              {{ post.name }}
+            </p>
+            <div class="blog-card-sm__data-lower">
+              {% if post.topic_list %}
               {% for topic in post.topic_list %}
-                {% if loop.index == 1 %}
-                  <a class="news-feature__category"
+              {% if loop.index == 1 %}
+              <a class="blog-card-sm__tag-label tag-label"
                       href="/blog/tag/{{ topic.slug }}">
-                    <p class="bold">
+                    <p class="bold tag-label__text">
                       {{ topic.name }}
                     </p>
                   </a>
-                {% endif %}
+              {% endif %}
               {% endfor %}
-            {% endif %}
-            <a href="{{ post.absolute_url}}"
-                class="news-feature__title">
-              <h2 class="bold">
-                {{ post.name }}
-              </h2>
-            </a>
+              {% endif %}
+            </div>
+
+
           </div>
+
+
+
+
         </div>
+      </div>
 
       {% endfor %}
-    
-  </div>
+
+    </div>
 </section>

@@ -1,0 +1,46 @@
+.blog-card-sm {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    background: var(--color-charcoal-2);
+    cursor: pointer;
+
+    @include breakpoint (w-med) {
+        grid-column: span 6;
+    }
+
+    @include breakpoint (w-sm) {
+        grid-column: span 12;
+    }
+
+
+
+    &__img-wrap {
+        overflow: hidden;
+        height: 8rem;
+    }
+
+    &__data-wrap {
+        padding: 1rem;
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    &__img {
+        object-fit:cover;
+        height: 100%;
+        width:100%;
+        object-position: 50% 50%;
+    }
+
+    &__data-lower {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    &__tag-label {
+        
+    }
+}
