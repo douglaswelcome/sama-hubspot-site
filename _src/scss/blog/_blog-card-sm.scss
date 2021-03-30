@@ -1,8 +1,9 @@
 .blog-card-sm {
     display: grid;
-    grid-template-columns: 8rem 1fr;
+    grid-template-columns: 33% 1fr;
     background: var(--color-charcoal-2);
     cursor: pointer;
+    height:100%;
 
     @include breakpoint (w-med) {
         grid-column: span 6;
@@ -16,7 +17,7 @@
 
     &__img-wrap {
         overflow: hidden;
-        height: 8rem;
+
     }
 
     &__data-wrap {

@@ -21,7 +21,7 @@
     {% for post in featured %}
 
     <div class="blog-feature__item">
-      <div class="blog-card-sm" onclick="location.href='{{ content.absolute_url}}'">
+      <div class="blog-card-sm" onclick="location.href='{{ post.absolute_url}}'">
         <div class="blog-card-sm__img-wrap">
           <img src="{{ post.post_list_summary_featured_image }}" class="blog-card-sm__img" aria-label="{{ post.name }}"/>
             </div>

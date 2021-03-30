@@ -4,108 +4,121 @@
 -->
 
 <section>
-    <div class="post-meta">
+  <div class="post-meta">
 
-        <!---------tags----------->
-        <div class="post-meta__tags">
-            
-                <div class="blog-author-hero__intro">
-                    Filed Under:
-                </div>
-                <div class="blog-post-topics__list">
-                    {% if content.topic_list %}
-                    {% for topic in content.topic_list %}
-                    <a class="news-feature__category"
+    <!---------tags----------->
+    <div class="post-meta__tags">
+
+      <div class="post-meta__header">
+        Filed Under:
+      </div>
+      <div class="blog-post-topics__list">
+        {% if content.topic_list %}
+        {% for topic in content.topic_list %}
+        <a class="news-feature__category"
                        href="/blog/tag/{{ topic.slug }}">
                       <p class="bold">
                         {{ topic.name }}
                       </p>
                     </a>
-                    {% endfor %}
-                    {% endif %}
-                </div>
-            
-        </div>
+        {% endfor %}
+        {% endif %}
+      </div>
 
-  <!---------Bio----------->
+    </div>
 
-        <div class="post-meta__bio">
-            <div class="blog-author-hero__intro">
-                Words by:
-            </div>
-            <div class="two-block-hero
+    <!---------Bio----------->
+
+    <div class="post-meta__bio">
+      <div class="post-meta__header">
+        Words by:
+      </div>
+      <div class="two-block-hero
             blog-author-hero
             blog-author-hero--small">
-                <div class="blog-author-hero__image
+        <div class="blog-author-hero__image
               blog-author-hero__image--small">
-                    <img src="{{ content.blog_author.avatar }}"
+          <img src="{{ content.blog_author.avatar }}"
          alt=""
          loading="lazy">
   </div>
-                    <div class="blog-author-hero__copy">
-                        <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"
+          <div class="blog-author-hero__copy">
+            <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"
        class="blog-listing-hero__author
               blog-author-hero__title
               blog-author-hero__title--small">
       {{ content.blog_author.display_name }}
     </a>
-                        <p class="blog-author-hero__subtitle">
-                            {{ content.blog_author.bio }}
-                        </p>
-                    </div>
-                </div>
+            <p class="blog-author-hero__subtitle">
+              {{ content.blog_author.bio }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!---------related posts----------->
+
+
+
+      <div class="post-meta__related">
+
+        <div class="post-meta__header">
+          Related Posts:
+        </div>
+
+        {% macro blog_post_formatter(post, index, count) %}
+        <div class="post-meta__related-item">
+
+          <div class="blog-card-sm" onclick="location.href='{{ post.absolute_url}}'">
+            <div class="blog-card-sm__img-wrap">
+              <img src="{{ post.post_list_summary_featured_image }}" class="blog-card-sm__img" aria-label="{{ post.name }}"/>
             </div>
 
+              <div class="blog-card-sm__data-wrap">
 
- <!---------related posts----------->
 
-            <div class="post-meta__related">
-                {% macro blog_post_formatter(post, index, count) %}
-                <div class="feature-grid--item
-                            news-feature--article-bg">
-                  <div class="news-feature--link
-                              news-feature--link--small">
-                    <div class="card-inner">
-                      <a href="{{ post.absolute_url}}"
-                         class="card-image"
-                         aria-label="{{ post.name }}"
-                         style="background-image: url({{ post.post_list_summary_featured_image }});"></a>
-                        <div class="card-body">
-                        <a href="{{ post.absolute_url}}"
-                           class="news-feature__title">
-                          <h2 class="bold">
-                            {{ post.name }}
-                          </h2>
-                        </a>
-                        {% if post.topic_list %}
-                          {% for topic in post.topic_list %}
-                            {% if loop.index == 1 %}
-                              <a class="news-feature__category"
-                                 href="/blog/tag/{{ topic.slug }}">
-                                <p class="bold">
+
+                <p class="blog-card-sm__title bold">
+                  {{ post.name }}
+                </p>
+                <div class="blog-card-sm__data-lower">
+                  {% if post.topic_list %}
+                  {% for topic in post.topic_list %}
+                  {% if loop.index == 1 %}
+                  <a class="blog-card-sm__tag-label tag-label"
+                                  href="/blog/tag/{{ topic.slug }}">
+                                <p class="bold tag-label__text">
                                   {{ topic.name }}
                                 </p>
                               </a>
-                            {% endif %}
-                          {% endfor %}
-                        {% endif %}
-                      </div>
-                    </div>
-                  </div>
+                  {% endif %}
+                  {% endfor %}
+                  {% endif %}
                 </div>
-        {% endmacro %}
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
         
+        {% endmacro %}
+
         {% set feature_topic = module.featured_tag %}
         {% set featured = blog_recent_tag_posts('default', feature_topic, 3) %}
-        
-          <div class="blog-author-hero__intro">
-            Related Posts:
-          </div>
-          <div class="related-wrap">
-            <div class="related-grid">
-              {% related_blog_posts, limit=3, post_formatter="blog_post_formatter" %} 
-            </div>
-          </div>
-            </div>
-        </div>
+
+
+          <div class="post-meta__related-card-grid">
+        {% related_blog_posts, limit=3, post_formatter="blog_post_formatter" %}
+      </div>
+
+
+      </div>
+    </div>
+
+  </div>
 </section>

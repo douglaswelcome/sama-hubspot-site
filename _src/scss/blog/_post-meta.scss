@@ -2,6 +2,14 @@
   @extend %grid;
   column-gap: 2rem;
 
+  &__header {
+    border-bottom: 2px solid currentColor;
+    color: var(--color-charcoal-5);
+    padding-bottom: 0.66em;
+    margin-bottom: 1.66em;
+    font-size: 1.66em;
+  }
+
   &__tags {
     grid-column: span 4;
 
@@ -12,8 +20,18 @@
   }
 
   &__related {
-    grid-row: 2;
     grid-column: span 12;
+  }
+
+  &__related-card-grid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap:2rem;
+
+  }
+
+  &__related-item {
+    grid-column: span 4;
   }
 
 }
