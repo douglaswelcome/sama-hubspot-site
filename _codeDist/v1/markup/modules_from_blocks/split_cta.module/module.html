@@ -25,19 +25,19 @@
 
 
 
-                {% if module.primary_link.type=="cta" %}
-                    {% if module.primary_link.cta1 %}
+                {% if module.type1=="cta" %}
+                    {% if module.cta1 %}
                         <div class="btn__wrapper">
                         <button class="btn">
-                                    {% cta guid="{{ module.primary_link.cta1 }}" %}
+                                    {% cta guid="{{ module.cta1 }}" %}
                         </button>
                         </div>
 
                     {% endif %}
-                {%elif module.primary_link.type=="link"%}
-                    <a href="{{ module.primary_link.url1 }}" class="btn__wrapper">
+                {%elif module.type1=="link"%}
+                    <a href="{{ module.url1 }}" class="btn__wrapper">
                         <button class="btn">
-                             <h3 class="btn__text">{{ module.primary_link.btn1 }} </h3>
+                             <h3 class="btn__text">{{ module.btn1 }} </h3>
                         </button>
                     </a>
                 {% endif %}
