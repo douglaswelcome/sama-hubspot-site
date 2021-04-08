@@ -148,7 +148,7 @@
         "show_emoji_picker": false,
         "type": "text",
         "placeholder": "",
-        "inline_help_text": "For anchors use `?#your-anchor`",
+        "inline_help_text": "For anchors use `#your-anchor`",
         "help_text": "",
         "default": null
       },
