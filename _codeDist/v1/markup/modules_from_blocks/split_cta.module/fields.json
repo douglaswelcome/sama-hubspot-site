@@ -1,83 +1,156 @@
-[
+[{
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
   {
-  "name": "darkmode",
-  "label": "Dark Mode?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "default": true
-},
-{
-  "name": "bg_color",
-  "label": "Dark Mode Background Color",
-  "required": false,
-  "locked": false,
-  "display": "select",
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
 
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-1"
+
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+  {
+    "name": "subheadline",
+    "label": "Subheadline",
+    "sortable": false,
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+  {
+    "name": "primary_link",
+    "label": "Primary Link",
+    "required": false,
+    "locked": false,
+    "children": [{
+        "name": "type",
+        "label": "Primary Link Type",
+        "required": true,
+        "locked": false,
+        "display": "radio",
+        "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
+        "help_text": "",
+        "choices": [
+          [
+            "cta",
+            "CTA"
+          ],
+          [
+            "link",
+            "Link"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "cta"
+      },
+      {
+        "name": "btn1",
+        "label": "Button Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Learn More"
+      },
+      {
+        "name": "url1",
+        "label": "Link URL",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "For anchors use `#your-anchor`",
+        "help_text": "",
+        "default": null
+      },
+      {
+        "name": "cta1",
+        "label": "Primary CTA",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "type": "cta",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+  },
+  {
+  "name": "secondary_link",
+  "label": "Secondary Link",
+  "required": false,
+  "locked": false,
+  "children": [
+    {
+      "name": "cta2",
+      "label": "Secondary CTA",
+      "required": false,
+      "locked": false,
+      "inline_help_text": "Shows Teaser image when toggled on",
+      "help_text": "",
+      "type": "cta",
+      "default": null
+    }
+  ],
+  "type": "group",
+  "inline_help_text": "",
   "help_text": "",
-  "choices": [
-  [
-    "bg-charcoal-1",
-    "Charcoal 1 (Darkest)"
-  ],
-  [
-    "bg-charcoal-2",
-    "Charcoal 2 (Medium Dark)"
-  ],
-  [
-    "bg-charcoal-3",
-    "Charcoal 3 (Light Dark)"
-  ]
-  ],
-  "type": "choice",
-  "placeholder": "",
-  "default":  "bg-charcoal-1"   
-
-},
-  {
-  "name": "headline",
-  "label": "Headline",
-  "sortable": false,
-  "required": false,
-  "locked": false,
-  "validation_regex": "",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "default": null 
-},
-{
-"name": "subheadline",
-"label": "Subheadline",
-"sortable": false,
-"required": false,
-"locked": false,
-"validation_regex": "",
-"allow_new_line": false,
-"show_emoji_picker": false,
-"type": "text",
-"placeholder": "",
-"default": null },
-{
-
-"name": "cta1",
-"label": "Primary CTA",
-"required": false,
-"locked": false,
-"inline_help_text": "Shows Teaser image when toggled on",
-"help_text": "",
-"type": "cta",
-"default": null },
-{
-
-"name": "cta2",
-"label": "Secondary CTA",
-"required": false,
-"locked": false,
-"inline_help_text": "Shows Teaser image when toggled on",
-"help_text": "",
-"type": "cta",
-"default": null }
+  "default": {} }
+  
 
 ]

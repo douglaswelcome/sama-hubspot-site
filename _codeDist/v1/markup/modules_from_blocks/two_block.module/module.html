@@ -19,7 +19,7 @@ dark-mode
             {{ module.two_block_body_big }}
           </h5>
         </div>
-        
+
 {# CTA Markup #}
         {% if module.primary_link.type=="cta" %}
 
@@ -68,7 +68,7 @@ dark-mode
 
               <a href="{{module.primary_link.url1}}" class="hyperlink__wrapper icon-block__link">
                 <div class="hyperlink__ahref">
-                  <h5 class="hyperlink__text"> dd007 link </h5>
+                  <h5 class="hyperlink__text">{{module.primary_link.btn1}}</h5>
                 </div>
                 <div class="hyperlink__arrow ">
                   <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ dark-mode
 
               <a href="{{module.primary_link.url1}}" class="btn__wrapper">
                 <button class="btn">
-                                                <h3 class="btn__text">dd007 button</h3>
+                                                <h3 class="btn__text">{{module.primary_link.btn1}}</h3>
                                 </button>
                               </a>
               {% endif %}
