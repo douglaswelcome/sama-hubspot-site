@@ -3,8 +3,8 @@
     dark-mode
     {{ module.bg_color }}
     {% endif %}">
-    <div class="grid-wrapper">
-        <div class="hero-center">
+    <div class="hero-center">
+        <div class="hero-center__body">
             <div class="hero-center__headline">
                 <h1>
                     {{module.headline}}
@@ -16,22 +16,40 @@
                     {{module.subheadline}}
                 </h5>
             </div>
-            <div class="btn__row">
-                {% if module.cta1 %}
+        {# CTA Markup #} 
+        <div class="btn__row"> 
+        {% if module.type1=="cta" %}   
+       
+            
+                {% if module.cta1 %}          
                 <div class="btn__wrapper">
                     <button class="btn">
                         {% cta guid="{{ module.cta1 }}" %}
                   </button>
                 </div>
-                        {% endif %}
+                {% endif %}
+                
+
+        {%elif module.type1=="link"%}
+
+        <a href="{{ module.url1 }}" class="btn__wrapper">
+            <button class="btn">
+                                            <h3 class="btn__text">{{ module.btn1 }} </h3>
+                            </button>
+                          </a>
+        
+        {% endif %}
+
+
                 {% if module.cta2 %}
                 <div class="btn__wrapper">
                     <button class="btn btn--secondary">
                       {% cta guid="{{ module.cta2 }}" %}
                     </button>
                 </div>
-                      {% endif %}
+                {% endif %}
             </div>
+           
         </div>
 
     </div>

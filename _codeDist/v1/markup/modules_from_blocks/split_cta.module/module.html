@@ -7,7 +7,7 @@
     <div class="split-cta ">
         <div class="split-cta__left">
             <div class="split-cta__headline">
-                <h2> 
+                <h2>
                     {{ module.headline }}
                 </h2>
             </div>
@@ -19,22 +19,41 @@
 
         </div>
         <div class="split-cta__right">
+
+
             <div class="btn__row">
+
+
+
+                {% if module.type1=="cta" %}
                     {% if module.cta1 %}
-                    <div class="btn__wrapper">
+                        <div class="btn__wrapper">
                         <button class="btn">
-                            {% cta guid="{{ module.cta1 }}" %}
-                      </button>
-                    </div>
-                            {% endif %}
-                    {% if module.cta2 %}
-                    <div class="btn__wrapper">
-                        <button class="btn btn--secondary">
+                                    {% cta guid="{{ module.cta1 }}" %}
+                        </button>
+                        </div>
+
+                    {% endif %}
+                {%elif module.type1=="link"%}
+                    <a href="{{ module.url1 }}" class="btn__wrapper">
+                        <button class="btn">
+                             <h3 class="btn__text">{{ module.btn1 }} </h3>
+                        </button>
+                    </a>
+                {% endif %}
+
+
+
+
+
+                {% if module.cta2 %}
+                <div class="btn__wrapper">
+                    <button class="btn btn--secondary">
                           {% cta guid="{{ module.cta2 }}" %}
                         </button>
-                    </div>
-                          {% endif %}
                 </div>
+                {% endif %}
+            </div>
         </div>
     </div>
 
