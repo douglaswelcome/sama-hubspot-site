@@ -1,17 +1,25 @@
 .hero-center {
-    grid-column: 3 / span 8;
-    text-align: center;
-
-    @include breakpoint (w-sm){
-      grid-column: 1 / span 12;
-    }
+    @extend %grid;
+   
     
+
+   
+    
+    &__body {
+      grid-column: 3 / span 8;
+      text-align: center;
+      @include breakpoint (w-sm){
+        grid-column: 1 / span 12;
+      }
+    }
 
     &__subheadline {
     margin-bottom: 1.5rem;
+
     }
 
     &__btn-row {
+
       display:flex;
       justify-content:center;
     }

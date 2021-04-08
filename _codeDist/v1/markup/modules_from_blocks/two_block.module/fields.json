@@ -88,46 +88,99 @@
       "alt": null
     }
   },
+
   {
-  "name": "cta1_type",
-  "label": "Is this CTA1 a Hyperlink?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": false
-},
+    "name": "type1",
+    "label": "Primary Link Type",
+    "required": true,
+    "locked": false,
+    "display": "radio",
+    "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
+    "help_text": "",
+    "choices": [
+      [
+        "cta",
+        "CTA"
+      ],
+      [
+        "link",
+        "Link"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "cta"
+  },
   {
-    "id": "",
+    "name": "cta1_type",
+    "label": "Link Style",
+    "required": true,
+    "locked": false,
+    "display": "radio",
+    "inline_help_text": "Is this a button or a hyperlink?",
+    "help_text": "",
+    "choices": [
+      [
+        "false",
+        "Button"
+      ],
+      [
+        "true",
+        "Hyperlink"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "false"
+  },
+  {
+    "name": "btn1",
+    "label": "Link/Button Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Learn More"
+  },
+  {
+    "name": "url1",
+    "label": "Link URL",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "For anchors use `#your-anchor`",
+    "help_text": "",
+    "default": null
+  },
+  {
     "name": "cta1",
     "label": "Primary CTA",
     "required": false,
     "locked": false,
-    "inline_help_text": "Shows Teaser image when toggled on",
+    "inline_help_text": "If using a Hubspot CTA, select one that matches your type (button or link)",
     "help_text": "",
     "type": "cta",
     "default": null
   },
   {
-    "name": "cta12_type",
-    "label": "Is this CTA2 a Hyperlink?",
-    "required": false,
-    "locked": false,
-    "type": "boolean",
-    "inline_help_text": "",
-    "help_text": "",
-    "default": false
-  },
-  {
-    "id": "",
     "name": "cta2",
     "label": "Secondary CTA",
     "required": false,
     "locked": false,
-    "inline_help_text": "Shows Teaser image when toggled on",
+    "inline_help_text": "",
     "help_text": "",
     "type": "cta",
     "default": null
   }
+
+
 ]
