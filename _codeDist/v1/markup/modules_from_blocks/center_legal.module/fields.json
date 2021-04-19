@@ -1,7 +1,16 @@
-[
+[ {
+  "name": "top_padding",
+  "label": "Top Padding?",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "inline_help_text": "",
+  "help_text": "",
+  "default": true 
+},
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "center_body",
+    "default": "Paste your HTML into the source code pane above/",
+    "label": "Legal Body",
     "locked": false,
     "name": "center_body",
     "required": false,
