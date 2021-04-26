@@ -6,6 +6,12 @@
 
 {% extends '/v1/markup/blocks_static/base.html' %}
 
+{% block top-insert %}
+
+{% module "module_20201201110027" path="/v1/markup/modules_from_blocks/popdown_announcement", label="Pop Down" %}
+
+{% endblock %}
+
 {% block main %}
 
 {% module "module_20201029143459" path="/v1/markup/modules_from_blocks/header", label="Header" %}
