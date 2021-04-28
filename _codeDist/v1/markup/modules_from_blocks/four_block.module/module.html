@@ -51,7 +51,7 @@ dark-mode
 
     <div class="four-block__row four-block__row--1">
       {% for icon in module.row1_icons %}
-      <div class="four-block__item">
+
         <div class="four-block__item-img">
           <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
       </div>
@@ -65,15 +65,16 @@ dark-mode
           <h5 class="four-block__item-body">
             {{ icon.body_copy }}
           </h5>
-        </div>
+       
         {% endfor %}
-
       </div>
+
+     
 
       {% if module.row2_icons %}
       <div class="four-block__row four-block__row--2">
         {% for icon in module.row2_icons %}
-        <div class="four-block__item">
+
           <div class="four-block__item-img">
             <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
           </div>
@@ -87,7 +88,7 @@ dark-mode
            <h5 class="four-block__item-body">
             {{ icon.body_copy }}
           </h5>
-        </div>
+   
 
         {% endfor %}
 
