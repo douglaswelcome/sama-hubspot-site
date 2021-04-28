@@ -24,7 +24,6 @@
     &__link {}
 
     &__row {
-
         grid-column: 2 /span 10;
         display: grid;
         grid-auto-columns: 1fr;
@@ -35,13 +34,12 @@
         @include breakpoint(w-sm) {
             grid-column: 1/span 12;
             grid-template-columns: 1fr auto 1fr;
-
             grid-column-gap: 0rem;
         }
 
         &--1 {
             grid-row: 2;
-            margin-bottom: 3rem;
+            margin-bottom: 6rem;
 
             @include breakpoint (w-sm) {
                 grid-auto-flow: row;
@@ -49,7 +47,6 @@
                 margin-bottom: 0rem;
 
             }
-
         }
 
         &--2 {
@@ -62,67 +59,71 @@
         }
 
 
-        .block-img {
+  
 
-            overflow: hidden;
-            grid-row: 1;
-            justify-self: left;
-            display: flex;
-            margin-bottom: 1rem;
+       
 
-            @include breakpoint (w-sm) {
-                justify-self: center;
+    }
 
-            }
+    &__item-img {
 
-            img {
-                max-width: 3rem;
-                max-height: 3rem;
-                width: 100%;
-            }
-
-
-        }
-
-        .block-title {
-
-            grid-row: 2;
-            justify-self: left;
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-
-            @include breakpoint (w-sm) {
-                justify-self: center;
-
-            }
-
-        }
-
-        .block-body {
-
-            grid-row: 3;
-
-            @include breakpoint (w-sm) {
-                padding-bottom: 1.5rem;
-                justify-self: center;
-                text-align: center;
-
-            }
-
-        }
+        overflow: hidden;
+        grid-row: 1;
+        justify-self: center;
+        display: flex;
+        margin-bottom: 1rem;
 
         @include breakpoint (w-sm) {
+            justify-self: center;
 
-            .block-img,
-            .block-title,
-            .block-body {
-                grid-row: auto;
-                grid-column: 2;
-                width: 17.75rem;
-                justify-content: center;
-            }
+        }
 
+        img {
+            max-width: 6rem;
+            max-height: 6rem;
+            width: 100%;
+        }
+
+
+    }
+
+    &__item-title {
+
+        grid-row: 2;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        @include breakpoint (w-sm) {
+            justify-self: center;
+
+        }
+
+    }
+
+    &__item-body {
+        text-align:center;
+        grid-row: 3;
+
+        @include breakpoint (w-sm) {
+            padding-bottom: 1.5rem;
+            justify-self: center;
+            text-align: center;
+
+        }
+
+    }
+
+    @include breakpoint (w-sm) {
+
+        &__item-img,
+        &__item-title,
+        &__item-body {
+            grid-row: auto;
+            grid-column: 2;
+            width: 17.75rem;
+            justify-content: center;
         }
 
     }
