@@ -1,0 +1,125 @@
+.four-block {
+
+    @extend %grid-6;
+
+    &__intro {
+        grid-column: 2 /span 4;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @include breakpoint(w-sm) {
+            grid-column: 1 /span 6;
+        }
+
+    }
+
+    &__headline {
+        margin-bottom: 1rem;
+    }
+
+    &__subheadline {
+        margin-bottom: 1rem;
+    }
+
+    &__link {}
+
+    &__row {
+        @extend %grid-6;
+
+        @include breakpoint(w-sm) {
+            grid-column: 1/span 6;
+        }
+
+        &--1 {
+            grid-row: 2;
+            margin-bottom: 6rem;
+
+            @include breakpoint (w-sm) {
+                grid-auto-flow: row;
+                grid-row: auto;
+                margin-bottom: 0rem;
+
+            }
+        }
+
+        &--2 {
+            grid-row: 3;
+
+            @include breakpoint (w-sm) {
+                grid-auto-flow: row;
+                grid-row: auto
+            }
+        }
+
+
+  
+
+
+    }
+
+    &__item {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint (w-med) {                    
+            grid-column: span 3; 
+        }
+        @include breakpoint (w-sm) {                    
+            grid-column: span 6; 
+            margin-bottom: 3rem;
+
+        }
+
+        &:first-of-type {
+            grid-column: 2/span 2;
+            @include breakpoint (w-med) {
+                grid-column:1 / span 3; 
+            }
+            @include breakpoint (w-sm) {
+                grid-column:1 / span 6; 
+            }
+        }
+
+      
+
+    }
+
+    &__item-img {
+
+        overflow: hidden;
+    
+        justify-self: center;
+        display: flex;
+        margin-bottom: 1rem;
+
+        img {
+            max-width: 6rem;
+            max-height: 6rem;
+            width: 100%;
+        }
+
+
+    }
+
+    &__item-title {
+
+        grid-row: 2;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+
+
+    }
+
+    &__item-body {
+        text-align:center;
+        grid-row: 3;
+
+    }
+
+    
+
+}

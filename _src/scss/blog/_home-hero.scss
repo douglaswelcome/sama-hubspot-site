@@ -18,7 +18,7 @@
     position: relative;
 
 
-    @extend %grid;
+    @extend %grid-12;
 
     @include breakpoint (w-sm) {
       margin-bottom: 0;
@@ -107,7 +107,7 @@
 
 .blog-author-hero {
   padding-top: 1.5rem;
-  @extend %grid;
+  @extend %grid-12;
   grid: 3/ span 6;
 
 
@@ -141,7 +141,7 @@
 
 .blog-topic-hero {
   padding-top: 1.5rem;
-  @extend %grid;
+  @extend %grid-12;
 
 
 

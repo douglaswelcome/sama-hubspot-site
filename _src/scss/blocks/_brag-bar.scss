@@ -1,5 +1,5 @@
 .brag-bar {
-  @extend %grid;
+  @extend %grid-12;
   row-gap: 1.5rem;
 
   &__body {

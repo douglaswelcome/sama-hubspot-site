@@ -1,6 +1,6 @@
 .featured-press {
     &__press-content {
-        @extend %grid;
+        @extend %grid-12;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 3rem;
@@ -112,7 +112,7 @@
 }
 
 .press-table {
-    @extend %grid;
+    @extend %grid-12;
     
     &__section{
         padding-top:0;

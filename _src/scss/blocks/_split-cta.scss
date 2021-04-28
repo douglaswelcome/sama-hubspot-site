@@ -1,5 +1,5 @@
 .split-cta {
-    @extend %grid;
+    @extend %grid-12;
 
     &__left {
         grid-column:2 / span 5;

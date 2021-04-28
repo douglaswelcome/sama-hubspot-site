@@ -1,5 +1,5 @@
 .lead-team{
-  @extend %grid;
+  @extend %grid-12;
   row-gap: 1rem;
 
   &__headline {

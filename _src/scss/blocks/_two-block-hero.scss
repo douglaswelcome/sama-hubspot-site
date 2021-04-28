@@ -1,5 +1,5 @@
 .two-block-hero {
-    @extend %grid;
+    @extend %grid-12;
     align-items: center;
 
     @include breakpoint (w-sm){

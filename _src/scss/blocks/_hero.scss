@@ -66,7 +66,7 @@
 
 .homepage-hero {
 
-  @extend %grid;
+  @extend %grid-12;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   display: grid;
@@ -215,7 +215,7 @@
   }
 
   &__content {
-    @extend %grid;
+    @extend %grid-12;
     position: relative;
     z-index: 1;
 
@@ -333,7 +333,7 @@
   height: calc(100vh - #{var(--headerheight)} - 5rem);
   min-height: 29rem;
   max-height: 45rem;
-  @extend %grid;
+  @extend %grid-12;
 
   @include breakpoint (w-med) {
     height: auto;

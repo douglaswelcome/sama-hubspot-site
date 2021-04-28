@@ -1,5 +1,5 @@
 .feature-window{
-    @extend %grid;
+    @extend %grid-12;
 
     &__upper {
         grid-column: 3 / span 8;

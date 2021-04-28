@@ -1,5 +1,5 @@
 .hero-fidy {
-    @extend %grid;
+    @extend %grid-12;
     align-items: center;
 
     &__copy {

@@ -1,5 +1,5 @@
 .panel-two {
-    @extend %grid;
+    @extend %grid-12;
     column-gap: 3rem;
 
     @include breakpoint (w-sm){

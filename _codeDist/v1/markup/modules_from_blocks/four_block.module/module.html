@@ -3,27 +3,27 @@
 dark-mode
 {{ module.bg_color }}
 {% endif %}">
-  <div class="icon-block">
-    <div class="icon-block__intro">
+  <div class="four-block">
+    <div class="four-block__intro">
 
 
 
-      <div class="icon-block__headline">
+      <div class="four-block__headline">
         <h2>
           {{ module.headline }}
         </h2>
       </div>
 
 
-      <div class="icon-block__subheadline">
+      <div class="four-block__subheadline">
         <h5>
           {{ module.subheadline }}
-          </h5>
+        </h5>
 
       </div>
 
       {% if module.cta1 %}
-      <div class="hyperlink__wrapper icon-block__link">
+      <div class="hyperlink__wrapper four-block__link">
         <div class="hyperlink__ahref">
           {% cta guid="{{ module.cta1 }}" %}
 
@@ -41,7 +41,7 @@ dark-mode
         </div>
       </div>
 
-    {% endif %}
+      {% endif %}
     </div>
 
 
@@ -49,47 +49,48 @@ dark-mode
 
 
 
-    <div class="icon-block__row icon-block__row--1">
+    <div class="four-block__row four-block__row--1">
       {% for icon in module.row1_icons %}
-      <div class="block-img">
-        <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+      <div class="four-block__item">
+        <div class="four-block__item-img">
+          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
       </div>
 
-        <div class="block-title">
-          <h4 class="">
+
+          <h4 class="four-block__item-title">
             {{ icon.title }}
           </h4>
-        </div>
 
-        <div class="block-body">
-          <p>
+
+          <h5 class="four-block__item-body">
             {{ icon.body_copy }}
-          </p>
+          </h5>
         </div>
         {% endfor %}
 
       </div>
 
       {% if module.row2_icons %}
-      <div class="icon-block__row icon-block__row--2">
+      <div class="four-block__row four-block__row--2">
         {% for icon in module.row2_icons %}
-        <div class="block-img">
-          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-      </div>
+        <div class="four-block__item">
+          <div class="four-block__item-img">
+            <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+          </div>
 
-          <div class="block-title">
-            <h4 class="">
+          <h4 class="four-block__item-title">
+
               {{ icon.title }}
-            </h4>
-          </div>
+          </h4>
 
-          <div class="block-body">
-            <p>
-              {{ icon.body_copy }}
-            </p>
-          </div>
-          {% endfor %}
 
+           <h5 class="four-block__item-body">
+            {{ icon.body_copy }}
+          </h5>
         </div>
+
+        {% endfor %}
+
+    </div>
         {%endif%}
 </section>
