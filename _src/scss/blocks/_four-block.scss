@@ -1,14 +1,14 @@
 .four-block {
 
-    @extend %grid-12;
+    @extend %grid-6;
 
     &__intro {
-        grid-column: 3 /span 8;
+        grid-column: 2 /span 4;
         text-align: center;
         margin-bottom: 3rem;
 
         @include breakpoint(w-sm) {
-            grid-column: 1 /span 12;
+            grid-column: 1 /span 6;
         }
 
     }
@@ -24,17 +24,10 @@
     &__link {}
 
     &__row {
-        grid-column: 2 /span 10;
-        display: grid;
-        grid-auto-columns: 1fr;
-        justify-content: left;
-        text-align: left;
-        grid-column-gap: 3rem;
+        @extend %grid-6;
 
         @include breakpoint(w-sm) {
-            grid-column: 1/span 12;
-            grid-template-columns: 1fr auto 1fr;
-            grid-column-gap: 0rem;
+            grid-column: 1/span 6;
         }
 
         &--1 {
@@ -64,18 +57,41 @@
 
     }
 
+    &__item {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint (w-med) {                    
+            grid-column: span 3; 
+        }
+        @include breakpoint (w-sm) {                    
+            grid-column: span 6; 
+            margin-bottom: 3rem;
+
+        }
+
+        &:first-of-type {
+            grid-column: 2/span 2;
+            @include breakpoint (w-med) {
+                grid-column:1 / span 3; 
+            }
+            @include breakpoint (w-sm) {
+                grid-column:1 / span 6; 
+            }
+        }
+
+      
+
+    }
+
     &__item-img {
 
         overflow: hidden;
-        grid-row: 1;
+    
         justify-self: center;
         display: flex;
         margin-bottom: 1rem;
-
-        @include breakpoint (w-sm) {
-            justify-self: center;
-
-        }
 
         img {
             max-width: 6rem;
@@ -94,10 +110,7 @@
         align-items: center;
         margin-bottom: 1rem;
 
-        @include breakpoint (w-sm) {
-            justify-self: center;
 
-        }
 
     }
 
@@ -105,26 +118,8 @@
         text-align:center;
         grid-row: 3;
 
-        @include breakpoint (w-sm) {
-            padding-bottom: 1.5rem;
-            justify-self: center;
-            text-align: center;
-
-        }
-
     }
 
-    @include breakpoint (w-sm) {
-
-        &__item-img,
-        &__item-title,
-        &__item-body {
-            grid-row: auto;
-            grid-column: 2;
-            width: 17.75rem;
-            justify-content: center;
-        }
-
-    }
+    
 
 }

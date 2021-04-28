@@ -1,38 +1,29 @@
 // ______________Width > could update to try these with REMs. however, in testing always using browser window width in px
 // REM size @ 16px
 
-$w-xlg: 1360px; //1360 px and up
-$w-lg: 1120px; //1120px - 1360px
+//breakpoints for sass
+
+$w-xlg: 1374px; //1360 px and up
+$w-lg: 1134px; //1120px - 1360px
 $w-med: 816px; //816px - 1120px
 $w-sm: 320px; //320px - 800px
 
 :root {
 
+  //Breakpoints
+
   // $width-xxxlg: 130em; //
   // $width-xxlg: 110em; //
-  --w-xlg: 1360px; //1360 px and up
-  --w-lg: 1120px; //1120px - 1360px
+  --w-xlg: 1374px; //1360 px and up
+  --w-lg: 1134px; //1120px - 1360px
   --w-med: 816px; //816px - 1120px
   --w-sm: 320px; //320px - 816px
 
+  // Content Widths within breakpoints, usually 1rem or 16px less than breakpoint width
 
-
-  // $width-xsm: 17.777em; // 320px iphone 5 width
-
-  //iphone 4,5 = 320px Width
-  //iphone 6+ = 375px width
-
-  // ____________Heights
-  // $height-sm: 31.250rem; // 500px
-  // $height-med: 43.750rem; // 700px
-  // $height-lg: 50.000rem; // 800px'
-
-
-  // Page Widths
-
-  --xlg-page-width: 1312px;
-  --lg-page-width: 1104px;
-  --med-page-width: 804px;
+  --xlg-page-width: 1360px;
+  --lg-page-width: 1120px;
+  --med-page-width: 800px;
 
 
 
@@ -97,7 +88,8 @@ $w-sm: 320px; //320px - 800px
   @include breakpoint(w-sm) {
     margin-left: 1rem;
     margin-right: 1rem;
-
+    width:auto;
+    max-width:40rem;
   }
 }
 
@@ -111,6 +103,10 @@ $w-sm: 320px; //320px - 800px
   grid-template-columns: repeat(12, minmax(0, 1fr));
   align-self: center;
   column-gap: 2rem;
+  @include breakpoint (w-sm){
+    column-gap:0rem;
+  }
+
 }
 
 %grid-6 {
@@ -119,6 +115,14 @@ $w-sm: 320px; //320px - 800px
   grid-template-columns: repeat(6, minmax(0, 1fr));
   align-self: center;
   column-gap: 8rem;
+
+  @include breakpoint (w-med) {
+    column-gap: 4rem;
+  }
+
+  @include breakpoint (w-sm){
+    column-gap:0rem;
+  }
 }
 
 .grid-wrapper {
