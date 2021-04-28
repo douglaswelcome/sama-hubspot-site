@@ -1,4 +1,8 @@
-<section class="dark-mode bg-charcoal-3">
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}">
   <div class="icon-block">
     <div class="icon-block__intro">
 
