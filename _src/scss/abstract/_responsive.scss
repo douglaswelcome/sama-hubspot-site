@@ -95,23 +95,17 @@ $w-sm: 320px; //320px - 800px
   @include page-width;
 }
 
-%grid-12 {
-  @include page-width;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  align-self: center;
+@mixin column-gap-12 {
   column-gap: 2rem;
   @include breakpoint (w-sm){
     column-gap:0rem;
   }
-
 }
 
-%grid-6 {
-  @include page-width;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  align-self: center;
+
+
+
+@mixin column-gap-6 {
   column-gap: 8rem;
 
   @include breakpoint (w-med) {
@@ -121,6 +115,22 @@ $w-sm: 320px; //320px - 800px
   @include breakpoint (w-sm){
     column-gap:0rem;
   }
+}
+
+%grid-12 {
+  @include page-width;
+  @include column-gap-12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-self: center;
+}
+
+%grid-6 {
+  @include page-width;
+  @include column-gap-6;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-self: center;
 }
 
 .grid-wrapper {
