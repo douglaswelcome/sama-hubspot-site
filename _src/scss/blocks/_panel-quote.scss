@@ -1,6 +1,6 @@
 .panel-quote {
     height:auto;
-    @extend %grid;
+    @extend %grid-12;
     
     &__back {
         grid-row: 1;

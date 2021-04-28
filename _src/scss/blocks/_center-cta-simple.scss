@@ -1,5 +1,5 @@
 .center-cta-simple {
-  @extend %grid;
+  @extend %grid-12;
 
   &__inner {
     grid-column: 4 / span 6;

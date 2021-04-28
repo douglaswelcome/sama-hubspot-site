@@ -1,5 +1,5 @@
 .location-cards {
-    @extend %grid;
+    @extend %grid-12;
     grid-template-columns: repeat(3, 1fr);
 
     row-gap: 3rem;
