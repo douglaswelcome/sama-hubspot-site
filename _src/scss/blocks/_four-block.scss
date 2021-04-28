@@ -71,7 +71,6 @@
         }
         @include breakpoint (w-sm) {                    
             grid-column: span 6; 
-            margin-bottom: 3rem;
         }
 
 
@@ -95,6 +94,9 @@
         justify-self: center;
         display: flex;
         margin-bottom: 1rem;
+        @include breakpoint (w-sm) {
+            grid-row: auto;
+        }
 
         img {
             max-width: 6rem;
@@ -105,10 +107,17 @@
 
     &__item-title {
         grid-row: 2;
+        @include breakpoint (w-sm) {
+            grid-row: auto;
+        }
     }
 
     &__item-body {
         grid-row: 3; 
+        @include breakpoint (w-sm) {
+            grid-row: auto;
+            margin-bottom:3rem;
+        }
     }
 
     
