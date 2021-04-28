@@ -33,7 +33,6 @@
 
         row-gap:1rem;
 
-
         &--1 {
             grid-row: 2;
             margin-bottom: 6rem;
@@ -56,9 +55,6 @@
         }
 
 
-  
-
-
     }
 
 
@@ -76,7 +72,6 @@
         @include breakpoint (w-sm) {                    
             grid-column: span 6; 
             margin-bottom: 3rem;
-
         }
 
 
@@ -96,8 +91,6 @@
 
 
     &__item-img {
-
-
         overflow: hidden;
         justify-self: center;
         display: flex;
@@ -108,19 +101,14 @@
             max-height: 6rem;
             width: 100%;
         }
-
-
     }
 
     &__item-title {
-        
         grid-row: 2;
-        
     }
 
     &__item-body {
-        grid-row: 3;
-        
+        grid-row: 3; 
     }
 
     
