@@ -26,7 +26,7 @@
 
 
   &__inner {
-    @extend %grid;
+    @extend %grid-12;
     position: relative;
     grid-template-columns: auto 8fr auto;
     grid-column-gap: 3rem;
@@ -373,7 +373,7 @@
   }
 
   &__inner {
-    @extend %grid;
+    @extend %grid-12;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 

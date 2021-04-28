@@ -1,5 +1,5 @@
 .list-block {
-    @extend %grid;
+    @extend %grid-12;
     grid-row-gap: 2rem;
 
     &__intro {

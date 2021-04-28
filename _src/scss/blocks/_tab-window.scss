@@ -1,5 +1,5 @@
 .tab-window {
-    @extend %grid;
+    @extend %grid-12;
 
     &__title {
         grid-column: 2 / span 10;

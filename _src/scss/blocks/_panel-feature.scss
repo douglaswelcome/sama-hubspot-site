@@ -7,7 +7,7 @@
     overflow: hidden;
 
     &__wrapper {
-        @extend %grid;
+        @extend %grid-12;
         padding-left:1rem;
     }
     

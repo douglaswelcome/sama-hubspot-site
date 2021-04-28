@@ -1,5 +1,5 @@
 .three-card {
-  @extend %grid;
+  @extend %grid-12;
 
   &__intro {
     grid-column: 2 /span 10;

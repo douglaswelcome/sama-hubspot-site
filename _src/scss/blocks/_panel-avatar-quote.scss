@@ -1,6 +1,6 @@
 .panel-avatar-quote {
     height: auto;
-    @extend %grid;
+    @extend %grid-12;
     color:var(--color-charcoal-1);
 
     &__back {

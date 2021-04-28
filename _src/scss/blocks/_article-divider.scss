@@ -28,7 +28,7 @@
         grid-row: 1;
         align-self:end;
         transform:translate(0, 3rem);
-        @extend %grid;
+        @extend %grid-12;
         @include breakpoint(w-sm){
             margin: 0;
             max-width: 100%;    

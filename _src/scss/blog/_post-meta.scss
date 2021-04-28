@@ -1,5 +1,5 @@
 .post-meta {
-  @extend %grid;
+  @extend %grid-12;
   column-gap: 2rem;
 
   &__header {

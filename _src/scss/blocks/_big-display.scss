@@ -1,5 +1,5 @@
 .big-display {
-    @extend %grid;
+    @extend %grid-12;
 
     grid-column: 1 / span 12;
     text-align: left;

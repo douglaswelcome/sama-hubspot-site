@@ -1,5 +1,5 @@
 .center-block {
-  @extend %grid;
+  @extend %grid-12;
   row-gap: 3rem;
 
   &__intro {

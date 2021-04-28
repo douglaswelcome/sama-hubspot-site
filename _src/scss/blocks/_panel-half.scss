@@ -1,6 +1,6 @@
 .panel-half {
 
-    @extend %grid;
+    @extend %grid-12;
     box-shadow: -1rem 1rem var(--color-charcoal-6);
 
     background-color:var(--color-charcoal-3);

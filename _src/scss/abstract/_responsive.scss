@@ -30,7 +30,7 @@ $w-sm: 320px; //320px - 800px
 
   // Page Widths
 
-  --xlg-page-width: 1296px;
+  --xlg-page-width: 1312px;
   --lg-page-width: 1104px;
   --med-page-width: 804px;
 
@@ -79,10 +79,6 @@ $w-sm: 320px; //320px - 800px
 
 
 
-:root {}
-
-
-
 
 
  @mixin page-width {
@@ -109,16 +105,24 @@ $w-sm: 320px; //320px - 800px
   @include page-width;
 }
 
-%grid {
+%grid-12 {
   @include page-width;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   align-self: center;
-  column-gap: .25rem;
+  column-gap: 2rem;
+}
+
+%grid-6 {
+  @include page-width;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-self: center;
+  column-gap: 8rem;
 }
 
 .grid-wrapper {
-  @extend %grid;
+  @extend %grid-12;
 }
 
 @mixin small-pad () {
