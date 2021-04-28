@@ -1,3 +1,8 @@
+.bg-charcoal-0 {
+    --parent-bg:var(--color-black);
+    background-color:var(--parent-bg);
+}
+
 .bg-charcoal-1 {
     --parent-bg:var(--color-charcoal-1);
     background-color:var(--parent-bg);
