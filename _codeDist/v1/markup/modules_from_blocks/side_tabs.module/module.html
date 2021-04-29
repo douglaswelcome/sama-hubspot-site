@@ -33,7 +33,7 @@
                 <div class="side-tab__content-inner">
                     <p>{{ item.tab_content }}</p>
                     {% if item.tab_video %}
-                        <video controls>
+                        <video autoplay="true" loop="true">
                             <source
                                 src="{{item.tab_video}}"
                                 type="video/mp4">
