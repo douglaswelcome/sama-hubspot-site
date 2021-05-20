@@ -7,7 +7,7 @@
     <div class="lead-team__row lead-team__row--top">
 
       <div class="lead-team__person">
-        <img src="{{ module.top_person.img.src }}" alt="{{ module.top_person.img.alt }}" class="lead-team__person-img">
+        <img src="{{ module.top_person.img.src }}" alt="{{ module.top_person.img.alt }}" class="lead-team__person-img avatar">
         <h4 class="lead-team__person-name">{{ module.top_person.person }}</h4>
         <h5 class="lead-team__person-title">{{ module.top_person.job }}</h5>
 
@@ -20,7 +20,7 @@
     <div class="lead-team__row lead-team__row__else">
       {% for person in module.people %}
       <div class="lead-team__person">
-        <img src="{{ person.img.src }}" alt="{{ person.img.alt }}" class="lead-team__person-img">
+        <img src="{{ person.img.src }}" alt="{{ person.img.alt }}" class="lead-team__person-img avatar">
         <h4 class="lead-team__person-name">{{ person.person }}</h4>
         <h5 class="lead-team__person-title">{{ person.job }}</h5>
         
