@@ -8,20 +8,6 @@
     display: none;
   }
 
-  // &--submenu-open {
-
-
-  //   .desktop-submenu {
-  //     visibility: visible;
-  //     background-color: $color-black-trans;
-  //     opacity: 1;
-  //     transition-property: opacity, visibility;
-  //     transition-duration: 0.4s;
-  //     transition-timing-function: ease;
-  //   }
-
-  // }
-
 
 
 
@@ -416,7 +402,6 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  background-color: $color-black-trans;
   opacity: 0;
   z-index: 21;
   min-height: calc(100vh - #{var(--mobileheaderheight)});

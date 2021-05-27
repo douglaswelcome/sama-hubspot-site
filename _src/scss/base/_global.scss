@@ -56,7 +56,7 @@ section {
 .content-ups {
   position: relative;
   z-index: 1;
-  color: $color-charcoal !important;
+  color: var(--color-charcoal-1) !important;
 }
 
 .hide-it {
