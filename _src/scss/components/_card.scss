@@ -1,12 +1,14 @@
 .card {
     color: var(--color-white);
-    background-color: var(--color-charcoal-1);
-    background: var(--color-white);
+    background: var(--color-charcoal-2);
     padding: 2rem 1.5rem;
     transition-property: transform, color, background-color, border-bottom-color, fill, visibility;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     height: 100%;
+
+    display:grid;
+    row-gap: 1.5rem;
 
 
 
@@ -19,26 +21,20 @@
             p {
                 color: var(--color-charcoal-4);
             }
-
             .hyperlink__arrow svg {
                 fill: var(--color-charcoal-4);
             }
-
 
         }
     }
 
 
-    a .card__inner {
-        color: var(--color-charcoal-1);
-    }
+
 
     &__link {
         display: flex;
         align-content: center;
-
         p {
-
             display: inline-block;
             transition: 300ms all;
             color: var(--color-charcoal-2);
@@ -50,29 +46,10 @@
         .hyperlink__arrow {
             margin-left: .5rem;
             margin-top: -1px;
-
             svg {
                 width: 12px;
             }
         }
-
-    }
-
-    &__icon {
-        margin-bottom: 1rem;
-    }
-
-
-
-
-    &__title {
-        margin-bottom: 1rem;
-    }
-
-    &__body {
-        margin-bottom: 2rem;
-        line-height: 1.4;
-
 
     }
 
