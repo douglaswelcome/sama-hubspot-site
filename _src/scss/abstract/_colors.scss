@@ -1,36 +1,49 @@
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+  }
+
+$color-white:#ffffff;
+$color-black:#000000;
+$color-sunshine:#fffa0c;
+
+
+$color-charcoal-0:#0d0d11;
+$color-charcoal-1:#17171C;
+$color-charcoal-2:#22222a;
+$color-charcoal-3:#30303b;
+$color-charcoal-4:#40404f;
+$color-charcoal-5:#787887;
+$color-charcoal-6:#b3b3b9;
+$color-charcoal-7:#d8d8da;
+$color-charcoal-8:#f0f0f2;
+
 
 :root {
+    --color-white: #{$color-white};
+    --color-white-rgb:#{hexToRGB($color-white)};
 
+    --color-black: #{$color-black};
+    --color-black-rgb:#{hexToRGB($color-black)};
 
-    --color-white: #ffffff;
-    --color-black: #000000;
+    --color-sunshine: #{$color-sunshine};
+    --color-sunshine-rgb:#{hexToRGB($color-sunshine)};
 
-    --color-charcoal-0: #0d0d11;
-    --color-charcoal-1: #17171C;
-    --color-charcoal-2: #22222a;
-    --color-charcoal-3: #30303b;
-    --color-charcoal-4: #40404f;
-    --color-charcoal-5: #b3b3b9;
-    --color-charcoal-6: #b7b7b9;
-    --color-charcoal-7: #d8d8da;
-    --color-charcoal-8: #f9f9fb;
-
-    --color-sunshine: #fffa0c;
-    --color-blue: #37B2FB;
+    --color-charcoal-0: #{$color-charcoal-0};
+    --color-charcoal-0-rgb:#{hexToRGB($color-charcoal-0)};
+    --color-charcoal-1: #{$color-charcoal-1};
+    --color-charcoal-1-rgb:#{hexToRGB($color-charcoal-1)};
+    --color-charcoal-2: #{$color-charcoal-2};
+    --color-charcoal-2-rgb:#{hexToRGB($color-charcoal-2)};
+    --color-charcoal-3: #{$color-charcoal-3};
+    --color-charcoal-3-rgb:#{hexToRGB($color-charcoal-3)};
+    --color-charcoal-4: #{$color-charcoal-4};
+    --color-charcoal-4-rgb:#{hexToRGB($color-charcoal-4)};
+    --color-charcoal-5: #{$color-charcoal-5};
+    --color-charcoal-5-rgb:#{hexToRGB($color-charcoal-5)};
+    --color-charcoal-6: #{$color-charcoal-6};
+    --color-charcoal-6-rgb:#{hexToRGB($color-charcoal-6)};
+    --color-charcoal-7: #{$color-charcoal-7};
+    --color-charcoal-7-rgb:#{hexToRGB($color-charcoal-7)};
+    --color-charcoal-8: #{$color-charcoal-8};
+    --color-charcoal-8-rgb:#{hexToRGB($color-charcoal-8)};
 }
-
-//white
-$color-white:var(--color-white);
-$color-black:var(--color-black);
-
-$color-charcoal-0:var(--color-charcoal-0);
-$color-charcoal-1:var(--color-charcoal-1);
-$color-charcoal-2:var(--color-charcoal-2);
-$color-charcoal-3:var(--color-charcoal-3);
-$color-charcoal-4:var(--color-charcoal-4);
-$color-charcoal-5:var(--color-charcoal-5);
-$color-charcoal-6:var(--color-charcoal-6);
-$color-charcoal-7:var(--color-charcoal-7);
-$color-charcoal-8:var(--color-charcoal-8);
-
-$color-sunshine:var(--color-sunshine);

@@ -5,36 +5,38 @@
     row-gap: 3rem;
     column-gap: 3rem;
 
-    @include breakpoint (w-sm){
-        grid-template-columns:  1fr auto 1fr;
+    @include breakpoint (w-sm) {
+        grid-template-columns: 1fr auto 1fr;
         row-gap: 3rem;
     }
-   
 
-    &__section{
+
+    &__section {
         padding-top: 1rem;
         padding-bottom: 1rem;
+
+        &--last {
+            padding-bottom: 6rem;
+        }
     }
 
-    &__last-section {
+    &--last {
         padding-bottom: 6rem;
     }
 
-    &__card{
-        @include breakpoint (w-sm){
+    &__card {
+        @include breakpoint (w-sm) {
             grid-column: 2;
             width: 17.75rem;
         }
     }
 
     &__icon {
-        img{
-            height:3rem;
+        img {
+            height: 3rem;
         }
 
-        @include breakpoint (w-sm){
-            
-        }
-         
+        @include breakpoint (w-sm) {}
+
     }
 }

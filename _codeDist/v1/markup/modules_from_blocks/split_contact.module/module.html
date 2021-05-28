@@ -1,9 +1,9 @@
 <!-- module html  -->
 <section class=" no-top-pad">
-    <div class=" card split-form__card">
-        <div class="card__inner split-form ">
-            <div class="split-form__form form-wrapper">
-                {% form
+
+    <div class="split-form ">
+        <div class="split-form__form form-wrapper">
+            {% form
             form_to_use="{{ module.form.form_id }}"
             response_response_type="{{ module.form.response_type }}"
             response_message="{{ module.form.message }}"
@@ -11,9 +11,9 @@
             response_redirect_url="{{module.form.redirect_url}}"
             gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
         %}
-       
 
- {#  <!--PLACEHOLDERFORM -->    
+
+            {#  <!--PLACEHOLDERFORM -->    
  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 <script>
   hbspt.forms.create({
@@ -22,25 +22,25 @@
 });
 </script> #}
 
-            </div>
-            <div class="split-form__description">
-                <h4 class="split-form__headline">
-                    {{ module.headline}}
-                </h4>
-                <p class="split-form__text">
-                    {{ module.body_text }}
-                </p>
-                <div class="split-form__icon-bullets">
-                    {% for bullet in module.bullets %}
-                    <img src="{{ bullet.img.src }}" alt="{{bullet.img.alt}}" class="split-form__icon" />
-                    <h5 class="bold split-form__bullet-text">
-                        {{ bullet.item }}
-                    </h5>
-                    {% endfor %}
-
-                </div>
+        </div>
+        <div class="split-form__description">
+            <h4 class="split-form__headline">
+                {{ module.headline}}
+            </h4>
+            <p class="split-form__text">
+                {{ module.body_text }}
+            </p>
+            <div class="split-form__icon-bullets">
+                {% for bullet in module.bullets %}
+                <img src="{{ bullet.img.src }}" alt="{{bullet.img.alt}}" class="split-form__icon" />
+                <h5 class="bold split-form__bullet-text">
+                    {{ bullet.item }}
+                </h5>
+                {% endfor %}
 
             </div>
+
         </div>
     </div>
+
 </section>

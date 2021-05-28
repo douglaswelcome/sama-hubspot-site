@@ -1,0 +1,58 @@
+.four-card {
+  @extend %grid-12;
+  row-gap: 2rem;
+
+  &__intro {
+    grid-row:1;
+    grid-column: 1 /span 8;
+    text-align: left;
+    color: var(--color-white);
+    display:grid;
+    row-gap:1rem;
+    
+
+    @include breakpoint (w-med) {
+      grid-column: 3 / span 8;
+    }
+
+    @include breakpoint (w-sm) {
+      grid-column: 1 / span 12;
+    }
+
+    
+  }
+
+  &__headline {
+
+  }
+
+  &__subheadline {
+
+  }
+
+ 
+
+  &__card {
+
+    grid-row:2;
+    grid-column: span 3;
+
+
+
+    @include breakpoint (w-med) {
+      grid-row:auto;
+      grid-column: 3/ span 8;
+      row-gap: 1rem;
+    }
+
+    @include breakpoint (w-sm) {
+      grid-row:auto;
+      grid-column: 1 / span 12;
+    }
+  }
+
+
+}
+
+
+
