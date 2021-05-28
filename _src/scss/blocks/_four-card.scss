@@ -49,8 +49,12 @@
       grid-row:auto;
       grid-column: 1 / span 12;
     }
+
   }
 
+  &__card-title {
+    font-weight:700;
+  }
 
 }
 
