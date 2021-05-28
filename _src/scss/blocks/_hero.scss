@@ -208,7 +208,7 @@
     }
 
     &.shaded-img::before {
-      background: linear-gradient(rgba($color-charcoal, .7), rgba($color-charcoal, .4));
+      background: linear-gradient(rgba($color-charcoal-1, .7), rgba($color-charcoal-1, .4));
       mix-blend-mode: multiply;
     }
 

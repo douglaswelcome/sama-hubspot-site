@@ -6,16 +6,16 @@ no-top-pad
 
 bg-charcoal-0
  ">
-  <div class="three-card">
+  <div class="four-card">
 
     {% if module.headline %}
-    <div class="three-card__intro">
+    <div class="four-card__intro">
 
-      <h2 class="three-card__headline">
+      <h2 class="four-card__headline">
         {{ module.headline }}
       </h2>
 
-      <h5 class="three-card__subheadline">
+      <h5 class="four-card__subheadline">
         {{ module.subheadline }}
       </h5>
 
@@ -30,7 +30,7 @@ bg-charcoal-0
     {% if module.card1.link.url.href %}
     <a href="{{ module.card1.link.url.href }}" >
     {% endif %}
-      <div class="three-card__card card 
+      <div class="four-card__card card 
       {% if module.card1.link.url.href %}
       card--hover
       {% endif %}">
@@ -77,7 +77,7 @@ bg-charcoal-0
     {% if module.card2.link.url.href %}
     <a href="{{ module.card2.link.url.href }}" >
     {% endif %}
-      <div class="three-card__card card 
+      <div class="four-card__card card 
       {% if module.card2.link.url.href %}
       card--hover
       {% endif %}">
@@ -119,35 +119,89 @@ bg-charcoal-0
     {% endif %}
 
 
+{# card 3 #}
+    
+    
 
-
-    {# card 2 #}
-    {% if module.card3.link.url.href %}
-    <a href="{{ module.card3.link.url.href }}" >
+{% if module.card3.link.url.href %}
+<a href="{{ module.card3.link.url.href }}" >
+{% endif %}
+  <div class="four-card__card card 
+  {% if module.card3.link.url.href %}
+  card--hover
+  {% endif %}">
+  
+    {% if module.card3.icon.src %}
+      <div class="card__icon location-cards__icon">
+        <img src="{{ module.card3.icon.src }}" alt="{{ module.card3.icon.alt }}">
+      </div>
     {% endif %}
-      <div class="three-card__card card 
-      {% if module.card3.link.url.href %}
+
+    <h4 class="card__title">
+        {{ module.card3.title }}
+    </h4>
+
+    <p class="card__body">
+        {{ module.card3.body_copy }}
+    </p>
+
+    {% if module.card3.linktext %}
+      <div class="card__link">
+        <p>
+          {{module.card3.linktext}} 
+        </p>
+        <div class="hyperlink__arrow ">
+          <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+            <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+            C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+            c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+          </svg>
+        </div>
+      </div>
+    {% endif %}
+
+
+  </div>
+{% if module.card3.link.url.href %}
+</a>
+{% endif %}
+
+
+
+
+
+
+    {# card 4 #}
+    
+    
+
+    {% if module.card4.link.url.href %}
+    <a href="{{ module.card4.link.url.href }}" >
+    {% endif %}
+      <div class="four-card__card card 
+      {% if module.card4.link.url.href %}
       card--hover
       {% endif %}">
       
-        {% if module.card3.icon.src %}
+        {% if module.card4.icon.src %}
           <div class="card__icon location-cards__icon">
-            <img src="{{ module.card3.icon.src }}" alt="{{ module.card3.icon.alt }}">
+            <img src="{{ module.card4.icon.src }}" alt="{{ module.card4.icon.alt }}">
           </div>
         {% endif %}
 
         <h4 class="card__title">
-            {{ module.card3.title }}
+            {{ module.card4.title }}
         </h4>
 
         <p class="card__body">
-            {{ module.card3.body_copy }}
+            {{ module.card4.body_copy }}
         </p>
     
-        {% if module.card3.linktext %}
+        {% if module.card4.linktext %}
           <div class="card__link">
             <p>
-              {{module.card3.linktext}} 
+              {{module.card4.linktext}} 
             </p>
             <div class="hyperlink__arrow ">
               <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +216,7 @@ bg-charcoal-0
 
 
       </div>
-    {% if module.card3.link.url.href %}
+    {% if module.card4.link.url.href %}
     </a>
     {% endif %}
 
