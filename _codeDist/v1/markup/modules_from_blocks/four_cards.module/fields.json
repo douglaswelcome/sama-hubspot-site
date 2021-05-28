@@ -284,5 +284,89 @@
     "help_text": "",
     "default": {}
 
+  },
+
+  {
+    "name": "card4",
+    "label": "Card 4",
+    "required": false,
+    "locked": false,
+    "children": [{
+        "name": "title",
+        "label": "Card Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave Blank to Remove Element",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Jergenize"
+      },
+      {
+        "name": "body_copy",
+        "label": "Card Body",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "This is truly an almighty mountain. There are no limits in this world."
+      },
+      {
+        "name": "icon",
+        "label": "Card Icon",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": null
+        }
+      },
+      {
+        "name": "link",
+        "label": "Card Link",
+        "required": false,
+        "locked": false,
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "type": "link",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      },
+      {
+        "name": "linktext",
+        "label": "Card Link Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": {}
+
   }
 ]

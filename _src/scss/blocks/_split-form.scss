@@ -1,5 +1,5 @@
 .split-form{
-    @extend %grid-12;
+    @extend %grid-6;
 
     column-gap: 4rem;
 
@@ -12,32 +12,26 @@
         margin:0rem;
     }
 
-    &__card {
-        @include breakpoint (w-sm) {
-            width: calc(100vw - 2rem);
-            
-        }
-    }
     
     
 
     &__form {
-        grid-column: span 6;
+        grid-column: span 3;
 
         @include breakpoint (w-sm) {
-            grid-column: span 12;
+            grid-column: span 6;
             
         }
     }
 
     &__description {
-        grid-column: span 6;
+        grid-column: span 3;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
 
         @include breakpoint (w-sm) {
-            grid-column: span 12;
+            grid-column: span 6;
         }
 
 

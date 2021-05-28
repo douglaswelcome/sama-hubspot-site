@@ -1,80 +1,56 @@
 .card {
-    border-radius: 3px;
-    background-color: var(--color-charcoal-7);
+    color: var(--color-white);
+    background: var(--color-charcoal-2);
+    padding: 2rem 1.5rem;
+    transition-property: transform, color, background-color, border-bottom-color, fill, visibility;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    height: 100%;
 
-    &__inner {
-        background: var(--color-white);
-        border: 2px solid;
-        border-radius: 3px;
-        border-color: var(--color-charcoal-1);
-        padding: 2rem 1.5rem;
-        transform: translate(.5rem, -.5rem);
-        transition-property: box-shadow, transform, color, background-color, border-bottom-color, fill, visibility;
-        transition-duration: 0.2s;
-        transition-timing-function: ease;
-        height: 100%;
-        
+    display:grid;
+    row-gap: 1.5rem;
 
-        
-        
 
-        &--hover:hover {
-            transform: translate(1rem, -1rem);
-            .card__link {
-                    p{
-                    color: var(--color-charcoal-4);
-                    }
-                    .hyperlink__arrow svg {
-                        fill: var(--color-charcoal-4);
-                    }
-              
-              
+
+
+
+    &--hover:hover {
+        transform: translate(1rem, -1rem);
+
+        .card__link {
+            p {
+                color: var(--color-charcoal-4);
             }
+            .hyperlink__arrow svg {
+                fill: var(--color-charcoal-4);
+            }
+
         }
     }
 
-    a .card__inner {
-        color: var(--color-charcoal-1);
-    }
+
+
 
     &__link {
         display: flex;
         align-content: center;
-        p{
-            
+        p {
             display: inline-block;
-        transition: 300ms all;
-        color: var(--color-charcoal-2);
-        font-weight: 700;
-        text-decoration: underline var(--color-charcoal-6);
-        line-height:1;
+            transition: 300ms all;
+            color: var(--color-charcoal-2);
+            font-weight: 700;
+            text-decoration: underline var(--color-charcoal-6);
+            line-height: 1;
         }
+
         .hyperlink__arrow {
             margin-left: .5rem;
             margin-top: -1px;
-             svg{
-                width:12px;
-             }
+            svg {
+                width: 12px;
+            }
         }
-    
-    }
 
-    &__icon{
-        margin-bottom: 1rem;
-    } 
-
-    
-
-
-    &__title {
-        margin-bottom: 1rem;
-    }
-
-    &__body {
-        margin-bottom: 2rem;
-        line-height: 1.4;
-
-      
     }
 
 
@@ -112,29 +88,3 @@
 }
 
 
-.dark-mode .card {
-    color: var(--color-charcoal-1);
-    background-color: var(--color-charcoal-4);
-
-    & .hyperlink__text {
-        color: var(--color-charcoal-3);
-
-    }
-
-    & .hyperlink__arrow svg {
-        fill: var(--color-charcoal-1);
-    }
-
-    .hyperlink__wrapper:hover {
-
-        .hyperlink__arrow svg {
-            fill: var(--color-charcoal-1);
-        }
-
-        .hyperlink__text {
-            color: var(--color-charcoal-1);
-        }
-
-    }
-
-}
