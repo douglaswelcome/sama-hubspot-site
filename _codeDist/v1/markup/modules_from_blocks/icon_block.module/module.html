@@ -51,9 +51,11 @@ dark-mode
 
     <div class="icon-block__row icon-block__row--1">
       {% for icon in module.row1_icons %}
+        {% if icon.img.src %}
         <div class="block-img">
           <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
         </div>
+        {% endif %}
         <h5 class="block-title">
           {{ icon.title }}
         </h5>
@@ -68,9 +70,11 @@ dark-mode
       {% if module.row2_icons %}
       <div class="icon-block__row icon-block__row--2">
         {% for icon in module.row2_icons %}
-        <div class="block-img">
-          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-        </div>
+          {% if icon.img.src %}
+            <div class="block-img">
+              <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+            </div>
+          {% endif %}
 
 
         <h5 class="block-title">
