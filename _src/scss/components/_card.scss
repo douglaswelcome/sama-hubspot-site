@@ -8,6 +8,7 @@
     height: 100%;
     display:grid;
     row-gap: 1.5rem;
+    grid-auto-rows:max-content;
 
     &--hover:hover {
         transform: translate(1rem, -1rem);
