@@ -9,19 +9,17 @@
         margin-bottom: 3rem;
     }
 
+    &__headline {
+        color:var(--color-white);
+    }
+
     &__lower {
-        transform:translate( .5rem, -.5rem);
-        box-shadow: -1rem 1rem var(--color-charcoal-6);
+        border-radius:.5rem;
         grid-column: 1 /span 12;
-        border: .125rem solid var(--color-charcoal-1);
+        background-color:var(--color-white);
         padding: 3rem;
-        border-radius:3px;
         display:grid;
-
         grid-template-columns: 1fr 6rem 2fr;
-
-        
-        
     }
 
     &__sidebar{
@@ -36,6 +34,7 @@
         padding: 1.5rem .5rem;
         cursor: pointer;
         transition: background-color 200ms;
+        border-radius:.5rem;
 
     }
 
@@ -165,16 +164,5 @@
         .feature-window__img {
             height:220px;
         }
-    }
-}
-
-.dark-mode {
-    .feature-window{
-        &__lower{
-            box-shadow: -1rem 1rem var(--color-charcoal-4);
-            color: var(--color-charcoal-1);
-            background-color: var(--color-white);
-        }
-
     }
 }
