@@ -51,37 +51,38 @@ dark-mode
 
     <div class="icon-block__row icon-block__row--1">
       {% for icon in module.row1_icons %}
+        <div class="block-img">
+          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+        </div>
+        <h5 class="block-title">
+          {{ icon.title }}
+        </h5>
 
-      <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" class="block-img"/>
+        <p class="block-body">
+          {{ icon.body_copy }}
+        </p>
 
-      <h5 class="block-title">
-        {{ icon.title }}
-      </h5>
+        {% endfor %}
+      </div>
 
-      <p class="block-body">
-        {{ icon.body_copy }}
-      </p>
-
-      {% endfor %}
-    </div>
-
-    {% if module.row2_icons %}
-    <div class="icon-block__row icon-block__row--2">
-      {% for icon in module.row2_icons %}
-
-      <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" class="block-img"/>
-
-
-      <h5 class="block-title">
-        {{ icon.title }}
-      </h5>
+      {% if module.row2_icons %}
+      <div class="icon-block__row icon-block__row--2">
+        {% for icon in module.row2_icons %}
+        <div class="block-img">
+          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+        </div>
 
 
+        <h5 class="block-title">
+          {{ icon.title }}
+        </h5>
 
-      <p class="block-body">
-        {{ icon.body_copy }}
-      </p>
-      {% endfor %}
-    </div>
-    {%endif%}
+
+
+        <p class="block-body">
+          {{ icon.body_copy }}
+        </p>
+        {% endfor %}
+      </div>
+      {%endif%}
 </section>

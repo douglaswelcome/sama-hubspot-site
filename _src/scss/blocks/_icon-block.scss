@@ -77,7 +77,6 @@
       
   
       .block-img {
-        height: 3rem;
         overflow: hidden;
         grid-row: 1;
         justify-self: left;
@@ -102,7 +101,7 @@
         grid-row: 2;
         justify-self: left;
         display: flex;
-        align-items: center;
+        align-items: top;
         margin-bottom: 1rem;
         font-weight:700;
         @include breakpoint (w-sm) {
