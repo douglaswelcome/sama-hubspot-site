@@ -1,11 +1,4 @@
-[{
-  "name": "darkmode",
-  "label": "Dark Mode?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "default": false
-},
+[
 {
 
   "name": "bg_color",
