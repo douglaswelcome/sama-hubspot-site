@@ -2,8 +2,8 @@
   @extend %grid-12;
  
     &__intro {
-      grid-column: 3 /span 8;
-      text-align: center;
+      grid-column: 2 /span 8;
+    
       margin-bottom: 3rem;
 
       @include breakpoint(w-sm){
@@ -77,7 +77,7 @@
       
   
       .block-img {
-        
+        height: 3rem;
         overflow: hidden;
         grid-row: 1;
         justify-self: left;
@@ -104,6 +104,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
+        font-weight:700;
         @include breakpoint (w-sm) {
           justify-self: center;
       
