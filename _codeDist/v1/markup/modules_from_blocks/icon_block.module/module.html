@@ -18,7 +18,7 @@ dark-mode
       <div class="icon-block__subheadline">
         <h5>
           {{ module.subheadline }}
-          </h5>
+        </h5>
 
       </div>
 
@@ -41,7 +41,7 @@ dark-mode
         </div>
       </div>
 
-    {% endif %}
+      {% endif %}
     </div>
 
 
@@ -51,45 +51,37 @@ dark-mode
 
     <div class="icon-block__row icon-block__row--1">
       {% for icon in module.row1_icons %}
-      <div class="block-img">
-        <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-      </div>
 
-        <div class="block-title">
-          <h4 class="">
-            {{ icon.title }}
-          </h4>
-        </div>
+      <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" class="block-img"/>
 
-        <div class="block-body">
-          <p>
-            {{ icon.body_copy }}
-          </p>
-        </div>
-        {% endfor %}
+      <h5 class="block-title">
+        {{ icon.title }}
+      </h5>
 
-      </div>
+      <p class="block-body">
+        {{ icon.body_copy }}
+      </p>
 
-      {% if module.row2_icons %}
-      <div class="icon-block__row icon-block__row--2">
-        {% for icon in module.row2_icons %}
-        <div class="block-img">
-          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-      </div>
+      {% endfor %}
+    </div>
 
-          <div class="block-title">
-            <h4 class="">
-              {{ icon.title }}
-            </h4>
-          </div>
+    {% if module.row2_icons %}
+    <div class="icon-block__row icon-block__row--2">
+      {% for icon in module.row2_icons %}
 
-          <div class="block-body">
-            <p>
-              {{ icon.body_copy }}
-            </p>
-          </div>
-          {% endfor %}
+      <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" class="block-img"/>
 
-        </div>
-        {%endif%}
+
+      <h5 class="block-title">
+        {{ icon.title }}
+      </h5>
+
+
+
+      <p class="block-body">
+        {{ icon.body_copy }}
+      </p>
+      {% endfor %}
+    </div>
+    {%endif%}
 </section>
