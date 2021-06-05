@@ -1,4 +1,4 @@
-.two-block {
+.two-block-2 {
   @extend %grid-6;
   align-items: center;
 
@@ -8,6 +8,7 @@
   &__copy {
     grid-column: 1/ span 3;
     text-align: left;
+    display:grid;
     grid-auto-flow: row;
     row-gap:1.5rem;
   }
@@ -25,43 +26,24 @@
     grid-column: 4/ span 3;
     position: relative;
     width: 100%;
-    height: 0;
-    padding-top: 100%;
-    z-index: 10;
+
+
 
   }
 
-  &__img,
-  &__panel {
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
 
-    @include breakpoint (w-sm) {
-      width: calc(100% - 1rem);
-      height: calc(100% - 1rem);
-
-    }
-  }
 
 
   &__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-
     line-height: 1;
-    object-fit: cover;
-
-
+    width: 100%;
+    @include breakpoint(w-sm) {
+      max-height: 25rem;
+    }
+    
   }
 
-  &__panel {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background-color: var(--color-charcoal-7);
-  }
+
 
   &__copy,
   &__img-wrap {
@@ -70,12 +52,6 @@
       grid-column: 1 /span 6;
     }
   }
-
-
-
-
-
-
 
 
 
@@ -98,11 +74,6 @@
     right: 0;
     left: auto;
 
-  }
-
-  .two-block__panel {
-    left: 0;
-    right: auto;
   }
 
   .two-block__copy,

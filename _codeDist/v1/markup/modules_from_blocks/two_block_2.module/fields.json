@@ -1,0 +1,186 @@
+[{
+    "name": "image_position",
+    "label": "Image Left or Right?",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      ["null", "Image Right"],
+      ["reflect", "Image Left"]
+    ],
+    "type": "choice",
+    "default": "null"
+  },
+
+  {
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-1"
+
+  },
+
+  {
+
+    "name": "two_block_title",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave blank to omit this field",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "What's with airplanes, am I right?"
+  },
+  {
+
+    "name": "two_block_body_big",
+    "label": "Body Copy",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave blank to omit this field",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "name": "img",
+    "label": "Image",
+    "required": false,
+    "locked": false,
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://source.unsplash.com/random/400x400",
+      "alt": null
+    }
+  },
+
+  {
+    "name": "type1",
+    "label": "Primary Link Type",
+    "required": true,
+    "locked": false,
+    "display": "radio",
+    "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
+    "help_text": "",
+    "choices": [
+      [
+        "cta",
+        "CTA"
+      ],
+      [
+        "link",
+        "Link"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "cta"
+  },
+  {
+    "name": "cta1_type",
+    "label": "Link Style",
+    "required": true,
+    "locked": false,
+    "display": "radio",
+    "inline_help_text": "Is this a button or a hyperlink?",
+    "help_text": "",
+    "choices": [
+      [
+        "false",
+        "Button"
+      ],
+      [
+        "true",
+        "Hyperlink"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "false"
+  },
+  {
+    "name": "btn1",
+    "label": "Link/Button Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Learn More"
+  },
+  {
+    "name": "url1",
+    "label": "Link URL",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "For anchors use `#your-anchor`",
+    "help_text": "",
+    "default": null
+  },
+  {
+    "name": "cta1",
+    "label": "Primary CTA",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "If using a Hubspot CTA, select one that matches your type (button or link)",
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  },
+  {
+    "name": "cta2",
+    "label": "Secondary CTA",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "type": "cta",
+    "default": null
+  }
+
+
+]
