@@ -1,74 +1,73 @@
-
-
 <section class="
 {% if module.darkmode == true %}
 dark-mode
 {{ module.bg_color }}
 {% endif %} ">
-    <div class="two-block {{ module.image_position }}">
+  <div class="two-block {{ module.image_position }}">
 
-      {# Copy Side #}
-      <div class="two-block__copy">
+    {# Copy Side #}
+    <div class="two-block__copy">
 
-        <div class="two-block__headline">
-          <h2>
-            {{ module.two_block_title }}
-          </h2>
-        </div>
-        <div class="two-block__subheadline">
-          <h5>
-            {{ module.two_block_body_big }}
-          </h5>
-        </div>
-
+      <div class="two-block__headline">
+        <h2>
+          {{ module.two_block_title }}
+        </h2>
+      </div>
+      <div class="two-block__subheadline">
+        <h5>
+          {{ module.two_block_body_big }}
+        </h5>
+      </div>
+      <div class="two-block__btn">
         {# CTA Markup #}
         <div class="btn__row">
-        {% if module.type1=="cta" %}
+          {% if module.type1=="cta" %}
 
 
 
-                  {% if module.cta1 %}
-                  
-                    {% if module.cta1_type==true %}
+          {% if module.cta1 %}
+
+          {% if module.cta1_type==true %}
 
 
-                    <div class="hyperlink__wrapper icon-block__link">
-                      <div class="hyperlink__ahref">
-                        {% cta guid="{{ module.cta1 }}" %}
+          <div class="hyperlink__wrapper icon-block__link">
+            <div class="hyperlink__ahref">
+              {% cta guid="{{ module.cta1 }}" %}
 
-                      </div>
-                      <div class="hyperlink__arrow ">
-                        <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
-                          <style type="text/css">
+            </div>
+            <div class="hyperlink__arrow ">
+              <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+                <style type="text/css">
 
-                          </style>
-                          <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+                </style>
+                <path class="st0"
+                  d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
                                               C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
                                               c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
-                        </svg>
-                      </div>
-                    </div>
-                    {% else %}
+              </svg>
+            </div>
+          </div>
+          {% else %}
 
-                    <div class="btn__wrapper">
-                      <button class="btn">
+          <div class="btn__wrapper">
+            <button class="btn">
                                                           {% cta guid="{{ module.cta1 }}" %}
                                           </button>
-                    </div>
-                    {% endif %}
-                  
-                  {% endif %}
-          
-            {# Link Markup #}
-            {% elif module.type1=="link" %}
-          
+          </div>
+          {% endif %}
 
-                        {% if module.url1 %}
-                        
-                          {% if module.cta1_type==true %}
+          {% endif %}
 
-                          <a href="{{module.url1}}" class="hyperlink__wrapper icon-block__link">
+          {# Link Markup #}
+          {% elif module.type1=="link" %}
+
+
+          {% if module.url1 %}
+
+          {% if module.cta1_type==true %}
+
+          <a href="{{module.url1}}" class="hyperlink__wrapper icon-block__link">
                               <div class="hyperlink__ahref">
                                 <h5 class="hyperlink__text">{{module.btn1}}</h5>
                               </div>
@@ -84,45 +83,46 @@ dark-mode
                                 </svg>
                               </div>
                           </a>
-                          {% else %}
+          {% else %}
 
-                          <a href="{{module.url1}}" class="btn__wrapper">
+          <a href="{{module.url1}}" class="btn__wrapper">
                               <button class="btn">
                                 <h3 class="btn__text">{{module.btn1}}</h3>
                               </button>
                           </a>
-                          {% endif %}
+          {% endif %}
 
-                        {% endif %}
-            {% endif %}
+          {% endif %}
+          {% endif %}
 
 
 
-              {# Secondary Link #}
-            {% if module.cta2 %}
-                <div class="btn__wrapper">
-                  <button class="btn btn--secondary">
+          {# Secondary Link #}
+          {% if module.cta2 %}
+          <div class="btn__wrapper">
+            <button class="btn btn--secondary">
                       {% cta guid="{{ module.cta2 }}" %}
                   </button>
-                </div>
-            {% endif %} 
+          </div>
+          {% endif %}
         </div>
       </div>
-      
-
-         
-
-
-        
-
-{# Image Half #}
-
-        <div class="two-block__img-wrap">
-          <div class="two-block__panel"></div>
-          <img src="{{ module.img.src }}" alt="{{ module.img.alt}}" class="two-block__img"/>
-        </div>
-      
     </div>
-  
+
+
+
+
+
+
+
+    {# Image Half #}
+
+    <div class="two-block__img-wrap">
+      <div class="two-block__panel"></div>
+      <img src="{{ module.img.src }}" alt="{{ module.img.alt}}" class="two-block__img"/>
+        </div>
+
+    </div>
+
 
 </section>

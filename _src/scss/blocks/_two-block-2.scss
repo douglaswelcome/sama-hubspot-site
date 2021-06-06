@@ -2,23 +2,23 @@
   @extend %grid-6;
   align-items: center;
 
-  row-gap:3rem;
+  row-gap: 3rem;
 
 
   &__copy {
     grid-column: 1/ span 3;
     text-align: left;
-    display:grid;
+    display: grid;
     grid-auto-flow: row;
-    row-gap:1.5rem;
+    row-gap: 1.5rem;
   }
 
-  &__headline {
+  &__headline {}
 
-  }
-
-  &__subheadline {
-
+  &__subheadline {}
+  
+  &__btn {
+    margin-top:.5rem
   }
 
 
@@ -31,10 +31,11 @@
   &__img {
     line-height: 1;
     width: 100%;
+
     @include breakpoint(w-sm) {
       max-height: 25rem;
     }
-    
+
   }
 
 
@@ -49,81 +50,37 @@
 
 
 
-&.reflect {
-  .two-block-2__copy {
-    text-align: left;
-    grid-column: 4/span 3;
-    grid-row: 1;
-    padding-left: 0;
-    padding-right: 1.5rem;
-  }
-
-  .two-block-2__img-wrap {
-    grid-column: 1/ span 3;
-    grid-row: 1;
-
-  }
-
-  .two-block-2__img {
-    right: 0;
-    left: auto;
-
-  }
-
-  .two-block-2__copy,
-  .two-block-2__img-wrap {
-    @include breakpoint(w-sm) {
-      grid-row: auto;
-      grid-column: 1 /span 6;
-    }
-  }
-
-
-
-
-}
-}
-
-
-
-.dark-mode .two-block__panel {
-  background-color: var(--color-charcoal-4);
-
-}
-
-
-
-//everything from here out could be old or outdated. Take a look and see
-
-
-
-.two-block {
-
-
-  &--longform {
-    align-content: flex-start;
-    grid-template-columns: 1fr 30%;
-
-
-    &two-block--thank-you {
-      grid-template-columns: 1fr;
-    }
-
-
-    @include breakpoint(w-med) {
-      grid-template-columns: 1fr;
-      grid-row-gap: 2.25rem;
-    }
-
-    .copy {
+  &.reflect {
+    .two-block-2__copy {
       text-align: left;
-      align-self: flex-start;
+      grid-column: 4/span 3;
+      grid-row: 1;
+      padding-left: 0;
+      padding-right: 1.5rem;
+    }
 
-      @include breakpoint(w-med) {
-        padding: 0;
-      }
-
+    .two-block-2__img-wrap {
+      grid-column: 1/ span 3;
+      grid-row: 1;
 
     }
+
+    .two-block-2__img {
+      right: 0;
+      left: auto;
+
+    }
+
+    .two-block-2__copy,
+    .two-block-2__img-wrap {
+      @include breakpoint(w-sm) {
+        grid-row: auto;
+        grid-column: 1 /span 6;
+      }
+    }
+
+
+
+
   }
 }
