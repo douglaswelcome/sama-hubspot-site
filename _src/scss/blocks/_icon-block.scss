@@ -82,10 +82,7 @@
         justify-self: left;
         display: flex;
         margin-bottom: 1rem;
-        @include breakpoint (w-sm) {
-          justify-self: center;
 
-        }
   
         img {
           max-width: 3rem;
@@ -117,8 +114,6 @@
 
         @include breakpoint (w-sm) {
           padding-bottom: 1.5rem;
-
-        
         }
   
       }
@@ -126,7 +121,6 @@
         .block-img, .block-title, .block-body{
           grid-row:auto;
           grid-column: 2;
-
         }
     
       }
