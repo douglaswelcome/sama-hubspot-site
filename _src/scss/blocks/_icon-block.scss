@@ -82,8 +82,6 @@
         justify-self: left;
         display: flex;
         margin-bottom: 1rem;
-
-  
         img {
           max-width: 3rem;
           max-height: 3rem;
@@ -101,10 +99,7 @@
         align-items: top;
         margin-bottom: 1rem;
         font-weight:700;
-        @include breakpoint (w-sm) {
 
-      
-        }
   
       }
   
