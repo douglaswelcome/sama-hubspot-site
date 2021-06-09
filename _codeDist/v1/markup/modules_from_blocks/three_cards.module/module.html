@@ -28,12 +28,12 @@ bg-charcoal-0
 
 {# card 1 #}
     {% if module.card1.link.url.href %}
-    <a href="{{ module.card1.link.url.href }}" >
+    <a href="{{ module.card1.link.url.href }}" 
+    class="three-card__card card card--hover">
+      {%else %}
+      <div class="three-card__card card ">
     {% endif %}
-      <div class="three-card__card card 
-      {% if module.card1.link.url.href %}
-      card--hover
-      {% endif %}">
+     
        
         {% if module.card1.icon.src %}
           <div class="card__icon location-cards__icon">
@@ -66,21 +66,22 @@ bg-charcoal-0
         {% endif %}
 
 
-      </div>
+      
     {% if module.card1.link.url.href %}
     </a>
+    {%else %}
+  </div>
     {% endif %}
     
 
 
     {# card 2 #}
     {% if module.card2.link.url.href %}
-    <a href="{{ module.card2.link.url.href }}" >
+    <a href="{{ module.card2.link.url.href }}" 
+    class="three-card__card card card--hover">
+      {%else %}
+      <div class="three-card__card card ">
     {% endif %}
-      <div class="three-card__card card 
-      {% if module.card2.link.url.href %}
-      card--hover
-      {% endif %}">
        
         {% if module.card2.icon.src %}
           <div class="card__icon location-cards__icon">
@@ -113,22 +114,22 @@ bg-charcoal-0
         {% endif %}
 
 
-      </div>
-    {% if module.card2.link.url.href %}
-    </a>
-    {% endif %}
+        {% if module.card2.link.url.href %}
+      </a>
+      {%else %}
+    </div>
+      {% endif %}
 
 
 
 
-    {# card 2 #}
+    {# card 3 #}
     {% if module.card3.link.url.href %}
-    <a href="{{ module.card3.link.url.href }}" >
+    <a href="{{ module.card3.link.url.href }}" 
+    class="three-card__card card card--hover">
+      {%else %}
+      <div class="three-card__card card "">
     {% endif %}
-      <div class="three-card__card card 
-      {% if module.card3.link.url.href %}
-      card--hover
-      {% endif %}">
       
         {% if module.card3.icon.src %}
           <div class="card__icon location-cards__icon">
@@ -161,10 +162,11 @@ bg-charcoal-0
         {% endif %}
 
 
-      </div>
-    {% if module.card3.link.url.href %}
-    </a>
-    {% endif %}
+        {% if module.card3.link.url.href %}
+      </a>
+      {%else %}
+    </div>
+      {% endif %}
 
 
 
