@@ -58,7 +58,7 @@
     "resizable": false,
     "type": "image",
     "default": {
-      "src": "https://source.unsplash.com/random",
+      "src": "https://source.unsplash.com/random/1920x1080",
       "alt": null
     }
   },
