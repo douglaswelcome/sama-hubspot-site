@@ -1,35 +1,40 @@
 .panel-feature {  
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: var(--color-charcoal-2);
-    box-shadow: -1rem 1rem var(--color-charcoal-6);
+   @extend %grid-12;
+   background-color: var(--color-charcoal-3);
     overflow: hidden;
+    height: auto;
 
-    &__wrapper {
-        @extend %grid-12;
-        padding-left:1rem;
-    }
-    
+    // uncomment to round those corners
+    // border-radius:1rem;
 
-    &__img {
-        grid-column: span 4;
-        overflow: hidden;
-        margin-left: -.125rem;
-        background-size: cover;
-        background-position: center;
+    &__img-wrap {
+        grid-column: span 5;
+        width: auto;
+        height: auto;
 
         @include breakpoint (w-sm){
             grid-column: span 12; 
             height: 18rem;
+            height:100%;
         }
+    }
+
+    &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
     }
 
     &__copy {
-        grid-column: span 8;
+        
+        grid-column: span 7;
         color: var(--color-white);
-        padding: 6rem;
+        padding: 3rem;
+        display:grid;
+        grid-auto-flow: row;
+        row-gap:2rem;
+        height: min-content;
 
         @include breakpoint (w-sm){
             grid-column: span 12; 
@@ -37,10 +42,14 @@
         }
     }
 
+    &__headline {
+        margin-bottom:-.5rem;
+    }
+
     &__subheadline {}
 
     &__awards-wrapper {
-        padding-top: 2rem;
+
     }
 
     &__awards {
@@ -51,10 +60,6 @@
         margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
         width: calc(100% + var(--gap));
 
-        @include breakpoint (w-sm) {
-            column-gap: 1.5rem;
-            justify-content: center;
-        }
 
         img {
             margin: var(--gap) 0 0 var(--gap);
@@ -74,11 +79,10 @@
     }
 
     &--flip {
-        .panel-feature__img {
-            grid-column-start: 9/ span 4;
+        .panel-feature__img-wrap {
+            grid-column: 8/ span 5;
             grid-row: 1;
-            margin-right: -.125rem;
-            margin-left: 0rem;
+
 
             @include breakpoint (w-sm){
                 grid-column: 1/ span 12; 
@@ -87,7 +91,7 @@
         }
 
         .panel-feature__copy {
-            grid-column: 1/ span 8;
+            grid-column: 1/ span 7;
             grid-row: 1;
             @include breakpoint (w-sm){
                 grid-column: 1/ span 12; 
@@ -100,8 +104,3 @@
 
 }
 
-.dark-mode{
-    .panel-feature{
-    box-shadow: -1rem 1rem var(--color-charcoal-4);
-    }
-}
