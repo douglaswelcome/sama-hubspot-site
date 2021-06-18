@@ -37,7 +37,7 @@
         padding: 3rem;
         display: grid;
         grid-auto-flow: row;
-        row-gap: 2rem;
+        row-gap: 3rem;
         height: min-content;
 
         @include breakpoint (w-sm) {
