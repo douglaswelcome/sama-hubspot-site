@@ -1,52 +1,16 @@
 [{
-  "name": "image_position",
-  "label": "Image Left or Right?",
-  "required": false,
-  "locked": false,
-  "display": "select",
-  "choices": [
-    ["flip", "Image Right"],
-    ["null", "Image Left"]
-  ],
-  "type": "choice",
-  "default": "null"
-},
-{
-  "name": "darkmode",
-  "label": "Dark Mode?",
-  "required": false,
-  "locked": false,
-  "type": "boolean",
-  "default": true
-},
-
-{
-  "name": "bg_color",
-  "label": "Dark Mode Background Color",
-  "required": false,
-  "locked": false,
-  "display": "select",
-
-  "help_text": "",
-  "choices": [
-  [
-    "bg-charcoal-1",
-    "Charcoal 1 (Darkest)"
-  ],
-  [
-    "bg-charcoal-2",
-    "Charcoal 2 (Medium Dark)"
-  ],
-  [
-    "bg-charcoal-3",
-    "Charcoal 3 (Light Dark)"
-  ]
-  ],
-  "type": "choice",
-  "placeholder": "",
-  "default":  "bg-charcoal-1"   
-
-},
+    "name": "image_position",
+    "label": "Image Left or Right?",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+      ["flip", "Image Right"],
+      ["null", "Image Left"]
+    ],
+    "type": "choice",
+    "default": "null"
+  },
   {
     "name": "img",
     "label": "Side Image",
@@ -102,46 +66,47 @@
     "responsive": true,
     "resizable": false,
     "type": "image",
-    "default": [
+    "default": [{
+        "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+        "alt": null
+      },
       {
-      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
-      "alt": null
-    },
-    {
-      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
-      "alt": null
-    },{
-      "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
-      "alt": null
-    }
-   ]
+        "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+        "alt": null
+      }, {
+        "src": "https://bcorporation.net/sites/all/themes/bcorp/assets/images/logo--white--certified-b-corporation.png",
+        "alt": null
+      }
+    ]
   },
   {
-  "name": "btn_text",
-  "label": "Button Text",
-  "required": false,
-  "locked": false,
-  "validation_regex": "^.{1,15}$",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": "Learn More" },
+    "name": "btn_text",
+    "label": "Button Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "^.{1,15}$",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Learn More"
+  },
   {
-  "name": "btn_link",
-  "label": "Button Link",
-  "required": false,
-  "locked": false,
-  "validation_regex": "",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": null }
+    "name": "btn_link",
+    "label": "Button Link",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null
+  }
 
 
 
