@@ -13,10 +13,10 @@
         
     {% endif %}
     ">
-            <div class="panel-feature__img-wrap">
+        <div class="panel-feature__img-wrap">
             <img src="{{module.img.src}}" class="panel-feature__img" />
         </div>
-  
+
 
 
             <div class="panel-feature__copy">
@@ -34,36 +34,24 @@
                     <div class="panel-feature__awards">
                         {% for award in module.awards %}
                         <img src="{{ award.src }}" alt="{{ award.alt }}" />
-                {% endfor %}
-            </div>
+                    {% endfor %}
+                </div>
                     </div>
                     {% endif %}
 
-                    {% if module.cta1 %}
+                    {% if module.btn_link %}
                     <div class="panel-feature__btn-row">
-                        <div class="btn__row">
-                            {% if module.cta1 %}
+                        <div class="btn__row ">
                             <div class="btn__wrapper">
                                 <button class="btn">
-                            {% cta guid="{{ module.cta1 }}" %}
-                      </button>
+                                    <h3 class="btn__text">{{module.btn_text}}</h3>
+                                </button>
                             </div>
-                            {% endif %}
-                            {% if module.cta2 %}
-                            <div class="btn__wrapper">
-                                <button class="btn btn--secondary">
-                          {% cta guid="{{ module.cta2 }}" %}
-                        </button>
-                            </div>
-                            {% endif %}
                         </div>
-
-
-
                     </div>
                     {% endif %}
-                </div>
 
+                </div>
             </div>
 </section>
 {% endif %}
