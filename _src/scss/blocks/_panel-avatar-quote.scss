@@ -6,7 +6,7 @@
     &__back {
         grid-row: 1;
         grid-column: 5 / span 7;
-        background-color: var(--color-charcoal-1);
+        background-color: var(--color-charcoal-4);
         height:100%;
 
         @include breakpoint (w-sm) {
