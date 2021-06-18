@@ -2,9 +2,6 @@
   --font-brown: "Brown",
     Arial,
     sans-serif;
-  --font-barlow: "Barlow Condensed", 
-    Arial, 
-    sans-serif;
 }
 
 body {
@@ -64,11 +61,9 @@ h2 {
 }
 
 h3 {
-  font-family: var(--font-barlow);
-  text-transform: uppercase;
+  font-family: var(--font-brown);
   font-weight: 700;
-  font-size: 1.25rem;
-  padding-bottom: 0.25rem;
+  font-size: 1.125rem;
 
   @include breakpoint(w-med) {
 
