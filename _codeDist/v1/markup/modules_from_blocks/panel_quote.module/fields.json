@@ -18,7 +18,7 @@
 "show_emoji_picker": false,
 "type": "text",
 "placeholder": "",
-"default": "Give me the whole slice" },
+"default": null },
 {
 "name": "author",
 "label": "Quote Author",
