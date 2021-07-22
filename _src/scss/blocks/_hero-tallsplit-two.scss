@@ -1,0 +1,85 @@
+.hero_tallsplit_two{
+    @extend %grid-12;
+    column-gap: 2rem;
+ 
+    @include breakpoint(w-sm) {
+        column-gap: 0.125rem;
+    }
+
+    &__copy {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        grid-column: 1 / span 5;
+        grid-row: 1;
+
+        @include breakpoint(w-sm) {
+            grid-column: 1 / span 12;
+            padding-bottom: 3rem;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &__page-title{
+        margin-bottom: 1rem;
+        font-family: var(--font-brown);
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--color-charcoal-5);
+        text-transform: uppercase;
+    }
+
+    &__btn-row {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center; 
+
+    }
+
+    &__img-wrapper {
+        grid-column: 6 / -1;
+        grid-row: 1;
+        position: relative;
+        img{
+            display: block;
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            margin: 0 0 2rem 2rem;
+            border-radius: 32px;
+            object-fit: cover;
+            position: relative;
+        }
+        @include breakpoint(w-sm) {
+            grid-row: 2;
+            grid-column: 1 /span 12
+        }
+    }
+    /*replace with mask for transparent background once safari fully supports*/
+    &__img-gradient{
+        width: 85%;
+        height: 95%;
+        background: 
+        linear-gradient(var(--color-charcoal-1), var(--color-charcoal-1)) padding-box,
+        linear-gradient(270deg, #FF9432 0%, #FFFA0C 100%) border-box;
+        border: 6px solid transparent;
+        border-radius: 32px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+}

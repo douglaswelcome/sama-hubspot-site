@@ -3,11 +3,10 @@
 dark-mode
 {{ module.bg_color }}
 {% endif %}">
-  <div class="icon-block">
-    <div class="
-      icon-block__intro
+  <div class="bodystatic_iconcopy">
+    <div class="bodystatic_iconcopy__intro
       {% if module.centercopy == true %}
-      icon-block__intro-center
+      bodystatic_iconcopy__intro--center
       {% endif %}">
       {%  if module.headline %}
         <h2>
@@ -15,7 +14,7 @@ dark-mode
         </h2>
       {% endif %}
       {% if module.subheadline %}
-      <div class="icon-block__subheadline">
+      <div class="bodystatic_iconcopy__subheadline">
         <h5>
           {{ module.subheadline }}
         </h5>
@@ -42,45 +41,23 @@ dark-mode
 
       {% endif %}
     </div>
-
-
-
-    <div class="icon-block__row icon-block__row--1">
-      {% for icon in module.row1_icons %}
-        {% if icon.img.src %}
-        <div class="block-img">
-          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-        </div>
-        {% endif %}
-        {% if icon.title %}
-        <h5 class="block-title">
-          {{ icon.title }}
-        </h5>
-        {% endif %}
-        <p class="block-body">
-          {{ icon.body_copy }}
-        </p>
-
-        {% endfor %}
-      </div>
-
-      {% if module.row2_icons %}
-      <div class="icon-block__row icon-block__row--2">
-        {% for icon in module.row2_icons %}
+    <div class="bodystatic_iconcopy__row">
+      {% for icon in module.icons %}
+        <div class="bodystatic_iconcopy__icon">
           {% if icon.img.src %}
-            <div class="block-img">
-              <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-            </div>
+          <div class="block-img">
+            <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+          </div>
           {% endif %}
           {% if icon.title %}
           <h5 class="block-title">
             {{ icon.title }}
           </h5>
           {% endif %}
-        <p class="block-body">
-          {{ icon.body_copy }}
-        </p>
-        {% endfor %}
-      </div>
-      {%endif%}
+          <p class="block-body">
+            {{ icon.body_copy }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
 </section>

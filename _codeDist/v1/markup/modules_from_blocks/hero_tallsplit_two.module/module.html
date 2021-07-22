@@ -1,0 +1,36 @@
+<!-- module html  -->
+<section class="dark-mode bg-charcoal-1">
+    <div class="hero_tallsplit_two">
+        <div class="hero_tallsplit_two__copy">
+            {% if module.pageTitle == true %}
+            <p class="hero_tallsplit_two__page-title">{{content.name}}</p>
+            {% endif %}
+            <h1>{{module.headline}}</h1>
+            {% if module.subheadline %}
+            <h5>{{module.subheadline}}</h5>
+            {% endif %}
+            <div class="hero_tallsplit_two__btn-row">
+                <div class="btn__row">
+                    {% if module.cta1 %}
+                    <div class="btn__wrapper">
+                        <button class="btn">
+                            {% cta guid="{{ module.cta1 }}" %}
+                        </button>
+                    </div>
+                    {% endif %}
+                    {% if module.cta2 %}
+                    <div class="btn__wrapper">
+                        <button class="btn btn--secondary">
+                            {% cta guid="{{ module.cta2 }}" %}
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="hero_tallsplit_two__img-wrapper">
+            <div class="hero_tallsplit_two__img-gradient"></div>
+            <img src="{{ module.image.src}}" alt="module.img.alt" />
+        </div>
+    </div>
+</section>

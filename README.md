@@ -39,6 +39,7 @@ Right now this tooling relies on npm-scripts and the gulp-imagemin script, but H
 * run `npm install`
 * Create a `hubspot.config.yml` file, either manually or with `hs init`
 * Follow Instructions here to create a personal key for your sandbox account: https://developers.hubspot.com/docs/cms/personal-cms-access-key
+* Enter `DEV` as the unique name to reference your account
 * create a `.env` file
 * Put in your sandbox rott credentials to your `.env` like so:
     ```

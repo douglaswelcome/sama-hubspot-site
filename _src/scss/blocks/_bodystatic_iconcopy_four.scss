@@ -1,0 +1,37 @@
+.bodystatic_iconcopy_four{
+    @extend %grid-12; 
+    align-items: baseline;
+
+    @include breakpoint(w-sm){
+        width: 100%;
+    }
+    h2{
+        grid-column: span 12;
+        margin-bottom: 3rem;
+        @include breakpoint(w-sm){
+            margin-bottom: 0;
+        }
+    }
+    &_icon{
+        grid-row: 2;
+        grid-column: span 3;
+        img{
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        &_title{
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        &.text-center{
+            img{
+                margin: 0 auto 1.5rem auto;
+            }
+        }
+        @include breakpoint(w-sm){
+            grid-row: auto;
+            grid-column: 3 / span 8;
+            margin-top: 3rem;
+        }
+    }
+}
