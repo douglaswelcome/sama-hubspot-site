@@ -21,7 +21,7 @@
             grid-column: 1 /span 12;
         }
     }
-    .bodystatic_punchy_text_one_content{
+    &_content{
         width: calc(100% + 2rem);
         margin-left: -2rem;
         grid-column: 5 / -1;

@@ -3,10 +3,10 @@
 dark-mode
 {{ module.bg_color }}
 {% endif %}">
-  <div class="bodystatic_iconcopy">
-    <div class="bodystatic_iconcopy__intro
+  <div class="bodystatic_iconcopy_three">
+    <div class="bodystatic_iconcopy_three_intro
       {% if module.centercopy == true %}
-      bodystatic_iconcopy__intro--center
+      bodystatic_iconcopy_three_intro--center
       {% endif %}">
       {%  if module.headline %}
         <h2>
@@ -14,7 +14,7 @@ dark-mode
         </h2>
       {% endif %}
       {% if module.subheadline %}
-      <div class="bodystatic_iconcopy__subheadline">
+      <div class="bodystatic_iconcopy_three_subheadline">
         <h5>
           {{ module.subheadline }}
         </h5>
@@ -41,20 +41,18 @@ dark-mode
 
       {% endif %}
     </div>
-    <div class="bodystatic_iconcopy__row">
+    <div class="bodystatic_iconcopy_three_row">
       {% for icon in module.icons %}
-        <div class="bodystatic_iconcopy__icon">
+        <div class="bodystatic_iconcopy_three_icon">
           {% if icon.img.src %}
-          <div class="block-img">
-            <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
-          </div>
+          <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
           {% endif %}
           {% if icon.title %}
-          <h5 class="block-title">
+          <h5>
             {{ icon.title }}
           </h5>
           {% endif %}
-          <p class="block-body">
+          <p>
             {{ icon.body_copy }}
           </p>
         </div>

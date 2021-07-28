@@ -1,17 +1,18 @@
 .bodystatic_panel_quote{
     @extend %grid-12;
-    .bodystatic_panel_quote_inner{
+    &_inner{
         grid-column: 3 / span 8;
         display: grid;
         column-gap: 2rem;
         grid-template-columns: repeat(8,minmax(0,1fr));
+        margin-bottom: 2rem; /*preserve spacing with gradient*/
         position: relative;
         z-index: 0;
         @include breakpoint (w-med) {
             grid-column: 2 / span 10;
         }
     }
-    .bodystatic_panel_quote_gradient{
+    &_gradient{
         width: 100%;
         height: 100%;
         background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, #78C2ED 0%, #7C7FDA 35.91%, #795BE0 76.49%, #706EE2 99.27%) border-box;
@@ -25,7 +26,7 @@
             grid-column: 2 / span 8;
         }
     }
-    .bodystatic_panel_quote_content{
+    &_content{
         grid-column: 1 / span 4;
         width: calc(100% + 2rem);
         border-top-left-radius: 32px;
@@ -40,16 +41,16 @@
             border-bottom-right-radius: 32px;
         }
     }
-    .bodystatic_panel_quote_txt{
+    &_txt{
         margin-bottom: 1.5rem;
         font-size: 1.25rem;
     }
-    .bodystatic_panel_quote_citation{
+    &_citation{
         font-size: 1.1rem;
         font-weight: 600;
         text-align: right;
     }
-    .bodystatic_panel_quote_imgwrap{
+    &_imgwrap{
         grid-column: 5 / span 3;
         border-top-right-radius: 32px;
         border-bottom-right-radius: 32px;
