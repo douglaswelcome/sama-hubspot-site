@@ -1,0 +1,35 @@
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}">
+    <div class="bodystatic_imgcard_three">
+        {%  if module.headline %}
+        <h2>
+          {{ module.headline }}
+        </h2>
+        {% endif %}
+        {% for card in module.cards %}
+        <div class="bodystatic_imgcard_three_card">
+          {% if card.img.src %}
+            <img src="{{ card.img.src }}" alt="{{ card.img.alt }}" />
+          {% endif %}
+          <div class="bodystatic_imgcard_three_copy">
+            {% if card.title %}
+            <h5>
+              {{ card.title }}
+            </h5>
+            {% endif %}
+            <p>
+              {{ card.body_copy }}
+            </p>
+            {% if card.url %}
+                <a href="{{ module.card.url}}">
+                  {{card.link_txt}}
+                </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</section>
