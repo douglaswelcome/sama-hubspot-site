@@ -1,0 +1,201 @@
+[
+    {
+        "name": "darkmode",
+        "label": "Dark Mode?",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": false
+    },
+    {
+        "name": "bg_color",
+        "label": "Dark Mode Background Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "",
+        "choices": [
+        [
+            "bg-charcoal-0",
+            "Black"
+        ],
+        [
+            "bg-charcoal-1",
+            "Charcoal 1 (Darkest)"
+        ],
+        [
+            "bg-charcoal-2",
+            "Charcoal 2 (Medium Dark)"
+        ],
+        [
+            "bg-charcoal-3",
+            "Charcoal 3 (Light Dark)"
+        ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "bg-charcoal-1"
+    },
+    {
+        "name": "cols",
+        "label": "Columns",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": null,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [
+            {
+                "id": "",
+                "name": "header",
+                "label": "Column Header",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "Leave Blank to Skip",
+                "default": null
+            }
+        ],
+        "type": "group",
+        "default": [{}]
+    },
+    {
+        "name": "rows",
+        "label": "Rows",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": null,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [
+            {
+                "name": "theme_color",
+                "label": "Theme Color",
+                "required": false,
+                "locked": false,
+                "display": "select",
+                "help_text": "",
+                "choices": [
+                    [
+                        "purple",
+                        "Magenta Purple"
+                    ],
+                    [
+                        "green",
+                        "Green Blue"
+                    ],
+                    [
+                        "red_orange",
+                        "Red Orange"
+                    ],
+                    [
+                        "blue",
+                        "Dark Blue Light Blue"
+                    ],
+                    [
+                        "pink_red",
+                        "Red Pink"
+                    ],
+                    [
+                        "blue_purple",
+                        "Blue Purple"
+                    ]
+                ],
+                "type": "choice",
+                "placeholder": "",
+                "default": ""
+        },
+        {
+            "name": "title",
+            "label": "Title",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": "Goldblumology"
+        },
+        {
+            "name": "cta_text",
+            "label": "Row CTA Text",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": "Learn More"
+        },
+        {
+            "name": "cta_url",
+            "label": "Row CTA URL",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": ""
+        },
+        {
+        "name": "cells",
+        "label": "Row Cells",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": 3,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [
+            {
+                "name": "icon",
+                "label": "Icon",
+                "required": false,
+                "locked": false,
+                "inline_help_text": "Leave Blank to not include",
+                "help_text": "",
+                "responsive": true,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                  "src": "",
+                  "alt": null
+                }
+              },
+              {
+                "id": "",
+                "name": "body_copy",
+                "label": "Content",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "richtext",
+                "placeholder": "",
+                "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
+              }
+        ],
+        "type": "group",
+        "default": [{}]
+        }
+        ],
+        "type": "group",
+        "default": [{}]
+    }
+]

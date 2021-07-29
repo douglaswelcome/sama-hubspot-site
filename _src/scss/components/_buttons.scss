@@ -65,12 +65,6 @@
     }
 
   }
-
-
-
-  
-
-
 }
 
 
@@ -108,9 +102,91 @@
       color: var(--color-white);
     }
   }
+  &--gradient{
+    background-color: var(--color-charcoal-2);
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    position: relative;
+    transition: all linear 0.1s;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0; 
+        right: 0; 
+        bottom: 0; 
+        left: 0;
+        z-index: -1;
+        margin: -2px;
+        border-radius: inherit;
+        background: linear-gradient(90deg, $color-gradient-sunshine);
+    }
+    &:hover{
+        &:before{
+            background: linear-gradient(360deg, $color-gradient-sunshine);
+        }
+    }
+    &-purple{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-magenta-purple);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-magenta-purple);
+        }
+      }
+    }
+    &-green{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-green-blue);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-green-blue);
+        }
+      }
+    }
+    &-red_orange{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-red-orange);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-red-orange);
+        }
+      }
+    }
+    &-blue{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-blue);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-blue);
+        }
+      }
+    }
+    &-pink_red{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-pink-red);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-pink-red);
+        }
+      }
+    }
+    &-blue_purple{
+      &:before{
+        background: linear-gradient(90deg, $color-gradient-blue-purple);
+      }
+      &:hover{
+        &:before{
+          background: linear-gradient(360deg, $color-gradient-blue-purple);
+        }
+      }
+    }
+  }
 }
-
-
 
 
 
