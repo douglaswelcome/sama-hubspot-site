@@ -1,0 +1,48 @@
+<section
+class="
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+{% endif %}
+"
+>
+<table class="bodystatic_table">
+    <thead>
+      <tr>
+        {% for col in module.cols %}
+        <th>
+            <h4>{{col.header}}</h4>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+        {% for row in module.rows %}
+            <tr class="bodystatic_table_row{% if row.theme_color %}-{{ row.theme_color }}{% endif %}">
+                <td>
+                    <h5>{{row.title}}</h5>
+                </td>
+                {% for cell in row.cells %}
+                <td>
+                    {% if cell.icon.src %}
+                    <div class="bodystatic_table_icontxt">
+                        <img src="{{cell.icon.src}}" alt="{{cell.icon.alt}}" />
+                        <p>{{cell.body_copy}}</p>
+                    </div>
+                    {% else %}
+                    <p>{{cell.body_copy}}</p>
+                    {% endif %}
+                </td>
+                {% endfor %}
+                <td>
+                    {% if row.cta_url %}
+                    <a class="btn btn--secondary btn--gradient btn--gradient{% if row.theme_color %}-{{ row.theme_color }}{% endif %}" href="{{row.cta_url}}">
+                        <p class="btn__text">{{row.cta_text}}</p>
+                    </a>
+                    {% endif %}
+                </td>
+            </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>

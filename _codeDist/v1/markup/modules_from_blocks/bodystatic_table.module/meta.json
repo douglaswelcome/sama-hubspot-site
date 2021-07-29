@@ -4,7 +4,7 @@
   "global": false,
   "help_text": "",
   "host_template_types": ["PAGE"],
-  "label": "Two Column Image & Text",
+  "label": "Fancy Table",
   "js_assets": [],
   "other_assets": [],
   "smart_type": "NOT_SMART",

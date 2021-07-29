@@ -1,0 +1,134 @@
+[
+  {
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-2"
+
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "name": "item1_title",
+    "label": "Item 1 Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null 
+  },
+  {
+    "name": "item1_content",
+    "label": "Item 1 Content",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "richtext",
+    "default": null 
+  },
+  {
+    "name": "item2_title",
+    "label": "Item 2 Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null 
+  },
+  {
+    "name": "item2_content",
+    "label": "Item 2 Content",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "richtext",
+    "default": null 
+  },
+  {
+    "name": "con_pretitle",
+    "label": "Conclusion PreTitle",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null 
+  },
+  {
+    "name": "con_title",
+    "label": "Conclusion Title",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null 
+  },
+  {
+    "name": "con_content",
+    "label": "Conclusion Content",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "richtext",
+    "default": null 
+  }
+]

@@ -50,6 +50,69 @@
         "default": "bg-charcoal-1"
     },
     {
+        "name": "theme_color",
+        "label": "Theme Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "",
+        "choices": [
+            [
+                "purple",
+                "Magenta Purple"
+            ],
+            [
+                "green",
+                "Green Blue"
+            ],
+            [
+                "red_orange",
+                "Red Orange"
+            ],
+            [
+                "blue",
+                "Dark Blue Light Blue"
+            ],
+            [
+                "pink_red",
+                "Red Pink"
+            ],
+            [
+                "blue_purple",
+                "Blue Purple"
+            ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": ""
+    },
+    {
+        "name": "section_link",
+        "label": "Section Anchor Link",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "preheadline",
+        "label": "Pre-Headline",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
         "name": "headline",
         "label": "Headline",
         "sortable": false,
@@ -88,8 +151,65 @@
         }
     },
     {
+        "name": "list_items",
+        "label": "Bullet List Items",
+        "inline_help_text": "Use if one of the columns content is a list",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": 4,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [{
+            "name": "icon",
+            "label": "Bullet Icon",
+            "required": false,
+            "locked": false,
+            "inline_help_text": "Replaces standard bullet points",
+            "help_text": "",
+            "responsive": true,
+            "resizable": false,
+            "type": "image",
+            "default": {
+              "src": "",
+              "alt": null
+            }
+          },
+          {
+            "name": "title",
+            "label": "Title",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": "Goldblumology"
+          },
+          {
+            "id": "",
+            "name": "body_copy",
+            "label": "Content",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "richtext",
+            "placeholder": "",
+            "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
+          }
+        ],
+        "type": "group",
+        "default": [{}]
+    },
+    {
         "name": "quote",
         "label": "Quote",
+        "inline_help_text": "Use if one of the columns content is a quote",
         "required": false,
         "locked": false,
         "validation_regex": "",
