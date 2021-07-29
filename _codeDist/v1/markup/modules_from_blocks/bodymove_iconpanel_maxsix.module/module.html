@@ -1,0 +1,28 @@
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %} 
+ bodymove_iconpanel_maxsix">
+    <div class="bodymove_iconpanel_maxsix_panels">
+        {% for panel in module.panels %}
+            <div class="bodymove_iconpanel_maxsix_panel {% if loop.index == 1 %}active{% endif %}" data-at="{{loop.index}}">
+                <h2>{{module.headline}}</h2>
+                <div class="bodymove_iconpanel_maxsix_panel_content">
+                    <h3>{{ panel.title }}</h3>
+                    {{ panel.body_copy }}
+                </div>
+                <img src="{{ panel.img.src }}" alt="{{ panel.img.alt }}" />
+            </div>
+        {% endfor %}
+        <div class="bodymove_iconpanel_maxsix_slide_panel prev inactive"></div>
+        <div class="bodymove_iconpanel_maxsix_slide_panel next"></div>
+    </div>
+    <div class="bodymove_iconpanel_maxsix_nav">
+        {% for panel in module.panels %}
+            <h4 class="bodymove_iconpanel_maxsix_nav_item {% if loop.index == 1 %}active{% endif %}" data-at="{{loop.index}}">
+                <span>0{{ loop.index }}</span> {{ panel.title }}
+            </h4>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,50 @@
+.bodystatic_iconcopy_three{
+    @extend %grid-12; 
+
+    @include breakpoint(w-sm){
+        width: 100%;
+    }
+
+    &_intro {
+        grid-column: 2 /span 10;
+        margin-bottom: 3rem;
+
+        &--center {
+          grid-column: 3 /span 8;
+          text-align: center;
+        }
+        @include breakpoint(w-sm){
+            grid-column: 1 /span 12;
+        }
+    }
+    
+    &_subheadline {
+        margin: 1rem 0;
+    }
+    
+    &_row {
+        grid-column: 3 /span 8;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+    
+        img {
+          max-width: 3rem;
+          max-height: 3rem;
+          width: 100%;
+        }
+        h5 {
+          margin-bottom: 1rem;
+          font-weight:700;
+        }
+        p {
+          @include breakpoint (w-sm) {
+            padding-bottom: 1.5rem;
+          }
+        }
+        @include breakpoint(w-sm){
+          grid-column: 3 /span 8;
+          grid-template-columns: 1fr;
+        }
+    }
+}

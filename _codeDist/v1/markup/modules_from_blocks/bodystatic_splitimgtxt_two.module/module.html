@@ -1,0 +1,125 @@
+<section
+class="
+{% if module.darkmode == true %}
+    dark-mode
+    {{ module.bg_color }}
+{% endif %}
+"
+>
+    <div {% if module.section_link %} id="{{module.section_link}}" {% endif %} class="bodystatic_splitimgtxt_two {% if module.theme_color %}bodystatic_splitimgtxt_two-{{module.theme_color}}{% endif %}">
+        <div class="bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-left{% else %}-right{% endif %}">
+            {% if module.preheadline %}
+                <h2 class="bodystatic_splitimgtxt_two_preheadline">{{ module.preheadline }}</h2>
+                <h3 class="h2">{{module.headline}}</h3>
+            {% else %}
+                <h2>{{module.headline}}</h2>
+            {% endif %}
+            
+            {{module.txt_body}}
+            <div class="two-block-2__btn">
+                <div class="btn__row">
+                    {% if module.type1=="cta" %}
+                        {% if module.cta1 %}
+                            {% if module.cta1_type==true %}
+                                <div class="hyperlink__wrapper icon-block__link">
+                                    <div class="hyperlink__ahref">
+                                    {% cta guid="{{ module.cta1 }}" %}
+            
+                                    </div>
+                                    <div class="hyperlink__arrow ">
+                                    <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+                                        <style type="text/css">
+            
+                                        </style>
+                                        <path class="st0"
+                                        d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+                                                                    C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+                                                                    c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+                                    </svg>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="btn__wrapper">
+                                    <button class="btn">
+                                        {% cta guid="{{ module.cta1 }}" %}
+                                    </button>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {# Link Markup #}
+                    {% if module.type1=="link" %}
+                        {% if module.url1 %}
+                            {% if module.cta1_type==true %}
+                                <a href="{{module.url1}}" class="hyperlink__wrapper icon-block__link">
+                                        <div class="hyperlink__ahref">
+                                        <h5 class="hyperlink__text">{{module.btn1}}</h5>
+                                        </div>
+                                        <div class="hyperlink__arrow ">
+                                        <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 518 435.8" xml:space="preserve">
+                                            <path class="st0" d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+                                                            C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+                                                            c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" />
+                                        </svg>
+                                        </div>
+                                    </a>
+                            {% else %}
+                                <a href="{{module.url1}}" class="btn__wrapper">
+                                    <button class="btn">
+                                    <h3 class="btn__text">{{module.btn1}}</h3>
+                                    </button>
+                                </a>
+                        {% endif %}
+                    {% endif %}
+                    {% endif %}
+            
+                    {# Secondary Link #}
+                    {% if module.cta2 %}
+                    <div class="btn__wrapper">
+                        <button class="btn btn--secondary">
+                            {% cta guid="{{ module.cta2 }}" %}
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}">
+            {% if module.quote %}  
+                {% if module.img.src %}
+                    <div class="bodystatic_splitimgtxt_two_imgwrap">
+                        <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
+                    </div>
+                    <div class="bodystatic_splitimgtxt_two_quote_content">
+                        <div class="bodystatic_splitimgtxt_two_quote_icon">&#8220;</div>
+                        <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
+                        <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
+                    </div>
+                {% else %}
+                    <div class="bodystatic_splitimgtxt_two_quote_content">
+                        <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
+                        <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
+                    </div>
+                {% endif %}
+            {% endif %}
+            {% if module.img.src %}
+                <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
+            {% endif %}
+            {% if module.list_items %}
+                {% for item in module.list_items %}
+                    <div class="bodystatic_splitimgtxt_two_list_item">
+                        {% if item.icon.src %}
+                            <img src="{{item.icon.src}}" alt="{{item.icon.alt}}" />
+                        {% endif %}
+                        <div class="bodystatic_splitimgtxt_two_list_item_copy">
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.body_copy}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>

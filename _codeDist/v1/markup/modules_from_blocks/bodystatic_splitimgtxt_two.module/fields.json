@@ -1,0 +1,326 @@
+[
+    {
+        "name": "text_position",
+        "label": "Text Left or Right?",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "choices": [
+          ["left", "Text Left"],
+          ["right", "Text Right"]
+        ],
+        "type": "choice",
+        "default": "left"
+    },
+    {
+        "name": "darkmode",
+        "label": "Dark Mode?",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": false
+    },
+    {
+        "name": "bg_color",
+        "label": "Dark Mode Background Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "",
+        "choices": [
+        [
+            "bg-charcoal-0",
+            "Black"
+        ],
+        [
+            "bg-charcoal-1",
+            "Charcoal 1 (Darkest)"
+        ],
+        [
+            "bg-charcoal-2",
+            "Charcoal 2 (Medium Dark)"
+        ],
+        [
+            "bg-charcoal-3",
+            "Charcoal 3 (Light Dark)"
+        ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "bg-charcoal-1"
+    },
+    {
+        "name": "theme_color",
+        "label": "Theme Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "",
+        "choices": [
+            [
+                "purple",
+                "Magenta Purple"
+            ],
+            [
+                "green",
+                "Green Blue"
+            ],
+            [
+                "red_orange",
+                "Red Orange"
+            ],
+            [
+                "blue",
+                "Dark Blue Light Blue"
+            ],
+            [
+                "pink_red",
+                "Red Pink"
+            ],
+            [
+                "blue_purple",
+                "Blue Purple"
+            ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": ""
+    },
+    {
+        "name": "section_link",
+        "label": "Section Anchor Link",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "preheadline",
+        "label": "Pre-Headline",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "headline",
+        "label": "Headline",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "txt_body",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave blank to omit this field",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "richtext",
+        "default": ""
+    },
+    {
+        "name": "img",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+            "src": null,
+            "alt": null
+        }
+    },
+    {
+        "name": "list_items",
+        "label": "Bullet List Items",
+        "inline_help_text": "Use if one of the columns content is a list",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": 4,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [{
+            "name": "icon",
+            "label": "Bullet Icon",
+            "required": false,
+            "locked": false,
+            "inline_help_text": "Replaces standard bullet points",
+            "help_text": "",
+            "responsive": true,
+            "resizable": false,
+            "type": "image",
+            "default": {
+              "src": "",
+              "alt": null
+            }
+          },
+          {
+            "name": "title",
+            "label": "Title",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": "Goldblumology"
+          },
+          {
+            "id": "",
+            "name": "body_copy",
+            "label": "Content",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "richtext",
+            "placeholder": "",
+            "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
+          }
+        ],
+        "type": "group",
+        "default": [{}]
+    },
+    {
+        "name": "quote",
+        "label": "Quote",
+        "inline_help_text": "Use if one of the columns content is a quote",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": ""
+    },
+    {
+        "name": "quote_citation",
+        "label": "Quote Citation",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": ""
+    },
+    {
+        "name": "type1",
+        "label": "Primary Link Type",
+        "required": true,
+        "locked": false,
+        "display": "radio",
+        "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
+        "help_text": "",
+        "choices": [
+        [
+            "cta",
+            "CTA"
+        ],
+        [
+            "link",
+            "Link"
+        ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "cta"
+    },
+    {
+        "name": "cta1_type",
+        "label": "Link Style",
+        "required": true,
+        "locked": false,
+        "display": "radio",
+        "inline_help_text": "Is this a button or a hyperlink?",
+        "help_text": "",
+        "choices": [
+        [
+            "false",
+            "Button"
+        ],
+        [
+            "true",
+            "Hyperlink"
+        ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "false"
+    },
+    {
+        "name": "btn1",
+        "label": "Link/Button Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Learn More"
+    },
+    {
+        "name": "url1",
+        "label": "Link URL",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "For anchors use `#your-anchor`",
+        "help_text": "",
+        "default": null
+    },
+    {
+        "name": "cta1",
+        "label": "Primary CTA",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "If using a Hubspot CTA, select one that matches your type (button or link)",
+        "help_text": "",
+        "type": "cta",
+        "default": null
+    },
+    {
+        "name": "cta2",
+        "label": "Secondary CTA",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "",
+        "help_text": "",
+        "type": "cta",
+        "default": null
+  }
+]

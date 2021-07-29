@@ -1,0 +1,67 @@
+[
+    {
+        "name": "pageTitle",
+        "label": "Show Page Title",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": false
+    }, 
+    {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Headline"
+    }, 
+    {
+        "name": "subheadline",
+        "label": "Subheadline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Subheadline"
+    },
+    {
+
+        "name": "image",
+        "label": "Hero Image",
+        "required": false,
+        "locked": false,
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+            "src": "https://source.unsplash.com/random",
+            "alt": ""
+        }
+    },
+    {
+        "name": "cta1",
+        "label": "Primary CTA",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "type": "cta",
+        "default": null 
+    },
+    {
+        "name": "cta2",
+        "label": "Secondary CTA",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "type": "cta",
+        "default": null 
+    }
+]

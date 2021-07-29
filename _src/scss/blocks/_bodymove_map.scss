@@ -1,0 +1,107 @@
+.bodymove_map{
+    @extend %grid-12; 
+    h2{
+        grid-column: 2 / span 10;
+        margin-bottom: 2rem;
+    }
+    &_wrapper{
+        grid-column: 2 / span 10;
+        height: 500px;
+        border-radius: 32px;
+        background-color: var(--color-charcoal-2);
+        position: relative;
+    }
+    #map{
+        height: 100%;
+        border-radius: 32px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &_marker {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: linear-gradient(270deg, #FF3232 0%, #FF33AD 100%);
+        &_label{
+            text-align: center;
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            width: fit-content;
+            padding: 0.1rem 0.25rem;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            color: #000;
+            background: yellow;
+            &.right{
+                right: unset;
+                left: 5px;
+            }
+            &.top-left{
+                top: unset;
+                bottom: 10px;
+                right: 5px;
+            }
+            &.top-right{
+                top: unset;
+                right: unset;
+                bottom: 10px;
+            }
+        }
+    }
+
+    .mapboxgl-popup-content{
+        color: var(--color-charcoal-1);
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .mapboxgl-ctrl-attrib {
+        display: none;
+    }
+
+    .mapboxgl-ctrl-logo {
+        display: none;
+    }
+    @include breakpoint(w-sm){
+        width: 100%;
+        h2,
+        &_wrapper{
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+.bodystatic_iconbullet_four{
+    margin-top: 3rem;
+    @extend %grid-12;
+
+    @include breakpoint(w-sm){
+        width: 100%;
+    }
+
+    &_icon{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 45px 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        &_title{
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        @include breakpoint(w-sm){
+            grid-row: auto;
+            grid-column: 3 / span 8;
+            margin-top: 3rem;
+        }
+    }
+}

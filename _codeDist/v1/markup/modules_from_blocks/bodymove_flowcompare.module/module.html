@@ -1,0 +1,61 @@
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}">
+    <div class="bodymove_flowcompare">
+        <h2>{{module.headline}}</h2>
+        <div class="bodymove_flowcompare_row">
+            <div class="bodymove_flowcompare_item">
+                {% if module.item1_title %}
+                <h3>
+                    {{ module.item1_title }}
+                </h3>
+                {% endif %}
+                {{ module.item1_content}}
+            </div>
+            <div class="bodymove_flowcompare_gradient bodymove_flowcompare_gradient-top_right"></div>
+        </div>
+        <div class="bodymove_flowcompare_row bodymove_flowcompare_vs">
+            <div class="bodymove_flowcompare_gradient bodymove_flowcompare_gradient-top_left"></div>
+            <div class="bodymove_flowcompare_vs_circle">
+                VS
+            </div>
+            <div class="bodymove_flowcompare_gradient bodymove_flowcompare_gradient-bottom_right"></div>
+        </div>
+        <div class="bodymove_flowcompare_row">
+            <div class="bodymove_flowcompare_gradient bodymove_flowcompare_gradient-bottom_left"></div>
+            <div class="bodymove_flowcompare_item bodymove_flowcompare_item-right">
+                {% if module.item2_title %}
+                <h3>
+                    {{ module.item2_title }}
+                </h3>
+                {% endif %}
+                {{ module.item2_content }}
+            </div>
+        </div>
+        <div class="bodymove_flowcompare_row">
+            <div class="bodymove_flowcompare_arrow">
+                <div class="bodymove_flowcompare_arrow_body"></div>
+            </div>
+            <div class="bodymove_flowcompare_divider"></div>
+        </div>
+        <div class="bodymove_flowcompare_row">
+            <div class="bodymove_flowcompare_conclusion">
+                {% if module.con_pretitle %}
+                    <h3 class="bodymove_flowcompare_pretitle">
+                        {{ module.con_pretitle }}
+                    </h3>
+                    <h4 class="h2">
+                        {{ module.con_title }}
+                    </h4>
+                {% else %}
+                    <h3 class="h2">
+                        {{ module.con_title }}
+                    </h3>
+                {% endif %}
+                {{module.con_content}}
+            </div>
+        </div>
+    </div>
+</section>
