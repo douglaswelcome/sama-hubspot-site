@@ -27,10 +27,10 @@ class="
                     {% if cell.icon.src %}
                     <div class="bodystatic_table_icontxt">
                         <img src="{{cell.icon.src}}" alt="{{cell.icon.alt}}" />
-                        <p>{{cell.body_copy}}</p>
+                        {{cell.body_copy}}
                     </div>
                     {% else %}
-                    <p>{{cell.body_copy}}</p>
+                        {{cell.body_copy}}
                     {% endif %}
                 </td>
                 {% endfor %}
