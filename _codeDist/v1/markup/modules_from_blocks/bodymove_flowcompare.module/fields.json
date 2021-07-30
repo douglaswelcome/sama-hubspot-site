@@ -60,6 +60,18 @@
     "default": null 
   },
   {
+    "name": "intro",
+    "label": "Introduction Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "richtext",
+    "default": null 
+  },
+  {
     "name": "item1_content",
     "label": "Item 1 Content",
     "required": false,

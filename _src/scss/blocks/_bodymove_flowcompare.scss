@@ -3,11 +3,9 @@
         @extend %grid-12;
         position: relative;
     }
-    h2{
-        grid-column: 1 / -1;
-        margin-bottom: 3rem;
-    }
-    h3{
+    h2,
+    h3,
+    h4{
         margin-bottom: 1.5rem;
     }
     &_item{
@@ -142,6 +140,10 @@
             display: none;
         }
     }
+    &_intro{
+        margin-bottom: 3rem;
+    }
+    &_intro,
     &_conclusion{
         grid-column: 1 / span 8;
         margin-top: 3rem;
@@ -157,6 +159,7 @@
         font-size: 1.1rem;
         text-transform: uppercase;
         background: linear-gradient(270deg, #FFD332 0%, #FFFA0C 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

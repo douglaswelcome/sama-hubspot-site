@@ -4,7 +4,12 @@ dark-mode
 {{ module.bg_color }}
 {% endif %}">
     <div class="bodymove_flowcompare">
-        <h2>{{module.headline}}</h2>
+        <div class="bodymove_flowcompare_row">
+            <div class="bodymove_flowcompare_intro">
+                <h2>{{module.headline}}</h2>
+                {{module.intro}}
+            </div>
+        </div>
         <div class="bodymove_flowcompare_row">
             <div class="bodymove_flowcompare_item">
                 {% if module.item1_title %}
