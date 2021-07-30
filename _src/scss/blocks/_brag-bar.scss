@@ -9,8 +9,6 @@
     @include breakpoint (w-sm){
       grid-column: 1 / span 12;
     }
-    
-
   }
 
   &__headline {
@@ -21,16 +19,10 @@
     margin-bottom: 1.5rem
   }
 
-
   &__logo-row {
     grid-column: 1 / span 12;
     grid-row:2;
     text-align:center;
-    
-
-    @include breakpoint(w-sm) {
-
-    }
   }
 
   &__logos {
@@ -40,8 +32,6 @@
     margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
     width: calc(100% + var(--gap));
     justify-content: center;
-
-    
   }
 
   &__logo {
@@ -49,7 +39,6 @@
     align-self: center;
     text-align: center;
     
-
     img {
       max-height: 70px;
       min-width: 8rem;
@@ -60,4 +49,23 @@
     }
   }
 
+  &_align-left{
+    .brag-bar__body{
+      grid-column: 2 / span 8;
+      text-align: left;
+      @include breakpoint (w-sm){
+        grid-column: 1 / span 12;
+      }
+    }
+    .brag-bar__logo-row{
+      grid-column: 2 / span 10;
+      text-align: left;
+      @include breakpoint (w-sm){
+        grid-column: 1 / span 12;
+      }
+    }
+    .brag-bar__logos{
+      justify-content: flex-start;
+    }
+  }
 }

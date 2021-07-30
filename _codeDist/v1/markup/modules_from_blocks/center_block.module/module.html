@@ -41,6 +41,15 @@
       </div>
 
     {% endif %}
+    {% if module.cta2 %}
+    <div class="btn__row">
+      <div class="btn__wrapper">
+        <button class="btn">
+            {% cta guid="{{ module.cta2 }}" %}
+        </button>
+      </div>
+    </div>
+    {% endif %}
     </div>
 
 
