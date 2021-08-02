@@ -15,7 +15,7 @@
     &_gradient{
         width: 100%;
         height: 100%;
-        background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, #78C2ED 0%, #7C7FDA 35.91%, #795BE0 76.49%, #706EE2 99.27%) border-box;
+        background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-sunshine) border-box;
         border: 6px solid transparent;
         border-radius: 32px;
         position: absolute;
@@ -24,6 +24,24 @@
         grid-column: 2 / span 7;
         @include breakpoint (w-sm) {
             grid-column: 2 / span 8;
+        }
+        &-purple{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-magenta-purple) border-box;
+        }
+        &-green{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-blue) border-box;
+        }
+        &-red_orange{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-red-orange) border-box;
+        }
+        &-blue{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue) border-box;
+        }
+        &-pink_red{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-pink-red) border-box;
+        }
+        &-blue_purple{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue-purple) border-box;
         }
     }
     &_content{
@@ -56,14 +74,12 @@
         border-bottom-right-radius: 32px;
         background: linear-gradient(90deg, #00EDED 0.01%, #2792F4 100%);
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
         overflow: hidden;
         img{
             display: block;
-            width: auto;
-            max-width: 100%;
-            margin: 0 auto;
+            width: 100%;
+            object-fit: cover;
         }
         @include breakpoint (w-sm) {
             grid-column: 1 / span 7;
