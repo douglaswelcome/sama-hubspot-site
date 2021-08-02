@@ -25,10 +25,14 @@ class="
                 {% for cell in row.cells %}
                 <td>
                     {% if cell.icon.src %}
-                    <div class="bodystatic_table_icontxt">
-                        <img src="{{cell.icon.src}}" alt="{{cell.icon.alt}}" />
-                        {{cell.body_copy}}
-                    </div>
+                        <span class="bodystatic_table_row_cell_list">
+                            {{cell.body_copy}}
+                            <style>
+                                td:nth-of-type({{loop.index + 1}}) .bodystatic_table_row_cell_list li{
+                                    background: url('{{cell.icon.src}}') no-repeat top left;
+                                }
+                            </style>
+                        </span>
                     {% else %}
                         {{cell.body_copy}}
                     {% endif %}

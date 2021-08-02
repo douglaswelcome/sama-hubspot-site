@@ -5,6 +5,7 @@
   "help_text": "",
   "host_template_types": ["PAGE"],
   "js_assets": [],
+  "label": "Panel Quote",
   "other_assets": [],
   "smart_type": "NOT_SMART",
   "tags": [],
