@@ -66,5 +66,14 @@
     "help_text": "",
     "type": "cta",
     "default": null
+  },
+  {
+    "name": "cta2",
+    "label": "Button CTA",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "type": "cta",
+    "default": null 
   }
 ]

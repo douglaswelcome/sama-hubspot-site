@@ -1,5 +1,42 @@
 [
   {
+    "name": "theme_color",
+    "label": "Theme Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "help_text": "",
+    "choices": [
+        [
+            "purple",
+            "Magenta Purple"
+        ],
+        [
+            "green",
+            "Green Blue"
+        ],
+        [
+            "red_orange",
+            "Red Orange"
+        ],
+        [
+            "blue",
+            "Dark Blue Light Blue"
+        ],
+        [
+            "pink_red",
+            "Red Pink"
+        ],
+        [
+            "blue_purple",
+            "Blue Purple"
+        ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": ""
+  },
+  {
     "name": "quote",
     "label": "Quote Text",
     "sortable": false,

@@ -7,6 +7,11 @@
     padding: 2rem;
     background-color: var(--color-charcoal-2);
     z-index: 0;
+    
+    @include breakpoint(w-sm) {
+        grid-template-columns: repeat(5, auto);
+        overflow-x: scroll;
+    }
     thead,tbody{
         display: contents;
     }
@@ -96,6 +101,15 @@
                 h5{
                     border-image: linear-gradient(180deg, $color-gradient-blue-purple) 1;
                 }
+            }
+        }
+        &_cell_list{
+            ul{
+                list-style: none;
+            }
+            li{
+                margin-bottom: 1rem;
+                padding-left: calc( 28px + 1rem);
             }
         }
     }

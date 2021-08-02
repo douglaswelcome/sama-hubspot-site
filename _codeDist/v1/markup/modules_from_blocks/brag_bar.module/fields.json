@@ -20,6 +20,15 @@
   "default": true 
 },
 {
+  "name": "align_left",
+  "label": "Left Align Text",
+  "inline_help_text": "Left align icons and text",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "default": false
+},
+{
   "name": "darkmode",
   "label": "Dark Mode?",
   "required": false,

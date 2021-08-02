@@ -9,7 +9,7 @@ dark-mode
 {% endif %}
 ">
   {% if module.headline %}
-  <div class="brag-bar">
+  <div class="brag-bar {% if module.align_left %} brag-bar_align-left{% endif %}">
     {% if module.headline %}
     <div class="brag-bar__body">
       <div class="brag-bar__headline">
