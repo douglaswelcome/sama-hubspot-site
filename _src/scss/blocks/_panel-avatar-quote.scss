@@ -6,7 +6,8 @@
     &__front {
         grid-row:1;
         grid-column: 3 / span 8;
-        margin: 3rem;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
         border-radius: 32px;
         background-color: var(--color-charcoal-4);
         position: relative;
@@ -25,7 +26,6 @@
         }
         @include breakpoint (w-sm) {
             grid-column: 2 / span 11; 
-            margin: 1rem;
         }
     }
 
