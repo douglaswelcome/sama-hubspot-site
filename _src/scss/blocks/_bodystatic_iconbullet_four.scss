@@ -1,0 +1,34 @@
+.bodystatic_iconbullet_four{
+    @extend %grid-12;
+
+    @include breakpoint(w-med){
+        grid-row-gap: 2rem;
+    }
+
+    @include breakpoint(w-sm){
+        width: 100%;
+    }
+
+    &_icon{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        img{
+            display: block;
+            max-width: 3rem;
+        }
+        &_title{
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        @include breakpoint(w-med){
+            grid-column: span 6;
+        }
+        @include breakpoint(w-sm){
+            grid-row: auto;
+            grid-column: 3 / span 8;
+        }
+    }
+}

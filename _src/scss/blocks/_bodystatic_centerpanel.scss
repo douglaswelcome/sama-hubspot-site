@@ -1,0 +1,12 @@
+.bodystatic_centerpanel{
+    @extend %grid-12;
+    &_panel{
+        grid-column: 3 / span 8;
+        border-radius: 32px;
+        padding: 3rem;
+        background-color: var(--color-charcoal-2);
+        h2{
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -8,6 +8,11 @@
   padding-bottom: 0;
 }
 
+.no-y-pad{
+  padding-top: 0; 
+  padding-bottom: 0;
+}
+
 .flex-wrapper {
   display: flex;
   min-height: 100vh;
@@ -18,6 +23,17 @@
   flex:1;
   display: flex;
   flex-direction:column;
+}
+
+.section-wrap{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  & > .hs_cos_wrapper{
+    padding-bottom: 3rem;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
 }
 
 

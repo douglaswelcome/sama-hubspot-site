@@ -1,0 +1,131 @@
+[
+    {
+        "name": "darkmode",
+        "label": "Dark Mode?",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": false
+    },
+    {
+        "name": "bg_color",
+        "label": "Dark Mode Background Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "",
+        "choices": [
+        [
+            "bg-charcoal-0",
+            "Black"
+        ],
+        [
+            "bg-charcoal-1",
+            "Charcoal 1 (Darkest)"
+        ],
+        [
+            "bg-charcoal-2",
+            "Charcoal 2 (Medium Dark)"
+        ],
+        [
+            "bg-charcoal-3",
+            "Charcoal 3 (Light Dark)"
+        ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "bg-charcoal-1"
+    },
+    {
+        "name": "header",
+        "label": "Header",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "description",
+        "label": "Description",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
+    {
+        "name": "tabs",
+        "label": "tabs",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+            "min": null,
+            "max": 3,
+            "sorting_label_field": null,
+            "default": null
+        },
+        "children": [
+            {
+                "name": "tab_title",
+                "label": "Tab Title",
+                "sortable": false,
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": "Step 1"
+            },
+            {
+                "name": "tab_img",
+                "label": "Tab Image",
+                "sortable": false,
+                "required": false,
+                "locked": false,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                    "src": "https://source.unsplash.com/random",
+                    "alt": null
+                }
+            },
+            {
+                "name" : "tab_video",
+                "label" : "Tab Video",
+                "required" : false,
+                "locked" : false,
+                "type" : "file",
+                "picker" : "file",
+                "default" : ""
+            },
+            {
+                "name": "tab_content",
+                "label": "Tab Content",
+                "sortable": false,
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": "We'll make some big ol' huge mountains! There's too many complicated things in our life already. All you're worried about is this nice outside shape."
+            }
+        ],
+        "type": "group",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": {}
+    }
+]

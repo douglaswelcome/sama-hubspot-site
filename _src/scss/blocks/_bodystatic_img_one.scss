@@ -1,0 +1,12 @@
+.bodystatic_img_one{
+    @extend %grid-12;
+    img{
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+    &-span_10{
+        img{
+            grid-column: 2 / span 10;
+        }
+    }
+}
