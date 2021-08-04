@@ -74,34 +74,7 @@
             grid-column: 1 / -1;
         }
     }
-}
-
-.bodystatic_iconbullet_four{
-    margin-top: 3rem;
-    @extend %grid-12;
-
-    @include breakpoint(w-sm){
-        width: 100%;
-    }
-
-    &_icon{
-        grid-column: span 3;
-        display: grid;
-        grid-template-columns: 45px 1fr;
-        grid-gap: 2rem;
-        align-items: center;
-        img{
-            width: 45px;
-            height: 45px;
-        }
-        &_title{
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-        }
-        @include breakpoint(w-sm){
-            grid-row: auto;
-            grid-column: 3 / span 8;
-            margin-top: 3rem;
-        }
+    .bodystatic_iconbullet_four{
+        margin-top: 3rem;
     }
 }

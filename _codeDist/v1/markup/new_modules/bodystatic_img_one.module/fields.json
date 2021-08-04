@@ -1,0 +1,74 @@
+[
+  {
+      "name": "darkmode",
+      "label": "Dark Mode?",
+      "required": false,
+      "locked": false,
+      "type": "boolean",
+      "default": true
+  },
+  {
+  
+      "name": "bg_color",
+      "label": "Dark Mode Background Color",
+      "required": false,
+      "locked": false,
+      "display": "select",
+  
+      "help_text": "",
+      "choices": [
+        [
+          "bg-charcoal-1",
+          "Charcoal 1 (Darkest)"
+        ],
+        [
+          "bg-charcoal-2",
+          "Charcoal 2 (Medium Dark)"
+        ],
+        [
+          "bg-charcoal-3",
+          "Charcoal 3 (Light Dark)"
+        ]
+      ],
+      "type": "choice",
+      "placeholder": "",
+      "default": "bg-charcoal-2"
+  
+  },
+  {
+  
+      "name": "width",
+      "label": "Column Span",
+      "required": false,
+      "locked": false,
+      "display": "select",
+      "help_text": "Override default full width column span",
+      "choices": [
+        [
+          "",
+          "Full Width"
+        ],
+        [
+          "span_10",
+          "Span 10 Columns"
+        ]
+      ],
+      "type": "choice",
+      "placeholder": "",
+      "default": ""
+  },
+  {
+    "name": "img",
+    "label": "Image",
+    "required": false,
+    "locked": false,
+    "help_text": "",
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "",
+      "alt": null
+    }
+  }
+]
