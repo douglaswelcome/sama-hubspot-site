@@ -37,6 +37,7 @@
     height: 10rem;
     @include breakpoint (w-med) {
       grid-column: span 6;
+      margin-bottom: 3rem;
     }
 
     @include breakpoint (w-sm) {
@@ -82,12 +83,8 @@
 }
 
 @media (min-width: 768px) {
-
   .blog-author-hero--small .blog-author-hero__copy {
     grid-column: 3 / 12;
-  }
-  .blog-author-hero__copy{
-    grid-column: 1 /span 2;
   }
 }
 
