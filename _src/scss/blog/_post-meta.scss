@@ -35,6 +35,13 @@
 
     grid-column: span 4;
     height: 10rem;
+    @include breakpoint (w-med) {
+      grid-column: span 6;
+    }
+
+    @include breakpoint (w-sm) {
+        grid-column: span 12;
+    }
   }
 
   &__bio-inner {
@@ -79,7 +86,9 @@
   .blog-author-hero--small .blog-author-hero__copy {
     grid-column: 3 / 12;
   }
-
+  .blog-author-hero__copy{
+    grid-column: 1 /span 2;
+  }
 }
 
 .blog-post-topics__list .btn {
