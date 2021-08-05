@@ -31,13 +31,18 @@
 }
 
 @media (min-width: 768px) {
-
   .blog-author-hero__copy {
     grid-column: 5 / 11;
     padding-left: 3em;
   }
-
 }
+
+@include breakpoint(w-sm) {
+  .blog-author-hero__copy {
+    grid-column: 1 / span 2;
+  }
+}
+
 
 .blog-author-hero__intro {
   border-bottom: 2px solid currentColor;
