@@ -1,0 +1,28 @@
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+no-y-pad">
+  <div class="bodystatic_iconcopy_four {% if module.center %} bodystatic_iconcopy_four-center{% endif %}">
+    {%  if module.headline %}
+      <h2>
+        {{ module.headline }}
+      </h2>
+    {% endif %}
+    {% for icon in module.icons %}
+      <div class="bodystatic_iconcopy_four_icon {% if module.center %}text-center{% endif %}">
+        {% if icon.img.src %}
+        <img src="{{ icon.img.src }}" alt="{{ icon.img.alt }}" />
+        {% endif %}
+        {% if icon.title %}
+        <h5 class="bodystatic_iconcopy_four_icon_title">
+          {{ icon.title }}
+        </h5>
+        {% endif %}
+        <p class="bodystatic_iconcopy_four_icon_body">
+          {{ icon.body_copy }}
+        </p>
+      </div>
+    {% endfor %}
+</section>

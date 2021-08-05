@@ -1,0 +1,115 @@
+[
+  {
+    "name": "darkmode",
+    "label": "Dark Mode?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  },
+  {
+
+    "name": "bg_color",
+    "label": "Dark Mode Background Color",
+    "required": false,
+    "locked": false,
+    "display": "select",
+
+    "help_text": "",
+    "choices": [
+      [
+        "bg-charcoal-1",
+        "Charcoal 1 (Darkest)"
+      ],
+      [
+        "bg-charcoal-2",
+        "Charcoal 2 (Medium Dark)"
+      ],
+      [
+        "bg-charcoal-3",
+        "Charcoal 3 (Light Dark)"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "bg-charcoal-2"
+
+  },
+  {
+    "name": "headline",
+    "label": "Headline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "placeholder": "Leave Blank to Remove",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": null
+  },
+  {
+    "name": "center",
+    "label": "Center Align Text",
+    "inline_help_text": "Center align icons and text",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+  {
+    "name": "icons",
+    "label": "Icons",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 4,
+      "max": 4,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+        "name": "img",
+        "label": "Block Icon or Image",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://www.sama.com/hubfs/custom/assets/static-assets/img/icons_rev/speed_1-layer_yellow.svg",
+          "alt": null
+        }
+      },
+      {
+
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Goldblumology"
+      },
+      {
+        "id": "",
+        "name": "body_copy",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
+      }
+    ],
+    "type": "group",
+    "default": [{}]
+  }
+]

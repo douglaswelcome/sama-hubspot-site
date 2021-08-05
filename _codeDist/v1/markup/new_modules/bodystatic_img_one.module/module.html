@@ -1,0 +1,12 @@
+<!-- module html  -->
+<section class="
+{% if module.darkmode == true %}
+dark-mode
+{{ module.bg_color }}
+{% endif %}
+no-y-pad
+">
+    <div class="bodystatic_img_one{% if module.width != '' %} bodystatic_img_one-{{module.width}}{% endif %}">
+        <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
+    </div>
+</section>

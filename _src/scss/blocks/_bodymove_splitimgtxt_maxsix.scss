@@ -1,0 +1,158 @@
+$min-item-carousel:1;
+$max-item-carousel:6;
+.bodymove_splitimgtxt_maxsix{
+    @extend %grid-12;
+    align-items: center;
+    position: relative;
+    grid-row-gap: 3rem;
+
+    &_top_nav{
+        grid-row: 1;
+        grid-column: 2 / span 10;
+        display: flex;
+    }
+    &_top_nav_item{
+        margin-right: 3rem;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-charcoal-5);
+        cursor: pointer;
+        position: relative;
+           
+        &:hover{
+            color: #FFF;
+        }
+        &:last-of-type(){
+            margin-right: 0;
+        }
+        &:after{
+            content: "";
+            width: 0;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: width linear 0.2s;
+        }
+        &.active{
+            color: #FFF;
+            &:after{
+                width: 100%;
+            }
+            &.purple-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-magenta-purple);
+                }
+            }
+    
+            &.green-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-green-blue);
+                }
+            }
+    
+            &.red_orange-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-red-orange);
+                }
+            }
+    
+            &.blue-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-blue);
+                }
+            }
+    
+            &.pink_red-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-pink-red);
+                }
+            }
+    
+            &.blue_purple-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-blue-purple);
+                }
+            }
+        }
+    }
+    &_carousel_nav{
+        grid-row: 2;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: var(--color-charcoal-3);
+        position: relative;
+        cursor: pointer;
+        transition: all linear 0.25s;
+        &:after{
+            content: '';
+            display: inline-block;
+            margin-top: 0.9rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-top: 3px solid var(--color-charcoal-5);
+            border-right: 3px solid var(--color-charcoal-5);
+        }
+        &:hover{
+            background-color: var(--color-charcoal-2);
+            &:after{
+                border-color: #FFF;
+            }
+        }
+        &-left{
+            grid-column: 1;
+            &:after{
+                margin-left: 1rem;
+                -moz-transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+            }
+        }
+        &-right{
+            grid-column: 12;
+            &:after{
+                margin-left: 0.66rem;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &_carousel{
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        grid-column: 2 / span 10;
+        grid-row: 2;
+    }
+    &_carousel_slides{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        left: 0;
+        transform: translate3d(100%,0,0);
+        position: relative;
+        &.carousel-reverse{
+            transform: translate3d(-100%,0,0);
+        }
+        &.carousel-animate{
+            transform: none;
+            transition: all 250ms ease-in-out;
+        }
+    }
+    &_carousel_slide{
+        flex: 0 0 100%;
+    }
+
+    @for $i from $min-item-carousel through $max-item-carousel{
+        .carousel-num-#{$i} .bodymove_splitimgtxt_maxsix_carousel_slide{
+          min-width: calc(100% / #{$i})
+        }
+    }
+}
+

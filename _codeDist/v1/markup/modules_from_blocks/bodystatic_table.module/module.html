@@ -39,8 +39,8 @@ class="
                 </td>
                 {% endfor %}
                 <td>
-                    {% if row.cta_url %}
-                    <a class="btn btn--secondary btn--gradient btn--gradient{% if row.theme_color %}-{{ row.theme_color }}{% endif %}" href="{{row.cta_url}}">
+                    {% if row.cta_text %}
+                    <a class="btn btn--secondary btn--gradient btn--gradient{% if row.theme_color %}-{{ row.theme_color }}{% endif %}{% if row.cta_custom_class %} {{row.cta_custom_class}}{% endif %}" href="{{row.cta_url}}">
                         <p class="btn__text">{{row.cta_text}}</p>
                     </a>
                     {% endif %}

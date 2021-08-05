@@ -4,18 +4,10 @@
     background-color:var(--card-bg);
     cursor: pointer;
     height:100%;
-
-    @include breakpoint (w-med) {
-        grid-column: span 6;
-    }
-
-    @include breakpoint (w-sm) {
-        grid-column: span 12;
-    }
+    overflow: hidden;
 
     &__img-wrap {
         overflow: hidden;
-
     }
 
     &__data-wrap {
