@@ -1,0 +1,18 @@
+.bodystatic_medheadline_one{
+    @extend %grid-12;
+    h2{
+        grid-column: 1 / 10;
+    }
+    &-span_half{
+        h2{
+            grid-column: 2 / span 7;
+            @include breakpoint(w-sm){
+                grid-column: 2 / span 10;
+            }
+        }
+    }
+    &-center{
+        grid-column: 3 /span 8;
+        text-align: center;
+    }
+}

@@ -36,11 +36,6 @@
 }
 
 /* Search Half */
-
-
-
-
-
 .blog-menu__search {
   position: relative;
   font-size: 1.12em;
@@ -48,7 +43,6 @@
   flex: 1;
   display: flex
 }
-
 
 .blog-menu__search::before {
   content: '';
@@ -125,11 +119,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .blog-menu__search-field::-webkit-search-cancel-button {
-
   -webkit-appearance: none;
 }
-
-
 
 .hs-search-highlight {
   color: var(--color-charcoal-3);
@@ -139,8 +130,8 @@ input[type="search"]::-webkit-search-cancel-button {
   position: absolute;
   top: 100%;
   width: 105%;
-
   box-shadow: 0 0 24px -6px #999;
+  z-index: 1;
 }
 
 .blog-menu__search-results-list {
