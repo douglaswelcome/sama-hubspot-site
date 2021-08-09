@@ -1,0 +1,22 @@
+
+<section class="
+dark-mode
+bg-charcoal-1
+no-y-pad
+">
+
+  <div class="brag-bar ">
+     
+    <div class="brag-bar__logo-row">
+      <div class="brag-bar__logos">
+        {% for logo in module.logos %}
+        <div class="brag-bar__logo">
+          <img src="{{ logo.src }}" alt="{{logo.alt }}"/>
+        </div>
+          {%endfor%}
+      </div>
+
+
+    </div>
+  </div>
+</section>

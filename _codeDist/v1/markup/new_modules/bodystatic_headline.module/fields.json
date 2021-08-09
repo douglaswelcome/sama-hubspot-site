@@ -1,0 +1,34 @@
+[
+    {
+    
+        "name": "align",
+        "label": "Alignment",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "help_text": "Override default full width left aligned text",
+        "choices": [
+          [
+            "span_half",
+            "Half Width"
+          ],
+          [
+            "center",
+            "Center Text"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": ""
+    },
+    {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Headline"
+    }
+]
