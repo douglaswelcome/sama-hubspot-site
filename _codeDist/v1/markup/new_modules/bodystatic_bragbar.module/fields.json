@@ -1,0 +1,26 @@
+
+[{
+    "name": "logos",
+    "label": "Logos",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "sorting_label_field": null,
+      "default": 1
+    },
+    "responsive": true,
+    "resizable": false,
+    "type": "image",
+    "default": [{
+      "src": "",
+      "alt": null
+    }]
+  }
+
+
+
+
+
+]
