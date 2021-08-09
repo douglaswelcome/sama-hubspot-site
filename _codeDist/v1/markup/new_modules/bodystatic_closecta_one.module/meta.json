@@ -6,6 +6,7 @@
   "global" : false,
   "host_template_types" : [ "PAGE" ],
   "js_assets" : [ ],
+  "label": "Large Text Center CTA",
   "other_assets" : [ ],
   "placement_rules" : [ ],
   "smart_type" : "NOT_SMART",
