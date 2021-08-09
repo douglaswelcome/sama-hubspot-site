@@ -36,26 +36,31 @@
     }
     &_img{
         /*set up basic text image layout styles first*/
-        position: relative;
         img{
             display: block;
-            width: calc(100% - 2rem);
-            height: calc(100% - 2rem);
-            border-radius: 32px;
-            position: relative;
-            object-fit: cover;
+            max-width: 100%;
         }
-        &:before{
-            content: "";
-            width: calc(100% - 2rem);
-            height: calc(100% - 2rem);
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-sunshine) border-box;
-            border: 6px solid transparent;
-            border-radius: 32px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            z-index: 0;
+        &-frame{
+            position: relative;
+            img{
+                width: calc(100% - 2rem);
+                height: calc(100% - 2rem);
+                border-radius: 32px;
+                position: relative;
+                object-fit: cover;
+            }
+            &:before{
+                content: "";
+                width: calc(100% - 2rem);
+                height: calc(100% - 2rem);
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-sunshine) border-box;
+                border: 6px solid transparent;
+                border-radius: 32px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 0;
+            }
         }
     }
     &_img_quote{
@@ -176,7 +181,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-magenta-purple);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-magenta-purple) border-box;
             }
@@ -191,7 +196,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-green-blue);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-blue) border-box;
             }
@@ -206,7 +211,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-red-orange);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-red-orange) border-box;
             }
@@ -221,7 +226,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-blue);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue) border-box;
             }
@@ -236,7 +241,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-pink-red);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-pink-red) border-box;
             }
@@ -251,7 +256,7 @@
         .bodystatic_splitimgtxt_two_preheadline{
             background: linear-gradient(270deg, $color-gradient-blue-purple);
         }
-        .bodystatic_splitimgtxt_two_img{
+        .bodystatic_splitimgtxt_two_img-frame{
             &:before{
                 background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue-purple) border-box;
             }
