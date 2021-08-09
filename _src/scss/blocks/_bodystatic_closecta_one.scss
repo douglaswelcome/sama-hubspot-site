@@ -1,0 +1,13 @@
+.bodystatic_closecta_one {
+    @extend %grid-12;
+    row-gap: 2rem;
+  
+    &_intro {
+      grid-column: 3 /span 8;
+      text-align: center;
+  
+    }
+    &_headline {
+      margin-bottom: 1.5rem;
+    }
+}
