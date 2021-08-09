@@ -1,10 +1,5 @@
 <section
-class="
-    dark-mode
-    bg-charcoal-1
-no-y-pad
-"
->
+class="dark-mode bg-charcoal-1 no-y-pad">
     <div class="bodystatic_splitimgtxt_two {% if module.theme_color %}bodystatic_splitimgtxt_two-{{module.theme_color}}{% endif %}">
         <div class="bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-left{% else %}-right{% endif %}">
             {% if module.preheadline %}
@@ -85,7 +80,7 @@ no-y-pad
                 </div>
             </div>
         </div>
-        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}">
+        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}">
             {% if module.quote %}  
                 {% if module.img.src %}
                     <div class="bodystatic_splitimgtxt_two_imgwrap">
