@@ -1,0 +1,23 @@
+.bodystatic_headsubcta {
+    @extend %grid-12;
+    row-gap: 2rem;
+    grid-auto-flow: row;
+
+    &__headline {
+      grid-column: 3 /span 8;
+      text-align: center;
+
+    }
+
+    &__subheadline {
+      grid-column: 3 /span 8;
+      text-align: center;
+
+    }
+
+    &__btn {
+      grid-column: 3 /span 8;
+      text-align: center;
+
+    }
+}

@@ -5,6 +5,21 @@ bg-charcoal-1
 no-y-pad
 ">
     <div class="bodystatic_headline{% if module.align %} bodystatic_headline-{{module.align}}{% endif %}">
-        <h2>{{module.headline}}</h2>
+        {% if module.headline %}
+            <h2 class="bodystatic_headline__headline">{{module.headline}}</h2>
+        {% endif %}
+
+        {% if module.subheadline %}
+            <h5 class="bodystatic_headline__subheadline">Hard to Please</h5>
+        {% endif %}
+
+
+        {% if module.url %}
+        <a href="{{module.url}}" class="btn__wrapper bodystatic_headline__button">
+            <button class="btn">
+            <h3 class="btn__text">{{module.btntxt}}</h3>
+            </button>
+        </a>
+        {% endif %}
     </div>
 </section>
