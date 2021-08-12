@@ -20,10 +20,26 @@
                 "validation_regex": "",
                 "allow_new_line": false,
                 "show_emoji_picker": false,
-                "type": "text",
+                "type": "richtext",
                 "placeholder": "Leave Blank to Skip",
                 "default": null
+            },
+            {
+                "name": "header_icon",
+                "label": "Header Icon",
+                "inline_help_text": "(optional)",
+                "required": false,
+                "locked": false,
+                "help_text": "",
+                "responsive": true,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                  "src": "",
+                  "alt": null
+                }
             }
+
         ],
         "type": "group",
         "default": [{}]
@@ -40,43 +56,6 @@
           "default": null
         },
         "children": [
-            {
-                "name": "theme_color",
-                "label": "Theme Color",
-                "required": false,
-                "locked": false,
-                "display": "select",
-                "help_text": "",
-                "choices": [
-                    [
-                        "purple",
-                        "Magenta Purple"
-                    ],
-                    [
-                        "green",
-                        "Green Blue"
-                    ],
-                    [
-                        "red_orange",
-                        "Red Orange"
-                    ],
-                    [
-                        "blue",
-                        "Dark Blue Light Blue"
-                    ],
-                    [
-                        "pink_red",
-                        "Red Pink"
-                    ],
-                    [
-                        "blue_purple",
-                        "Blue Purple"
-                    ]
-                ],
-                "type": "choice",
-                "placeholder": "",
-                "default": ""
-        },
         {
             "name": "title",
             "label": "Title",
@@ -88,42 +67,6 @@
             "type": "text",
             "placeholder": "",
             "default": "Goldblumology"
-        },
-        {
-            "name": "cta_text",
-            "label": "Row CTA Text",
-            "required": false,
-            "locked": false,
-            "validation_regex": "",
-            "allow_new_line": false,
-            "show_emoji_picker": false,
-            "type": "text",
-            "placeholder": "",
-            "default": "Learn More"
-        },
-        {
-            "name": "cta_url",
-            "label": "Row CTA URL",
-            "required": false,
-            "locked": false,
-            "validation_regex": "",
-            "allow_new_line": false,
-            "show_emoji_picker": false,
-            "type": "text",
-            "placeholder": "",
-            "default": ""
-        },
-        {
-            "name": "cta_custom_class",
-            "label": "Row CTA Custom Class Names",
-            "required": false,
-            "locked": false,
-            "validation_regex": "",
-            "allow_new_line": false,
-            "show_emoji_picker": false,
-            "type": "text",
-            "placeholder": "",
-            "default": ""
         },
         {
         "name": "cells",
@@ -140,31 +83,61 @@
               {
                 "id": "",
                 "name": "body_copy",
-                "label": "Content",
+                "label": "Cell Plain Text Content",
                 "required": false,
                 "locked": false,
                 "validation_regex": "",
                 "allow_new_line": false,
                 "show_emoji_picker": false,
                 "type": "richtext",
+                "enabled_features" : ["bold","link","underline","italic"],
                 "placeholder": "",
                 "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
               },
               {
-                "name": "icon",
-                "label": "List Bullet Icon",
+                "name": "cell_icon_list",
+                "label": "Cell Icon List",
                 "required": false,
                 "locked": false,
-                "inline_help_text": "If you're content is a list, replaces standard list bullet points",
-                "help_text": "",
-                "responsive": true,
-                "resizable": false,
-                "type": "image",
-                "default": {
-                  "src": "",
-                  "alt": null
-                }
-              }
+                "occurrence": {
+                  "min": 0,
+                  "max": 20,
+                  "sorting_label_field": null,
+                  "default": null
+                },
+                "children": [
+                    {
+                        "id": "",
+                        "name": "icon_list_content",
+                        "label": "Text Content",
+                        "required": false,
+                        "locked": false,
+                        "validation_regex": "",
+                        "allow_new_line": false,
+                        "show_emoji_picker": false,
+                        "type": "richtext",
+                        "enabled_features" : ["bold","link","underline","italic"],
+                        "placeholder": "",
+                        "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
+                    },
+                    {
+                        "name": "icon_list_icon",
+                        "label": "Icon",
+                        "required": false,
+                        "locked": false,
+                        "help_text": "",
+                        "responsive": true,
+                        "resizable": false,
+                        "type": "image",
+                        "default": {
+                          "src": "",
+                          "alt": null
+                        }
+                    }
+                ],
+            "type": "group",
+            "default": [{}]
+            }
         ],
         "type": "group",
         "default": [{}]

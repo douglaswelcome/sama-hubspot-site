@@ -33,6 +33,10 @@
             "help_text": "",
             "choices": [
                 [
+                    "green-yellow",
+                    "Green Yellow"
+                ],
+                [
                     "purple",
                     "Magenta Purple"
                 ],
