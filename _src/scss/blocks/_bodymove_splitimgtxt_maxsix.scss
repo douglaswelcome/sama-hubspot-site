@@ -31,6 +31,7 @@ $max-item-carousel:6;
             content: "";
             width: 0;
             height: 4px;
+            border-radius: 32px;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -40,6 +41,11 @@ $max-item-carousel:6;
             color: #FFF;
             &:after{
                 width: 100%;
+            }
+            &.green-yellow-gradient{
+                &:after{
+                    background: linear-gradient(270deg, $color-gradient-green-yellow);
+                }
             }
             &.purple-gradient{
                 &:after{
