@@ -1,18 +1,22 @@
 [{
-    "name": "align",
-    "label": "Alignment",
+    "name": "size",
+    "label": "Module Width",
     "required": false,
     "locked": false,
     "display": "select",
     "help_text": "Override default full width left aligned text",
     "choices": [
       [
-        "span_half",
-        "Half Width"
+        "",
+        "Large"
       ],
       [
-        "center",
-        "Center Text"
+        "med",
+        "Medium"
+      ],
+      [
+        "sm",
+        "Small"
       ]
     ],
     "type": "choice",

@@ -4,7 +4,10 @@ dark-mode
 bg-charcoal-1
 no-y-pad
 ">
-    <div class="bodystatic_headline{% if module.align %} bodystatic_headline-{{module.align}}{% endif %}">
+    <div class="bodystatic_headline 
+    {% if module.size=="med" %} bodystatic_headline--{{module.size}} {% endif %}
+    {% if module.size=="sm" %} bodystatic_headline--{{module.size}} {% endif %}
+    ">
         {% if module.headline %}
         <h2 class="bodystatic_headline__headline">{{module.headline}}</h2>
         {% endif %}
