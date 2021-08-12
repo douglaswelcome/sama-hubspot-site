@@ -8,6 +8,10 @@
     "help_text": "",
     "choices": [
         [
+          "green_yellow",
+          "Green Yellow"
+        ],
+        [
             "purple",
             "Magenta Purple"
         ],
