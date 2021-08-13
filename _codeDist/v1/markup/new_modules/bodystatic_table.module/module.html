@@ -14,9 +14,12 @@ class="
             <div class="bodystatic_table_row_cell_list bodystatic_table_row_cell_list-icon_large">
                 <img src="{{col.header_icon.src}}" alt="{{col.header_icon.alt}}" />
                 <h4>{{col.header}}</h4>
+                {%if col.subhead%} <h5>{{col.subhead}}</h5> {% endif %}
+               
             </div>
             {% else %}
                 <h4>{{col.header}}</h4>
+                {%if col.subhead%} <h5>{{col.subhead}}</h5> {% endif %}
             {% endif %}
         </th>
         {% endfor %}
