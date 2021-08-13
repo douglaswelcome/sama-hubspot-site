@@ -17,6 +17,7 @@
         background: linear-gradient(270deg, $color-gradient-sunshine);
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent;
+        display: inline-block;
     }
 
     &-left{
