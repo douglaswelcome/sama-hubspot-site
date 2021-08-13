@@ -12,7 +12,6 @@
         },
         "children": [
             {
-                "id": "",
                 "name": "header",
                 "label": "Column Header",
                 "required": false,
@@ -20,10 +19,23 @@
                 "validation_regex": "",
                 "allow_new_line": false,
                 "show_emoji_picker": false,
-                "type": "richtext",
+                "type": "text",
                 "placeholder": "Leave Blank to Skip",
                 "default": null
             },
+            {
+            "name": "subhead",
+            "label": "Subhead",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "inline_help_text": "",
+            "help_text": "",
+            "default": null },
             {
                 "name": "header_icon",
                 "label": "Header Icon",
