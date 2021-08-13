@@ -175,6 +175,11 @@
         img {
             width:100%;
         }
+        &:last-of-type{
+            p:last-of-type{
+                margin-bottom: 0;
+            }
+        }
     }
 
     &-green-yellow{
