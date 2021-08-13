@@ -10,7 +10,14 @@ class="
       <tr>
         {% for col in module.cols %}
         <th>
-            <h4>{{col.header}}</h4>
+            {% if col.header_icon.src %}
+            <div class="bodystatic_table_row_cell_list bodystatic_table_row_cell_list-icon_large">
+                <img src="{{col.header_icon.src}}" alt="{{col.header_icon.alt}}" />
+                <h4>{{col.header}}</h4>
+            </div>
+            {% else %}
+                <h4>{{col.header}}</h4>
+            {% endif %}
         </th>
         {% endfor %}
       </tr>
@@ -23,27 +30,18 @@ class="
                 </td>
                 {% for cell in row.cells %}
                 <td>
-                    {% if cell.icon.src %}
-                        <span class="bodystatic_table_row_cell_list">
-                            {{cell.body_copy}}
-                            <style>
-                                td:nth-of-type({{loop.index + 1}}) .bodystatic_table_row_cell_list li{
-                                    background: url('{{cell.icon.src}}') no-repeat top left;
-                                }
-                            </style>
-                        </span>
+                    {% if cell.cell_icon_list %}
+                        {% for cell_icon in cell.cell_icon_list %}
+                            <div class="bodystatic_table_row_cell_list">
+                                <img src="{{cell_icon.icon_list_icon.src}}" alt="{{cell_icon.icon_list_icon.alt}}" />
+                                <p>{{cell_icon.icon_list_content}}</p>
+                            </div>
+                        {% endfor %}
                     {% else %}
-                        {{cell.body_copy}}
+                        <p>{{cell.body_copy}}</p>
                     {% endif %}
                 </td>
                 {% endfor %}
-                <td>
-                    {% if row.cta_text %}
-                    <a class="btn btn--secondary btn--gradient btn--gradient{% if row.theme_color %}-{{ row.theme_color }}{% endif %}{% if row.cta_custom_class %} {{row.cta_custom_class}}{% endif %}" href="{{row.cta_url}}">
-                        <p class="btn__text">{{row.cta_text}}</p>
-                    </a>
-                    {% endif %}
-                </td>
             </tr>
       {% endfor %}
     </tbody>

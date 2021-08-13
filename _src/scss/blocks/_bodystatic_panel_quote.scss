@@ -25,6 +25,9 @@
         @include breakpoint (w-sm) {
             grid-column: 2 / span 8;
         }
+        &-green_yellow{
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-yellow) border-box;
+        }
         &-purple{
             background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-magenta-purple) border-box;
         }
