@@ -9,8 +9,7 @@
     z-index: 0;
     
     @include breakpoint(w-sm) {
-        grid-template-columns: repeat(4, auto);
-        overflow-x: scroll;
+        display: none;
     }
     thead,tbody{
         display: contents;
