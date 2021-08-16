@@ -5,7 +5,7 @@ $max-item-carousel:6;
     align-items: center;
     position: relative;
     grid-row-gap: 3rem;
-
+    z-index: 0;
     &_top_nav{
         grid-row: 1;
         grid-column: 2 / span 10;
@@ -83,6 +83,9 @@ $max-item-carousel:6;
                 }
             }
         }
+        @include breakpoint(w-sm) {
+            display: none;
+        }
     }
     &_carousel_nav{
         grid-row: 2;
@@ -127,6 +130,9 @@ $max-item-carousel:6;
                 transform: rotate(45deg);
             }
         }
+        @include breakpoint(w-sm) {
+            display: none;
+        }
     }
 
     &_carousel{
@@ -135,6 +141,10 @@ $max-item-carousel:6;
         overflow: hidden;
         grid-column: 2 / span 10;
         grid-row: 2;
+        @include breakpoint(w-sm) {
+            grid-column: 1 / span 12;
+            grid-row: 1;
+        }
     }
     &_carousel_slides{
         display: flex;
@@ -149,6 +159,9 @@ $max-item-carousel:6;
         &.carousel-animate{
             transform: none;
             transition: all 250ms ease-in-out;
+        }
+        @include breakpoint(w-sm) {
+            display: block;
         }
     }
     &_carousel_slide{

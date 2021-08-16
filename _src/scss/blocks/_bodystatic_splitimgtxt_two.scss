@@ -107,8 +107,10 @@
         }
         @include breakpoint (w-sm) {
             margin-bottom: 2rem;
-            &:before{
+            &:after{
                 right: 0;
+                left: -2rem;
+                top: -2rem;
             }
         }
     }
