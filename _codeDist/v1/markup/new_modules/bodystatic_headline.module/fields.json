@@ -31,7 +31,7 @@
     "allow_new_line": false,
     "show_emoji_picker": false,
     "type": "text",
-    "default": "Headline"
+    "default": ""
   },
   {
     "name": "subheadline",
@@ -42,7 +42,7 @@
     "allow_new_line": false,
     "show_emoji_picker": false,
     "type": "text",
-    "default": "Headline"
+    "default": ""
   },
   {
     "name": "url",
