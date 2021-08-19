@@ -15,20 +15,19 @@ no-y-pad
             {% endif %}
             <div class="hero_splittextimg_two_btn-row">
                 <div class="btn__row">
-                    {% if module.cta1 %}
+                    {% if module.btn_text %}
                     <div class="btn__wrapper">
+                        <a href="{{module.btn_url}}">
                         <button class="btn">
-                            {% cta guid="{{ module.cta1 }}" %}
+                            <h3 class="btn__text">
+                                {{module.btn_text}}
+                            </h3>
                         </button>
+                    </a>
                     </div>
                     {% endif %}
-                    {% if module.cta2 %}
-                    <div class="btn__wrapper">
-                        <button class="btn btn--secondary">
-                            {% cta guid="{{ module.cta2 }}" %}
-                        </button>
-                    </div>
-                    {% endif %}
+
+
                 </div>
             </div>
         </div>
