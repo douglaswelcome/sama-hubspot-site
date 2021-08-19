@@ -1,28 +1,25 @@
 .side-tabs{
     @extend %grid-12;
     grid-row-gap: 2rem; 
-
+    --headerHeight: "96px"; /*default single line header on desktop*/
     &__header {
         grid-column: 1 / span 8;
-        &-pinned{
-            position: sticky;
-            top: 2rem;
-        }
+        margin-bottom: -6rem;
+        background-color: var(--color-charcoal-1);
+        z-index: 1;
         p{
             font-size: 1.25rem;
             font-weight: 300;
             line-height: 1.4;
         }
-        @include breakpoint(w-sm) {
-            grid-column: 1 / span 12;
-        }
     }
     &__left {
         grid-column: 1 / span 2;
         .side-tabs__nav{
-            height: 50vh;
+            height: calc(50vh + 2rem + var(--headerHeight));
+            padding-top: calc(var(--headerHeight) + 2rem);
             position: sticky;
-            top: 6rem;
+            top: 0;
         }
         .side-tabs__nav-items{
             display: grid;
@@ -102,9 +99,9 @@
             height: 150px;
             position: sticky;
             left: 0;
-            top: 0;
+            top: var(--headerHeight);
             background: linear-gradient(var(--color-charcoal-1), transparent 150px);
-            z-index: 1;
+            opacity: 0;
         }
         .side-tab__content{
             display: flex;
@@ -135,24 +132,58 @@
                 height: 50vh;
             }
         }
-        @include breakpoint(w-sm) {
-            grid-column: 1 / span 12;
-            padding-left: 0;
-            .side-tab__content{
-                opacity: 1;
-            }
-        }
     }
     &__media {
         grid-column: 6 / -1;
         grid-row: 2;
         width: 100%;
+        padding-top: calc(var(--headerHeight) + 2rem);
         position: sticky;
-        top: 6rem;
+        top: 0;
         opacity: 0;
         transition: opacity 0.5s ease-in;
         &.active{
             opacity: 1;
+        }
+    }
+
+    &-pinned{
+        .side-tabs__header{
+            position: sticky;
+            top: 0; 
+        }
+        .side-tabs__right:before{
+            opacity: 1;
+        }
+    }
+
+    @include breakpoint(w-sm) {
+        &__header{
+            grid-column: 1 / span 12;
+            margin-bottom: 0;
+        }
+        &__left {
+            display: none;
+        }
+        &__right {
+            grid-column: 1 /span 12;
+            grid-row: 2 / span 3;
+            display: grid;
+            grid-gap: 2rem;
+            .side-tab__content{
+                display: block;
+                height: auto !important;
+                opacity: 1 !important;
+                &:first-of-type .side-tab__content_inner{
+                    margin-top: 0;
+                }
+            }
+            &:before{
+                display: none;
+            }
+        }
+        &__media{
+            display: none;
         }
     }
 }

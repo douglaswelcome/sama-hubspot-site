@@ -1,6 +1,11 @@
 if(document.querySelector('.side-tabs')){
     
     window.addEventListener('DOMContentLoaded', () => {
+        const headerHeight = document.querySelector('.side-tabs__header').getBoundingClientRect().height;
+        const sideTabs = document.querySelector('.side-tabs').style;
+        sideTabs.setProperty('--headerHeight', headerHeight+"px");
+
+
         let observerOptions = {
             root: null,
             rootMargin: "0px",
@@ -38,12 +43,10 @@ if(document.querySelector('.side-tabs')){
         };
         function headerObserverCallback(entries){
             entries.forEach(function (entry) {
-                console.log(entry.intersectionRatio)
-                if(entry.intersectionRatio >= 1 && !document.querySelector(".side-tabs__header").classList.contains("side-tabs__header-pinned")){
-                    console.log('yes')
-                    document.querySelector(".side-tabs__header").classList.add("side-tabs__header-pinned");
+                if(entry.intersectionRatio >= 1 && !document.querySelector(".side-tabs").classList.contains("side-tabs-pinned")){
+                    document.querySelector(".side-tabs").classList.add("side-tabs-pinned");
                 }else{
-                    document.querySelector(".side-tabs__header").classList.remove("side-tabs__header-pinned");
+                    document.querySelector(".side-tabs").classList.remove("side-tabs-pinned");
                 }
             });
         }
