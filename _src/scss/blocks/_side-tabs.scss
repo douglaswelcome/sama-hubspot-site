@@ -1,6 +1,7 @@
 .side-tabs{
     @extend %grid-12;
-    min-height: 100vh;
+    grid-row-gap: 2rem; 
+
     &__header {
         grid-column: 1 / span 8;
         p{
@@ -14,17 +15,20 @@
     }
     &__left {
         grid-column: 1 / span 2;
-        margin-top: 3rem;
         .side-tabs__nav{
+            height: 50vh;
             position: sticky;
-            top: calc(112px + 3rem);
+            top: 3rem;
         }
         .side-tabs__nav-items{
+            display: grid;
+            height: 100%;
             list-style: none;
             padding: 0;
             .side-tab__title{
+                margin-left: 0.5rem;
                 border-left: 2px solid var(--color-charcoal-3);
-                padding: 0 0 3rem 35px;
+                padding: 0 0 3rem 1.5rem;
                 color: var(--color-charcoal-6);
                 position: relative;
                 cursor: pointer;
@@ -35,8 +39,8 @@
                 &:before{
                     content: "";
                     display: inline-block;
-                    height: 16px;
-                    width: 16px;
+                    height: 1rem;
+                    width: 1rem;
                     border: 2px solid var(--color-charcoal-1);
                     border-radius: 50%;
                     box-shadow: 0 0 0 2px var(--color-charcoal-3);
@@ -45,19 +49,39 @@
                     background: var(--color-charcoal-3);
                     transition: all 0.25s linear;
                 }
-                &.active{
+                &:after{
+                    content: "";
+                    width: 2px;
+                    height: 0;
+                    background: var(--color-charcoal-3);
+                    display: block;
+                    position: absolute;
+                    top: calc(1rem + 2px);
+                    left: -2px;
+                    transition: background 0.25s linear, height 0.5s linear;
+                }
+                &.active,
+                &:first-of-type{
                     color: #FFF;
-                    border-left: 2px solid #FFF;
                     a{
                         color: #FFF;
                     }
                     &:before{
-                        background-color: #FFF;
-                        box-shadow: 0 0 0 2px #FFF;
+                        background: linear-gradient(0deg, $color-gradient-sunshine);
+                        box-shadow: 0 0 0 2px $color-sunshine;
+                    }
+                }
+                &.active{
+                    &:after{
+                        height: calc(100% - 1rem - 2px);
+                        background: linear-gradient(0deg, $color-gradient-sunshine);
                     }
                 }
                 &:last-of-type{
                     border-left: none;
+                    &:after{
+                        display: none;
+                    }
                 }
             }
         }
@@ -66,16 +90,15 @@
         }
     }
     &__right {
-        grid-column: 3 / -1;
-        margin-top: 3rem;
-        padding-left: 2.75rem;
+        grid-column: 3 / span 3;
         .side-tab__content{
-            padding-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            height: 75vh;
             opacity: 0.5;
             transition: opacity 1.25s ease-out;
             h3{
-                margin-bottom: 0.5rem;
-                font-family: var(--font-brown);
+                margin-bottom: 1.5rem;
                 text-transform: none;
             }
             img, 
@@ -83,15 +106,18 @@
                 grid-column: 3;
                 width: 100%;
             }
-            .side-tab__content-inner{
-                display: grid;
-                grid-template-columns: minmax(0, 0.75fr) 1rem minmax(0, 1fr);    
-            }
-            &:first-of-type{
-                padding-top: 0;
-            }
             &.active{
                 opacity: 1;
+            }
+            &:first-of-type{
+                height: calc(100vh - 3rem);
+                justify-content: center;
+                .side-tab__content_inner{
+                    margin-top: -100%;
+                }
+            }
+            &:last-of-type{
+                height: 50vh;
             }
         }
         @include breakpoint(w-sm) {

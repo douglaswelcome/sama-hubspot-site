@@ -6,16 +6,16 @@
     "
 >
     <div class="side-tabs">
-        <div class="side-tabs__header {% if module.darkmode == true %}{{ module.bg_color }}{% endif %}">
+        <div class="side-tabs__header">
             <h2>{{ module.header }}</h2>
             <p>{{ module.description }}</p>
         </div>
-        <div class="side-tabs__left {% if module.darkmode == true %}{{ module.bg_color }}{% endif %}">
+        <div class="side-tabs__left">
             <div class="side-tabs__nav">
                 <ul class="side-tabs__nav-items">
                     {% for item in module.tabs %}
                         <li 
-                            class="side-tab__title{% if loop.index == 1 %} active {% endif %}"
+                            class="side-tab__title"
                         >
                             <a href="#tab-{{ loop.index }}">
                                 {{ item.tab_title }}
@@ -28,10 +28,11 @@
         <div class="side-tabs__right">
             {% for item in module.tabs %}
             <div id="tab-{{ loop.index }}" class="side-tab__content {% if loop.index == 1 %} active {% endif %}">
-                <h3>{{ item.tab_title }}</h3>
-                <div class="side-tab__content-inner">
+                <div class="side-tab__content_inner">
+                    <h3>{{ item.tab_title }}</h3>
                     <p>{{ item.tab_content }}</p>
-                    {% if item.tab_video %}
+                </div>               
+<!--                     {% if item.tab_video %}
                         <video autoplay="true" loop="true" playsinline="true" muted="true">
                             <source
                                 src="{{item.tab_video}}"
@@ -39,8 +40,7 @@
                         </video>
                     {% else %}
                         <img src="{{ item.tab_img.src }}" alt="{{ item.tab_img.alt }}" />
-                    {% endif %}
-                </div>
+                    {% endif %} -->
             </div>
             {% endfor %}
         </div>

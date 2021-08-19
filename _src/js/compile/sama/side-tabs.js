@@ -1,10 +1,11 @@
 if(document.querySelector('.side-tabs')){
     
     window.addEventListener('DOMContentLoaded', () => {
+
         let observerOptions = {
             root: null,
             rootMargin: "0px",
-            threshold: [0.0, 0.75]
+            threshold: [0.5, 1.0]
           };
 
         const tabObserver = new IntersectionObserver(intersectionCallback, observerOptions);
@@ -12,18 +13,19 @@ if(document.querySelector('.side-tabs')){
         function intersectionCallback(entries) {
             entries.forEach(function (entry) {
                 const id = entry.target.getAttribute('id');
-                if (entry.intersectionRatio >= 0.75) {
+                //first tab gets triggered when sticky scroll is activated
+                //other tabs when they're 1/2 in viewport
+                const visibilityTrigger = (id == "tab-1" ? 1.0 : 0.5);
+
+                if(entry.intersectionRatio >= visibilityTrigger){
                     document.querySelector(`.side-tab__title a[href="#${id}"]`).parentElement.classList.add('active');
                     entry.target.classList.add('active');
-                } else {
-                    document.querySelector(`.side-tab__title a[href="#${id}"]`).parentElement.classList.remove('active');
-                    entry.target.classList.remove('active');
                 }
             });
         }
       
         // Track all sections that have an `id` applied
-        document.querySelectorAll('.side-tab__content[id]').forEach((tab) => {
+        document.querySelectorAll('.side-tab__content').forEach((tab) => {
             tabObserver.observe(tab);
         });
     });
