@@ -2,6 +2,7 @@
     @extend %grid-12;
     grid-row-gap: 2rem; 
     --headerHeight: "96px"; /*default single line header on desktop*/ 
+    
     &__header {
         grid-column: 1 / span 8;
         margin-bottom: -6rem;
