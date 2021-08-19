@@ -1,5 +1,17 @@
 [
-    
+    {
+        "name": "anchor",
+        "label": "Anchor Link",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+    },
     {
         "name": "header",
         "label": "Header",

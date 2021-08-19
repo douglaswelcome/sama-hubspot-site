@@ -1,10 +1,11 @@
 .side-tabs{
     @extend %grid-12;
     grid-row-gap: 2rem; 
-    --headerHeight: "96px"; /*default single line header on desktop*/
+    --headerHeight: "96px"; /*default single line header on desktop*/ 
     &__header {
         grid-column: 1 / span 8;
         margin-bottom: -6rem;
+        padding-top: 2rem;
         background-color: var(--color-charcoal-1);
         z-index: 1;
         p{
@@ -142,6 +143,7 @@
         top: 0;
         opacity: 0;
         transition: opacity 0.5s ease-in;
+        z-index: 1;
         &.active{
             opacity: 1;
         }

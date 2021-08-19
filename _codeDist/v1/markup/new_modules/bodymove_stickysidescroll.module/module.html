@@ -5,7 +5,7 @@
     no-y-pad
     "
 >
-    <div class="side-tabs">
+    <div id="{{ module.anchor }}" class="side-tabs">
         <div class="side-tabs__header">
             <h2>{{ module.header }}</h2>
             <p>{{ module.description }}</p>
@@ -36,9 +36,7 @@
         {% for item in module.tabs %}
             {% if item.tab_video %}
                 <video data-at="{{ loop.index }}" class="side-tabs__media{% if loop.index == 1 %} active {% endif %}" autoplay="true" loop="true" playsinline="true" muted="true">
-                    <source
-                        src="{{item.tab_video}}"
-                        type="video/mp4">
+                    <source src="{{item.tab_video}}" type="video/mp4">
                 </video>
             {% else %}
                 <img data-at="{{ loop.index }}" class="side-tabs__media{% if loop.index == 1 %} active {% endif %}" src="{{ item.tab_img.src }}" alt="{{ item.tab_img.alt }}" />
