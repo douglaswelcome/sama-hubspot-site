@@ -1,0 +1,14 @@
+{
+  "content_tags" : [ ],
+  "css_assets" : [ ],
+  "external_js" : [ ],
+  "extra_classes" : "",
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "js_assets" : [ ],
+  "label": "Icon Bullets Three",
+  "other_assets" : [ ],
+  "placement_rules" : [ ],
+  "smart_type" : "NOT_SMART",
+  "is_available_for_new_content" : true
+}
