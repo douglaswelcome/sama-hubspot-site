@@ -2,7 +2,7 @@
     flex-wrap: wrap;
     &_panels{
         @extend %grid-12; 
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-2);
         position: relative;
         @include breakpoint(w-sm){
