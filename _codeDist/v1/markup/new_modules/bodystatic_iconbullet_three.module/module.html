@@ -6,12 +6,7 @@
                 {% if icon.icon.src %}
                 <img src="{{ icon.icon.src }}" alt="{{ icon.icon.alt }}" />
                 {% endif %}
-                {% if icon.title %}
-                <h5>
-                    {{ icon.title }}
-                </h5>
-                {% endif %}
-                    {{ icon.body_copy }}
+                <p> {{ icon.body_copy }}</p>    
                 </div>
             {% endfor %}
         </div>

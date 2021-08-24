@@ -88,6 +88,7 @@
         padding: 3rem 2rem;
         background-color: var(--color-charcoal-2);
         position: relative;
+        
         .bodystatic_splitimgtxt_two_quote_txt{
             font-size: 2rem;
         }
@@ -106,13 +107,17 @@
         }
         &.bodystatic_splitimgtxt_two-right{
             width: calc(100% - 2rem);
+            @include breakpoint (w-sm) {
+                width: 100%;
+            }
         }
         @include breakpoint (w-sm) {
-            margin-bottom: 2rem;
+           
+            padding: 2rem 1.5rem;
             &:after{
                 right: 0;
-                left: -2rem;
-                top: -2rem;
+                left: -1rem;
+                top: -1rem;
             }
         }
     }
