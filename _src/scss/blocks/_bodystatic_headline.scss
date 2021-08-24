@@ -10,6 +10,10 @@
         .bodystatic_headline {
             &__headline, &__subheadline, &__btn {
                 grid-column: 2 / 9;
+
+                @include breakpoint (w-sm) {
+                    grid-column: 1 / 12;
+                }
             }
         }
     }

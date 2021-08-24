@@ -34,6 +34,12 @@
       padding-bottom: 0;
     }
   }
+
+  @include breakpoint(w-sm) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
 }
 
 
