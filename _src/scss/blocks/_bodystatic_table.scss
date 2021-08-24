@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: auto minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
     align-self: center;
-    border-radius: 32px;
+    border-radius: var(--roundcorner);
     padding: 0 3rem;
     background-color: var(--color-charcoal-2);
     z-index: 0;

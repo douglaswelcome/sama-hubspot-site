@@ -7,13 +7,13 @@
     &_wrapper{
         grid-column: 2 / span 10;
         height: 500px;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-2);
         position: relative;
     }
     #map{
         height: 100%;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         position: absolute; 
         top: 0;
         left: 0;

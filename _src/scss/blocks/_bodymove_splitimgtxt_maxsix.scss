@@ -31,11 +31,12 @@ $max-item-carousel:6;
             content: "";
             width: 0;
             height: 4px;
-            border-radius: 32px;
+            border-radius: var(--roundcorner);
             position: absolute;
             left: 0;
             bottom: 0;
             transition: width linear 0.2s;
+            
         }
         &.active{
             color: #FFF;
@@ -166,6 +167,8 @@ $max-item-carousel:6;
     }
     &_carousel_slide{
         flex: 0 0 100%;
+        margin-left: 0;
+        margin-right:0;
     }
 
     @for $i from $min-item-carousel through $max-item-carousel{

@@ -9,7 +9,7 @@
         grid-column: span 4;
         display: grid;
         grid-auto-rows: 1fr 1fr;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-2);
         img{
             display: block; 
