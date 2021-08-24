@@ -4,13 +4,15 @@
     
     &__headline, &__subheadline, &__btn {
         grid-column: 1 / 9;
+        @include breakpoint (w-med) {
+            grid-column: 1 / 12;
+        }
     }
 
     &--med {
         .bodystatic_headline {
             &__headline, &__subheadline, &__btn {
                 grid-column: 2 / 9;
-
                 @include breakpoint (w-med) {
                     grid-column: 1 / 12;
                 }
@@ -22,6 +24,9 @@
         .bodystatic_headline {
             &__headline, &__subheadline, &__btn {
                 grid-column: 3 / 8;
+                @include breakpoint (w-med) {
+                    grid-column: 1 / 12;
+                }
             }
         }
     }
