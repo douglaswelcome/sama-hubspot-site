@@ -52,7 +52,7 @@
         }
 
         &:nth-child(even) {
-            @include breakpoint(w-med){
+            @include breakpoint(w-sm){
                 grid-row:auto;
                 grid-column: 1/ span 12;
             }
