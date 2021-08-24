@@ -205,13 +205,17 @@
 
   @include breakpoint(w-med) {
     display: flex;
+
   }
 
   &__inner {
     @extend %grid-12;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    flex:1;
+    @include breakpoint(w-sm) {
+      width:100%;
+    }
+
 
   }
 
