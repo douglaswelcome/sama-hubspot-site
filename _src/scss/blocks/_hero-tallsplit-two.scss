@@ -44,7 +44,7 @@
             width: calc(100% - 2rem);
             height: calc(100% - 2rem);
             margin: 0 0 2rem 2rem;
-            border-radius: 32px;
+            border-radius: var(--roundcorner);
             object-fit: cover;
             position: relative;
         }
@@ -61,7 +61,7 @@
         linear-gradient(var(--color-charcoal-1), var(--color-charcoal-1)) padding-box,
         linear-gradient(270deg, #FF9432 0%, #FFFA0C 100%) border-box;
         border: 6px solid transparent;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         position: absolute;
         left: 0;
         bottom: 0;

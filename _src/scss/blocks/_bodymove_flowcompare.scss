@@ -10,7 +10,7 @@
     }
     &_item{
         grid-column: 1 / span 7;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         padding: 3rem 2rem;
         background-color: var(--color-charcoal-2);
         position: relative;

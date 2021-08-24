@@ -8,7 +8,7 @@
         grid-column: 3 / span 8;
         margin-bottom: 3rem;
         margin-right: 2rem;
-        border-radius: 32px;
+        border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-4);
         position: relative;
 
@@ -18,7 +18,7 @@
             height: 100%;
             background: linear-gradient(var(--color-charcoal-1), var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-yellow) border-box;
             border: 6px solid transparent;
-            border-radius: 32px;
+            border-radius: var(--roundcorner);
             position: absolute;
             bottom: -3rem;
             left: -3rem;
