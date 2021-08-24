@@ -11,7 +11,7 @@
             &__headline, &__subheadline, &__btn {
                 grid-column: 2 / 9;
 
-                @include breakpoint (w-sm) {
+                @include breakpoint (w-med) {
                     grid-column: 1 / 12;
                 }
             }
