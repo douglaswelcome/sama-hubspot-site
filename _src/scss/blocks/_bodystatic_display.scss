@@ -1,0 +1,16 @@
+.bodystatic_display {
+    @extend %grid-12;
+
+    &__panel {
+        grid-column: 1 / span 12;
+        border-radius: 2rem;
+        padding: 3rem;
+        background-color: var(--color-sunshine);
+
+    }
+
+    @include breakpoint(w-sm) {
+        grid-column: 1 / span 12;
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,66 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+{% module "module_20200820152057" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+<div class="flex-content bg-charcoal-1">
+
+    <div class="section-wrap">
+        {% module "module_20210826134435" path="/v1/markup/new_modules/bodystatic_headsubcta", label="bodystatic_headsubcta" %}
+        {% module "module_20210826134537" path="/v1/markup/new_modules/bodystatic_vid", label="bodystatic_vid" %}
+        {% module "module_20210826134801" path="/v1/markup/new_modules/bodystatic_bragbar", label="bodystatic_bragbar" %}
+
+    </div>
+
+
+
+
+
+    <div class="section-wrap">
+        {% module "module_20210826114751" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt" %}
+    </div>
+
+    <div class="section-wrap">
+        {% module "module_20210826114753" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt" %}
+    </div>
+
+    <div class="section-wrap">
+        {% module "module_20210826114752" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt" %}
+    </div>
+
+
+    <div class="section-wrap">
+
+        {% module "module_20210826115008" path="/v1/markup/new_modules/bodystatic_centerpanel", label="bodystatic_centerpanel" %}
+
+    </div>
+
+    <div class="section-wrap">
+        {% module "module_20210825114400" path="/v1/markup/new_modules/bodystatic_headline", label="bodystatic_headline" %}
+
+        {% module "module_20200806000317" path="/v1/markup/new_modules/bodystatic_imgcard_three", label="Three Cards" %}
+
+
+    </div>
+
+    <div class="section-wrap">
+        {% module "module_20200806003828" path="/v1/markup/new_modules/bodystatic_display", label="Big Display" %}
+
+    </div>
+
+    <div class="section-wrap">
+        {% module "module_20210825122340" path="/v1/markup/new_modules/bodystatic_headsubcta", label="Closer" %}
+
+    </div>
+
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

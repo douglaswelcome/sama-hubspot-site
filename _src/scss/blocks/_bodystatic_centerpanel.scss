@@ -1,13 +1,11 @@
 .bodystatic_centerpanel{
     @extend %grid-12;
-    &_panel{
+    &__panel{
         grid-column: 3 / span 8;
         border-radius: 2rem;
         padding: 3rem;
         background-color: var(--color-charcoal-2);
-        h2{
-            margin-bottom: 1.5rem;
-        }
+
 
         @include breakpoint(w-sm){
             grid-column: 1 / span 12;

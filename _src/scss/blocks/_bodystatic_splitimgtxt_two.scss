@@ -14,7 +14,7 @@
     &_preheadline{
         font-size: 1.1rem;
         text-transform: uppercase;
-        background: linear-gradient(270deg, $color-gradient-sunshine);
+        background: linear-gradient(270deg, $gradient-sunshine);
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent;
         display: inline-block;
@@ -56,7 +56,7 @@
                 content: "";
                 width: calc(100% - 2rem);
                 height: calc(100% - 2rem);
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-sunshine) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-sunshine) border-box;
                 border: 6px solid transparent;
                 border-radius: var(--roundcorner);
                 position: absolute;
@@ -194,11 +194,11 @@
 
     &-green-yellow{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-green-yellow);
+            background: linear-gradient(270deg, $gradient-green-yellow);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-yellow) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-green-yellow) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -210,11 +210,11 @@
 
     &-purple{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-magenta-purple);
+            background: linear-gradient(270deg, $gradient-magenta-purple);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-magenta-purple) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-magenta-purple) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -225,11 +225,11 @@
     }
     &-green{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-green-blue);
+            background: linear-gradient(270deg, $gradient-green-blue);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-blue) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-green-blue) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -240,11 +240,11 @@
     }
     &-red_orange{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-red-orange);
+            background: linear-gradient(270deg, $gradient-red-orange);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-red-orange) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-red-orange) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -255,11 +255,11 @@
     }
     &-blue{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-blue);
+            background: linear-gradient(270deg, $gradient-blue);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-blue) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -270,11 +270,11 @@
     }
     &-pink_red{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-pink-red);
+            background: linear-gradient(270deg, $gradient-pink-red);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-pink-red) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-pink-red) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{
@@ -285,11 +285,11 @@
     }
     &-blue_purple{
         .bodystatic_splitimgtxt_two_preheadline{
-            background: linear-gradient(270deg, $color-gradient-blue-purple);
+            background: linear-gradient(270deg, $gradient-blue-purple);
         }
         .bodystatic_splitimgtxt_two_img-frame{
             &:before{
-                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue-purple) border-box;
+                background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-blue-purple) border-box;
             }
         }
         .bodystatic_splitimgtxt_two_txt{

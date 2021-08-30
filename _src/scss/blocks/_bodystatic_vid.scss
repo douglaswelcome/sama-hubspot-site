@@ -1,0 +1,22 @@
+.bodystatic_vid {
+    @extend %grid-12;
+
+    &__content {
+        padding: .25rem;
+        background: linear-gradient(45deg,  var(--gradient-sunshine));
+        grid-column: 2 / span 10;
+        border-radius:var(--roundcorner);
+    }
+
+    &__wrapper {
+        border-radius:var(--roundcorner);
+        overflow:hidden;
+
+    }
+
+    &__vid {
+        width: 100%;
+        display:block;
+        background-color:var(--color-charcoal-1);
+    }
+}

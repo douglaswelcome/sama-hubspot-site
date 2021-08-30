@@ -118,70 +118,70 @@
         z-index: -1;
         margin: -2px;
         border-radius: inherit;
-        background: linear-gradient(90deg, $color-gradient-sunshine);
+        background: linear-gradient(90deg, $gradient-sunshine);
     }
     &:hover{
         &:before{
-            background: linear-gradient(360deg, $color-gradient-sunshine);
+            background: linear-gradient(360deg, $gradient-sunshine);
         }
     }
     &-purple{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-magenta-purple);
+        background: linear-gradient(90deg, $gradient-magenta-purple);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-magenta-purple);
+          background: linear-gradient(360deg, $gradient-magenta-purple);
         }
       }
     }
     &-green{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-green-blue);
+        background: linear-gradient(90deg, $gradient-green-blue);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-green-blue);
+          background: linear-gradient(360deg, $gradient-green-blue);
         }
       }
     }
     &-red_orange{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-red-orange);
+        background: linear-gradient(90deg, $gradient-red-orange);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-red-orange);
+          background: linear-gradient(360deg, $gradient-red-orange);
         }
       }
     }
     &-blue{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-blue);
+        background: linear-gradient(90deg, $gradient-blue);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-blue);
+          background: linear-gradient(360deg, $gradient-blue);
         }
       }
     }
     &-pink_red{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-pink-red);
+        background: linear-gradient(90deg, $gradient-pink-red);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-pink-red);
+          background: linear-gradient(360deg, $gradient-pink-red);
         }
       }
     }
     &-blue_purple{
       &:before{
-        background: linear-gradient(90deg, $color-gradient-blue-purple);
+        background: linear-gradient(90deg, $gradient-blue-purple);
       }
       &:hover{
         &:before{
-          background: linear-gradient(360deg, $color-gradient-blue-purple);
+          background: linear-gradient(360deg, $gradient-blue-purple);
         }
       }
     }

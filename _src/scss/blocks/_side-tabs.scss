@@ -74,14 +74,14 @@
                         color: #FFF;
                     }
                     &:before{
-                        background: linear-gradient(0deg, $color-gradient-sunshine);
+                        background: linear-gradient(0deg, $gradient-sunshine);
                         box-shadow: 0 0 0 2px $color-sunshine;
                     }
                 }
                 &.active{
                     &:after{
                         height: calc(100% - 1rem - 2px);
-                        background: linear-gradient(0deg, $color-gradient-sunshine);
+                        background: linear-gradient(0deg, $gradient-sunshine);
                     }
                 }
                 &:last-of-type{
