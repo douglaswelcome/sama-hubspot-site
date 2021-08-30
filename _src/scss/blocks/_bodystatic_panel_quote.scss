@@ -15,7 +15,7 @@
     &_gradient{
         width: 100%;
         height: 100%;
-        background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-yellow) border-box;
+        background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-green-yellow) border-box;
         border: 6px solid transparent;
         border-radius: var(--roundcorner);
         position: absolute;
@@ -26,25 +26,25 @@
             grid-column: 2 / span 8;
         }
         &-green_yellow{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-yellow) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-green-yellow) border-box;
         }
         &-purple{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-magenta-purple) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-magenta-purple) border-box;
         }
         &-green{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-green-blue) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-green-blue) border-box;
         }
         &-red_orange{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-red-orange) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-red-orange) border-box;
         }
         &-blue{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-blue) border-box;
         }
         &-pink_red{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-pink-red) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-pink-red) border-box;
         }
         &-blue_purple{
-            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $color-gradient-blue-purple) border-box;
+            background: linear-gradient(var(--color-charcoal-1),var(--color-charcoal-1)) padding-box,linear-gradient(89.94deg, $gradient-blue-purple) border-box;
         }
     }
     &_content{
