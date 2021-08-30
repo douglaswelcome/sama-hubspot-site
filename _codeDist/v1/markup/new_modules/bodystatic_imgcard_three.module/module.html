@@ -5,11 +5,6 @@ bg-charcoal-1
 no-y-pad
 ">
     <div class="bodystatic_imgcard_three">
-        {%  if module.headline %}
-        <h2>
-          {{ module.headline }}
-        </h2>
-        {% endif %}
         {% for card in module.cards %}
         <div class="bodystatic_imgcard_three_card">
           {% if card.img.src %}
