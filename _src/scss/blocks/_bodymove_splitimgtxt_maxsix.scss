@@ -45,42 +45,42 @@ $max-item-carousel:6;
             }
             &.green-yellow-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-green-yellow);
+                    background: linear-gradient(270deg, $gradient-green-yellow);
                 }
             }
             &.purple-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-magenta-purple);
+                    background: linear-gradient(270deg, $gradient-magenta-purple);
                 }
             }
     
             &.green-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-green-blue);
+                    background: linear-gradient(270deg, $gradient-green-blue);
                 }
             }
     
             &.red_orange-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-red-orange);
+                    background: linear-gradient(270deg, $gradient-red-orange);
                 }
             }
     
             &.blue-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-blue);
+                    background: linear-gradient(270deg, $gradient-blue);
                 }
             }
     
             &.pink_red-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-pink-red);
+                    background: linear-gradient(270deg, $gradient-pink-red);
                 }
             }
     
             &.blue_purple-gradient{
                 &:after{
-                    background: linear-gradient(270deg, $color-gradient-blue-purple);
+                    background: linear-gradient(270deg, $gradient-blue-purple);
                 }
             }
         }

@@ -1,0 +1,11 @@
+[
+  {
+    "name" : "video",
+    "label" : "Video File",
+    "required" : false,
+    "locked" : false,
+    "type" : "file",
+    "picker" : "file",
+    "default" : "https://images-assets.nasa.gov/video/jsc2019m000564_HistoricMissionControl_FB_MP4/jsc2019m000564_HistoricMissionControl_FB_MP4~orig.mp4"
+  }
+]
