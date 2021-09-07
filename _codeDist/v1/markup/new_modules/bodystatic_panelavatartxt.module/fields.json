@@ -64,7 +64,7 @@
     "required": false,
     "sortable": false,
     "type": "richtext",
-    "enabled_features" : ["bold"]
+    "enabled_features" : ["bold", "source_code"]
 
   }
 
