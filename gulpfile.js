@@ -103,7 +103,7 @@ function serve(done) {
             target: process.env.SANDBOX_URL,
         },
         online: true,
-        https: true
+        https: false
     });
     done();
 
