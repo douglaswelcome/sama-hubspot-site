@@ -1,0 +1,126 @@
+{% set tableID = "5287058"%}
+
+{% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
+
+
+<section class="dark-mode bg-charcoal-3">
+  <div class="news-feature">
+    <div class="news-feature__headline">
+      <h2 class="display-small">
+        {{ module.headline }}
+    </h2>
+    <div class="divider-line divider-line--horizontal divider-line--negative"></div>
+    <h5>{{ module.subheadline}}</h5>
+    </div>
+
+    {% for row in table %}
+    {% if row.featured.name=="First" %}
+
+    <div class=" news-feature__main news-feature--article-bg">
+
+      <a href="{{row.url}}" class="news-feature--link" target="_blank">
+
+
+            <div class="news-feature__category">
+                <p class="bold">
+                    {{ row.type.name }}
+                </p>
+            </div>
+            <div class="news-feature__title">
+                <h2 class="bold">
+                  {{row.name}}
+                </h2>
+                <h5>
+                  {{row.date | datetimeformat('%B %e, %Y')}} 
+                  {% if row.time %} @ {{row.time}}{% endif %}
+                </h5>
+            </div>
+           
+
+ 
+            </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="news-feature__secondary-wrapper">
+
+      {% for row in table %}
+      {% if row.featured.name=="Second" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.url}}" class="  news-feature--link"  target="_blank">
+                <div class="news-feature__category">
+                    <p class="bold">
+                      {{ row.type.name }}
+                     </p>
+                 </div>
+            
+                 <div class="news-feature__title">
+                      <h4 class="bold">
+                        {{row.name}}
+                     </h4>
+                    <h5>
+                      {{row.date | datetimeformat('%B %e, %Y')}} 
+                      {% if row.time %} @ {{row.time}}{% endif %}
+                    </h5>
+                 </div>
+              
+             </a>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+      {% for row in table %}
+      {% if row.featured.name=="Third" %}
+      <div class="news-feature__secondary-article news-feature--article-bg">
+        <a href="{{row.url}}" class="  news-feature--link"  target="_blank">
+                <div class="news-feature__category">
+                    <p class="bold">
+                      {{ row.type.name }}
+                     </p>
+                 </div>
+            
+                 <div class="news-feature__title">
+                      <h4 class="bold">
+                        {{row.name}}
+                     </h4>
+                    <h5>
+                      {{row.date | datetimeformat('%B %e, %Y')}} 
+                      {% if row.time %} @ {{row.time}}{% endif %}
+                    </h5>
+                 </div>
+              
+             </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+
+    </div>
+  </div>
+
+</section>
+
+
+<div class="section-wrap">
+<section class="event-table__section">
+  <div class="event-table darkmode">
+    {% for row in table %}
+    <a href="{{row.url}}" type="{{row.type.name}}" class="event-table__link card" target="_blank">
+      <div class="news-feature__category">
+        <p class="bold">
+          {{ row.type.name }}
+         </p>
+     </div>
+      <h4 class="event-table__title bold">{{row.name}}</h4>
+      <div class="divider-line divider-line--horizontal"></div>
+      <p class="event-table__datetime">{{row.date|datetimeformat('%B %e, %Y')}} {%if row.time %} @ {{row.time}} {%endif%}
+     <br>{{row.location}}</p>
+     </a>
+
+    {% endfor %}
+  </div>
+
+</section>
+</div>
