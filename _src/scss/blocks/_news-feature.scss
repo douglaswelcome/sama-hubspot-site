@@ -11,6 +11,7 @@
         grid-column: span 4;
         background-color: var(--color-charcoal-1);
         padding: 3rem 1.5rem;
+        border-radius:var(--cardcorner);
 
         @include breakpoint (w-sm){
             grid-column: span 12; 
@@ -20,6 +21,7 @@
 
     &__main {
         grid-column: 5 / span 4;
+        border-radius:var(--cardcorner);
         @include breakpoint (w-sm){
             grid-column: span 12; 
         }
@@ -32,13 +34,15 @@
         grid-column: 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 1.5rem;
+        
 
         @include breakpoint (w-sm){
             grid-column: span 12; 
         }
     }
 
-    &__secondary-article {     
+    &__secondary-article {  
+        border-radius:var(--cardcorner);
         
     }
 
@@ -88,6 +92,10 @@
         background-position: center;
         transition: transform .3s;
         overflow-wrap: break-word;
+
+        border-radius:var(--cardcorner);
+ 
+        
 
 
 
