@@ -1,17 +1,4 @@
 [{
-    "name": "tableid",
-    "label": "Table ID",
-    "required": true,
-    "locked": false,
-    "validation_regex": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "placeholder": "",
-    "inline_help_text": "Enter the ID of your Table",
-    "help_text": "",
-    "default": null
-  }, {
     "name": "headline",
     "label": "Headline",
     "required": false,
