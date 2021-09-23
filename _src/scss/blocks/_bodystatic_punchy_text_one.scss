@@ -1,10 +1,11 @@
-.bodystatic_punchy_text_one{
+.bodystatic_punchytext{
     @extend %grid-12;
     align-items: center;
+    grid-template-columns: auto auto 1fr;
 
-    h2{
-        width: calc(100% + 2rem); /*span the grid gap*/
-        grid-column: 1 / span 3;
+
+    &__headline{
+        
         @include breakpoint(w-sm) {
             width: 100%;
             grid-column: 1 / span 12;
@@ -21,12 +22,7 @@
             grid-column: 1 /span 12;
         }
     }
-    &_content{
-        width: calc(100% + 2rem);
-        margin-left: -2rem;
-        grid-column: 5 / -1;
-        font-size: 1.5rem;
-        line-height: 1.6;
+    &__content{
         @include breakpoint(w-sm) {
             width: 100%;
             margin-left: 0;
