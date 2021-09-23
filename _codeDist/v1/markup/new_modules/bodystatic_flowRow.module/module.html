@@ -1,0 +1,18 @@
+<section class="
+dark-mode
+bg-charcoal-1
+no-y-pad
+">
+    <div class="bodystatic_flowRow">
+        {% for step in module.steps %}
+            <div class="bodystatic_flowRow_step">
+                <div class="bodystatic_flowRow_img" style="background-image: url({{step.image.src}}); {%if step.image_size%}background-size: {{step.image_size}}%;{%endif%}">
+                    {% if loop.index < 3 %}
+                    <div class="bodystatic_flowRow_arrow"></div>
+                    {% endif %}
+                </div>
+                {{step.text}}
+            </div>
+        {% endfor %}
+    </div>
+</section> 
