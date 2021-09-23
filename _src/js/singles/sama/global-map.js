@@ -40,9 +40,17 @@ offices.features.forEach(function (marker, i) {
         })
         .setLngLat(marker.geometry.coordinates)
         .addTo(map);
+  
+    el.addEventListener('click', function (e) {
+        flyToOffice(marker);
+    })
 
-    el.addEventListener('mouseenter', function (e) {
-        createPopUp(marker);
+});
+
+function flyToOffice(currentFeature) {
+    map.flyTo({
+        center: currentFeature.geometry.coordinates,
+        zoom: 11.5
     });
 });
 
