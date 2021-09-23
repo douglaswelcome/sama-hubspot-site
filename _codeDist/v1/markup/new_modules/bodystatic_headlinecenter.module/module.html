@@ -1,0 +1,32 @@
+<!-- module html  -->
+<section class="
+dark-mode
+bg-charcoal-1
+no-y-pad
+">
+    <div class="bodystatic_headline 
+    {% if module.size=="med" %} bodystatic_headline--{{module.size}} {% endif %}
+    {% if module.size=="sm" %} bodystatic_headline--{{module.size}} {% endif %}
+    ">
+        {% if module.headline %}
+        <h2 class="bodystatic_headline__headline">{{module.headline}}</h2>
+        {% endif %}
+
+        {% if module.subheadline %}
+        <h5 class="bodystatic_headline__subheadline">{{module.subheadline}}</h5>
+        {% endif %}
+
+
+        {% if module.url %}
+        <div class="bodystatic_headline__btn">
+            <div class="btn__row">
+                <a href="{{module.url}}" class="btn__wrapper "
+                    <button class="btn">
+                    <h3 class="btn__text">{{module.btntxt}}</h3>
+                    </button>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
