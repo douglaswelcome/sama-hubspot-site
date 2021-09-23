@@ -5,9 +5,10 @@ bg-charcoal-1
 no-y-pad 
 ">
     <div class="hero_tallsplittxtimg">
+        <div class="hero_tallsplittxtimg__copy-wrapper"> 
         <div class="hero_tallsplittxtimg__copy">
-            {% if module.pageTitle == true %}
-            <p class="hero_tallsplittxtimg__page-title">{{content.name}}</p>
+            {% if module.preheadline == true %}
+            <h3 class="hero_tallsplittxtimg__preheadline">{{module.preheadline}}</h3>
             {% endif %}
             <h1>{{module.headline}}</h1>
             {% if module.subheadline %}
@@ -15,12 +16,23 @@ no-y-pad
             {% endif %}
             <div class="hero_tallsplittxtimg__btn-row">
                 <div class="btn__row">
-                    {% if module.btn_text %}
+                    {% if module.btn1_text %}
                     <div class="btn__wrapper">
-                        <a href="{{module.btn_url}}">
+                        <a href="{{module.btn1_url}}">
                         <button class="btn">
                             <h3 class="btn__text">
-                                {{module.btn_text}}
+                                {{module.btn1_text}}
+                            </h3>
+                        </button>
+                    </a>
+                    </div>
+                    {% endif %}
+                    {% if module.btn2_text %}
+                    <div class="btn__wrapper">
+                        <a href="{{module.btn2_url}}">
+                        <button class="btn">
+                            <h3 class="btn__text">
+                                {{module.btn2_text}}
                             </h3>
                         </button>
                     </a>
@@ -30,6 +42,7 @@ no-y-pad
 
                 </div>
             </div>
+        </div>
         </div>
         <div class="hero_tallsplittxtimg__img-wrapper">
             <div class="hero_tallsplittxtimg__img-gradient"></div>

@@ -10,8 +10,7 @@
   transition: transform 200ms;
   flex:1;
 
-  &__row {
-       
+  &__row {     
     display:inline-grid;
     align-items:center;
     grid-auto-columns:1fr;
@@ -22,7 +21,13 @@
   &__wrapper{
     background-color:var(--color-charcoal-6);
     border-radius: 3px;
-    display: flex;   
+    display: flex; 
+    
+    a{
+      display:flex;
+      flex:1;
+    }
+    
     &:hover{
       .btn {
         transform:translate(.5rem, -.5rem)
