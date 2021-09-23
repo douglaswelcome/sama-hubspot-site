@@ -1,12 +1,17 @@
 [
     {
-        "name": "pageTitle",
-        "label": "Show Page Title",
-        "required": false,
-        "locked": false,
-        "type": "boolean",
-        "default": false
-    }, 
+    "name": "preheadline",
+    "label": "Preheadline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null },
     {
         "name": "headline",
         "label": "Headline",
@@ -45,8 +50,8 @@
         }
     },
     {
-        "name": "btn_text",
-        "label": "Button Text",
+        "name": "btn1_text",
+        "label": "Button 1 Text",
         "required": false,
         "locked": false,
         "validation_regex": "",
@@ -59,8 +64,36 @@
         "default": null 
     },
     {
-    "name": "btn_url",
-    "label": "Button Url",
+    "name": "btn1_url",
+    "label": "Button 1 Url",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null 
+    },
+    {
+        "name": "btn2_text",
+        "label": "Button 2 Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": null 
+    },
+    {
+    "name": "btn2_url",
+    "label": "Button 2 Url",
     "required": false,
     "locked": false,
     "validation_regex": "",
