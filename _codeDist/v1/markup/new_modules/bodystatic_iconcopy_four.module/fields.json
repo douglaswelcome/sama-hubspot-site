@@ -9,6 +9,15 @@
     "default": false
   },
   {
+    "name": "responsive",
+    "label": "Responsive Images",
+    "inline_help_text": "Make image dimensions responsive. Default is (48px x 48px)",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": false
+  },
+  {
     "name": "icons",
     "label": "Icons",
     "required": false,
