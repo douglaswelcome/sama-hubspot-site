@@ -3,9 +3,6 @@
     align-items: baseline;
     row-gap: 3rem;;
 
-    @include breakpoint(w-sm){
-        width: 100%;
-    }
     h2{
         grid-column: span 12;
         margin-bottom: 3rem;
@@ -17,9 +14,9 @@
         grid-row: 2;
         grid-column: span 3;
 
-
         img{
             width: 3rem;
+            height: 3rem;
             display: block;
             margin-bottom: 1.5rem;
         }
@@ -32,31 +29,51 @@
                 margin: 0 auto 1.5rem auto;
             }
         }
-
-        @include breakpoint(w-med){
-            grid-row:auto;
-            grid-column: 2/ span 5;
+    }
+    &--responsive{
+        align-items: flex-start;
+        .bodystatic_iconcopy_four_icon{
+            display: grid;
+            grid-template-rows: 105px auto;
+            grid-row-gap: 1.25rem;
+            img{
+                height: auto;
+                width: auto;
+                max-width: 100%;
+                max-height: 105px;
+                margin: 0 auto;
+            }
+            &.text-center{
+                img{
+                    margin: 0 auto;
+                }
+            }
         }
+    }
 
-        &:nth-child(even) {
-            @include breakpoint(w-med){
-                grid-row:auto;
+    @include breakpoint(w-med){
+        &_icon{
+            grid-row: auto !important;
+            grid-column: 2/ span 5;
+    
+            &:nth-child(even) {
+                grid-row: auto;
                 grid-column: 7/ span 5;
             }
         }
+    }
 
-        @include breakpoint(w-sm){
+    @include breakpoint(w-sm){
+        width: 100%;
+
+        &_icon{
             grid-row: auto;
             grid-column: 1 / span 12;
 
-        }
-
-        &:nth-child(even) {
-            @include breakpoint(w-sm){
-                grid-row:auto;
+            &:nth-child(even) {
+                grid-row: auto;
                 grid-column: 1/ span 12;
             }
         }
-     
     }
 }
