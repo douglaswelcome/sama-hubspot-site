@@ -98,7 +98,7 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                     </div>
                 {% endif %}
             {% endif %}
-            {% if module.img.src %}
+            {% if !module.quote && module.img.src %}
                 <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
             {% endif %}
             {% if module.list_items %}
