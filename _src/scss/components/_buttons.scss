@@ -10,8 +10,7 @@
   transition: transform 200ms;
   flex:1;
 
-  &__row {
-       
+  &__row {     
     display:inline-grid;
     align-items:center;
     grid-auto-columns:1fr;
