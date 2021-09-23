@@ -40,6 +40,7 @@ offices.features.forEach(function (marker, i) {
         })
         .setLngLat(marker.geometry.coordinates)
         .addTo(map);
+  
     el.addEventListener('click', function (e) {
         flyToOffice(marker);
     })
@@ -51,7 +52,7 @@ function flyToOffice(currentFeature) {
         center: currentFeature.geometry.coordinates,
         zoom: 11.5
     });
-}
+});
 
 function flyToDefault() {
     map.flyTo({
@@ -62,6 +63,23 @@ function flyToDefault() {
     // Check if there is already a popup on the map and if so, remove it
     if (poppers[0]) poppers[0].remove();
 }
+
+function createPopUp(currentFeature) {
+    removePopup();
+
+    var popup = new mapboxgl.Popup({
+            closeOnClick: true
+        })
+        .setLngLat(currentFeature.geometry.coordinates)
+        .setHTML('<p>' + currentFeature.properties.title + '</p>' + '<p>' + currentFeature.properties.FTE + ' Full Time Employees</p>')
+        .addTo(map);
+}
+
+function removePopup() {
+    var popUps = document.getElementsByClassName('mapboxgl-popup');
+    // Check if there is already a popup on the map and if so, remove it
+    if (popUps[0]) popUps[0].remove();
+};
 
 // This will let you use the .remove() function later on
 if (!('remove' in Element.prototype)) {
@@ -88,6 +106,7 @@ map.on('click', function (e) {
     });
     if (features.length) {
         var clickedPoint = features[0];
+        createPopUp(clickedPoint);
         // Find the index of the store.features that corresponds to the clickedPoint that fired the event listener
         var selectedFeature = clickedPoint.properties.address;
 
