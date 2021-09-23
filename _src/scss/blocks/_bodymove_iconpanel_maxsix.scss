@@ -176,6 +176,8 @@
             align-items: center;
             grid-gap: 1.5rem;
             color: var(--color-charcoal-5);
+            word-break: break-word;
+            line-height: 1.25;
             cursor: pointer;
             transition: all linear 0.25s;
             span{
