@@ -196,6 +196,7 @@
                 }
             }
         }
+
         @include breakpoint(w-lg){
             align-items: flex-start;
             &_item{
@@ -203,6 +204,7 @@
                 grid-gap: 0.5rem;
             }
         }
+        
         @include breakpoint(w-sm){
             display: none;
         }
