@@ -41,12 +41,12 @@ offices.features.forEach(function (marker, i) {
         .setLngLat(marker.geometry.coordinates)
         .addTo(map);
     el.addEventListener('click', function (e) {
-        flyToStore(marker);
+        flyToOffice(marker);
     })
 
 });
 
-function flyToStore(currentFeature) {
+function flyToOffice(currentFeature) {
     map.flyTo({
         center: currentFeature.geometry.coordinates,
         zoom: 11.5
