@@ -1,0 +1,59 @@
+[
+  {
+    "name": "steps",
+    "label": "Steps",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 3,
+      "max": 3,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [{
+      "name": "image",
+      "label": "Image",
+      "required": false,
+      "locked": false,
+      "inline_help_text": "",
+      "help_text": "",
+      "responsive": true,
+      "resizable": false,
+      "type": "image",
+      "default": {
+        "src": "",
+        "alt": null
+      }
+    },
+    {
+      "id": "",
+      "name": "image_size",
+      "label": "Image Size (%)",
+      "inline_help_text": "Override default full width image size",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "number",
+      "placeholder": "",
+      "default": ""
+    },
+    {
+      "id": "",
+      "name": "text",
+      "label": "Text",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "richtext",
+      "placeholder": "",
+      "default": ""
+    }
+  ],
+  "type": "group",
+  "default": [{}]
+  }
+]
