@@ -36,9 +36,7 @@
     &__btn-row {
         display: inline-flex;
         align-items: center; 
-        @include breakpoint(w-sm) {
-            margin-bottom: 1.25rem;
-        }
+
     }
 
     &__img-wrapper {
