@@ -1,4 +1,27 @@
-[
+[{
+"name": "preheadline",
+"label": "Preheadline",
+"required": false,
+"locked": false,
+"validation_regex": "",
+"allow_new_line": false,
+"show_emoji_picker": false,
+"type": "text",
+"placeholder": "",
+"inline_help_text": "",
+"help_text": "",
+"default": null 
+},
+  {
+    "name": "bigheady",
+    "label": "Large Headline Text?",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": true
+  },
   {
     "name": "headline",
     "label": "Headline",
@@ -11,6 +34,7 @@
     "type": "text",
     "default": ""
   },
+
   {
     "name": "subheadline",
     "label": "Subheadline",
@@ -24,30 +48,32 @@
     "default": ""
   },
   {
-  "name": "url",
-  "label": "Button Url",
-  "required": false,
-  "locked": false,
-  "validation_regex": "",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": null },
+    "name": "url",
+    "label": "Button Url",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null
+  },
   {
-  "name": "btntxt",
-  "label": "Button Text",
-  "required": false,
-  "locked": false,
-  "validation_regex": "",
-  "allow_new_line": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "placeholder": "",
-  "inline_help_text": "",
-  "help_text": "",
-  "default": null }
+    "name": "btntxt",
+    "label": "Button Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null
+  }
 
 ]
