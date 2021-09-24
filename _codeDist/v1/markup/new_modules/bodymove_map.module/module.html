@@ -3,14 +3,12 @@ dark-mode
 bg-charcoal-1
 no-y-pad">
     <div class="bodymove_map">
-        <h2>{{module.headline}}</h2>
-        <div class="bodymove_map_wrapper">
+        <div class="bodymove_map__wrapper">
             <div id="map">
                 <script>
                     var offices = {
                         "type": "FeatureCollection",
-                        "features": [
-                            {
+                        "features": [{
                                 "type": "Feature",
                                 "geometry": {
                                     "type": "Point",
@@ -33,7 +31,7 @@ no-y-pad">
                                     ]
                                 },
                                 "properties": {
-                                    "city": "Tres Rios",
+                                    "city": "San Juan",
                                     "title": "R&D",
                                     "FTE": "9"
                                 }
@@ -58,7 +56,7 @@ no-y-pad">
                                 "geometry": {
                                     "type": "Point",
                                     "coordinates": [
-                                        4.305060384762361, 52.07142235997321, 
+                                        4.305060384762361, 52.07142235997321,
                                     ]
                                 },
                                 "properties": {
@@ -129,20 +127,5 @@ no-y-pad">
                 </button>
             </div>
         </div>
-    </div>
-    <div class="bodystatic_iconbullet_four">
-        {% for icon in module.icons %}
-        <div class="bodystatic_iconbullet_four_icon">
-          {% if icon.icon.src %}
-          <img src="{{ icon.icon.src }}" alt="{{ icon.icon.alt }}" />
-          {% endif %}
-          {% if icon.title %}
-          <h5>
-            {{ icon.title }}
-          </h5>
-          {% endif %}
-            {{ icon.body_copy }}
-        </div>
-      {% endfor %}
     </div>
 </section>

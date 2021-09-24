@@ -1,22 +1,26 @@
 <section class="
-{% if module.darkmode == true %}
 dark-mode
-{{ module.bg_color }}
-{% endif %} 
+bg-charcoal-1 
 no-y-pad">
     <div class="bodystatic_iconbullet_four">
         {% for icon in module.icons %}
-            <div class="bodystatic_iconbullet_four_icon">
+        <div class="bodystatic_iconbullet_four_icon">
             {% if icon.icon.src %}
             <img src="{{ icon.icon.src }}" alt="{{ icon.icon.alt }}" />
             {% endif %}
-            {% if icon.title %}
-            <h5>
-                {{ icon.title }}
-            </h5>
-            {% endif %}
-                {{ icon.body_copy }}
+            <div class="bodystatic_iconbullet_four__copy">
+                {% if icon.title %}
+                <h5 class="bold">
+                    {{ icon.title }}
+                </h5>
+                {% endif %}
+                <p>
+                    {{ icon.body_copy }}
+                </p>
+
+
             </div>
+        </div>
         {% endfor %}
     </div>
 </section>
