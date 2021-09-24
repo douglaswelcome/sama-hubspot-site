@@ -1,0 +1,50 @@
+.bodystatic_iconbulletcenter_three {
+  @extend %grid-12;
+
+  @include breakpoint(w-sm) {
+    width: 100%;
+  }
+
+  &__icon {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1.5rem;
+  }
+
+  &__row {
+    grid-column: 3 /span 8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+
+    h5 {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+
+      @include breakpoint (w-sm) {
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    @include breakpoint(w-sm) {
+      grid-column: 1 /span 12;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 3rem;
+      max-height: 3rem;
+      width: 100%;
+    }
+  }
+}
