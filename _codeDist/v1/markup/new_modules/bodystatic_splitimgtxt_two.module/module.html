@@ -80,19 +80,21 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                 </div>
             </div>
         </div>
-        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}">
+        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}
+        {%if module.quote && module.fullframe == true %}bodystatic_splitimgtxt_two_img_quote--fullframe {%endif%}
+        ">
             {% if module.quote %}  
                 {% if module.img.src %}
-                    <div class="bodystatic_splitimgtxt_two_imgwrap">
+                    <div class="bodystatic_splitimgtxt_two__imgwrap">
                         <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
                     </div>
-                    <div class="bodystatic_splitimgtxt_two_quote_content">
-                        <div class="bodystatic_splitimgtxt_two_quote_icon">&#8220;</div>
+                    <div class="bodystatic_splitimgtxt_two_quote__content">
+                        <div class="bodystatic_splitimgtxt_two__quote_icon">&#8220;</div>
                         <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
                         <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
                     </div>
                 {% else %}
-                    <div class="bodystatic_splitimgtxt_two_quote_content">
+                    <div class="bodystatic_splitimgtxt_two_quote__content">
                         <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
                         <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
                     </div>

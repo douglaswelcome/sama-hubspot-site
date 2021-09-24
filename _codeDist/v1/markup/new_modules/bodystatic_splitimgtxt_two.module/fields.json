@@ -1,13 +1,12 @@
-[
-    {
+[{
         "name": "text_position",
         "label": "Text Left or Right?",
         "required": false,
         "locked": false,
         "display": "select",
         "choices": [
-          ["left", "Text Left"],
-          ["right", "Text Right"]
+            ["left", "Text Left"],
+            ["right", "Text Right"]
         ],
         "type": "choice",
         "default": "left"
@@ -109,57 +108,67 @@
         "default": false
     },
     {
+        "name": "fullframe",
+        "label": "Is Quote/Headshot Image Fullframe?",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": false
+    },
+    {
         "name": "list_items",
         "label": "Bullet List Items",
         "inline_help_text": "Use if one of the columns content is a list",
         "required": false,
         "locked": false,
         "occurrence": {
-          "min": 0,
-          "max": 4,
-          "sorting_label_field": null,
-          "default": null
+            "min": 0,
+            "max": 4,
+            "sorting_label_field": null,
+            "default": null
         },
         "children": [{
-            "name": "icon",
-            "label": "Bullet Icon",
-            "required": false,
-            "locked": false,
-            "inline_help_text": "Replaces standard bullet points",
-            "help_text": "",
-            "responsive": true,
-            "resizable": false,
-            "type": "image",
-            "default": {
-              "src": "",
-              "alt": null
+                "name": "icon",
+                "label": "Bullet Icon",
+                "required": false,
+                "locked": false,
+                "inline_help_text": "Replaces standard bullet points",
+                "help_text": "",
+                "responsive": true,
+                "resizable": false,
+                "type": "image",
+                "default": {
+                    "src": "",
+                    "alt": null
+                }
+            },
+            {
+                "name": "title",
+                "label": "Title",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "placeholder": "",
+                "default": "Goldblumology"
+            },
+            {
+                "id": "",
+                "name": "body_copy",
+                "label": "Content",
+                "required": false,
+                "locked": false,
+                "validation_regex": "",
+                "allow_new_line": false,
+                "show_emoji_picker": false,
+                "type": "richtext",
+                "placeholder": "",
+                "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
             }
-          },
-          {
-            "name": "title",
-            "label": "Title",
-            "required": false,
-            "locked": false,
-            "validation_regex": "",
-            "allow_new_line": false,
-            "show_emoji_picker": false,
-            "type": "text",
-            "placeholder": "",
-            "default": "Goldblumology"
-          },
-          {
-            "id": "",
-            "name": "body_copy",
-            "label": "Content",
-            "required": false,
-            "locked": false,
-            "validation_regex": "",
-            "allow_new_line": false,
-            "show_emoji_picker": false,
-            "type": "richtext",
-            "placeholder": "",
-            "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
-          }
         ],
         "type": "group",
         "default": [{}]
@@ -184,7 +193,7 @@
         "locked": false,
         "validation_regex": "",
         "placeholder": "",
-        "allow_new_line": false,
+        "allow_new_line": true,
         "show_emoji_picker": false,
         "type": "text",
         "default": ""
@@ -198,14 +207,14 @@
         "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
         "help_text": "",
         "choices": [
-        [
-            "cta",
-            "CTA"
-        ],
-        [
-            "link",
-            "Link"
-        ]
+            [
+                "cta",
+                "CTA"
+            ],
+            [
+                "link",
+                "Link"
+            ]
         ],
         "type": "choice",
         "placeholder": "",
@@ -220,14 +229,14 @@
         "inline_help_text": "Is this a button or a hyperlink?",
         "help_text": "",
         "choices": [
-        [
-            "false",
-            "Button"
-        ],
-        [
-            "true",
-            "Hyperlink"
-        ]
+            [
+                "false",
+                "Button"
+            ],
+            [
+                "true",
+                "Hyperlink"
+            ]
         ],
         "type": "choice",
         "placeholder": "",
@@ -280,5 +289,5 @@
         "help_text": "",
         "type": "cta",
         "default": null
-  }
+    }
 ]
