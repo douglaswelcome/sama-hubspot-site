@@ -7,8 +7,6 @@
     }
 
     &__copy {
-   
-     
         display:inline-grid;
         grid-auto-flow: row;
         row-gap: 2rem;
@@ -39,7 +37,9 @@
     &__btn-row {
         display: inline-flex;
         align-items: center; 
-
+        @include breakpoint(w-sm) {
+            margin-bottom: 1.25rem;
+        }
     }
 
     &__img-wrapper {
