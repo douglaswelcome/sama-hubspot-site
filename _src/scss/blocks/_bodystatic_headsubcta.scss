@@ -1,7 +1,13 @@
 .bodystatic_headsubcta {
     @extend %grid-12;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
     grid-auto-flow: row;
+    &__preheadline{
+      grid-column: 3 /span 8;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--color-sunshine);
+    }
 
     &__headline {
       grid-column: 3 /span 8;
