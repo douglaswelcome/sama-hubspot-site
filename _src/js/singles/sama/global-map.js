@@ -1,11 +1,12 @@
 buildOfficeList(offices);
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWVzaW1wc29uIiwiYSI6ImNrcm1vdGM3eDd2ZTMycHBheTEwajhqcjMifQ.nHuWTNRfeQ83cdMK2qJnpw';
+mapboxgl.accessToken =
+    'pk.eyJ1IjoiYWVzaW1wc29uIiwiYSI6ImNrcm1vdGM3eDd2ZTMycHBheTEwajhqcjMifQ.nHuWTNRfeQ83cdMK2qJnpw';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/aesimpson/ckrmovdwb2j2r17lqxf2p2lw5',
-    center: [-33.654541, 35.323946],
-    zoom: 1
+    center: [-9.888865, 30.638876],
+    zoom: 1.4
 });
 
 map.addControl(new mapboxgl.NavigationControl({
@@ -27,20 +28,21 @@ offices.features.forEach(function (marker, i) {
     el.id = "marker-" + i;
 
 
-    if(marker.properties.city){
-        const labelClass = "bodymove_map_marker_label " + (marker.properties.labelPosition ? marker.properties.labelPosition : "");
-        el.innerHTML  = "<p class='"+labelClass+"'>"+marker.properties.city+"</p>";
+    if (marker.properties.city) {
+        const labelClass = "bodymove_map_marker_label " + (marker.properties.labelPosition ?
+            marker.properties.labelPosition : "");
+        el.innerHTML = "<p class='" + labelClass + "'>" + marker.properties.city + "</p>";
     }
 
     // By default the image for your custom marker will be anchored
     // by its center. Adjust the position accordingly
     // Create the custom markers, set their position, and add to map
     new mapboxgl.Marker(el, {
-            
+
         })
         .setLngLat(marker.geometry.coordinates)
         .addTo(map);
-  
+
     el.addEventListener('click', function (e) {
         flyToOffice(marker);
     })
