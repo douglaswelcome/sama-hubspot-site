@@ -31,4 +31,10 @@
             grid-column: 3 / span 8;
         }
     }
+
+    &__copy {
+        display:grid;
+        grid-auto-flow: row;
+        row-gap:.25rem;
+    }
 }
