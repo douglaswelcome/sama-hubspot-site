@@ -39,7 +39,7 @@ $max-item-carousel:6;
             
         }
         &.active{
-            color: #FFF;
+            color: var(--color-white);
             &:after{
                 width: 100%;
             }
