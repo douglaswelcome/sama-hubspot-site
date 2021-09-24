@@ -89,6 +89,7 @@
 
             .bodystatic_splitimgtxt_two__imgwrap > img{
                 width:100%;
+                max-height: 389px;
                 margin:0;
                 object-fit:cover;
             }
@@ -151,7 +152,6 @@
             padding: 2rem 1.5rem;
 
             &:after {
-
                 right: 0;
                 left: -1rem;
                 top: -1rem;
@@ -169,17 +169,17 @@
         &:after {
             content: "";
             display: block;
-            width: 150%;
-            height: 120%;
-            border: 58px solid var(--color-charcoal-2);
-            border-top: none;
-            border-bottom-left-radius: 114%;
-            border-bottom-right-radius: 114%;
+            width: 155%;
+            height: 155%;
+            border: 77px solid var(--color-charcoal-2);
+            border-top: 0;
+            border-bottom-left-radius: 115%;
+            border-bottom-right-radius: 115%;
             background: transparent;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -59px;
+            bottom: -78px;
             background: transparent;
         }
 
