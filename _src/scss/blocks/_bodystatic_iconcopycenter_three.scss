@@ -1,4 +1,4 @@
-.bodystatic_iconbulletcenter_three {
+.bodystatic_iconcopycenter_three {
   @extend %grid-12;
 
   @include breakpoint(w-sm) {
@@ -9,6 +9,7 @@
     display: grid;
     grid-auto-flow: row;
     row-gap: 1.5rem;
+    grid-auto-rows: min-content;
   }
 
   &__row {
