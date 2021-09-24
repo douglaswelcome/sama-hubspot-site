@@ -9,9 +9,10 @@
         }
     }
     &__right {
-        grid-column:7 /span 5;
-        display:flex;
-        justify-content:center;
+        grid-column: 7 /span 5;
+    display: block;
+    justify-content: center;
+    align-self: center;
 
         @include breakpoint (w-sm) {
             grid-column:1 / span 12;
