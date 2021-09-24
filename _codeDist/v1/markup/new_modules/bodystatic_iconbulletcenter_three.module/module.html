@@ -15,13 +15,15 @@ no-y-pad
           
           {% endif %}
           {% if icon.title %}
-          <h5>
+          <h5 class="{%if icon.titlebold == true%}bold{%endif%}">
             {{ icon.title }}
           </h5>
           {% endif %}
+          {% if icon.body_copy%}
           <p>
             {{ icon.body_copy }}
           </p>
+          {%endif%}
         </div>
       {% endfor %}
     </div>
