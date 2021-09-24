@@ -4,6 +4,7 @@
  
     @include breakpoint(w-sm) {
         column-gap: 0.125rem;
+        row-gap:4rem;
     }
 
     &__copy {
@@ -11,10 +12,8 @@
         grid-auto-flow: row;
         row-gap: 2rem;
         height: auto;
-
         @include breakpoint(w-sm) {
             grid-column: 1 / span 12;
-
         }
     }
 

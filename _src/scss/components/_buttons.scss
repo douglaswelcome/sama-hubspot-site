@@ -21,7 +21,8 @@
   &__wrapper{
     background-color:var(--color-charcoal-6);
     border-radius: 3px;
-    display: flex; 
+    display: flex;
+    height:100%;
     
     a{
       display:flex;
@@ -45,6 +46,7 @@
     padding: 1rem 2rem .75rem 2rem;
     color: var(--color-white) ;
     margin: 0;
+    line-height: 1.25;
 
     @include breakpoint (w-sm){
       font-size: 1rem;
