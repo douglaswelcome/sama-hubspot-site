@@ -4,8 +4,13 @@ bg-charcoal-1
 no-y-pad
 ">
   <div class="bodystatic_headsubcta">
+    {% if module.preheadline %}
+    <h3 class="bodystatic_headsubcta__preheadline">
+      {{module.preheadline}}
+    </h3>
+    {%endif%}
     {% if module.headline %}
-    <h2 class="bodystatic_headsubcta__headline display-small">
+    <h2 class="bodystatic_headsubcta__headline {%if module.bigheady == true %}display-small{%endif%}">
       {{ module.headline }}
     </h2>
     {%endif%}
