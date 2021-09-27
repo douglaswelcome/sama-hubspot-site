@@ -1,15 +1,18 @@
 <section
 class="dark-mode bg-charcoal-1 no-y-pad">
-    <div class="bodystatic_splitimgtxt_two {% if module.theme_color %}bodystatic_splitimgtxt_two-{{module.theme_color}}{% endif %}">
-        <div class="bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-left{% else %}-right{% endif %}">
+    <div class="bodystatic_splitimgtxt {% if module.theme_color %}bodystatic_splitimgtxt-{{module.theme_color}}{% endif %}">
+        <div class="bodystatic_splitimgtxt__copy 
+        {% if module.text_position == 'left' %}bodystatic_splitimgtxt--left
+        {% else %}bodystatic_splitimgtxt--right{% endif %}
+        ">
             {% if module.preheadline %}
-                <h2 class="bodystatic_splitimgtxt_two_preheadline">{{ module.preheadline }}</h2>
+                <h2 class="bodystatic_splitimgtxt_preheadline">{{ module.preheadline }}</h2>
                 <h3 class="h2">{{module.headline}}</h3>
             {% else %}
                 <h2>{{module.headline}}</h2>
             {% endif %}
             
-            {{module.txt_body}}
+            <div class="bodystatic_splitimgtxt__txt_body">{{module.txt_body}}</div>
             <div class="two-block-2__btn">
                 <div class="btn__row">
                     {% if module.type1=="cta" %}
@@ -80,23 +83,23 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                 </div>
             </div>
         </div>
-        <div class="bodystatic_splitimgtxt_two{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt_two{% if module.text_position == 'left' %}-right{% else %}-left{% endif %}
-        {%if module.quote && module.fullframe == true %}bodystatic_splitimgtxt_two_img_quote--fullframe {%endif%}
+        <div class="bodystatic_splitimgtxt{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt{% if module.text_position == 'left' %}--right{% else %}-left{% endif %}
+        {%if module.quote && module.fullframe == true %}bodystatic_splitimgtxt_img_quote--fullframe {%endif%}
         ">
             {% if module.quote %}  
                 {% if module.img.src %}
-                    <div class="bodystatic_splitimgtxt_two__imgwrap">
+                    <div class="bodystatic_splitimgtxt__imgwrap">
                         <img src="{{module.img.src}}" alt="{{module.img.alt}}" />
                     </div>
-                    <div class="bodystatic_splitimgtxt_two_quote__content">
-                        <div class="bodystatic_splitimgtxt_two__quote_icon">&#8220;</div>
-                        <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
-                        <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
+                    <div class="bodystatic_splitimgtxt_quote__content">
+                        <div class="bodystatic_splitimgtxt__quote_icon">&#8220;</div>
+                        <p class="bodystatic_splitimgtxt_quote_txt">{{module.quote}}</p>
+                        <p class="bodystatic_splitimgtxt_quote_citation">{{module.quote_citation}}</p>
                     </div>
                 {% else %}
-                    <div class="bodystatic_splitimgtxt_two_quote__content">
-                        <p class="bodystatic_splitimgtxt_two_quote_txt">{{module.quote}}</p>
-                        <p class="bodystatic_splitimgtxt_two_quote_citation">{{module.quote_citation}}</p>
+                    <div class="bodystatic_splitimgtxt_quote__content">
+                        <p class="bodystatic_splitimgtxt_quote_txt">{{module.quote}}</p>
+                        <p class="bodystatic_splitimgtxt_quote_citation">{{module.quote_citation}}</p>
                     </div>
                 {% endif %}
             {% endif %}
@@ -105,11 +108,11 @@ class="dark-mode bg-charcoal-1 no-y-pad">
             {% endif %}
             {% if module.list_items %}
                 {% for item in module.list_items %}
-                    <div class="bodystatic_splitimgtxt_two_list_item">
+                    <div class="bodystatic_splitimgtxt_list_item">
                         {% if item.icon.src %}
                             <img src="{{item.icon.src}}" alt="{{item.icon.alt}}" />
                         {% endif %}
-                        <div class="bodystatic_splitimgtxt_two_list_item_copy">
+                        <div class="bodystatic_splitimgtxt_list_item_copy">
                             <h3>{{item.title}}</h3>
                             <p>{{item.body_copy}}</p>
                         </div>
