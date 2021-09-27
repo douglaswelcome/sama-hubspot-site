@@ -6,6 +6,9 @@
         border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-2);
         position: relative;
+        @include breakpoint (w-sm) {
+            height:300px;
+        }
     }
     #map{
         height: 100%;
@@ -34,6 +37,11 @@
             color: #000;
             background: yellow;
             border-radius:.25rem;
+
+            @include breakpoint (w-sm) {
+                display:none;
+                
+            }
 
             &.right{
                 right: unset;

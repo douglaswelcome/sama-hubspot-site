@@ -23,6 +23,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include breakpoint(w-sm) {
+            grid-column: 1 / span 12;
+        }
     }
 
     &__preheadline{
@@ -45,6 +48,8 @@
         position: relative;
         min-height: 60vh;
         max-height: 75vh;
+        height:auto;
+        width:auto;
         img{
             display: block;
             width: calc(100% - 2rem);
@@ -56,13 +61,15 @@
         }
         @include breakpoint(w-sm) {
             grid-row: 2;
-            grid-column: 1 /span 12
+            grid-column: 1 /span 12;
+            min-height: 30vh;
+            max-height: 45vh;
         }
     }
     /*replace with mask for transparent background once safari fully supports*/
     &__img-gradient{
-        width: 85%;
-        height: 95%;
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
         background: 
         linear-gradient(var(--color-charcoal-1), var(--color-charcoal-1)) padding-box,
         linear-gradient(270deg, #FF9432 0%, #FFFA0C 100%) border-box;
