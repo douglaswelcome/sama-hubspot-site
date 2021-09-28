@@ -7,12 +7,11 @@ class="dark-mode bg-charcoal-1 no-y-pad">
         ">
             {% if module.preheadline %}
                 <h2 class="bodystatic_splitimgtxt_preheadline">{{ module.preheadline }}</h2>
-                <h3 class="h2">{{module.headline}}</h3>
-            {% else %}
+                {% endif %}
                 <h2>{{module.headline}}</h2>
-            {% endif %}
             
-            <div class="bodystatic_splitimgtxt__txt_body">{{module.txt_body}}</div>
+            
+            <h5 class="bodystatic_splitimgtxt__txt_body">{{module.txt_body}}</h5>
             <div class="two-block-2__btn">
                 <div class="btn__row">
                     {% if module.type1=="cta" %}
@@ -45,6 +44,9 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                             {% endif %}
                         {% endif %}
                     {% endif %}
+
+
+
                     {# Link Markup #}
                     {% if module.type1=="link" %}
                         {% if module.url1 %}
@@ -80,10 +82,12 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                         </button>
                     </div>
                     {% endif %}
+
                 </div>
             </div>
         </div>
-        <div class="bodystatic_splitimgtxt{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt{% if module.text_position == 'left' %}--right{% else %}--left{% endif %}
+        <div class="
+        bodystatic_splitimgtxt{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt{% if module.text_position == 'left' %}--right{% else %}--left{% endif %}
         {%if module.quote && module.fullframe == true %}bodystatic_splitimgtxt_img_quote--fullframe {%endif%}
         ">
             {% if module.quote %}  

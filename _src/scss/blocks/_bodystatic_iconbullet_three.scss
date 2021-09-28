@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: auto 1fr;
         column-gap: 1.5rem;
+        align-items: center;
 
         @include breakpoint(w-med){
             grid-column: 1 / span 12;
