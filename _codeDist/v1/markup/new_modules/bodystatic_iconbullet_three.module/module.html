@@ -16,7 +16,9 @@ no-y-pad
             {% endif %}
                 <div class="bodystatic_iconbullet_three__copy">
                     {% if icon.title %}
-                    <h5 class="bold">
+                    <h5 class="
+                    {% if icon.bold %} bold {% endif%}
+                    ">
                         {{ icon.title }}
                     </h5>
                     {% endif %}
