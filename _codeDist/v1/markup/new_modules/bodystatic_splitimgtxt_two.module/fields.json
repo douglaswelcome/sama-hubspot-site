@@ -83,7 +83,7 @@
         "placeholder": "Leave blank to omit this field",
         "allow_new_line": false,
         "show_emoji_picker": false,
-        "type": "richtext",
+        "type": "text",
         "default": ""
     },
     {
