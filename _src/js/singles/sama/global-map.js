@@ -10,15 +10,12 @@ if (intVW <= 816) {
     homeZoom = .2
 }
 
-
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/aesimpson/ckrmovdwb2j2r17lqxf2p2lw5',
     center: mapCenter,
     zoom: homeZoom
 });
-
-
 
 map.addControl(new mapboxgl.NavigationControl({
     showCompass: false,
