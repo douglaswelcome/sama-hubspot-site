@@ -26,6 +26,19 @@
         }
       },
       {
+
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": ""
+      },
+      {
         "id": "",
         "name": "body_copy",
         "label": "Body Copy",
