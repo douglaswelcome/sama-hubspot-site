@@ -63,7 +63,7 @@ function jsCompiled() {
         .pipe(gulp.dest('_codeDist/v1/assets/js/'));
 }
 
-function jsSingles() {
+async function jsSingles() {
     return gulp.src(jsSinglesPaths)
         // .pipe(jshint('.jshintrc'))
         // .pipe(jshint.reporter('default'))
