@@ -83,7 +83,7 @@ class="dark-mode bg-charcoal-1 no-y-pad">
                 </div>
             </div>
         </div>
-        <div class="bodystatic_splitimgtxt{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt{% if module.text_position == 'left' %}--right{% else %}-left{% endif %}
+        <div class="bodystatic_splitimgtxt{% if module.img.src %}_img{% if module.quote %}_quote{% endif %}{% if module.img_frame %}-frame{% endif %}{% else %}_txt{% endif %} bodystatic_splitimgtxt{% if module.text_position == 'left' %}--right{% else %}--left{% endif %}
         {%if module.quote && module.fullframe == true %}bodystatic_splitimgtxt_img_quote--fullframe {%endif%}
         ">
             {% if module.quote %}  
