@@ -1,11 +1,12 @@
 .bodystatic_iconbullet_three{
     @extend %grid-12;
 
-    &_inner{
-        grid-column: 3 /span 8;
+    &__inner{
+        grid-column: span 4;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 2rem;
+        grid-template-columns: auto 1fr;
+        column-gap: 1.5rem;
+
         @include breakpoint(w-med){
             grid-column: 1 / span 12;
         }
@@ -16,19 +17,21 @@
         }
     }
 
-    &_icon{
-        grid-column: span 1;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-gap: 2rem;
-        align-items: center;
+    &__icon{
+        width:3rem;
         img{
             display: block;
-            width: 3rem;
+            width:100%;
         }
         &_title{
             font-weight: 700;
             margin-bottom: 1.5rem;
         }
+    }
+
+    &__copy {
+        display:grid;
+        grid-auto-flow: row;
+        row-gap:.25rem;
     }
 }
