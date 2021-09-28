@@ -1,6 +1,10 @@
 .bodystatic_iconbullet_three{
     @extend %grid-12;
 
+    @include breakpoint(w-sm){
+    row-gap: 1.5rem;
+    }
+
     &__inner{
         grid-column: span 4;
         display: grid;
@@ -14,7 +18,8 @@
         @include breakpoint(w-sm){
             grid-column: 1 / span 12;
             grid-template-columns: 1fr;
-            grid-row-gap: 2rem;
+            grid-row-gap: 1rem;
+            justify-items: center;
         }
     }
 
@@ -34,5 +39,8 @@
         display:grid;
         grid-auto-flow: row;
         row-gap:.25rem;
+        @include breakpoint(w-sm){
+            text-align: center;
+        }
     }
 }
