@@ -33,7 +33,7 @@
       "type": "boolean",
       "inline_help_text": "",
       "help_text": "",
-      "default": false },
+      "default": true },
       {
 
         "name": "title",
