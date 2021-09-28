@@ -2,10 +2,13 @@ buildOfficeList(offices);
 
 mapboxgl.accessToken =
     'pk.eyJ1IjoiYWVzaW1wc29uIiwiYSI6ImNrcm1vdGM3eDd2ZTMycHBheTEwajhqcjMifQ.nHuWTNRfeQ83cdMK2qJnpw';
+
+    const mapCenter = [-9.888865, 30.638876];
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/aesimpson/ckrmovdwb2j2r17lqxf2p2lw5',
-    center: [-9.888865, 30.638876],
+    center: mapCenter,
     zoom: 1.4
 });
 
@@ -58,9 +61,10 @@ function flyToOffice(currentFeature) {
 
 function flyToDefault() {
     map.flyTo({
-        center: [-24.547817, 36.980944],
-        zoom: 1
+        center: mapCenter,
+        zoom: 1.4
     });
+    console.log("dd007");
     var poppers = document.getElementsByClassName('mapboxgl-popup');
     // Check if there is already a popup on the map and if so, remove it
     if (poppers[0]) poppers[0].remove();
