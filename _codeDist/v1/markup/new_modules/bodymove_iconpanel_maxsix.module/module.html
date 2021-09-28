@@ -5,6 +5,7 @@ bg-charcoal-1
 no-y-pad
  bodymove_iconpanel_maxsix">
     <div class="bodymove_iconpanel_maxsix_panels">
+        <h2 class="bodymove_iconpanel_maxsix__mobile-preheadline">{{module.preheadline}}</h2>
         {% for panel in module.panels %}
             <div class="bodymove_iconpanel_maxsix_panel {% if loop.index == 1 %}active{% endif %}" data-at="{{loop.index}}">
                 <h2>{{module.preheadline}}</h2>
