@@ -7,8 +7,11 @@ let mapCenter = [-9.888865, 30.638876];
 let homeZoom = 1.4
 let intVW= window.innerWidth;
 if (intVW <= 816) {
-    homeZoom = .2
+    homeZoom = 0
+    mapCenter = [-41.758265, 27.193714]
+
 }
+
 
 var map = new mapboxgl.Map({
     container: 'map',

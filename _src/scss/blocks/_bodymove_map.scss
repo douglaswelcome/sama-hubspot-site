@@ -7,7 +7,7 @@
         background-color: var(--color-charcoal-2);
         position: relative;
         @include breakpoint (w-sm) {
-            height:300px;
+            height:250px;
         }
     }
     #map{
