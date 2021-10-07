@@ -1,0 +1,59 @@
+[
+  {
+    "name": "tabs",
+    "label": "Slides",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 2,
+      "max": 6,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [
+      {
+
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "Goldblumology"
+      },
+      {
+        "id": "",
+        "name": "body_copy",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
+      },
+      {
+        "name": "img",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "inline_help_text": "Shows Teaser image when toggled on",
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": "https://source.unsplash.com/random",
+          "alt": null
+        }
+      }
+    ],
+    "type": "group",
+    "default": [{}]
+  }
+]
