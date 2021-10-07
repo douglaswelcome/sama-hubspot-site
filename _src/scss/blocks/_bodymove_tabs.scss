@@ -1,0 +1,97 @@
+.bodymove_tabs{
+    @extend %grid-12;
+
+    &_nav{
+        grid-column: 2/span 10;
+        margin-bottom: 4rem;
+        text-align: center;
+
+        @include breakpoint (w-sm){
+            display: none;
+        }
+    }
+
+    &_navInner{
+        display: inline-flex;
+        align-items: center;
+        margin: 0.25rem 0 0.125rem 0;
+        position: relative;
+
+        &.slide-back{
+            .bodymove_tabs_nav_item:after{
+                transform-origin: 100% 50%;
+            }
+        }
+    }
+
+    &_nav_item{
+        display: flex;
+        padding: 1rem 2rem;
+        color: var(--color-charcoal-5);
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        transition: all 300ms;
+        &:after{
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: transparent;
+            transform: scaleX(0);  
+            transform-origin: 0 50%;
+            transition: transform 250ms ease-in-out;
+        }
+        &:hover{
+            color: var(--color-charcoal-7);
+        }
+        &.active{
+            color: #FFF;
+            &:after{
+                background-color: var(--color-sunshine);
+                transform: scaleX(1);
+            }
+        }
+    }
+ 
+    &_tabs{
+        grid-row: 2;
+        grid-column: 3 /span 8;
+        display: grid;
+        position: relative;
+
+        @include breakpoint (w-sm){
+            grid-column: 1 /span 12;
+        }
+    }
+
+    &_tab {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-top: 4rem;
+        text-align: center;
+        opacity: 0;
+        transition: all 250ms;
+        h4{
+            display: none;
+        }
+        h5{
+            margin-bottom: 1.25rem;
+        }
+        img{
+            max-width: 100%;
+        }
+        &.active {
+            opacity: 1;
+        }
+        @include breakpoint (w-sm){
+            opacity: 1;
+            h4{
+                display: block;
+            }
+        }
+    }
+}
