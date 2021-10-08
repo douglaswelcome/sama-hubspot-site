@@ -14,6 +14,7 @@
     &_navInner{
         display: inline-flex;
         align-items: center;
+        flex-wrap: wrap;
         margin: 0.25rem 0 0.125rem 0;
         position: relative;
 
@@ -61,19 +62,31 @@
         grid-column: 3 /span 8;
         display: grid;
         position: relative;
+        overflow: hidden;
 
         @include breakpoint (w-sm){
             grid-column: 1 /span 12;
+        } 
+    }
+
+    &_tabsInner{
+        height: 100%;
+        width: 1000%;
+        position: relative;
+        left: 0px;
+        transition: left 0.5s linear;
+
+        @include breakpoint (w-sm){
+            width: 100%;
+            left: 0px !important;
         }
     }
 
     &_tab {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        margin-top: 4rem;
+        width: 10%;
+        float: left;
+        position: relative;
         text-align: center;
-        opacity: 0;
         transition: all 250ms;
         h4{
             display: none;
@@ -84,13 +97,16 @@
         img{
             max-width: 100%;
         }
-        &.active {
-            opacity: 1;
-        }
+        
         @include breakpoint (w-sm){
-            opacity: 1;
+            width: 100%;
+            margin-top: 4rem;
+            float: none;
             h4{
                 display: block;
+            }
+            &:first-of-type{
+                margin-top: 0;
             }
         }
     }
