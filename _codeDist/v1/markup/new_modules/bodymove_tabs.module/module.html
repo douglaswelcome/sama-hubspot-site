@@ -13,14 +13,16 @@ no-y-pad">
                 {% endfor %}
             </div>
         </div>
-        <div class="bodymove_tabs_tabs carousel-animate carousel-num-1"> 
-            {% for tab in module.tabs %}
+        <div class="bodymove_tabs_tabs"> 
+            <div class="bodymove_tabs_tabsInner">
+                {% for tab in module.tabs %}
                 <div class="bodymove_tabs_tab {% if loop.index == 1 %}active{% endif %}" data-at="{{loop.index - 1}}">
                     <h4>{{ tab.title }}</h4>
                     <h5>{{ tab.body_copy }}</h5>
                     <img src="{{ tab.img.src }}" alt="{{ tab.img.alt }}" />
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
-</section>
+</section> 
