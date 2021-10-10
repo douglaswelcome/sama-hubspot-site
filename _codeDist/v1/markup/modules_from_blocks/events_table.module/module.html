@@ -1,126 +1,169 @@
-{% set tableID = "5287451"%}
+{# Prod table ID #}
+ {% set tableID = "5287451"%} 
+{# dev table id #}
+{#{% set tableID = "5287058"%}#}
 
 {% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
 
+{% set tableReverse = hubdb_table_rows(tableID, "&orderBy=date") %}
 
-<section class="dark-mode bg-charcoal-3">
-  <div class="news-feature">
-    <div class="news-feature__headline">
-      <h2 class="display-small">
-        {{ module.headline }}
-    </h2>
-    <div class="divider-line divider-line--horizontal divider-line--negative"></div>
-    <h5>{{ module.subheadline}}</h5>
+<div class="section-wrap bg-charcoal-1">
+  <section class="
+dark-mode
+bg-charcoal-1
+no-y-pad
+event-table__feature-headline
+">
+    <div class="bodystatic_headline 
+    ">
+      {% if module.headline %}
+      <h2 class="bodystatic_headline__headline">{{ module.headline }}</h2>
+      {% endif %}
+
+      {% if module.subheadline %}
+      <h5 class="bodystatic_headline__subheadline">{{module.subheadline}}</h5>
+      {% endif %}
     </div>
+  </section>
 
-    {% for row in table %}
-    {% if row.featured.name=="First" %}
-
-    <div class=" news-feature__main news-feature--article-bg">
-
-      <a href="{{row.url}}" class="news-feature--link" target="_blank">
-
-
-            <div class="news-feature__category">
-                <p class="bold">
-                    {{ row.type.name }}
-                </p>
-            </div>
-            <div class="news-feature__title">
-                <h2 class="bold">
-                  {{row.name}}
-                </h2>
-                <h5>
-                  {{row.date | datetimeformat('%B %e, %Y')}} 
-                  {% if row.time %} @ {{row.time}}{% endif %}
-                </h5>
-            </div>
-           
-
- 
-            </a>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <div class="news-feature__secondary-wrapper">
-
+  <section class="
+dark-mode
+bg-charcoal-1
+no-y-pad
+">
+    <div class="bodystatic_imgcard_three">
       {% for row in table %}
-      {% if row.featured.name=="Second" %}
-      <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.url}}" class="  news-feature--link"  target="_blank">
-                <div class="news-feature__category">
-                    <p class="bold">
-                      {{ row.type.name }}
-                     </p>
-                 </div>
-            
-                 <div class="news-feature__title">
-                      <h4 class="bold">
-                        {{row.name}}
-                     </h4>
-                    <h5>
-                      {{row.date | datetimeformat('%B %e, %Y')}} 
-                      {% if row.time %} @ {{row.time}}{% endif %}
-                    </h5>
-                 </div>
-              
-             </a>
-      </div>
+      {% if row.featured %}
+      <a class="bodystatic_imgcard_three_card event-table__link event-table--link-dark link card" href="{{row.url}}" target="_blank">
 
+
+     
+            <div class="news-feature__category-wrap event-table__category-wrap
+      {% if row.type.name == "Webinar" %} event-table__category-wrap--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category-wrap--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category-wrap--pink {% endif %}
+      ">
+            <div class="news-feature__category event-table__category
+      {% if row.type.name == "Webinar" %} event-table__category--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category--pink {% endif %}
+      ">
+              <p class="bold">
+                  {{ row.type.name }}
+              </p>
+              </div>
+
+          </div>
+      
+            <h4 class="event-table__title">
+              {{ row.type.name }}
+            </h4>
+            <div class="divider-line divider-line--horizontal"></div>
+            <p>
+              {{row.date | datetimeformat('%B %e, %Y')}} 
+              {% if row.time %} @ {{ row.time }} {{ row.time_zone.name }}{% endif %}
+            </p>
+
+        </a>
       {% endif %}
       {% endfor %}
-
-      {% for row in table %}
-      {% if row.featured.name=="Third" %}
-      <div class="news-feature__secondary-article news-feature--article-bg">
-        <a href="{{row.url}}" class="  news-feature--link"  target="_blank">
-                <div class="news-feature__category">
-                    <p class="bold">
-                      {{ row.type.name }}
-                     </p>
-                 </div>
-            
-                 <div class="news-feature__title">
-                      <h4 class="bold">
-                        {{row.name}}
-                     </h4>
-                    <h5>
-                      {{row.date | datetimeformat('%B %e, %Y')}} 
-                      {% if row.time %} @ {{row.time}}{% endif %}
-                    </h5>
-                 </div>
-              
-             </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-
-
     </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="press-tab__section">
+  <div class="tabs tabs__tab-bar">
+
+    <div class="press-table-tab__category tabs__tab active ">
+      <h5 class="tabs__label">Upcoming Events</h5>
+    </div>
+    <div class="press-table-tab__category tabs__tab ">
+      <h5 class="tabs__label">Past Events</h5>
+    </div>
+    <div class="tabs__tab-underline"></div>
+
   </div>
-
 </section>
+
+
+
+
+
+
+
 
 
 <div class="section-wrap">
-<section class="event-table__section">
-  <div class="event-table darkmode">
-    {% for row in table %}
-    <a href="{{row.url}}" type="{{row.type.name}}" class="event-table__link card" target="_blank">
-      <div class="news-feature__category">
+  <section class="event-table__section dark-mode">
+    <div class="event-table ">
+      {% for row in tableReverse  %}
+      {% if (row.date|datetimeformat('%j')) >= (local_dt|datetimeformat('%j')) %}  
+      <a href="{{row.url}}"
+      type="upcoming"
+      class="event-table__link event-table--link-light card " target="_blank">
+      <div class="news-feature__category-wrap event-table__category-wrap
+      {% if row.type.name == "Webinar" %} event-table__category-wrap--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category-wrap--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category-wrap--pink {% endif %}
+      ">
+      <div class="news-feature__category event-table__category
+      {% if row.type.name == "Webinar" %} event-table__category--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category--pink {% endif %}
+      ">
         <p class="bold">
           {{ row.type.name }}
          </p>
+      </div>
      </div>
       <h4 class="event-table__title bold">{{row.name}}</h4>
-      <div class="divider-line divider-line--horizontal"></div>
-      <p class="event-table__datetime">{{row.date|datetimeformat('%B %e, %Y')}} {%if row.time %} @ {{row.time}} {%endif%}
+      <div class="divider-line divider-line--horizontal "></div>
+      <p class="event-table__datetime">{{row.date|datetimeformat('%B %e, %Y')}} {%if row.time %} @ {{row.time}} {{ row.time_zone.name }} {%endif%}
      <br>{{row.location}}</p>
      </a>
+     {%endif%}
+      {% endfor %}
 
-    {% endfor %}
-  </div>
+      {% for row in table %}
+      {% if (row.date|datetimeformat('%j')) <= (local_dt|datetimeformat('%j')) %}
+      <a href="{{row.url}}"
+      type="past"
+      class="event-table__link event-table--link-light card " target="_blank">
+      <div class="news-feature__category-wrap event-table__category-wrap
+      {% if row.type.name == "Webinar" %} event-table__category-wrap--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category-wrap--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category-wrap--pink {% endif %}
+      ">
+      <div class="news-feature__category event-table__category
+      {% if row.type.name == "Webinar" %} event-table__category--blue {% endif %}
+      {% if row.type.name == "Conference" %} event-table__category--green {% endif %}
+      {% if row.type.name == "Hosted By Sama" %} event-table__category--pink {% endif %}
+      ">
+        <p class="bold">
+          {{ row.type.name }}
+         </p>
+      </div>
+     </div>
+      <h4 class="event-table__title bold">{{row.name}}</h4>
+      <div class="divider-line divider-line--horizontal "></div>
+      <p class="event-table__datetime">{{row.date|datetimeformat('%B %e, %Y')}} {%if row.time %} @ {{row.time}} {{ row.time_zone.name }} {%endif%}
+     <br>{{row.location}}</p>
+     </a>
+     {%endif%}
+      {% endfor %}
+    </div>
 
-</section>
+  </section>
 </div>
