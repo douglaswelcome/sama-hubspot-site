@@ -30,6 +30,7 @@
 
     &__title {
         font-weight: 700;
+        height: 8.25rem;
 
         @include breakpoint(w-sm) {
             grid-column-end: span 2;
@@ -111,5 +112,33 @@
 
     .divider-line {
         margin: 0rem;
+    }
+
+    &__feature-headline{
+        padding-bottom:$module-bottoms;
+    }
+
+    &__feature-headline-inner {
+        grid-column: 3/span 8;
+    }
+
+
+    &__feature-row {
+        grid-column: 1 /span 12;
+        
+    }
+
+    &--green {
+        color:$color-green;
+        border-color:$color-green;
+    }
+    &--blue {
+        color:$color-blue;
+        border-color:$color-blue;
+    }
+
+    &--pink{
+        color:$color-pink;
+        border-color:$color-pink;
     }
 }
