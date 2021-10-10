@@ -50,10 +50,11 @@
 
     &__category {
         display: inline-block;
-        padding: .5rem .5rem .125rem .5rem;
+        padding: .5rem .5rem .5rem .5rem;
         text-transform: uppercase;
-        background-color: var(--color-sunshine);
-        color: var(--color-charcoal-1);
+        border:solid .125rem $color-sunshine;
+        border-radius:var(--btncorner);
+        color: var(--color-sunshine);
         margin-bottom: 1.5rem;
         width: fit-content;
 
