@@ -18,7 +18,7 @@
 
 function filterEvents () {
 
-    
+
     $('a[type="past"]').hide();
 
     $('.press-table-tab__category:nth-of-type(1)').click(function(){
