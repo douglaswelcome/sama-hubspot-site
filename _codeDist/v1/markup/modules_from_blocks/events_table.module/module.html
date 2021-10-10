@@ -1,7 +1,7 @@
 {# Prod table ID #}
- {% set tableID = "5287451"%} 
+{% set tableID = "5287451"%} 
 {# dev table id #}
-{#{% set tableID = "5287058"%}#}
+{# {% set tableID = "5287058"%} #}
 
 {% set table = hubdb_table_rows(tableID, "&orderBy=-date")%}
 
@@ -109,7 +109,7 @@ no-y-pad
   <section class="event-table__section dark-mode">
     <div class="event-table ">
       {% for row in tableReverse  %}
-      {% if (row.date|datetimeformat('%j')) >= (local_dt|datetimeformat('%j')) %}  
+      {% if (row.date|datetimeformat('%y%j')) >= (local_dt|datetimeformat('%y%j')) %}  
       <a href="{{row.url}}"
       type="upcoming"
       class="event-table__link event-table--link-light card " target="_blank">
@@ -137,7 +137,7 @@ no-y-pad
       {% endfor %}
 
       {% for row in table %}
-      {% if (row.date|datetimeformat('%j')) <= (local_dt|datetimeformat('%j')) %}
+      {% if (row.date|datetimeformat('%y%j')) <= (local_dt|datetimeformat('%y%j')) %}
       <a href="{{row.url}}"
       type="past"
       class="event-table__link event-table--link-light card " target="_blank">
