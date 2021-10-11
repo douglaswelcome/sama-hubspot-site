@@ -1,12 +1,15 @@
 [
-   
+
     {
-        "name": "pageTitle",
-        "label": "Show Page Title",
+        "name": "preheadline",
+        "label": "PreHeadline",
         "required": false,
         "locked": false,
-        "type": "boolean",
-        "default": false
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": ""
     }, 
     {
         "name": "headline",
