@@ -7,7 +7,9 @@
     "
 >
     <div class="bodystatic_punchytext">
-        <h2 class="bodystatic_punchytext__headline display-small">{{module.headline}}</h2>
+        <h2 class="bodystatic_punchytext__headline 
+        {% if module.bigpunch %}display-small{% endif %}
+        ">{{module.headline}}</h2>
         <div class="divider-line"></div>
         <div class="bodystatic_punchytext__content">{{module.content}}</div> 
     </div>

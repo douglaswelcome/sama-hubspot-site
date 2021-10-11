@@ -1,40 +1,12 @@
-[
-    {
-        "name": "darkmode",
-        "label": "Dark Mode?",
+[{
+        "name": "bigpunch",
+        "label": "Big Headline?",
         "required": false,
         "locked": false,
         "type": "boolean",
-        "default": false
-    },
-    {
-        "name": "bg_color",
-        "label": "Dark Mode Background Color",
-        "required": false,
-        "locked": false,
-        "display": "select",
+        "inline_help_text": "",
         "help_text": "",
-        "choices": [
-        [
-            "bg-charcoal-0",
-            "Black"
-        ],
-        [
-            "bg-charcoal-1",
-            "Charcoal 1 (Darkest)"
-        ],
-        [
-            "bg-charcoal-2",
-            "Charcoal 2 (Medium Dark)"
-        ],
-        [
-            "bg-charcoal-3",
-            "Charcoal 3 (Light Dark)"
-        ]
-        ],
-        "type": "choice",
-        "placeholder": "",
-        "default": "bg-charcoal-1"
+        "default": true
     },
     {
         "name": "headline",

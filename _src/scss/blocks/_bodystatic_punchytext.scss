@@ -5,8 +5,11 @@
 
 
     &__headline{
+        max-width:19.5rem;
+        text-align:right;
         
         @include breakpoint(w-sm) {
+            max-width:auto;
             width: 100%;
             grid-column: 1 / span 12;
         }
