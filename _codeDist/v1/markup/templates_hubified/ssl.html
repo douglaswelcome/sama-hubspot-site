@@ -1,0 +1,37 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% module "module_20200924112622" path="/v1/markup/modules_from_blocks/lp-header", label="Header" %}
+<div class="flex-content bg-charcoal-1">
+    <div class="section-wrap">
+        {% module "module_202009241289" path="/v1/markup/new_modules/hero_splittextimg", label="Hero" %}
+
+    </div>
+    <div class="section-wrap">
+        {% module "module_20211010192822" path="/v1/markup/new_modules/bodystatic_punchytext", label="punchy text" %}
+        {% module "module_20211010193051" path="/v1/markup/new_modules/bodystatic_iconcopy_four", label="four Icons" %}
+        
+    </div>
+    <div class="section-wrap ">
+       {% module "module_20211010193155" path="/v1/markup/new_modules/bodystatic_headline", label="bodystatic_headline" %}
+       {% module "module_20211010193212" path="/v1/markup/new_modules/bodystatic_iconbullet_three", label="bodystatic_iconbullet_three" %}
+       {% module "module_202110101932121" path="/v1/markup/new_modules/bodystatic_iconbullet_three", label="bodystatic_iconbullet_three" %}
+       {% module "module_202110101932122" path="/v1/markup/new_modules/bodystatic_iconbullet_three", label="bodystatic_iconbullet_three" %}
+    </div>
+
+    <div class="section-wrap bg-white">
+        {% module "module_20211010193351" path="/v1/markup/modules_from_blocks/split_contact", label="split_contact" %}
+     </div>
+
+
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}
