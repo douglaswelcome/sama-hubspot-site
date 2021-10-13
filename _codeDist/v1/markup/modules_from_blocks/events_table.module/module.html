@@ -56,13 +56,17 @@ no-y-pad
           </div>
       
             <h4 class="event-table__title">
-              {{ row.type.name }}
+              {{ row.name }}
             </h4>
             <div class="divider-line divider-line--horizontal"></div>
             <p>
               {{row.date | datetimeformat('%B %e, %Y')}} 
               {% if row.time %} @ {{ row.time }} {{ row.time_zone.name }}{% endif %}
             </p>
+            <p>
+              {{row.date | datetimeformat('%B %e, %Y')}} 
+              {% if row.time %} @ {{ row.time }} {{ row.time_zone.name }}{% endif %}
+              <br>{{row.location}}</p>
 
         </a>
       {% endif %}
