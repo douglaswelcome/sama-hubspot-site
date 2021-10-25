@@ -1,0 +1,29 @@
+.panel-half {
+    @extend %grid-12;
+
+    background-color:var(--color-charcoal-3);
+    color:var(--color-white);
+
+
+    &__copy, &__img {
+        grid-column: span 6;
+    }
+
+    &__img {
+        overflow: hidden;
+        margin-left: -.125rem;
+        background-size: cover;
+        background-position: center;
+        margin-right: -.125rem;
+
+    }
+
+    &__copy {
+        padding: 6rem;
+    }
+
+
+
+
+
+}
