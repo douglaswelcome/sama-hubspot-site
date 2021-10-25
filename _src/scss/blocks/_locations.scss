@@ -131,7 +131,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        margin: 0 10px 10px 0;
+        margin: 1rem;
         border-radius: 3px;
         width: 45px;
         height: 45px;
@@ -157,6 +157,7 @@
 
     .mapboxgl-ctrl-group:not(:empty) {
         box-shadow: 0 0 0 0px #291d5421;
+        margin: 1rem;
     }
 
     .mapboxgl-popup {

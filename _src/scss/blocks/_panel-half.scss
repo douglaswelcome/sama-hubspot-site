@@ -3,6 +3,8 @@
 
     background-color:var(--color-charcoal-3);
     color:var(--color-white);
+    border-radius:var(--roundcorner);
+    overflow:hidden;
 
 
     &__copy, &__img {
