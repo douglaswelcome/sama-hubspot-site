@@ -120,6 +120,56 @@
     "default": null
   },
   {
+    "name": "type2",
+    "label": "Primary Link Type",
+    "required": true,
+    "locked": false,
+    "display": "radio",
+    "inline_help_text": "Is this link a Hubspot CTA or a regular link?",
+    "help_text": "",
+    "choices": [
+      [
+        "cta",
+        "CTA"
+      ],
+      [
+        "link",
+        "Link"
+      ]
+    ],
+    "type": "choice",
+    "placeholder": "",
+    "default": "cta"
+  },
+  {
+    "name": "btn2",
+    "label": "Button Text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Learn More"
+  },
+  {
+    "name": "url2",
+    "label": "Link URL",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "inline_help_text": "For anchors use `#your-anchor`",
+    "help_text": "",
+    "default": null
+  },
+  {
     "name": "cta2",
     "label": "Secondary CTA",
     "required": false,

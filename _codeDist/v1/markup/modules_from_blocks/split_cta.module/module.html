@@ -44,8 +44,7 @@
 
 
 
-
-
+                {% if module.type2=="cta" %}
                 {% if module.cta2 %}
                 <div class="btn__wrapper">
                     <button class="btn btn--secondary">
@@ -53,6 +52,19 @@
                         </button>
                 </div>
                 {% endif %}
+            {%elif module.type2=="link"%}
+                <a href="{{ module.url2 }}" class="btn__wrapper">
+                    <button class="btn">
+                         <h3 class="btn__text">{{ module.btn2 }} </h3>
+                    </button>
+                </a>
+            {% endif %}
+
+
+
+
+
+                
             </div>
         </div>
     </div>
