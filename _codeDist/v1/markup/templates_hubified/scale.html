@@ -1,0 +1,61 @@
+
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+
+{% module "module_20201007104337" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+<div class="flex-content">
+    <div class="section-wrap bg-charcoal-1">
+    {% module "module_202111015212112612" path="/v1/markup/new_modules/hero_splittextimg", label="hero_splittextimg" %}
+
+    </div>
+
+
+
+
+<div class="section-wrap bg-charcoal-1">
+
+    {% module "module_202121102123111556" path="/v1/markup/new_modules/bodystatic_headline", label="headline" %}
+
+    {% module "module_2021110421452111925" path="/v1/markup/new_modules/bodystatic_iconcopy_four", label="bodystatic_iconcopy_four" %}
+
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+
+    {% module "module_202111012352112405" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt_two" %}
+    </div>
+<div class="section-wrap bg-charcoal-1">
+
+    {% module "module_20211643123102112405" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt_two" %}
+    </div>
+
+    <div class="section-wrap bg-charcoal-1">
+    {% module "module_20275431111021284405" path="/v1/markup/new_modules/bodystatic_splitimgtxt_two", label="bodystatic_splitimgtxt_two" %}
+
+</div>
+
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_202111373465102141423" path="/v1/markup/new_modules/bodystatic_panelquote", label="bodystatic_panelquote" %}
+
+</div>
+
+{% module "module_2021412351102141623" path="/v1/markup/modules_from_blocks/split_cta", label="split_cta" %}
+
+
+
+
+</div>
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}
