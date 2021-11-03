@@ -1,6 +1,7 @@
 .bodystatic_iconcopy_four{
     @extend %grid-12; 
     align-items: baseline;
+    row: gap 3rem;
 
 
     h2{
@@ -11,7 +12,6 @@
         }
     }
     &_icon{
-        grid-row: 2;
         grid-column: span 3;
 
         img{
