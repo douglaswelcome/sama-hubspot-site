@@ -38,15 +38,26 @@
 
     <div class="desktop-header__cta">
 
-      <div class="btn__wrapper">
-        <a href="baby baby baby"></a>
+      <a href="/demo-request" class="btn__wrapper">
+        
         <button class="btn btn--secondary btn--small">
+         
             <h3 class="btn__text">Request a Demo</h3>
+      
             </button>
-        </a>
-      </div>
+        
+          </a>
     </div>
 
+    <div class="desktop-header__cta">
+      {% if module.cta %}
+      <div class="btn__wrapper">
+        <button class="btn btn--secondary btn--small">
+                        {% cta guid="{{ module.cta }}" %}
+                  </button>
+      </div>
+      {% endif %}
+    </div>
 
   </nav>
 </header>
