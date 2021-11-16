@@ -1,0 +1,138 @@
+[
+  {
+    "name": "panels",
+    "label": "Panels",
+    "required": false,
+    "locked": false,
+    "occurrence": {
+      "min": 2,
+      "max": null,
+      "sorting_label_field": null,
+      "default": null
+    },
+    "children": [
+      {
+        "name": "title",
+        "label": "Title",
+        "sortable": false,
+        "required": true,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "default": null
+      },
+      {
+        "name": "body_copy",
+        "label": "Body Copy",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "Leave blank to omit this field",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "richtext",
+        "default": ""
+      },
+      {
+        "name": "img",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+          "src": null,
+          "alt": null
+        }
+      },
+      {
+        "name": "list_items",
+        "label": "Bullet List Items",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 0,
+          "max": null,
+          "sorting_label_field": null,
+          "default": null
+        },
+        "children": [
+          {
+            "name": "icon",
+            "label": "Bullet Icon",
+            "required": false,
+            "locked": false,
+            "inline_help_text": "Replaces standard bullet points",
+            "help_text": "",
+            "responsive": true,
+            "resizable": false,
+            "type": "image",
+            "default": {
+              "src": "",
+              "alt": null
+            }
+          },
+          {
+            "name": "title",
+            "label": "Title",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "placeholder": "",
+            "default": "Goldblumology"
+          },
+          {
+            "name": "body_copy",
+            "label": "Content",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "richtext",
+            "placeholder": "",
+            "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things."
+          }
+        ],
+        "type": "group",
+        "default": [{}]
+      },
+      {
+        "name": "cta",
+        "label": "CTA Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Learn More"
+      },
+      {
+        "name": "cta_url",
+        "label": "CTA URL",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "help_text": "",
+        "default": null
+      }
+    ],
+    "type": "group",
+    "default": [{}]
+  }
+]
