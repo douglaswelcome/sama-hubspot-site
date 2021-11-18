@@ -11,10 +11,15 @@ no-y-pad
             <img src="{{ card.img.src }}" alt="{{ card.img.alt }}" />
           {% endif %}
           <div class="bodystatic_imgcard_three_copy">
+            {% if card.preheadline %}
+            <h3 class="bodystatic_imgcard_three__preheadline">
+              {{ card.preheadline }}
+            </h3>
+            {% endif %}
             {% if card.title %}
-            <h5>
+            <h4>
               {{ card.title }}
-            </h5>
+            </h4>
             {% endif %}
             <p>
               {{ card.body_copy }}
