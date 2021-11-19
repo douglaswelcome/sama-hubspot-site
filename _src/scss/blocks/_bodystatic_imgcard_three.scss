@@ -11,9 +11,11 @@
         grid-auto-flow: row;
         border-radius: var(--roundcorner);
         background-color: var(--color-charcoal-2);
+        overflow: hidden;
         img{
+            justify-self: center;
             display: block; 
-            width: 100%;
+            min-width: 100%;
             max-height: 250px;
             border-top-left-radius: 32px;
             border-top-right-radius: 32px;
