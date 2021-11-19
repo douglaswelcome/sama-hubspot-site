@@ -1,12 +1,19 @@
 .bodystatic_headline{
     @extend %grid-12;
     row-gap: 2rem;
+
+
     
-    &__headline, &__subheadline, &__btn {
+    &__headline, &__subheadline, &__btn, &__preheadline {
         grid-column: 1 / 9;
         @include breakpoint (w-med) {
             grid-column: 1 / 12;
         }
+    }
+
+    &__prehdealine {
+        color:var(--color-sunshine);
+        text-transform:uppercase;
     }
 
     &--med {
