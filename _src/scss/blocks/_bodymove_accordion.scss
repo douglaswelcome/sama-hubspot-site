@@ -46,9 +46,12 @@
             p, h3, h5{
                 margin-bottom: 1.25rem;
             }
+            h5.hyperlink__text {
+                margin-bottom:0;
+            }
+        
             img{
                 width: 100%;
-                border-radius: var(--roundcorner);
                 object-fit: cover;
             }
             .hyperlink__text{
