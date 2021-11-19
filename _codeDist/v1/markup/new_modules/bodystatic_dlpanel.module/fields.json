@@ -1,6 +1,6 @@
 [
   {
-  "name": "bg_image",
+  "name": "bg_img",
   "label": "Panel Background",
   "required": false,
   "locked": false,
