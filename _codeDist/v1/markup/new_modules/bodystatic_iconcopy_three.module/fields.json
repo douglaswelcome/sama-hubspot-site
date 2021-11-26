@@ -1,83 +1,5 @@
 [
-  {
-    "name": "darkmode",
-    "label": "Dark Mode?",
-    "required": false,
-    "locked": false,
-    "type": "boolean",
-    "default": true
-  },
-  {
-
-    "name": "bg_color",
-    "label": "Dark Mode Background Color",
-    "required": false,
-    "locked": false,
-    "display": "select",
-
-    "help_text": "",
-    "choices": [
-      [
-        "bg-charcoal-1",
-        "Charcoal 1 (Darkest)"
-      ],
-      [
-        "bg-charcoal-2",
-        "Charcoal 2 (Medium Dark)"
-      ],
-      [
-        "bg-charcoal-3",
-        "Charcoal 3 (Light Dark)"
-      ]
-    ],
-    "type": "choice",
-    "placeholder": "",
-    "default": "bg-charcoal-2"
-
-  },
-  {
-    "name": "centercopy",
-    "label": "Center Intro Content",
-    "inline_help_text": "Center align headline, subheadline, and cta",
-    "required": false,
-    "locked": false,
-    "type": "boolean",
-    "default": false
-  },
-  {
-    "name": "headline",
-    "label": "Headline",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": null
-  },
-  {
-    "name": "subheadline",
-    "label": "Subheadline",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "Leave Blank to Remove",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text",
-    "default": null
-  },
-  {
-    "name": "cta1",
-    "label": "Primary CTA",
-    "required": false,
-    "locked": false,
-    "inline_help_text": "Shows Teaser image when toggled on",
-    "help_text": "",
-    "type": "cta",
-    "default": null
-  },
+  
   {
     "name": "icons",
     "label": "Icons",
@@ -118,7 +40,7 @@
         "default": "Goldblumology"
       },
       {
-        "id": "",
+
         "name": "body_copy",
         "label": "Body Copy",
         "required": false,
@@ -126,7 +48,7 @@
         "validation_regex": "",
         "allow_new_line": false,
         "show_emoji_picker": false,
-        "type": "text",
+        "type": "richtext",
         "placeholder": "",
         "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
       }
