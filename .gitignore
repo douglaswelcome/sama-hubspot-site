@@ -99,3 +99,5 @@ _assetDist/**/*
 local-hubl-server/**/*
 
 _tempimg/**/*
+
+.DS_Store
