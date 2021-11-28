@@ -23,10 +23,7 @@
     transition-timing-function: ease;
     image-rendering: crisp-edges;
 
-
-
-
-
+    
 
 
 
@@ -44,6 +41,11 @@
     }
 
   }
+
+  &__cta {
+    grid-column:3;
+  }
+
 
   &__logo {
     display: flex;

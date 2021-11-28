@@ -3,7 +3,7 @@
 
     &_nav{
         grid-column: 2/span 10;
-        margin-bottom: 4rem;
+        margin-bottom: $module-bottoms;
         text-align: center;
 
         @include breakpoint (w-sm){
