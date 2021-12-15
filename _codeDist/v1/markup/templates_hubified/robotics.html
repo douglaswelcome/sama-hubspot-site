@@ -1,0 +1,64 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+
+
+{% module "module_20211118140442" path="/v1/markup/modules_from_blocks/header", label="Header" %}
+
+<div class="flex-content">
+    <div class="section-wrap bg-charcoal-1">
+    {% module "module_20211118140502" path="/v1/markup/new_modules/hero_splittextimg", label="hero_splittextimg" %}
+        {% module "module_20211118232751" path="/v1/markup/new_modules/bodystatic_bragbar", label="bodystatic_bragbar" %}
+    </div>
+
+
+
+
+<div class="section-wrap bg-charcoal-1">
+
+
+    {% module "module_20211118140742" path="/v1/markup/new_modules/bodystatic_headline", label="headline" %}
+
+    {% module "module_20211118140806" path="/v1/markup/new_modules/bodymove_accordion", label="accordion" %}
+
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_20211118141234" path="/v1/markup/new_modules/bodystatic_headsubcta", label="headsubcta" %}
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_20211118141324" path="/v1/markup/new_modules/bodystatic_headline", label="headline" %}
+    {% module "module_20211118141634" path="/v1/markup/new_modules/bodystatic_imgcard_three", label="bodystatic_imgcard_three" %}
+
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_2021111518141234" path="/v1/markup/new_modules/bodystatic_dlpanel", label="download Panel" %}
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_201264211118141324" path="/v1/markup/new_modules/bodystatic_headline", label="headline" %}
+    {% module "module_20211118144552" path="/v1/markup/new_modules/bodystatic_iconcopy_four", label="bodystatic_iconcopy_four" %}
+
+</div>
+
+<div class="section-wrap bg-charcoal-1">
+    {% module "module_20211111238141234" path="/v1/markup/new_modules/bodystatic_headsubcta", label="headsubcta" %}
+</div>
+
+
+
+
+
+</div>
+
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}
