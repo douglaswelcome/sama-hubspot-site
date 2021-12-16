@@ -30,7 +30,7 @@
         "validation_regex": "",
         "allow_new_line": false,
         "show_emoji_picker": false,
-        "type": "text",
+        "type": "richtext",
         "default": "Subheadline"
     },
     {

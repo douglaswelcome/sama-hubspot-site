@@ -59,7 +59,7 @@
       "validation_regex": "",
       "allow_new_line": false,
       "show_emoji_picker": false,
-      "type": "text",
+      "type": "richtext",
       "placeholder": "",
       "default": "I was blessed with a very steady hand and it comes in very handy when you're doing these little delicate things. When you buy the first tube of paint it gives you an artist license. A fan brush is a fantastic piece of equipment. Make friends with it."
     },
