@@ -1,4 +1,28 @@
-[{
+[
+  {
+    "name": "text_position",
+    "label": "Text Left or Right?",
+    "required": false,
+    "locked": false,
+    "display": "select",
+    "choices": [
+        ["left", "Text Left"],
+        ["right", "Text Right"]
+    ],
+    "type": "choice",
+    "default": "right"
+},
+{
+  "name": "large_txt",
+  "label": "Large Text",
+  "required": false,
+  "locked": false,
+  "type": "boolean",
+  "inline_help_text": "",
+  "help_text": "",
+  "default": false
+},
+{
     "name": "form",
     "label": "Form",
     "required": false,

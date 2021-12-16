@@ -17,6 +17,9 @@
 
     &__form {
         grid-column: span 3;
+        .form-wrapper .hs-form select{
+            appearance: auto;
+        }
 
         @include breakpoint (w-sm) {
             grid-column: span 6;
@@ -38,10 +41,16 @@
     }
     &__headline {
         margin-bottom: 1.5rem;
+        &--large{
+            font-size: 3rem;
+        }
     }
 
     &__text {
         margin-bottom: 1rem;
+        &--large{
+            font-size: 1.25rem;
+        }
     }
 
 
@@ -57,5 +66,16 @@
         width: 2rem;
         margin: .75rem;
         
+    }
+
+    &--reverse{
+        .split-form__form {
+            grid-column: 4 / span 3;
+            grid-row: 1;
+        }
+        .split-form__description {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
     }
 }
