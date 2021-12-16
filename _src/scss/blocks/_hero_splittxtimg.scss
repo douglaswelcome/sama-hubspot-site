@@ -11,6 +11,14 @@
         text-transform: uppercase;
     }
 
+    &__subheadline {
+        p{
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+    }
+
     &__copy {
         grid-column: 1 / span 5;
         grid-row: 1;

@@ -1,0 +1,29 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% module "module_20211127192419" path="/v1/markup/new_modules/header_lp", label="header_lp" %}
+<div class="flex-content bg-charcoal-1">
+    <div class="section-wrap">
+        {% module "module_20243234447676" path="/v1/markup/new_modules/hero_splittextimg", label="Hero" %}
+
+    </div>
+    <div class="section-wrap">
+        {% module "module_20211010192822" path="/v1/markup/new_modules/bodystatic_imgcard_three", label="Image Cards" %}
+    </div>
+
+    <div class="section-wrap bg-white boost-form" id="form">
+        {% module "module_20211014354354" path="/v1/markup/modules_from_blocks/split_contact", label="Contact Form" %}
+     </div>
+
+
+
+
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

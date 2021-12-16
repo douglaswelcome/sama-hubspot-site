@@ -48,9 +48,9 @@
     }
     &_copy{
         display:grid;
-        grid-auto-flow: row;
+        grid-template-rows: auto 1fr;
         padding: 3rem 2rem;
-        row-gap:1.5rem;
+        row-gap: 1.5rem;
 
         h3 {
             text-transform:uppercase;
@@ -86,6 +86,12 @@
                     right: -5px;
                 }
             }
+        }
+    }
+
+    &__body{
+        p{
+            margin-bottom: 1rem;
         }
     }
 

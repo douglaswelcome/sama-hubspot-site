@@ -1,7 +1,7 @@
 <!-- module html  -->
 <section class=" no-y-pad">
 
-    <div class="split-form ">
+    <div class="split-form {% if module.text_position == 'left' %}split-form--reverse{% endif %}">
         <div class="split-form__form form-wrapper">
             {% form
             form_to_use="{{ module.form.form_id }}"
@@ -24,12 +24,21 @@
 
         </div>
         <div class="split-form__description">
+            {% if module.large_txt %}
+            <h2 class="split-form__headline split-form__headline--large">
+                {{ module.headline}}
+            </h2>
+            <p class="split-form__text split-form__text--large">
+                {{ module.body_text }}
+            </p>
+            {% else %}
             <h4 class="split-form__headline">
                 {{ module.headline}}
             </h4>
             <p class="split-form__text">
                 {{ module.body_text }}
             </p>
+            {% endif %}
             <div class="split-form__icon-bullets">
                 {% for bullet in module.bullets %}
                 <img src="{{ bullet.img.src }}" alt="{{bullet.img.alt}}" class="split-form__icon" />
