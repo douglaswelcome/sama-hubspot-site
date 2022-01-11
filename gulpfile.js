@@ -26,6 +26,7 @@ const jsCompiledPaths = [
 
 ];
 
+
 const jsSinglesPaths = [
     '_src/js/singles/sama/*',
     '_src/js/singles/third-party/*'
