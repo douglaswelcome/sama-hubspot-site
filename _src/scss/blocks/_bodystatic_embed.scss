@@ -7,4 +7,18 @@
     &_inner{
         grid-column: span 12;
     }
+
+    iframe{
+        @include breakpoint(w-sm){
+            display: none;
+        }
+    }
+
+    .btn__wrapper{
+        display: none;
+        height: auto;
+        @include breakpoint(w-sm){
+            display: flex;
+        }
+    }
 }
