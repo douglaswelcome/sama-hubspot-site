@@ -1,0 +1,19 @@
+<section 
+{% if module.section_id %}
+id="{{module.section_id}}"
+{% endif %}
+class="
+bg-white
+no-y-pad
+">
+    <div class="bodystatic_embed">
+        <div class="bodystatic_embed_inner">
+            {% if module.headline %}
+            <h2>{{ module.headline }}</h2>
+            {% endif %}
+            {% if module.embed %}
+                <iframe src="{{ module.embed }}" width="100%" height="800"></iframe>
+            {% endif %}
+        </div>
+    </div>
+</section> 

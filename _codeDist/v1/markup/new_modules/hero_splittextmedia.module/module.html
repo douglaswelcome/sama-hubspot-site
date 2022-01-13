@@ -1,0 +1,65 @@
+<!-- module html  -->
+<section class="
+{% if module.bg_color != 'bg-white' %}
+dark-mode
+{% endif %}
+{{ module.bg_color }}
+no-y-pad
+">
+    <div class="hero_splittxtmedia">
+        <div class="hero_splittxtmedia__copy">
+            <h1>{{module.headline}}</h1>
+            {% if module.body_copy %}
+            <h5 class="hhero_splittxtmedia__subheadline">{{module.body_copy}}</h5>
+            {% endif %}
+            <div class="hero_splittxtmedia__btn-row">
+                <div class="btn__row dark-mode">
+                    {% if module.cta %}
+                    <div class="hyperlink__wrapper icon-block__link">
+                      <div class="hyperlink__ahref">
+                        {% cta guid="{{ module.cta }}" %}
+                      </div>
+                      <div class="hyperlink__arrow ">
+                        <svg 
+                            version="1.1" 
+                            id="Layer_1" 
+                            focusable="false" 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            x="0px" y="0px" 
+                            viewBox="0 0 518 435.8" 
+                            xml:space="preserve"
+                        >
+                            <path 
+                                class="st0"
+                                d="M511.3,201.7L318.1,8.4c-11.2-11.2-29.5-11.2-40.7,0c-11.2,11.2-11.2,29.5,0,40.7l141.4,141.4H24.9
+                                                            C11.1,190.5,0,202.8,0,217.9v0c0,15.1,11.1,27.4,24.9,27.4h393.9L277.4,386.7c-11.2,11.2-11.2,29.5,0,40.7v0
+                                                            c11.2,11.2,29.5,11.2,40.7,0l193.3-193.3C520.3,225.2,520.3,210.6,511.3,201.7z" 
+                            />
+                        </svg>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if module.btn_text %}
+                    <div class="btn__wrapper">
+                        <a href="{{module.btn_url}}">
+                        <button class="btn">
+                            <h3 class="btn__text">
+                                {{module.btn_text}}
+                            </h3>
+                        </button>
+                    </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="hero_splittxtmedia__img-wrapper">
+            {% if module.embed %}
+                {{module.embed}}
+            {% else if module.image.src %}
+            <img src="{{ module.image.src}}" alt="{{module.img.alt}}" />
+            {% endif %}
+        </div>
+    </div>
+</section>
