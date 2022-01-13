@@ -1,4 +1,19 @@
-[{
+[
+  {
+    "id": "",
+    "name": "form_headline",
+    "label": "Form Headline",
+    "inline_help_text": "Appears above the form in the right column",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "placeholder": "",
+    "default": null
+  },
+  {
     "name": "form",
     "label": "Form",
     "required": false,

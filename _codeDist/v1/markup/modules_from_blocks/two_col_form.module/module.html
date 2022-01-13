@@ -20,6 +20,11 @@
         </div>
 
         <div class="two-col-form__form ">
+            {% if module.form_headline %}
+            <h2 class="two-col-form__subheadline">
+                {{ module.form_headline}}
+            </h2>
+            {% endif %}
             <div class="two-col-vid__form form-wrapper">
                 {% form
                 form_to_use="{{ module.form.form_id }}"
