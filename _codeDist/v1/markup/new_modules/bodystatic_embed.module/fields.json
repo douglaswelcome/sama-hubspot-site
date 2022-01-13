@@ -1,0 +1,40 @@
+[
+    {
+        "name": "section_id",
+        "label": "Section ID",
+        "sortable": false,
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "Use if you want a page jump to this section",
+        "default": null
+    },
+    {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Headline"
+    }, 
+    {
+        "name": "embed",
+        "label": "Embed URL",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "placeholder": "",
+        "inline_help_text": "URL for the PDF you want to embed",
+        "help_text": "",
+        "default": ""
+      }
+]

@@ -1,0 +1,134 @@
+[
+    {
+
+        "name": "bg_color",
+        "label": "Background Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+      
+        "help_text": "",
+        "choices": [
+          [
+            "bg-charcoal-1",
+            "Charcoal 1 (Darkest)"
+          ],
+          [
+            "bg-charcoal-2",
+            "Charcoal 2 (Medium Dark)"
+          ],
+          [
+            "bg-charcoal-3",
+            "Charcoal 3 (Light Dark)"
+          ],
+          [
+            "bg-white",
+            "White"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "bg-charcoal-1"
+      
+    },
+    {
+        "name": "headline",
+        "label": "Headline",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "Headline"
+    }, 
+    {
+        "name": "body",
+        "label": "Text",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": true,
+        "show_emoji_picker": false,
+        "type": "richtext",
+        "default": "Text"
+    },
+    {
+      "name": "cta",
+      "label": "CTA",
+      "required": false,
+      "locked": false,
+      "inline_help_text": "Hubspot CTA",
+      "help_text": "",
+      "type": "cta",
+      "default": null
+    },
+    {
+      "name": "btn_text",
+      "label": "Custom Button Text",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "placeholder": "",
+      "inline_help_text": "If you need a custom link instead of a cta",
+      "help_text": "",
+      "default": null 
+    },
+    {
+      "name": "btn_url",
+      "label": "Custom Button Url",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "placeholder": "",
+      "inline_help_text": "",
+      "help_text": "",
+      "default": null 
+    },
+    {
+      "name": "form",
+      "label": "Form",
+      "required": false,
+      "locked": false,
+      "type": "form",
+      "default": {
+        "response_type": "inline",
+        "message": "Thanks for submitting the form."
+      }
+    },
+    {
+
+        "name": "image",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "help_text": "",
+        "responsive": true,
+        "resizable": false,
+        "type": "image",
+        "default": {
+            "src": "https://source.unsplash.com/random",
+            "alt": ""
+        }
+    },
+    {
+      "name": "embed",
+      "label": "Embed",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "placeholder": "",
+      "inline_help_text": "Copy and Paste the iframe embed code only. Do not include any tags or text that follows the iframe.",
+      "help_text": "",
+      "default": ""
+    }
+]

@@ -1,0 +1,10 @@
+.bodystatic_embed{
+    @extend %grid-12;
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &_inner{
+        grid-column: span 12;
+    }
+}

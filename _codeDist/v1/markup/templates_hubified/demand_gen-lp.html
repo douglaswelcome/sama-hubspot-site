@@ -1,0 +1,25 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+
+
+{% extends '/v1/markup/blocks_static/base.html' %}
+
+{% block main %}
+
+{% include '/v1/markup/blocks_static/header-lp.html' %}
+<div class="flex-content">
+    <div class="section-wrap">
+        {% module "module_202053543443" path="/v1/markup/new_modules/hero_splittextmedia", label="Hero" %}
+    </div>
+    <div class="section-wrap">
+        {% module "module_202345345343" path="/v1/markup/new_modules/bodystatic_embed", label="Full Width Embed" %}
+    </div>
+    <div class="section-wrap">
+        {% module "module_202346547567" path="/v1/markup/modules_from_blocks/two_col_form", label="Two Column Form" %}
+    </div>
+</div>
+{% include '/v1/markup/blocks_static/footer.html' %}
+
+{% endblock %}

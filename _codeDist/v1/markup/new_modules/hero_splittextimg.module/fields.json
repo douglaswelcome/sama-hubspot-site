@@ -1,5 +1,36 @@
 [
+    {
 
+        "name": "bg_color",
+        "label": "Background Color",
+        "required": false,
+        "locked": false,
+        "display": "select",
+      
+        "help_text": "",
+        "choices": [
+          [
+            "bg-charcoal-1",
+            "Charcoal 1 (Darkest)"
+          ],
+          [
+            "bg-charcoal-2",
+            "Charcoal 2 (Medium Dark)"
+          ],
+          [
+            "bg-charcoal-3",
+            "Charcoal 3 (Light Dark)"
+          ],
+          [
+            "bg-white",
+            "White"
+          ]
+        ],
+        "type": "choice",
+        "placeholder": "",
+        "default": "bg-charcoal-1"
+      
+    },
     {
         "name": "preheadline",
         "label": "PreHeadline",
