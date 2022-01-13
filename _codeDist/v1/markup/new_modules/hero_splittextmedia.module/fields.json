@@ -43,7 +43,7 @@
         "default": "Headline"
     }, 
     {
-        "name": "body",
+        "name": "body_copy",
         "label": "Text",
         "required": false,
         "locked": false,
